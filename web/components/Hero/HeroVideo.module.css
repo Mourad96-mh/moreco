@@ -1,0 +1,123 @@
+/*
+ * Full-bleed video hero, after bioworkseurope.com/nl: the media fills the section, a
+ * light wash keeps the type legible, and each line rises from behind its own mask.
+ */
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: clamp(520px, 78vh, 780px);
+  padding-block: calc(var(--topbar-h) + var(--header-h) + 2rem) clamp(3rem, 8vh, 6rem);
+  overflow: hidden;
+  color: #fff;
+  background: var(--green-darker);
+  isolation: isolate;
+}
+
+.media {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*
+ * bioworks uses a flat 10% black. That is not enough under a white headline on
+ * bright field footage, so the wash is a vertical gradient instead: heavier at the top
+ * where the header sits, heavier at the bottom under the text, light in the middle so
+ * the footage still reads.
+ */
+.wash {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to bottom, rgb(4 12 8 / 0.5) 0%, rgb(4 12 8 / 0.12) 42%, rgb(4 12 8 / 0.62) 100%),
+    linear-gradient(to right, rgb(4 12 8 / 0.35), rgb(4 12 8 / 0) 62%);
+}
+
+.inner {
+  position: relative;
+  width: min(100% - var(--gutter) * 2, var(--page));
+  max-width: 62rem;
+}
+
+/*
+ * The mask: the cropper hides the overflow, the child slides up into it. Both halves
+ * are needed — a transform alone would let the text peek out above its line.
+ */
+.cropper {
+  overflow: hidden;
+  padding-block: 0.12em;
+  margin-block: -0.12em;
+}
+
+.cropper > * {
+  animation: rise 0.9s var(--ease) both;
+  animation-delay: var(--delay, 0ms);
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(105%);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.title {
+  margin: 0;
+  font-size: var(--step-5);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  text-shadow: 0 2px 24px rgb(0 0 0 / 0.35);
+}
+
+.subtitle {
+  margin: 0.9rem 0 0;
+  max-width: 34ch;
+  font-size: var(--step-2);
+  font-weight: 400;
+  line-height: 1.35;
+  color: rgb(255 255 255 / 0.94);
+  text-shadow: 0 1px 16px rgb(0 0 0 / 0.4);
+}
+
+.cta {
+  margin-top: 2rem;
+}
+
+.credit {
+  position: absolute;
+  right: 0.75rem;
+  bottom: 0.5rem;
+  margin: 0;
+  font-size: 0.68rem;
+  color: rgb(255 255 255 / 0.55);
+}
+
+@media (max-width: 700px) {
+  .hero {
+    min-height: auto;
+    padding-block: calc(var(--header-h) + 3.5rem) 3.5rem;
+  }
+
+  .subtitle {
+    max-width: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cropper > * {
+    animation: none;
+  }
+}

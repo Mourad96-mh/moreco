@@ -1,0 +1,122 @@
+/* A single article: one narrow column, because it is there to be read. */
+
+.article {
+  max-width: var(--page-narrow);
+}
+
+.date {
+  margin: 0 0 1.5rem;
+  font-size: var(--step--1);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--green-dark);
+}
+
+.figure {
+  margin: 0 0 2rem;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--paper-2);
+}
+
+.figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* --------------------------------------------------------------- the study */
+
+.download {
+  margin: 2rem 0 0;
+}
+
+.download a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.25rem;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color 0.25s var(--ease), background 0.25s var(--ease);
+}
+
+.download a:hover {
+  border-color: var(--green);
+  background: var(--paper);
+}
+
+.download svg {
+  flex: none;
+  color: var(--green-dark);
+}
+
+.size {
+  font-size: var(--step--1);
+  font-weight: 500;
+  color: var(--ink-3);
+}
+
+/* ------------------------------------------------------------------- the foot */
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.back,
+.next {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--step--1);
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.back:hover,
+.next:hover {
+  color: var(--green-dark);
+}
+
+.next {
+  /* The next article is named, so the link has to be able to wrap. */
+  max-width: 60%;
+  text-align: right;
+}
+
+.nextLabel {
+  min-width: 0;
+}
+
+.back svg,
+.next svg {
+  flex: none;
+  transition: transform 0.25s var(--ease);
+}
+
+.back:hover svg {
+  transform: translateX(-3px);
+}
+
+.next:hover svg {
+  transform: translateX(3px);
+}
+
+@media (max-width: 600px) {
+  .next {
+    max-width: none;
+  }
+}

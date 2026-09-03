@@ -1,0 +1,115 @@
+.footer {
+  margin-top: clamp(3rem, 6vw, 6rem);
+  background: #0d1512;
+  color: rgb(255 255 255 / 0.78);
+  font-size: 0.94rem;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1.4fr repeat(3, 1fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
+  padding-block: clamp(2.5rem, 5vw, 4rem);
+}
+
+.brand {
+  max-width: 30ch;
+}
+
+.logo {
+  width: auto;
+  height: 44px;
+  /* The wordmark is near-black; on the dark footer it has to invert. */
+  filter: brightness(0) invert(1);
+}
+
+.tagline {
+  margin-top: 1rem;
+  color: rgb(255 255 255 / 0.6);
+}
+
+.colTitle {
+  margin: 0 0 1rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  margin-bottom: 0.5rem;
+}
+
+.list a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.address {
+  display: grid;
+  gap: 0.15rem;
+  margin-bottom: 1rem;
+  font-style: normal;
+  color: rgb(255 255 255 / 0.6);
+}
+
+.address strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.bar {
+  border-top: 1px solid rgb(255 255 255 / 0.12);
+  font-size: 0.84rem;
+}
+
+.barInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1.1rem;
+}
+
+.barInner p {
+  margin: 0;
+}
+
+.toTop {
+  color: inherit;
+  text-decoration: none;
+}
+
+.toTop:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .top {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .top {
+    grid-template-columns: 1fr;
+  }
+
+  .barInner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

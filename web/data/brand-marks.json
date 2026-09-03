@@ -1,0 +1,42 @@
+{
+  "/media/brand/bioxeco.webp": {
+    "width": 370,
+    "height": 300,
+    "onDark": false
+  },
+  "/media/brand/clearox.webp": {
+    "width": 370,
+    "height": 300,
+    "onDark": false
+  },
+  "/media/brand/huwa-san.webp": {
+    "width": 370,
+    "height": 300,
+    "onDark": false
+  },
+  "/media/brand/mavita.webp": {
+    "width": 100,
+    "height": 100,
+    "onDark": true
+  },
+  "/media/brand/moreco-logo.webp": {
+    "width": 268,
+    "height": 100,
+    "onDark": false
+  },
+  "/media/brand/orthafight.webp": {
+    "width": 150,
+    "height": 65,
+    "onDark": false
+  },
+  "/media/brand/orthagrow.webp": {
+    "width": 150,
+    "height": 65,
+    "onDark": false
+  },
+  "/media/brand/orthahealth.webp": {
+    "width": 150,
+    "height": 65,
+    "onDark": false
+  }
+}

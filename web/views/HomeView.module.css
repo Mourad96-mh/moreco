@@ -1,0 +1,87 @@
+.sectionTitle {
+  margin-bottom: clamp(1rem, 2vw, 2rem);
+  text-align: center;
+}
+
+.rdi {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 4rem);
+  padding: clamp(1.75rem, 4vw, 3rem);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--green);
+  border-radius: var(--radius-lg);
+  background: var(--paper);
+}
+
+.rdiText > :last-child {
+  margin-bottom: 0;
+}
+
+.rdiStat {
+  text-align: center;
+}
+
+.statNumber {
+  margin: 0;
+  font-size: clamp(4rem, 9vw, 7rem);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  color: var(--green);
+}
+
+.statLabel {
+  margin: 0.5rem 0 0;
+  font-size: var(--step--1);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+/*
+ * The closing call to action. It butts straight onto the footer (globals.css drops the
+ * footer's top gap for it), and its lower half darkens towards the footer's own colour so
+ * the two blocks read as one dark base rather than two stacked stripes.
+ */
+.quoteBand {
+  padding-block: clamp(2.5rem, 5vw, 4rem);
+  background: linear-gradient(
+    180deg,
+    var(--green-darker) 0%,
+    var(--green-darker) 58%,
+    color-mix(in srgb, var(--green-darker) 72%, #0d1512) 100%
+  );
+  color: #fff;
+}
+
+.quoteInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(1.25rem, 3vw, 3rem);
+  flex-wrap: wrap;
+}
+
+.quoteTitle {
+  margin: 0 0 0.4rem;
+  font-size: var(--step-3);
+}
+
+.quoteText {
+  margin: 0;
+  max-width: 62ch;
+  color: rgb(255 255 255 / 0.82);
+}
+
+@media (max-width: 800px) {
+  .rdi {
+    grid-template-columns: 1fr;
+  }
+
+  .rdiStat {
+    text-align: left;
+  }
+}

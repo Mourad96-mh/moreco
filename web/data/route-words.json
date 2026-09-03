@@ -1,0 +1,43 @@
+{
+  "_comment": "Localised URL words. Shared by data/routes.ts (which builds the routes) and scripts/finalize-export.mjs (which translates a built path into its siblings for the sitemap). Keep them in one place so the two can never drift.",
+  "words": {
+    "products": { "fr": "produits", "en": "products", "es": "productos", "de": "produkte" },
+    "rdi": { "fr": "rd-i", "en": "rd-i", "es": "rd-i", "de": "rd-i" },
+    "trials": { "fr": "essais", "en": "trials", "es": "ensayos", "de": "versuche" },
+    "resources": { "fr": "ressources", "en": "resources", "es": "recursos", "de": "ressourcen" },
+    "knowledge": {
+      "fr": "centre-de-connaissances",
+      "en": "knowledge-centre",
+      "es": "centro-de-conocimiento",
+      "de": "wissenszentrum"
+    },
+    "news": { "fr": "actualites", "en": "news", "es": "actualidad", "de": "aktuelles" },
+    "media": { "fr": "medias", "en": "media", "es": "medios", "de": "medien" },
+    "about": { "fr": "a-propos", "en": "about", "es": "sobre-nosotros", "de": "ueber-uns" },
+    "services": {
+      "fr": "services-et-conseils",
+      "en": "services-and-advice",
+      "es": "servicios-y-asesoramiento",
+      "de": "service-und-beratung"
+    },
+    "contact": { "fr": "contact", "en": "contact", "es": "contacto", "de": "kontakt" },
+    "careers": { "fr": "carrieres", "en": "careers", "es": "empleo", "de": "karriere" },
+    "quote": { "fr": "devis", "en": "quote", "es": "presupuesto", "de": "angebot" }
+  },
+  "segments": {
+    "agri": {
+      "fr": "agri-horticulture",
+      "en": "agri-horticulture",
+      "es": "agri-horticultura",
+      "de": "agrar-gartenbau"
+    },
+    "humans": { "fr": "humains", "en": "humans", "es": "humanos", "de": "menschen" },
+    "animals": { "fr": "animaux", "en": "animals", "es": "animales", "de": "tiere" },
+    "general": {
+      "fr": "emploi-general",
+      "en": "general-use",
+      "es": "uso-general",
+      "de": "allgemeine-anwendung"
+    }
+  }
+}

@@ -1,0 +1,162 @@
+.statement {
+  margin-top: 1.1rem;
+  color: var(--ink-2);
+}
+
+/* --------------------------------------------------------------- the figures */
+
+.figuresBand {
+  padding-block: clamp(2.5rem, 5vw, 4rem);
+  background: var(--green-darker);
+  color: #fff;
+}
+
+.figures {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr));
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  text-align: center;
+}
+
+.figureValue {
+  margin: 0;
+  font-size: var(--step-5);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.figureLabel {
+  margin: 0.5rem 0 0;
+  font-size: var(--step--1);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgb(255 255 255 / 0.72);
+}
+
+/* --------------------------------------------------------------- the domains */
+
+.sectionTitle {
+  margin-bottom: 1.75rem;
+}
+
+.domains {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: clamp(0.9rem, 1.6vw, 1.25rem);
+}
+
+.domain {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  height: 100%;
+  padding: 1.25rem 1.35rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  /* The colour is the domain's, carried on the edge the eye starts from. */
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.3s var(--ease), transform 0.3s var(--ease);
+}
+
+.domain:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-2);
+}
+
+.domainName {
+  font-size: var(--step-1);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+.domainShort {
+  font-size: var(--step--1);
+  color: var(--ink-3);
+}
+
+/* ------------------------------------------------------------ R&D + services */
+
+.split {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: clamp(1rem, 2vw, 1.75rem);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+}
+
+.cardTitle {
+  margin: 0 0 0.75rem;
+  font-size: var(--step-2);
+}
+
+.cardText {
+  margin: 0 0 1.5rem;
+  color: var(--ink-2);
+}
+
+/* The button sits on the baseline whatever the two cards' text lengths are. */
+.card :global(.btn) {
+  margin-top: auto;
+}
+
+/* --------------------------------------------------------------- the contact */
+
+.contactBand {
+  padding-block: clamp(3rem, 6vw, 5rem);
+  background: var(--ink);
+  color: #fff;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contactTitle {
+  margin: 0;
+  font-size: var(--step-3);
+}
+
+.contactLead {
+  margin: 0.8rem 0 0;
+  max-width: 46ch;
+  color: rgb(255 255 255 / 0.76);
+}
+
+.contactActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 1.75rem;
+}
+
+.quoteLink {
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid rgb(255 255 255 / 0.35);
+  padding-bottom: 2px;
+  transition: border-color 0.25s var(--ease);
+}
+
+.quoteLink:hover {
+  border-color: #fff;
+}

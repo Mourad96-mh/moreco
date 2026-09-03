@@ -1,0 +1,148 @@
+{
+  "orthagrow-control": {
+    "image": "/media/products/orthagrow-control.webp",
+    "datasheet": "/media/datasheets/orthagrow-control.pdf",
+    "datasheetKind": "flyer"
+  },
+  "orthagrow-bloom-booster": {
+    "image": "/media/products/orthagrow-bloom-booster.webp",
+    "datasheet": "/media/datasheets/orthagrow-bloom-booster.pdf",
+    "datasheetKind": "flyer"
+  },
+  "orthagrow-soil-conditioner": {
+    "image": "/media/products/orthagrow-soil-conditioner.webp",
+    "datasheet": "/media/datasheets/orthagrow-soil-conditioner.pdf",
+    "datasheetKind": "flyer"
+  },
+  "orthagrow-micro-manager": {
+    "image": "/media/products/orthagrow-micro-manager.webp",
+    "datasheet": "/media/datasheets/orthagrow-micro-manager.pdf",
+    "datasheetKind": "flyer"
+  },
+  "orthagrow-fertifight": {
+    "image": "/media/products/orthagrow-fertifight.webp",
+    "datasheet": "/media/datasheets/orthagrow-fertifight.pdf",
+    "datasheetKind": "flyer"
+  },
+  "orthagrow-granule": {
+    "image": "/media/products/orthagrow-granule.webp",
+    "datasheet": "/media/datasheets/orthagrow-granule.pdf",
+    "datasheetKind": "flyer"
+  },
+  "orthagrow-poudre": {
+    "image": "/media/products/orthagrow-poudre.webp"
+  },
+  "fertifight": {
+    "image": "/media/products/fertifight.webp",
+    "datasheet": "/media/datasheets/fertifight.pdf",
+    "datasheetKind": "flyer"
+  },
+  "huwa-san-agro": {
+    "image": "/media/products/huwa-san-agro.webp",
+    "datasheet": "/media/datasheets/huwa-san-agro.pdf",
+    "datasheetKind": "sds"
+  },
+  "huwa-san-vet": {
+    "image": "/media/products/huwa-san-vet.webp",
+    "datasheet": "/media/datasheets/huwa-san-vet.pdf",
+    "datasheetKind": "sds"
+  },
+  "huwa-san-fb": {
+    "image": "/media/products/huwa-san-fb.webp",
+    "datasheet": "/media/datasheets/huwa-san-fb.pdf",
+    "datasheetKind": "sds"
+  },
+  "huwa-san-hard-surface": {
+    "image": "/media/products/huwa-san-hard-surface.webp",
+    "datasheet": "/media/datasheets/huwa-san-hard-surface.pdf",
+    "datasheetKind": "sds"
+  },
+  "huwa-san-water-treatment": {
+    "image": "/media/products/huwa-san-water-treatment.webp",
+    "datasheet": "/media/datasheets/huwa-san-water-treatment.pdf",
+    "datasheetKind": "sds"
+  },
+  "huwa-san-hands": {
+    "image": "/media/products/huwa-san-hands.webp"
+  },
+  "huwa-san-toilet": {
+    "image": "/media/products/huwa-san-toilet.webp"
+  },
+  "huwa-san-bathroom": {
+    "image": "/media/products/huwa-san-bathroom.webp"
+  },
+  "huwa-san-fruit-vegetables": {
+    "image": "/media/products/huwa-san-fruit-vegetables.webp"
+  },
+  "huwa-san-kitchen": {
+    "image": "/media/products/huwa-san-kitchen.webp"
+  },
+  "huwa-san-kiddiepool": {
+    "image": "/media/products/huwa-san-kiddiepool.webp"
+  },
+  "huwa-san-minipool": {
+    "image": "/media/products/huwa-san-minipool.webp"
+  },
+  "huwa-san-pool": {
+    "image": "/media/products/huwa-san-pool.webp"
+  },
+  "huwa-san-whirlpool": {
+    "image": "/media/products/huwa-san-whirlpool.webp"
+  },
+  "huwa-san-wellness": {
+    "image": "/media/products/huwa-san-wellness.webp"
+  },
+  "bioxeco-hand": {
+    "image": "/media/products/bioxeco-hand.webp"
+  },
+  "bioxeco-25s": {
+    "image": "/media/products/bioxeco-25s.webp"
+  },
+  "bioxeco-dw": {
+    "image": "/media/products/bioxeco-dw.webp"
+  },
+  "bioxeco-fog": {
+    "image": "/media/products/bioxeco-fog.webp"
+  },
+  "orthafight": {
+    "image": "/media/products/orthafight.webp",
+    "datasheet": "/media/datasheets/orthafight.pdf",
+    "datasheetKind": "flyer"
+  },
+  "orthahealth": {
+    "image": "/media/products/orthahealth.webp"
+  },
+  "clearox": {
+    "image": "/media/products/clearox.webp"
+  },
+  "mavita-health": {
+    "image": "/media/products/mavita-health.webp",
+    "datasheet": "/media/datasheets/mavita-health.pdf",
+    "datasheetKind": "flyer"
+  },
+  "mavita-beauty": {
+    "image": "/media/products/mavita-beauty.webp",
+    "datasheet": "/media/datasheets/mavita-beauty.pdf",
+    "datasheetKind": "flyer"
+  },
+  "mavita-luxe": {
+    "image": "/media/products/mavita-luxe.webp",
+    "datasheet": "/media/datasheets/mavita-luxe.pdf",
+    "datasheetKind": "flyer"
+  },
+  "mavita-slim": {
+    "image": "/media/products/mavita-slim.webp",
+    "datasheet": "/media/datasheets/mavita-slim.pdf",
+    "datasheetKind": "flyer"
+  },
+  "mavita-sport": {
+    "image": "/media/products/mavita-sport.webp",
+    "datasheet": "/media/datasheets/mavita-sport.pdf",
+    "datasheetKind": "flyer"
+  },
+  "mavita-stress-plex": {
+    "image": "/media/products/mavita-stress-plex.webp",
+    "datasheet": "/media/datasheets/mavita-stress-plex.pdf",
+    "datasheetKind": "flyer"
+  }
+}

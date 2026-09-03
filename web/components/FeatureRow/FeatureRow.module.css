@@ -1,0 +1,195 @@
+/*
+ * Two shapes of row, one component. The media column is sized to the picture rather than
+ * to a fixed frame: `--media-cap` is the widest the image may be drawn (set per row from
+ * its own pixels), and the column never claims more than the picture can fill.
+ */
+
+.row {
+  display: grid;
+  grid-template-columns: minmax(0, var(--media-col)) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(1.75rem, 4vw, 4rem);
+  padding-block: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+/*
+ * A small graphic gets a narrow column, so the text sets the height of the row. The row
+ * is also pulled in from the full 1320px container: a 300px picture at one end and a
+ * paragraph at the other leaves a hole in the middle at full width.
+ */
+.cutout {
+  --media-col: clamp(190px, 22vw, 300px);
+  max-width: 1120px;
+  margin-inline: auto;
+}
+
+/* A result plate or photograph earns close to half the width. */
+.plate {
+  --media-col: 1fr;
+}
+
+/*
+ * Odd rows swap sides, so a column of them zig-zags down the page. The track widths have
+ * to swap with the order: moving only the image left the text stranded in the narrow
+ * media column with a void beside it.
+ */
+.flipped {
+  grid-template-columns: minmax(0, 1fr) minmax(0, var(--media-col));
+}
+
+.flipped .media {
+  order: 2;
+}
+
+.media {
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+}
+
+.figure {
+  position: relative;
+  width: 100%;
+  max-width: var(--media-cap);
+  margin: 0;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ---------- cut-out: the hexagon graphics of the segment pages ---------- */
+
+/*
+ * These arrive as transparent-cornered hexagons. Boxing them in a bordered square framed
+ * the emptiness; a soft halo in the segment colour holds them instead, which also carries
+ * the four-hexagon identity of the logo.
+ */
+.cutout .figure::before {
+  content: '';
+  position: absolute;
+  inset: -14% -10%;
+  z-index: 0;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 50% 46%,
+    color-mix(in srgb, var(--accent, var(--green)) 22%, transparent),
+    transparent 68%
+  );
+}
+
+.cutout .img {
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 14px 26px rgb(16 22 28 / 0.18));
+}
+
+/* ---------- plate: trial results, charts, photographs ---------- */
+
+.plate .figure {
+  padding: 0.55rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-1);
+}
+
+.plate .img {
+  border-radius: 6px;
+}
+
+/* ---------- text ---------- */
+
+.text {
+  min-width: 0;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 0 0.65rem;
+  font-size: var(--step--1);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent, var(--green-dark));
+}
+
+/* A short rule ties the label to the accent colour without shouting. */
+.eyebrow::before {
+  content: '';
+  width: 1.6rem;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+}
+
+.title {
+  margin: 0 0 0.75rem;
+  font-size: var(--step-2);
+  line-height: 1.2;
+}
+
+.body {
+  color: var(--ink-2);
+  max-width: 60ch;
+}
+
+.body > :last-child {
+  margin-bottom: 0;
+}
+
+.body ul {
+  padding-left: 1.1em;
+}
+
+.body li {
+  margin-bottom: 0.35em;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.15rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--accent, var(--green-dark));
+}
+
+.link svg {
+  transition: transform 0.2s var(--ease);
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link:hover svg {
+  transform: translateX(4px);
+}
+
+@media (max-width: 860px) {
+  .row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  /* On one column the image always leads, whichever side it takes on desktop. */
+  .flipped .media {
+    order: 0;
+  }
+
+  .cutout .figure {
+    max-width: min(var(--media-cap), 220px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link svg {
+    transition-duration: 0.01ms;
+  }
+}

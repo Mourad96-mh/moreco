@@ -1,0 +1,38 @@
+.bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.chip {
+  padding: 0.6rem 1.15rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--ink-2, inherit);
+  font: inherit;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  cursor: pointer;
+  transition:
+    border-color 0.2s var(--ease),
+    background 0.2s var(--ease),
+    color 0.2s var(--ease);
+}
+
+.chip:hover {
+  border-color: var(--accent, var(--green));
+  color: var(--accent, var(--green));
+}
+
+.chip[aria-pressed='true'] {
+  border-color: var(--accent, var(--green));
+  background: var(--accent, var(--green));
+  color: #fff;
+}
+
+.chip:focus-visible {
+  outline: 2px solid var(--accent, var(--green));
+  outline-offset: 2px;
+}

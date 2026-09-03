@@ -1,0 +1,213 @@
+{
+  "site": {
+    "name": "Moreco",
+    "tagline": "Bioavailable silicon for plants, animals and people",
+    "description": "Moreco produces and distributes a patented, biologically active and fully absorbable form of silicon (OSA) for agriculture, livestock and human health, alongside ecological disinfection with hydrogen peroxide."
+  },
+  "nav": {
+    "products": "Products",
+    "resources": "Resources",
+    "rdi": "R&D + I",
+    "news": "Media & News",
+    "about": "About",
+    "contact": "Contact",
+    "quote": "View quote request",
+    "quoteShort": "Quote",
+    "catalogues": "Product sheets & catalogues",
+    "applications": "Product applications",
+    "knowledge": "Knowledge centre",
+    "trials": "Trial results",
+    "silicon": "The importance of silicon",
+    "publications": "Scientific publications",
+    "newsList": "News",
+    "mediaKit": "Media kits & events",
+    "aboutMoreco": "More about Moreco",
+    "services": "Services & advice",
+    "contactUs": "Contact us",
+    "careers": "Careers",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "search": "Search",
+    "language": "Language"
+  },
+  "hero": {
+    "title": "Bioavailable silicon, proven in the field",
+    "subtitle": "The bioavailable silicon that grows your crops, strengthens your animals and supports your health.",
+    "cta": "Request a quote",
+    "scroll": "Explore"
+  },
+  "home": {
+    "introTitle": "One silicon science, four markets",
+    "introText": "Moreco distributes a patented stabilised orthosilicic acid (OSA) — biologically active and fully absorbable. The same molecule serves agriculture, livestock and human health, completed by ecological disinfection with hydrogen peroxide.",
+    "segmentsTitle": "Our fields of application",
+    "rdiTitle": "R&D + I",
+    "rdiText": "Nineteen trial campaigns run across Morocco, from Midelt to Larache: apples, strawberries, tomatoes, citrus, wheat, olives. Every treated plot is compared with its own control, plant by plant.",
+    "rdiCta": "See the trial results",
+    "quoteTitle": "Something specific in mind? Ask for a quote",
+    "quoteText": "Add the products you are interested in to your request, then send it in one go. Our team replies with dosages, pack sizes and prices.",
+    "quoteCta": "View quote request"
+  },
+  "segments": {
+    "agri": {
+      "name": "Agri / Horticulture",
+      "short": "Yield, taste and crop resilience",
+      "blurb": "A unique, fully absorbable form of orthosilicic acid: higher yield, better taste and more resilient crops. Also available for biological disease control."
+    },
+    "humans": {
+      "name": "Humans",
+      "short": "Bioavailable silicon, beauty and vitality",
+      "blurb": "To be younger, healthier and more vital through biologically active silicon. Also combined with maca, L-arginine, hyaluronic acid and collagen."
+    },
+    "animals": {
+      "name": "Animals",
+      "short": "Animal health and livestock hygiene",
+      "blurb": "Improves animal health and quality of life through an absorbable form of biologically active silicon. Also applicable to eco-disinfection."
+    },
+    "general": {
+      "name": "General use",
+      "short": "Ecological hydrogen-peroxide disinfection",
+      "blurb": "Ecological disinfection with hydrogen peroxide: for people, animals, agriculture and its industries."
+    }
+  },
+  "families": {
+    "nutrients": "Special nutrients",
+    "soil": "Soil & root health",
+    "biostimulants": "Trace elements & biostimulants",
+    "protection": "Biological protection"
+  },
+  "product": {
+    "ranges": "Ranges",
+    "range": "Range",
+    "products": "Products",
+    "count": {
+      "one": "1 product",
+      "other": "{n} products"
+    },
+    "rangeCount": {
+      "one": "1 range",
+      "other": "{n} ranges"
+    },
+    "allProducts": "All products",
+    "advantages": "Advantages",
+    "availableIn": "Available in",
+    "addToQuote": "Add to quote",
+    "inQuote": "In your quote",
+    "datasheet": "Download the product sheet",
+    "sds": "Download the safety data sheet",
+    "relatedTitle": "Other products in this range",
+    "noCopy": "Detailed sheet in preparation. Contact us for any technical information."
+  },
+  "rdi": {
+    "title": "R&D + I",
+    "lead": "Research, development and innovation",
+    "intro": "Silicon is not a promise, it is a measurement. Since 2016 Moreco has run field trials with Moroccan growers — a control plot against a treated plot, on the same farm, the same season, the same variety.",
+    "trialsTitle": "Trial results",
+    "trialsIntro": "Nineteen crops, from the apple orchards of Midelt to turf grass, documented in field photography.",
+    "allTrials": "All trials",
+    "trialLabel": "Trial",
+    "backToTrials": "Back to the trials",
+    "projectDescription": "Project description",
+    "statTrials": "Trial campaigns",
+    "statPlates": "Result plates",
+    "statSince": "First campaign"
+  },
+  "article": {
+    "download": "Download the study",
+    "sizeUnit": "KB"
+  },
+  "about": {
+    "domains": "Areas",
+    "discover": "Find out more",
+    "contactLead": "Our teams answer technical and commercial enquiries."
+  },
+  "press": {
+    "archive": "Past events — 2014 archive.",
+    "dossier": "Stand dossier",
+    "productBrochure": "Product brochure",
+    "salesTerms": "Terms of sale",
+    "downloads": "Downloads",
+    "sessions": "Event details"
+  },
+  "contact": {
+    "mobile": "Mobile",
+    "formTitle": "Send us a message"
+  },
+  "quote": {
+    "title": "Quote request",
+    "lead": "Your selection",
+    "intro": "Check the products you picked, fill in your details and send. We come back to you with pack sizes, dosages and prices.",
+    "empty": "Your quote request is empty.",
+    "emptyCta": "Browse the products",
+    "remove": "Remove",
+    "clear": "Empty the request",
+    "quantity": "Quantity",
+    "items": "product(s)",
+    "formTitle": "Your details",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "company": "Company",
+    "email": "Email",
+    "phone": "Phone",
+    "city": "City",
+    "message": "Message",
+    "messageHint": "Areas involved, crops, volumes you have in mind…",
+    "required": "required",
+    "submit": "Send my request",
+    "sending": "Sending…",
+    "success": "Thank you, your request is on its way. We reply within 48 working hours.",
+    "error": "Sending failed. Try again, or write to us directly at info@moreco.ma.",
+    "added": "added to your quote"
+  },
+  "pages": {
+    "products": {
+      "title": "Moreco products",
+      "lead": "Four fields of application, nine ranges, thirty-six references."
+    },
+    "resources": {
+      "title": "Resources",
+      "lead": "Product sheets, catalogues and the knowledge centre."
+    },
+    "knowledge": {
+      "title": "Knowledge centre",
+      "lead": "Silicon explained: studies, publications and background papers."
+    },
+    "news": {
+      "title": "Media & News",
+      "lead": "Moreco news and where to find us in the field."
+    },
+    "media": {
+      "title": "Media kits & events",
+      "lead": "SIAM Meknès, Saudi Agriculture: our press kits and materials."
+    },
+    "about": {
+      "title": "About Moreco",
+      "lead": "A miracle of science, distributed in Morocco."
+    },
+    "services": {
+      "title": "Services & advice",
+      "lead": "Technical support, from diagnosis to season follow-up."
+    },
+    "contact": {
+      "title": "Contact us",
+      "lead": "A question, a project, a quote: write to us."
+    },
+    "careers": {
+      "title": "Careers",
+      "lead": "Joining Moreco."
+    }
+  },
+  "footer": {
+    "company": "Moreco Sarl",
+    "navTitle": "Navigation",
+    "productsTitle": "Products",
+    "contactTitle": "Contact",
+    "legal": "Legal notice",
+    "rights": "All rights reserved.",
+    "backToTop": "Back to top"
+  },
+  "a11y": {
+    "skipToContent": "Skip to content",
+    "breadcrumb": "Breadcrumb",
+    "mainNav": "Main navigation"
+  }
+}

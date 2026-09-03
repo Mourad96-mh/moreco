@@ -1,0 +1,143 @@
+/*
+ * The newsroom. The archive's post pictures are all 870 × 296 — a wide strip — so both
+ * the lead and the cards are built around that shape rather than fighting it.
+ */
+
+.lead {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 3vw, 2.75rem);
+  align-items: center;
+  padding-bottom: clamp(2rem, 4vw, 3rem);
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+  border-bottom: 1px solid var(--line);
+}
+
+.leadMedia {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--paper-2);
+}
+
+.leadImg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.leadText {
+  min-width: 0;
+}
+
+.leadTitle {
+  margin: 0.5rem 0 0;
+  font-size: var(--step-2);
+  text-wrap: balance;
+}
+
+.leadExcerpt {
+  margin: 0.85rem 0 0;
+  color: var(--ink-2);
+}
+
+/* ------------------------------------------------------------------- the rest */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+  gap: clamp(1.25rem, 2.5vw, 2rem);
+}
+
+.cell {
+  min-width: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.cardMedia {
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--paper-2);
+}
+
+.cardImg {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.6s var(--ease);
+}
+
+.card:hover .cardImg {
+  transform: scale(1.03);
+}
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-top: 0.9rem;
+}
+
+.cardTitle {
+  margin: 0.35rem 0 0;
+  font-size: var(--step-1);
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
+.cardExcerpt {
+  margin: 0.6rem 0 0;
+  font-size: var(--step--1);
+  color: var(--ink-2);
+  /* Four lines, so cards in a row keep their titles and links aligned. */
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* --------------------------------------------------------------- date & link */
+
+.meta {
+  margin: 0;
+  font-size: var(--step--1);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--green-dark);
+}
+
+.more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: auto;
+  padding-top: 1rem;
+  font-size: var(--step--1);
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.more svg {
+  transition: transform 0.25s var(--ease);
+}
+
+.more:hover {
+  color: var(--green-dark);
+}
+
+.more:hover svg {
+  transform: translateX(3px);
+}
+
+@media (max-width: 860px) {
+  .lead {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}

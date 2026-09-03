@@ -1,0 +1,82 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  /* Fill the grid cell. Without this the card kept its content height while the cell
+     stretched to the tallest in the row, so cards in one row ended up different heights. */
+  height: 100%;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--paper);
+  overflow: hidden;
+  transition: border-color 0.2s var(--ease), box-shadow 0.2s var(--ease), transform 0.2s var(--ease);
+}
+
+.card:hover {
+  border-color: var(--accent, var(--green));
+  box-shadow: var(--shadow-2);
+  transform: translateY(-2px);
+}
+
+.media {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 3;
+  background: var(--paper-2);
+  border-bottom: 1px solid var(--line);
+}
+
+.img {
+  object-fit: contain;
+  padding: 1.1rem;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1.1rem 1.15rem 1.25rem;
+}
+
+.title {
+  margin: 0 0 0.5rem;
+  font-size: var(--step-1);
+  line-height: 1.25;
+  /* Two lines' worth, so a one-line name and a wrapping one still start their claim on
+     the same baseline across a row. */
+  min-height: 2.5em;
+}
+
+.title a {
+  text-decoration: none;
+}
+
+.title a:hover {
+  color: var(--accent, var(--green-dark));
+}
+
+.claim {
+  margin: 0 0 0.75rem;
+  font-size: 0.92rem;
+  color: var(--ink-2);
+  /* Claims run long in the archive; three lines keep a grid of cards even. */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.sizes {
+  margin: 0 0 1rem;
+  font-size: 0.84rem;
+  color: var(--ink-3);
+}
+
+.sizesLabel {
+  font-weight: 600;
+  color: var(--ink-2);
+}
+
+.actions {
+  margin-top: auto;
+}

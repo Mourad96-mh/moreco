@@ -1,0 +1,46 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: clamp(1rem, 2vw, 1.75rem);
+}
+
+
+
+
+
+
+
+.groupTitle {
+  margin: clamp(2rem, 4vw, 3rem) 0 1.25rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--line);
+  font-size: var(--step-2);
+}
+
+/* Only the first group on a page hugs the top — the rest keep the space that separates
+ * one family (or range) from the next. Matching on the heading alone made every group
+ * title a `:first-of-type` within its own <section>, which collapsed that gap. */
+section:first-of-type > .groupTitle {
+  margin-top: 0;
+}
+
+/*
+ * Placeholder tile for a product the client has announced but does not want named yet.
+ * It carries the single word SOON — no name, no number, no explanation — and is not a
+ * link, so nothing here is clickable or crawlable as a product.
+ */
+.soon {
+  display: grid;
+  place-items: center;
+  /* Matches the product cards beside it: the grid cell stretches, so the tile must too. */
+  height: 100%;
+  min-height: 220px;
+  padding: clamp(1.25rem, 2.5vw, 1.75rem);
+  border: 2px dashed var(--line-strong);
+  border-radius: var(--radius-lg);
+  background: var(--paper-2);
+  color: var(--ink-3);
+  font-size: var(--step-1);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+}

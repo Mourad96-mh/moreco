@@ -1,0 +1,18 @@
+{
+ "siam-stand": {
+  "pdf": "/media/press/siam-stand.pdf",
+  "bytes": 837388
+ },
+ "saudi-stand": {
+  "pdf": "/media/press/saudi-stand.pdf",
+  "bytes": 609863
+ },
+ "product-brochure": {
+  "pdf": "/media/press/product-brochure.pdf",
+  "bytes": 1600476
+ },
+ "sales-terms": {
+  "pdf": "/media/press/sales-terms.pdf",
+  "bytes": 73869
+ }
+}

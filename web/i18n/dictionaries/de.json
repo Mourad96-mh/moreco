@@ -1,0 +1,213 @@
+{
+  "site": {
+    "name": "Moreco",
+    "tagline": "Bioverfügbares Silizium für Pflanzen, Tiere und Menschen",
+    "description": "Moreco produziert und vertreibt eine patentierte, biologisch aktive und vollständig aufnehmbare Form von Silizium (OSA) für Landwirtschaft, Tierhaltung und menschliche Gesundheit – ergänzt durch ökologische Desinfektion mit Wasserstoffperoxid."
+  },
+  "nav": {
+    "products": "Produkte",
+    "resources": "Ressourcen",
+    "rdi": "F&E + I",
+    "news": "Medien & Aktuelles",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "quote": "Angebotsanfrage ansehen",
+    "quoteShort": "Angebot",
+    "catalogues": "Produktblätter & Kataloge",
+    "applications": "Produktanwendungen",
+    "knowledge": "Wissenszentrum",
+    "trials": "Versuchsergebnisse",
+    "silicon": "Die Bedeutung von Silizium",
+    "publications": "Wissenschaftliche Publikationen",
+    "newsList": "Aktuelles",
+    "mediaKit": "Pressemappen & Veranstaltungen",
+    "aboutMoreco": "Mehr über Moreco",
+    "services": "Service & Beratung",
+    "contactUs": "Kontakt aufnehmen",
+    "careers": "Karriere",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "search": "Suchen",
+    "language": "Sprache"
+  },
+  "hero": {
+    "title": "Bioverfügbares Silizium, im Feld belegt",
+    "subtitle": "Das bioverfügbare Silizium, das Ihre Kulturen wachsen lässt, Ihre Tiere stärkt und Ihre Gesundheit unterstützt.",
+    "cta": "Angebot anfordern",
+    "scroll": "Entdecken"
+  },
+  "home": {
+    "introTitle": "Eine Siliziumwissenschaft, vier Märkte",
+    "introText": "Moreco vertreibt eine patentierte stabilisierte Orthokieselsäure (OSA) – biologisch aktiv und vollständig aufnehmbar. Dasselbe Molekül dient der Landwirtschaft, der Tierhaltung und der menschlichen Gesundheit, ergänzt durch ökologische Desinfektion mit Wasserstoffperoxid.",
+    "segmentsTitle": "Unsere Anwendungsbereiche",
+    "rdiTitle": "F&E + I",
+    "rdiText": "Neunzehn Versuchskampagnen in Marokko, von Midelt bis Larache: Äpfel, Erdbeeren, Tomaten, Zitrusfrüchte, Weizen, Oliven. Jede behandelte Parzelle wird mit ihrer eigenen Kontrolle verglichen, Pflanze für Pflanze.",
+    "rdiCta": "Versuchsergebnisse ansehen",
+    "quoteTitle": "Konkreter Bedarf? Fordern Sie Ihr Angebot an",
+    "quoteText": "Fügen Sie die Produkte, die Sie interessieren, Ihrer Anfrage hinzu und senden Sie sie in einem Zug. Unser Team antwortet mit Dosierungen, Gebinden und Preisen.",
+    "quoteCta": "Angebotsanfrage ansehen"
+  },
+  "segments": {
+    "agri": {
+      "name": "Landwirtschaft / Gartenbau",
+      "short": "Ertrag, Geschmack und robuste Kulturen",
+      "blurb": "Eine einzigartige, vollständig aufnehmbare Form der Orthokieselsäure: mehr Ertrag, besserer Geschmack und widerstandsfähigere Kulturen. Auch für die biologische Krankheitsbekämpfung erhältlich."
+    },
+    "humans": {
+      "name": "Menschen",
+      "short": "Bioverfügbares Silizium, Schönheit und Vitalität",
+      "blurb": "Für ein jüngeres, gesünderes und vitaleres Leben durch biologisch aktives Silizium. Auch in Kombination mit Maca, L-Arginin, Hyaluronsäure und Kollagen."
+    },
+    "animals": {
+      "name": "Tiere",
+      "short": "Tiergesundheit und Stallhygiene",
+      "blurb": "Verbessert Gesundheit und Lebensqualität der Tiere durch eine aufnehmbare Form biologisch aktiven Siliziums. Auch für die Öko-Desinfektion einsetzbar."
+    },
+    "general": {
+      "name": "Allgemeine Anwendung",
+      "short": "Ökologische Desinfektion mit Wasserstoffperoxid",
+      "blurb": "Ökologische Desinfektion mit Wasserstoffperoxid: für Menschen, Tiere, die Landwirtschaft und ihre Industrien."
+    }
+  },
+  "families": {
+    "nutrients": "Spezialnährstoffe",
+    "soil": "Boden- & Wurzelgesundheit",
+    "biostimulants": "Spurenelemente & Biostimulanzien",
+    "protection": "Biologischer Pflanzenschutz"
+  },
+  "product": {
+    "ranges": "Produktlinien",
+    "range": "Produktlinie",
+    "products": "Produkte",
+    "count": {
+      "one": "1 Produkt",
+      "other": "{n} Produkte"
+    },
+    "rangeCount": {
+      "one": "1 Produktlinie",
+      "other": "{n} Produktlinien"
+    },
+    "allProducts": "Alle Produkte",
+    "advantages": "Vorteile",
+    "availableIn": "Erhältlich in",
+    "addToQuote": "Zum Angebot hinzufügen",
+    "inQuote": "In Ihrem Angebot",
+    "datasheet": "Produktblatt herunterladen",
+    "sds": "Sicherheitsdatenblatt herunterladen",
+    "relatedTitle": "Weitere Produkte dieser Linie",
+    "noCopy": "Detailblatt in Vorbereitung. Kontaktieren Sie uns für technische Auskünfte."
+  },
+  "rdi": {
+    "title": "F&E + I",
+    "lead": "Forschung, Entwicklung und Innovation",
+    "intro": "Silizium ist kein Versprechen, sondern eine Messung. Seit 2016 führt Moreco Feldversuche mit marokkanischen Erzeugern durch – Kontrollparzelle gegen behandelte Parzelle, auf demselben Betrieb, in derselben Saison, mit derselben Sorte.",
+    "trialsTitle": "Versuchsergebnisse",
+    "trialsIntro": "Neunzehn Kulturen, von den Apfelplantagen in Midelt bis zum Rasen, in Feldaufnahmen dokumentiert.",
+    "allTrials": "Alle Versuche",
+    "trialLabel": "Versuch",
+    "backToTrials": "Zurück zu den Versuchen",
+    "projectDescription": "Projektbeschreibung",
+    "statTrials": "Versuchskampagnen",
+    "statPlates": "Ergebnistafeln",
+    "statSince": "Erste Kampagne"
+  },
+  "article": {
+    "download": "Studie herunterladen",
+    "sizeUnit": "KB"
+  },
+  "about": {
+    "domains": "Bereiche",
+    "discover": "Mehr erfahren",
+    "contactLead": "Unsere Teams beantworten technische und kaufmännische Anfragen."
+  },
+  "press": {
+    "archive": "Vergangene Veranstaltungen — Archiv 2014.",
+    "dossier": "Standdossier",
+    "productBrochure": "Produktbroschüre",
+    "salesTerms": "Verkaufsbedingungen",
+    "downloads": "Downloads",
+    "sessions": "Veranstaltungsdetails"
+  },
+  "contact": {
+    "mobile": "Mobil",
+    "formTitle": "Schreiben Sie uns"
+  },
+  "quote": {
+    "title": "Angebotsanfrage",
+    "lead": "Ihre Auswahl",
+    "intro": "Prüfen Sie die gewählten Produkte, ergänzen Sie Ihre Kontaktdaten und senden Sie ab. Wir melden uns mit Gebinden, Dosierungen und Preisen.",
+    "empty": "Ihre Angebotsanfrage ist leer.",
+    "emptyCta": "Produkte ansehen",
+    "remove": "Entfernen",
+    "clear": "Anfrage leeren",
+    "quantity": "Menge",
+    "items": "Produkt(e)",
+    "formTitle": "Ihre Kontaktdaten",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "company": "Unternehmen",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "city": "Stadt",
+    "message": "Nachricht",
+    "messageHint": "Betroffene Flächen, Kulturen, geplante Mengen…",
+    "required": "Pflichtfeld",
+    "submit": "Anfrage senden",
+    "sending": "Wird gesendet…",
+    "success": "Danke, Ihre Anfrage ist unterwegs. Wir antworten innerhalb von 48 Arbeitsstunden.",
+    "error": "Senden fehlgeschlagen. Bitte erneut versuchen oder direkt an info@moreco.ma schreiben.",
+    "added": "zu Ihrem Angebot hinzugefügt"
+  },
+  "pages": {
+    "products": {
+      "title": "Moreco Produkte",
+      "lead": "Vier Anwendungsbereiche, neun Produktlinien, sechsunddreißig Artikel."
+    },
+    "resources": {
+      "title": "Ressourcen",
+      "lead": "Produktblätter, Kataloge und Wissenszentrum."
+    },
+    "knowledge": {
+      "title": "Wissenszentrum",
+      "lead": "Silizium erklärt: Studien, Publikationen und Hintergrundpapiere."
+    },
+    "news": {
+      "title": "Medien & Aktuelles",
+      "lead": "Neuigkeiten von Moreco und unsere Präsenz im Feld."
+    },
+    "media": {
+      "title": "Pressemappen & Veranstaltungen",
+      "lead": "SIAM Meknès, Saudi Agriculture: unsere Mappen und Unterlagen."
+    },
+    "about": {
+      "title": "Über Moreco",
+      "lead": "Ein Wunder der Wissenschaft, vertrieben in Marokko."
+    },
+    "services": {
+      "title": "Service & Beratung",
+      "lead": "Technische Begleitung, von der Diagnose bis zur Saisonbetreuung."
+    },
+    "contact": {
+      "title": "Kontakt aufnehmen",
+      "lead": "Eine Frage, ein Projekt, ein Angebot: schreiben Sie uns."
+    },
+    "careers": {
+      "title": "Karriere",
+      "lead": "Arbeiten bei Moreco."
+    }
+  },
+  "footer": {
+    "company": "Moreco Sarl",
+    "navTitle": "Navigation",
+    "productsTitle": "Produkte",
+    "contactTitle": "Kontakt",
+    "legal": "Impressum",
+    "rights": "Alle Rechte vorbehalten.",
+    "backToTop": "Nach oben"
+  },
+  "a11y": {
+    "skipToContent": "Zum Inhalt springen",
+    "breadcrumb": "Brotkrumennavigation",
+    "mainNav": "Hauptnavigation"
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "orthagrow-control": {
+    "image": "wp-content/uploads/2014/03/Orthagrow-CONTROL-4TH-MORECO-MAROC.jpg",
+    "datasheet": "wp-content/uploads/2019/03/flyers_site_FR/ORTHAGROW_CONTROL_MORECO.pdf",
+    "datasheetKind": "flyer"
+  },
+  "orthagrow-bloom-booster": {
+    "image": "wp-content/uploads/2014/03/Orthagrow-Bloom-Booster-MORECO-MAROC.jpg",
+    "datasheet": "wp-content/uploads/2019/03/flyers_site_FR/ORTHAGROW_BLOOM_BOOSTER_MORECO.pdf",
+    "datasheetKind": "flyer"
+  },
+  "orthagrow-soil-conditioner": {
+    "image": "wp-content/uploads/2014/03/Orthagrow-SOIL-CONDITIONER-MORECO-MAROC.jpg",
+    "datasheet": "wp-content/uploads/2019/03/flyers_site_FR/ORTHAGROW_SOIL_CONDITIONNER_MORECO.pdf",
+    "datasheetKind": "flyer"
+  },
+  "orthagrow-micro-manager": {
+    "image": "wp-content/uploads/2014/03/Orthagrow-Micromanager-MORECO-MAROC.jpg",
+    "datasheet": "wp-content/uploads/2019/03/flyers_site_FR/ORHTAGROW_MICRO_MANAGER.pdf",
+    "datasheetKind": "flyer"
+  },
+  "orthagrow-fertifight": {
+    "image": "wp-content/uploads/2014/03/Moreco-FERTIFIGHT-Maroc.jpg",
+    "datasheet": "wp-content/uploads/2019/03/flyers_site_FR/FIRTIFIGHT_MORECO.pdf",
+    "datasheetKind": "flyer"
+  },
+  "orthagrow-granule": {
+    "image": "wp-content/uploads/2014/03/Moreco-orthagrow-granule-4th-Maroc.jpg",
+    "datasheet": "wp-content/uploads/2019/03/flyers_site_FR/ORTHAGROW_GRANULE_MORECO.pdf",
+    "datasheetKind": "flyer"
+  },
+  "orthagrow-poudre": {
+    "image": "wp-content/uploads/2014/03/Moreco-orthagrow-Poudre-4th-Maroc.jpg"
+  },
+  "fertifight": {
+    "image": "wp-content/uploads/2014/03/FERTIFIHT_MORECO.jpg",
+    "datasheet": "wp-content/uploads/2014/03/orthafight-fertifight-productline-fr_web.pdf",
+    "datasheetKind": "flyer"
+  },
+  "huwa-san-agro": {
+    "image": "wp-content/uploads/2015/01/huwa-san-agro.png",
+    "datasheet": "public/huwa-san/product_safety_data_sheet_huwa_san_tr_-_50.pdf",
+    "datasheetKind": "sds"
+  },
+  "huwa-san-vet": {
+    "image": "wp-content/uploads/2015/01/Huwa-San-VET.png",
+    "datasheet": "public/huwa-san/product_safety_data_sheet_huwa_san_tr_-_50.pdf",
+    "datasheetKind": "sds"
+  },
+  "huwa-san-fb": {
+    "image": "wp-content/uploads/2015/01/Huwa-San-FB.png",
+    "datasheet": "public/huwa-san/product_safety_data_sheet_huwa_san_tr_-_50.pdf",
+    "datasheetKind": "sds"
+  },
+  "huwa-san-hard-surface": {
+    "image": "wp-content/uploads/2015/01/huwa-san-Hard-Surface.png",
+    "datasheet": "public/huwa-san/product_safety_data_sheet_huwa_san_tr_-_50.pdf",
+    "datasheetKind": "sds"
+  },
+  "huwa-san-water-treatment": {
+    "image": "wp-content/uploads/2015/01/Huwa-San-Water-Treatment.png",
+    "datasheet": "public/huwa-san/product_safety_data_sheet_huwa_san_tr_-_50.pdf",
+    "datasheetKind": "sds"
+  },
+  "huwa-san-hands": {
+    "image": "wp-content/uploads/2015/01/huwa-san-hand_0.png"
+  },
+  "huwa-san-toilet": {
+    "image": "wp-content/uploads/2015/01/huwa-santoilet_1.png"
+  },
+  "huwa-san-bathroom": {
+    "image": "wp-content/uploads/2015/01/huwa-san-bathroom.png"
+  },
+  "huwa-san-fruit-vegetables": {
+    "image": "wp-content/uploads/2015/01/huwa-sanfv.png"
+  },
+  "huwa-san-kitchen": {
+    "image": "wp-content/uploads/2015/01/huwa-san-kitchen.png"
+  },
+  "huwa-san-kiddiepool": {
+    "image": "wp-content/uploads/2015/01/kiddiepool.png"
+  },
+  "huwa-san-minipool": {
+    "image": "wp-content/uploads/2015/01/minipool.png"
+  },
+  "huwa-san-pool": {
+    "image": "wp-content/uploads/2015/01/pool.png"
+  },
+  "huwa-san-whirlpool": {
+    "image": "wp-content/uploads/2015/01/whirlpool.png"
+  },
+  "huwa-san-wellness": {
+    "image": "wp-content/uploads/2015/01/wellness.png"
+  },
+  "bioxeco-hand": {
+    "image": "wp-content/uploads/2015/01/hand.png"
+  },
+  "bioxeco-25s": {
+    "image": "wp-content/uploads/2015/01/25s.png"
+  },
+  "bioxeco-dw": {
+    "image": "wp-content/uploads/2015/01/dw.png"
+  },
+  "bioxeco-fog": {
+    "image": "wp-content/uploads/2015/01/fog.png"
+  },
+  "orthafight": {
+    "image": "wp-content/uploads/2014/01/logo_orthafight2.jpg",
+    "datasheet": "wp-content/uploads/2014/03/orthafight-fertifight-productline-fr_web.pdf",
+    "datasheetKind": "flyer"
+  },
+  "orthahealth": {
+    "image": "wp-content/uploads/2014/04/orthahealth_productline.png"
+  },
+  "clearox": {
+    "image": "wp-content/uploads/2014/03/clearox_beeldmerk.png"
+  },
+  "mavita-health": {
+    "image": "wp-content/uploads/2014/03/mavita_health_product.jpg",
+    "datasheet": "wp-content/uploads/2014/03/Mavita_health_-productfiche-fr_v2_web.pdf",
+    "datasheetKind": "flyer"
+  },
+  "mavita-beauty": {
+    "image": "wp-content/uploads/2014/03/mavita_beauty_product.jpg",
+    "datasheet": "wp-content/uploads/2014/03/Mavita_beauty_-productfiche-fr_web.pdf",
+    "datasheetKind": "flyer"
+  },
+  "mavita-luxe": {
+    "image": "wp-content/uploads/2014/03/mavita_luxe_product.jpg",
+    "datasheet": "wp-content/uploads/2014/03/Mavita_luxe_-productfiche-fr_web.pdf",
+    "datasheetKind": "flyer"
+  },
+  "mavita-slim": {
+    "image": "wp-content/uploads/2014/03/mavita_slim_product.jpg",
+    "datasheet": "wp-content/uploads/2014/03/Mavita_slim_-productfiche-fr_web.pdf",
+    "datasheetKind": "flyer"
+  },
+  "mavita-sport": {
+    "image": "wp-content/uploads/2014/03/mavita_sport_product.jpg",
+    "datasheet": "wp-content/uploads/2014/03/Mavita_sport_-productfiche-fr_v2_web.pdf",
+    "datasheetKind": "flyer"
+  },
+  "mavita-stress-plex": {
+    "image": "wp-content/uploads/2014/03/mavita_stress-plex_product.jpg",
+    "datasheet": "wp-content/uploads/2014/03/Mavita_stress-plex_-productfiche-fr_web.pdf",
+    "datasheetKind": "flyer"
+  }
+}

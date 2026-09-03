@@ -1,0 +1,7 @@
+/*
+ * The rows carry their own rhythm from FeatureRow; the section only has to stop the last
+ * one from sitting too close to the footer.
+ */
+.rows {
+  padding-bottom: clamp(3rem, 6vw, 5rem);
+}

@@ -1,0 +1,213 @@
+{
+  "site": {
+    "name": "Moreco",
+    "tagline": "Le silicium biodisponible pour les plantes, les animaux et les humains",
+    "description": "Moreco produit et distribue une forme brevetée de silicium biologiquement actif et entièrement assimilable (OSA) pour l'agriculture, l'élevage et la santé humaine, ainsi que la désinfection écologique au peroxyde d'hydrogène."
+  },
+  "nav": {
+    "products": "Produits",
+    "resources": "Ressources",
+    "rdi": "R&D + I",
+    "news": "Medias & Actus",
+    "about": "À propos",
+    "contact": "Contacts",
+    "quote": "Voir la demande de devis",
+    "quoteShort": "Devis",
+    "catalogues": "Fiches produits & catalogues",
+    "applications": "Applications produits",
+    "knowledge": "Centre de connaissances",
+    "trials": "Résultats d'essais",
+    "silicon": "L'importance du silicium",
+    "publications": "Publications scientifiques",
+    "newsList": "Actualités",
+    "mediaKit": "Dossiers médias & événements",
+    "aboutMoreco": "En savoir plus sur Moreco",
+    "services": "Services & conseils",
+    "contactUs": "Nous contacter",
+    "careers": "Carrières",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "search": "Rechercher",
+    "language": "Langue"
+  },
+  "hero": {
+    "title": "Le silicium biodisponible, prouvé au champ",
+    "subtitle": "Le silicium biodisponible qui fait pousser vos cultures, renforce vos animaux et soutient votre santé.",
+    "cta": "Demander un devis",
+    "scroll": "Découvrir"
+  },
+  "home": {
+    "introTitle": "Une science du silicium, quatre marchés",
+    "introText": "Moreco distribue une forme brevetée d'acide orthosilicique stabilisé (OSA), biologiquement active et entièrement assimilable. La même molécule sert l'agriculture, l'élevage et la santé humaine — complétée par la désinfection écologique au peroxyde d'hydrogène.",
+    "segmentsTitle": "Nos domaines d'application",
+    "rdiTitle": "R&D + I",
+    "rdiText": "Dix-neuf campagnes d'essais menées au Maroc, de Midelt à Larache : pommiers, fraises, tomates, agrumes, blé, olives. Chaque parcelle traitée est comparée à son témoin, plante par plante.",
+    "rdiCta": "Voir les résultats d'essais",
+    "quoteTitle": "Un besoin précis ? Demandez votre devis",
+    "quoteText": "Ajoutez les produits qui vous intéressent à votre demande, puis envoyez-la en une fois. Notre équipe vous répond avec les dosages, les conditionnements et les prix.",
+    "quoteCta": "Voir la demande de devis"
+  },
+  "segments": {
+    "agri": {
+      "name": "Agri / Horticulture",
+      "short": "Rendement, goût et résistance des cultures",
+      "blurb": "Une forme unique d'acide orthosilicique entièrement assimilable : plus de rendement, un meilleur goût et des cultures plus résistantes. Également disponible pour le contrôle biologique des maladies."
+    },
+    "humans": {
+      "name": "Humains",
+      "short": "Silicium biodisponible, beauté et vitalité",
+      "blurb": "Pour être plus jeune, plus sain et plus vital grâce au silicium biologiquement actif. Également en association avec la maca, la L-arginine, l'acide hyaluronique et le collagène."
+    },
+    "animals": {
+      "name": "Animaux",
+      "short": "Santé animale et hygiène d'élevage",
+      "blurb": "Améliore la santé et la qualité de vie des animaux par une forme assimilable de silicium biologiquement actif. Applicable aussi à l'éco-désinfection."
+    },
+    "general": {
+      "name": "Emploi général",
+      "short": "Désinfection écologique au peroxyde d'hydrogène",
+      "blurb": "La désinfection écologique par le peroxyde d'hydrogène : pour les humains, les animaux, l'agriculture et ses industries."
+    }
+  },
+  "families": {
+    "nutrients": "Nutriments Spéciaux",
+    "soil": "Santé du Sol & Racines",
+    "biostimulants": "Oligo-Éléments & Biostimulants",
+    "protection": "Protection Biologique"
+  },
+  "product": {
+    "ranges": "Gammes",
+    "range": "Gamme",
+    "products": "Produits",
+    "count": {
+      "one": "1 produit",
+      "other": "{n} produits"
+    },
+    "rangeCount": {
+      "one": "1 gamme",
+      "other": "{n} gammes"
+    },
+    "allProducts": "Tous les produits",
+    "advantages": "Avantages",
+    "availableIn": "Disponible en",
+    "addToQuote": "Ajouter au devis",
+    "inQuote": "Dans votre devis",
+    "datasheet": "Télécharger la fiche produit",
+    "sds": "Télécharger la fiche de données de sécurité",
+    "relatedTitle": "Autres produits de la gamme",
+    "noCopy": "Fiche détaillée en préparation. Contactez-nous pour toute information technique."
+  },
+  "rdi": {
+    "title": "R&D + I",
+    "lead": "Recherche, développement et innovation",
+    "intro": "Le silicium n'est pas une promesse : c'est une mesure. Depuis 2016, Moreco conduit des essais en conditions réelles chez des producteurs marocains — parcelle témoin contre parcelle traitée, sur la même exploitation, la même saison, la même variété.",
+    "trialsTitle": "Résultats d'essais",
+    "trialsIntro": "Dix-neuf cultures, du pommier de Midelt au gazon, documentées en photos de terrain.",
+    "allTrials": "Tous les essais",
+    "trialLabel": "Essai",
+    "backToTrials": "Retour aux essais",
+    "projectDescription": "Description du projet",
+    "statTrials": "Campagnes d'essais",
+    "statPlates": "Planches de résultats",
+    "statSince": "Première campagne"
+  },
+  "article": {
+    "download": "Télécharger l'étude",
+    "sizeUnit": "Ko"
+  },
+  "about": {
+    "domains": "Domaines",
+    "discover": "En savoir plus",
+    "contactLead": "Nos équipes répondent aux demandes techniques et commerciales."
+  },
+  "press": {
+    "archive": "Événements passés — archives 2014.",
+    "dossier": "Dossier du stand",
+    "productBrochure": "Brochure produits",
+    "salesTerms": "Conditions générales de vente",
+    "downloads": "Téléchargements",
+    "sessions": "Détails de l’événement"
+  },
+  "contact": {
+    "mobile": "Mobile",
+    "formTitle": "Écrivez-nous"
+  },
+  "quote": {
+    "title": "Demande de devis",
+    "lead": "Votre sélection",
+    "intro": "Vérifiez les produits retenus, complétez vos coordonnées et envoyez. Nous revenons vers vous avec les conditionnements, les dosages et les prix.",
+    "empty": "Votre demande de devis est vide.",
+    "emptyCta": "Parcourir les produits",
+    "remove": "Retirer",
+    "clear": "Vider la demande",
+    "quantity": "Quantité",
+    "items": "produit(s)",
+    "formTitle": "Vos coordonnées",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "company": "Société",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "city": "Ville",
+    "message": "Message",
+    "messageHint": "Surfaces concernées, cultures, volumes envisagés…",
+    "required": "obligatoire",
+    "submit": "Envoyer ma demande",
+    "sending": "Envoi en cours…",
+    "success": "Merci, votre demande est partie. Nous vous répondons sous 48 heures ouvrées.",
+    "error": "L'envoi a échoué. Réessayez, ou écrivez-nous directement à info@moreco.ma.",
+    "added": "ajouté à votre devis"
+  },
+  "pages": {
+    "products": {
+      "title": "Produits Moreco",
+      "lead": "Quatre domaines d'application, neuf gammes, trente-six références."
+    },
+    "resources": {
+      "title": "Ressources",
+      "lead": "Fiches produits, catalogues et centre de connaissances."
+    },
+    "knowledge": {
+      "title": "Centre de connaissances",
+      "lead": "Le silicium expliqué : études, publications et dossiers de fond."
+    },
+    "news": {
+      "title": "Medias & Actus",
+      "lead": "Les actualités de Moreco et sa présence sur le terrain."
+    },
+    "media": {
+      "title": "Dossiers médias & événements",
+      "lead": "SIAM Meknès, Saudi Agriculture : nos dossiers et supports."
+    },
+    "about": {
+      "title": "À propos de Moreco",
+      "lead": "Un miracle de la science, distribué au Maroc."
+    },
+    "services": {
+      "title": "Services & conseils",
+      "lead": "Un accompagnement technique, du diagnostic au suivi de campagne."
+    },
+    "contact": {
+      "title": "Nous contacter",
+      "lead": "Une question, un projet, un devis : écrivez-nous."
+    },
+    "careers": {
+      "title": "Carrières",
+      "lead": "Rejoindre Moreco."
+    }
+  },
+  "footer": {
+    "company": "Moreco Sarl",
+    "navTitle": "Navigation",
+    "productsTitle": "Produits",
+    "contactTitle": "Contact",
+    "legal": "Mentions légales",
+    "rights": "Tous droits réservés.",
+    "backToTop": "Haut de page"
+  },
+  "a11y": {
+    "skipToContent": "Aller au contenu",
+    "breadcrumb": "Fil d'ariane",
+    "mainNav": "Navigation principale"
+  }
+}

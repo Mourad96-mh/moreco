@@ -1,0 +1,180 @@
+/* Media & events: two 2014 trade shows, their dossiers and the stand video. */
+
+.archive {
+  display: inline-block;
+  margin: 0 0 2rem;
+  padding: 0.4rem 0.85rem;
+  background: var(--paper-3);
+  border-radius: 999px;
+  font-size: var(--step--1);
+  font-weight: 600;
+  color: var(--ink-2);
+}
+
+/* ------------------------------------------------------------------ an event */
+
+.event {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.82fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
+  align-items: start;
+  padding-bottom: clamp(2rem, 4vw, 3rem);
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+  border-bottom: 1px solid var(--line);
+}
+
+.event:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.eventTitle {
+  margin: 0;
+  font-size: var(--step-2);
+}
+
+.eventSubtitle {
+  margin: 0.5rem 0 0;
+  color: var(--ink-2);
+}
+
+.sessions {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.session {
+  padding-left: 1rem;
+  border-left: 3px solid var(--green);
+}
+
+.sessionTitle {
+  margin: 0 0 0.6rem;
+  font-size: var(--step-0);
+  font-weight: 700;
+}
+
+/* Date, time, room, speaker — one per line, so the run-on reads as a schedule. */
+.details {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.25rem;
+  font-size: var(--step--1);
+  color: var(--ink-2);
+}
+
+.note {
+  margin: 0.5rem 0 0;
+  font-size: var(--step--1);
+  color: var(--ink-3);
+}
+
+/* ------------------------------------------------------- downloads & the film */
+
+.dossier,
+.download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.8rem 1.15rem;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color 0.25s var(--ease), background 0.25s var(--ease);
+}
+
+.dossier {
+  margin-top: 1.5rem;
+}
+
+.dossier:hover,
+.download:hover {
+  border-color: var(--green);
+  background: var(--paper);
+}
+
+.dossier svg,
+.download svg {
+  flex: none;
+  color: var(--green-dark);
+}
+
+.size {
+  font-size: var(--step--1);
+  font-weight: 500;
+  color: var(--ink-3);
+}
+
+.photo {
+  margin: 0;
+}
+
+.photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+}
+
+.photo figcaption {
+  margin-top: 0.65rem;
+  font-size: var(--step--1);
+  color: var(--ink-3);
+}
+
+.videoTitle,
+.downloadsTitle {
+  margin-bottom: 1.25rem;
+}
+
+/* 16:9, and it stays 16:9 — the iframe has no intrinsic size of its own. */
+.video {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--ink);
+}
+
+.video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.downloads {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 0.75rem;
+}
+
+.download {
+  height: 100%;
+  align-items: flex-start;
+}
+
+.downloadText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.downloadLabel {
+  font-weight: 600;
+}
+
+@media (max-width: 860px) {
+  .event {
+    grid-template-columns: 1fr;
+  }
+}

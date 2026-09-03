@@ -1,0 +1,17 @@
+# Dependencies and build output (web/.gitignore covers the app's own)
+node_modules/
+.next/
+out/
+
+# Source cache for scripts/import-heroes.mjs — re-downloadable from Wikimedia
+web/.hero-cache/
+
+# Crawler working files
+_crawl/**/__pycache__/
+*.log
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
