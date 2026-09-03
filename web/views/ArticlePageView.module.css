@@ -96,6 +96,9 @@
 
 .sheetLink {
   justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
   font-size: 0.8rem;
   color: var(--ink-3);
 }

@@ -88,6 +88,9 @@
 }
 
 .toTop {
+  /* Padding, not height: the text box alone was 22px of target. */
+  display: inline-block;
+  padding-block: 0.55rem;
   color: inherit;
   text-decoration: none;
 }

@@ -154,6 +154,8 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  /* The row's call to action is tapped, so it carries its own hit area. */
+  min-height: 32px;
   margin-top: 1.15rem;
   font-weight: 600;
   text-decoration: none;

@@ -149,6 +149,9 @@
 }
 
 .quoteLink {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
   font-weight: 600;
   color: #fff;
   text-decoration: none;
