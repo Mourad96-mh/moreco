@@ -11,12 +11,17 @@ Rédigé le 2026-09-01 (passe espagnole et allemande), mis à jour le 2026-09-06
 | `data/product-copy.json` | 36 fiches produits (accroche, paragraphes, avantages, conditionnements) | fr, en, es, de | fr, en, es, **nl, ar** |
 | `data/research.json` | 19 essais R&D + I (titre + description) | fr, en, es, de | fr, en, es, **nl, ar** |
 | `data/pages.json` | 5 pages éditoriales (à propos, carrières, médias, applications, actualités) | fr, en, es, de | fr, en, es, **nl, ar** |
-| `data/articles.json` | 7 articles du centre de connaissances | fr, en, es, de | fr, en, es — **nl et ar restent à écrire** |
+| `data/articles.json` | 7 articles du centre de connaissances | fr, en, es, de | fr, en, es, **nl, ar** |
 | `i18n/dictionaries/*.json` | libellés d'interface | fr, en, es, de | fr, en, es, **nl, ar** (149 clés × 5) |
 
-`data/articles.ts` retombe sur le français quand une langue manque : les sept articles
-s'affichent donc en français sur `/nl/` et `/ar/` en attendant leur traduction. C'est le
-seul contenu du site qui ne soit pas encore dans les cinq langues.
+**Tout le contenu du site est désormais dans les cinq langues.** Les blocs `nl` et `ar`
+sont calqués sur la liste anglaise : mêmes types de blocs, mêmes images, seul le texte
+change. Les noms de fichiers PDF, les tailles en Kio et les titres d'ouvrages cités
+(*Metal Ions in Biology and Medicine*, *Comptes Rendus Geoscience*) ne sont pas traduits.
+
+Les lignes de tableau « Langues : Anglais » des sept articles décrivent la langue **du PDF
+lié**, pas celle de la page : elles restent donc exactes après traduction — voir aussi la
+section 8.
 
 Les essais étaient la dernière donnée monolingue : leurs titres s'affichaient en français
 y compris sur les pages anglaises. `title` et `description` sont devenus des objets par

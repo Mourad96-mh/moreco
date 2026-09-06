@@ -4,12 +4,16 @@
     "title": {
       "fr": "l'importance du silicium",
       "en": "The importance of silicon",
-      "es": "La importancia del silicio"
+      "es": "La importancia del silicio",
+      "nl": "Het belang van silicium",
+      "ar": "أهمية السيليكون"
     },
     "excerpt": {
       "fr": "*Interview avec Prof. Dirk Van den Berghe*",
       "en": "*Interview with Prof. Dirk Van den Berghe*",
-      "es": "*Entrevista con el Prof. Dirk Van den Berghe*"
+      "es": "*Entrevista con el Prof. Dirk Van den Berghe*",
+      "nl": "*Interview met prof. Dirk Van den Berghe*",
+      "ar": "*حوار مع الأستاذ ديرك فان دن بيرغه*"
     },
     "blocks": {
       "fr": [
@@ -331,6 +335,214 @@
           "type": "paragraph",
           "text": "Moreco produce y distribuye productos con una forma de silicio patentada, biológicamente activa y absorbible, destinados a las personas, a los animales y a la agricultura y la horticultura. Ofrecemos asimismo desinfección ecológica con peróxido de hidrógeno para la purificación del agua y el control biológico de enfermedades en la agricultura y la industria."
         }
+      ],
+      "nl": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Het belang van silicium"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Gepubliceerd op 31 maart 2013",
+            "Door Moreco",
+            "In Nieuws"
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/media/pages/importance-of-silicon.webp"
+        },
+        {
+          "type": "paragraph",
+          "text": "*Interview met prof. Dirk Van den Berghe*"
+        },
+        {
+          "type": "paragraph",
+          "text": "Silicium: het ontbrekende element"
+        },
+        {
+          "type": "paragraph",
+          "text": "Hoewel het belang van silicium (Si) in de landbouw nog nauwelijks aanvaard is, zal dat veranderen zodra de gevolgen van het toevoegen van Si aan de bodem goed begrepen worden! Vroeger dacht iedereen dat Si niet nodig was, behalve als gewoon bestanddeel van de bodem. Nu wordt het stilaan aanvaard als een belangrijk, gunstig element in planten voor hun goede werking."
+        },
+        {
+          "type": "paragraph",
+          "text": "Silicium (Si) is het op één na meest voorkomende element op het aardoppervlak en omringt ons in de vorm van zand, bouwstenen, glas enz. Het is overal aanwezig in bodem en water. Door verzuring met koolzuur en organische zuren, geproduceerd door bodemmicro-organismen en plantenwortels, worden de in de bodem aanwezige silicaten langzaam aangetast en komt OSA (orthokiezelzuur) – Si(OH)4 – vrij. OSA is oplosbaar in water en is in de bodem doorgaans in zeer lage concentraties aanwezig. Kiezelzuur bestaat uit een zeer klein molecuul en is alleen biologisch actief in de vorm van OSA. Het wordt door planten in zeer lage concentraties opgenomen, maar in concentraties met een zeer belangrijk effect op de plantengroei (en de diergezondheid). Levende organismen hebben OSA nodig, geen silicaten."
+        },
+        {
+          "type": "paragraph",
+          "text": "Het belang van silicium"
+        },
+        {
+          "type": "paragraph",
+          "text": "interview-professor\\_theimportance of silicon.pdf"
+        },
+        {
+          "type": "paragraph",
+          "text": "93,7 KiB"
+        },
+        {
+          "type": "paragraph",
+          "text": "283 downloads"
+        },
+        {
+          "type": "paragraph",
+          "text": "Details"
+        },
+        {
+          "type": "paragraph",
+          "text": "Hoewel het belang van silicium (Si) in de landbouw nog nauwelijks aanvaard is, zal dat veranderen zodra de gevolgen van het toevoegen van Si aan de bodem goed begrepen worden! Vroeger dacht iedereen dat Si niet nodig was, behalve als gewoon bestanddeel van de bodem. Nu wordt het stilaan aanvaard als een belangrijk, gunstig element in planten voor hun goede werking."
+        },
+        {
+          "type": "paragraph",
+          "text": "| | |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| --- | --- |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Talen: | Engels |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Auteur: | Prof. Dirk Van den Berghe |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Vereisten: | PDF-lezer |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Categorie: | Nieuwsartikel |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Licentie: | CC Naamsvermelding-NietCommercieel-GelijkDelen |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Datum: | 13 maart 2012 |"
+        },
+        {
+          "type": "paragraph",
+          "text": "Tags - landbouw, mineralen, voeding, OSA (orthokiezelzuur), planten, silicium, bodem, studie, supplementen"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Geschreven door Moreco"
+        },
+        {
+          "type": "paragraph",
+          "text": "Moreco produceert en verdeelt producten met een gepatenteerde, biologisch actieve en opneembare vorm van silicium voor mens, dier en land- en tuinbouw. Wij bieden ook ecologische desinfectie met waterstofperoxide voor waterzuivering en biologische ziektebestrijding voor landbouw en industrie."
+        }
+      ],
+      "ar": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "أهمية السيليكون"
+        },
+        {
+          "type": "list",
+          "items": [
+            "نُشر في 31 مارس 2013",
+            "بقلم Moreco",
+            "في الأخبار"
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/media/pages/importance-of-silicon.webp"
+        },
+        {
+          "type": "paragraph",
+          "text": "*حوار مع الأستاذ ديرك فان دن بيرغه*"
+        },
+        {
+          "type": "paragraph",
+          "text": "السيليكون: العنصر الغائب"
+        },
+        {
+          "type": "paragraph",
+          "text": "رغم أن أهمية السيليكون (Si) في الزراعة لم تلقَ قبولًا كافيًا بعد، فإنها ستلقاه حين تُفهم نتائج إضافته إلى التربة على وجهها الصحيح! ففي الماضي ظنّ الجميع أن السيليكون غير لازم إلا كمكوّن عادي من مكوّنات التربة. أما اليوم فيُقبل شيئًا فشيئًا بوصفه عنصرًا نافعًا ومهمًا داخل النبات لأداء وظائفه على نحو سليم."
+        },
+        {
+          "type": "paragraph",
+          "text": "السيليكون (Si) هو ثاني أوفر العناصر على سطح الأرض، ويحيط بنا في صورة رمل وطوب بناء وزجاج وغيرها. وهو موجود في كل مكان في التربة والماء. وبفعل التحمّض بحمض الكربونيك والأحماض العضوية التي تنتجها الكائنات الدقيقة في التربة وجذور النبات، تتفكّك السيليكات الموجودة في التربة ببطء لتحرّر حمض الأورثوسيليسيك (OSA) — ‎Si(OH)4‎. وحمض الأورثوسيليسيك ذائب في الماء، ويوجد عادة في التربة بتراكيز منخفضة جدًا. ويتكوّن حمض السيليسيك من جزيء صغير جدًا، وهو نشط بيولوجيًا في صورة OSA فحسب. وتمتصّه النباتات بتراكيز منخفضة جدًا، لكنها تراكيز لها أثر بالغ الأهمية في نمو النبات (وفي صحة الحيوان). فالكائنات الحية تحتاج إلى OSA، لا إلى السيليكات."
+        },
+        {
+          "type": "paragraph",
+          "text": "أهمية السيليكون"
+        },
+        {
+          "type": "paragraph",
+          "text": "interview-professor\\_theimportance of silicon.pdf"
+        },
+        {
+          "type": "paragraph",
+          "text": "93,7 كيبي بايت"
+        },
+        {
+          "type": "paragraph",
+          "text": "283 تحميلًا"
+        },
+        {
+          "type": "paragraph",
+          "text": "التفاصيل"
+        },
+        {
+          "type": "paragraph",
+          "text": "رغم أن أهمية السيليكون (Si) في الزراعة لم تلقَ قبولًا كافيًا بعد، فإنها ستلقاه حين تُفهم نتائج إضافته إلى التربة على وجهها الصحيح! ففي الماضي ظنّ الجميع أن السيليكون غير لازم إلا كمكوّن عادي من مكوّنات التربة. أما اليوم فيُقبل شيئًا فشيئًا بوصفه عنصرًا نافعًا ومهمًا داخل النبات لأداء وظائفه على نحو سليم."
+        },
+        {
+          "type": "paragraph",
+          "text": "| | |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| --- | --- |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| اللغات: | الإنجليزية |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| المؤلف: | الأستاذ ديرك فان دن بيرغه |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| المتطلبات: | قارئ PDF |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| الفئة: | مقال إخباري |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| الرخصة: | CC نسب المصنَّف - غير تجاري - المشاركة بالمثل |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| التاريخ: | 13 مارس 2012 |"
+        },
+        {
+          "type": "paragraph",
+          "text": "وسوم المقال - الزراعة، المعادن، التغذية، حمض الأورثوسيليسيك (OSA)، النباتات، السيليكون، التربة، دراسة، المكمّلات"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "بقلم Moreco"
+        },
+        {
+          "type": "paragraph",
+          "text": "تنتج Moreco وتوزّع منتجات تحتوي على صيغة مسجّلة ببراءة اختراع من السيليكون النشط بيولوجيًا والقابل للامتصاص، للإنسان والحيوان ومنتجات الزراعة والبستنة. كما نوفّر التطهير البيئي ببيروكسيد الهيدروجين لتنقية المياه، والمكافحة البيولوجية للأمراض في الزراعة والصناعات."
+        }
       ]
     }
   },
@@ -339,12 +551,16 @@
     "title": {
       "fr": "Le Potentiel Therapeutique de l'acide silicique",
       "en": "The therapeutic potential of silicic acid",
-      "es": "El potencial terapéutico del ácido silícico"
+      "es": "El potencial terapéutico del ácido silícico",
+      "nl": "Het therapeutische potentieel van kiezelzuur",
+      "ar": "الإمكان العلاجي لحمض السيليسيك"
     },
     "excerpt": {
       "fr": "*Revu par Christopher Exley, The Birchall Centre, Lennard-Jones Laboratories, Keele University, UK*",
       "en": "*Review by Christopher Exley, The Birchall Centre, Lennard-Jones Laboratories, Keele University, UK*",
-      "es": "*Revisión de Christopher Exley, The Birchall Centre, Lennard-Jones Laboratories, Keele University, Reino Unido*"
+      "es": "*Revisión de Christopher Exley, The Birchall Centre, Lennard-Jones Laboratories, Keele University, Reino Unido*",
+      "nl": "*Overzichtsartikel van Christopher Exley, The Birchall Centre, Lennard-Jones Laboratories, Keele University, VK*",
+      "ar": "*مراجعة بقلم كريستوفر إكسلي، مركز بيرشال، مختبرات لينارد-جونز، جامعة كيل، المملكة المتحدة*"
     },
     "blocks": {
       "fr": [
@@ -670,6 +886,222 @@
           "type": "paragraph",
           "text": "Moreco produce y distribuye productos con una forma de silicio patentada, biológicamente activa y absorbible, destinados a las personas, a los animales y a la agricultura y la horticultura. Ofrecemos asimismo desinfección ecológica con peróxido de hidrógeno para la purificación del agua y el control biológico de enfermedades en la agricultura y la industria."
         }
+      ],
+      "nl": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Het therapeutische potentieel van kiezelzuur"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Gepubliceerd op 30 juni 2011",
+            "Door Moreco",
+            "In Nieuws"
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/media/pages/therapeutic-potential-of-silicic-acid.webp"
+        },
+        {
+          "type": "paragraph",
+          "text": "*Overzichtsartikel van Christopher Exley, The Birchall Centre, Lennard-Jones Laboratories, Keele University, VK*"
+        },
+        {
+          "type": "paragraph",
+          "text": "Beschouwingen over en recente inzichten in het mechanisme van de vorming van hydroxyaluminosilicaten en het therapeutische potentieel van kiezelzuur."
+        },
+        {
+          "type": "paragraph",
+          "text": "De chemie van mono- of orthokiezelzuur (Si(OH)4) komt in de meeste chemieteksten nauwelijks aan bod. Doorgaans wordt alleen de autocondensatie tot gehydrateerde amorfe silica vermeld, en de reactie met ammoniummolybdaat tot het molybdokiezelzuurcomplex. Voortaan moet ook verwezen worden naar de unieke anorganische chemie met aluminium (Al), en specifiek met aluminiumhydroxide (Al(OH)3(s)), bij de vorming van hydroxyaluminosilicaten (HAS(s)). De competitieve condensatie of substitutie van Si(OH)4 in een raamwerk van Al(OH)3(s) leidt tot de vorming van hetzij HASA, hetzij HASB."
+        },
+        {
+          "type": "paragraph",
+          "text": "Welk type HAS(s) overheerst, hangt af van de Si:Al-verhouding in de bereidingsoplossingen, waarbij de vorming van"
+        },
+        {
+          "type": "paragraph",
+          "text": "HASB een tweevoudig overschot aan Si(OH)4 ten opzichte van Al vereist. De Si:Al-verhouding van HASA is 0,5, en het bestaan van HASA is een voorwaarde voor de vorming van HASB, waarin de Si:Al-verhouding 1,0 bedraagt. HASA bestaat uitsluitend uit octaëdrisch gecoördineerd Al, AlVI, terwijl HASB bestaat uit gelijke hoeveelheden AlVI en tetraëdrisch gecoördineerd Al, AlIV, en gevormd wordt door een door Si(OH)4 aangedreven dehydroxylatiereactie. HAS(s) zijn aanzienlijk ‘kinetisch’ stabieler dan Al(OH)3 (amorf); voorspeld wordt dat HASB overheerst bij pH > 4,0 en [Si(OH)4] > 0,1 mmol/l. HAS(s) zijn cruciale secundaire mineraalfasen in de biogeochemische cyclus van Al en Si(OH)4, en de vorming ervan heeft een grote rol gespeeld in het uitsluiten van Al3+ (aq) uit de biochemische evolutie. Naar verwachting zullen Si(OH)4 en de vorming van HAS(s) in de toekomst van groot belang zijn om de mens te beschermen tegen een mogelijk toenemende blootstelling aan biologisch beschikbaar Al."
+        },
+        {
+          "type": "paragraph",
+          "text": "Silicic And Aluminum Exley 2012"
+        },
+        {
+          "type": "paragraph",
+          "text": "silicic-acid-and-aluminum-exley-2012.pdf"
+        },
+        {
+          "type": "paragraph",
+          "text": "500,7 KiB"
+        },
+        {
+          "type": "paragraph",
+          "text": "169 downloads"
+        },
+        {
+          "type": "paragraph",
+          "text": "Details"
+        },
+        {
+          "type": "paragraph",
+          "text": "Beschouwingen over en recente inzichten in het mechanisme van de vorming van hydroxyaluminosilicaten en het therapeutische potentieel van kiezelzuur."
+        },
+        {
+          "type": "paragraph",
+          "text": "| | |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| --- | --- |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Talen: | Engels |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Auteur: | Christopher Exley, The Birchall Centre, Lennard-Jones Laboratories, Keele University, VK |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Vereisten: | PDF-lezer |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Categorie: | Farmaceutisch-wetenschappelijke studies |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Licentie: | CC Naamsvermelding-NietCommercieel-GelijkDelen |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Datum: | 28 mei 2012 |"
+        },
+        {
+          "type": "paragraph",
+          "text": "Tags - biochemische evolutie, mens, OSA (orthokiezelzuur), oplosbaarheidsregeling, studie"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Geschreven door Moreco"
+        },
+        {
+          "type": "paragraph",
+          "text": "Moreco produceert en verdeelt producten met een gepatenteerde, biologisch actieve en opneembare vorm van silicium voor mens, dier en land- en tuinbouw. Wij bieden ook ecologische desinfectie met waterstofperoxide voor waterzuivering en biologische ziektebestrijding voor landbouw en industrie."
+        }
+      ],
+      "ar": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "الإمكان العلاجي لحمض السيليسيك"
+        },
+        {
+          "type": "list",
+          "items": [
+            "نُشر في 30 يونيو 2011",
+            "بقلم Moreco",
+            "في الأخبار"
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/media/pages/therapeutic-potential-of-silicic-acid.webp"
+        },
+        {
+          "type": "paragraph",
+          "text": "*مراجعة بقلم كريستوفر إكسلي، مركز بيرشال، مختبرات لينارد-جونز، جامعة كيل، المملكة المتحدة*"
+        },
+        {
+          "type": "paragraph",
+          "text": "تأمّلات ورؤى حديثة في آلية تكوّن هيدروكسي ألومينوسيليكات وفي الإمكان العلاجي لحمض السيليسيك."
+        },
+        {
+          "type": "paragraph",
+          "text": "نادرًا ما تتناول معظم كتب الكيمياء كيمياء حمض السيليسيك الأحادي أو الأورثو ‎(Si(OH)4)‎. وغالبًا ما يُكتفى بذكر تكاثفه الذاتي مكوّنًا سيليكا لا متبلورة مُماهاة، وتفاعله مع موليبدات الأمونيوم مكوّنًا معقّد حمض الموليبدوسيليسيك. وينبغي الآن الإشارة إلى كيميائه اللاعضوية الفريدة مع الألومنيوم (Al)، وتحديدًا مع هيدروكسيد الألومنيوم ‎(Al(OH)3(s))‎، في تكوين هيدروكسي ألومينوسيليكات ‎(HAS(s))‎. فالتكاثف التنافسي أو إحلال ‎Si(OH)4‎ داخل هيكل ‎Al(OH)3(s)‎ يؤدي إلى تكوّن إما HASA أو HASB."
+        },
+        {
+          "type": "paragraph",
+          "text": "ويتوقّف أي نوع من ‎HAS(s)‎ يسود على نسبة Si:Al في المحاليل التحضيرية، مع تكوّن"
+        },
+        {
+          "type": "paragraph",
+          "text": "‏HASB الذي يتطلّب فائضًا مضاعفًا من ‎Si(OH)4‎ على Al. ونسبة Si:Al في HASA هي 0,5، ووجود HASA شرط مسبق لتكوّن HASB الذي تبلغ فيه نسبة Si:Al مقدار 1,0. ويتكوّن HASA من ألومنيوم منسّق ثماني السطوح فقط، ‎AlVI‎، بينما يتكوّن HASB من كميات متساوية من ‎AlVI‎ ومن ألومنيوم منسّق رباعي السطوح، ‎AlIV‎، ويتكوّن بتفاعل نزع هيدروكسيل يغذّيه ‎Si(OH)4‎. و‎HAS(s)‎ أكثر ثباتًا «حركيًا» بكثير من ‎Al(OH)3‎ اللامتبلور، ويُتوقّع أن يسود HASB عند ‎pH > 4,0‎ و‎[Si(OH)4] > 0,1 mmol/L‎. و‎HAS(s)‎ أطوار معدنية ثانوية حاسمة في الدورة البيوجيوكيميائية للألومنيوم و‎Si(OH)4‎، وقد أدّى تكوّنها دورًا كبيرًا في إقصاء ‎Al3+ (aq)‎ عن التطوّر الكيميائي الحيوي. ويُتوقّع مستقبلًا أن يكون لـ ‎Si(OH)4‎ ولتكوّن ‎HAS(s)‎ أهمية بالغة في توفير الحماية للإنسان من تعرّض متنامٍ محتمل للألومنيوم المتاح بيولوجيًا."
+        },
+        {
+          "type": "paragraph",
+          "text": "Silicic And Aluminum Exley 2012"
+        },
+        {
+          "type": "paragraph",
+          "text": "silicic-acid-and-aluminum-exley-2012.pdf"
+        },
+        {
+          "type": "paragraph",
+          "text": "500,7 كيبي بايت"
+        },
+        {
+          "type": "paragraph",
+          "text": "169 تحميلًا"
+        },
+        {
+          "type": "paragraph",
+          "text": "التفاصيل"
+        },
+        {
+          "type": "paragraph",
+          "text": "تأمّلات ورؤى حديثة في آلية تكوّن هيدروكسي ألومينوسيليكات وفي الإمكان العلاجي لحمض السيليسيك."
+        },
+        {
+          "type": "paragraph",
+          "text": "| | |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| --- | --- |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| اللغات: | الإنجليزية |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| المؤلف: | كريستوفر إكسلي، مركز بيرشال، مختبرات لينارد-جونز، جامعة كيل، المملكة المتحدة |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| المتطلبات: | قارئ PDF |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| الفئة: | دراسات في العلوم الصيدلية |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| الرخصة: | CC نسب المصنَّف - غير تجاري - المشاركة بالمثل |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| التاريخ: | 28 ماي 2012 |"
+        },
+        {
+          "type": "paragraph",
+          "text": "وسوم المقال - التطوّر الكيميائي الحيوي، الإنسان، حمض الأورثوسيليسيك (OSA)، ضبط الذوبانية، دراسة"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "بقلم Moreco"
+        },
+        {
+          "type": "paragraph",
+          "text": "تنتج Moreco وتوزّع منتجات تحتوي على صيغة مسجّلة ببراءة اختراع من السيليكون النشط بيولوجيًا والقابل للامتصاص، للإنسان والحيوان ومنتجات الزراعة والبستنة. كما نوفّر التطهير البيئي ببيروكسيد الهيدروجين لتنقية المياه، والمكافحة البيولوجية للأمراض في الزراعة والصناعات."
+        }
       ]
     }
   },
@@ -678,12 +1110,16 @@
     "title": {
       "fr": "Etude de la bio-disponibilite de l'AOS",
       "en": "OSA bioavailability cross-over study",
-      "es": "Estudio de la biodisponibilidad del AOS"
+      "es": "Estudio de la biodisponibilidad del AOS",
+      "nl": "Cross-overstudie naar de biobeschikbaarheid van OSA",
+      "ar": "دراسة تقاطعية لإتاحية OSA الحيوية"
     },
     "excerpt": {
       "fr": "l’absorption du silicium par les sujets sains",
       "en": "Absorption of silicon in healthy subjects",
-      "es": "La absorción del silicio en sujetos sanos"
+      "es": "La absorción del silicio en sujetos sanos",
+      "nl": "Opname van silicium bij gezonde proefpersonen",
+      "ar": "امتصاص السيليكون لدى أشخاص أصحّاء"
     },
     "blocks": {
       "fr": [
@@ -1005,6 +1441,214 @@
           "type": "paragraph",
           "text": "Moreco produce y distribuye productos con una forma de silicio patentada, biológicamente activa y absorbible, destinados a las personas, a los animales y a la agricultura y la horticultura. Ofrecemos asimismo desinfección ecológica con peróxido de hidrógeno para la purificación del agua y el control biológico de enfermedades en la agricultura y la industria."
         }
+      ],
+      "nl": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Cross-overstudie naar de biobeschikbaarheid van OSA"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Gepubliceerd op 19 januari 2012",
+            "Door Moreco",
+            "In Nieuws"
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/media/pages/osa-bioavailability.webp"
+        },
+        {
+          "type": "paragraph",
+          "text": "Opname van silicium bij gezonde proefpersonen"
+        },
+        {
+          "type": "paragraph",
+          "text": "Silicium is na zuurstof het meest voorkomende element in de aardkorst. De spreiding van siliciumtekort wijst erop dat Si de botvorming beïnvloedt via de samenstelling van het kraakbeen en uiteindelijk de verkalking ervan. De inname van Si via de voeding werd voor Amerikaanse burgers geschat op 20 tot 50 mg, met een lagere inname bij op dieren gebaseerde voeding en een hogere bij plantaardige voeding. Studies naar de minimale siliciumbehoefte en suppletie-experimenten die de biobeschikbaarheid van verschillende siliciumverbindingen vergelijken, ontbreken echter. Van orthokiezelzuur werd gesuggereerd dat het een belangrijke functie heeft in het siliciummetabolisme; het komt zowel in zoet water als in zeewater voor."
+        },
+        {
+          "type": "paragraph",
+          "text": "Deze monomere vorm van kiezelzuur is stabiel bij verdunde concentraties van ongeveer 10-4M, maar condenseert tot silicagels bij hogere concentraties en lage pH. De opname en de uitscheiding via de urine van Si uit gestabiliseerd orthokiezelzuur (OSA), een gestandaardiseerd plantaardig silica-extract van de Si-accumulerende plant *Equisetum arvense*, en colloïdaal kiezelzuur werden vergeleken in een dubbelblinde studie bij gezonde proefpersonen."
+        },
+        {
+          "type": "paragraph",
+          "text": "Study-OSA-bioavailability-cross-over-study"
+        },
+        {
+          "type": "paragraph",
+          "text": "study-OSA-bioavailability-cross-over-study.pdf"
+        },
+        {
+          "type": "paragraph",
+          "text": "Versie: Metal Ions in Biology and Medicine, vol. 5"
+        },
+        {
+          "type": "paragraph",
+          "text": "886,9 KiB"
+        },
+        {
+          "type": "paragraph",
+          "text": "1101 downloads"
+        },
+        {
+          "type": "paragraph",
+          "text": "Details"
+        },
+        {
+          "type": "paragraph",
+          "text": "De opname en de uitscheiding via de urine van Si uit gestabiliseerd orthokiezelzuur (OSA), een gestandaardiseerd plantaardig silica-extract van de Si-accumulerende plant Equisetum arvense, en colloïdaal kiezelzuur werden vergeleken in een dubbelblinde studie bij gezonde proefpersonen."
+        },
+        {
+          "type": "paragraph",
+          "text": "| | |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| --- | --- |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Talen: | Engels |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Auteur: | M.R. Calomme, Departement Farmaceutische Wetenschappen |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Vereisten: | PDF-lezer |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Categorie: | Farmaceutisch-wetenschappelijke studies |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Licentie: | CC Naamsvermelding-NietCommercieel-GelijkDelen |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Datum: | 19 januari 2012 |"
+        },
+        {
+          "type": "paragraph",
+          "text": "Tags - mens, OSA (orthokiezelzuur), silicium, studie, supplementen"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Geschreven door Moreco"
+        },
+        {
+          "type": "paragraph",
+          "text": "Moreco produceert en verdeelt producten met een gepatenteerde, biologisch actieve en opneembare vorm van silicium voor mens, dier en land- en tuinbouw. Wij bieden ook ecologische desinfectie met waterstofperoxide voor waterzuivering en biologische ziektebestrijding voor landbouw en industrie."
+        }
+      ],
+      "ar": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "دراسة تقاطعية لإتاحية OSA الحيوية"
+        },
+        {
+          "type": "list",
+          "items": [
+            "نُشر في 19 يناير 2012",
+            "بقلم Moreco",
+            "في الأخبار"
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/media/pages/osa-bioavailability.webp"
+        },
+        {
+          "type": "paragraph",
+          "text": "امتصاص السيليكون لدى أشخاص أصحّاء"
+        },
+        {
+          "type": "paragraph",
+          "text": "السيليكون هو، بعد الأكسجين، أوفر العناصر في القشرة الأرضية. ويشير توزّع نقص السيليكون إلى أنه يؤثّر في تكوّن العظم عبر تأثيره في تركيب الغضروف وأخيرًا في تكلّسه. وقد قُدّر المتناول الغذائي من السيليكون لدى مواطني الولايات المتحدة بما بين 20 و50 ملغ، مع متناول أدنى في الحميات القائمة على المنتجات الحيوانية وأعلى في الحميات النباتية. غير أن الدراسات حول الحدّ الأدنى من الاحتياج إلى السيليكون وتجارب التكميل التي تقارن الإتاحية الحيوية لمركّبات السيليكون المختلفة تظلّ غائبة. وقد اقتُرح أن لحمض الأورثوسيليسيك وظيفة مهمة في أيض السيليكون، وهو موجود في الماء العذب وماء البحر معًا."
+        },
+        {
+          "type": "paragraph",
+          "text": "وهذه الصورة الأحادية من حمض السيليسيك مستقرة عند تراكيز مخفّفة تناهز ‎10-4M‎، لكنها تتكاثف إلى هلامات سيليكا عند تراكيز أعلى ودرجات حموضة منخفضة. وقد قُورن امتصاص السيليكون وإطراحه البولي انطلاقًا من حمض الأورثوسيليسيك المستقر (OSA)، ومستخلص سيليكا عشبي معياري من نبات *Equisetum arvense* المراكم للسيليكون، وحمض السيليسيك الغرواني، في دراسة معمّاة مزدوجًا على أشخاص أصحّاء."
+        },
+        {
+          "type": "paragraph",
+          "text": "Study-OSA-bioavailability-cross-over-study"
+        },
+        {
+          "type": "paragraph",
+          "text": "study-OSA-bioavailability-cross-over-study.pdf"
+        },
+        {
+          "type": "paragraph",
+          "text": "النسخة: Metal Ions in Biology and Medicine, vol. 5"
+        },
+        {
+          "type": "paragraph",
+          "text": "886,9 كيبي بايت"
+        },
+        {
+          "type": "paragraph",
+          "text": "1101 تحميل"
+        },
+        {
+          "type": "paragraph",
+          "text": "التفاصيل"
+        },
+        {
+          "type": "paragraph",
+          "text": "قُورن امتصاص السيليكون وإطراحه البولي انطلاقًا من حمض الأورثوسيليسيك المستقر (OSA)، ومستخلص سيليكا عشبي معياري من نبات Equisetum arvense المراكم للسيليكون، وحمض السيليسيك الغرواني، في دراسة معمّاة مزدوجًا على أشخاص أصحّاء."
+        },
+        {
+          "type": "paragraph",
+          "text": "| | |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| --- | --- |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| اللغات: | الإنجليزية |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| المؤلف: | م. ر. كالوم، قسم العلوم الصيدلية |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| المتطلبات: | قارئ PDF |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| الفئة: | دراسات في العلوم الصيدلية |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| الرخصة: | CC نسب المصنَّف - غير تجاري - المشاركة بالمثل |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| التاريخ: | 19 يناير 2012 |"
+        },
+        {
+          "type": "paragraph",
+          "text": "وسوم المقال - الإنسان، حمض الأورثوسيليسيك (OSA)، السيليكون، دراسة، المكمّلات"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "بقلم Moreco"
+        },
+        {
+          "type": "paragraph",
+          "text": "تنتج Moreco وتوزّع منتجات تحتوي على صيغة مسجّلة ببراءة اختراع من السيليكون النشط بيولوجيًا والقابل للامتصاص، للإنسان والحيوان ومنتجات الزراعة والبستنة. كما نوفّر التطهير البيئي ببيروكسيد الهيدروجين لتنقية المياه، والمكافحة البيولوجية للأمراض في الزراعة والصناعات."
+        }
       ]
     }
   },
@@ -1013,12 +1657,16 @@
     "title": {
       "fr": "Nutrition foliare: Faits, Mythes et Perspectives",
       "en": "Foliar nutrition of crops: Facts, Myths and Perspectives",
-      "es": "Nutrición foliar: hechos, mitos y perspectivas"
+      "es": "Nutrición foliar: hechos, mitos y perspectivas",
+      "nl": "Bladvoeding van gewassen: feiten, mythes en perspectieven",
+      "ar": "التغذية الورقية للمحاصيل: حقائق وأساطير وآفاق"
     },
     "excerpt": {
       "fr": "Les engrais foliaires sont de plus en plus utilisés dans l’agriculture et de nouveaux produits commerciaux sont continuellement produits par les fabricants d’engrais en raison de la demande croissante. Il est en effet des preuves abondantes montrant les effets bénéfiques de l’application des engrais foliaires comme une stratégie complémentaire pour le traitement des sols en termes d’amélioration de métabolisme de la plante, du rendement et de la qualité des cultures. Cependant, le manque actuel de connaissances scientifiques sur de nombreux facteurs associés à l’efficacité des traitements foliaires limite la reproductibilité des résultats après la pulvérisation d’engrais de différentes cultures dans différentes conditions de culture. En outre, le transfert limité de savoir-faire technique de la communauté de l’absorption foliaire scientifique au secteur agricole soutient l’attitude sortant appliquer et prier » lors de l’application d’un traitement de la nutrition foliaire à une culture (c’est à dire, tout peut arriver).",
       "en": "Foliar fertilisers are increasingly used in agriculture and new commercial products are continuously released by fertiliser companies as a result of the increasing demand. There is indeed abundant evidence showing the beneficial effects of applying foliar fertilisers as a complementary strategy to soil treatments in terms of improved plant metabolism, yields and quality of crops. However, the current lack of scientific knowledge on many factors associated with the effectiveness of foliar treatments limits the reproducibility of the results after spraying fertilisers to different crops under different growing conditions. Additionally, the limited transfer of technical know-how from the scientific foliar uptake community to the agricultural sector supports the exiting “spray and pray” attitude when applying a foliar nutrition treatment to a crop (i.e., anything may happen).",
-      "es": "Los fertilizantes foliares se utilizan cada vez más en la agricultura y los fabricantes lanzan continuamente nuevos productos comerciales para atender una demanda creciente. Existen, en efecto, pruebas abundantes de los efectos beneficiosos de la aplicación de fertilizantes foliares como estrategia complementaria al tratamiento del suelo, en términos de mejora del metabolismo de la planta, del rendimiento y de la calidad de las cosechas. Sin embargo, la falta actual de conocimiento científico sobre muchos de los factores asociados a la eficacia de los tratamientos foliares limita la reproducibilidad de los resultados tras la pulverización de fertilizantes en distintos cultivos y bajo distintas condiciones. Además, la escasa transferencia de conocimiento técnico desde la comunidad científica que estudia la absorción foliar hacia el sector agrícola alimenta la actitud de «aplicar y rezar» al tratar un cultivo con nutrición foliar (es decir, puede ocurrir cualquier cosa)."
+      "es": "Los fertilizantes foliares se utilizan cada vez más en la agricultura y los fabricantes lanzan continuamente nuevos productos comerciales para atender una demanda creciente. Existen, en efecto, pruebas abundantes de los efectos beneficiosos de la aplicación de fertilizantes foliares como estrategia complementaria al tratamiento del suelo, en términos de mejora del metabolismo de la planta, del rendimiento y de la calidad de las cosechas. Sin embargo, la falta actual de conocimiento científico sobre muchos de los factores asociados a la eficacia de los tratamientos foliares limita la reproducibilidad de los resultados tras la pulverización de fertilizantes en distintos cultivos y bajo distintas condiciones. Además, la escasa transferencia de conocimiento técnico desde la comunidad científica que estudia la absorción foliar hacia el sector agrícola alimenta la actitud de «aplicar y rezar» al tratar un cultivo con nutrición foliar (es decir, puede ocurrir cualquier cosa).",
+      "nl": "Bladmeststoffen worden steeds vaker in de landbouw gebruikt, en meststoffenbedrijven brengen door de groeiende vraag voortdurend nieuwe commerciële producten op de markt. Er is inderdaad overvloedig bewijs voor de gunstige effecten van bladbemesting als aanvullende strategie op bodembehandelingen, op het vlak van plantenmetabolisme, opbrengst en gewaskwaliteit. Het huidige gebrek aan wetenschappelijke kennis over veel factoren die de doeltreffendheid van bladbehandelingen bepalen, beperkt echter de reproduceerbaarheid van de resultaten na het spuiten van meststoffen op verschillende gewassen en onder verschillende teeltomstandigheden. Daarbij komt dat de beperkte overdracht van technische knowhow van de wetenschappelijke wereld rond bladopname naar de landbouwsector de bestaande “spray and pray”-houding in stand houdt bij het toepassen van een bladvoedingsbehandeling op een gewas (met andere woorden: alles kan gebeuren).",
+      "ar": "تُستعمل الأسمدة الورقية على نحو متزايد في الزراعة، وتطرح شركات الأسمدة منتجات تجارية جديدة باستمرار نتيجة تنامي الطلب. وهناك بالفعل أدلة وافرة على الآثار النافعة لتطبيق الأسمدة الورقية بوصفها استراتيجية مكمّلة لمعالجات التربة، من حيث تحسين أيض النبات والمردود وجودة المحاصيل. غير أن النقص الحالي في المعرفة العلمية بكثير من العوامل المرتبطة بفعالية المعالجات الورقية يحدّ من قابلية إعادة إنتاج النتائج بعد رشّ الأسمدة على محاصيل مختلفة وفي ظروف نمو مختلفة. يُضاف إلى ذلك أن ضعف نقل الدراية التقنية من مجتمع البحث في الامتصاص الورقي إلى القطاع الفلاحي يغذّي موقف «رُشّ وادعُ» عند تطبيق معالجة تغذية ورقية على محصول (أي: كل شيء وارد)."
     },
     "blocks": {
       "fr": [
@@ -1344,6 +1992,222 @@
           "type": "paragraph",
           "text": "Moreco produce y distribuye productos con una forma de silicio patentada, biológicamente activa y absorbible, destinados a las personas, a los animales y a la agricultura y la horticultura. Ofrecemos asimismo desinfección ecológica con peróxido de hidrógeno para la purificación del agua y el control biológico de enfermedades en la agricultura y la industria."
         }
+      ],
+      "nl": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Bladvoeding van gewassen: feiten, mythes en perspectieven"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Gepubliceerd op 27 maart 2013",
+            "Door Moreco",
+            "In Nieuws"
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/media/pages/spraying-fact-or-fable.webp"
+        },
+        {
+          "type": "paragraph",
+          "text": "Bladmeststoffen worden steeds vaker in de landbouw gebruikt, en meststoffenbedrijven brengen door de groeiende vraag voortdurend nieuwe commerciële producten op de markt. Er is inderdaad overvloedig bewijs voor de gunstige effecten van bladbemesting als aanvullende strategie op bodembehandelingen, op het vlak van plantenmetabolisme, opbrengst en gewaskwaliteit. Het huidige gebrek aan wetenschappelijke kennis over veel factoren die de doeltreffendheid van bladbehandelingen bepalen, beperkt echter de reproduceerbaarheid van de resultaten na het spuiten van meststoffen op verschillende gewassen en onder verschillende teeltomstandigheden. Daarbij komt dat de beperkte overdracht van technische knowhow van de wetenschappelijke wereld rond bladopname naar de landbouwsector de bestaande “spray and pray”-houding in stand houdt bij het toepassen van een bladvoedingsbehandeling op een gewas (met andere woorden: alles kan gebeuren)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Daarom rijzen, in het licht van het huidige landschap van de bladbemesting, de volgende vragen:"
+        },
+        {
+          "type": "paragraph",
+          "text": "1. welke feiten over bladbemesting zijn voor onderzoekers vandaag duidelijk?,"
+        },
+        {
+          "type": "paragraph",
+          "text": "2. welke traditionele opvattingen helpen niet om de doeltreffendheid van een bladbehandeling te verzekeren?, en"
+        },
+        {
+          "type": "paragraph",
+          "text": "3. wat is de toekomst van bladbemesting?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Agronomics 2013 03 Foliar Spray"
+        },
+        {
+          "type": "paragraph",
+          "text": "agronomics201303-foliar-spray.pdf"
+        },
+        {
+          "type": "paragraph",
+          "text": "400,0 KiB"
+        },
+        {
+          "type": "paragraph",
+          "text": "247 downloads"
+        },
+        {
+          "type": "paragraph",
+          "text": "Details"
+        },
+        {
+          "type": "paragraph",
+          "text": "Zij behandelt de antwoorden op enkele van deze vragen in wetenschappelijke en toegepaste termen en benadrukt het grote marktpotentieel en het nut van bladbemesting als een meer doelgerichte, duurzame en milieuvriendelijke aanvullende bemestingsmethode."
+        },
+        {
+          "type": "paragraph",
+          "text": "| | |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| --- | --- |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Talen: | Engels |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Auteur: | Dr. Victoria Fernández, van de onderzoeksgroep Bosgenetica en Eco-fysiologie, School of Forest Engineering aan de Technische Universiteit van Madrid |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Vereisten: | PDF-lezer |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Categorie: | Landbouwkundige studies |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Licentie: | CC Naamsvermelding-NietCommercieel-GelijkDelen |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Datum: | 19 maart 2013 |"
+        },
+        {
+          "type": "paragraph",
+          "text": "Tags - landbouw, gewassen, doeltreffende bladbehandeling, milieuvriendelijk, meststoffen, bladvoeding, hogere plantopbrengst"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Geschreven door Moreco"
+        },
+        {
+          "type": "paragraph",
+          "text": "Moreco produceert en verdeelt producten met een gepatenteerde, biologisch actieve en opneembare vorm van silicium voor mens, dier en land- en tuinbouw. Wij bieden ook ecologische desinfectie met waterstofperoxide voor waterzuivering en biologische ziektebestrijding voor landbouw en industrie."
+        }
+      ],
+      "ar": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "التغذية الورقية للمحاصيل: حقائق وأساطير وآفاق"
+        },
+        {
+          "type": "list",
+          "items": [
+            "نُشر في 27 مارس 2013",
+            "بقلم Moreco",
+            "في الأخبار"
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/media/pages/spraying-fact-or-fable.webp"
+        },
+        {
+          "type": "paragraph",
+          "text": "تُستعمل الأسمدة الورقية على نحو متزايد في الزراعة، وتطرح شركات الأسمدة منتجات تجارية جديدة باستمرار نتيجة تنامي الطلب. وهناك بالفعل أدلة وافرة على الآثار النافعة لتطبيق الأسمدة الورقية بوصفها استراتيجية مكمّلة لمعالجات التربة، من حيث تحسين أيض النبات والمردود وجودة المحاصيل. غير أن النقص الحالي في المعرفة العلمية بكثير من العوامل المرتبطة بفعالية المعالجات الورقية يحدّ من قابلية إعادة إنتاج النتائج بعد رشّ الأسمدة على محاصيل مختلفة وفي ظروف نمو مختلفة. يُضاف إلى ذلك أن ضعف نقل الدراية التقنية من مجتمع البحث في الامتصاص الورقي إلى القطاع الفلاحي يغذّي موقف «رُشّ وادعُ» عند تطبيق معالجة تغذية ورقية على محصول (أي: كل شيء وارد)."
+        },
+        {
+          "type": "paragraph",
+          "text": "ومن ثمّ، وفي ضوء المشهد الحالي للتسميد الورقي، تُطرح الأسئلة التالية:"
+        },
+        {
+          "type": "paragraph",
+          "text": "1. ما حقائق التسميد الورقي الواضحة اليوم لدى الباحثين؟"
+        },
+        {
+          "type": "paragraph",
+          "text": "2. وما نوع المعتقدات المتوارثة التي لا تساعد على ضمان فعالية معالجة ورقية؟"
+        },
+        {
+          "type": "paragraph",
+          "text": "3. وما مستقبل التسميد الورقي؟"
+        },
+        {
+          "type": "paragraph",
+          "text": "Agronomics 2013 03 Foliar Spray"
+        },
+        {
+          "type": "paragraph",
+          "text": "agronomics201303-foliar-spray.pdf"
+        },
+        {
+          "type": "paragraph",
+          "text": "400,0 كيبي بايت"
+        },
+        {
+          "type": "paragraph",
+          "text": "247 تحميلًا"
+        },
+        {
+          "type": "paragraph",
+          "text": "التفاصيل"
+        },
+        {
+          "type": "paragraph",
+          "text": "وهي تتناول الإجابات عن بعض هذه الأسئلة بمصطلحات علمية وتطبيقية، مؤكّدة الإمكان السوقي الكبير والفائدة الكبيرة لرشّ المغذيات ورقيًا بوصفه طريقة تسميد تكميلية أكثر استهدافًا واستدامة وصداقة للبيئة."
+        },
+        {
+          "type": "paragraph",
+          "text": "| | |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| --- | --- |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| اللغات: | الإنجليزية |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| المؤلف: | الدكتورة فيكتوريا فرنانديز، من فريق بحث الوراثة الحرجية والفيزيولوجيا البيئية، مدرسة الهندسة الغابوية بجامعة مدريد التقنية |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| المتطلبات: | قارئ PDF |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| الفئة: | دراسات زراعية |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| الرخصة: | CC نسب المصنَّف - غير تجاري - المشاركة بالمثل |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| التاريخ: | 19 مارس 2013 |"
+        },
+        {
+          "type": "paragraph",
+          "text": "وسوم المقال - الزراعة، المحاصيل، المعالجة الورقية الفعّالة، صديق للبيئة، الأسمدة، التغذية الورقية، تحسين مردود النبات"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "بقلم Moreco"
+        },
+        {
+          "type": "paragraph",
+          "text": "تنتج Moreco وتوزّع منتجات تحتوي على صيغة مسجّلة ببراءة اختراع من السيليكون النشط بيولوجيًا والقابل للامتصاص، للإنسان والحيوان ومنتجات الزراعة والبستنة. كما نوفّر التطهير البيئي ببيروكسيد الهيدروجين لتنقية المياه، والمكافحة البيولوجية للأمراض في الزراعة والصناعات."
+        }
       ]
     }
   },
@@ -1352,12 +2216,16 @@
     "title": {
       "fr": "l'Impact de l'Agriculture sur le cycle biogeochimique de Si",
       "en": "Impact of agriculture on the Si biogeochemical cycle",
-      "es": "El impacto de la agricultura en el ciclo biogeoquímico del Si"
+      "es": "El impacto de la agricultura en el ciclo biogeoquímico del Si",
+      "nl": "Impact van de landbouw op de biogeochemische Si-cyclus",
+      "ar": "أثر الزراعة في الدورة البيوجيوكيميائية للسيليكون"
     },
     "excerpt": {
       "fr": "Les cycles de C et Si sont étroitement liées à l’altération des silicates. Dans les deux cycles, les plantes terrestres apportent une contribution importante au budget de l’altération et de la formation des sols. La perturbation du cycle terrestre de Si par l’exploitation humaine est devenue un vrai defi en raison de l’impact possible sur l’équilibre des écosystèmes aquatiques et de la durabilité de l’agriculture.",
       "en": "The cycles of C and Si are closely related to the weathering of silicates. In both cycles, terrestrial plants make significant contributions to the weathering budget and soil formation. The perturbation of the terrestrial Si cycle by human occupation has become a challenging issue because of possible impact on the equilibrium of aquatic ecosystems and agriculture sustainability. The recycling of Si stored in plants as phytoliths may control the Si cycle in the short-term. A review of the recent literature shows that the biogeochemical cycling of Si that is generally not impacted by atmospheric input or fertilisation, is significantly altered by agriculture through the depletion of the phytoliths pool.",
-      "es": "Los ciclos del C y del Si están estrechamente ligados a la meteorización de los silicatos. En ambos ciclos, las plantas terrestres aportan una contribución importante al balance de la meteorización y a la formación de los suelos. La perturbación del ciclo terrestre del Si por la explotación humana se ha convertido en un verdadero reto, por su posible impacto en el equilibrio de los ecosistemas acuáticos y en la sostenibilidad de la agricultura."
+      "es": "Los ciclos del C y del Si están estrechamente ligados a la meteorización de los silicatos. En ambos ciclos, las plantas terrestres aportan una contribución importante al balance de la meteorización y a la formación de los suelos. La perturbación del ciclo terrestre del Si por la explotación humana se ha convertido en un verdadero reto, por su posible impacto en el equilibrio de los ecosistemas acuáticos y en la sostenibilidad de la agricultura.",
+      "nl": "De cycli van C en Si hangen nauw samen met de verwering van silicaten. In beide cycli leveren landplanten een belangrijke bijdrage aan de verweringsbalans en de bodemvorming. De verstoring van de terrestrische Si-cyclus door menselijke activiteit is een lastig vraagstuk geworden, wegens de mogelijke impact op het evenwicht van aquatische ecosystemen en op de duurzaamheid van de landbouw. De recyclage van Si dat als fytolieten in planten is opgeslagen, kan de Si-cyclus op korte termijn sturen. Een overzicht van de recente literatuur toont aan dat de biogeochemische Si-cyclus, die doorgaans niet beïnvloed wordt door atmosferische aanvoer of bemesting, door de landbouw significant wordt gewijzigd via de uitputting van de fytolietvoorraad.",
+      "ar": "ترتبط دورتا الكربون والسيليكون ارتباطًا وثيقًا بتجوية السيليكات. وفي كلتا الدورتين تسهم النباتات البرية إسهامًا كبيرًا في ميزان التجوية وتكوّن التربة. وقد غدا اضطراب دورة السيليكون البرية بفعل الاستغلال البشري قضية شائكة لما له من أثر محتمل في توازن النظم البيئية المائية وفي استدامة الزراعة. وقد تضبط إعادة تدوير السيليكون المخزّن في النبات على شكل فيتوليث دورةَ السيليكون على المدى القصير. وتُظهر مراجعة الأدبيات الحديثة أن الدورة البيوجيوكيميائية للسيليكون، التي لا تتأثر عمومًا بالمدخلات الجوية ولا بالتسميد، تتغيّر تغيّرًا دالًّا بفعل الزراعة عبر استنزاف مخزون الفيتوليث."
     },
     "blocks": {
       "fr": [
@@ -1655,6 +2523,198 @@
           "type": "paragraph",
           "text": "Moreco produce y distribuye productos con una forma de silicio patentada, biológicamente activa y absorbible, destinados a las personas, a los animales y a la agricultura y la horticultura. Ofrecemos asimismo desinfección ecológica con peróxido de hidrógeno para la purificación del agua y el control biológico de enfermedades en la agricultura y la industria."
         }
+      ],
+      "nl": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Impact van de landbouw op de biogeochemische Si-cyclus"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Gepubliceerd op 20 november 2012",
+            "Door Moreco",
+            "In Nieuws"
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/media/pages/impact-of-agriculture-on-the-si-biogeochemical-cycle.webp"
+        },
+        {
+          "type": "paragraph",
+          "text": "De cycli van C en Si hangen nauw samen met de verwering van silicaten. In beide cycli leveren landplanten een belangrijke bijdrage aan de verweringsbalans en de bodemvorming. De verstoring van de terrestrische Si-cyclus door menselijke activiteit is een lastig vraagstuk geworden, wegens de mogelijke impact op het evenwicht van aquatische ecosystemen en op de duurzaamheid van de landbouw. De recyclage van Si dat als fytolieten in planten is opgeslagen, kan de Si-cyclus op korte termijn sturen. Een overzicht van de recente literatuur toont aan dat de biogeochemische Si-cyclus, die doorgaans niet beïnvloed wordt door atmosferische aanvoer of bemesting, door de landbouw significant wordt gewijzigd via de uitputting van de fytolietvoorraad."
+        },
+        {
+          "type": "paragraph",
+          "text": "Wij presenteren hier nieuwe aanwijzingen dat de afvoer van stro binnen tien jaar kan leiden tot uitputting van de fytolietvoorraad in de bodem. Om de huidige siliciumgehalten in gewassen op peil te houden, kan de bijdrage van andere bodemsilicaten, zoals kleimineralen, aan de voor planten beschikbare silicavoorraad een sleutelparameter worden wanneer stro wordt afgevoerd."
+        },
+        {
+          "type": "paragraph",
+          "text": "Impact van de landbouw op de biogeochemische Si-cyclus"
+        },
+        {
+          "type": "paragraph",
+          "text": "silicon-cycle-and-agriculture-2012.pdf"
+        },
+        {
+          "type": "paragraph",
+          "text": "484,2 KiB"
+        },
+        {
+          "type": "paragraph",
+          "text": "3165 downloads"
+        },
+        {
+          "type": "paragraph",
+          "text": "Details"
+        },
+        {
+          "type": "paragraph",
+          "text": "Wij presenteren hier nieuwe aanwijzingen dat de afvoer van stro binnen tien jaar kan leiden tot uitputting van de fytolietvoorraad in de bodem. Om de huidige siliciumgehalten in gewassen op peil te houden, kan de bijdrage van andere bodemsilicaten, zoals kleimineralen, aan de voor planten beschikbare silicavoorraad een sleutelparameter worden wanneer stro wordt afgevoerd."
+        },
+        {
+          "type": "paragraph",
+          "text": "| | |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| --- | --- |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Talen: | Engels |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Auteur: | Comptes Rendus Geoscience |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Vereisten: | PDF-lezer |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Categorie: | Landbouwkundige studies |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Licentie: | CC Naamsvermelding-NietCommercieel-GelijkDelen |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Datum: | 23 april 2012 |"
+        },
+        {
+          "type": "paragraph",
+          "text": "Tags - duurzaamheid van de landbouw, biogeochemische cyclus, gewassen, meststoffen, mineralen, fytolieten, plantopname, silicium, bodem, verwering"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Geschreven door Moreco"
+        },
+        {
+          "type": "paragraph",
+          "text": "Moreco produceert en verdeelt producten met een gepatenteerde, biologisch actieve en opneembare vorm van silicium voor mens, dier en land- en tuinbouw. Wij bieden ook ecologische desinfectie met waterstofperoxide voor waterzuivering en biologische ziektebestrijding voor landbouw en industrie."
+        }
+      ],
+      "ar": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "أثر الزراعة في الدورة البيوجيوكيميائية للسيليكون"
+        },
+        {
+          "type": "list",
+          "items": [
+            "نُشر في 20 نونبر 2012",
+            "بقلم Moreco",
+            "في الأخبار"
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/media/pages/impact-of-agriculture-on-the-si-biogeochemical-cycle.webp"
+        },
+        {
+          "type": "paragraph",
+          "text": "ترتبط دورتا الكربون والسيليكون ارتباطًا وثيقًا بتجوية السيليكات. وفي كلتا الدورتين تسهم النباتات البرية إسهامًا كبيرًا في ميزان التجوية وتكوّن التربة. وقد غدا اضطراب دورة السيليكون البرية بفعل الاستغلال البشري قضية شائكة لما له من أثر محتمل في توازن النظم البيئية المائية وفي استدامة الزراعة. وقد تضبط إعادة تدوير السيليكون المخزّن في النبات على شكل فيتوليث دورةَ السيليكون على المدى القصير. وتُظهر مراجعة الأدبيات الحديثة أن الدورة البيوجيوكيميائية للسيليكون، التي لا تتأثر عمومًا بالمدخلات الجوية ولا بالتسميد، تتغيّر تغيّرًا دالًّا بفعل الزراعة عبر استنزاف مخزون الفيتوليث."
+        },
+        {
+          "type": "paragraph",
+          "text": "نقدّم هنا أدلة جديدة على أن تصدير التبن قد يؤدي إلى استنزاف مخزون الفيتوليث في التربة خلال عشر سنوات. وللحفاظ على المستويات الحالية من السيليكون في المحاصيل، قد تصبح مساهمة سيليكات أخرى في التربة، كمعادن الطين، في مخزون السيليكا المتاحة للنبات معطًى أساسيًا حين يُصدَّر التبن."
+        },
+        {
+          "type": "paragraph",
+          "text": "أثر الزراعة في الدورة البيوجيوكيميائية للسيليكون"
+        },
+        {
+          "type": "paragraph",
+          "text": "silicon-cycle-and-agriculture-2012.pdf"
+        },
+        {
+          "type": "paragraph",
+          "text": "484,2 كيبي بايت"
+        },
+        {
+          "type": "paragraph",
+          "text": "3165 تحميلًا"
+        },
+        {
+          "type": "paragraph",
+          "text": "التفاصيل"
+        },
+        {
+          "type": "paragraph",
+          "text": "نقدّم هنا أدلة جديدة على أن تصدير التبن قد يؤدي إلى استنزاف مخزون الفيتوليث في التربة خلال عشر سنوات. وللحفاظ على المستويات الحالية من السيليكون في المحاصيل، قد تصبح مساهمة سيليكات أخرى في التربة، كمعادن الطين، في مخزون السيليكا المتاحة للنبات معطًى أساسيًا حين يُصدَّر التبن."
+        },
+        {
+          "type": "paragraph",
+          "text": "| | |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| --- | --- |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| اللغات: | الإنجليزية |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| المؤلف: | Comptes Rendus Geoscience |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| المتطلبات: | قارئ PDF |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| الفئة: | دراسات زراعية |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| الرخصة: | CC نسب المصنَّف - غير تجاري - المشاركة بالمثل |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| التاريخ: | 23 أبريل 2012 |"
+        },
+        {
+          "type": "paragraph",
+          "text": "وسوم المقال - استدامة الزراعة، الدورة البيوجيوكيميائية، المحاصيل، الأسمدة، المعادن، الفيتوليث، امتصاص النبات، السيليكون، التربة، التجوية"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "بقلم Moreco"
+        },
+        {
+          "type": "paragraph",
+          "text": "تنتج Moreco وتوزّع منتجات تحتوي على صيغة مسجّلة ببراءة اختراع من السيليكون النشط بيولوجيًا والقابل للامتصاص، للإنسان والحيوان ومنتجات الزراعة والبستنة. كما نوفّر التطهير البيئي ببيروكسيد الهيدروجين لتنقية المياه، والمكافحة البيولوجية للأمراض في الزراعة والصناعات."
+        }
       ]
     }
   },
@@ -1663,12 +2723,16 @@
     "title": {
       "fr": "la Nutrition et les Cheveux: Deficiences et Supplements",
       "en": "Nutrition and Hair: Deficiencies and Supplements",
-      "es": "Nutrición y cabello: carencias y suplementos"
+      "es": "Nutrición y cabello: carencias y suplementos",
+      "nl": "Voeding en haar: tekorten en supplementen",
+      "ar": "التغذية والشعر: أوجه النقص والمكمّلات"
     },
     "excerpt": {
       "fr": "*Interview par Andreas M. Finner MD,Dermatologue*",
       "en": "*Interview by Andreas M. Finner MD,Dermatologic Clinics*",
-      "es": "*Entrevista con el Dr. Andreas M. Finner, dermatólogo*"
+      "es": "*Entrevista con el Dr. Andreas M. Finner, dermatólogo*",
+      "nl": "*Interview met Andreas M. Finner, MD, Dermatologic Clinics*",
+      "ar": "*حوار مع الدكتور أندرياس م. فينر، Dermatologic Clinics*"
     },
     "blocks": {
       "fr": [
@@ -1970,6 +3034,206 @@
           "type": "paragraph",
           "text": "Moreco produce y distribuye productos con una forma de silicio patentada, biológicamente activa y absorbible, destinados a las personas, a los animales y a la agricultura y la horticultura. Ofrecemos asimismo desinfección ecológica con peróxido de hidrógeno para la purificación del agua y el control biológico de enfermedades en la agricultura y la industria."
         }
+      ],
+      "nl": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Voeding en haar: tekorten en supplementen"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Gepubliceerd op 28 mei 2013",
+            "Door Moreco",
+            "In Nieuws"
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/media/pages/hair-loss-study1.webp"
+        },
+        {
+          "type": "paragraph",
+          "text": "*Interview met Andreas M. Finner, MD, Dermatologic Clinics*"
+        },
+        {
+          "type": "paragraph",
+          "text": "Cellen van de haarfollikel hebben een hoge omzet. Hun actieve stofwisseling vraagt een goede aanvoer van voedingsstoffen en energie. Een calorietekort of een tekort aan verschillende bestanddelen, zoals eiwitten, mineralen, essentiële vetzuren en vitaminen, veroorzaakt door aangeboren afwijkingen of een verminderde opname, kan leiden tot structurele afwijkingen, pigmentveranderingen of haarverlies, hoewel exacte gegevens vaak ontbreken. Gecombineerde tekorten zijn niet ongewoon, zeker bij ondervoeding."
+        },
+        {
+          "type": "paragraph",
+          "text": "In ontwikkelde landen zijn haargroeistoornissen door voedingstekorten bij gezonde personen zeldzaam en worden ze door patiënten en artsen doorgaans overschat, vooral wat vitaminen betreft. Nationale en internationale instellingen hebben aanbevolen dagelijkse hoeveelheden vastgesteld voor veel voedingsbestanddelen. In de Verenigde Staten hebben de National Institutes of Health aanbevelingen gepubliceerd voor de dagelijkse referentie-inname van micro- en macronutriënten, en voor de maximale dagelijkse inname die waarschijnlijk geen nadelige effecten veroorzaakt. Voedingssupplementen worden van oudsher aspecifiek gebruikt om de haargroei te verbeteren; slechts enkele daarvan zijn systematisch onderzocht bij dier en mens."
+        },
+        {
+          "type": "paragraph",
+          "text": "Voeding en haar: tekorten en supplementen"
+        },
+        {
+          "type": "paragraph",
+          "text": "OSA AND HAIR 2013.pdf"
+        },
+        {
+          "type": "paragraph",
+          "text": "127,4 KiB"
+        },
+        {
+          "type": "paragraph",
+          "text": "273 downloads"
+        },
+        {
+          "type": "paragraph",
+          "text": "Details"
+        },
+        {
+          "type": "paragraph",
+          "text": "Een calorietekort of een tekort aan verschillende bestanddelen, zoals eiwitten, mineralen, essentiële vetzuren en vitaminen, veroorzaakt door aangeboren afwijkingen of een verminderde opname, kan leiden tot structurele afwijkingen, pigmentveranderingen of haarverlies, hoewel exacte gegevens vaak ontbreken. Verworven oorzaken van voedingsgerelateerde haargroeistoornissen zijn gecombineerde of specifieke tekorten door ondervoeding, ontoereikende diëten, onvoldoende parenterale voeding of malabsorptie bij maag-darmziekten. Het bewijs voor voedingssupplementen bij haaraandoeningen is beperkt; combinaties met l-cystine zijn het best onderzocht."
+        },
+        {
+          "type": "paragraph",
+          "text": "| | |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| --- | --- |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Talen: | Engels |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Auteur: | Andreas M. Finner, MD |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Vereisten: | PDF-lezer |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Categorie: | Farmaceutisch-wetenschappelijke studies |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Licentie: | CC Naamsvermelding-NietCommercieel-GelijkDelen |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Datum: | 28 mei 2013 |"
+        },
+        {
+          "type": "paragraph",
+          "text": "Tags - alopecia, tekort, haar, haarverlies, mens, ondervoeding, voeding, studie, supplementen"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Geschreven door Moreco"
+        },
+        {
+          "type": "paragraph",
+          "text": "Moreco produceert en verdeelt producten met een gepatenteerde, biologisch actieve en opneembare vorm van silicium voor mens, dier en land- en tuinbouw. Wij bieden ook ecologische desinfectie met waterstofperoxide voor waterzuivering en biologische ziektebestrijding voor landbouw en industrie."
+        }
+      ],
+      "ar": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "التغذية والشعر: أوجه النقص والمكمّلات"
+        },
+        {
+          "type": "list",
+          "items": [
+            "نُشر في 28 ماي 2013",
+            "بقلم Moreco",
+            "في الأخبار"
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/media/pages/hair-loss-study1.webp"
+        },
+        {
+          "type": "paragraph",
+          "text": "*حوار مع الدكتور أندرياس م. فينر، Dermatologic Clinics*"
+        },
+        {
+          "type": "paragraph",
+          "text": "لخلايا بُصيلة الشعر معدّل تجدّد مرتفع، وأيضها النشط يتطلّب إمدادًا جيدًا بالعناصر المغذية والطاقة. والحرمان من السعرات أو نقص عدة مكوّنات، كالبروتينات والمعادن والأحماض الدهنية الأساسية والفيتامينات، بسبب أخطاء خلقية أو ضعف الامتصاص، قد يؤدي إلى تشوّهات بنيوية أو تغيّرات في التصبّغ أو تساقط الشعر، وإن كانت المعطيات الدقيقة كثيرًا ما تنقص. وأوجه النقص المجتمعة ليست نادرة، خصوصًا في سوء التغذية."
+        },
+        {
+          "type": "paragraph",
+          "text": "وفي البلدان المتقدّمة، تظلّ اضطرابات نمو الشعر الناجمة عن نقص تغذوي لدى الأصحّاء نادرة، ويميل المرضى والأطباء إلى المبالغة في تقديرها، خصوصًا في ما يتعلق بالفيتامينات. وقد حدّدت مؤسسات وطنية ودولية الكميات اليومية الموصى بها لكثير من المكوّنات الغذائية. ففي الولايات المتحدة نشرت المعاهد الوطنية للصحة توصيات بشأن المتناول المرجعي اليومي من المغذيات الدقيقة والكبرى، والحدّ الأقصى للمتناول اليومي الذي لا يُرجَّح أن يسبّب آثارًا ضارّة. وقد استُعملت المكمّلات الغذائية تقليديًا وبصورة غير نوعية لتحسين نمو الشعر، ودُرس القليل منها دراسة منهجية على الحيوان والإنسان."
+        },
+        {
+          "type": "paragraph",
+          "text": "التغذية والشعر: أوجه النقص والمكمّلات"
+        },
+        {
+          "type": "paragraph",
+          "text": "OSA AND HAIR 2013.pdf"
+        },
+        {
+          "type": "paragraph",
+          "text": "127,4 كيبي بايت"
+        },
+        {
+          "type": "paragraph",
+          "text": "273 تحميلًا"
+        },
+        {
+          "type": "paragraph",
+          "text": "التفاصيل"
+        },
+        {
+          "type": "paragraph",
+          "text": "الحرمان من السعرات أو نقص عدة مكوّنات، كالبروتينات والمعادن والأحماض الدهنية الأساسية والفيتامينات، بسبب أخطاء خلقية أو ضعف الامتصاص، قد يؤدي إلى تشوّهات بنيوية أو تغيّرات في التصبّغ أو تساقط الشعر، وإن كانت المعطيات الدقيقة كثيرًا ما تنقص. والأسباب المكتسبة لاضطرابات نمو الشعر المرتبطة بالتغذية هي أوجه نقص مجتمعة أو نوعية ناجمة عن سوء التغذية أو الحميات غير الكافية أو التغذية الوريدية غير الكافية أو سوء الامتصاص في أمراض الجهاز الهضمي. والأدلة على المكمّلات الغذائية في اضطرابات الشعر محدودة، وأفضلها دراسةً التركيبات المحتوية على إل-سيستين."
+        },
+        {
+          "type": "paragraph",
+          "text": "| | |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| --- | --- |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| اللغات: | الإنجليزية |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| المؤلف: | الدكتور أندرياس م. فينر |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| المتطلبات: | قارئ PDF |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| الفئة: | دراسات في العلوم الصيدلية |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| الرخصة: | CC نسب المصنَّف - غير تجاري - المشاركة بالمثل |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| التاريخ: | 28 ماي 2013 |"
+        },
+        {
+          "type": "paragraph",
+          "text": "وسوم المقال - الثعلبة، النقص، الشعر، تساقط الشعر، الإنسان، سوء التغذية، التغذية، دراسة، المكمّلات"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "بقلم Moreco"
+        },
+        {
+          "type": "paragraph",
+          "text": "تنتج Moreco وتوزّع منتجات تحتوي على صيغة مسجّلة ببراءة اختراع من السيليكون النشط بيولوجيًا والقابل للامتصاص، للإنسان والحيوان ومنتجات الزراعة والبستنة. كما نوفّر التطهير البيئي ببيروكسيد الهيدروجين لتنقية المياه، والمكافحة البيولوجية للأمراض في الزراعة والصناعات."
+        }
       ]
     }
   },
@@ -1978,12 +3242,16 @@
     "title": {
       "fr": "Mavita Health renforce le systeme d'immunite",
       "en": "Mavita Health supports the immune system: the basis for a good health",
-      "es": "Mavita Health refuerza el sistema inmunitario"
+      "es": "Mavita Health refuerza el sistema inmunitario",
+      "nl": "Mavita Health ondersteunt het immuunsysteem: de basis voor een goede gezondheid",
+      "ar": "Mavita Health يدعم الجهاز المناعي: أساس الصحة الجيدة"
     },
     "excerpt": {
       "fr": "Mavita Health: la base d’une bonne sante",
       "en": "Mavita Health : the basis for a good health",
-      "es": "Mavita Health: la base de una buena salud"
+      "es": "Mavita Health: la base de una buena salud",
+      "nl": "Mavita Health: de basis voor een goede gezondheid",
+      "ar": "Mavita Health: أساس الصحة الجيدة"
     },
     "blocks": {
       "fr": [
@@ -2128,6 +3396,102 @@
         {
           "type": "paragraph",
           "text": "Moreco produce y distribuye productos con una forma de silicio patentada, biológicamente activa y absorbible, destinados a las personas, a los animales y a la agricultura y la horticultura. Ofrecemos asimismo desinfección ecológica con peróxido de hidrógeno para la purificación del agua y el control biológico de enfermedades en la agricultura y la industria."
+        }
+      ],
+      "nl": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Mavita Health ondersteunt het immuunsysteem"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Gepubliceerd op 19 februari 2014",
+            "Door Moreco",
+            "In Nieuws"
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/media/pages/mavitahealth-artikel1.webp"
+        },
+        {
+          "type": "paragraph",
+          "text": "Mavita Health: de basis voor een goede gezondheid"
+        },
+        {
+          "type": "paragraph",
+          "text": "Mavita Health is een uniek mineralencomplex, samengesteld uit tien essentiële natuurlijke spoor- en macro-elementen. Het belangrijkste mineraal daarvan is silicium."
+        },
+        {
+          "type": "paragraph",
+          "text": "Ieder mens krijgt, ondanks een evenwichtige en gezonde voeding, naarmate hij ouder wordt een tekort aan bepaalde mineralen. Dat komt doordat de Europese bodem onvoldoende spoorelementen bevat. Daardoor bevatten voedingsmiddelen zoals groenten, fruit, vlees en melk onvoldoende van deze belangrijke stoffen."
+        },
+        {
+          "type": "paragraph",
+          "text": "Mavita Health levert deze mineralen. Zo kunnen uw organen optimaal blijven werken."
+        },
+        {
+          "type": "paragraph",
+          "text": "Tags - mens, Mavita Health, mineralen, voeding, silicium, spoorelementen"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Geschreven door Moreco"
+        },
+        {
+          "type": "paragraph",
+          "text": "Moreco produceert en verdeelt producten met een gepatenteerde, biologisch actieve en opneembare vorm van silicium voor mens, dier en land- en tuinbouw. Wij bieden ook ecologische desinfectie met waterstofperoxide voor waterzuivering en biologische ziektebestrijding voor landbouw en industrie."
+        }
+      ],
+      "ar": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Mavita Health يدعم الجهاز المناعي"
+        },
+        {
+          "type": "list",
+          "items": [
+            "نُشر في 19 فبراير 2014",
+            "بقلم Moreco",
+            "في الأخبار"
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/media/pages/mavitahealth-artikel1.webp"
+        },
+        {
+          "type": "paragraph",
+          "text": "Mavita Health: أساس الصحة الجيدة"
+        },
+        {
+          "type": "paragraph",
+          "text": "Mavita Health مركّب معدني فريد يتكوّن من عشرة عناصر أثرية وكبرى طبيعية أساسية، وأهمها السيليكون."
+        },
+        {
+          "type": "paragraph",
+          "text": "فكل إنسان، رغم تغذية متوازنة وصحية، سيعاني نقصًا في بعض المعادن كلما تقدّم في السنّ. ويعود ذلك إلى أن التربة الأوروبية لا تحتوي على ما يكفي من العناصر الأثرية، ومن ثمّ فإن أغذية كالخضر والفواكه واللحوم والحليب لا تحتوي على ما يكفي من هذه المواد المهمة."
+        },
+        {
+          "type": "paragraph",
+          "text": "و‏Mavita Health يوفّر هذه المعادن، فيتيح لأعضائك مواصلة أداء وظائفها على النحو الأمثل."
+        },
+        {
+          "type": "paragraph",
+          "text": "وسوم المقال - الإنسان، Mavita Health، المعادن، التغذية، السيليكون، العناصر الأثرية"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "بقلم Moreco"
+        },
+        {
+          "type": "paragraph",
+          "text": "تنتج Moreco وتوزّع منتجات تحتوي على صيغة مسجّلة ببراءة اختراع من السيليكون النشط بيولوجيًا والقابل للامتصاص، للإنسان والحيوان ومنتجات الزراعة والبستنة. كما نوفّر التطهير البيئي ببيروكسيد الهيدروجين لتنقية المياه، والمكافحة البيولوجية للأمراض في الزراعة والصناعات."
         }
       ]
     }
