@@ -43,6 +43,14 @@
   min-height: var(--topbar-h);
 }
 
+.topLeft {
+  display: flex;
+  align-items: center;
+  /* Stretches so the phone link inside can still fill the bar's height. */
+  align-self: stretch;
+  gap: 1.25rem;
+}
+
 .topLink {
   display: inline-flex;
   align-items: center;
@@ -158,7 +166,7 @@
   height: clamp(30px, 3.4vw, 38px);
 }
 
-/* The wordmark is near-black; over the hero it needs to read white. */
+/* The mark is Moreco green; over the hero it has to read white. */
 .isTransparent .logoImg {
   filter: brightness(0) invert(1);
 }
@@ -261,10 +269,11 @@
     visibility 0.2s;
 }
 
-/* The products panel is wide, so it hangs from the item's left edge instead of centring. */
+/* The products panel is wide, so it hangs from the item's leading edge, not centred. */
 .panelWrapMega {
   --shift-x: 0px;
-  left: -1.25rem;
+  left: auto;
+  inset-inline-start: -1.25rem;
 }
 
 .panelOpen {
@@ -313,7 +322,7 @@
 }
 
 .mega::before {
-  left: 2.6rem;
+  inset-inline-start: 2.6rem;
 }
 
 .panelList {
@@ -342,7 +351,7 @@
 .panelLink::before {
   content: '';
   position: absolute;
-  left: 0.26rem;
+  inset-inline-start: 0.26rem;
   top: 50%;
   width: 3px;
   height: 0;
@@ -692,9 +701,10 @@
 
 .drawerSub {
   margin: 0 0 0.5rem;
-  padding: 0 0 0 0.9rem;
+  padding: 0;
+  padding-inline-start: 0.9rem;
   list-style: none;
-  border-left: 2px solid var(--line);
+  border-inline-start: 2px solid var(--line);
 }
 
 .drawerSubLink {
@@ -815,6 +825,11 @@
   .social,
   .topLink span {
     display: none;
+  }
+
+  /* With the icons gone the left group is only the phone link. */
+  .topLeft {
+    gap: 0;
   }
 
   /*

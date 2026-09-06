@@ -19,7 +19,7 @@
 .logo {
   width: auto;
   height: 44px;
-  /* The wordmark is near-black; on the dark footer it has to invert. */
+  /* The mark is Moreco green; on the dark footer it has to read white. */
   filter: brightness(0) invert(1);
 }
 

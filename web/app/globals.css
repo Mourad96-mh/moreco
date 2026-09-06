@@ -1,16 +1,18 @@
 /*
  * Design tokens.
  *
- * The palette is lifted from the Moreco logo itself: four hexagons — a green leaf, a red
- * figure, a blue droplet, a yellow animal — around the wordmark. Those four colours map
- * one-to-one onto the four catalogue segments, so the identity does the navigating.
+ * The palette is lifted from Moreco's four-colour mark: four hexagons — a green leaf, a
+ * red figure, a blue droplet, a yellow animal — around the wordmark. Those four colours
+ * map one-to-one onto the four catalogue segments, so the identity does the navigating.
+ * The header and footer carry the all-green version of the same mark.
  */
 
 :root {
-  /* Brand, sampled from public/media/brand/moreco-logo.webp */
-  --green: #00a048;
-  --green-dark: #007a37;
-  --green-darker: #00552a;
+  /* Green is the logo's own green; the ramp keeps its hue and darkens for contrast.
+     The other three are sampled from the four-colour mark the segments are named after. */
+  --green: #40ab5c;
+  --green-dark: #25743a;
+  --green-darker: #145225;
   --blue: #0058a8;
   --red: #e02020;
   --yellow: #f8e000;
@@ -80,6 +82,15 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+/*
+ * Inter carries no Arabic. On /ar/ the layout also loads Noto Sans Arabic and this puts
+ * it first, leaving the Latin brand names (Moreco, Orthagrow) on Inter behind it.
+ */
+[dir='rtl'] body {
+  font-family: var(--font-arabic), var(--font-sans), system-ui, -apple-system, 'Segoe UI',
+    Roboto, sans-serif;
+}
+
 h1,
 h2,
 h3,
@@ -130,7 +141,7 @@ video {
 ul,
 ol {
   margin: 0 0 1em;
-  padding-left: 1.2em;
+  padding-inline-start: 1.2em;
 }
 
 button {
@@ -193,7 +204,7 @@ button {
 
 .skip-link {
   position: absolute;
-  left: 0.5rem;
+  inset-inline-start: 0.5rem;
   top: -100%;
   z-index: 200;
   padding: 0.7rem 1.1rem;

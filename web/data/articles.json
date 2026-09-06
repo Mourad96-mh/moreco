@@ -4,14 +4,12 @@
     "title": {
       "fr": "l'importance du silicium",
       "en": "The importance of silicon",
-      "es": "La importancia del silicio",
-      "de": "Die Bedeutung des Siliziums"
+      "es": "La importancia del silicio"
     },
     "excerpt": {
       "fr": "*Interview avec Prof. Dirk Van den Berghe*",
       "en": "*Interview with Prof. Dirk Van den Berghe*",
-      "es": "*Entrevista con el Prof. Dirk Van den Berghe*",
-      "de": "*Interview mit Prof. Dirk Van den Berghe*"
+      "es": "*Entrevista con el Prof. Dirk Van den Berghe*"
     },
     "blocks": {
       "fr": [
@@ -333,114 +331,6 @@
           "type": "paragraph",
           "text": "Moreco produce y distribuye productos con una forma de silicio patentada, biológicamente activa y absorbible, destinados a las personas, a los animales y a la agricultura y la horticultura. Ofrecemos asimismo desinfección ecológica con peróxido de hidrógeno para la purificación del agua y el control biológico de enfermedades en la agricultura y la industria."
         }
-      ],
-      "de": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Die Bedeutung des Siliziums"
-        },
-        {
-          "type": "list",
-          "items": [
-            "Veröffentlicht am 31. März 2013",
-            "Von Moreco",
-            "In Nachrichten"
-          ]
-        },
-        {
-          "type": "image",
-          "src": "/media/pages/importance-of-silicon.webp"
-        },
-        {
-          "type": "paragraph",
-          "text": "*Interview mit Prof. Dirk Van den Berghe*"
-        },
-        {
-          "type": "paragraph",
-          "text": "Silizium: das fehlende Element"
-        },
-        {
-          "type": "paragraph",
-          "text": "Auch wenn die Bedeutung von (Si) in der Landwirtschaft kaum anerkannt wird – das ändert sich, sobald die Folgen einer (Si)-Zufuhr in den Boden richtig verstanden werden! Früher hielt man (Si) für entbehrlich, abgesehen von seiner Rolle als normaler Bodenbestandteil. Heute wird es nach und nach als wichtiges nützliches Element innerhalb der Pflanze für deren gutes Funktionieren anerkannt:"
-        },
-        {
-          "type": "paragraph",
-          "text": "Silizium (Si) ist das zweithäufigste Element der Erdoberfläche und umgibt uns in Form von Sand, Ziegeln, Glas und vielem mehr."
-        },
-        {
-          "type": "paragraph",
-          "text": "Es ist überall vorhanden, in den Gewässern und im Boden. Durch die Versauerung mittels Kohlensäure und organischer Säuren, die von Bodenmikroorganismen und Pflanzenwurzeln gebildet werden, werden die im Boden vorhandenen Silikate langsam aufgeschlossen und setzen die OSA – Orthokieselsäure, Si(OH)4 – frei. OSA ist wasserlöslich und im Boden meist nur in sehr geringen Konzentrationen vorhanden. Kieselsäure besteht aus einem sehr kleinen Molekül und ist nur in Form der OSA biologisch aktiv. Diese wird von den Pflanzen in sehr niedrigen Konzentrationen aufgenommen – Konzentrationen, die jedoch eine sehr große Wirkung auf das Pflanzenwachstum (und auf die Tiergesundheit) haben. Lebende Organismen brauchen OSA, nicht Silikate."
-        },
-        {
-          "type": "paragraph",
-          "text": "Die Bedeutung des Siliziums"
-        },
-        {
-          "type": "paragraph",
-          "text": "interview-professor\\_theimportance of silicon.pdf"
-        },
-        {
-          "type": "paragraph",
-          "text": "93,7 KiB"
-        },
-        {
-          "type": "paragraph",
-          "text": "5 Downloads"
-        },
-        {
-          "type": "paragraph",
-          "text": "Details:"
-        },
-        {
-          "type": "paragraph",
-          "text": "Auch wenn die Bedeutung von (Si) in der Landwirtschaft kaum anerkannt wird – sie wird sich erst durchsetzen, wenn die Folgen einer Siliziumzufuhr (Si) in den Boden richtig verstanden werden! Früher hielt man Silizium (Si) für entbehrlich, abgesehen von seiner Rolle als normaler Bodenbestandteil. Heute wird es nach und nach als wichtiges nützliches Element innerhalb der Pflanze für deren gutes Funktionieren anerkannt."
-        },
-        {
-          "type": "paragraph",
-          "text": "| | |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| --- | --- |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Sprachen: | Französisch |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Autor: | Prof. Dirk Van den Berghe |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Voraussetzungen: | PDF-Reader |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Kategorie: | Nachrichtenartikel |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Lizenz: | CC Attribution-NonCommercial-ShareAlike |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Datum: | 13. März 2012 |"
-        },
-        {
-          "type": "paragraph",
-          "text": "Schlagwörter: Landwirtschaft, OSA (Orthokieselsäure), Studie, Mineralstoffe, Ernährung, Pflanzen, Silizium, Boden, Nahrungsergänzung"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Geschrieben von Moreco"
-        },
-        {
-          "type": "paragraph",
-          "text": "Moreco stellt Produkte mit einer patentierten, biologisch aktiven und aufnehmbaren Siliziumform für Menschen, Tiere sowie den Garten- und Landbau her und vertreibt sie. Darüber hinaus bieten wir die ökologische Desinfektion mit Wasserstoffperoxid zur Wasseraufbereitung und zur biologischen Krankheitsbekämpfung in Landwirtschaft und Industrie."
-        }
       ]
     }
   },
@@ -449,14 +339,12 @@
     "title": {
       "fr": "Le Potentiel Therapeutique de l'acide silicique",
       "en": "The therapeutic potential of silicic acid",
-      "es": "El potencial terapéutico del ácido silícico",
-      "de": "Das therapeutische Potenzial der Kieselsäure"
+      "es": "El potencial terapéutico del ácido silícico"
     },
     "excerpt": {
       "fr": "*Revu par Christopher Exley, The Birchall Centre, Lennard-Jones Laboratories, Keele University, UK*",
       "en": "*Review by Christopher Exley, The Birchall Centre, Lennard-Jones Laboratories, Keele University, UK*",
-      "es": "*Revisión de Christopher Exley, The Birchall Centre, Lennard-Jones Laboratories, Keele University, Reino Unido*",
-      "de": "*Übersichtsarbeit von Christopher Exley, The Birchall Centre, Lennard-Jones Laboratories, Keele University, UK*"
+      "es": "*Revisión de Christopher Exley, The Birchall Centre, Lennard-Jones Laboratories, Keele University, Reino Unido*"
     },
     "blocks": {
       "fr": [
@@ -782,114 +670,6 @@
           "type": "paragraph",
           "text": "Moreco produce y distribuye productos con una forma de silicio patentada, biológicamente activa y absorbible, destinados a las personas, a los animales y a la agricultura y la horticultura. Ofrecemos asimismo desinfección ecológica con peróxido de hidrógeno para la purificación del agua y el control biológico de enfermedades en la agricultura y la industria."
         }
-      ],
-      "de": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Das therapeutische Potenzial der Kieselsäure"
-        },
-        {
-          "type": "list",
-          "items": [
-            "Veröffentlicht am 30. Juni 2011",
-            "Von Moreco",
-            "In Nachrichten"
-          ]
-        },
-        {
-          "type": "image",
-          "src": "/media/pages/therapeutic-potential-of-silicic-acid.webp"
-        },
-        {
-          "type": "paragraph",
-          "text": "*Übersichtsarbeit von Christopher Exley, The Birchall Centre, Lennard-Jones Laboratories, Keele University, UK*"
-        },
-        {
-          "type": "paragraph",
-          "text": "Überlegungen zu den jüngsten Erkenntnissen über den Bildungsmechanismus der Hydroxyaluminosilikate und über das therapeutische Potenzial der Kieselsäure."
-        },
-        {
-          "type": "paragraph",
-          "text": "Die Chemie der Mono- beziehungsweise Orthokieselsäure (Si(OH)4) wird in den meisten Chemielehrbüchern kaum behandelt. Erwähnt werden üblicherweise nur ihre Selbstkondensation zu amorpher hydratisierter Kieselsäure sowie ihre Reaktion mit Ammoniummolybdat zum Molybdatokieselsäure-Komplex. Verwiesen werden sollte nun auf ihre einzigartige anorganische Chemie mit Aluminium (Al) und insbesondere mit Aluminiumhydroxid (Al(OH)3(s)), bei der Hydroxyaluminosilikate (HAS(s)) entstehen. Die Kondensation beziehungsweise die konkurrierende Substitution von Si(OH)4 in einem Gerüst aus Al(OH)3(s) führt zur Bildung von HASA oder HASB."
-        },
-        {
-          "type": "paragraph",
-          "text": "Welches HAS(s) überwiegt, hängt vom Si:Al-Verhältnis in den Ansatzlösungen ab: Die Bildung von HASB erfordert einen doppelten Überschuss an Si(OH)4 gegenüber Al. Bei HASA beträgt das Si:Al-Verhältnis 0,5, und das Vorliegen von HASA ist Voraussetzung für die Bildung von HASB, bei dem das Si:Al-Verhältnis 1,0 beträgt. HASA besteht ausschließlich aus oktaedrisch koordiniertem Al, AlVI, während HASB gleiche Anteile an AlVI und tetraedrisch koordiniertem Al, AlIV, enthält und über eine Si(OH)4-getriebene Dehydroxylierungsreaktion entsteht."
-        },
-        {
-          "type": "paragraph",
-          "text": "HAS(s) sind entscheidende sekundäre Mineralphasen im biogeochemischen Kreislauf von Al und Si(OH)4, und ihre Bildung spielte eine wesentliche Rolle dabei, Al3+(aq) aus der biochemischen Evolution auszuschließen. Für die Zukunft wird erwartet, dass Si(OH)4 und die Bildung von HAS(s) große Bedeutung für den Schutz des Menschen vor einer möglicherweise stark zunehmenden Exposition gegenüber bioverfügbarem Aluminium haben."
-        },
-        {
-          "type": "paragraph",
-          "text": "Kieselsäure und Aluminium, Exley 2012"
-        },
-        {
-          "type": "paragraph",
-          "text": "silicic-acid-and-aluminum-exley-2012.pdf"
-        },
-        {
-          "type": "paragraph",
-          "text": "500,7 KiB"
-        },
-        {
-          "type": "paragraph",
-          "text": "4 Downloads"
-        },
-        {
-          "type": "paragraph",
-          "text": "Details"
-        },
-        {
-          "type": "paragraph",
-          "text": "Überlegungen und neue Erkenntnisse zu den Bildungsmechanismen der Hydroxyaluminosilikate und zu den therapeutischen Möglichkeiten der Kieselsäure."
-        },
-        {
-          "type": "paragraph",
-          "text": "| | |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| --- | --- |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Sprachen: | Englisch |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Autor: | Christopher Exley, Birchall Centre, Lennard-Jones Laboratories, Keele University, Großbritannien |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Voraussetzungen: | PDF-Reader |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Kategorie: | Pharmazeutische Studien |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Lizenz: | CC Attribution-NonCommercial-ShareAlike |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Datum: | 28. Mai 2012 |"
-        },
-        {
-          "type": "paragraph",
-          "text": "Schlagwörter: OSA (Orthokieselsäure), Löslichkeitskontrolle, Studie, biochemische Evolution, Mensch"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Geschrieben von Moreco"
-        },
-        {
-          "type": "paragraph",
-          "text": "Moreco stellt Produkte mit einer patentierten, biologisch aktiven und aufnehmbaren Siliziumform für Menschen, Tiere sowie den Garten- und Landbau her und vertreibt sie. Darüber hinaus bieten wir die ökologische Desinfektion mit Wasserstoffperoxid zur Wasseraufbereitung und zur biologischen Krankheitsbekämpfung in Landwirtschaft und Industrie."
-        }
       ]
     }
   },
@@ -898,14 +678,12 @@
     "title": {
       "fr": "Etude de la bio-disponibilite de l'AOS",
       "en": "OSA bioavailability cross-over study",
-      "es": "Estudio de la biodisponibilidad del AOS",
-      "de": "Studie zur Bioverfügbarkeit der OSA"
+      "es": "Estudio de la biodisponibilidad del AOS"
     },
     "excerpt": {
       "fr": "l’absorption du silicium par les sujets sains",
       "en": "Absorption of silicon in healthy subjects",
-      "es": "La absorción del silicio en sujetos sanos",
-      "de": "Die Siliziumaufnahme bei gesunden Probanden"
+      "es": "La absorción del silicio en sujetos sanos"
     },
     "blocks": {
       "fr": [
@@ -1227,114 +1005,6 @@
           "type": "paragraph",
           "text": "Moreco produce y distribuye productos con una forma de silicio patentada, biológicamente activa y absorbible, destinados a las personas, a los animales y a la agricultura y la horticultura. Ofrecemos asimismo desinfección ecológica con peróxido de hidrógeno para la purificación del agua y el control biológico de enfermedades en la agricultura y la industria."
         }
-      ],
-      "de": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Studie zur Bioverfügbarkeit der OSA"
-        },
-        {
-          "type": "list",
-          "items": [
-            "Veröffentlicht am 19. Jan. 2012",
-            "Von Moreco",
-            "In Nachrichten"
-          ]
-        },
-        {
-          "type": "image",
-          "src": "/media/pages/osa-bioavailability.webp"
-        },
-        {
-          "type": "paragraph",
-          "text": "Die Siliziumaufnahme bei gesunden Probanden"
-        },
-        {
-          "type": "paragraph",
-          "text": "Silizium ist nach Sauerstoff das häufigste Element der Erdkruste. Die Verteilung des Si-Mangels weist darauf hin, dass Si die Knochenbildung beeinflusst, indem es auf die Zusammensetzung und die Verkalkung des Knorpels wirkt. Die Si-Zufuhr über die Nahrung wird für US-Bürger auf 20 bis 50 mg geschätzt, mit einer geringeren Aufnahme bei tierisch geprägter und einer höheren bei pflanzlich geprägter Ernährung."
-        },
-        {
-          "type": "paragraph",
-          "text": "Studien zum Si-Bedarf und Supplementierungsversuche, die die Bioverfügbarkeit unterschiedlicher Siliziumverbindungen vergleichen, fehlen jedoch. Der Orthokieselsäure wird eine wichtige Rolle im Si-Stoffwechsel zugeschrieben; sie kommt sowohl in Süß- als auch in Meerwasser vor."
-        },
-        {
-          "type": "paragraph",
-          "text": "Diese monomere Form der Kieselsäure ist in verdünnten Konzentrationen um 10-4 M stabil, kondensiert jedoch bei höheren Konzentrationen und niedrigem pH-Wert zu Kieselgelen. Die Aufnahme und die Ausscheidung von Si über den Urin wurden in einer Studie an gesunden Probanden für stabilisierte Orthokieselsäure (OSA), einen standardisierten Kieselsäureextrakt aus der Pflanze Equisetum arvense und kolloidale Kieselsäure verglichen."
-        },
-        {
-          "type": "paragraph",
-          "text": "Studie zur Bioverfügbarkeit der OSA"
-        },
-        {
-          "type": "paragraph",
-          "text": "study-OSA-bioavailability-cross-over-study.pdf"
-        },
-        {
-          "type": "paragraph",
-          "text": "Ausgabe: Metal Ions in Biology and Medicine, Band 5"
-        },
-        {
-          "type": "paragraph",
-          "text": "886,9 KiB"
-        },
-        {
-          "type": "paragraph",
-          "text": "11 Downloads"
-        },
-        {
-          "type": "paragraph",
-          "text": "Details"
-        },
-        {
-          "type": "paragraph",
-          "text": "Die Aufnahme und die Ausscheidung von Si über den Urin wurden in einer Studie an gesunden Probanden für stabilisierte Orthokieselsäure (OSA), einen standardisierten Kieselsäureextrakt aus der Si-akkumulierenden Pflanze Equisetum arvense und kolloidale Kieselsäure verglichen."
-        },
-        {
-          "type": "paragraph",
-          "text": "| | |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| --- | --- |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Sprachen: | Englisch |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Autor: | M. R. Calomme, Fachbereich Pharmazeutische Wissenschaften |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Voraussetzungen: | PDF-Reader |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Kategorie: | Pharmazeutische Studien |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Lizenz: | CC Attribution-NonCommercial-ShareAlike |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Datum: | 19. Januar 2012 |"
-        },
-        {
-          "type": "paragraph",
-          "text": "Schlagwörter: OSA (Orthokieselsäure), Studie, Mensch, Silizium, Nahrungsergänzung"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Geschrieben von Moreco"
-        },
-        {
-          "type": "paragraph",
-          "text": "Moreco stellt Produkte mit einer patentierten, biologisch aktiven und aufnehmbaren Siliziumform für Menschen, Tiere sowie den Garten- und Landbau her und vertreibt sie. Darüber hinaus bieten wir die ökologische Desinfektion mit Wasserstoffperoxid zur Wasseraufbereitung und zur biologischen Krankheitsbekämpfung in Landwirtschaft und Industrie."
-        }
       ]
     }
   },
@@ -1343,14 +1013,12 @@
     "title": {
       "fr": "Nutrition foliare: Faits, Mythes et Perspectives",
       "en": "Foliar nutrition of crops: Facts, Myths and Perspectives",
-      "es": "Nutrición foliar: hechos, mitos y perspectivas",
-      "de": "Blattdüngung: Fakten, Mythen und Perspektiven"
+      "es": "Nutrición foliar: hechos, mitos y perspectivas"
     },
     "excerpt": {
       "fr": "Les engrais foliaires sont de plus en plus utilisés dans l’agriculture et de nouveaux produits commerciaux sont continuellement produits par les fabricants d’engrais en raison de la demande croissante. Il est en effet des preuves abondantes montrant les effets bénéfiques de l’application des engrais foliaires comme une stratégie complémentaire pour le traitement des sols en termes d’amélioration de métabolisme de la plante, du rendement et de la qualité des cultures. Cependant, le manque actuel de connaissances scientifiques sur de nombreux facteurs associés à l’efficacité des traitements foliaires limite la reproductibilité des résultats après la pulvérisation d’engrais de différentes cultures dans différentes conditions de culture. En outre, le transfert limité de savoir-faire technique de la communauté de l’absorption foliaire scientifique au secteur agricole soutient l’attitude sortant appliquer et prier » lors de l’application d’un traitement de la nutrition foliaire à une culture (c’est à dire, tout peut arriver).",
       "en": "Foliar fertilisers are increasingly used in agriculture and new commercial products are continuously released by fertiliser companies as a result of the increasing demand. There is indeed abundant evidence showing the beneficial effects of applying foliar fertilisers as a complementary strategy to soil treatments in terms of improved plant metabolism, yields and quality of crops. However, the current lack of scientific knowledge on many factors associated with the effectiveness of foliar treatments limits the reproducibility of the results after spraying fertilisers to different crops under different growing conditions. Additionally, the limited transfer of technical know-how from the scientific foliar uptake community to the agricultural sector supports the exiting “spray and pray” attitude when applying a foliar nutrition treatment to a crop (i.e., anything may happen).",
-      "es": "Los fertilizantes foliares se utilizan cada vez más en la agricultura y los fabricantes lanzan continuamente nuevos productos comerciales para atender una demanda creciente. Existen, en efecto, pruebas abundantes de los efectos beneficiosos de la aplicación de fertilizantes foliares como estrategia complementaria al tratamiento del suelo, en términos de mejora del metabolismo de la planta, del rendimiento y de la calidad de las cosechas. Sin embargo, la falta actual de conocimiento científico sobre muchos de los factores asociados a la eficacia de los tratamientos foliares limita la reproducibilidad de los resultados tras la pulverización de fertilizantes en distintos cultivos y bajo distintas condiciones. Además, la escasa transferencia de conocimiento técnico desde la comunidad científica que estudia la absorción foliar hacia el sector agrícola alimenta la actitud de «aplicar y rezar» al tratar un cultivo con nutrición foliar (es decir, puede ocurrir cualquier cosa).",
-      "de": "Blattdünger werden in der Landwirtschaft immer häufiger eingesetzt, und die Hersteller bringen wegen der wachsenden Nachfrage laufend neue Handelsprodukte auf den Markt. Es gibt in der Tat zahlreiche Belege für die günstigen Wirkungen einer Blattdüngung als ergänzende Strategie zur Bodenbehandlung – für den Pflanzenstoffwechsel, den Ertrag und die Qualität der Kulturen. Der derzeitige Mangel an wissenschaftlichem Wissen zu vielen Faktoren, die über die Wirksamkeit von Blattbehandlungen entscheiden, begrenzt jedoch die Reproduzierbarkeit der Ergebnisse nach dem Spritzen von Düngern in verschiedenen Kulturen und unter verschiedenen Anbaubedingungen. Hinzu kommt, dass der geringe Transfer technischen Wissens von der Forschung zur Blattaufnahme in die landwirtschaftliche Praxis die Haltung des „Spritzen und Hoffen“ begünstigt, wenn eine Kultur mit einer Blattdüngung behandelt wird (das heißt: Es kann alles passieren)."
+      "es": "Los fertilizantes foliares se utilizan cada vez más en la agricultura y los fabricantes lanzan continuamente nuevos productos comerciales para atender una demanda creciente. Existen, en efecto, pruebas abundantes de los efectos beneficiosos de la aplicación de fertilizantes foliares como estrategia complementaria al tratamiento del suelo, en términos de mejora del metabolismo de la planta, del rendimiento y de la calidad de las cosechas. Sin embargo, la falta actual de conocimiento científico sobre muchos de los factores asociados a la eficacia de los tratamientos foliares limita la reproducibilidad de los resultados tras la pulverización de fertilizantes en distintos cultivos y bajo distintas condiciones. Además, la escasa transferencia de conocimiento técnico desde la comunidad científica que estudia la absorción foliar hacia el sector agrícola alimenta la actitud de «aplicar y rezar» al tratar un cultivo con nutrición foliar (es decir, puede ocurrir cualquier cosa)."
     },
     "blocks": {
       "fr": [
@@ -1676,114 +1344,6 @@
           "type": "paragraph",
           "text": "Moreco produce y distribuye productos con una forma de silicio patentada, biológicamente activa y absorbible, destinados a las personas, a los animales y a la agricultura y la horticultura. Ofrecemos asimismo desinfección ecológica con peróxido de hidrógeno para la purificación del agua y el control biológico de enfermedades en la agricultura y la industria."
         }
-      ],
-      "de": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Blattdüngung: Fakten, Mythen und Perspektiven"
-        },
-        {
-          "type": "list",
-          "items": [
-            "Veröffentlicht am 27. März 2013",
-            "Von Moreco",
-            "In Nachrichten"
-          ]
-        },
-        {
-          "type": "image",
-          "src": "/media/pages/spraying-fact-or-fable.webp"
-        },
-        {
-          "type": "paragraph",
-          "text": "Blattdünger werden in der Landwirtschaft immer häufiger eingesetzt, und die Hersteller bringen wegen der wachsenden Nachfrage laufend neue Handelsprodukte auf den Markt. Es gibt in der Tat zahlreiche Belege für die günstigen Wirkungen einer Blattdüngung als ergänzende Strategie zur Bodenbehandlung – für den Pflanzenstoffwechsel, den Ertrag und die Qualität der Kulturen. Der derzeitige Mangel an wissenschaftlichem Wissen zu vielen Faktoren, die über die Wirksamkeit von Blattbehandlungen entscheiden, begrenzt jedoch die Reproduzierbarkeit der Ergebnisse nach dem Spritzen von Düngern in verschiedenen Kulturen und unter verschiedenen Anbaubedingungen. Hinzu kommt, dass der geringe Transfer technischen Wissens von der Forschung zur Blattaufnahme in die landwirtschaftliche Praxis die Haltung des „Spritzen und Hoffen“ begünstigt, wenn eine Kultur mit einer Blattdüngung behandelt wird (das heißt: Es kann alles passieren)."
-        },
-        {
-          "type": "paragraph",
-          "text": "Angesichts der derzeitigen Lage der Blattdüngung stellen sich jedoch die folgenden Fragen:"
-        },
-        {
-          "type": "paragraph",
-          "text": "1. Welche Fakten zur Blattdüngung sind für die Forschung heute geklärt?,"
-        },
-        {
-          "type": "paragraph",
-          "text": "2. Welche überlieferten Überzeugungen tragen nicht dazu bei, die Wirksamkeit einer Blattbehandlung sicherzustellen?, und"
-        },
-        {
-          "type": "paragraph",
-          "text": "3. Wie sieht die Zukunft der Blattdüngung aus?"
-        },
-        {
-          "type": "paragraph",
-          "text": "Agronomie 2013-03, Blattspritzung"
-        },
-        {
-          "type": "paragraph",
-          "text": "agronomics201303-foliar-spray.pdf"
-        },
-        {
-          "type": "paragraph",
-          "text": "400,0 KiB"
-        },
-        {
-          "type": "paragraph",
-          "text": "4 Downloads"
-        },
-        {
-          "type": "paragraph",
-          "text": "Details"
-        },
-        {
-          "type": "paragraph",
-          "text": "Die Autorin gibt Antworten auf einige dieser Fragen – wissenschaftlich wie anwendungsbezogen – und hebt das große Marktpotenzial und den Nutzen von Nährstoff-Blattspritzungen als ergänzende, umweltfreundliche Düngungsmethode hervor."
-        },
-        {
-          "type": "paragraph",
-          "text": "| | |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| --- | --- |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Sprachen: | Englisch |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Autor: | Dr. Victoria Fernández, Forschungsgruppe Forstgenetik und Ökophysiologie, Forstingenieurschule der Technischen Universität Madrid |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Voraussetzungen: | PDF-Reader |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Kategorie: | Agrarwissenschaftliche Studien |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Lizenz: | CC Attribution-NonCommercial-ShareAlike |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Datum: | 19. März 2013 |"
-        },
-        {
-          "type": "paragraph",
-          "text": "Schlagwörter: Landwirtschaft, Ertragssteigerung, umweltfreundlich, Kulturen, Düngemittel, Blattdüngung, wirksame Blattbehandlung"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Geschrieben von Moreco"
-        },
-        {
-          "type": "paragraph",
-          "text": "Moreco stellt Produkte mit einer patentierten, biologisch aktiven und aufnehmbaren Siliziumform für Menschen, Tiere sowie den Garten- und Landbau her und vertreibt sie. Darüber hinaus bieten wir die ökologische Desinfektion mit Wasserstoffperoxid zur Wasseraufbereitung und zur biologischen Krankheitsbekämpfung in Landwirtschaft und Industrie."
-        }
       ]
     }
   },
@@ -1792,14 +1352,12 @@
     "title": {
       "fr": "l'Impact de l'Agriculture sur le cycle biogeochimique de Si",
       "en": "Impact of agriculture on the Si biogeochemical cycle",
-      "es": "El impacto de la agricultura en el ciclo biogeoquímico del Si",
-      "de": "Der Einfluss der Landwirtschaft auf den biogeochemischen Si-Kreislauf"
+      "es": "El impacto de la agricultura en el ciclo biogeoquímico del Si"
     },
     "excerpt": {
       "fr": "Les cycles de C et Si sont étroitement liées à l’altération des silicates. Dans les deux cycles, les plantes terrestres apportent une contribution importante au budget de l’altération et de la formation des sols. La perturbation du cycle terrestre de Si par l’exploitation humaine est devenue un vrai defi en raison de l’impact possible sur l’équilibre des écosystèmes aquatiques et de la durabilité de l’agriculture.",
       "en": "The cycles of C and Si are closely related to the weathering of silicates. In both cycles, terrestrial plants make significant contributions to the weathering budget and soil formation. The perturbation of the terrestrial Si cycle by human occupation has become a challenging issue because of possible impact on the equilibrium of aquatic ecosystems and agriculture sustainability. The recycling of Si stored in plants as phytoliths may control the Si cycle in the short-term. A review of the recent literature shows that the biogeochemical cycling of Si that is generally not impacted by atmospheric input or fertilisation, is significantly altered by agriculture through the depletion of the phytoliths pool.",
-      "es": "Los ciclos del C y del Si están estrechamente ligados a la meteorización de los silicatos. En ambos ciclos, las plantas terrestres aportan una contribución importante al balance de la meteorización y a la formación de los suelos. La perturbación del ciclo terrestre del Si por la explotación humana se ha convertido en un verdadero reto, por su posible impacto en el equilibrio de los ecosistemas acuáticos y en la sostenibilidad de la agricultura.",
-      "de": "Der C- und der Si-Kreislauf sind eng mit der Verwitterung der Silikate verknüpft. In beiden Kreisläufen leisten die Landpflanzen einen wichtigen Beitrag zur Verwitterungsbilanz und zur Bodenbildung. Die Störung des terrestrischen Si-Kreislaufs durch menschliche Nutzung ist zu einer echten Herausforderung geworden – wegen der möglichen Auswirkungen auf das Gleichgewicht aquatischer Ökosysteme und auf die Nachhaltigkeit der Landwirtschaft."
+      "es": "Los ciclos del C y del Si están estrechamente ligados a la meteorización de los silicatos. En ambos ciclos, las plantas terrestres aportan una contribución importante al balance de la meteorización y a la formación de los suelos. La perturbación del ciclo terrestre del Si por la explotación humana se ha convertido en un verdadero reto, por su posible impacto en el equilibrio de los ecosistemas acuáticos y en la sostenibilidad de la agricultura."
     },
     "blocks": {
       "fr": [
@@ -2097,106 +1655,6 @@
           "type": "paragraph",
           "text": "Moreco produce y distribuye productos con una forma de silicio patentada, biológicamente activa y absorbible, destinados a las personas, a los animales y a la agricultura y la horticultura. Ofrecemos asimismo desinfección ecológica con peróxido de hidrógeno para la purificación del agua y el control biológico de enfermedades en la agricultura y la industria."
         }
-      ],
-      "de": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Der Einfluss der Landwirtschaft auf den biogeochemischen Si-Kreislauf"
-        },
-        {
-          "type": "list",
-          "items": [
-            "Veröffentlicht am 20. Nov. 2012",
-            "Von Moreco",
-            "In Nachrichten"
-          ]
-        },
-        {
-          "type": "image",
-          "src": "/media/pages/impact-of-agriculture-on-the-si-biogeochemical-cycle.webp"
-        },
-        {
-          "type": "paragraph",
-          "text": "Der C- und der Si-Kreislauf sind eng mit der Verwitterung der Silikate verknüpft. In beiden Kreisläufen leisten die Landpflanzen einen wichtigen Beitrag zur Verwitterungsbilanz und zur Bodenbildung. Die Störung des terrestrischen Si-Kreislaufs durch menschliche Nutzung ist zu einer echten Herausforderung geworden – wegen der möglichen Auswirkungen auf das Gleichgewicht aquatischer Ökosysteme und auf die Nachhaltigkeit der Landwirtschaft."
-        },
-        {
-          "type": "paragraph",
-          "text": "Das Recycling des in den Pflanzen als Phytolithe gespeicherten Si kann den Si-Kreislauf kurzfristig steuern. Eine Durchsicht der jüngeren Literatur zeigt, dass der biogeochemische Si-Kreislauf, der von atmosphärischem Eintrag und Düngung im Allgemeinen unberührt bleibt, durch die Landwirtschaft erheblich verändert wird – über die Verarmung der Phytolithvorräte."
-        },
-        {
-          "type": "paragraph",
-          "text": "Wir legen hier einen neuen Beleg dafür vor, dass der Abtransport des Strohs die Phytolithvorräte des Bodens innerhalb von 10 Jahren erschöpfen kann. Um die derzeitigen Si-Gehalte in den Kulturen zu halten, kann der Beitrag anderer Bodensilikate wie der Tonminerale zu den pflanzenverfügbaren Kieselsäurevorräten zu einem Schlüsselfaktor werden, wenn das Stroh abgefahren wird. Um die derzeitigen Si-Gehalte in den Kulturen zu halten, kann der Beitrag anderer Bodensilikate wie der Tonminerale zu den pflanzenverfügbaren Kieselsäurevorräten zu einem Schlüsselfaktor werden, wenn das Stroh abgefahren wird."
-        },
-        {
-          "type": "paragraph",
-          "text": "Einfluss der Landwirtschaft auf den biogeochemischen Kreislauf des Siliziums"
-        },
-        {
-          "type": "paragraph",
-          "text": "silicon-cycle-and-agriculture-2012.pdf"
-        },
-        {
-          "type": "paragraph",
-          "text": "484,2 KiB"
-        },
-        {
-          "type": "paragraph",
-          "text": "7 Downloads"
-        },
-        {
-          "type": "paragraph",
-          "text": "Details"
-        },
-        {
-          "type": "paragraph",
-          "text": "Wir legen hier neue Belege dafür vor, dass der Abtransport des Strohs die Phytolithe des Bodens binnen 10 Jahren erschöpfen kann. Um die heutigen Siliziumgehalte in den Kulturen zu erhalten, kann der Beitrag anderer Bodensilikate wie der Tonminerale zur verfügbaren Kieselsäure zu einem Schlüsselfaktor werden, wenn das Stroh abgefahren wird."
-        },
-        {
-          "type": "paragraph",
-          "text": "| | |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| --- | --- |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Sprachen: | Englisch |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Autor: | Comptes Rendus Geoscience |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Voraussetzungen: | PDF-Reader |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Kategorie: | Agrarwissenschaftliche Studien |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Lizenz: | CC Attribution-NonCommercial-ShareAlike |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Datum: | 23. April 2012 |"
-        },
-        {
-          "type": "paragraph",
-          "text": "Schlagwörter: Pflanzenaufnahme, Kulturen, biogeochemischer Kreislauf, Düngemittel, Erosion, Nachhaltigkeit der Landwirtschaft, Mineralstoffe, Phytolithe, Silizium, Boden"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Geschrieben von Moreco"
-        },
-        {
-          "type": "paragraph",
-          "text": "Moreco stellt Produkte mit einer patentierten, biologisch aktiven und aufnehmbaren Siliziumform für Menschen, Tiere sowie den Garten- und Landbau her und vertreibt sie. Darüber hinaus bieten wir die ökologische Desinfektion mit Wasserstoffperoxid zur Wasseraufbereitung und zur biologischen Krankheitsbekämpfung in Landwirtschaft und Industrie."
-        }
       ]
     }
   },
@@ -2205,14 +1663,12 @@
     "title": {
       "fr": "la Nutrition et les Cheveux: Deficiences et Supplements",
       "en": "Nutrition and Hair: Deficiencies and Supplements",
-      "es": "Nutrición y cabello: carencias y suplementos",
-      "de": "Ernährung und Haar: Mängel und Nahrungsergänzung"
+      "es": "Nutrición y cabello: carencias y suplementos"
     },
     "excerpt": {
       "fr": "*Interview par Andreas M. Finner MD,Dermatologue*",
       "en": "*Interview by Andreas M. Finner MD,Dermatologic Clinics*",
-      "es": "*Entrevista con el Dr. Andreas M. Finner, dermatólogo*",
-      "de": "*Interview mit Dr. med. Andreas M. Finner, Dermatologe*"
+      "es": "*Entrevista con el Dr. Andreas M. Finner, dermatólogo*"
     },
     "blocks": {
       "fr": [
@@ -2514,106 +1970,6 @@
           "type": "paragraph",
           "text": "Moreco produce y distribuye productos con una forma de silicio patentada, biológicamente activa y absorbible, destinados a las personas, a los animales y a la agricultura y la horticultura. Ofrecemos asimismo desinfección ecológica con peróxido de hidrógeno para la purificación del agua y el control biológico de enfermedades en la agricultura y la industria."
         }
-      ],
-      "de": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Ernährung und Haar: Mängel und Nahrungsergänzung"
-        },
-        {
-          "type": "list",
-          "items": [
-            "Veröffentlicht am 28. Mai 2013",
-            "Von Moreco",
-            "In Nachrichten"
-          ]
-        },
-        {
-          "type": "image",
-          "src": "/media/pages/hair-loss-study1.webp"
-        },
-        {
-          "type": "paragraph",
-          "text": "*Interview mit Dr. med. Andreas M. Finner, Dermatologe*"
-        },
-        {
-          "type": "paragraph",
-          "text": "Die Zellen des Haarfollikels durchlaufen sehr starke Veränderungen. Ihr aktiver Stoffwechsel erfordert eine gute Versorgung mit Nährstoffen und Energie. Ein Kaloriendefizit oder ein Mangel an mehreren Bestandteilen – Proteinen, Mineralstoffen, essenziellen Fettsäuren und Vitaminen –, verursacht durch angeborene Störungen oder eine verminderte Aufnahme, kann zu strukturellen Anomalien, Pigmentveränderungen oder Haarausfall führen, auch wenn genaue Daten oft fehlen. Kombinierte Mängel sind nicht selten, insbesondere bei Mangelernährung."
-        },
-        {
-          "type": "paragraph",
-          "text": "In den Industrieländern sind ernährungsbedingte Störungen des Haarwachstums bei gesunden Menschen selten und werden von Patientinnen, Patienten und Ärzteschaft eher überschätzt, insbesondere im Hinblick auf Vitamine. Nationale und internationale Institutionen haben für zahlreiche Nährstoffe empfohlene Tageszufuhren festgelegt. In den USA haben die National Institutes of Health Empfehlungen für die Referenzzufuhr von Mikro- und Makronährstoffen sowie für die tägliche Höchstmenge veröffentlicht, bei der voraussichtlich keine unerwünschten Wirkungen auftreten. Nahrungsergänzungsmittel wurden traditionell unspezifisch zur Förderung des Haarwachstums eingesetzt; nur wenige davon wurden systematisch an Tieren und Menschen untersucht."
-        },
-        {
-          "type": "paragraph",
-          "text": "Ernährung und Haar: Mängel und Nahrungsergänzung"
-        },
-        {
-          "type": "paragraph",
-          "text": "OSA AND HAIR 2013.pdf"
-        },
-        {
-          "type": "paragraph",
-          "text": "127,4 KiB"
-        },
-        {
-          "type": "paragraph",
-          "text": "6 Downloads"
-        },
-        {
-          "type": "paragraph",
-          "text": "Details"
-        },
-        {
-          "type": "paragraph",
-          "text": "Ein Kaloriendefizit oder ein Mangel an mehreren Bestandteilen – Proteinen, Mineralstoffen, essenziellen Fettsäuren und Vitaminen –, verursacht durch angeborene Störungen oder eine verminderte Aufnahme, kann zu strukturellen Anomalien, Pigmentveränderungen oder Haarausfall führen, auch wenn genaue Daten oft fehlen. Zu den erworbenen Ursachen ernährungsbedingter Haarwachstumsstörungen zählen kombinierte oder spezifische Mängel infolge von Mangelernährung, unzureichender Diäten, unzureichender parenteraler Ernährung oder einer Malabsorption bei Magen-Darm-Erkrankungen. Die Evidenz zu Nahrungsergänzungsmitteln bei Haarstörungen ist begrenzt; am besten bewertet werden Kombinationen mit L-Cystin."
-        },
-        {
-          "type": "paragraph",
-          "text": "| | |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| --- | --- |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Sprachen: | Englisch |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Autor: | Andreas M. Finner, MD |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Voraussetzungen: | PDF-Reader |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Kategorie: | Pharmazeutische Studien |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Lizenz: | CC Attribution-NonCommercial-ShareAlike |"
-        },
-        {
-          "type": "paragraph",
-          "text": "| Datum: | 28. Mai 2013 |"
-        },
-        {
-          "type": "paragraph",
-          "text": "Schlagwörter: Alopezie, Haar, Mangel, Studie, Mensch, Mangelernährung, Ernährung, Haarausfall, Nahrungsergänzung"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Geschrieben von Moreco"
-        },
-        {
-          "type": "paragraph",
-          "text": "Moreco stellt Produkte mit einer patentierten, biologisch aktiven und aufnehmbaren Siliziumform für Menschen, Tiere sowie den Garten- und Landbau her und vertreibt sie. Darüber hinaus bieten wir die ökologische Desinfektion mit Wasserstoffperoxid zur Wasseraufbereitung und zur biologischen Krankheitsbekämpfung in Landwirtschaft und Industrie."
-        }
       ]
     }
   },
@@ -2622,14 +1978,12 @@
     "title": {
       "fr": "Mavita Health renforce le systeme d'immunite",
       "en": "Mavita Health supports the immune system: the basis for a good health",
-      "es": "Mavita Health refuerza el sistema inmunitario",
-      "de": "Mavita Health stärkt das Immunsystem"
+      "es": "Mavita Health refuerza el sistema inmunitario"
     },
     "excerpt": {
       "fr": "Mavita Health: la base d’une bonne sante",
       "en": "Mavita Health : the basis for a good health",
-      "es": "Mavita Health: la base de una buena salud",
-      "de": "Mavita Health: die Grundlage einer guten Gesundheit"
+      "es": "Mavita Health: la base de una buena salud"
     },
     "blocks": {
       "fr": [
@@ -2774,54 +2128,6 @@
         {
           "type": "paragraph",
           "text": "Moreco produce y distribuye productos con una forma de silicio patentada, biológicamente activa y absorbible, destinados a las personas, a los animales y a la agricultura y la horticultura. Ofrecemos asimismo desinfección ecológica con peróxido de hidrógeno para la purificación del agua y el control biológico de enfermedades en la agricultura y la industria."
-        }
-      ],
-      "de": [
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Mavita Health stärkt das Immunsystem"
-        },
-        {
-          "type": "list",
-          "items": [
-            "Veröffentlicht am 19. Feb. 2014",
-            "Von Moreco",
-            "In Nachrichten"
-          ]
-        },
-        {
-          "type": "image",
-          "src": "/media/pages/mavitahealth-artikel1.webp"
-        },
-        {
-          "type": "paragraph",
-          "text": "Mavita Health: die Grundlage einer guten Gesundheit"
-        },
-        {
-          "type": "paragraph",
-          "text": "Mavita Health ist ein einzigartiger Mineralstoffkomplex aus zehn essenziellen natürlichen Spuren- und Mengenelementen. Das wichtigste dieser Mineralien ist Silizium."
-        },
-        {
-          "type": "paragraph",
-          "text": "Trotz gesunder und ausgewogener Ernährung entwickelt jeder Mensch mit zunehmendem Alter einen Mangel an bestimmten Mineralstoffen. Das liegt daran, dass der europäische Boden nicht genügend Spurenelemente enthält. Folglich enthalten Lebensmittel wie Gemüse, Obst, Fleisch und Milch nicht genügend wichtige Stoffe."
-        },
-        {
-          "type": "paragraph",
-          "text": "Mavita Health liefert diese Mineralstoffe. So können Ihre Organe weiterhin optimal arbeiten."
-        },
-        {
-          "type": "paragraph",
-          "text": "Schlagwörter: Mensch, Spurenelemente, Mavita Health, Mineralstoffe, Ernährung, Silizium"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Geschrieben von Moreco"
-        },
-        {
-          "type": "paragraph",
-          "text": "Moreco stellt Produkte mit einer patentierten, biologisch aktiven und aufnehmbaren Siliziumform für Menschen, Tiere sowie den Garten- und Landbau her und vertreibt sie. Darüber hinaus bieten wir die ökologische Desinfektion mit Wasserstoffperoxid zur Wasseraufbereitung und zur biologischen Krankheitsbekämpfung in Landwirtschaft und Industrie."
         }
       ]
     }

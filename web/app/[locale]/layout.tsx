@@ -1,10 +1,17 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Noto_Sans_Arabic } from 'next/font/google';
 import { locale as rootLocale } from 'next/root-params';
 import { notFound } from 'next/navigation';
 
 import '../globals.css';
-import { LOCALES, LOCALE_HREFLANG, SITE_URL, isLocale, type Locale } from '@/i18n/config';
+import {
+  LOCALES,
+  LOCALE_DIR,
+  LOCALE_HREFLANG,
+  SITE_URL,
+  isLocale,
+  type Locale,
+} from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionary';
 import { QuoteProvider } from '@/components/Quote/QuoteProvider';
 import SiteHeader from '@/components/Header/SiteHeader';
@@ -15,6 +22,18 @@ const inter = Inter({
   weight: ['400', '500', '600', '700'],
   display: 'swap',
   variable: '--font-sans',
+});
+
+/**
+ * Inter carries no Arabic, so /ar/ would fall back to whatever the device happens to
+ * have. Noto Sans Arabic is loaded only on that locale and slots in ahead of Inter in
+ * --font-sans, which leaves the Latin brand names (Moreco, Orthagrow) on Inter.
+ */
+const notoArabic = Noto_Sans_Arabic({
+  subsets: ['arabic'],
+  weight: ['400', '500', '600', '700'],
+  display: 'swap',
+  variable: '--font-arabic',
 });
 
 /**
@@ -69,7 +88,8 @@ export default async function RootLayout({ children }: LayoutProps<'/[locale]'>)
      */
     <html
       lang={LOCALE_HREFLANG[locale]}
-      className={inter.variable}
+      dir={LOCALE_DIR[locale]}
+      className={[inter.variable, locale === 'ar' ? notoArabic.variable : ''].join(' ').trim()}
       suppressHydrationWarning
     >
       <head>

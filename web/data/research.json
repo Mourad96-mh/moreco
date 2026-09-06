@@ -6,13 +6,15 @@
       "fr": "Résultats sur les pommiers",
       "en": "Results on apple trees",
       "es": "Resultados en manzanos",
-      "de": "Ergebnisse bei Apfelbäumen"
+      "nl": "Resultaten bij appelbomen",
+      "ar": "نتائج على أشجار التفاح"
     },
     "description": {
       "fr": "Démonstration des résultats de la production des pommes à l’application de ORTHAGROW CONTROL, ORTHAGROW BLOOM BOOSTER, ORTHAGROW MICRO MANAGER et FERTIFIGHT à Midelt 2018.",
       "en": "Demonstration of apple production results following the application of ORTHAGROW CONTROL, ORTHAGROW BLOOM BOOSTER, ORTHAGROW MICRO MANAGER and FERTIFIGHT in Midelt, 2018.",
       "es": "Demostración de los resultados de producción de manzana tras la aplicación de ORTHAGROW CONTROL, ORTHAGROW BLOOM BOOSTER, ORTHAGROW MICRO MANAGER y FERTIFIGHT en Midelt, 2018.",
-      "de": "Darstellung der Ertragsergebnisse bei Äpfeln nach der Anwendung von ORTHAGROW CONTROL, ORTHAGROW BLOOM BOOSTER, ORTHAGROW MICRO MANAGER und FERTIFIGHT in Midelt, 2018."
+      "nl": "Demonstratie van de opbrengstresultaten bij appels na de toepassing van ORTHAGROW CONTROL, ORTHAGROW BLOOM BOOSTER, ORTHAGROW MICRO MANAGER en FERTIFIGHT in Midelt, 2018.",
+      "ar": "عرض لنتائج إنتاج التفاح عند تطبيق ORTHAGROW CONTROL وORTHAGROW BLOOM BOOSTER وORTHAGROW MICRO MANAGER وFERTIFIGHT بميدلت، 2018."
     },
     "url": "http://moreco.ma/research/resultats-sur-les-pommiers-apres-lapplication-des-produits-la-gamme-orthagrow/",
     "images": [
@@ -28,13 +30,15 @@
       "fr": "Résultats sur les fraises",
       "en": "Results on strawberries",
       "es": "Resultados en fresa",
-      "de": "Ergebnisse bei Erdbeeren"
+      "nl": "Resultaten bij aardbeien",
+      "ar": "نتائج على الفراولة"
     },
     "description": {
       "fr": "Démonstration des résultats de la production des fraises à l’application de ORTHAGROW CONTROL, ORTHAGROW BLOOM BOOSTER, ORTHAGROW MICRO MANAGER et FERTIFIGHT à Larache et Moulay Bousselham",
       "en": "Demonstration of strawberry production results following the application of ORTHAGROW CONTROL, ORTHAGROW BLOOM BOOSTER, ORTHAGROW MICRO MANAGER and FERTIFIGHT in Larache and Moulay Bousselham",
       "es": "Demostración de los resultados de producción de fresa tras la aplicación de ORTHAGROW CONTROL, ORTHAGROW BLOOM BOOSTER, ORTHAGROW MICRO MANAGER y FERTIFIGHT en Larache y Moulay Bousselham",
-      "de": "Darstellung der Ertragsergebnisse bei Erdbeeren nach der Anwendung von ORTHAGROW CONTROL, ORTHAGROW BLOOM BOOSTER, ORTHAGROW MICRO MANAGER und FERTIFIGHT in Larache und Moulay Bousselham"
+      "nl": "Demonstratie van de opbrengstresultaten bij aardbeien na de toepassing van ORTHAGROW CONTROL, ORTHAGROW BLOOM BOOSTER, ORTHAGROW MICRO MANAGER en FERTIFIGHT in Larache en Moulay Bousselham.",
+      "ar": "عرض لنتائج إنتاج الفراولة عند تطبيق ORTHAGROW CONTROL وORTHAGROW BLOOM BOOSTER وORTHAGROW MICRO MANAGER وFERTIFIGHT بالعرائش ومولاي بوسلهام."
     },
     "url": "http://moreco.ma/research/resultats-sur-les-fraises-apres-lapplication-de-la-gamme-orthagrow/",
     "images": [
@@ -50,13 +54,15 @@
       "fr": "Résultats sur les tomates",
       "en": "Results on tomatoes",
       "es": "Resultados en tomate",
-      "de": "Ergebnisse bei Tomaten"
+      "nl": "Resultaten bij tomaten",
+      "ar": "نتائج على الطماطم"
     },
     "description": {
       "fr": "Démonstration de résultat visuel des tomates avec l’application de ORTHAGROW Control au domaine Douiet à la ville de Fès.",
       "en": "Visual demonstration of results on tomatoes with the application of ORTHAGROW Control at the Douiet estate near Fez.",
       "es": "Demostración visual de los resultados en tomate con la aplicación de ORTHAGROW Control en la finca Douiet, en Fez.",
-      "de": "Visuelle Darstellung der Ergebnisse bei Tomaten nach der Anwendung von ORTHAGROW Control auf dem Gut Douiet bei Fès."
+      "nl": "Visuele demonstratie van de resultaten bij tomaten met de toepassing van ORTHAGROW Control op het domein Douiet in de stad Fez.",
+      "ar": "عرض بصري لنتائج الطماطم مع تطبيق ORTHAGROW Control بضيعة الدويات بمدينة فاس."
     },
     "url": "http://moreco.ma/research/resultats-sur-les-tomates-apres-lapplication-de-orthagrow-control/",
     "images": [
@@ -72,13 +78,15 @@
       "fr": "Résultats sur les Agrumes",
       "en": "Results on citrus",
       "es": "Resultados en cítricos",
-      "de": "Ergebnisse bei Zitrusfrüchten"
+      "nl": "Resultaten bij citrusvruchten",
+      "ar": "نتائج على الحمضيات"
     },
     "description": {
       "fr": "Résultats sur les agrumes Marisol après l’application de ORTHAGROW CONTROL à Larache, 2016",
       "en": "Results on Marisol citrus after the application of ORTHAGROW CONTROL in Larache, 2016",
       "es": "Resultados en cítricos Marisol tras la aplicación de ORTHAGROW CONTROL en Larache, 2016",
-      "de": "Ergebnisse bei Zitrusfrüchten der Sorte Marisol nach der Anwendung von ORTHAGROW CONTROL in Larache, 2016"
+      "nl": "Resultaten bij Marisol-citrus na de toepassing van ORTHAGROW CONTROL in Larache, 2016.",
+      "ar": "نتائج على حمضيات ماريسول بعد تطبيق ORTHAGROW CONTROL بالعرائش، 2016."
     },
     "url": "http://moreco.ma/research/resultats-sur-les-agrumes-marisol-apres-lapplication-de-orthagrow-control/",
     "images": [
@@ -95,13 +103,15 @@
       "fr": "Résultats sur les pêcher",
       "en": "Results on peach trees",
       "es": "Resultados en melocotonero",
-      "de": "Ergebnisse bei Pfirsichbäumen"
+      "nl": "Resultaten bij perzikbomen",
+      "ar": "نتائج على أشجار الخوخ"
     },
     "description": {
       "fr": "Démonstration des résultats de la floraison sur arbres pêcher avec l’application de ORTHAGROW BLOOM BOOSTER à Méknes",
       "en": "Demonstration of flowering results on peach trees with the application of ORTHAGROW BLOOM BOOSTER in Meknes",
       "es": "Demostración de los resultados de floración en melocotoneros con la aplicación de ORTHAGROW BLOOM BOOSTER en Mequinez",
-      "de": "Darstellung der Blühergebnisse an Pfirsichbäumen nach der Anwendung von ORTHAGROW BLOOM BOOSTER in Meknès"
+      "nl": "Demonstratie van de bloeiresultaten bij perzikbomen met de toepassing van ORTHAGROW BLOOM BOOSTER in Meknes.",
+      "ar": "عرض لنتائج الإزهار على أشجار الخوخ مع تطبيق ORTHAGROW BLOOM BOOSTER بمكناس."
     },
     "url": "http://moreco.ma/research/resultats-de-la-production-sur-les-arbres-pecher-a-lapplication-de-orthagrow-bloom-booster/",
     "images": [
@@ -116,13 +126,15 @@
       "fr": "Résultats pommes de terre",
       "en": "Results on potatoes",
       "es": "Resultados en patata",
-      "de": "Ergebnisse bei Kartoffeln"
+      "nl": "Resultaten bij aardappelen",
+      "ar": "نتائج على البطاطس"
     },
     "description": {
       "fr": "Résultats et effets de l’application du produit ORHTAGROW CONTROL, ORHTAGROW GRANULE sur les pommes de terre à Méknes.",
       "en": "Results and effects of applying ORTHAGROW CONTROL and ORTHAGROW GRANULE to potatoes in Meknes.",
       "es": "Resultados y efectos de la aplicación de ORTHAGROW CONTROL y ORTHAGROW GRANULE en patata, en Mequinez.",
-      "de": "Ergebnisse und Wirkungen der Anwendung von ORTHAGROW CONTROL und ORTHAGROW GRANULE bei Kartoffeln in Meknès."
+      "nl": "Resultaten en effecten van de toepassing van ORTHAGROW CONTROL en ORTHAGROW GRANULE op aardappelen in Meknes.",
+      "ar": "نتائج وآثار تطبيق منتج ORTHAGROW CONTROL وORTHAGROW GRANULE على البطاطس بمكناس."
     },
     "url": "http://moreco.ma/research/resultats-sur-les-pommes-de-terre-apres-lapplication-du-produit-orthagrow-control/",
     "images": [
@@ -137,13 +149,15 @@
       "fr": "Résultats sur les melons",
       "en": "Results on melons",
       "es": "Resultados en melón",
-      "de": "Ergebnisse bei Melonen"
+      "nl": "Resultaten bij meloenen",
+      "ar": "نتائج على الشمام"
     },
     "description": {
       "fr": "Démonstration des résultats de la production des melons jaunes à l’application de ORTHAGROW CONTROL, ORTHAGROW BLOOM BOOSTER et ORTHAGROW SOIL CONDITIONER 4TH à Sidi kacem.",
       "en": "Demonstration of yellow melon production results following the application of ORTHAGROW CONTROL, ORTHAGROW BLOOM BOOSTER and ORTHAGROW SOIL CONDITIONER 4TH in Sidi Kacem.",
       "es": "Demostración de los resultados de producción de melón amarillo tras la aplicación de ORTHAGROW CONTROL, ORTHAGROW BLOOM BOOSTER y ORTHAGROW SOIL CONDITIONER 4TH en Sidi Kacem.",
-      "de": "Darstellung der Ertragsergebnisse bei gelben Melonen nach der Anwendung von ORTHAGROW CONTROL, ORTHAGROW BLOOM BOOSTER und ORTHAGROW SOIL CONDITIONER 4TH in Sidi Kacem."
+      "nl": "Demonstratie van de opbrengstresultaten bij gele meloenen na de toepassing van ORTHAGROW CONTROL, ORTHAGROW BLOOM BOOSTER en ORTHAGROW SOIL CONDITIONER 4TH in Sidi Kacem.",
+      "ar": "عرض لنتائج إنتاج الشمام الأصفر عند تطبيق ORTHAGROW CONTROL وORTHAGROW BLOOM BOOSTER وORTHAGROW SOIL CONDITIONER 4TH بسيدي قاسم."
     },
     "url": "http://moreco.ma/research/resultats-sur-les-melons-jaune-apres-lapplication-de-la-gamme-orthagrow/",
     "images": [
@@ -159,13 +173,15 @@
       "fr": "Résultats sur les carottes",
       "en": "Results on carrots",
       "es": "Resultados en zanahoria",
-      "de": "Ergebnisse bei Karotten"
+      "nl": "Resultaten bij wortelen",
+      "ar": "نتائج على الجزر"
     },
     "description": {
       "fr": "Démonstration et rendement de résultat des carottes avec l’application de ORTHAGROW CONTROL, ORTHAGROW SOIL CONDITIONER , ORTHAGROW MICRO MANAGER à JACKMA.",
       "en": "Demonstration and yield results on carrots with the application of ORTHAGROW CONTROL, ORTHAGROW SOIL CONDITIONER and ORTHAGROW MICRO MANAGER in Jackma.",
       "es": "Demostración y resultados de rendimiento en zanahoria con la aplicación de ORTHAGROW CONTROL, ORTHAGROW SOIL CONDITIONER y ORTHAGROW MICRO MANAGER en Jackma.",
-      "de": "Darstellung und Ertragsergebnisse bei Karotten nach der Anwendung von ORTHAGROW CONTROL, ORTHAGROW SOIL CONDITIONER und ORTHAGROW MICRO MANAGER in Jackma."
+      "nl": "Demonstratie en opbrengstresultaat bij wortelen met de toepassing van ORTHAGROW CONTROL, ORTHAGROW SOIL CONDITIONER en ORTHAGROW MICRO MANAGER in JACKMA.",
+      "ar": "عرض ومردود نتائج الجزر مع تطبيق ORTHAGROW CONTROL وORTHAGROW SOIL CONDITIONER وORTHAGROW MICRO MANAGER بجاكما."
     },
     "url": "http://moreco.ma/research/resultats-sur-les-carottes-apres-lapplication-de-orthagrow-control-2/",
     "images": [
@@ -180,13 +196,15 @@
       "fr": "Résultats sur le blé",
       "en": "Results on wheat",
       "es": "Resultados en trigo",
-      "de": "Ergebnisse bei Weizen"
+      "nl": "Resultaten bij tarwe",
+      "ar": "نتائج على القمح"
     },
     "description": {
       "fr": "Démonstration des résultats de la production de blé l’application de ORTHAGROW GRANULÉ au domaine Louata Sefro.",
       "en": "Demonstration of wheat production results following the application of ORTHAGROW GRANULE at the Louata estate, Sefrou.",
       "es": "Demostración de los resultados de producción de trigo tras la aplicación de ORTHAGROW GRANULE en la finca Louata, Sefrú.",
-      "de": "Darstellung der Ertragsergebnisse bei Weizen nach der Anwendung von ORTHAGROW GRANULE auf dem Gut Louata, Sefrou."
+      "nl": "Demonstratie van de opbrengstresultaten bij tarwe na de toepassing van ORTHAGROW GRANULÉ op het domein Louata Sefrou.",
+      "ar": "عرض لنتائج إنتاج القمح عند تطبيق ORTHAGROW GRANULÉ بضيعة لواتة صفرو."
     },
     "url": "http://moreco.ma/research/resultats-de-la-production-de-ble-a-lapplication-de-orthagrow-granule/",
     "images": [
@@ -202,13 +220,15 @@
       "fr": "Résultats sur les poivrons",
       "en": "Results on peppers",
       "es": "Resultados en pimiento",
-      "de": "Ergebnisse bei Paprika"
+      "nl": "Resultaten bij paprika",
+      "ar": "نتائج على الفلفل"
     },
     "description": {
       "fr": "Démonstration de l’effet du produit Orthagrow Control, Orthagrow Micro Manager et Fertifight a Agadir.",
       "en": "Demonstration of the effect of Orthagrow Control, Orthagrow Micro Manager and Fertifight in Agadir.",
       "es": "Demostración del efecto de Orthagrow Control, Orthagrow Micro Manager y Fertifight en Agadir.",
-      "de": "Darstellung der Wirkung von Orthagrow Control, Orthagrow Micro Manager und Fertifight in Agadir."
+      "nl": "Demonstratie van het effect van Orthagrow Control, Orthagrow Micro Manager en Fertifight in Agadir.",
+      "ar": "عرض لأثر منتجات Orthagrow Control وOrthagrow Micro Manager وFertifight بأكادير."
     },
     "url": "http://moreco.ma/research/effets-des-produits-orthagrow-sur-les-poivrons/",
     "images": [
@@ -224,13 +244,15 @@
       "fr": "Résultats sur les Olives",
       "en": "Results on olives",
       "es": "Resultados en olivo",
-      "de": "Ergebnisse bei Oliven"
+      "nl": "Resultaten bij olijven",
+      "ar": "نتائج على الزيتون"
     },
     "description": {
       "fr": "Résultats sur les Olives après l’application de ORTHAGROW CONTROL à Marrakech, 2017",
       "en": "Results on olives after the application of ORTHAGROW CONTROL in Marrakech, 2017",
       "es": "Resultados en aceituna tras la aplicación de ORTHAGROW CONTROL en Marrakech, 2017",
-      "de": "Ergebnisse bei Oliven nach der Anwendung von ORTHAGROW CONTROL in Marrakesch, 2017"
+      "nl": "Resultaten bij olijven na de toepassing van ORTHAGROW CONTROL in Marrakech, 2017.",
+      "ar": "نتائج على الزيتون بعد تطبيق ORTHAGROW CONTROL بمراكش، 2017."
     },
     "url": "http://moreco.ma/research/resultats-sur-les-olives-apres-lapplication-de-orthagrow-control/",
     "images": [
@@ -244,13 +266,15 @@
       "fr": "Résultats maïs d’ensilage",
       "en": "Results on silage maize",
       "es": "Resultados en maíz forrajero",
-      "de": "Ergebnisse bei Silomais"
+      "nl": "Resultaten bij kuilmaïs",
+      "ar": "نتائج على ذرة العلف"
     },
     "description": {
       "fr": "Démonstration des résultats de la production Résultats de la production de maïs d’ensilage à l’application de ORTHAGROW POUDRE à Ouled ABOU.",
       "en": "Demonstration of silage maize production results following the application of ORTHAGROW POWDER in Ouled Abou.",
       "es": "Demostración de los resultados de producción de maíz forrajero tras la aplicación de ORTHAGROW Polvo en Ouled Abou.",
-      "de": "Darstellung der Ertragsergebnisse bei Silomais nach der Anwendung von ORTHAGROW Pulver in Ouled Abou."
+      "nl": "Demonstratie van de opbrengstresultaten bij kuilmaïs na de toepassing van ORTHAGROW POUDRE in Ouled Abou.",
+      "ar": "عرض لنتائج إنتاج ذرة العلف عند تطبيق ORTHAGROW POUDRE بأولاد أبو."
     },
     "url": "http://moreco.ma/research/resultats-de-la-production-de-mais-densilage-a-lapplication-de-orthagrow-poudre/",
     "images": [
@@ -265,13 +289,15 @@
       "fr": "Résultats sur les cactus",
       "en": "Results on cactus",
       "es": "Resultados en chumbera",
-      "de": "Ergebnisse bei Kaktusfeigen"
+      "nl": "Resultaten bij cactus",
+      "ar": "نتائج على الصبار"
     },
     "description": {
       "fr": "Démonstration des résultats visuels sur les plantes des cactus (Figues de barbarie) à Skhour Rhamna après l’application du produit ORTHAGROW Control.",
       "en": "Visual demonstration of results on cactus plants (prickly pear) in Skhour Rhamna after the application of ORTHAGROW Control.",
       "es": "Demostración visual de los resultados en chumberas (higo chumbo) en Skhour Rhamna tras la aplicación de ORTHAGROW Control.",
-      "de": "Visuelle Darstellung der Ergebnisse an Kaktusfeigenpflanzen in Skhour Rhamna nach der Anwendung von ORTHAGROW Control."
+      "nl": "Demonstratie van de visuele resultaten op cactusplanten (cactusvijgen) in Skhour Rhamna na de toepassing van ORTHAGROW Control.",
+      "ar": "عرض للنتائج البصرية على نبات الصبار (الهندية) بصخور الرحامنة بعد تطبيق منتج ORTHAGROW Control."
     },
     "url": "http://moreco.ma/research/resultats-sur-les-cactus-apres-lapplication-de-orthagrow-control/",
     "images": [
@@ -285,13 +311,15 @@
       "fr": "Résultats sur le QUINOA",
       "en": "Results on quinoa",
       "es": "Resultados en quinoa",
-      "de": "Ergebnisse bei Quinoa"
+      "nl": "Resultaten bij quinoa",
+      "ar": "نتائج على الكينوا"
     },
     "description": {
       "fr": "Démonstration des résultats de la production de QUINOA à l’application de ORTHAGROW CONTROL à Berrechid",
       "en": "Demonstration of quinoa production results following the application of ORTHAGROW CONTROL in Berrechid",
       "es": "Demostración de los resultados de producción de quinoa tras la aplicación de ORTHAGROW CONTROL en Berrechid",
-      "de": "Darstellung der Ertragsergebnisse bei Quinoa nach der Anwendung von ORTHAGROW CONTROL in Berrechid"
+      "nl": "Demonstratie van de opbrengstresultaten bij QUINOA na de toepassing van ORTHAGROW CONTROL in Berrechid.",
+      "ar": "عرض لنتائج إنتاج الكينوا عند تطبيق ORTHAGROW CONTROL ببرشيد."
     },
     "url": "http://moreco.ma/research/resultats-de-la-production-de-guinoa-a-lapplication-de-orthagrow-control/",
     "images": [
@@ -306,13 +334,15 @@
       "fr": "Résultats sur le raisin",
       "en": "Results on grapes",
       "es": "Resultados en uva",
-      "de": "Ergebnisse bei Weintrauben"
+      "nl": "Resultaten bij druiven",
+      "ar": "نتائج على العنب"
     },
     "description": {
       "fr": "• Démonstration de l’effet du produit Orthagrow Control et Fertifight sur le raisin : --- • Démonstration de l’effet du produit Orthagrow Granulé sur le raisin à Boufekrane, Meknes. *\\*Témoin : Traité avec un bio-stimulant bien connu à base d’algues.*",
       "en": "• Demonstration of the effect of Orthagrow Control and Fertifight on grapes: --- • Demonstration of the effect of Orthagrow Granule on grapes in Boufekrane, Meknes. *\\*Control: treated with a well-known seaweed-based biostimulant.*",
       "es": "• Demostración del efecto de Orthagrow Control y Fertifight en uva: --- • Demostración del efecto de Orthagrow Granule en uva en Boufekrane, Mequinez. *\\*Testigo: tratado con un bioestimulante muy conocido a base de algas.*",
-      "de": "• Darstellung der Wirkung von Orthagrow Control und Fertifight bei Weintrauben: --- • Darstellung der Wirkung von Orthagrow Granule bei Weintrauben in Boufekrane, Meknès. *\\*Kontrolle: behandelt mit einem bekannten Biostimulans auf Algenbasis.*"
+      "nl": "• Demonstratie van het effect van Orthagrow Control en Fertifight op druiven: --- • Demonstratie van het effect van Orthagrow Granulé op druiven in Boufekrane, Meknes. *\\*Controle: behandeld met een bekende biostimulant op basis van algen.*",
+      "ar": "• عرض لأثر منتجي Orthagrow Control وFertifight على العنب: --- • عرض لأثر منتج Orthagrow Granulé على العنب ببوفكران، مكناس. *\\*الشاهد: مُعالَج بمنشّط حيوي معروف قائم على الطحالب.*"
     },
     "url": "http://moreco.ma/research/15-resultats-sur-les-grapes/",
     "images": [
@@ -326,13 +356,15 @@
       "fr": "Résultats sur les prunes",
       "en": "Results on plums",
       "es": "Resultados en ciruela",
-      "de": "Ergebnisse bei Pflaumen"
+      "nl": "Resultaten bij pruimen",
+      "ar": "نتائج على البرقوق"
     },
     "description": {
       "fr": "Témoignage d’un producteur de Prunes après l’application de Bloom Booster. Région Meknès, Maroc",
       "en": "Testimonial from a plum grower after applying Bloom Booster. Meknes region, Morocco",
       "es": "Testimonio de un productor de ciruela tras la aplicación de Bloom Booster. Región de Mequinez, Marruecos",
-      "de": "Erfahrungsbericht eines Pflaumenerzeugers nach der Anwendung von Bloom Booster. Region Meknès, Marokko"
+      "nl": "Getuigenis van een pruimenteler na de toepassing van Bloom Booster. Regio Meknes, Marokko.",
+      "ar": "شهادة منتج للبرقوق بعد تطبيق Bloom Booster. جهة مكناس، المغرب."
     },
     "url": "http://moreco.ma/research/16-resultats-sur-les-prunes/",
     "images": [
@@ -346,13 +378,15 @@
       "fr": "Résultats sur les Framboises",
       "en": "Results on raspberries",
       "es": "Resultados en frambuesa",
-      "de": "Ergebnisse bei Himbeeren"
+      "nl": "Resultaten bij frambozen",
+      "ar": "نتائج على توت العليق"
     },
     "description": {
       "fr": "Resultats sur les FRAMBOISIER avec du produit ORTHAGROW BLOOM BOOSTER *\\*Témoin : Traité avec un bio-stimulant bien connu à base de bore.*",
       "en": "Results on RASPBERRY canes with ORTHAGROW BLOOM BOOSTER *\\*Control: treated with a well-known boron-based biostimulant.*",
       "es": "Resultados en FRAMBUESO con ORTHAGROW BLOOM BOOSTER *\\*Testigo: tratado con un bioestimulante muy conocido a base de boro.*",
-      "de": "Ergebnisse an HIMBEEREN mit ORTHAGROW BLOOM BOOSTER *\\*Kontrolle: behandelt mit einem bekannten Biostimulans auf Borbasis.*"
+      "nl": "Resultaten bij frambozen met het product ORTHAGROW BLOOM BOOSTER. *\\*Controle: behandeld met een bekende biostimulant op basis van boor.*",
+      "ar": "نتائج على توت العليق بمنتج ORTHAGROW BLOOM BOOSTER. *\\*الشاهد: مُعالَج بمنشّط حيوي معروف قائم على البورون.*"
     },
     "url": "http://moreco.ma/research/17-resultats-sur-les-framboises/",
     "images": [
@@ -366,13 +400,15 @@
       "fr": "Résultats sur les oignons",
       "en": "Results on onions",
       "es": "Resultados en cebolla",
-      "de": "Ergebnisse bei Zwiebeln"
+      "nl": "Resultaten bij uien",
+      "ar": "نتائج على البصل"
     },
     "description": {
       "fr": "Resultats sur les oignons avec le produit FERTIFIGHT,",
       "en": "Results on onions with FERTIFIGHT,",
       "es": "Resultados en cebolla con FERTIFIGHT,",
-      "de": "Ergebnisse bei Zwiebeln mit FERTIFIGHT,"
+      "nl": "Resultaten bij uien met het product FERTIFIGHT.",
+      "ar": "نتائج على البصل بمنتج FERTIFIGHT."
     },
     "url": "http://moreco.ma/research/18-resultats-sur-les-oignons/",
     "images": [
@@ -386,13 +422,15 @@
       "fr": "Résultats sur le Gazon",
       "en": "Results on turf",
       "es": "Resultados en césped",
-      "de": "Ergebnisse bei Rasen"
+      "nl": "Resultaten bij gazon",
+      "ar": "نتائج على العشب"
     },
     "description": {
       "fr": "Démonstration du résultat sur le Gazon à l’application du produit ORTHAGROW Granulé, à Casablanca.",
       "en": "Demonstration of the result on turf following the application of ORTHAGROW Granule, in Casablanca.",
       "es": "Demostración del resultado en césped tras la aplicación de ORTHAGROW Granule, en Casablanca.",
-      "de": "Darstellung des Ergebnisses bei Rasen nach der Anwendung von ORTHAGROW Granule in Casablanca."
+      "nl": "Demonstratie van het resultaat op gazon na de toepassing van ORTHAGROW Granulé, in Casablanca.",
+      "ar": "عرض للنتيجة على العشب عند تطبيق منتج ORTHAGROW Granulé، بالدار البيضاء."
     },
     "url": "http://moreco.ma/research/19-resultats-sur-le-gazon/",
     "images": [

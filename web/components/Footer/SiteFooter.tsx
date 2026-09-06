@@ -20,8 +20,8 @@ export default function SiteFooter({ locale }: { locale: Locale }) {
             <Image
               src="/media/brand/moreco-logo.webp"
               alt={t.site.name}
-              width={268}
-              height={100}
+              width={535}
+              height={200}
               className={s.logo}
             />
           </Link>
