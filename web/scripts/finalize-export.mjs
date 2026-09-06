@@ -3,7 +3,7 @@
  *
  *   out/index.html   language landing page for the bare domain
  *   out/.htaccess    root redirect + the 301 map from the old moreco.ma
- *   out/sitemap.xml  every page, in all four languages, with hreflang alternates
+ *   out/sitemap.xml  every page, in all five languages, with hreflang alternates
  *   out/robots.txt
  *
  * Run after `next build`. Reads ../content-index.json for the old URL inventory.
@@ -16,7 +16,7 @@ const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, '..');
 const OUT = join(ROOT, 'out');
 const SITE = 'https://moreco.ma';
-const LOCALES = ['fr', 'en', 'es', 'de'];
+const LOCALES = ['fr', 'en', 'es', 'nl', 'ar'];
 const DEFAULT = 'fr';
 
 if (!existsSync(OUT)) {
@@ -49,6 +49,39 @@ function walk(dir, base = '') {
 const built = walk(OUT).filter((p) => LOCALES.includes(p.split('/')[0]));
 const byLocale = new Map(LOCALES.map((l) => [l, []]));
 for (const p of built) byLocale.get(p.split('/')[0]).push(p);
+
+/**
+ * A page's siblings in the other languages: only the localised words differ, and those
+ * come from the same table the routes were built from, so translating segment by segment
+ * reproduces the exact sibling URL. Brand slugs (orthagrow, mavita-health) pass through.
+ */
+const wordTable = JSON.parse(readFileSync(join(ROOT, 'data', 'route-words.json'), 'utf8'));
+const vocab = [...Object.values(wordTable.words), ...Object.values(wordTable.segments)];
+
+const translateSegment = (segment, from, to) => {
+  const entry = vocab.find((v) => v[from] === segment);
+  return entry ? entry[to] : segment;
+};
+
+const siblingsOf = (path) => {
+  const [from, ...rest] = path.split('/');
+  return LOCALES.map((to) => ({
+    locale: to,
+    url: `${SITE}/${[to, ...rest.map((s) => translateSegment(s, from, to))].join('/')}/`,
+  }));
+};
+
+/**
+ * The /ar/ twin of a freshly built path, or undefined when that page was not exported.
+ * Used to retire the old site's Arabic URLs onto the new Arabic pages instead of French.
+ */
+const arabicSiblingOf = (target) => {
+  const path = target.replace(/^\/|\/$/g, '');
+  const [from, ...rest] = path.split('/');
+  if (from === 'ar') return target;
+  const twin = ['ar', ...rest.map((seg) => translateSegment(seg, from, 'ar'))].join('/');
+  return built.includes(twin) ? `/${twin}/` : undefined;
+};
 
 /* ------------------------------------------------- old URL -> new URL (301) */
 
@@ -183,7 +216,11 @@ for (const [slug, trial] of Object.entries(TRIALS)) {
   addRule(`/research/${slug}/`, 'fr', `${TRIAL_PREFIX.fr}/${trial}`);
 }
 
-/** Arabic pages are gone; the archive's own translation links point them at French. */
+/**
+ * The old site's Arabic pages have a home again: the archive's own translation links
+ * give each one a French or English sibling, and that sibling's new path is re-localised
+ * into /ar/. Anything without a usable sibling keeps the French target.
+ */
 const index = JSON.parse(readFileSync(join(ROOT, '..', 'content-index.json'), 'utf8'));
 const unmapped = [];
 
@@ -196,7 +233,7 @@ for (const entry of index) {
     if (sibling) {
       const target = map.get(new URL(sibling).pathname.replace(/\/?$/, '/'));
       if (target) {
-        map.set(path, target);
+        map.set(path, arabicSiblingOf(target) ?? target);
         continue;
       }
     }
@@ -232,7 +269,7 @@ DirectoryIndex index.html
 
 # --- 301s from the old moreco.ma (${map.size} rules) ---
 # WPML served every language off the same paths with ?lang=xx, so the query string is
-# dropped here: the language now lives in the path. Arabic is retired and lands on French.
+# dropped here: the language now lives in the path. The old Arabic pages land on /ar/.
 ${[...map.entries()]
   .filter(([from]) => from !== '/')
   .sort((a, b) => b[0].length - a[0].length)
@@ -275,7 +312,7 @@ ${LOCALES.map((l) => `<link rel="alternate" hreflang="${l}" href="${SITE}/${l}/"
    *
    * Order: the language the visitor last picked with the header switcher, then the
    * browser's own list (navigator.languages is ordered by preference and includes
-   * region tags like de-AT), then French.
+   * region tags like ar-MA), then French.
    *
    * This used to sit at the foot of the body under a <meta http-equiv="refresh"
    * content="0"> — which fired first, so a German browser still landed on French.
@@ -306,15 +343,15 @@ ${LOCALES.map((l) => `<link rel="alternate" hreflang="${l}" href="${SITE}/${l}/"
   ul{display:flex;gap:.75rem;list-style:none;padding:0;flex-wrap:wrap;justify-content:center}
   a{display:block;padding:.6rem 1.1rem;border:1px solid #ccd3d9;border-radius:4px;background:#fff;
     color:inherit;text-decoration:none;font-weight:600}
-  a:hover{border-color:#00a048;color:#007a37}
+  a:hover{border-color:#40ab5c;color:#25743a}
 </style>
 </head>
 <body>
   <main>
-    <img src="/media/brand/moreco-logo.webp" alt="Moreco" width="268" height="100" style="height:56px;width:auto">
+    <img src="/media/brand/moreco-logo.webp" alt="Moreco" width="535" height="200" style="height:56px;width:auto">
     <p>Choose your language / Choisissez votre langue</p>
     <ul>
-${LOCALES.map((l) => `      <li><a href="/${l}/" hreflang="${l}">${{ fr: 'Français', en: 'English', es: 'Español', de: 'Deutsch' }[l]}</a></li>`).join('\n')}
+${LOCALES.map((l) => `      <li><a href="/${l}/" hreflang="${l}">${{ fr: 'Français', en: 'English', es: 'Español', nl: 'Nederlands', ar: 'العربية' }[l]}</a></li>`).join('\n')}
     </ul>
   </main>
 </body>
@@ -324,27 +361,6 @@ ${LOCALES.map((l) => `      <li><a href="/${l}/" hreflang="${l}">${{ fr: 'Franç
 writeFileSync(join(OUT, 'index.html'), landing, 'utf8');
 
 /* ------------------------------------------------------------- sitemap.xml */
-
-/**
- * A page's siblings in the other languages: only the localised words differ, and those
- * come from the same table the routes were built from, so translating segment by segment
- * reproduces the exact sibling URL. Brand slugs (orthagrow, mavita-health) pass through.
- */
-const wordTable = JSON.parse(readFileSync(join(ROOT, 'data', 'route-words.json'), 'utf8'));
-const vocab = [...Object.values(wordTable.words), ...Object.values(wordTable.segments)];
-
-const translateSegment = (segment, from, to) => {
-  const entry = vocab.find((v) => v[from] === segment);
-  return entry ? entry[to] : segment;
-};
-
-const siblingsOf = (path) => {
-  const [from, ...rest] = path.split('/');
-  return LOCALES.map((to) => ({
-    locale: to,
-    url: `${SITE}/${[to, ...rest.map((s) => translateSegment(s, from, to))].join('/')}/`,
-  }));
-};
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">

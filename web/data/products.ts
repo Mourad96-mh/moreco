@@ -98,14 +98,14 @@ export const PRODUCTS: Product[] = [
   {
     slug: 'orthagrow-granule',
     name: 'Orthagrow Granulé',
-    names: { en: 'Orthagrow Granule', es: 'Orthagrow Granule', de: 'Orthagrow Granule' },
+    names: { en: 'Orthagrow Granule', es: 'Orthagrow Granule', ar: 'Orthagrow حُبيبات' },
     segment: 'agri',
     range: 'orthagrow',
   },
   {
     slug: 'orthagrow-poudre',
     name: 'Orthagrow Poudre',
-    names: { en: 'Orthagrow Powder', es: 'Orthagrow Polvo', de: 'Orthagrow Pulver' },
+    names: { en: 'Orthagrow Powder', es: 'Orthagrow Polvo', ar: 'Orthagrow مسحوق' },
     segment: 'agri',
     range: 'orthagrow',
   },

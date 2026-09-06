@@ -1,17 +1,22 @@
-# Traductions ES / DE — points à valider
+# Traductions ES / NL / AR — points à valider
 
-Rédigé le 2026-09-01, à la fin de la passe de traduction espagnole et allemande.
+Rédigé le 2026-09-01 (passe espagnole et allemande), mis à jour le 2026-09-06 :
+**l'allemand a été retiré du site et remplacé par l'arabe et le néerlandais.**
 **À faire relire par le client avant mise en ligne.**
 
 ## Ce qui a été traduit
 
 | Fichier | Contenu | Avant | Après |
 | --- | --- | --- | --- |
-| `data/product-copy.json` | 36 fiches produits (accroche, paragraphes, avantages, conditionnements) | fr, en | fr, en, **es, de** |
-| `data/pages.json` | 5 pages éditoriales (à propos, carrières, médias, applications, actualités) | fr, en | fr, en, **es, de** |
-| `data/articles.json` | 7 articles du centre de connaissances | fr, en | fr, en, **es, de** |
-| `data/research.json` | 19 essais R&D + I (titre + description) | **fr seulement** | fr, **en, es, de** |
-| `i18n/dictionaries/*.json` | libellés d'interface | déjà complet en 4 langues | inchangé (124 clés × 4) |
+| `data/product-copy.json` | 36 fiches produits (accroche, paragraphes, avantages, conditionnements) | fr, en, es, de | fr, en, es, **nl, ar** |
+| `data/research.json` | 19 essais R&D + I (titre + description) | fr, en, es, de | fr, en, es, **nl, ar** |
+| `data/pages.json` | 5 pages éditoriales (à propos, carrières, médias, applications, actualités) | fr, en, es, de | fr, en, es, **nl, ar** |
+| `data/articles.json` | 7 articles du centre de connaissances | fr, en, es, de | fr, en, es — **nl et ar restent à écrire** |
+| `i18n/dictionaries/*.json` | libellés d'interface | fr, en, es, de | fr, en, es, **nl, ar** (149 clés × 5) |
+
+`data/articles.ts` retombe sur le français quand une langue manque : les sept articles
+s'affichent donc en français sur `/nl/` et `/ar/` en attendant leur traduction. C'est le
+seul contenu du site qui ne soit pas encore dans les cinq langues.
 
 Les essais étaient la dernière donnée monolingue : leurs titres s'affichaient en français
 y compris sur les pages anglaises. `title` et `description` sont devenus des objets par
@@ -19,17 +24,39 @@ langue et `data/trials.ts` sert de point d'accès (`trialTitle`, `trialDescripti
 `scripts/extract-research.mjs` fusionne désormais au lieu d'écraser : une ré-extraction
 rafraîchit le `fr` et conserve les traductions écrites à la main.
 
-Vérifié après build : 322 pages, TypeScript propre, aucune chaîne française résiduelle
-dans les pages `/es/` et `/de/`, aucune chaîne anglaise résiduelle non plus.
+Vérifié après build : 435 URLs, 2175 alternates hreflang, TypeScript propre.
+
+## 0. Arabe — ce que le passage en RTL implique
+
+- `<html dir>` est piloté par `LOCALE_DIR` (`i18n/config.ts`). Les feuilles de style
+  utilisaient déjà des propriétés logiques (`margin-inline-start`, `padding-inline`) ; la
+  dizaine de propriétés physiques restantes a été convertie. **À revoir à l'œil dans un
+  vrai navigateur avant mise en ligne**, en particulier le méga-menu et le fil d'ariane.
+- Inter ne porte pas l'arabe : `/ar/` charge en plus **Noto Sans Arabic**, placé devant
+  Inter dans la pile de polices pour que les noms de marque latins (Moreco, Orthagrow)
+  restent sur Inter.
+- **Les URLs arabes réutilisent les mots anglais** (`/ar/products/`, pas `/ar/منتجات/`).
+  L'export est une arborescence de vrais dossiers sur Hostinger : des segments arabes
+  partiraient percent-encodés. Choix réversible — voir `data/route-words.json`.
+- Les anciennes pages arabes du site WordPress ne retombent plus sur le français : le
+  `.htaccess` généré les renvoie vers leur équivalent `/ar/` lorsqu'il existe.
+
+## 0 bis. Néerlandais — marché visé
+
+Le néerlandais expose le catalogue à un marché **UE** (Belgique, Pays-Bas), là où
+l'allemand le faisait auparavant. Les points 1 à 4 ci-dessous, écrits pour l'ES et le DE,
+s'appliquent donc **à l'identique au NL**. Ils valent aussi pour l'arabe, sous la
+réglementation marocaine sur les allégations des compléments alimentaires et des biocides,
+qui n'a pas été auditée ici.
 
 ## 1. Allégations santé — compléments alimentaires (priorité haute)
 
-Les pages ES et DE visent des marchés de l'UE, où le **règlement (CE) n° 1924/2006**
+Les pages ES et NL visent des marchés de l'UE, où le **règlement (CE) n° 1924/2006**
 n'autorise que les allégations figurant au registre européen, et où le **règlement (UE)
 n° 432/2012** interdit toute allégation de prévention ou de traitement d'une maladie.
 Le texte source français porte des affirmations qui, telles quelles, ne passeraient pas.
 Elles ont été **traduites fidèlement** — c'est au client de décider s'il les conserve,
-les atténue ou les retire, dans les quatre langues.
+les atténue ou les retire, dans les cinq langues.
 
 - **Mavita Luxe** — « accroît la fertilité », « stimule la libido », « combat l'impuissance
   et les problèmes d'érection », « soulage les symptômes de la ménopause », « réduit les
@@ -89,13 +116,13 @@ n° 1107/2009** et exigerait une AMM produit phytopharmaceutique dans chaque pay
 « Saviez-vous que les produits concurrents prennent jusqu'à 10 minutes pour tuer les
 bactéries et les virus ? » (page Applications, Clearox, Huwa-San). La publicité comparative
 (**directive 2006/114/CE**) exige des éléments objectifs et vérifiables. Repris tel quel en
-ES et DE ; à sourcer ou à reformuler.
+ES, NL et AR ; à sourcer ou à reformuler.
 
 ## 5. Références scientifiques à vérifier
 
 - OrthaHealth cite « Le Journal International des maladies endocriniens, Volume 2013,
   article ID 316783 » — la revue s'appelle *International Journal of Endocrinology* ;
-  corrigé ainsi en ES et DE, à confirmer côté FR/EN.
+  corrigé ainsi en ES, NL et AR, à confirmer côté FR/EN.
 - Les renvois `[37-39]`, `[40]`, `[20, 33, 37-43]` de la même fiche proviennent de l'article
   source et ne renvoient à aucune bibliographie sur le site. Soit ajouter la bibliographie,
   soit retirer les numéros.
@@ -107,9 +134,9 @@ ES et DE ; à sourcer ou à reformuler.
 Le texte français de l'archive est lui-même une traduction approximative (probablement
 depuis le néerlandais ou l'anglais) : « Réduit l'incident d'hébergement » pour *reduces
 lodging incidence*, « le silicone » pour le silicium, « prendvont », « l'ajou tde », etc.
-Les versions ES et DE ont été écrites en langue correcte à partir du sens réel, en
-recoupant l'anglais de l'archive. **Conséquence : sur certains passages, l'espagnol et
-l'allemand sont plus clairs que le français d'origine.** Une repasse du texte FR est
+Les versions ES, NL et AR ont été écrites en langue correcte à partir du sens réel, en
+recoupant l'anglais de l'archive. **Conséquence : sur certains passages, l'espagnol, le
+néerlandais et l'arabe sont plus clairs que le français d'origine.** Une repasse du texte FR est
 recommandée — elle n'a pas été faite ici pour ne pas modifier le contenu validé par le
 client.
 
@@ -120,32 +147,32 @@ Deux corrections mineures ont tout de même été portées côté FR, dans `data
   *grapes* est un anglicisme ; le slug de la page reste `raisins`).
 
 Les restes de balises WPML (« Nutrition @fr », « silicon @fr », « supplèments @fr ») ont
-été supprimés dans les listes de mots-clés ES et DE ; ils subsistent en FR et EN.
+été supprimés dans les listes de mots-clés ES, NL et AR ; ils subsistent en FR et EN.
 
 ## 7. Terminologie retenue
 
-| Français | Espagnol | Allemand |
-| --- | --- | --- |
-| acide orthosilicique (AOS) | ácido ortosilícico (AOS) | Orthokieselsäure (OSA) |
-| silicium | silicio | Silizium |
-| stress abiotique / hydrique | estrés abiótico / hídrico | abiotischer Stress / Trockenstress |
-| verse (des céréales) | encamado | Lagerbildung |
-| biofilm | biofilm | Biofilm |
-| nébulisation (« fogging ») | nebulización («fogging») | Vernebeln („Fogging“) |
-| conditionnement 5 L, 25 L | 5 L, 25 L | 5 L, 25 L |
-| % ARJ (apport journalier) | % CDR | % NRV |
-| demande de devis | solicitud de presupuesto | Angebotsanfrage |
-| essai (au champ) | ensayo | Versuch |
+| Français | Espagnol | Néerlandais | Arabe |
+| --- | --- | --- | --- |
+| acide orthosilicique (AOS) | ácido ortosilícico (AOS) | orthokiezelzuur (OSA) | حمض الأورثوسيليسيك (OSA) |
+| silicium | silicio | silicium | السيليكون |
+| stress abiotique / hydrique | estrés abiótico / hídrico | abiotische stress / waterstress | الإجهاد غير الحيوي / المائي |
+| verse (des céréales) | encamado | legering | الرقاد |
+| biofilm | biofilm | biofilm | الغشاء الحيوي |
+| nébulisation (« fogging ») | nebulización («fogging») | vernevelen (“fogging”) | الترذيذ الضبابي |
+| conditionnement 5 L, 25 L | 5 L, 25 L | 5 l, 25 l | 5 ل، 25 ل |
+| % ARJ (apport journalier) | % CDR | % ADH | % من الاحتياج اليومي |
+| demande de devis | solicitud de presupuesto | offerteaanvraag | طلب عرض سعر |
+| essai (au champ) | ensayo | proef | تجربة |
 
 Les noms de marques et de produits ne sont **pas** traduits (Orthagrow, Mavita, Huwa-San,
 BioXeco, Clearox, OrthaHealth, FertiFight). Seules exceptions, les deux SKU dont le nom
-français est un mot commun : *Orthagrow Granulé* → « Orthagrow Granule » et *Orthagrow
-Poudre* → « Orthagrow Polvo » / « Orthagrow Pulver ».
+français est un mot commun : *Orthagrow Granulé* → « Orthagrow Granule » / « Orthagrow
+حُبيبات » et *Orthagrow Poudre* → « Orthagrow Polvo » / « Orthagrow مسحوق ».
 
 ## 8. Ce qui reste en langue d'origine
 
 - **Les 30 PDF** (fiches produits, catalogues, études) : uniquement FR ou EN. Les fiches
-  ES et DE pointent vers ces mêmes fichiers. Prévoir soit une traduction des PDF, soit une
+  ES, NL et AR pointent vers ces mêmes fichiers. Prévoir soit une traduction des PDF, soit une
   mention « document disponible en français / anglais » près du lien.
 - Les lignes de tableau « Langues : Français » des articles décrivent la langue **du PDF
   lié**, pas celle de la page : elles restent donc exactes après traduction.

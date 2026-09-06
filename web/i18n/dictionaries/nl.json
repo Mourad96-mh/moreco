@@ -1,0 +1,213 @@
+{
+  "site": {
+    "name": "Moreco",
+    "tagline": "Biobeschikbaar silicium voor planten, dieren en mensen",
+    "description": "Moreco produceert en verdeelt een gepatenteerde vorm van biologisch actief en volledig opneembaar silicium (OSA) voor land- en tuinbouw, veehouderij en de menselijke gezondheid, aangevuld met ecologische desinfectie op basis van waterstofperoxide."
+  },
+  "nav": {
+    "products": "Producten",
+    "resources": "Documentatie",
+    "rdi": "O&O + I",
+    "news": "Media & nieuws",
+    "about": "Over ons",
+    "contact": "Contact",
+    "quote": "Offerteaanvraag bekijken",
+    "quoteShort": "Offerte",
+    "catalogues": "Productfiches & catalogi",
+    "applications": "Producttoepassingen",
+    "knowledge": "Kenniscentrum",
+    "trials": "Proefresultaten",
+    "silicon": "Het belang van silicium",
+    "publications": "Wetenschappelijke publicaties",
+    "newsList": "Nieuws",
+    "mediaKit": "Persmappen & evenementen",
+    "aboutMoreco": "Meer over Moreco",
+    "services": "Diensten & advies",
+    "contactUs": "Neem contact op",
+    "careers": "Vacatures",
+    "openMenu": "Menu openen",
+    "closeMenu": "Menu sluiten",
+    "search": "Zoeken",
+    "language": "Taal"
+  },
+  "hero": {
+    "title": "Biobeschikbaar silicium, bewezen op het veld",
+    "subtitle": "Het biobeschikbare silicium dat uw gewassen laat groeien, uw dieren versterkt en uw gezondheid ondersteunt.",
+    "cta": "Offerte aanvragen",
+    "scroll": "Ontdek"
+  },
+  "home": {
+    "introTitle": "Eén siliciumwetenschap, vier markten",
+    "introText": "Moreco verdeelt een gepatenteerde vorm van gestabiliseerd orthokiezelzuur (OSA), biologisch actief en volledig opneembaar. Dezelfde molecule bedient land- en tuinbouw, veehouderij en de menselijke gezondheid — aangevuld met ecologische desinfectie op basis van waterstofperoxide.",
+    "segmentsTitle": "Onze toepassingsgebieden",
+    "rdiTitle": "O&O + I",
+    "rdiText": "Negentien proefcampagnes in Marokko, van Midelt tot Larache: appels, aardbeien, tomaten, citrus, tarwe, olijven. Elk behandeld perceel wordt plant per plant vergeleken met zijn controleperceel.",
+    "rdiCta": "Bekijk de proefresultaten",
+    "quoteTitle": "Een concrete vraag? Vraag uw offerte aan",
+    "quoteText": "Voeg de producten die u interesseren toe aan uw aanvraag en verstuur ze in één keer. Ons team antwoordt met doseringen, verpakkingen en prijzen.",
+    "quoteCta": "Offerteaanvraag bekijken"
+  },
+  "segments": {
+    "agri": {
+      "name": "Land- & tuinbouw",
+      "short": "Opbrengst, smaak en weerbaarheid van gewassen",
+      "blurb": "Een unieke, volledig opneembare vorm van orthokiezelzuur: meer opbrengst, betere smaak en weerbaardere gewassen. Ook beschikbaar voor biologische ziektebestrijding."
+    },
+    "humans": {
+      "name": "Mensen",
+      "short": "Biobeschikbaar silicium, schoonheid en vitaliteit",
+      "blurb": "Jonger, gezonder en vitaler dankzij biologisch actief silicium. Ook in combinatie met maca, L-arginine, hyaluronzuur en collageen."
+    },
+    "animals": {
+      "name": "Dieren",
+      "short": "Diergezondheid en stalhygiëne",
+      "blurb": "Verbetert de gezondheid en levenskwaliteit van dieren dankzij een opneembare vorm van biologisch actief silicium. Ook toepasbaar voor eco-desinfectie."
+    },
+    "general": {
+      "name": "Algemeen gebruik",
+      "short": "Ecologische desinfectie met waterstofperoxide",
+      "blurb": "Ecologische desinfectie met waterstofperoxide: voor mensen, dieren, de landbouw en haar industrieën."
+    }
+  },
+  "families": {
+    "nutrients": "Speciale nutriënten",
+    "soil": "Bodem- & wortelgezondheid",
+    "biostimulants": "Sporenelementen & biostimulanten",
+    "protection": "Biologische bescherming"
+  },
+  "product": {
+    "ranges": "Gamma's",
+    "range": "Gamma",
+    "products": "Producten",
+    "count": {
+      "one": "1 product",
+      "other": "{n} producten"
+    },
+    "rangeCount": {
+      "one": "1 gamma",
+      "other": "{n} gamma's"
+    },
+    "allProducts": "Alle producten",
+    "advantages": "Voordelen",
+    "availableIn": "Verkrijgbaar in",
+    "addToQuote": "Aan offerte toevoegen",
+    "inQuote": "In uw offerte",
+    "datasheet": "Productfiche downloaden",
+    "sds": "Veiligheidsinformatieblad downloaden",
+    "relatedTitle": "Andere producten uit het gamma",
+    "noCopy": "Gedetailleerde fiche in voorbereiding. Neem contact op voor technische informatie."
+  },
+  "rdi": {
+    "title": "O&O + I",
+    "lead": "Onderzoek, ontwikkeling en innovatie",
+    "intro": "Silicium is geen belofte: het is een meting. Sinds 2016 voert Moreco proeven uit in reële omstandigheden bij Marokkaanse telers — controleperceel tegenover behandeld perceel, op hetzelfde bedrijf, in hetzelfde seizoen, met dezelfde variëteit.",
+    "trialsTitle": "Proefresultaten",
+    "trialsIntro": "Negentien gewassen, van de appelboom van Midelt tot gazon, gedocumenteerd met veldfoto's.",
+    "allTrials": "Alle proeven",
+    "trialLabel": "Proef",
+    "backToTrials": "Terug naar de proeven",
+    "projectDescription": "Projectbeschrijving",
+    "statTrials": "Proefcampagnes",
+    "statPlates": "Resultatenplaten",
+    "statSince": "Eerste campagne"
+  },
+  "article": {
+    "download": "Studie downloaden",
+    "sizeUnit": "kB"
+  },
+  "about": {
+    "domains": "Domeinen",
+    "discover": "Meer weten",
+    "contactLead": "Onze teams beantwoorden technische en commerciële vragen."
+  },
+  "press": {
+    "archive": "Voorbije evenementen — archief 2014.",
+    "dossier": "Standdossier",
+    "productBrochure": "Productbrochure",
+    "salesTerms": "Algemene verkoopvoorwaarden",
+    "downloads": "Downloads",
+    "sessions": "Details van het evenement"
+  },
+  "contact": {
+    "mobile": "Gsm",
+    "formTitle": "Schrijf ons"
+  },
+  "quote": {
+    "title": "Offerteaanvraag",
+    "lead": "Uw selectie",
+    "intro": "Controleer de gekozen producten, vul uw gegevens aan en verstuur. Wij komen bij u terug met verpakkingen, doseringen en prijzen.",
+    "empty": "Uw offerteaanvraag is leeg.",
+    "emptyCta": "Producten bekijken",
+    "remove": "Verwijderen",
+    "clear": "Aanvraag legen",
+    "quantity": "Aantal",
+    "items": "product(en)",
+    "formTitle": "Uw gegevens",
+    "firstName": "Voornaam",
+    "lastName": "Naam",
+    "company": "Bedrijf",
+    "email": "E-mail",
+    "phone": "Telefoon",
+    "city": "Stad",
+    "message": "Bericht",
+    "messageHint": "Betrokken oppervlakten, gewassen, geraamde volumes…",
+    "required": "verplicht",
+    "submit": "Mijn aanvraag versturen",
+    "sending": "Bezig met versturen…",
+    "success": "Bedankt, uw aanvraag is verstuurd. Wij antwoorden binnen 48 werkuren.",
+    "error": "Het versturen is mislukt. Probeer opnieuw of schrijf ons rechtstreeks op info@moreco.ma.",
+    "added": "toegevoegd aan uw offerte"
+  },
+  "pages": {
+    "products": {
+      "title": "Moreco-producten",
+      "lead": "Vier toepassingsgebieden, negen gamma's, zesendertig referenties."
+    },
+    "resources": {
+      "title": "Documentatie",
+      "lead": "Productfiches, catalogi en kenniscentrum."
+    },
+    "knowledge": {
+      "title": "Kenniscentrum",
+      "lead": "Silicium uitgelegd: studies, publicaties en achtergronddossiers."
+    },
+    "news": {
+      "title": "Media & nieuws",
+      "lead": "Het nieuws van Moreco en haar aanwezigheid op het terrein."
+    },
+    "media": {
+      "title": "Persmappen & evenementen",
+      "lead": "SIAM Meknes, Saudi Agriculture: onze dossiers en materialen."
+    },
+    "about": {
+      "title": "Over Moreco",
+      "lead": "Een wonder van de wetenschap, verdeeld in Marokko."
+    },
+    "services": {
+      "title": "Diensten & advies",
+      "lead": "Technische begeleiding, van diagnose tot opvolging van de campagne."
+    },
+    "contact": {
+      "title": "Neem contact op",
+      "lead": "Een vraag, een project, een offerte: schrijf ons."
+    },
+    "careers": {
+      "title": "Vacatures",
+      "lead": "Bij Moreco komen werken."
+    }
+  },
+  "footer": {
+    "company": "Moreco Sarl",
+    "navTitle": "Navigatie",
+    "productsTitle": "Producten",
+    "contactTitle": "Contact",
+    "legal": "Wettelijke vermeldingen",
+    "rights": "Alle rechten voorbehouden.",
+    "backToTop": "Naar boven"
+  },
+  "a11y": {
+    "skipToContent": "Naar de inhoud",
+    "breadcrumb": "Kruimelpad",
+    "mainNav": "Hoofdnavigatie"
+  }
+}

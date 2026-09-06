@@ -78,7 +78,7 @@
 
 .crumbs li + li::before {
   content: '/';
-  margin-right: 0.4rem;
+  margin-inline-end: 0.4rem;
   color: var(--line-strong);
 }
 

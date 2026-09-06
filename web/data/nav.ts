@@ -103,9 +103,14 @@ export const CONTACT = {
   ],
   email: 'info@moreco.ma',
   social: [
+    { label: 'Facebook', href: 'https://www.facebook.com/Moreco.Maroc', icon: 'facebook' as const },
+    {
+      label: 'Instagram',
+      href: 'https://www.instagram.com/moreco_biotechnology',
+      icon: 'instagram' as const,
+    },
+    { label: 'YouTube', href: 'https://www.youtube.com/@morecomaroc6237', icon: 'youtube' as const },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/', icon: 'linkedin' as const },
-    { label: 'Facebook', href: 'https://www.facebook.com/', icon: 'facebook' as const },
-    { label: 'YouTube', href: 'https://www.youtube.com/', icon: 'youtube' as const },
   ],
 };
 

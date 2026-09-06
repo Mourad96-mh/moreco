@@ -1,43 +1,119 @@
 {
-  "_comment": "Localised URL words. Shared by data/routes.ts (which builds the routes) and scripts/finalize-export.mjs (which translates a built path into its siblings for the sitemap). Keep them in one place so the two can never drift.",
+  "_comment": "Localised URL words. Shared by data/routes.ts (which builds the routes) and scripts/finalize-export.mjs (which translates a built path into its siblings for the sitemap). Keep them in one place so the two can never drift. Arabic reuses the English words on purpose: the export is a tree of real directories on Hostinger, so Arabic segments would ship percent-encoded.",
   "words": {
-    "products": { "fr": "produits", "en": "products", "es": "productos", "de": "produkte" },
-    "rdi": { "fr": "rd-i", "en": "rd-i", "es": "rd-i", "de": "rd-i" },
-    "trials": { "fr": "essais", "en": "trials", "es": "ensayos", "de": "versuche" },
-    "resources": { "fr": "ressources", "en": "resources", "es": "recursos", "de": "ressourcen" },
+    "products": {
+      "fr": "produits",
+      "en": "products",
+      "es": "productos",
+      "nl": "producten",
+      "ar": "products"
+    },
+    "rdi": {
+      "fr": "rd-i",
+      "en": "rd-i",
+      "es": "rd-i",
+      "nl": "oo-i",
+      "ar": "rd-i"
+    },
+    "trials": {
+      "fr": "essais",
+      "en": "trials",
+      "es": "ensayos",
+      "nl": "proeven",
+      "ar": "trials"
+    },
+    "resources": {
+      "fr": "ressources",
+      "en": "resources",
+      "es": "recursos",
+      "nl": "documentatie",
+      "ar": "resources"
+    },
     "knowledge": {
       "fr": "centre-de-connaissances",
       "en": "knowledge-centre",
       "es": "centro-de-conocimiento",
-      "de": "wissenszentrum"
+      "nl": "kenniscentrum",
+      "ar": "knowledge-centre"
     },
-    "news": { "fr": "actualites", "en": "news", "es": "actualidad", "de": "aktuelles" },
-    "media": { "fr": "medias", "en": "media", "es": "medios", "de": "medien" },
-    "about": { "fr": "a-propos", "en": "about", "es": "sobre-nosotros", "de": "ueber-uns" },
+    "news": {
+      "fr": "actualites",
+      "en": "news",
+      "es": "actualidad",
+      "nl": "nieuws",
+      "ar": "news"
+    },
+    "media": {
+      "fr": "medias",
+      "en": "media",
+      "es": "medios",
+      "nl": "media",
+      "ar": "media"
+    },
+    "about": {
+      "fr": "a-propos",
+      "en": "about",
+      "es": "sobre-nosotros",
+      "nl": "over-ons",
+      "ar": "about"
+    },
     "services": {
       "fr": "services-et-conseils",
       "en": "services-and-advice",
       "es": "servicios-y-asesoramiento",
-      "de": "service-und-beratung"
+      "nl": "diensten-en-advies",
+      "ar": "services-and-advice"
     },
-    "contact": { "fr": "contact", "en": "contact", "es": "contacto", "de": "kontakt" },
-    "careers": { "fr": "carrieres", "en": "careers", "es": "empleo", "de": "karriere" },
-    "quote": { "fr": "devis", "en": "quote", "es": "presupuesto", "de": "angebot" }
+    "contact": {
+      "fr": "contact",
+      "en": "contact",
+      "es": "contacto",
+      "nl": "contact",
+      "ar": "contact"
+    },
+    "careers": {
+      "fr": "carrieres",
+      "en": "careers",
+      "es": "empleo",
+      "nl": "vacatures",
+      "ar": "careers"
+    },
+    "quote": {
+      "fr": "devis",
+      "en": "quote",
+      "es": "presupuesto",
+      "nl": "offerte",
+      "ar": "quote"
+    }
   },
   "segments": {
     "agri": {
       "fr": "agri-horticulture",
       "en": "agri-horticulture",
       "es": "agri-horticultura",
-      "de": "agrar-gartenbau"
+      "nl": "land-en-tuinbouw",
+      "ar": "agri-horticulture"
     },
-    "humans": { "fr": "humains", "en": "humans", "es": "humanos", "de": "menschen" },
-    "animals": { "fr": "animaux", "en": "animals", "es": "animales", "de": "tiere" },
+    "humans": {
+      "fr": "humains",
+      "en": "humans",
+      "es": "humanos",
+      "nl": "mensen",
+      "ar": "humans"
+    },
+    "animals": {
+      "fr": "animaux",
+      "en": "animals",
+      "es": "animales",
+      "nl": "dieren",
+      "ar": "animals"
+    },
     "general": {
       "fr": "emploi-general",
       "en": "general-use",
       "es": "uso-general",
-      "de": "allgemeine-anwendung"
+      "nl": "algemeen-gebruik",
+      "ar": "general-use"
     }
   }
 }
