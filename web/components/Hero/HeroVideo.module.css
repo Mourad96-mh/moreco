@@ -15,6 +15,19 @@
   isolation: isolate;
 }
 
+/*
+ * The home page since 2026-09-09: film and nothing else. With no text inside it the
+ * section has nothing to give it height, so it holds its own band, and the wash loses
+ * the heavy foot that was only ever there to carry a headline.
+ */
+.bare {
+  padding-block: calc(var(--topbar-h) + var(--header-h)) 0;
+}
+
+.bare .wash {
+  background: linear-gradient(to bottom, rgb(4 12 8 / 0.45) 0%, rgb(4 12 8 / 0.06) 38%, rgb(4 12 8 / 0.22) 100%);
+}
+
 .media {
   position: absolute;
   inset: 0;
@@ -110,6 +123,12 @@
   .hero {
     min-height: auto;
     padding-block: calc(var(--header-h) + 3.5rem) 3.5rem;
+  }
+
+  /* No text to set the height, so keep a cinematic band rather than a strip of padding. */
+  .bare {
+    min-height: clamp(360px, 58vh, 520px);
+    padding-block: var(--header-h) 0;
   }
 
   .subtitle {

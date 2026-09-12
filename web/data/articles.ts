@@ -4,8 +4,9 @@ import assets from './article-assets.json';
 import type { Block } from '@/components/Blocks/Blocks';
 
 /**
- * The knowledge centre's seven articles — the scientific pieces the old moreco.ma
- * published on silicon, foliar nutrition and orthosilicic acid.
+ * The seven pieces the old moreco.ma published on silicon, foliar nutrition and
+ * orthosilicic acid. They are read as two lists now — see KNOWLEDGE_ARTICLES and
+ * PUBLICATIONS at the foot of this file.
  *
  * Each one arrives from scripts/extract-pages.mjs with its own title, a WordPress meta
  * line and a lead image at the top of the body, all of which the page renders as chrome
@@ -113,3 +114,32 @@ export function articleDate(article: Article): string | null {
 
   return `${year}-${String(index + 1).padStart(2, '0')}-${day.padStart(2, '0')}`;
 }
+
+/**
+ * The four peer-reviewed studies. The client's briefing of 2026-09-09 separated them
+ * from the rest: a scientific publication belongs on R&D + I and nowhere else, while
+ * the knowledge centre keeps the two interviews and the Mavita piece.
+ *
+ * Every article still has its own page at the same URL — this splits the two lists that
+ * link to them, not the articles themselves.
+ */
+const PUBLICATION_SLUGS = new Set([
+  'acide-silicique',
+  'bio-disponibilite-aos',
+  'nutrition-foliaire',
+  'cycle-du-silicium',
+]);
+
+export const isPublication = (slug: string): boolean => PUBLICATION_SLUGS.has(slug);
+
+/** Newest first, as the client asked; anything the archive left undated sinks to the end. */
+const byDateDesc = (list: Article[]): Article[] =>
+  [...list].sort((a, b) => (articleDate(b) ?? '').localeCompare(articleDate(a) ?? ''));
+
+/** The knowledge centre's list. */
+export const KNOWLEDGE_ARTICLES: Article[] = byDateDesc(
+  ARTICLES.filter((a) => !isPublication(a.slug))
+);
+
+/** The R&D + I page's list. */
+export const PUBLICATIONS: Article[] = byDateDesc(ARTICLES.filter((a) => isPublication(a.slug)));

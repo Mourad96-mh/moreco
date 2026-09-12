@@ -42,3 +42,6 @@ next-env.d.ts
 
 # hero source cache (scripts/import-heroes.mjs)
 /.hero-cache/
+
+# hero rushes (scripts/build-hero-video.mjs) — raw footage stays out of git
+/hero-source/

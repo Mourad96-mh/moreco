@@ -1,7 +1,11 @@
+import Link from 'next/link';
+
 import type { Locale } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionary';
-import { href, trialHref } from '@/data/routes';
+import { href, articleHref, trialHref } from '@/data/routes';
 import { TRIALS, trialTitle, trialDescription } from '@/data/trials';
+import { PUBLICATIONS, articleTitle, articleExcerpt, articleDate, articlePdf } from '@/data/articles';
+import { formatDate } from '@/data/news';
 import { pageHero } from '@/data/hero-images';
 import PageHeader from '@/components/PageHeader/PageHeader';
 import FeatureRow from '@/components/FeatureRow/FeatureRow';
@@ -14,6 +18,10 @@ import s from './RdiView.module.css';
  *
  * The content is real — nineteen field campaigns recovered from the old /research/
  * section, each comparing an untreated control with a treated plot.
+ *
+ * The peer-reviewed studies close the page (#publications, where the header menu points
+ * since 2026-09-09). They were listed in the knowledge centre until the client ruled
+ * that a scientific publication belongs here and nowhere else.
  */
 export default function RdiView({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
@@ -68,6 +76,39 @@ export default function RdiView({ locale }: { locale: Locale }) {
               />
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="section section--tint" id="publications">
+        <div className="page">
+          <Reveal>
+            <h2>{t.nav.publications}</h2>
+            <p className="lead">{t.rdi.publicationsIntro}</p>
+          </Reveal>
+
+          <ul className={s.papers}>
+            {PUBLICATIONS.map((article, i) => {
+              const date = articleDate(article);
+              const pdf = articlePdf(article.slug);
+
+              return (
+                <Reveal key={article.slug} as="li" delay={(i % 3) * 70} className={s.paper}>
+                  <Link className={s.paperLink} href={articleHref(locale, article.slug)}>
+                    <span className={s.paperMeta}>
+                      {date && <time dateTime={date}>{formatDate(date, locale)}</time>}
+                      {pdf && (
+                        <span className={s.pdf}>
+                          PDF · {Math.round(pdf.bytes / 1024)} {t.article.sizeUnit}
+                        </span>
+                      )}
+                    </span>
+                    <span className={s.paperTitle}>{articleTitle(article, locale)}</span>
+                    <span className={s.paperExcerpt}>{articleExcerpt(article, locale)}</span>
+                  </Link>
+                </Reveal>
+              );
+            })}
+          </ul>
         </div>
       </section>
     </>

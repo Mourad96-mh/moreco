@@ -30,15 +30,13 @@
     "search": "Rechercher",
     "language": "Langue"
   },
-  "hero": {
-    "title": "Le silicium biodisponible, prouvé au champ",
-    "subtitle": "Le silicium biodisponible qui fait pousser vos cultures, renforce vos animaux et soutient votre santé.",
-    "cta": "Demander un devis",
-    "scroll": "Découvrir"
-  },
   "home": {
     "introTitle": "Une science du silicium, quatre marchés",
-    "introText": "Moreco distribue une forme brevetée d'acide orthosilicique stabilisé (OSA), biologiquement active et entièrement assimilable. La même molécule sert l'agriculture, l'élevage et la santé humaine — complétée par la désinfection écologique au peroxyde d'hydrogène.",
+    "introText": [
+      "Depuis plus de 23 ans, nous soutenons avec succès l'agriculture en Europe, en Asie et aux États-Unis, et depuis 2014 au Maroc.",
+      "Les solutions de MORECO sont sélectionnées avec le plus grand soin en s'appuyant sur la science du silicium biologiquement actif. Elles comptent parmi les leaders de leur segment, assurant ainsi à nos clients la garantie d'une qualité constante et une sécurité d'utilisation.",
+      "Depuis notre création, nous nous efforçons d'apporter aux producteurs des réponses innovantes à leurs problématiques spécifiques. Nos technologies permettent une meilleure assimilation des nutriments et renforcent les plantes de l'intérieur contre les maladies, les ravageurs et le changement climatique. En garantissant une récolte abondante mais saine et une valeur nutritionnelle optimale, nous aidons les producteurs à positionner leur propre marque au plus haut rang du marché. Cette philosophie continue de guider notre démarche, chaque jour."
+    ],
     "segmentsTitle": "Nos domaines d'application",
     "rdiTitle": "R&D + I",
     "rdiText": "Dix-neuf campagnes d'essais menées au Maroc, de Midelt à Larache : pommiers, fraises, tomates, agrumes, blé, olives. Chaque parcelle traitée est comparée à son témoin, plante par plante.",
@@ -64,7 +62,7 @@
       "blurb": "Améliore la santé et la qualité de vie des animaux par une forme assimilable de silicium biologiquement actif. Applicable aussi à l'éco-désinfection."
     },
     "general": {
-      "name": "Emploi général",
+      "name": "Désinfectant",
       "short": "Désinfection écologique au peroxyde d'hydrogène",
       "blurb": "La désinfection écologique par le peroxyde d'hydrogène : pour les humains, les animaux, l'agriculture et ses industries."
     }
@@ -73,7 +71,8 @@
     "nutrients": "Nutriments Spéciaux",
     "soil": "Santé du Sol & Racines",
     "biostimulants": "Oligo-Éléments & Biostimulants",
-    "protection": "Protection Biologique"
+    "protection": "Protection Biologique",
+    "disinfectant": "Désinfectant"
   },
   "product": {
     "ranges": "Gammes",
@@ -109,7 +108,8 @@
     "projectDescription": "Description du projet",
     "statTrials": "Campagnes d'essais",
     "statPlates": "Planches de résultats",
-    "statSince": "Première campagne"
+    "statSince": "Première campagne",
+    "publicationsIntro": "Les études évaluées par des pairs sur lesquelles reposent nos formulations, en téléchargement libre."
   },
   "article": {
     "download": "Télécharger l'étude",
@@ -169,7 +169,7 @@
     },
     "knowledge": {
       "title": "Centre de connaissances",
-      "lead": "Le silicium expliqué : études, publications et dossiers de fond."
+      "lead": "Le silicium expliqué : entretiens et dossiers de fond."
     },
     "news": {
       "title": "Medias & Actus",

@@ -30,15 +30,13 @@
     "search": "Search",
     "language": "Language"
   },
-  "hero": {
-    "title": "Bioavailable silicon, proven in the field",
-    "subtitle": "The bioavailable silicon that grows your crops, strengthens your animals and supports your health.",
-    "cta": "Request a quote",
-    "scroll": "Explore"
-  },
   "home": {
     "introTitle": "One silicon science, four markets",
-    "introText": "Moreco distributes a patented stabilised orthosilicic acid (OSA) — biologically active and fully absorbable. The same molecule serves agriculture, livestock and human health, completed by ecological disinfection with hydrogen peroxide.",
+    "introText": [
+      "For more than 23 years we have supported agriculture across Europe, Asia and the United States, and since 2014 in Morocco.",
+      "Moreco's solutions are chosen with the greatest care, grounded in the science of biologically active silicon. They rank among the leaders of their segment, which guarantees our customers consistent quality and safe use.",
+      "Since our founding we have worked to bring growers innovative answers to their own specific problems. Our technologies improve nutrient uptake and strengthen plants from within against disease, pests and climate change. By securing a harvest that is abundant yet healthy, with optimal nutritional value, we help growers position their own brand at the very top of the market. That philosophy still guides everything we do, every day."
+    ],
     "segmentsTitle": "Our fields of application",
     "rdiTitle": "R&D + I",
     "rdiText": "Nineteen trial campaigns run across Morocco, from Midelt to Larache: apples, strawberries, tomatoes, citrus, wheat, olives. Every treated plot is compared with its own control, plant by plant.",
@@ -64,7 +62,7 @@
       "blurb": "Improves animal health and quality of life through an absorbable form of biologically active silicon. Also applicable to eco-disinfection."
     },
     "general": {
-      "name": "General use",
+      "name": "Disinfectant",
       "short": "Ecological hydrogen-peroxide disinfection",
       "blurb": "Ecological disinfection with hydrogen peroxide: for people, animals, agriculture and its industries."
     }
@@ -73,7 +71,8 @@
     "nutrients": "Special nutrients",
     "soil": "Soil & root health",
     "biostimulants": "Trace elements & biostimulants",
-    "protection": "Biological protection"
+    "protection": "Biological protection",
+    "disinfectant": "Disinfectant"
   },
   "product": {
     "ranges": "Ranges",
@@ -109,7 +108,8 @@
     "projectDescription": "Project description",
     "statTrials": "Trial campaigns",
     "statPlates": "Result plates",
-    "statSince": "First campaign"
+    "statSince": "First campaign",
+    "publicationsIntro": "The peer-reviewed studies our formulations rest on, free to download."
   },
   "article": {
     "download": "Download the study",
@@ -169,7 +169,7 @@
     },
     "knowledge": {
       "title": "Knowledge centre",
-      "lead": "Silicon explained: studies, publications and background papers."
+      "lead": "Silicon explained: interviews and background features."
     },
     "news": {
       "title": "Media & News",

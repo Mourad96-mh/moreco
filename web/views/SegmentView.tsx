@@ -68,8 +68,13 @@ export default function SegmentView({ locale, segment }: { locale: Locale; segme
   /* Safety net: an own-segment product no family claims still gets shown. */
   const unclaimed = productsOutsideFamilies(segment);
 
-  /* Products whose home range sits in another segment, e.g. Huwa-San AGRO for crops. */
-  const borrowed = products.filter((p) => p.segment !== segment);
+  /*
+   * Products whose home range sits in another segment. A family may claim one — the
+   * Disinfectant family on Agriculture is made of them — and then it belongs up in the
+   * filtered grid, not again at the foot of the page.
+   */
+  const claimed = new Set(families.flatMap((f) => f.products));
+  const borrowed = products.filter((p) => p.segment !== segment && !claimed.has(p.slug));
 
   return (
     <>

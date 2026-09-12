@@ -22,23 +22,30 @@ export default function HomeView({ locale }: { locale: Locale }) {
 
   return (
     <>
+      {/*
+       * Film only — no title, no subtitle, no button (client briefing, 2026-09-09). The
+       * client's own 10 s loop, delivered 2026-09-12, muxed without its audio track:
+       * the banner autoplays, and an autoplaying film with sound is blocked anyway.
+       * BRIEF-VIDEO-ACCUEIL.md holds the shot list this footage was cut to.
+       */}
       <HeroVideo
-        title={t.hero.title}
-        subtitle={t.hero.subtitle}
-        cta={{ label: t.hero.cta, href: href(locale, 'quote') }}
         poster="/media/hero/hero-poster.webp"
-        /* H.264 only: a VP9 re-encode of this aerial footage came out larger, so a
+        /* H.264 only: a VP9 re-encode of this footage came out larger, so a
            second source would cost bandwidth without buying compatibility. */
         sources={[{ src: '/media/hero/hero.mp4', type: 'video/mp4' }]}
-        credit="Mixkit — free licence"
       />
 
+      {/* The page's h1 lives here now that the film carries no headline of its own. */}
       <section className="section">
         <div className="page-narrow">
           <Reveal>
             <p className="eyebrow">{t.site.name}</p>
-            <h2>{t.home.introTitle}</h2>
-            <p className="lead">{t.home.introText}</p>
+            <h1>{t.home.introTitle}</h1>
+            {t.home.introText.map((paragraph, i) => (
+              <p key={i} className={i === 0 ? 'lead' : undefined}>
+                {paragraph}
+              </p>
+            ))}
           </Reveal>
         </div>
       </section>

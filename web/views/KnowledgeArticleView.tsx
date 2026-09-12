@@ -6,8 +6,10 @@ import type { Locale } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionary';
 import { href, articleHref } from '@/data/routes';
 import {
-  ARTICLES,
+  KNOWLEDGE_ARTICLES,
+  PUBLICATIONS,
   getArticle,
+  isPublication,
   articleTitle,
   articleExcerpt,
   articleBody,
@@ -23,17 +25,28 @@ import Reveal from '@/components/Reveal/Reveal';
 import s from './KnowledgeArticleView.module.css';
 
 /**
- * One knowledge-centre article. The bodies came out of the archive with the rest of the
- * site and then sat unread in data/articles.json — the centre only ever listed their
- * titles. This is the page that publishes them.
+ * One article. The bodies came out of the archive with the rest of the site and then sat
+ * unread in data/articles.json — the listings only ever showed their titles. This is the
+ * page that publishes them.
+ *
+ * Two lists lead here since 2026-09-09: the knowledge centre and, for the peer-reviewed
+ * studies, R&D + I. The breadcrumb, the eyebrow and "next" follow whichever list the
+ * piece belongs to. The URL is unchanged either way — the archive's redirects point at
+ * it, and a study is still the same document wherever it is listed.
  */
 export default function KnowledgeArticleView({ locale, slug }: { locale: Locale; slug: string }) {
   const t = getDictionary(locale);
   const article = getArticle(slug);
   if (!article) notFound();
 
-  const index = ARTICLES.findIndex((a) => a.slug === slug);
-  const next = ARTICLES[(index + 1) % ARTICLES.length];
+  const publication = isPublication(slug);
+  const siblings = publication ? PUBLICATIONS : KNOWLEDGE_ARTICLES;
+  const parent = publication
+    ? { label: t.rdi.title, href: `${href(locale, 'rdi')}#publications` }
+    : { label: t.nav.knowledge, href: href(locale, 'knowledge') };
+
+  const index = siblings.findIndex((a) => a.slug === slug);
+  const next = siblings[(index + 1) % siblings.length];
 
   const title = articleTitle(article, locale);
   const date = articleDate(article);
@@ -44,15 +57,17 @@ export default function KnowledgeArticleView({ locale, slug }: { locale: Locale;
   return (
     <>
       <PageHeader
-        eyebrow={t.nav.publications}
+        eyebrow={publication ? t.nav.publications : t.nav.knowledge}
         title={title}
         lead={articleExcerpt(article, locale)}
         image={pageHero('knowledge')}
         crumbLabel={t.a11y.breadcrumb}
         crumbs={[
           { label: t.site.name, href: href(locale, 'home') },
-          { label: t.pages.resources.title, href: href(locale, 'resources') },
-          { label: t.nav.knowledge, href: href(locale, 'knowledge') },
+          ...(publication
+            ? []
+            : [{ label: t.pages.resources.title, href: href(locale, 'resources') }]),
+          parent,
           { label: title },
         ]}
       />
@@ -96,10 +111,10 @@ export default function KnowledgeArticleView({ locale, slug }: { locale: Locale;
             </p>
           )}
 
-          <nav className={s.footer} aria-label={t.nav.publications}>
-            <Link className={s.back} href={href(locale, 'knowledge')}>
+          <nav className={s.footer} aria-label={parent.label}>
+            <Link className={s.back} href={parent.href}>
               <Arrow flip />
-              {t.nav.knowledge}
+              {parent.label}
             </Link>
 
             {next.slug !== slug && (

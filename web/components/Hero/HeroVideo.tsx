@@ -5,20 +5,25 @@ import { useEffect, useRef, useState } from 'react';
 import s from './HeroVideo.module.css';
 
 /**
- * The bioworkseurope.com hero: a full-bleed muted video loop behind the title, a light
- * dark wash for legibility, and the text sliding up from behind a mask on load — their
- * theme calls the two halves `animation-cropper` / `animation-contents`.
+ * The bioworkseurope.com hero: a full-bleed muted video loop, a light dark wash, and any
+ * text sliding up from behind a mask on load — their theme calls the two halves
+ * `animation-cropper` / `animation-contents`.
  *
  * The poster carries the first paint (so the LCP is an image, not the video), and under
  * `prefers-reduced-motion` the video is never attached at all.
+ *
+ * Every text prop is optional. The home page passes none of them: the client's briefing
+ * of 2026-09-09 took the title, the subtitle and the quote button off the film, leaving
+ * the footage to play on its own. The wash stays — it is what keeps the header legible
+ * over a bright frame.
  */
 export interface HeroVideoProps {
-  title: string;
-  subtitle: string;
+  title?: string;
+  subtitle?: string;
   cta?: { label: string; href: string };
   poster: string;
   sources: { src: string; type: string }[];
-  /** Credit line for CC0 footage, shown small in the corner. */
+  /** Credit line for CC0 footage, shown small in the corner. Own footage needs none. */
   credit?: string;
 }
 
@@ -44,8 +49,10 @@ export default function HeroVideo({ title, subtitle, cta, poster, sources, credi
     });
   }, [motion]);
 
+  const bare = !title && !subtitle && !cta;
+
   return (
-    <section className={s.hero}>
+    <section className={`${s.hero} ${bare ? s.bare : ''}`}>
       <div className={s.media}>
         {motion && sources.length > 0 ? (
           <video
@@ -71,21 +78,27 @@ export default function HeroVideo({ title, subtitle, cta, poster, sources, credi
         <span className={s.wash} aria-hidden="true" />
       </div>
 
-      <div className={`page ${s.inner}`}>
-        <div className={s.cropper}>
-          <h1 className={s.title}>{title}</h1>
+      {(title || subtitle || cta) && (
+        <div className={`page ${s.inner}`}>
+          {title && (
+            <div className={s.cropper}>
+              <h1 className={s.title}>{title}</h1>
+            </div>
+          )}
+          {subtitle && (
+            <div className={s.cropper} style={{ '--delay': '120ms' } as React.CSSProperties}>
+              <p className={s.subtitle}>{subtitle}</p>
+            </div>
+          )}
+          {cta && (
+            <div className={s.cropper} style={{ '--delay': '240ms' } as React.CSSProperties}>
+              <Link className={`btn btn--inverse ${s.cta}`} href={cta.href}>
+                {cta.label}
+              </Link>
+            </div>
+          )}
         </div>
-        <div className={s.cropper} style={{ '--delay': '120ms' } as React.CSSProperties}>
-          <p className={s.subtitle}>{subtitle}</p>
-        </div>
-        {cta && (
-          <div className={s.cropper} style={{ '--delay': '240ms' } as React.CSSProperties}>
-            <Link className={`btn btn--inverse ${s.cta}`} href={cta.href}>
-              {cta.label}
-            </Link>
-          </div>
-        )}
-      </div>
+      )}
 
       {credit && <p className={s.credit}>{credit}</p>}
     </section>
