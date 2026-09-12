@@ -7,7 +7,7 @@
   "nav": {
     "products": "Productos",
     "resources": "Recursos",
-    "rdi": "I+D+i",
+    "rdi": "R&D + I",
     "news": "Medios y actualidad",
     "about": "Quiénes somos",
     "contact": "Contacto",
@@ -30,17 +30,15 @@
     "search": "Buscar",
     "language": "Idioma"
   },
-  "hero": {
-    "title": "Silicio biodisponible, probado en campo",
-    "subtitle": "El silicio biodisponible que hace crecer sus cultivos, refuerza sus animales y cuida su salud.",
-    "cta": "Solicitar presupuesto",
-    "scroll": "Descubrir"
-  },
   "home": {
     "introTitle": "Una ciencia del silicio, cuatro mercados",
-    "introText": "Moreco distribuye una forma patentada de ácido ortosilícico estabilizado (OSA), biológicamente activo y totalmente asimilable. La misma molécula sirve a la agricultura, la ganadería y la salud humana, completada con la desinfección ecológica mediante peróxido de hidrógeno.",
+    "introText": [
+      "Desde hace más de 23 años apoyamos con éxito a la agricultura en Europa, Asia y Estados Unidos, y desde 2014 en Marruecos.",
+      "Las soluciones de MORECO se seleccionan con el mayor cuidado, apoyándose en la ciencia del silicio biológicamente activo. Figuran entre las líderes de su segmento y garantizan a nuestros clientes una calidad constante y una utilización segura.",
+      "Desde nuestra creación nos esforzamos por ofrecer a los productores respuestas innovadoras a sus problemáticas específicas. Nuestras tecnologías permiten una mejor asimilación de los nutrientes y refuerzan las plantas desde el interior frente a las enfermedades, las plagas y el cambio climático. Al garantizar una cosecha abundante pero sana y un valor nutricional óptimo, ayudamos a los productores a situar su propia marca en lo más alto del mercado. Esta filosofía sigue guiando nuestro trabajo, cada día."
+    ],
     "segmentsTitle": "Nuestros campos de aplicación",
-    "rdiTitle": "I+D+i",
+    "rdiTitle": "R&D + I",
     "rdiText": "Diecinueve campañas de ensayo realizadas en Marruecos, de Midelt a Larache: manzanos, fresas, tomates, cítricos, trigo, olivos. Cada parcela tratada se compara con su propio testigo, planta a planta.",
     "rdiCta": "Ver los resultados de los ensayos",
     "quoteTitle": "¿Tiene una necesidad concreta? Pida su presupuesto",
@@ -64,7 +62,7 @@
       "blurb": "Mejora la salud y la calidad de vida de los animales mediante una forma asimilable de silicio biológicamente activo. Aplicable también a la ecodesinfección."
     },
     "general": {
-      "name": "Uso general",
+      "name": "Desinfectante",
       "short": "Desinfección ecológica con peróxido de hidrógeno",
       "blurb": "Desinfección ecológica con peróxido de hidrógeno: para personas, animales, la agricultura y sus industrias."
     }
@@ -73,7 +71,8 @@
     "nutrients": "Nutrientes especiales",
     "soil": "Salud del suelo y de las raíces",
     "biostimulants": "Oligoelementos y bioestimulantes",
-    "protection": "Protección biológica"
+    "protection": "Protección biológica",
+    "disinfectant": "Desinfectante"
   },
   "product": {
     "ranges": "Gamas",
@@ -98,7 +97,7 @@
     "noCopy": "Ficha detallada en preparación. Contáctenos para cualquier información técnica."
   },
   "rdi": {
-    "title": "I+D+i",
+    "title": "R&D + I",
     "lead": "Investigación, desarrollo e innovación",
     "intro": "El silicio no es una promesa: es una medida. Desde 2016 Moreco realiza ensayos de campo con productores marroquíes — parcela testigo frente a parcela tratada, en la misma finca, la misma campaña, la misma variedad.",
     "trialsTitle": "Resultados de ensayos",
@@ -109,7 +108,8 @@
     "projectDescription": "Descripción del proyecto",
     "statTrials": "Campañas de ensayo",
     "statPlates": "Láminas de resultados",
-    "statSince": "Primera campaña"
+    "statSince": "Primera campaña",
+    "publicationsIntro": "Los estudios revisados por pares en los que se basan nuestras formulaciones, de descarga libre."
   },
   "article": {
     "download": "Descargar el estudio",
@@ -169,7 +169,7 @@
     },
     "knowledge": {
       "title": "Centro de conocimiento",
-      "lead": "El silicio explicado: estudios, publicaciones y documentos de fondo."
+      "lead": "El silicio explicado: entrevistas y reportajes de fondo."
     },
     "news": {
       "title": "Medios y actualidad",

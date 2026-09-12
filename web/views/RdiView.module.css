@@ -41,6 +41,81 @@
   border-top: 1px solid var(--line);
 }
 
+/*
+ * The peer-reviewed studies. No pictures: the archive's lead images are generic stock
+ * and a paper is announced by its title, its date and the weight of its PDF.
+ */
+.papers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
+  margin: clamp(1.5rem, 3vw, 2.5rem) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.paper {
+  min-width: 0;
+}
+
+.paperLink {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: clamp(1.1rem, 2vw, 1.5rem);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.25s var(--ease), box-shadow 0.25s var(--ease);
+}
+
+.paperLink:hover {
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow-1);
+}
+
+.paperMeta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: var(--step--1);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--green-dark);
+}
+
+.pdf {
+  padding: 0.15rem 0.5rem;
+  background: var(--paper-3);
+  border-radius: 999px;
+  letter-spacing: 0.03em;
+  text-transform: none;
+  color: var(--ink-3);
+}
+
+.paperTitle {
+  margin-top: 0.55rem;
+  font-size: var(--step-1);
+  font-weight: 700;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
+.paperLink:hover .paperTitle {
+  color: var(--green-dark);
+}
+
+.paperExcerpt {
+  margin-top: 0.6rem;
+  font-size: var(--step--1);
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+
 @media (max-width: 640px) {
   .statsInner {
     grid-template-columns: 1fr;

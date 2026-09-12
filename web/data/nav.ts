@@ -54,8 +54,11 @@ export function mainNav(locale: Locale, t: Dictionary): NavItem[] {
       href: at('rdi'),
       children: [
         { label: t.nav.trials, href: at('rdi', '#trials') },
-        { label: t.nav.silicon, href: at('knowledge', '#silicon') },
-        { label: t.nav.publications, href: at('knowledge', '#publications') },
+        /* The knowledge centre no longer pins this interview at #silicon: one
+           chronological list, so the menu points at the article itself. */
+        { label: t.nav.silicon, href: at('article:importance-du-silicium') },
+        /* The studies moved off the knowledge centre on 2026-09-09; this follows them. */
+        { label: t.nav.publications, href: at('rdi', '#publications') },
       ],
     },
     {

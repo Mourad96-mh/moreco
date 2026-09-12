@@ -52,8 +52,13 @@ export interface ProductFamily {
   soon?: boolean;
 }
 
-export type FamilyKey = 'nutrients' | 'soil' | 'biostimulants' | 'protection';
+export type FamilyKey = 'nutrients' | 'soil' | 'biostimulants' | 'protection' | 'disinfectant';
 
+/**
+ * The order the filter bar shows, fixed by the client's briefing of 2026-09-09:
+ * nutrients, soil, biostimulants, protection, disinfectant — and "all products" last,
+ * after the families rather than before them (see components/FamilyFilter).
+ */
 export const FAMILIES: ProductFamily[] = [
   { key: 'nutrients', segment: 'agri', products: ['orthagrow-control'] },
   {
@@ -65,21 +70,21 @@ export const FAMILIES: ProductFamily[] = [
   {
     key: 'biostimulants',
     segment: 'agri',
-    products: [
-      'orthagrow-bloom-booster',
-      'orthagrow-micro-manager',
-      'fertifight',
-      'orthagrow-fertifight',
-      'orthafight',
-    ],
+    products: ['orthagrow-bloom-booster', 'orthagrow-micro-manager', 'orthagrow-fertifight'],
     soon: true,
   },
   { key: 'protection', segment: 'agri', products: [], soon: true },
+  /*
+   * The two disinfectants already sold into crops. Their home range is Huwa-San /
+   * Clearox under the Disinfectant segment, so until now they appeared at the foot of
+   * the page as "other products in the range"; the family gives them a filter button.
+   */
+  { key: 'disinfectant', segment: 'agri', products: ['huwa-san-agro', 'clearox'] },
 ];
 
 export const RANGES: ProductRange[] = [
   { slug: 'orthagrow', segment: 'agri', name: 'Orthagrow', brandMark: '/media/brand/orthagrow.webp' },
-  { slug: 'orthafight', segment: 'agri', name: 'OrthaFight', brandMark: '/media/brand/orthafight.webp' },
+  /* The OrthaFight range went with its two products — see the note above PRODUCTS. */
   { slug: 'mavita', segment: 'humans', name: 'Mavita', brandMark: '/media/brand/mavita.webp' },
   { slug: 'orthahealth', segment: 'animals', name: 'OrthaHealth', brandMark: '/media/brand/orthahealth.webp' },
   { slug: 'huwa-san-pro', segment: 'general', name: 'Huwa-San Professionnel', brandMark: '/media/brand/huwa-san.webp' },
@@ -89,12 +94,20 @@ export const RANGES: ProductRange[] = [
   { slug: 'clearox', segment: 'general', name: 'Clearox', brandMark: '/media/brand/clearox.webp' },
 ];
 
+/**
+ * OrthaFight and FertiFight were withdrawn on 2026-09-09: the client replaced both with
+ * the renamed FertFight (slug `orthagrow-fertifight`, "Orthagrow FertiFight" until that
+ * date). The two shared a single datasheet PDF with each other, which is what made the
+ * three names impossible to tell apart. Their entries in product-copy.json and
+ * media-manifest.json are left in place — those files are extraction output, and an
+ * unreferenced entry costs nothing.
+ */
 export const PRODUCTS: Product[] = [
   { slug: 'orthagrow-control', name: 'Orthagrow Control 4TH', segment: 'agri', range: 'orthagrow' },
   { slug: 'orthagrow-bloom-booster', name: 'Orthagrow Bloom Booster', segment: 'agri', range: 'orthagrow' },
   { slug: 'orthagrow-soil-conditioner', name: 'Orthagrow Soil Conditioner 4TH', segment: 'agri', range: 'orthagrow' },
   { slug: 'orthagrow-micro-manager', name: 'Orthagrow Micro Manager', segment: 'agri', range: 'orthagrow' },
-  { slug: 'orthagrow-fertifight', name: 'Orthagrow FertiFight', segment: 'agri', range: 'orthagrow' },
+  { slug: 'orthagrow-fertifight', name: 'FertFight', segment: 'agri', range: 'orthagrow' },
   {
     slug: 'orthagrow-granule',
     name: 'Orthagrow Granulé',
@@ -109,9 +122,6 @@ export const PRODUCTS: Product[] = [
     segment: 'agri',
     range: 'orthagrow',
   },
-  { slug: 'orthafight', name: 'OrthaFight', segment: 'agri', range: 'orthafight' },
-  { slug: 'fertifight', name: 'FertiFight', segment: 'agri', range: 'orthafight' },
-
   { slug: 'mavita-health', name: 'Mavita Health', segment: 'humans', range: 'mavita' },
   { slug: 'mavita-beauty', name: 'Mavita Beauty', segment: 'humans', range: 'mavita' },
   { slug: 'mavita-luxe', name: 'Mavita Luxe', segment: 'humans', range: 'mavita' },

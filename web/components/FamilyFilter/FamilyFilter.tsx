@@ -10,9 +10,12 @@ export interface FamilyGroup {
 }
 
 /**
- * The family selector on a segment page: one button per family, plus an "all" button
+ * The family selector on a segment page: one button per family, then an "all" button
  * that is the state the page loads in — so the whole catalogue is visible before any
  * click, and with JavaScript off the buttons simply do nothing and every family shows.
+ *
+ * "All products" closes the bar rather than opening it: the client asked for that order
+ * on 2026-09-09, so the families read as the menu and "all" as the way back out of it.
  */
 export default function FamilyFilter({
   allLabel,
@@ -26,14 +29,6 @@ export default function FamilyFilter({
   return (
     <>
       <div className={s.bar}>
-        <button
-          type="button"
-          className={s.chip}
-          aria-pressed={active === 'all'}
-          onClick={() => setActive('all')}
-        >
-          {allLabel}
-        </button>
         {groups.map((group) => (
           <button
             key={group.key}
@@ -45,6 +40,14 @@ export default function FamilyFilter({
             {group.label}
           </button>
         ))}
+        <button
+          type="button"
+          className={s.chip}
+          aria-pressed={active === 'all'}
+          onClick={() => setActive('all')}
+        >
+          {allLabel}
+        </button>
       </div>
 
       {groups.map((group) => (

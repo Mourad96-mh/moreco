@@ -104,12 +104,15 @@ Un produit vendu comme fertilisant ou biostimulant (**règlement (UE) 2019/1009*
 pas revendiquer le contrôle d'un organisme nuisible : cela relèverait du **règlement (CE)
 n° 1107/2009** et exigerait une AMM produit phytopharmaceutique dans chaque pays.
 
-- **FertiFight / Orthagrow FertiFight** — « renforce ses défenses contre les agents
-  pathogènes fongiques, mildiou, oïdium, botrytis, gommose », « efficace préventive et
-  curative », « résultats efficaces dans les 24 heures de pulvérisation », « ne permet pas
-  aux champignons de construire une résistance ».
-- **OrthaFight** — « prévention et destruction de moisissures », « directement
-  fongistatique », « peut provoquer la mort de la maladie ».
+- **FertFight** (« Orthagrow FertiFight » jusqu'au 2026-09-09) — « renforce ses défenses
+  contre les agents pathogènes fongiques, mildiou, oïdium, botrytis, gommose », « efficace
+  préventive et curative ». **Le point reste entier après le renommage** : le produit est
+  toujours au catalogue, dans les cinq langues.
+- **OrthaFight** et **FertiFight** — « prévention et destruction de moisissures »,
+  « directement fongistatique », « peut provoquer la mort de la maladie », « résultats
+  efficaces dans les 24 heures de pulvérisation », « ne permet pas aux champignons de
+  construire une résistance ». Les deux produits ont été retirés du site le 2026-09-09 ;
+  le sujet ne se pose plus tant qu'ils n'y reviennent pas.
 - **Orthagrow (gamme)** — « résistance aux maladies et aux parasites », « permet une
   réduction de la fréquence des applications chimiques », « immobilise les métaux lourds
   toxiques ».
@@ -170,7 +173,7 @@ Les restes de balises WPML (« Nutrition @fr », « silicon @fr », « supplème
 | essai (au champ) | ensayo | proef | تجربة |
 
 Les noms de marques et de produits ne sont **pas** traduits (Orthagrow, Mavita, Huwa-San,
-BioXeco, Clearox, OrthaHealth, FertiFight). Seules exceptions, les deux SKU dont le nom
+BioXeco, Clearox, OrthaHealth, FertFight). Seules exceptions, les deux SKU dont le nom
 français est un mot commun : *Orthagrow Granulé* → « Orthagrow Granule » / « Orthagrow
 حُبيبات » et *Orthagrow Poudre* → « Orthagrow Polvo » / « Orthagrow مسحوق ».
 
@@ -182,3 +185,66 @@ français est un mot commun : *Orthagrow Granulé* → « Orthagrow Granule » /
 - Les lignes de tableau « Langues : Français » des articles décrivent la langue **du PDF
   lié**, pas celle de la page : elles restent donc exactes après traduction.
 - Les noms de fichiers PDF (`agronomics201303-foliar-spray.pdf`, etc.).
+
+## 9. Briefing du 2026-09-09 — nouvelles chaînes à relire
+
+Le texte français est celui du client, à un mot près : « une récolte **abondante** mais
+saine », le mot manquait dans le document reçu (arbitrage validé le 2026-09-09). Les
+quatre autres langues sont de notre main et **n'ont pas encore été relues**.
+
+### Texte d'accueil (trois paragraphes, `home.introText`)
+
+Il remplace l'ancien texte « Une science du silicium, quatre marchés » sous la vidéo.
+Points à surveiller à la relecture :
+
+- « Depuis plus de **23 ans** » : le chiffre est daté. Il vieillit d'un an par an et
+  n'est écrit qu'ici — à revoir chaque année, ou à remplacer par une année de création.
+- « MORECO » est en capitales dans le texte source du client ; nous l'avons gardé tel
+  quel dans les cinq langues, alors que le reste du site écrit « Moreco ».
+- NL : *telers* traduit « producteurs » au sens horticole. Si le client vise aussi les
+  grandes cultures, lire *land- en tuinbouwers*.
+- AR : « المنتجين » (les producteurs) plutôt que « المزارعين » (les agriculteurs), pour
+  couvrir l'agro-industrie comme le champ.
+
+### « Emploi général » devient « Désinfectant »
+
+Change à la fois le quatrième domaine (accueil, méga-menu, pied de page) et la nouvelle
+cinquième famille de la page Agri / Horticulture — même mot pour les deux.
+
+| FR | EN | ES | NL | AR |
+| --- | --- | --- | --- | --- |
+| Désinfectant | Disinfectant | Desinfectante | Desinfectie | مطهّرات |
+
+À trancher par le client : le néerlandais dit ici **l'activité** (*desinfectie*) et non le
+produit (*ontsmettingsmiddel*), qui est plus long et lourd dans une barre de filtres.
+L'arabe est au pluriel, « des désinfectants », qui se lit mieux qu'un singulier générique.
+
+**Les URL n'ont pas changé** : le segment reste `/fr/produits/emploi-general/`,
+`/nl/producten/algemeen-gebruik/`, etc. Les renommer casserait les 301 venus de l'ancien
+moreco.ma ; à faire dans un second temps, avec les redirections qui vont avec.
+
+### Centre de connaissances et publications
+
+Les quatre études évaluées par des pairs quittent le centre de connaissances pour la page
+R&D + I. Le centre de connaissances devient une seule liste chronologique, sans article
+épinglé et sans intitulé de section : la bannière de la page nomme déjà la page. Deux
+chaînes sont nouvelles :
+
+| Clé | FR | EN | ES | NL | AR |
+| --- | --- | --- | --- | --- | --- |
+| `pages.knowledge.lead` | Le silicium expliqué : entretiens et dossiers de fond. | Silicon explained: interviews and background features. | El silicio explicado: entrevistas y reportajes de fondo. | Silicium uitgelegd: interviews en achtergronddossiers. | السيليكون بلغة مفهومة: حوارات وملفات معمّقة. |
+| `rdi.publicationsIntro` | Les études évaluées par des pairs sur lesquelles reposent nos formulations, en téléchargement libre. | The peer-reviewed studies our formulations rest on, free to download. | Los estudios revisados por pares en los que se basan nuestras formulaciones, de descarga libre. | De peer-reviewed studies waarop onze formuleringen steunen, vrij te downloaden. | الدراسات المحكَّمة التي تقوم عليها تركيباتنا، متاحة للتحميل. |
+
+« Évaluées par des pairs » engage : les quatre documents sont bien des articles publiés
+ou relus par des scientifiques nommés (Keele University, *Comptes Rendus Geoscience*),
+mais **le client doit confirmer** que la formule convient pour les quatre.
+
+Aucun libellé de menu ne change, mais l'entrée « L'importance du silicium » du menu
+R&D + I ne pointe plus vers un bloc du centre de connaissances : elle ouvre directement
+la page de l'entretien, qui est ce que son libellé annonce.
+
+### « R&D + I » ne se traduit plus
+
+Sur consigne du client, le bouton de menu reste « R&D + I » dans toutes les langues sauf
+l'arabe. L'espagnol perd donc *I+D+i* et le néerlandais *O&O + I*, y compris comme titre
+de la page. L'arabe garde « البحث والتطوير + الابتكار ».

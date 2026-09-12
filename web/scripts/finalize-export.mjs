@@ -97,7 +97,8 @@ const RULES = [
   ['/agri-horticulture-fr/', 'fr', 'produits/agri-horticulture'],
   ['/agri-horticulture-fr/gamme-de-produits-orthagrow/', 'fr', 'produits/agri-horticulture/orthagrow'],
   ['/agri-horticulture-fr/gamme-de-produits-orthagrow/emploi-sur-le-terrain/', 'fr', 'produits/agri-horticulture/orthagrow'],
-  ['/agri-horticulture-fr/gamme-de-produits-orthafight/', 'fr', 'produits/agri-horticulture/orthafight'],
+  /* OrthaFight and FertiFight were withdrawn on 2026-09-09; FertFight replaced them. */
+  ['/agri-horticulture-fr/gamme-de-produits-orthafight/', 'fr', 'produits/agri-horticulture/orthagrow/orthagrow-fertifight'],
   ['/les-humains/', 'fr', 'produits/humains'],
   ['/les-humains/ligne-de-produit-mavita/', 'fr', 'produits/humains/mavita'],
   ['/les-humains/ligne-de-produit-mavita/mavita-health-fr/', 'fr', 'produits/humains/mavita/mavita-health'],
@@ -129,7 +130,7 @@ const RULES = [
   ['/agri-horticulture/', 'en', 'products/agri-horticulture'],
   ['/agri-horticulture/orthagrow-productline/', 'en', 'products/agri-horticulture/orthagrow'],
   ['/agri-horticulture/orthagrow-productline/guidelines-use-field/', 'en', 'products/agri-horticulture/orthagrow'],
-  ['/agri-horticulture/orthafight-productline/', 'en', 'products/agri-horticulture/orthafight'],
+  ['/agri-horticulture/orthafight-productline/', 'en', 'products/agri-horticulture/orthagrow/orthagrow-fertifight'],
   ['/humans/', 'en', 'products/humans'],
   ['/humans/mavita-productline/', 'en', 'products/humans/mavita'],
   ['/humans/mavita-productline/mavita-health/', 'en', 'products/humans/mavita/mavita-health'],

@@ -7,7 +7,7 @@
   "nav": {
     "products": "Producten",
     "resources": "Documentatie",
-    "rdi": "O&O + I",
+    "rdi": "R&D + I",
     "news": "Media & nieuws",
     "about": "Over ons",
     "contact": "Contact",
@@ -30,17 +30,15 @@
     "search": "Zoeken",
     "language": "Taal"
   },
-  "hero": {
-    "title": "Biobeschikbaar silicium, bewezen op het veld",
-    "subtitle": "Het biobeschikbare silicium dat uw gewassen laat groeien, uw dieren versterkt en uw gezondheid ondersteunt.",
-    "cta": "Offerte aanvragen",
-    "scroll": "Ontdek"
-  },
   "home": {
     "introTitle": "Eén siliciumwetenschap, vier markten",
-    "introText": "Moreco verdeelt een gepatenteerde vorm van gestabiliseerd orthokiezelzuur (OSA), biologisch actief en volledig opneembaar. Dezelfde molecule bedient land- en tuinbouw, veehouderij en de menselijke gezondheid — aangevuld met ecologische desinfectie op basis van waterstofperoxide.",
+    "introText": [
+      "Al meer dan 23 jaar ondersteunen wij met succes de land- en tuinbouw in Europa, Azië en de Verenigde Staten, en sinds 2014 ook in Marokko.",
+      "De oplossingen van MORECO worden met de grootste zorg geselecteerd, op basis van de wetenschap van biologisch actief silicium. Ze behoren tot de leiders in hun segment en bieden onze klanten de garantie van een constante kwaliteit en een veilig gebruik.",
+      "Sinds onze oprichting streven wij ernaar telers innovatieve antwoorden te geven op hun specifieke vraagstukken. Onze technologieën zorgen voor een betere opname van nutriënten en versterken planten van binnenuit tegen ziekten, plagen en klimaatverandering. Door een rijke maar gezonde oogst en een optimale voedingswaarde te waarborgen, helpen wij telers hun eigen merk bovenaan de markt te positioneren. Die filosofie stuurt ons werk nog elke dag."
+    ],
     "segmentsTitle": "Onze toepassingsgebieden",
-    "rdiTitle": "O&O + I",
+    "rdiTitle": "R&D + I",
     "rdiText": "Negentien proefcampagnes in Marokko, van Midelt tot Larache: appels, aardbeien, tomaten, citrus, tarwe, olijven. Elk behandeld perceel wordt plant per plant vergeleken met zijn controleperceel.",
     "rdiCta": "Bekijk de proefresultaten",
     "quoteTitle": "Een concrete vraag? Vraag uw offerte aan",
@@ -64,7 +62,7 @@
       "blurb": "Verbetert de gezondheid en levenskwaliteit van dieren dankzij een opneembare vorm van biologisch actief silicium. Ook toepasbaar voor eco-desinfectie."
     },
     "general": {
-      "name": "Algemeen gebruik",
+      "name": "Desinfectie",
       "short": "Ecologische desinfectie met waterstofperoxide",
       "blurb": "Ecologische desinfectie met waterstofperoxide: voor mensen, dieren, de landbouw en haar industrieën."
     }
@@ -73,7 +71,8 @@
     "nutrients": "Speciale nutriënten",
     "soil": "Bodem- & wortelgezondheid",
     "biostimulants": "Sporenelementen & biostimulanten",
-    "protection": "Biologische bescherming"
+    "protection": "Biologische bescherming",
+    "disinfectant": "Desinfectie"
   },
   "product": {
     "ranges": "Gamma's",
@@ -98,7 +97,7 @@
     "noCopy": "Gedetailleerde fiche in voorbereiding. Neem contact op voor technische informatie."
   },
   "rdi": {
-    "title": "O&O + I",
+    "title": "R&D + I",
     "lead": "Onderzoek, ontwikkeling en innovatie",
     "intro": "Silicium is geen belofte: het is een meting. Sinds 2016 voert Moreco proeven uit in reële omstandigheden bij Marokkaanse telers — controleperceel tegenover behandeld perceel, op hetzelfde bedrijf, in hetzelfde seizoen, met dezelfde variëteit.",
     "trialsTitle": "Proefresultaten",
@@ -109,7 +108,8 @@
     "projectDescription": "Projectbeschrijving",
     "statTrials": "Proefcampagnes",
     "statPlates": "Resultatenplaten",
-    "statSince": "Eerste campagne"
+    "statSince": "Eerste campagne",
+    "publicationsIntro": "De peer-reviewed studies waarop onze formuleringen steunen, vrij te downloaden."
   },
   "article": {
     "download": "Studie downloaden",
@@ -169,7 +169,7 @@
     },
     "knowledge": {
       "title": "Kenniscentrum",
-      "lead": "Silicium uitgelegd: studies, publicaties en achtergronddossiers."
+      "lead": "Silicium uitgelegd: interviews en achtergronddossiers."
     },
     "news": {
       "title": "Media & nieuws",
