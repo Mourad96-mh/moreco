@@ -37,17 +37,28 @@ export default function RdiView({ locale }: { locale: Locale }) {
         crumbs={[{ label: t.site.name, href: href(locale, 'home') }, { label: t.rdi.title }]}
       />
 
+      {/*
+       * Four figures, and the first two must not be confused with each other: 215 is the
+       * group's worldwide trial programme (client briefing, 2026-09-13), while the count
+       * beside it is what this page actually documents — the Moroccan campaigns recovered
+       * from the archive, one page each. The worldwide figure is a claim we are given;
+       * the Moroccan one is counted off the trials themselves and cannot drift.
+       */}
       <section className={s.stats}>
         <div className={`page ${s.statsInner}`}>
           <Reveal className={s.stat}>
+            <p className={s.statNumber}>215</p>
+            <p className={s.statLabel}>{t.rdi.statTrialsWorld}</p>
+          </Reveal>
+          <Reveal className={s.stat} delay={90}>
             <p className={s.statNumber}>{TRIALS.length}</p>
             <p className={s.statLabel}>{t.rdi.statTrials}</p>
           </Reveal>
-          <Reveal className={s.stat} delay={90}>
+          <Reveal className={s.stat} delay={180}>
             <p className={s.statNumber}>{TRIALS.reduce((n, x) => n + x.images.length, 0)}</p>
             <p className={s.statLabel}>{t.rdi.statPlates}</p>
           </Reveal>
-          <Reveal className={s.stat} delay={180}>
+          <Reveal className={s.stat} delay={270}>
             <p className={s.statNumber}>2016</p>
             <p className={s.statLabel}>{t.rdi.statSince}</p>
           </Reveal>

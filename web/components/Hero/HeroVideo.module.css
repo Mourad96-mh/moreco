@@ -109,6 +109,25 @@
   margin-top: 2rem;
 }
 
+/*
+ * The signature burnt into the bottom-left of the film. It sits on the page gutter so
+ * it lines up with the content below, and carries its own soft shadow because the wash
+ * is deliberately light in the middle of the frame.
+ */
+.caption {
+  position: absolute;
+  inset-inline-start: max(var(--gutter), (100vw - var(--page)) / 2);
+  bottom: clamp(1.1rem, 3.5vh, 2.2rem);
+  margin: 0;
+  max-width: min(90vw, 30ch);
+  font-size: var(--step-1);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+  color: #fff;
+  text-shadow: 0 2px 18px rgb(0 0 0 / 0.55);
+}
+
 .credit {
   position: absolute;
   inset-inline-end: 0.75rem;
@@ -133,6 +152,14 @@
 
   .subtitle {
     max-width: none;
+  }
+
+  .caption {
+    inset-inline-start: var(--gutter);
+    inset-inline-end: var(--gutter);
+    bottom: 1rem;
+    max-width: none;
+    font-size: 1.05rem;
   }
 }
 

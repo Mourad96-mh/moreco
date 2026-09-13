@@ -8,28 +8,28 @@
     "height": 2214
   },
   "seg-agri": {
-    "title": "Farm Field (Unsplash)",
-    "author": "Arkadiusz Zet jotte",
+    "title": "Unripe Avocados (Unsplash)",
+    "author": "Nur Afni Setiyaningrum nurafnisetiyaningrum",
     "license": "CC0",
-    "source": "https://commons.wikimedia.org/wiki/File:Farm_Field_(Unsplash).jpg",
-    "width": 7360,
-    "height": 4912
+    "source": "https://commons.wikimedia.org/wiki/File:Unripe_Avocados_(Unsplash).jpg",
+    "width": 4272,
+    "height": 2848
   },
   "seg-humans": {
-    "title": "Smiling woman by a window (Unsplash NoRsyXmHGpI)",
-    "author": "Brooke Cagle brookecagle",
+    "title": "Mother Nature, Summer (Unsplash)",
+    "author": "Autumn Goodman auttgood",
     "license": "CC0",
-    "source": "https://commons.wikimedia.org/wiki/File:Smiling_woman_by_a_window_(Unsplash_NoRsyXmHGpI).jpg",
-    "width": 5309,
-    "height": 3539
+    "source": "https://commons.wikimedia.org/wiki/File:Mother_Nature,_Summer_(Unsplash).jpg",
+    "width": 5472,
+    "height": 3648
   },
   "seg-animals": {
-    "title": "Iceland (Unsplash syQM-YpaEW4)",
-    "author": "Tim Wright timdwright",
+    "title": "Arkansas chickens (Unsplash)",
+    "author": "Brooke Cagle brookecagle",
     "license": "CC0",
-    "source": "https://commons.wikimedia.org/wiki/File:Iceland_(Unsplash_syQM-YpaEW4).jpg",
-    "width": 5104,
-    "height": 2871
+    "source": "https://commons.wikimedia.org/wiki/File:Arkansas_chickens_(Unsplash).jpg",
+    "width": 5318,
+    "height": 3545
   },
   "seg-general": {
     "title": "Water droplets (Unsplash)",

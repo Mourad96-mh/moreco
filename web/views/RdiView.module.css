@@ -6,9 +6,17 @@
 
 .statsInner {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* Four figures since 2026-09-13; they drop to two columns before they crowd. */
+  grid-template-columns: repeat(4, 1fr);
   gap: clamp(1rem, 3vw, 3rem);
   text-align: center;
+}
+
+@media (max-width: 950px) {
+  .statsInner {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem clamp(1rem, 3vw, 2rem);
+  }
 }
 
 .stat {

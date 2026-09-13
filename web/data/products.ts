@@ -41,8 +41,9 @@ export const SEGMENTS: SegmentKey[] = ['agri', 'humans', 'animals', 'general'];
  *
  * `soon` closes a family with a tile reading only the word SOON. The client was explicit:
  * no name, no number, no explanation on the site. For our own reference only, the three
- * placeholders stand for MYCO4G (soil), the ten-product Orthagrow 4G range
- * (biostimulants) and two further products (protection).
+ * placeholders stand for MYCO4G (soil), the five Orthagrow 4G products still unnamed
+ * (biostimulants — the first five of the ten arrived on 2026-09-13) and two further
+ * products (protection).
  */
 export interface ProductFamily {
   key: FamilyKey;
@@ -52,7 +53,17 @@ export interface ProductFamily {
   soon?: boolean;
 }
 
-export type FamilyKey = 'nutrients' | 'soil' | 'biostimulants' | 'protection' | 'disinfectant';
+export type FamilyKey =
+  | 'nutrients'
+  | 'soil'
+  | 'biostimulants'
+  | 'protection'
+  | 'disinfectant'
+  /* Animals is organised by species rather than by what the product does. */
+  | 'poultry'
+  | 'pets'
+  | 'equine'
+  | 'cattle';
 
 /**
  * The order the filter bar shows, fixed by the client's briefing of 2026-09-09:
@@ -70,7 +81,17 @@ export const FAMILIES: ProductFamily[] = [
   {
     key: 'biostimulants',
     segment: 'agri',
-    products: ['orthagrow-bloom-booster', 'orthagrow-micro-manager', 'orthagrow-fertifight'],
+    products: [
+      'orthagrow-bloom-booster',
+      'orthagrow-micro-manager',
+      'orthagrow-fertifight',
+      /* The first five of the Orthagrow 4G range, in the order the client sent them. */
+      'orthagrow-initio',
+      'orthagrow-flor',
+      'orthagrow-frucfolia',
+      'orthagrow-frucferti',
+      'orthagrow-matur',
+    ],
     soon: true,
   },
   { key: 'protection', segment: 'agri', products: [], soon: true },
@@ -80,6 +101,16 @@ export const FAMILIES: ProductFamily[] = [
    * the page as "other products in the range"; the family gives them a filter button.
    */
   { key: 'disinfectant', segment: 'agri', products: ['huwa-san-agro', 'clearox'] },
+
+  /*
+   * Animals, in the strict order the client gave on 2026-09-13: poultry, pets, equine,
+   * cattle. The segment page opens on the four buttons alone — see SegmentView, which
+   * starts the filter on `none` for this segment.
+   */
+  { key: 'poultry', segment: 'animals', products: ['orthahealth-volailles'] },
+  { key: 'pets', segment: 'animals', products: ['orthahealth-chiens-chats'] },
+  { key: 'equine', segment: 'animals', products: ['orthahealth-equides'] },
+  { key: 'cattle', segment: 'animals', products: ['orthahealth-bovins'] },
 ];
 
 export const RANGES: ProductRange[] = [
@@ -122,6 +153,18 @@ export const PRODUCTS: Product[] = [
     segment: 'agri',
     range: 'orthagrow',
   },
+  /*
+   * The Orthagrow 4G range, water-soluble foliar formulations sold in a 1 kg pouch. The
+   * client sent the first five on 2026-09-13; five more follow, which is what keeps the
+   * SOON tile on the biostimulants family. Only the analysis is public so far — see
+   * product-copy.json.
+   */
+  { slug: 'orthagrow-initio', name: 'Orthagrow Initio 4G', segment: 'agri', range: 'orthagrow' },
+  { slug: 'orthagrow-flor', name: 'Orthagrow Flor 4G', segment: 'agri', range: 'orthagrow' },
+  { slug: 'orthagrow-frucfolia', name: 'Orthagrow Frucfolia 4G', segment: 'agri', range: 'orthagrow' },
+  { slug: 'orthagrow-frucferti', name: 'Orthagrow Frucferti 4G', segment: 'agri', range: 'orthagrow' },
+  { slug: 'orthagrow-matur', name: 'Orthagrow Matur 4G', segment: 'agri', range: 'orthagrow' },
+
   { slug: 'mavita-health', name: 'Mavita Health', segment: 'humans', range: 'mavita' },
   { slug: 'mavita-beauty', name: 'Mavita Beauty', segment: 'humans', range: 'mavita' },
   { slug: 'mavita-luxe', name: 'Mavita Luxe', segment: 'humans', range: 'mavita' },
@@ -129,7 +172,60 @@ export const PRODUCTS: Product[] = [
   { slug: 'mavita-sport', name: 'Mavita Sport', segment: 'humans', range: 'mavita' },
   { slug: 'mavita-stress-plex', name: 'Mavita Stress-Plex', segment: 'humans', range: 'mavita' },
 
-  { slug: 'orthahealth', name: 'OrthaHealth', segment: 'animals', range: 'orthahealth' },
+  /*
+   * The single generic "OrthaHealth" SKU was retired on 2026-09-13: the client split the
+   * animal catalogue by species and asked that every product read as OrthaHealth plus
+   * its own sub-name. Its old URL now points at the segment page (finalize-export.mjs),
+   * and its archive copy was split across the four entries below.
+   */
+  {
+    slug: 'orthahealth-volailles',
+    name: 'OrthaHealth Volailles',
+    names: {
+      en: 'OrthaHealth Poultry',
+      es: 'OrthaHealth Aves',
+      nl: 'OrthaHealth Pluimvee',
+      ar: 'OrthaHealth الدواجن',
+    },
+    segment: 'animals',
+    range: 'orthahealth',
+  },
+  {
+    slug: 'orthahealth-chiens-chats',
+    name: 'OrthaHealth Chiens & Chats',
+    names: {
+      en: 'OrthaHealth Dogs & Cats',
+      es: 'OrthaHealth Perros y Gatos',
+      nl: 'OrthaHealth Honden & Katten',
+      ar: 'OrthaHealth الكلاب والقطط',
+    },
+    segment: 'animals',
+    range: 'orthahealth',
+  },
+  {
+    slug: 'orthahealth-equides',
+    name: 'OrthaHealth Équidés',
+    names: {
+      en: 'OrthaHealth Equine',
+      es: 'OrthaHealth Équidos',
+      nl: 'OrthaHealth Paardachtigen',
+      ar: 'OrthaHealth الخيليات',
+    },
+    segment: 'animals',
+    range: 'orthahealth',
+  },
+  {
+    slug: 'orthahealth-bovins',
+    name: 'OrthaHealth Bovins',
+    names: {
+      en: 'OrthaHealth Cattle',
+      es: 'OrthaHealth Bovinos',
+      nl: 'OrthaHealth Rundvee',
+      ar: 'OrthaHealth الأبقار',
+    },
+    segment: 'animals',
+    range: 'orthahealth',
+  },
 
   { slug: 'huwa-san-agro', name: 'Huwa-San AGRO', segment: 'general', range: 'huwa-san-pro', alsoIn: ['agri'] },
   { slug: 'huwa-san-vet', name: 'Huwa-San VET', segment: 'general', range: 'huwa-san-pro', alsoIn: ['animals'] },

@@ -31,16 +31,42 @@
     "language": "Langue"
   },
   "home": {
-    "introTitle": "Une science du silicium, quatre marchés",
+    "introTitle": "L’innovation pour votre culture",
     "introText": [
-      "Depuis plus de 23 ans, nous soutenons avec succès l'agriculture en Europe, en Asie et aux États-Unis, et depuis 2014 au Maroc.",
-      "Les solutions de MORECO sont sélectionnées avec le plus grand soin en s'appuyant sur la science du silicium biologiquement actif. Elles comptent parmi les leaders de leur segment, assurant ainsi à nos clients la garantie d'une qualité constante et une sécurité d'utilisation.",
-      "Depuis notre création, nous nous efforçons d'apporter aux producteurs des réponses innovantes à leurs problématiques spécifiques. Nos technologies permettent une meilleure assimilation des nutriments et renforcent les plantes de l'intérieur contre les maladies, les ravageurs et le changement climatique. En garantissant une récolte abondante mais saine et une valeur nutritionnelle optimale, nous aidons les producteurs à positionner leur propre marque au plus haut rang du marché. Cette philosophie continue de guider notre démarche, chaque jour."
+      "Depuis plus de 23 ans, nous collaborons avec les développeurs d’OSA. Nous soutenons le secteur agricole en Europe, en Asie, aux États-Unis et depuis 2012 au Maroc.",
+      "Les marques que nous commercialisons sont choisies avec le plus grand soin et comptent parmi les leaders absolus de leur secteur. Nous offrons ainsi à nos clients la garantie d’une qualité constante et d’une sécurité d’utilisation.",
+      "Depuis notre création, nous nous efforçons de proposer à nos clients de nouveaux produits et des solutions innovantes apportant des réponses à leurs problématiques spécifiques sur le terrain. Nos technologies exclusives agissent sur deux niveaux cruciaux :"
     ],
+    "introPoints": [
+      {
+        "title": "Nutrition optimale",
+        "text": "Nous assurons une meilleure assimilation des nutriments par la plante."
+      },
+      {
+        "title": "Résilience naturelle",
+        "text": "Nous renforçons les cultures de l’intérieur contre les maladies, les ravageurs et le changement climatique."
+      }
+    ],
+    "introClose": "En garantissant une récolte saine avec une valeur nutritionnelle plus élevée et une shelf-life prolongée, nous aidons les producteurs à positionner leur propre marque au plus haut rang du marché. Cette philosophie continue de guider notre démarche à ce jour.",
+    "filmCaption": "Moreco | L’innovation pour votre culture",
     "segmentsTitle": "Nos domaines d'application",
     "rdiTitle": "R&D + I",
-    "rdiText": "Dix-neuf campagnes d'essais menées au Maroc, de Midelt à Larache : pommiers, fraises, tomates, agrumes, blé, olives. Chaque parcelle traitée est comparée à son témoin, plante par plante.",
+    "rdiText": "Des essais en conditions réelles, parcelle témoin contre parcelle traitée, sur la même exploitation et la même saison. Dix-neuf campagnes sont documentées au Maroc, de Midelt à Larache : pommiers, fraises, tomates, agrumes, blé, olives.",
     "rdiCta": "Voir les résultats d'essais",
+    "stats": [
+      {
+        "value": "215",
+        "label": "Campagnes d’essais mondiales"
+      },
+      {
+        "value": "450 000",
+        "label": "Agriculteurs dans le monde"
+      },
+      {
+        "value": "2001",
+        "label": "Présent à Agadir depuis"
+      }
+    ],
     "quoteTitle": "Un besoin précis ? Demandez votre devis",
     "quoteText": "Ajoutez les produits qui vous intéressent à votre demande, puis envoyez-la en une fois. Notre équipe vous répond avec les dosages, les conditionnements et les prix.",
     "quoteCta": "Voir la demande de devis"
@@ -72,7 +98,11 @@
     "soil": "Santé du Sol & Racines",
     "biostimulants": "Oligo-Éléments & Biostimulants",
     "protection": "Protection Biologique",
-    "disinfectant": "Désinfectant"
+    "disinfectant": "Désinfectant",
+    "poultry": "Volailles",
+    "pets": "Animaux de compagnie",
+    "equine": "Équidés",
+    "cattle": "Bovins"
   },
   "product": {
     "ranges": "Gammes",
@@ -94,7 +124,8 @@
     "datasheet": "Télécharger la fiche produit",
     "sds": "Télécharger la fiche de données de sécurité",
     "relatedTitle": "Autres produits de la gamme",
-    "noCopy": "Fiche détaillée en préparation. Contactez-nous pour toute information technique."
+    "noCopy": "Fiche détaillée en préparation. Contactez-nous pour toute information technique.",
+    "chooseCategory": "Choisissez une catégorie pour voir les produits."
   },
   "rdi": {
     "title": "R&D + I",
@@ -106,7 +137,8 @@
     "trialLabel": "Essai",
     "backToTrials": "Retour aux essais",
     "projectDescription": "Description du projet",
-    "statTrials": "Campagnes d'essais",
+    "statTrialsWorld": "Campagnes d’essais mondiales",
+    "statTrials": "Campagnes documentées au Maroc",
     "statPlates": "Planches de résultats",
     "statSince": "Première campagne",
     "publicationsIntro": "Les études évaluées par des pairs sur lesquelles reposent nos formulations, en téléchargement libre."
@@ -161,7 +193,7 @@
   "pages": {
     "products": {
       "title": "Produits Moreco",
-      "lead": "Quatre domaines d'application, neuf gammes, trente-six références."
+      "lead": "Moreco : Ensemble, faisons de votre culture une référence."
     },
     "resources": {
       "title": "Ressources",

@@ -108,7 +108,10 @@ const RULES = [
   ['/les-humains/ligne-de-produit-mavita/mavita-sport-fr/', 'fr', 'produits/humains/mavita/mavita-sport'],
   ['/les-humains/ligne-de-produit-mavita/mavita-stress-plex-fr/', 'fr', 'produits/humains/mavita/mavita-stress-plex'],
   ['/des-animaux/', 'fr', 'produits/animaux'],
-  ['/des-animaux/orthahealth-fr/', 'fr', 'produits/animaux/orthahealth/orthahealth'],
+  /* The single generic OrthaHealth SKU was retired on 2026-09-13 when the client
+     split the animal catalogue by species; its old URL lands on the segment page,
+     which is where the four sub-categories are chosen. */
+  ['/des-animaux/orthahealth-fr/', 'fr', 'produits/animaux'],
   ['/des-animaux/huwa-san-for-animals/', 'fr', 'produits/emploi-general/huwa-san-pro'],
   ['/emploi-general/', 'fr', 'produits/emploi-general'],
   ['/emploi-general/gamme-de-produits-huwa-san/', 'fr', 'produits/emploi-general/huwa-san-pro'],
@@ -140,7 +143,7 @@ const RULES = [
   ['/humans/mavita-productline/mavita-sport/', 'en', 'products/humans/mavita/mavita-sport'],
   ['/humans/mavita-productline/mavita-stress-plex/', 'en', 'products/humans/mavita/mavita-stress-plex'],
   ['/animals/', 'en', 'products/animals'],
-  ['/animals/orthahealth/', 'en', 'products/animals/orthahealth/orthahealth'],
+  ['/animals/orthahealth/', 'en', 'products/animals'],
   ['/animals/huwa-san-for-animals/', 'en', 'products/general-use/huwa-san-pro'],
   ['/general-use/', 'en', 'products/general-use'],
   ['/general-use/huwa-san-productline/', 'en', 'products/general-use/huwa-san-pro'],

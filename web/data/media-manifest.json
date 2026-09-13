@@ -32,6 +32,21 @@
   "orthagrow-poudre": {
     "image": "/media/products/orthagrow-poudre.webp"
   },
+  "orthagrow-initio": {
+    "image": "/media/products/orthagrow-initio.webp"
+  },
+  "orthagrow-flor": {
+    "image": "/media/products/orthagrow-flor.webp"
+  },
+  "orthagrow-frucfolia": {
+    "image": "/media/products/orthagrow-frucfolia.webp"
+  },
+  "orthagrow-frucferti": {
+    "image": "/media/products/orthagrow-frucferti.webp"
+  },
+  "orthagrow-matur": {
+    "image": "/media/products/orthagrow-matur.webp"
+  },
   "fertifight": {
     "image": "/media/products/fertifight.webp",
     "datasheet": "/media/datasheets/fertifight.pdf",
@@ -110,6 +125,18 @@
     "datasheetKind": "flyer"
   },
   "orthahealth": {
+    "image": "/media/products/orthahealth.webp"
+  },
+  "orthahealth-volailles": {
+    "image": "/media/products/orthahealth.webp"
+  },
+  "orthahealth-chiens-chats": {
+    "image": "/media/products/orthahealth.webp"
+  },
+  "orthahealth-equides": {
+    "image": "/media/products/orthahealth.webp"
+  },
+  "orthahealth-bovins": {
     "image": "/media/products/orthahealth.webp"
   },
   "clearox": {
