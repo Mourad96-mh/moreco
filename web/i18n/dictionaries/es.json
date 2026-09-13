@@ -31,16 +31,42 @@
     "language": "Idioma"
   },
   "home": {
-    "introTitle": "Una ciencia del silicio, cuatro mercados",
+    "introTitle": "La innovación para su cultivo",
     "introText": [
-      "Desde hace más de 23 años apoyamos con éxito a la agricultura en Europa, Asia y Estados Unidos, y desde 2014 en Marruecos.",
-      "Las soluciones de MORECO se seleccionan con el mayor cuidado, apoyándose en la ciencia del silicio biológicamente activo. Figuran entre las líderes de su segmento y garantizan a nuestros clientes una calidad constante y una utilización segura.",
-      "Desde nuestra creación nos esforzamos por ofrecer a los productores respuestas innovadoras a sus problemáticas específicas. Nuestras tecnologías permiten una mejor asimilación de los nutrientes y refuerzan las plantas desde el interior frente a las enfermedades, las plagas y el cambio climático. Al garantizar una cosecha abundante pero sana y un valor nutricional óptimo, ayudamos a los productores a situar su propia marca en lo más alto del mercado. Esta filosofía sigue guiando nuestro trabajo, cada día."
+      "Desde hace más de 23 años colaboramos con los desarrolladores de OSA. Apoyamos al sector agrícola en Europa, Asia y Estados Unidos, y desde 2012 en Marruecos.",
+      "Las marcas que comercializamos se eligen con el mayor cuidado y figuran entre los líderes absolutos de su sector. Así ofrecemos a nuestros clientes la garantía de una calidad constante y de una utilización segura.",
+      "Desde nuestra creación nos esforzamos por ofrecer a nuestros clientes nuevos productos y soluciones innovadoras que respondan a sus problemáticas específicas sobre el terreno. Nuestras tecnologías exclusivas actúan en dos niveles cruciales:"
     ],
+    "introPoints": [
+      {
+        "title": "Nutrición óptima",
+        "text": "Garantizamos una mejor asimilación de los nutrientes por la planta."
+      },
+      {
+        "title": "Resiliencia natural",
+        "text": "Reforzamos los cultivos desde el interior frente a las enfermedades, las plagas y el cambio climático."
+      }
+    ],
+    "introClose": "Al garantizar una cosecha sana con un valor nutricional más elevado y una vida útil prolongada, ayudamos a los productores a situar su propia marca en lo más alto del mercado. Esta filosofía sigue guiando nuestro trabajo hasta hoy.",
+    "filmCaption": "Moreco | La innovación para su cultivo",
     "segmentsTitle": "Nuestros campos de aplicación",
     "rdiTitle": "R&D + I",
-    "rdiText": "Diecinueve campañas de ensayo realizadas en Marruecos, de Midelt a Larache: manzanos, fresas, tomates, cítricos, trigo, olivos. Cada parcela tratada se compara con su propio testigo, planta a planta.",
+    "rdiText": "Ensayos en condiciones reales, parcela testigo frente a parcela tratada, en la misma explotación y la misma temporada. Diecinueve campañas están documentadas en Marruecos, de Midelt a Larache: manzano, fresa, tomate, cítricos, trigo, olivo.",
     "rdiCta": "Ver los resultados de los ensayos",
+    "stats": [
+      {
+        "value": "215",
+        "label": "Campañas de ensayo en el mundo"
+      },
+      {
+        "value": "450.000",
+        "label": "Agricultores en todo el mundo"
+      },
+      {
+        "value": "2001",
+        "label": "Presentes en Agadir desde"
+      }
+    ],
     "quoteTitle": "¿Tiene una necesidad concreta? Pida su presupuesto",
     "quoteText": "Añada los productos que le interesan a su solicitud y envíela de una vez. Nuestro equipo le responde con dosis, formatos y precios.",
     "quoteCta": "Ver la solicitud de presupuesto"
@@ -72,7 +98,11 @@
     "soil": "Salud del suelo y de las raíces",
     "biostimulants": "Oligoelementos y bioestimulantes",
     "protection": "Protección biológica",
-    "disinfectant": "Desinfectante"
+    "disinfectant": "Desinfectante",
+    "poultry": "Aves de corral",
+    "pets": "Animales de compañía",
+    "equine": "Équidos",
+    "cattle": "Bovinos"
   },
   "product": {
     "ranges": "Gamas",
@@ -94,7 +124,8 @@
     "datasheet": "Descargar la ficha de producto",
     "sds": "Descargar la ficha de datos de seguridad",
     "relatedTitle": "Otros productos de la gama",
-    "noCopy": "Ficha detallada en preparación. Contáctenos para cualquier información técnica."
+    "noCopy": "Ficha detallada en preparación. Contáctenos para cualquier información técnica.",
+    "chooseCategory": "Elija una categoría para ver los productos."
   },
   "rdi": {
     "title": "R&D + I",
@@ -106,7 +137,8 @@
     "trialLabel": "Ensayo",
     "backToTrials": "Volver a los ensayos",
     "projectDescription": "Descripción del proyecto",
-    "statTrials": "Campañas de ensayo",
+    "statTrialsWorld": "Campañas de ensayo en el mundo",
+    "statTrials": "Campañas documentadas en Marruecos",
     "statPlates": "Láminas de resultados",
     "statSince": "Primera campaña",
     "publicationsIntro": "Los estudios revisados por pares en los que se basan nuestras formulaciones, de descarga libre."
@@ -161,7 +193,7 @@
   "pages": {
     "products": {
       "title": "Productos Moreco",
-      "lead": "Cuatro campos de aplicación, nueve gamas, treinta y seis referencias."
+      "lead": "Moreco: juntos, hagamos de su cultivo una referencia."
     },
     "resources": {
       "title": "Recursos",

@@ -31,16 +31,42 @@
     "language": "Language"
   },
   "home": {
-    "introTitle": "One silicon science, four markets",
+    "introTitle": "Innovation for your crop",
     "introText": [
-      "For more than 23 years we have supported agriculture across Europe, Asia and the United States, and since 2014 in Morocco.",
-      "Moreco's solutions are chosen with the greatest care, grounded in the science of biologically active silicon. They rank among the leaders of their segment, which guarantees our customers consistent quality and safe use.",
-      "Since our founding we have worked to bring growers innovative answers to their own specific problems. Our technologies improve nutrient uptake and strengthen plants from within against disease, pests and climate change. By securing a harvest that is abundant yet healthy, with optimal nutritional value, we help growers position their own brand at the very top of the market. That philosophy still guides everything we do, every day."
+      "For more than 23 years we have worked alongside the developers of OSA. We support the agricultural sector in Europe, Asia and the United States, and since 2012 in Morocco.",
+      "The brands we bring to market are chosen with the greatest care and rank among the absolute leaders in their field. That is how we give our customers a guarantee of constant quality and safe use.",
+      "Since our founding we have worked to offer our customers new products and innovative solutions that answer their specific problems in the field. Our proprietary technologies act on two crucial levels:"
     ],
+    "introPoints": [
+      {
+        "title": "Optimal nutrition",
+        "text": "We ensure the plant takes up nutrients more efficiently."
+      },
+      {
+        "title": "Natural resilience",
+        "text": "We strengthen crops from within against disease, pests and climate change."
+      }
+    ],
+    "introClose": "By guaranteeing a healthy harvest with higher nutritional value and a longer shelf life, we help growers position their own brand at the very top of the market. That philosophy still guides everything we do today.",
+    "filmCaption": "Moreco | Innovation for your crop",
     "segmentsTitle": "Our fields of application",
     "rdiTitle": "R&D + I",
-    "rdiText": "Nineteen trial campaigns run across Morocco, from Midelt to Larache: apples, strawberries, tomatoes, citrus, wheat, olives. Every treated plot is compared with its own control, plant by plant.",
+    "rdiText": "Trials in real conditions, control plot against treated plot, on the same farm in the same season. Nineteen campaigns are documented in Morocco, from Midelt to Larache: apple, strawberry, tomato, citrus, wheat, olive.",
     "rdiCta": "See the trial results",
+    "stats": [
+      {
+        "value": "215",
+        "label": "Trial campaigns worldwide"
+      },
+      {
+        "value": "450,000",
+        "label": "Farmers worldwide"
+      },
+      {
+        "value": "2001",
+        "label": "In Agadir since"
+      }
+    ],
     "quoteTitle": "Something specific in mind? Ask for a quote",
     "quoteText": "Add the products you are interested in to your request, then send it in one go. Our team replies with dosages, pack sizes and prices.",
     "quoteCta": "View quote request"
@@ -72,7 +98,11 @@
     "soil": "Soil & root health",
     "biostimulants": "Trace elements & biostimulants",
     "protection": "Biological protection",
-    "disinfectant": "Disinfectant"
+    "disinfectant": "Disinfectant",
+    "poultry": "Poultry",
+    "pets": "Pets (dogs & cats)",
+    "equine": "Equine",
+    "cattle": "Cattle"
   },
   "product": {
     "ranges": "Ranges",
@@ -94,7 +124,8 @@
     "datasheet": "Download the product sheet",
     "sds": "Download the safety data sheet",
     "relatedTitle": "Other products in this range",
-    "noCopy": "Detailed sheet in preparation. Contact us for any technical information."
+    "noCopy": "Detailed sheet in preparation. Contact us for any technical information.",
+    "chooseCategory": "Choose a category to see the products."
   },
   "rdi": {
     "title": "R&D + I",
@@ -106,7 +137,8 @@
     "trialLabel": "Trial",
     "backToTrials": "Back to the trials",
     "projectDescription": "Project description",
-    "statTrials": "Trial campaigns",
+    "statTrialsWorld": "Trial campaigns worldwide",
+    "statTrials": "Campaigns documented in Morocco",
     "statPlates": "Result plates",
     "statSince": "First campaign",
     "publicationsIntro": "The peer-reviewed studies our formulations rest on, free to download."
@@ -161,7 +193,7 @@
   "pages": {
     "products": {
       "title": "Moreco products",
-      "lead": "Four fields of application, nine ranges, thirty-six references."
+      "lead": "Moreco: together, let’s make your crop a benchmark."
     },
     "resources": {
       "title": "Resources",

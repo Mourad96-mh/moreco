@@ -95,7 +95,17 @@ export default function SegmentView({ locale, segment }: { locale: Locale; segme
       <div className="section">
         <div className="page" style={{ '--accent': ACCENT[segment] } as React.CSSProperties}>
           {families.length > 0 ? (
-            <FamilyFilter allLabel={t.product.allProducts} groups={familyGroups} />
+            /*
+             * Animals opens on its four sub-categories and nothing else — the client was
+             * explicit that the products appear only once one of them is clicked
+             * (briefing of 2026-09-13). Agriculture keeps the "all products" way in.
+             */
+            <FamilyFilter
+              allLabel={t.product.allProducts}
+              groups={familyGroups}
+              initial={segment === 'animals' ? 'none' : 'all'}
+              emptyHint={segment === 'animals' ? t.product.chooseCategory : undefined}
+            />
           ) : (
             rangeGroups.map(({ range, list }) => (
               <section key={range.slug}>

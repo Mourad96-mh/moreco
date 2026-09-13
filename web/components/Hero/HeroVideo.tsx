@@ -25,9 +25,15 @@ export interface HeroVideoProps {
   sources: { src: string; type: string }[];
   /** Credit line for CC0 footage, shown small in the corner. Own footage needs none. */
   credit?: string;
+  /**
+   * Burnt-in signature, bottom-left of the film (client briefing, 2026-09-13). It is a
+   * caption on the footage, not a headline — it does not rise from a mask like the
+   * title, and it is not the page's h1.
+   */
+  caption?: string;
 }
 
-export default function HeroVideo({ title, subtitle, cta, poster, sources, credit }: HeroVideoProps) {
+export default function HeroVideo({ title, subtitle, cta, poster, sources, credit, caption }: HeroVideoProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [motion, setMotion] = useState(false);
 
@@ -99,6 +105,8 @@ export default function HeroVideo({ title, subtitle, cta, poster, sources, credi
           )}
         </div>
       )}
+
+      {caption && <p className={s.caption}>{caption}</p>}
 
       {credit && <p className={s.credit}>{credit}</p>}
     </section>

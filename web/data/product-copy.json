@@ -549,6 +549,216 @@
       "sizes": []
     }
   },
+  "orthagrow-initio": {
+    "fr": {
+      "claim": "NPK 14-48-0 + oligo-éléments — formulation soluble dans l’eau.",
+      "paragraphs": [],
+      "advantages": [],
+      "sizes": [
+        "1 kg"
+      ]
+    },
+    "en": {
+      "claim": "NPK 14-48-0 + trace elements — water soluble formulation.",
+      "paragraphs": [],
+      "advantages": [],
+      "sizes": [
+        "1 kg"
+      ]
+    },
+    "es": {
+      "claim": "NPK 14-48-0 + oligoelementos — formulación soluble en agua.",
+      "paragraphs": [],
+      "advantages": [],
+      "sizes": [
+        "1 kg"
+      ]
+    },
+    "nl": {
+      "claim": "NPK 14-48-0 + sporenelementen — in water oplosbare formulering.",
+      "paragraphs": [],
+      "advantages": [],
+      "sizes": [
+        "1 kg"
+      ]
+    },
+    "ar": {
+      "claim": "NPK 14-48-0 + عناصر صغرى — تركيبة قابلة للذوبان في الماء.",
+      "paragraphs": [],
+      "advantages": [],
+      "sizes": [
+        "1 كغ"
+      ]
+    }
+  },
+  "orthagrow-flor": {
+    "fr": {
+      "claim": "NPK 10-54-10 + oligo-éléments — formulation soluble dans l’eau.",
+      "paragraphs": [],
+      "advantages": [],
+      "sizes": [
+        "1 kg"
+      ]
+    },
+    "en": {
+      "claim": "NPK 10-54-10 + trace elements — water soluble formulation.",
+      "paragraphs": [],
+      "advantages": [],
+      "sizes": [
+        "1 kg"
+      ]
+    },
+    "es": {
+      "claim": "NPK 10-54-10 + oligoelementos — formulación soluble en agua.",
+      "paragraphs": [],
+      "advantages": [],
+      "sizes": [
+        "1 kg"
+      ]
+    },
+    "nl": {
+      "claim": "NPK 10-54-10 + sporenelementen — in water oplosbare formulering.",
+      "paragraphs": [],
+      "advantages": [],
+      "sizes": [
+        "1 kg"
+      ]
+    },
+    "ar": {
+      "claim": "NPK 10-54-10 + عناصر صغرى — تركيبة قابلة للذوبان في الماء.",
+      "paragraphs": [],
+      "advantages": [],
+      "sizes": [
+        "1 كغ"
+      ]
+    }
+  },
+  "orthagrow-frucfolia": {
+    "fr": {
+      "claim": "NPK 0-42-47 + Fe 2.8 + oligo-éléments — formulation soluble dans l’eau.",
+      "paragraphs": [],
+      "advantages": [],
+      "sizes": [
+        "1 kg"
+      ]
+    },
+    "en": {
+      "claim": "NPK 0-42-47 + Fe 2.8 + trace elements — water soluble formulation.",
+      "paragraphs": [],
+      "advantages": [],
+      "sizes": [
+        "1 kg"
+      ]
+    },
+    "es": {
+      "claim": "NPK 0-42-47 + Fe 2.8 + oligoelementos — formulación soluble en agua.",
+      "paragraphs": [],
+      "advantages": [],
+      "sizes": [
+        "1 kg"
+      ]
+    },
+    "nl": {
+      "claim": "NPK 0-42-47 + Fe 2.8 + sporenelementen — in water oplosbare formulering.",
+      "paragraphs": [],
+      "advantages": [],
+      "sizes": [
+        "1 kg"
+      ]
+    },
+    "ar": {
+      "claim": "NPK 0-42-47 + Fe 2.8 + عناصر صغرى — تركيبة قابلة للذوبان في الماء.",
+      "paragraphs": [],
+      "advantages": [],
+      "sizes": [
+        "1 كغ"
+      ]
+    }
+  },
+  "orthagrow-frucferti": {
+    "fr": {
+      "claim": "NPK 0-48-47 + oligo-éléments — formulation soluble dans l’eau.",
+      "paragraphs": [],
+      "advantages": [],
+      "sizes": [
+        "1 kg"
+      ]
+    },
+    "en": {
+      "claim": "NPK 0-48-47 + trace elements — water soluble formulation.",
+      "paragraphs": [],
+      "advantages": [],
+      "sizes": [
+        "1 kg"
+      ]
+    },
+    "es": {
+      "claim": "NPK 0-48-47 + oligoelementos — formulación soluble en agua.",
+      "paragraphs": [],
+      "advantages": [],
+      "sizes": [
+        "1 kg"
+      ]
+    },
+    "nl": {
+      "claim": "NPK 0-48-47 + sporenelementen — in water oplosbare formulering.",
+      "paragraphs": [],
+      "advantages": [],
+      "sizes": [
+        "1 kg"
+      ]
+    },
+    "ar": {
+      "claim": "NPK 0-48-47 + عناصر صغرى — تركيبة قابلة للذوبان في الماء.",
+      "paragraphs": [],
+      "advantages": [],
+      "sizes": [
+        "1 كغ"
+      ]
+    }
+  },
+  "orthagrow-matur": {
+    "fr": {
+      "claim": "NPK 0-9-46 + oligo-éléments — formulation soluble dans l’eau.",
+      "paragraphs": [],
+      "advantages": [],
+      "sizes": [
+        "1 kg"
+      ]
+    },
+    "en": {
+      "claim": "NPK 0-9-46 + trace elements — water soluble formulation.",
+      "paragraphs": [],
+      "advantages": [],
+      "sizes": [
+        "1 kg"
+      ]
+    },
+    "es": {
+      "claim": "NPK 0-9-46 + oligoelementos — formulación soluble en agua.",
+      "paragraphs": [],
+      "advantages": [],
+      "sizes": [
+        "1 kg"
+      ]
+    },
+    "nl": {
+      "claim": "NPK 0-9-46 + sporenelementen — in water oplosbare formulering.",
+      "paragraphs": [],
+      "advantages": [],
+      "sizes": [
+        "1 kg"
+      ]
+    },
+    "ar": {
+      "claim": "NPK 0-9-46 + عناصر صغرى — تركيبة قابلة للذوبان في الماء.",
+      "paragraphs": [],
+      "advantages": [],
+      "sizes": [
+        "1 كغ"
+      ]
+    }
+  },
   "fertifight": {
     "fr": {
       "claim": "FertiFight de Moreco est une première formulation unique au Maroc, sur la base de la chimie des phosphites et phosphonates, avec le double avantage d’améliorer la nutrition nécessaire pour l’installation et le renforcement contre les agents pathogènes fongiques. Considérant que les fongicides réguliers ont tendance à conduire à la résistance dans le champignon-même qu’ils contrôlent.",
@@ -2129,6 +2339,204 @@
         "أفادت دراسات تكميل السيليكون الغذائي لدى الحيوانات النامية بتحسّن جودة العظام عبر قياسات مباشرة لقوة العظم وكثافته لدى السمان ودجاج اللحم وسمك السلمون المرقّط [39–37]. وقارنت دراسة عشوائية معمّاة على خيول السباق من نوع كوارتر بين مجموعة شاهدة وثلاثة مستويات مختلفة من تكميل السيليكون الغذائي [40]. بدأت الخيول المكمَّلة حميتها في سنّ ستة أشهر واستمرّت 18 شهرًا شملت ستة أشهر من التدريب والسباق. وسُجّلت أزمنة السباق والعرج والكسور ومستويات السيليكون في المصل خلال فترة الدراسة. وفي ختامها تبيّن أن الخيول ذات المستويين المتوسط والمرتفع من تكميل السيليكون حقّقت أزمنة سباق أسرع بفارق دالّ ومسافات تدريب أطول قبل أول انهيار. كما ارتفعت الكثافة المعدنية العظمية في المشط الثالث لدى الخيول ذات المستوى الأعلى من التكميل [40].",
         "أظهرت القياسات المباشرة لكتلة العظم وقوّته في نماذج حيوانية عديدة الآثار النافعة لتكميل السيليكون في رفع الكثافة المعدنية العظمية وخفض هشاشة العظم [20، 33، 43–37].",
         "المجلة الدولية لعلم الغدد الصماء، المجلد 2013 (2013)، المقال رقم 316783."
+      ],
+      "advantages": [],
+      "sizes": []
+    }
+  },
+  "orthahealth-volailles": {
+    "fr": {
+      "claim": "Le silicium active le système immunitaire et soutient la qualité osseuse des volailles. Chez la caille et le poulet de chair, les études d’alimentation en suppléments de silicium relèvent une amélioration mesurée directement sur la solidité et la densité de l’os.",
+      "paragraphs": [
+        "Une carence en silicium provoque des défauts de l’os et du cartilage : le collagène est réduit et la calcification diminue. Un apport de silicium biologiquement actif comble ce déficit, et la cicatrisation est améliorée.",
+        "Les mesures directes de la masse et de la solidité osseuses dans de nombreux modèles animaux ont démontré l’intérêt des suppléments de silicium pour augmenter la densité minérale osseuse et réduire la fragilité de l’os.",
+        "Source : The International Journal of Endocrinology, volume 2013 (2013), article ID 316783."
+      ],
+      "advantages": [],
+      "sizes": []
+    },
+    "en": {
+      "claim": "Silicon activates the immune system and supports bone quality in poultry. In quail and broilers, feeding studies of silicon supplements report an improvement measured directly on bone strength and density.",
+      "paragraphs": [
+        "A silicon deficiency causes bone and cartilage defects: collagen is reduced and calcification falls. Biologically active silicon makes up that shortfall, and wound healing improves with it.",
+        "Direct measurements of bone mass and strength across many animal models have shown the value of silicon supplements in raising bone mineral density and reducing bone fragility.",
+        "Source: The International Journal of Endocrinology, volume 2013 (2013), article ID 316783."
+      ],
+      "advantages": [],
+      "sizes": []
+    },
+    "es": {
+      "claim": "El silicio activa el sistema inmunitario y sostiene la calidad ósea de las aves. En codornices y pollos de engorde, los estudios de alimentación con suplementos de silicio registran una mejora medida directamente sobre la solidez y la densidad del hueso.",
+      "paragraphs": [
+        "Una carencia de silicio provoca defectos en el hueso y el cartílago: el colágeno se reduce y la calcificación disminuye. El aporte de silicio biológicamente activo cubre ese déficit y mejora la cicatrización.",
+        "Las mediciones directas de la masa y la resistencia óseas en numerosos modelos animales han demostrado el interés de los suplementos de silicio para aumentar la densidad mineral ósea y reducir la fragilidad del hueso.",
+        "Fuente: The International Journal of Endocrinology, volumen 2013 (2013), artículo ID 316783."
+      ],
+      "advantages": [],
+      "sizes": []
+    },
+    "nl": {
+      "claim": "Silicium activeert het immuunsysteem en ondersteunt de botkwaliteit bij pluimvee. Bij kwartels en vleeskuikens melden voedingsstudies met siliciumsupplementen een verbetering die rechtstreeks aan botsterkte en botdichtheid is gemeten.",
+      "paragraphs": [
+        "Een siliciumtekort veroorzaakt bot- en kraakbeengebreken: het collageen neemt af en de verkalking vermindert. Biologisch actief silicium vult dat tekort aan, en de wondheling verbetert.",
+        "Directe metingen van botmassa en botsterkte in talrijke diermodellen toonden aan dat siliciumsupplementen de botmineraaldichtheid verhogen en de botbrosheid verminderen.",
+        "Bron: The International Journal of Endocrinology, volume 2013 (2013), artikel ID 316783."
+      ],
+      "advantages": [],
+      "sizes": []
+    },
+    "ar": {
+      "claim": "ينشّط السيليسيوم الجهاز المناعي ويدعم جودة العظم عند الدواجن. في السمان ودجاج اللحم، تسجّل دراسات التغذية بمكمّلات السيليسيوم تحسنًا مقيسًا مباشرة على صلابة العظم وكثافته.",
+      "paragraphs": [
+        "يؤدي نقص السيليسيوم إلى خلل في العظم والغضروف: ينخفض الكولاجين وتقل الكلسنة. يعوّض السيليسيوم النشط بيولوجيًا هذا النقص، كما تتحسن معه التئام الجروح.",
+        "أظهرت القياسات المباشرة لكتلة العظم وصلابته في نماذج حيوانية عديدة فائدة مكمّلات السيليسيوم في رفع الكثافة المعدنية للعظم وتقليل هشاشته.",
+        "المصدر: The International Journal of Endocrinology، المجلد 2013 (2013)، المقال رقم 316783."
+      ],
+      "advantages": [],
+      "sizes": []
+    }
+  },
+  "orthahealth-chiens-chats": {
+    "fr": {
+      "claim": "Le silicium biologiquement actif soutient les défenses naturelles, le cartilage et la cicatrisation des chiens et des chats, en activant le système immunitaire et en corrigeant la carence qui réduit le collagène et la calcification.",
+      "paragraphs": [
+        "Une carence en silicium provoque des défauts de l’os et du cartilage : le collagène est réduit et la calcification diminue. Un apport de silicium biologiquement actif comble ce déficit, et la cicatrisation est améliorée.",
+        "Source : The International Journal of Endocrinology, volume 2013 (2013), article ID 316783."
+      ],
+      "advantages": [],
+      "sizes": []
+    },
+    "en": {
+      "claim": "Biologically active silicon supports the natural defences, the cartilage and the healing of dogs and cats, by activating the immune system and correcting the deficiency that reduces collagen and calcification.",
+      "paragraphs": [
+        "A silicon deficiency causes bone and cartilage defects: collagen is reduced and calcification falls. Biologically active silicon makes up that shortfall, and wound healing improves with it.",
+        "Source: The International Journal of Endocrinology, volume 2013 (2013), article ID 316783."
+      ],
+      "advantages": [],
+      "sizes": []
+    },
+    "es": {
+      "claim": "El silicio biológicamente activo sostiene las defensas naturales, el cartílago y la cicatrización de perros y gatos, activando el sistema inmunitario y corrigiendo la carencia que reduce el colágeno y la calcificación.",
+      "paragraphs": [
+        "Una carencia de silicio provoca defectos en el hueso y el cartílago: el colágeno se reduce y la calcificación disminuye. El aporte de silicio biológicamente activo cubre ese déficit y mejora la cicatrización.",
+        "Fuente: The International Journal of Endocrinology, volumen 2013 (2013), artículo ID 316783."
+      ],
+      "advantages": [],
+      "sizes": []
+    },
+    "nl": {
+      "claim": "Biologisch actief silicium ondersteunt de natuurlijke afweer, het kraakbeen en de wondheling van honden en katten, door het immuunsysteem te activeren en het tekort te corrigeren dat collageen en verkalking vermindert.",
+      "paragraphs": [
+        "Een siliciumtekort veroorzaakt bot- en kraakbeengebreken: het collageen neemt af en de verkalking vermindert. Biologisch actief silicium vult dat tekort aan, en de wondheling verbetert.",
+        "Bron: The International Journal of Endocrinology, volume 2013 (2013), artikel ID 316783."
+      ],
+      "advantages": [],
+      "sizes": []
+    },
+    "ar": {
+      "claim": "يدعم السيليسيوم النشط بيولوجيًا المناعة الطبيعية والغضروف والتئام الجروح عند الكلاب والقطط، عبر تنشيط الجهاز المناعي وتصحيح النقص الذي يقلّل الكولاجين والكلسنة.",
+      "paragraphs": [
+        "يؤدي نقص السيليسيوم إلى خلل في العظم والغضروف: ينخفض الكولاجين وتقل الكلسنة. يعوّض السيليسيوم النشط بيولوجيًا هذا النقص، كما تتحسن معه التئام الجروح.",
+        "المصدر: The International Journal of Endocrinology، المجلد 2013 (2013)، المقال رقم 316783."
+      ],
+      "advantages": [],
+      "sizes": []
+    }
+  },
+  "orthahealth-equides": {
+    "fr": {
+      "claim": "Les chevaux sont moins vulnérables aux traumatismes après utilisation de suppléments de silicium, et la cicatrisation est améliorée. Le silicium augmente par ailleurs les défenses en activant le système immunitaire.",
+      "paragraphs": [
+        "Une étude randomisée sur des chevaux quarter a comparé un groupe témoin à trois niveaux de supplémentation en silicium alimentaire. Les chevaux supplémentés ont commencé leur régime à l’âge de six mois et l’ont poursuivi pendant dix-huit mois, entraînement et période de course compris. À la fin de l’étude, ceux qui recevaient les niveaux moyens et élevés étaient significativement plus rapides et parcouraient de plus grandes distances d’entraînement avant la première panne ; le niveau le plus élevé augmentait aussi la densité minérale osseuse du troisième métacarpien.",
+        "Une carence en silicium provoque des défauts de l’os et du cartilage : le collagène est réduit et la calcification diminue. Un apport de silicium biologiquement actif comble ce déficit, et la cicatrisation est améliorée.",
+        "Source : The International Journal of Endocrinology, volume 2013 (2013), article ID 316783."
+      ],
+      "advantages": [],
+      "sizes": []
+    },
+    "en": {
+      "claim": "Horses are less vulnerable to trauma after silicon supplements are used, and healing improves with them. Silicon also raises the animal's defences by activating the immune system.",
+      "paragraphs": [
+        "A randomised study of quarter horses compared a control group with three different levels of dietary silicon supplementation. The supplemented horses began their diets at six months of age and continued for eighteen months, training and racing period included. At the end of the study, those on the medium and high levels were significantly faster and covered greater training distances before their first breakdown; the highest level also raised bone mineral density in the third metacarpal.",
+        "A silicon deficiency causes bone and cartilage defects: collagen is reduced and calcification falls. Biologically active silicon makes up that shortfall, and wound healing improves with it.",
+        "Source: The International Journal of Endocrinology, volume 2013 (2013), article ID 316783."
+      ],
+      "advantages": [],
+      "sizes": []
+    },
+    "es": {
+      "claim": "Los caballos son menos vulnerables a los traumatismos tras el uso de suplementos de silicio, y la cicatrización mejora. El silicio aumenta además las defensas activando el sistema inmunitario.",
+      "paragraphs": [
+        "Un estudio aleatorizado en caballos quarter comparó un grupo de control con tres niveles distintos de suplementación con silicio en la dieta. Los caballos suplementados comenzaron su régimen a los seis meses y lo mantuvieron durante dieciocho meses, incluidos el entrenamiento y el periodo de carreras. Al final del estudio, los de niveles medio y alto fueron significativamente más rápidos y recorrieron mayores distancias de entrenamiento antes de la primera lesión; el nivel más alto aumentó además la densidad mineral ósea del tercer metacarpiano.",
+        "Una carencia de silicio provoca defectos en el hueso y el cartílago: el colágeno se reduce y la calcificación disminuye. El aporte de silicio biológicamente activo cubre ese déficit y mejora la cicatrización.",
+        "Fuente: The International Journal of Endocrinology, volumen 2013 (2013), artículo ID 316783."
+      ],
+      "advantages": [],
+      "sizes": []
+    },
+    "nl": {
+      "claim": "Paarden zijn minder kwetsbaar voor trauma na gebruik van siliciumsupplementen, en de wondheling verbetert. Silicium verhoogt bovendien de afweer door het immuunsysteem te activeren.",
+      "paragraphs": [
+        "Een gerandomiseerde studie bij quarter horses vergeleek een controlegroep met drie verschillende niveaus van silicium in het voeder. De gesupplementeerde paarden begonnen hun rantsoen op zes maanden en hielden het achttien maanden vol, training en racewinter inbegrepen. Aan het eind van de studie waren de dieren op het middelhoge en hoge niveau significant sneller en legden zij grotere trainingsafstanden af vóór hun eerste uitval; het hoogste niveau verhoogde bovendien de botmineraaldichtheid in het derde middenhandsbeen.",
+        "Een siliciumtekort veroorzaakt bot- en kraakbeengebreken: het collageen neemt af en de verkalking vermindert. Biologisch actief silicium vult dat tekort aan, en de wondheling verbetert.",
+        "Bron: The International Journal of Endocrinology, volume 2013 (2013), artikel ID 316783."
+      ],
+      "advantages": [],
+      "sizes": []
+    },
+    "ar": {
+      "claim": "تصبح الخيول أقل عرضة للرضوض بعد استعمال مكمّلات السيليسيوم، ويتحسن معها التئام الجروح. كما يرفع السيليسيوم المناعة عبر تنشيط الجهاز المناعي.",
+      "paragraphs": [
+        "قارنت دراسة عشوائية على خيول الكوارتر بين مجموعة شاهدة وثلاثة مستويات من مكمّل السيليسيوم في العلف. بدأت الخيول المكمَّلة نظامها الغذائي في سن ستة أشهر واستمرت عليه ثمانية عشر شهرًا، بما في ذلك التدريب وموسم السباق. في نهاية الدراسة، كانت خيول المستويين المتوسط والمرتفع أسرع بشكل دال وقطعت مسافات تدريب أكبر قبل أول إصابة؛ كما رفع المستوى الأعلى الكثافة المعدنية لعظم المشط الثالث.",
+        "يؤدي نقص السيليسيوم إلى خلل في العظم والغضروف: ينخفض الكولاجين وتقل الكلسنة. يعوّض السيليسيوم النشط بيولوجيًا هذا النقص، كما تتحسن معه التئام الجروح.",
+        "المصدر: The International Journal of Endocrinology، المجلد 2013 (2013)، المقال رقم 316783."
+      ],
+      "advantages": [],
+      "sizes": []
+    }
+  },
+  "orthahealth-bovins": {
+    "fr": {
+      "claim": "Chez le veau, la carence en silicium provoque des défauts de l’os et du cartilage : le collagène est réduit et la calcification diminue. Le silicium biologiquement actif comble ce déficit et active le système immunitaire.",
+      "paragraphs": [
+        "Les mesures directes de la masse et de la solidité osseuses dans de nombreux modèles animaux ont démontré l’intérêt des suppléments de silicium pour augmenter la densité minérale osseuse et réduire la fragilité de l’os.",
+        "Source : The International Journal of Endocrinology, volume 2013 (2013), article ID 316783."
+      ],
+      "advantages": [],
+      "sizes": []
+    },
+    "en": {
+      "claim": "In calves, a silicon deficiency causes bone and cartilage defects: collagen is reduced and calcification falls. Biologically active silicon makes up that shortfall and activates the immune system.",
+      "paragraphs": [
+        "Direct measurements of bone mass and strength across many animal models have shown the value of silicon supplements in raising bone mineral density and reducing bone fragility.",
+        "Source: The International Journal of Endocrinology, volume 2013 (2013), article ID 316783."
+      ],
+      "advantages": [],
+      "sizes": []
+    },
+    "es": {
+      "claim": "En el ternero, la carencia de silicio provoca defectos del hueso y del cartílago: el colágeno se reduce y la calcificación disminuye. El silicio biológicamente activo cubre ese déficit y activa el sistema inmunitario.",
+      "paragraphs": [
+        "Las mediciones directas de la masa y la resistencia óseas en numerosos modelos animales han demostrado el interés de los suplementos de silicio para aumentar la densidad mineral ósea y reducir la fragilidad del hueso.",
+        "Fuente: The International Journal of Endocrinology, volumen 2013 (2013), artículo ID 316783."
+      ],
+      "advantages": [],
+      "sizes": []
+    },
+    "nl": {
+      "claim": "Bij het kalf veroorzaakt een siliciumtekort bot- en kraakbeengebreken: het collageen neemt af en de verkalking vermindert. Biologisch actief silicium vult dat tekort aan en activeert het immuunsysteem.",
+      "paragraphs": [
+        "Directe metingen van botmassa en botsterkte in talrijke diermodellen toonden aan dat siliciumsupplementen de botmineraaldichtheid verhogen en de botbrosheid verminderen.",
+        "Bron: The International Journal of Endocrinology, volume 2013 (2013), artikel ID 316783."
+      ],
+      "advantages": [],
+      "sizes": []
+    },
+    "ar": {
+      "claim": "عند العجل، يسبب نقص السيليسيوم خللًا في العظم والغضروف: ينخفض الكولاجين وتقل الكلسنة. يعوّض السيليسيوم النشط بيولوجيًا هذا النقص وينشّط الجهاز المناعي.",
+      "paragraphs": [
+        "أظهرت القياسات المباشرة لكتلة العظم وصلابته في نماذج حيوانية عديدة فائدة مكمّلات السيليسيوم في رفع الكثافة المعدنية للعظم وتقليل هشاشته.",
+        "المصدر: The International Journal of Endocrinology، المجلد 2013 (2013)، المقال رقم 316783."
       ],
       "advantages": [],
       "sizes": []

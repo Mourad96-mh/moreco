@@ -113,7 +113,9 @@ export const CONTACT = {
       icon: 'instagram' as const,
     },
     { label: 'YouTube', href: 'https://www.youtube.com/@morecomaroc6237', icon: 'youtube' as const },
-    { label: 'LinkedIn', href: 'https://www.linkedin.com/', icon: 'linkedin' as const },
+    /* The client has no company page yet: the briefing of 2026-09-13 asks for this
+       bare link and nothing else, so it stays until they send a real profile URL. */
+    { label: 'LinkedIn', href: 'https://linkedin.com', icon: 'linkedin' as const },
   ],
 };
 

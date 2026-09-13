@@ -31,16 +31,42 @@
     "language": "Taal"
   },
   "home": {
-    "introTitle": "Eén siliciumwetenschap, vier markten",
+    "introTitle": "Innovatie voor uw teelt",
     "introText": [
-      "Al meer dan 23 jaar ondersteunen wij met succes de land- en tuinbouw in Europa, Azië en de Verenigde Staten, en sinds 2014 ook in Marokko.",
-      "De oplossingen van MORECO worden met de grootste zorg geselecteerd, op basis van de wetenschap van biologisch actief silicium. Ze behoren tot de leiders in hun segment en bieden onze klanten de garantie van een constante kwaliteit en een veilig gebruik.",
-      "Sinds onze oprichting streven wij ernaar telers innovatieve antwoorden te geven op hun specifieke vraagstukken. Onze technologieën zorgen voor een betere opname van nutriënten en versterken planten van binnenuit tegen ziekten, plagen en klimaatverandering. Door een rijke maar gezonde oogst en een optimale voedingswaarde te waarborgen, helpen wij telers hun eigen merk bovenaan de markt te positioneren. Die filosofie stuurt ons werk nog elke dag."
+      "Al meer dan 23 jaar werken wij samen met de ontwikkelaars van OSA. Wij ondersteunen de landbouwsector in Europa, Azië en de Verenigde Staten, en sinds 2012 in Marokko.",
+      "De merken die wij op de markt brengen worden met de grootste zorg gekozen en behoren tot de absolute leiders in hun sector. Zo bieden wij onze klanten de garantie van een constante kwaliteit en een veilig gebruik.",
+      "Sinds onze oprichting streven wij ernaar onze klanten nieuwe producten en innovatieve oplossingen te bieden die een antwoord geven op hun specifieke problemen op het veld. Onze exclusieve technologieën werken op twee cruciale niveaus:"
     ],
+    "introPoints": [
+      {
+        "title": "Optimale voeding",
+        "text": "Wij zorgen voor een betere opname van de voedingsstoffen door de plant."
+      },
+      {
+        "title": "Natuurlijke weerbaarheid",
+        "text": "Wij versterken de gewassen van binnenuit tegen ziekten, plagen en klimaatverandering."
+      }
+    ],
+    "introClose": "Door een gezonde oogst met een hogere voedingswaarde en een langere shelf-life te garanderen, helpen wij telers hun eigen merk bovenaan de markt te positioneren. Die filosofie stuurt ons werk tot op vandaag.",
+    "filmCaption": "Moreco | Innovatie voor uw teelt",
     "segmentsTitle": "Onze toepassingsgebieden",
     "rdiTitle": "R&D + I",
-    "rdiText": "Negentien proefcampagnes in Marokko, van Midelt tot Larache: appels, aardbeien, tomaten, citrus, tarwe, olijven. Elk behandeld perceel wordt plant per plant vergeleken met zijn controleperceel.",
+    "rdiText": "Proeven in reële omstandigheden, controleperceel tegenover behandeld perceel, op hetzelfde bedrijf in hetzelfde seizoen. Negentien campagnes zijn gedocumenteerd in Marokko, van Midelt tot Larache: appel, aardbei, tomaat, citrus, tarwe, olijf.",
     "rdiCta": "Bekijk de proefresultaten",
+    "stats": [
+      {
+        "value": "215",
+        "label": "Proefcampagnes wereldwijd"
+      },
+      {
+        "value": "450.000",
+        "label": "Telers wereldwijd"
+      },
+      {
+        "value": "2001",
+        "label": "Aanwezig in Agadir sinds"
+      }
+    ],
     "quoteTitle": "Een concrete vraag? Vraag uw offerte aan",
     "quoteText": "Voeg de producten die u interesseren toe aan uw aanvraag en verstuur ze in één keer. Ons team antwoordt met doseringen, verpakkingen en prijzen.",
     "quoteCta": "Offerteaanvraag bekijken"
@@ -72,7 +98,11 @@
     "soil": "Bodem- & wortelgezondheid",
     "biostimulants": "Sporenelementen & biostimulanten",
     "protection": "Biologische bescherming",
-    "disinfectant": "Desinfectie"
+    "disinfectant": "Desinfectie",
+    "poultry": "Pluimvee",
+    "pets": "Gezelschapsdieren",
+    "equine": "Paardachtigen",
+    "cattle": "Rundvee"
   },
   "product": {
     "ranges": "Gamma's",
@@ -94,7 +124,8 @@
     "datasheet": "Productfiche downloaden",
     "sds": "Veiligheidsinformatieblad downloaden",
     "relatedTitle": "Andere producten uit het gamma",
-    "noCopy": "Gedetailleerde fiche in voorbereiding. Neem contact op voor technische informatie."
+    "noCopy": "Gedetailleerde fiche in voorbereiding. Neem contact op voor technische informatie.",
+    "chooseCategory": "Kies een categorie om de producten te zien."
   },
   "rdi": {
     "title": "R&D + I",
@@ -106,7 +137,8 @@
     "trialLabel": "Proef",
     "backToTrials": "Terug naar de proeven",
     "projectDescription": "Projectbeschrijving",
-    "statTrials": "Proefcampagnes",
+    "statTrialsWorld": "Proefcampagnes wereldwijd",
+    "statTrials": "Gedocumenteerde campagnes in Marokko",
     "statPlates": "Resultatenplaten",
     "statSince": "Eerste campagne",
     "publicationsIntro": "De peer-reviewed studies waarop onze formuleringen steunen, vrij te downloaden."
@@ -161,7 +193,7 @@
   "pages": {
     "products": {
       "title": "Moreco-producten",
-      "lead": "Vier toepassingsgebieden, negen gamma's, zesendertig referenties."
+      "lead": "Moreco: samen maken we van uw teelt een referentie."
     },
     "resources": {
       "title": "Documentatie",
