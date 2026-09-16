@@ -248,3 +248,30 @@ la page de l'entretien, qui est ce que son libellé annonce.
 Sur consigne du client, le bouton de menu reste « R&D + I » dans toutes les langues sauf
 l'arabe. L'espagnol perd donc *I+D+i* et le néerlandais *O&O + I*, y compris comme titre
 de la page. L'arabe garde « البحث والتطوير + الابتكار ».
+
+## 10. Briefing du 2026-09-16 — les cinq nouveaux produits Orthagrow 4G
+
+Cinq fiches ajoutées : **CAL 21% SC 4G**, **ZnO 39,5% 4G**, **ALGA +SI 4G**,
+**AMINACTIF-4G** et **MYCO 4G**. Le français est repris **mot pour mot des étiquettes**
+fournies par le client — c'est donc la source, et elle n'a pas été réécrite. L'anglais,
+l'espagnol, le néerlandais et l'arabe sont **nos traductions, à relire**.
+
+Deux points relèvent des sections 1 à 3 ci-dessus et n'ont **pas** été audités ici :
+
+- **« breveté(e) ».** Les quatre liquides revendiquent une formule ou une absorption
+  brevetée (« Absorption 4G brevetée », « formule micro-zinc brevetée », « synergie
+  brevetée »). L'étiquette l'affirme ; le site le répète tel quel. **Le client doit
+  fournir les numéros de brevet**, ou la revendication doit tomber — en UE (ES, NL) une
+  mention de brevet non étayée est une pratique commerciale trompeuse.
+- **Allégations d'effet sur la culture.** « Récolte supérieure », « croissance
+  supérieure », « fructification maximale », « effet immédiat anti-stress » sont des
+  allégations de performance au sens du **règlement (UE) 2019/1009** sur les fertilisants
+  et les biostimulants végétaux. Même réserve qu'à la section 3.
+
+Le « 39,5 % » du nom ZnO garde la virgule décimale française dans les cinq langues :
+c'est le nom de marque imprimé sur l'emballage, et les noms de marque ne se traduisent
+pas (voir `data/products.ts`).
+
+Conditionnements : « 1 L » et « 10 L » pour les quatre liquides, « 200 g » pour MYCO 4G,
+translittérés en arabe (« 1 لتر », « 10 لتر », « 200 غ ») sur le modèle du « 1 كغ » des
+sachets 4G existants.

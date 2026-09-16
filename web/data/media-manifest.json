@@ -171,5 +171,20 @@
     "image": "/media/products/mavita-stress-plex.webp",
     "datasheet": "/media/datasheets/mavita-stress-plex.pdf",
     "datasheetKind": "flyer"
+  },
+  "orthagrow-cal": {
+    "image": "/media/products/orthagrow-cal.webp"
+  },
+  "orthagrow-zno": {
+    "image": "/media/products/orthagrow-zno.webp"
+  },
+  "orthagrow-alga-si": {
+    "image": "/media/products/orthagrow-alga-si.webp"
+  },
+  "orthagrow-aminactif": {
+    "image": "/media/products/orthagrow-aminactif.webp"
+  },
+  "orthagrow-myco": {
+    "image": "/media/products/orthagrow-myco.webp"
   }
 }

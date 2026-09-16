@@ -3245,5 +3245,335 @@
       ],
       "sizes": []
     }
+  },
+  "orthagrow-cal": {
+    "fr": {
+      "claim": "Formule unique avec la plus haute concentration de calcium actif par litre (+ zinc et bore) pour une récolte supérieure.",
+      "paragraphs": [],
+      "advantages": [
+        "Absorption 4G brevetée : assimilation rapide et efficace.",
+        "Suspension maximale : rendement et efficacité par litre.",
+        "Qualité supérieure : stabilité et conservation optimales."
+      ],
+      "sizes": [
+        "1 L",
+        "10 L"
+      ]
+    },
+    "en": {
+      "claim": "A unique formulation with the highest concentration of active calcium per litre (plus zinc and boron) for a superior harvest.",
+      "paragraphs": [],
+      "advantages": [
+        "Patented 4G absorption: fast, efficient uptake.",
+        "Maximum suspension: yield and efficacy per litre.",
+        "Superior quality: optimal stability and shelf life."
+      ],
+      "sizes": [
+        "1 L",
+        "10 L"
+      ]
+    },
+    "es": {
+      "claim": "Formulación única con la mayor concentración de calcio activo por litro (más zinc y boro) para una cosecha superior.",
+      "paragraphs": [],
+      "advantages": [
+        "Absorción 4G patentada: asimilación rápida y eficaz.",
+        "Suspensión máxima: rendimiento y eficacia por litro.",
+        "Calidad superior: estabilidad y conservación óptimas."
+      ],
+      "sizes": [
+        "1 L",
+        "10 L"
+      ]
+    },
+    "nl": {
+      "claim": "Unieke formulering met de hoogste concentratie actief calcium per liter (plus zink en borium) voor een hogere opbrengst.",
+      "paragraphs": [],
+      "advantages": [
+        "Gepatenteerde 4G-opname: snelle en efficiënte assimilatie.",
+        "Maximale suspensie: rendement en werkzaamheid per liter.",
+        "Superieure kwaliteit: optimale stabiliteit en houdbaarheid."
+      ],
+      "sizes": [
+        "1 L",
+        "10 L"
+      ]
+    },
+    "ar": {
+      "claim": "تركيبة فريدة بأعلى تركيز من الكالسيوم النشط في اللتر (مع الزنك والبورون) من أجل محصول أوفر.",
+      "paragraphs": [],
+      "advantages": [
+        "امتصاص 4G مُسجَّل ببراءة اختراع: استيعاب سريع وفعّال.",
+        "تعليق أقصى: مردود وفعالية في كل لتر.",
+        "جودة عالية: ثبات وحفظ مثاليان."
+      ],
+      "sizes": [
+        "1 لتر",
+        "10 لتر"
+      ]
+    }
+  },
+  "orthagrow-zno": {
+    "fr": {
+      "claim": "Formule micro-zinc brevetée hautement concentrée.",
+      "paragraphs": [
+        "Garantit une biodisponibilité maximale et une absorption directe."
+      ],
+      "advantages": [
+        "Absorption maximale par micro-particules.",
+        "100 % sans chlorure, nitrate ni sulfate.",
+        "Croissance supérieure."
+      ],
+      "sizes": [
+        "1 L",
+        "10 L"
+      ]
+    },
+    "en": {
+      "claim": "A patented, highly concentrated micro-zinc formulation.",
+      "paragraphs": [
+        "It guarantees maximum bioavailability and direct uptake."
+      ],
+      "advantages": [
+        "Maximum absorption through micro-particles.",
+        "100% free of chloride, nitrate and sulphate.",
+        "Superior growth."
+      ],
+      "sizes": [
+        "1 L",
+        "10 L"
+      ]
+    },
+    "es": {
+      "claim": "Formulación de micro-zinc patentada y altamente concentrada.",
+      "paragraphs": [
+        "Garantiza una biodisponibilidad máxima y una absorción directa."
+      ],
+      "advantages": [
+        "Absorción máxima mediante micropartículas.",
+        "100 % sin cloruro, nitrato ni sulfato.",
+        "Crecimiento superior."
+      ],
+      "sizes": [
+        "1 L",
+        "10 L"
+      ]
+    },
+    "nl": {
+      "claim": "Gepatenteerde, sterk geconcentreerde microzinkformulering.",
+      "paragraphs": [
+        "Garandeert een maximale biobeschikbaarheid en een directe opname."
+      ],
+      "advantages": [
+        "Maximale opname via microdeeltjes.",
+        "100 % vrij van chloride, nitraat en sulfaat.",
+        "Superieure groei."
+      ],
+      "sizes": [
+        "1 L",
+        "10 L"
+      ]
+    },
+    "ar": {
+      "claim": "تركيبة الزنك الدقيق، مُسجَّلة ببراءة اختراع وعالية التركيز.",
+      "paragraphs": [
+        "تضمن أقصى توافر حيوي وامتصاصًا مباشرًا."
+      ],
+      "advantages": [
+        "امتصاص أقصى بفضل الجسيمات الدقيقة.",
+        "خالية 100 % من الكلوريد والنترات والكبريتات.",
+        "نمو أفضل."
+      ],
+      "sizes": [
+        "1 لتر",
+        "10 لتر"
+      ]
+    }
+  },
+  "orthagrow-alga-si": {
+    "fr": {
+      "claim": "Formule exclusive et brevetée offrant une plus grande résistance des cultures contre le stress abiotique (chaleur et froid).",
+      "paragraphs": [],
+      "advantages": [
+        "Effet immédiat anti-stress.",
+        "Synergie exclusive Algues + Si.",
+        "Fructification maximale."
+      ],
+      "sizes": [
+        "1 L",
+        "10 L"
+      ]
+    },
+    "en": {
+      "claim": "An exclusive, patented formulation giving crops greater resistance to abiotic stress, both heat and cold.",
+      "paragraphs": [],
+      "advantages": [
+        "Immediate anti-stress effect.",
+        "Exclusive seaweed + Si synergy.",
+        "Maximum fruit set."
+      ],
+      "sizes": [
+        "1 L",
+        "10 L"
+      ]
+    },
+    "es": {
+      "claim": "Formulación exclusiva y patentada que ofrece a los cultivos una mayor resistencia al estrés abiótico, tanto por calor como por frío.",
+      "paragraphs": [],
+      "advantages": [
+        "Efecto antiestrés inmediato.",
+        "Sinergia exclusiva de algas + Si.",
+        "Fructificación máxima."
+      ],
+      "sizes": [
+        "1 L",
+        "10 L"
+      ]
+    },
+    "nl": {
+      "claim": "Exclusieve, gepatenteerde formulering die gewassen beter bestand maakt tegen abiotische stress, zowel hitte als kou.",
+      "paragraphs": [],
+      "advantages": [
+        "Onmiddellijk antistress-effect.",
+        "Exclusieve synergie van zeewier + Si.",
+        "Maximale vruchtzetting."
+      ],
+      "sizes": [
+        "1 L",
+        "10 L"
+      ]
+    },
+    "ar": {
+      "claim": "تركيبة حصرية مُسجَّلة ببراءة اختراع تمنح المحاصيل مقاومة أكبر للإجهاد اللاأحيائي، حرارةً وبرودة.",
+      "paragraphs": [],
+      "advantages": [
+        "أثر فوري مضاد للإجهاد.",
+        "تآزر حصري بين الطحالب والسيليسيوم.",
+        "عقد ثمار أقصى."
+      ],
+      "sizes": [
+        "1 لتر",
+        "10 لتر"
+      ]
+    }
+  },
+  "orthagrow-aminactif": {
+    "fr": {
+      "claim": "Synergie brevetée d’acides aminés végétaux de soja et de silicium : le combo anti-stress.",
+      "paragraphs": [],
+      "advantages": [
+        "Optimise la croissance globale.",
+        "Améliore l’assimilation.",
+        "Active les processus physiologiques."
+      ],
+      "sizes": [
+        "1 L",
+        "10 L"
+      ]
+    },
+    "en": {
+      "claim": "A patented synergy of plant-based soya amino acids and silicon — the anti-stress combination.",
+      "paragraphs": [],
+      "advantages": [
+        "Optimises overall growth.",
+        "Improves assimilation.",
+        "Activates physiological processes."
+      ],
+      "sizes": [
+        "1 L",
+        "10 L"
+      ]
+    },
+    "es": {
+      "claim": "Sinergia patentada de aminoácidos vegetales de soja y silicio: la combinación antiestrés.",
+      "paragraphs": [],
+      "advantages": [
+        "Optimiza el crecimiento global.",
+        "Mejora la asimilación.",
+        "Activa los procesos fisiológicos."
+      ],
+      "sizes": [
+        "1 L",
+        "10 L"
+      ]
+    },
+    "nl": {
+      "claim": "Gepatenteerde synergie van plantaardige soja-aminozuren en silicium: de antistresscombinatie.",
+      "paragraphs": [],
+      "advantages": [
+        "Optimaliseert de algehele groei.",
+        "Verbetert de opname.",
+        "Activeert fysiologische processen."
+      ],
+      "sizes": [
+        "1 L",
+        "10 L"
+      ]
+    },
+    "ar": {
+      "claim": "تآزر مُسجَّل ببراءة اختراع بين الأحماض الأمينية النباتية من فول الصويا والسيليسيوم: تركيبة مضادة للإجهاد.",
+      "paragraphs": [],
+      "advantages": [
+        "يحسّن النمو الإجمالي.",
+        "يعزّز الاستيعاب.",
+        "ينشّط العمليات الفسيولوجية."
+      ],
+      "sizes": [
+        "1 لتر",
+        "10 لتر"
+      ]
+    }
+  },
+  "orthagrow-myco": {
+    "fr": {
+      "claim": "Bio-fertilisant mycorhizien à triple action.",
+      "paragraphs": [
+        "Nouvelle technologie de silicium encapsulé : VAM + 13 nutriments + silicium."
+      ],
+      "advantages": [],
+      "sizes": [
+        "200 g"
+      ]
+    },
+    "en": {
+      "claim": "Triple action mycorrhizal bio-fertilizer.",
+      "paragraphs": [
+        "New encapsulated silicon technology: VAM + 13 nutrients + silicon."
+      ],
+      "advantages": [],
+      "sizes": [
+        "200 g"
+      ]
+    },
+    "es": {
+      "claim": "Biofertilizante micorrícico de triple acción.",
+      "paragraphs": [
+        "Nueva tecnología de silicio encapsulado: VAM + 13 nutrientes + silicio."
+      ],
+      "advantages": [],
+      "sizes": [
+        "200 g"
+      ]
+    },
+    "nl": {
+      "claim": "Mycorrhiza-biomeststof met drievoudige werking.",
+      "paragraphs": [
+        "Nieuwe technologie met ingekapseld silicium: VAM + 13 nutriënten + silicium."
+      ],
+      "advantages": [],
+      "sizes": [
+        "200 g"
+      ]
+    },
+    "ar": {
+      "claim": "سماد حيوي فطري جذري ثلاثي المفعول.",
+      "paragraphs": [
+        "تقنية جديدة للسيليسيوم المغلَّف: فطريات VAM + 13 عنصرًا غذائيًا + سيليسيوم."
+      ],
+      "advantages": [],
+      "sizes": [
+        "200 غ"
+      ]
+    }
   }
 }
