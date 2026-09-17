@@ -40,10 +40,10 @@ export const SEGMENTS: SegmentKey[] = ['agri', 'humans', 'animals', 'general'];
  * unchanged — so a family is purely a presentation layer on the segment page.
  *
  * `soon` closes a family with a tile reading only the word SOON. The client was explicit:
- * no name, no number, no explanation on the site. For our own reference only, the three
- * placeholders stand for MYCO4G (soil), the five Orthagrow 4G products still unnamed
- * (biostimulants — the first five of the ten arrived on 2026-09-13) and two further
- * products (protection).
+ * no name, no number, no explanation on the site. For our own reference only, the two
+ * placeholders left stand for the last of the ten Orthagrow 4G products (biostimulants)
+ * and two further products (protection). Soil lost its placeholder on 2026-09-16, when
+ * MYCO 4G arrived with a name and a pack shot.
  */
 export interface ProductFamily {
   key: FamilyKey;
@@ -71,12 +71,27 @@ export type FamilyKey =
  * after the families rather than before them (see components/FamilyFilter).
  */
 export const FAMILIES: ProductFamily[] = [
-  { key: 'nutrients', segment: 'agri', products: ['orthagrow-control'] },
+  /*
+   * Nutrients opens the catalogue. The four Orthagrow 4G liquids sit here with Orthagrow
+   * Control rather than under biostimulants, and MYCO 4G with them — the client grouped
+   * them that way on 2026-09-16.
+   */
+  {
+    key: 'nutrients',
+    segment: 'agri',
+    products: [
+      'orthagrow-control',
+      'orthagrow-cal',
+      'orthagrow-zno',
+      'orthagrow-alga-si',
+      'orthagrow-aminactif',
+      'orthagrow-myco',
+    ],
+  },
   {
     key: 'soil',
     segment: 'agri',
     products: ['orthagrow-granule', 'orthagrow-soil-conditioner', 'orthagrow-poudre'],
-    soon: true,
   },
   {
     key: 'biostimulants',
@@ -85,7 +100,7 @@ export const FAMILIES: ProductFamily[] = [
       'orthagrow-bloom-booster',
       'orthagrow-micro-manager',
       'orthagrow-fertifight',
-      /* The first five of the Orthagrow 4G range, in the order the client sent them. */
+      /* The 1 kg pouches of the Orthagrow 4G range, in the order the client sent them. */
       'orthagrow-initio',
       'orthagrow-flor',
       'orthagrow-frucfolia',
@@ -154,16 +169,31 @@ export const PRODUCTS: Product[] = [
     range: 'orthagrow',
   },
   /*
-   * The Orthagrow 4G range, water-soluble foliar formulations sold in a 1 kg pouch. The
-   * client sent the first five on 2026-09-13; five more follow, which is what keeps the
-   * SOON tile on the biostimulants family. Only the analysis is public so far — see
-   * product-copy.json.
+   * The Orthagrow 4G range. The five below, sent on 2026-09-13, are water-soluble
+   * foliar formulations in a 1 kg pouch, and only their analysis is public so far —
+   * see product-copy.json.
    */
   { slug: 'orthagrow-initio', name: 'Orthagrow Initio 4G', segment: 'agri', range: 'orthagrow' },
   { slug: 'orthagrow-flor', name: 'Orthagrow Flor 4G', segment: 'agri', range: 'orthagrow' },
   { slug: 'orthagrow-frucfolia', name: 'Orthagrow Frucfolia 4G', segment: 'agri', range: 'orthagrow' },
   { slug: 'orthagrow-frucferti', name: 'Orthagrow Frucferti 4G', segment: 'agri', range: 'orthagrow' },
   { slug: 'orthagrow-matur', name: 'Orthagrow Matur 4G', segment: 'agri', range: 'orthagrow' },
+
+  /*
+   * The four liquids of the same range, sent on 2026-09-16, and grouped under nutrients
+   * rather than with the pouches — see FAMILIES. Each is sold in both a 1 L bottle and a
+   * 10 L drum, and a product carries a single image, so the pack shot holds both formats
+   * side by side at their true relative height rather than the site growing a gallery
+   * for what is one photograph's worth of difference. That leaves one of the ten still
+   * to come, which is what keeps the SOON tile on the biostimulants family.
+   */
+  { slug: 'orthagrow-cal', name: 'Orthagrow CAL 21% SC 4G', segment: 'agri', range: 'orthagrow' },
+  { slug: 'orthagrow-zno', name: 'Orthagrow ZnO 39,5% 4G', segment: 'agri', range: 'orthagrow' },
+  { slug: 'orthagrow-alga-si', name: 'Orthagrow ALGA +SI 4G', segment: 'agri', range: 'orthagrow' },
+  { slug: 'orthagrow-aminactif', name: 'Orthagrow AMINACTIF-4G', segment: 'agri', range: 'orthagrow' },
+
+  /* Named on 2026-09-16; it had been the soil family's unnamed SOON tile until then. */
+  { slug: 'orthagrow-myco', name: 'Orthagrow MYCO 4G', segment: 'agri', range: 'orthagrow' },
 
   { slug: 'mavita-health', name: 'Mavita Health', segment: 'humans', range: 'mavita' },
   { slug: 'mavita-beauty', name: 'Mavita Beauty', segment: 'humans', range: 'mavita' },
