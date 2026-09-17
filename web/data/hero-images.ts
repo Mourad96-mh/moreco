@@ -19,6 +19,9 @@ const PAGE_HERO: Record<string, string> = {
   products: `${DIR}/products.webp`,
   rdi: `${DIR}/rdi.webp`,
   resources: `${DIR}/resources.webp`,
+  /* The trial results, which left R&D + I for Resources on 2026-09-17, keep the R&D
+     banner: it is a field photograph, and the page is still the R&D evidence. */
+  trials: `${DIR}/rdi.webp`,
   knowledge: `${DIR}/knowledge.webp`,
   news: `${DIR}/news.webp`,
   media: `${DIR}/media.webp`,
@@ -70,8 +73,7 @@ export const productHero = (product: Product): string =>
  */
 const TRIAL_CROPS = new Set([
   'pommiers', 'fraises', 'tomates', 'agrumes', 'pechers', 'pommes-de-terre', 'carottes',
-  'ble', 'poivrons', 'mais-ensilage', 'cactus', 'quinoa', 'raisins', 'prunes',
-  'framboises', 'gazon',
+  'ble', 'poivrons', 'mais-ensilage', 'cactus', 'quinoa', 'raisins', 'gazon',
 ]);
 
 export const trialHero = (trial: Trial): string =>

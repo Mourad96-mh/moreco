@@ -1,4 +1,4 @@
-export const LOCALES = ['fr', 'en', 'es', 'nl', 'ar'] as const;
+export const LOCALES = ['fr', 'en', 'es', 'nl'] as const;
 
 export type Locale = (typeof LOCALES)[number];
 
@@ -10,7 +10,6 @@ export const LOCALE_NAMES: Record<Locale, string> = {
   en: 'English',
   es: 'Español',
   nl: 'Nederlands',
-  ar: 'العربية',
 };
 
 /** `hreflang` values — plain language codes, no region: the site targets no single country. */
@@ -19,20 +18,22 @@ export const LOCALE_HREFLANG: Record<Locale, string> = {
   en: 'en',
   es: 'es',
   nl: 'nl',
-  ar: 'ar',
 };
 
 /**
- * Writing direction, read by the <html dir> in app/[locale]/layout.tsx. Arabic is the
- * only right-to-left language here; the stylesheets are written with logical properties
- * (inline-start/end) so the flip needs no per-locale CSS beyond a handful of overrides.
+ * Writing direction, read by the <html dir> in app/[locale]/layout.tsx.
+ *
+ * Arabic was withdrawn on 2026-09-17 — the client judged the translation too faulty to
+ * publish — and with it the only right-to-left language the site had. The map is kept
+ * rather than hard-coded to `ltr` so the day a reviewed Arabic comes back, adding the
+ * locale here is all the direction handling it needs; the stylesheets are still written
+ * with logical properties (inline-start/end).
  */
 export const LOCALE_DIR: Record<Locale, 'ltr' | 'rtl'> = {
   fr: 'ltr',
   en: 'ltr',
   es: 'ltr',
   nl: 'ltr',
-  ar: 'rtl',
 };
 
 export function isLocale(value: string): value is Locale {

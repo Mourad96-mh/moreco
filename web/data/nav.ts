@@ -40,20 +40,25 @@ export function mainNav(locale: Locale, t: Dictionary): NavItem[] {
       })),
       footer: { label: t.product.allProducts, href: at('products') },
     },
+    /*
+     * Resources, as the client reshaped it on 2026-09-17: the knowledge centre lost its
+     * menu entry and the trial results took the slot. The centre itself is still online
+     * and still linked — every article page, and the R&D menu's silicon interview, lead
+     * into it — it simply no longer opens a menu of its own.
+     */
     {
       label: t.nav.resources,
       href: at('resources'),
       children: [
         { label: t.nav.catalogues, href: at('resources', '#catalogues') },
         { label: t.nav.applications, href: at('resources', '#applications') },
-        { label: t.nav.knowledge, href: at('knowledge') },
+        { label: t.nav.trials, href: at('trials') },
       ],
     },
     {
       label: t.nav.rdi,
       href: at('rdi'),
       children: [
-        { label: t.nav.trials, href: at('rdi', '#trials') },
         /* The knowledge centre no longer pins this interview at #silicon: one
            chronological list, so the menu points at the article itself. */
         { label: t.nav.silicon, href: at('article:importance-du-silicium') },

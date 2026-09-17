@@ -18,6 +18,7 @@ export type View =
   | 'range'
   | 'product'
   | 'rdi'
+  | 'trials'
   | 'trial'
   | 'resources'
   | 'knowledge'
@@ -89,6 +90,11 @@ function routesFor(locale: Locale): Route[] {
   add('products', 'products', [w('products', locale)]);
   add('rdi', 'rdi', [w('rdi', locale)]);
   add('resources', 'resources', [w('resources', locale)]);
+  /* The trial results moved off R&D + I and under Resources on 2026-09-17, taking the
+     slot the knowledge centre had in that menu. The URLs moved with the page: a trial
+     that still answered on /rd-i/essais/ would leave the section split across two
+     branches of the site. finalize-export.mjs redirects the old paths. */
+  add('trials', 'trials', [w('resources', locale), w('trials', locale)]);
   add('knowledge', 'knowledge', [w('resources', locale), w('knowledge', locale)]);
   add('news', 'news', [w('news', locale)]);
   add('media', 'media', [w('news', locale), w('media', locale)]);
@@ -133,7 +139,7 @@ function routesFor(locale: Locale): Route[] {
   }
 
   for (const trial of TRIALS) {
-    add('trial', `trial:${trial.slug}`, [w('rdi', locale), w('trials', locale), trial.slug], {
+    add('trial', `trial:${trial.slug}`, [w('resources', locale), w('trials', locale), trial.slug], {
       trial: trial.slug,
     });
   }

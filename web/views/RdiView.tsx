@@ -2,22 +2,27 @@ import Link from 'next/link';
 
 import type { Locale } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionary';
-import { href, articleHref, trialHref } from '@/data/routes';
-import { TRIALS, trialTitle, trialDescription } from '@/data/trials';
+import { href, articleHref } from '@/data/routes';
+import { TRIALS } from '@/data/trials';
 import { PUBLICATIONS, articleTitle, articleExcerpt, articleDate, articlePdf } from '@/data/articles';
 import { formatDate } from '@/data/news';
 import { pageHero } from '@/data/hero-images';
 import PageHeader from '@/components/PageHeader/PageHeader';
-import FeatureRow from '@/components/FeatureRow/FeatureRow';
 import Reveal from '@/components/Reveal/Reveal';
 import s from './RdiView.module.css';
 
 /**
- * R&D + I, built with the behaviour the client picked out of bioworkseurope: the trials
- * run down the page as alternating image/text rows that reveal on scroll.
+ * R&D + I.
  *
- * The content is real — nineteen field campaigns recovered from the old /research/
- * section, each comparing an untreated control with a treated plot.
+ * The client wrote this page's copy themselves (briefing of 2026-09-17) and set its
+ * headings: the H1 names the department, the H2 under it is the single word Innovation.
+ * What follows is their text, unedited, in two movements — what the department is, and
+ * the invitation to have something formulated.
+ *
+ * The trial results used to run down the middle of this page. They moved to Resources on
+ * the same date and are a page of their own now (views/TrialsView.tsx); the counts in the
+ * stats band still read off TRIALS, so the two cannot drift apart. The trials keep a way
+ * in from here, below the figures they explain.
  *
  * The peer-reviewed studies close the page (#publications, where the header menu points
  * since 2026-09-09). They were listed in the knowledge centre until the client ruled
@@ -28,13 +33,14 @@ export default function RdiView({ locale }: { locale: Locale }) {
 
   return (
     <>
+      {/* No eyebrow: the H1 the client asked for already names the department in full,
+          and the line that used to sit above it said the same thing in other words. */}
       <PageHeader
-        eyebrow={t.rdi.lead}
         title={t.rdi.title}
         lead={t.rdi.intro}
         image={pageHero('rdi')}
         crumbLabel={t.a11y.breadcrumb}
-        crumbs={[{ label: t.site.name, href: href(locale, 'home') }, { label: t.rdi.title }]}
+        crumbs={[{ label: t.site.name, href: href(locale, 'home') }, { label: t.nav.rdi }]}
       />
 
       {/*
@@ -63,30 +69,36 @@ export default function RdiView({ locale }: { locale: Locale }) {
             <p className={s.statLabel}>{t.rdi.statSince}</p>
           </Reveal>
         </div>
+
+        {/* Two of those four figures are the trials counting themselves, so the page that
+            holds them is one click away from the band that quotes them. */}
+        <div className={`page ${s.statsLink}`}>
+          <Link href={href(locale, 'trials')} className={s.trialsLink}>
+            {t.rdi.allTrials}
+            <ArrowIcon />
+          </Link>
+        </div>
       </section>
 
-      <section className="section" id="trials">
-        <div className="page">
+      <section className="section" id="innovation">
+        <div className="page-narrow">
           <Reveal>
-            <h2>{t.rdi.trialsTitle}</h2>
-            <p className="lead">{t.rdi.trialsIntro}</p>
+            <h2>{t.rdi.innovationTitle}</h2>
+            <p className="lead">{t.rdi.innovationLead}</p>
+            {t.rdi.innovationText.map((paragraph) => (
+              <p key={paragraph.slice(0, 40)}>{paragraph}</p>
+            ))}
           </Reveal>
 
-          <div className={s.rows}>
-            {TRIALS.map((trial, i) => (
-              <FeatureRow
-                key={trial.slug}
-                index={i}
-                eyebrow={`${t.rdi.trialLabel} ${String(trial.order).padStart(2, '0')}`}
-                title={trialTitle(trial, locale)}
-                body={<p>{trialDescription(trial, locale)}</p>}
-                image={trial.images[0]}
-                imageAlt={trialTitle(trial, locale)}
-                link={{ label: t.rdi.projectDescription, href: trialHref(locale, trial.slug) }}
-                priority={i === 0}
-              />
+          <Reveal className={s.bespoke} delay={90}>
+            <h3>{t.rdi.customTitle}</h3>
+            {t.rdi.customText.map((paragraph) => (
+              <p key={paragraph.slice(0, 40)}>{paragraph}</p>
             ))}
-          </div>
+            <Link className="btn" href={href(locale, 'contact')}>
+              {t.rdi.customCta}
+            </Link>
+          </Reveal>
         </div>
       </section>
 
@@ -125,3 +137,19 @@ export default function RdiView({ locale }: { locale: Locale }) {
     </>
   );
 }
+
+const ArrowIcon = () => (
+  <svg
+    width="15"
+    height="15"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2.4"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    aria-hidden="true"
+  >
+    <path d="M5 12h13M13 6l6 6-6 6" />
+  </svg>
+);

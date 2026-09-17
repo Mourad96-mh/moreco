@@ -1,7 +1,7 @@
 {
   "site": {
     "name": "Moreco",
-    "tagline": "Bioavailable silicon for plants, animals and people",
+    "tagline": "Bioavailable silicon for plants, animals and human",
     "description": "Moreco produces and distributes a patented, biologically active and fully absorbable form of silicon (OSA) for agriculture, livestock and human health, alongside ecological disinfection with hydrogen peroxide."
   },
   "nav": {
@@ -51,7 +51,7 @@
     "filmCaption": "Moreco | Innovation for your crop",
     "segmentsTitle": "Our fields of application",
     "rdiTitle": "R&D + I",
-    "rdiText": "Trials in real conditions, control plot against treated plot, on the same farm in the same season. Nineteen campaigns are documented in Morocco, from Midelt to Larache: apple, strawberry, tomato, citrus, wheat, olive.",
+    "rdiText": "Trials in real conditions, control plot against treated plot, on the same farm in the same season. The campaigns documented in Morocco run from Midelt to Larache: apple, strawberry, tomato, citrus, wheat, olive.",
     "rdiCta": "See the trial results",
     "stats": [
       {
@@ -128,11 +128,22 @@
     "chooseCategory": "Choose a category to see the products."
   },
   "rdi": {
-    "title": "R&D + I",
-    "lead": "Research, development and innovation",
+    "title": "Moreco Research & Development",
     "intro": "Silicon is not a promise, it is a measurement. Since 2016 Moreco has run field trials with Moroccan growers — a control plot against a treated plot, on the same farm, the same season, the same variety.",
+    "innovationTitle": "Innovation",
+    "innovationLead": "Always a step ahead, thanks to Moreco’s R&D",
+    "innovationText": [
+      "Standing still is not an option. That is why Moreco invests continuously in biotechnological research and advanced development. Our in-house R&D department is the engine behind our high-performance agricultural inputs, developed with the most advanced technologies in the sector.",
+      "Our team of experts is devoted to designing, testing and perfecting innovative formulations. We pursue one clear goal: to give you optimal quality, efficacy and sustainability, and with them the highest possible return for the agricultural sector."
+    ],
+    "customTitle": "Need a bespoke formula or product?",
+    "customText": [
+      "Does your business need a specific product developed, or a formula made to measure? Whether you are looking for a solution to apply directly to your own crops, or want to formulate an innovative product for sale and distribution, our R&D team is at your disposal. We work alongside you to push the limits of innovation and design tailored solutions that meet your agronomic objectives exactly.",
+      "We are entirely at your disposal for any question. Do get in touch to explore the opportunities for working together."
+    ],
+    "customCta": "Contact us",
     "trialsTitle": "Trial results",
-    "trialsIntro": "Nineteen crops, from the apple orchards of Midelt to turf grass, documented in field photography.",
+    "trialsIntro": "From the apple orchards of Midelt to turf grass, every crop documented in field photography.",
     "allTrials": "All trials",
     "trialLabel": "Trial",
     "backToTrials": "Back to the trials",
@@ -199,6 +210,10 @@
       "title": "Resources",
       "lead": "Product sheets, catalogues and the knowledge centre."
     },
+    "trials": {
+      "title": "Trial results",
+      "lead": "Control plot against treated plot, on the same farm and in the same season."
+    },
     "knowledge": {
       "title": "Knowledge centre",
       "lead": "Silicon explained: interviews and background features."
@@ -241,5 +256,43 @@
     "skipToContent": "Skip to content",
     "breadcrumb": "Breadcrumb",
     "mainNav": "Main navigation"
+  },
+  "resources": {
+    "applicationsIntro": "The crop-by-crop flyers, to take out into the field."
+  },
+  "careers": {
+    "formTitle": "Speculative application",
+    "intro": "No open post matches your profile? Send us your application anyway: we keep it on file and come back to you as soon as a role fits.",
+    "department": "Department",
+    "diploma": "Qualification",
+    "studyLevel": "Level of study after secondary school",
+    "choose": "Select…",
+    "cv": "Upload your CV as a PDF",
+    "cvHint": "PDF only, 1 MB maximum.",
+    "cvButton": "Choose a file",
+    "cvEmpty": "No file selected",
+    "cvType": "The CV must be a PDF file.",
+    "cvSize": "The file is larger than 1 MB. Compress it or lower its resolution.",
+    "submit": "Send my application",
+    "success": "Thank you, we have your application. We will come back to you as soon as a role matches your profile.",
+    "departments": [
+      "Sales",
+      "Finance and accounting",
+      "Human Resources",
+      "Purchasing and logistics",
+      "Research and Development",
+      "Communication and Marketing",
+      "Secretarial",
+      "Logistics"
+    ],
+    "diplomas": [
+      "Engineer",
+      "Technician",
+      "MBA",
+      "Master’s",
+      "Bachelor’s",
+      "Secondary school diploma",
+      "Other"
+    ]
   }
 }

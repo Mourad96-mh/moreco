@@ -36,8 +36,6 @@ const SLUGS = {
   'cactus': 'cactus',
   'quinoa': 'quinoa',
   'grapes': 'raisins',
-  'prunes': 'prunes',
-  'framboises': 'framboises',
   'oignons': 'oignons',
   'gazon': 'gazon',
 };

@@ -131,3 +131,14 @@
   color: var(--ink-2);
   max-width: 76ch;
 }
+
+/* ---------- careers ---------- */
+
+/*
+ * The application form. The prose above it runs full width, the form does not: a text
+ * input stretched to 1200 px is unusable, and the fields are laid out in pairs.
+ */
+.formWrap {
+  max-width: 720px;
+  margin-top: 1.5rem;
+}

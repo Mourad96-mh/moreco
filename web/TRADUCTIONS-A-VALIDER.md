@@ -275,3 +275,134 @@ pas (voir `data/products.ts`).
 Conditionnements : « 1 L » et « 10 L » pour les quatre liquides, « 200 g » pour MYCO 4G,
 translittérés en arabe (« 1 لتر », « 10 لتر », « 200 غ ») sur le modèle du « 1 كغ » des
 sachets 4G existants.
+
+## 11. Briefing du 2026-09-17 — arabe retiré, R&D réécrite, candidature spontanée
+
+### L'arabe quitte le site
+
+Sur constat du client (« trop d'erreurs »), **la langue arabe est retirée du site** :
+`i18n/dictionaries/ar.json` est supprimé, `ar` disparaît de `LOCALES`, des mots d'URL,
+du sélecteur de langue, des `hreflang` et de la page d'atterrissage. Plus aucune page
+`/ar/` n'est générée et la police Noto Sans Arabic n'est plus chargée.
+
+Les anciennes URL arabes de moreco.ma **ne tombent pas en 404** : elles redirigent
+désormais vers la page **française ou anglaise dont elles étaient la traduction**, d'après
+les liens de traduction de l'archive (`scripts/finalize-export.mjs`).
+
+Les chaînes arabes **restent dormantes** dans `data/product-copy.json`,
+`data/research.json`, `data/articles.json` et `data/pages.json` : rien ne les lit, elles
+ne coûtent rien, et elles servent de base si le client fait relire puis remettre la langue.
+Les sections 1 à 10 de ce document gardent donc leurs colonnes AR, qui documentent ce qui
+existe encore dans les fichiers. **Si la langue est abandonnée pour de bon, dire de les
+purger.**
+
+### Page R&D + I — texte fourni par le client
+
+Le **français est fourni mot pour mot par le client** et n'a pas été réécrit ; l'anglais,
+l'espagnol et le néerlandais sont **nos traductions, à relire**. Les titres sont ceux
+demandés : H1 « Recherche & Développement Moreco », H2 « Innovation ».
+
+| Clé | FR (source client) | EN | ES | NL |
+| --- | --- | --- | --- | --- |
+| `rdi.title` | Recherche & Développement Moreco | Moreco Research & Development | Investigación y Desarrollo Moreco | Onderzoek & Ontwikkeling Moreco |
+| `rdi.innovationTitle` | Innovation | Innovation | Innovación | Innovatie |
+| `rdi.innovationLead` | Toujours une longueur d'avance grâce à la R&D de Moreco | Always a step ahead, thanks to Moreco's R&D | Siempre un paso por delante gracias al I+D de Moreco | Altijd een stap voor, dankzij de R&D van Moreco |
+| `rdi.customTitle` | Besoin d'une formule ou d'un produit sur mesure ? | Need a bespoke formula or product? | ¿Necesita una fórmula o un producto a medida? | Een formule of product op maat nodig? |
+
+Les quatre paragraphes (`rdi.innovationText`, `rdi.customText`) suivent la même règle.
+
+**Réserve, même nature qu'aux sections 3 et 10** : le texte affirme des « technologies les
+plus avancées du secteur » et un « rendement maximal ». C'est du registre publicitaire
+admis, mais en UE (ES, NL) une allégation de supériorité doit pouvoir être étayée si elle
+est contestée. Le client a écrit ce texte ; il l'assume.
+
+Le titre du menu reste « R&D + I » — c'est le bouton, pas le titre de la page
+(voir section 9).
+
+### Compteurs d'essais
+
+Deux essais ont été supprimés (prunes, framboises), les dix-sept restants renumérotés de
+01 à 17. Les textes qui **annonçaient « dix-neuf »** ont donc été réécrits sans chiffre,
+dans les quatre langues : `home.rdiText` et `rdi.trialsIntro`. Les compteurs affichés sur
+la page R&D + I se calculent sur les données et ne peuvent pas dériver.
+
+### Page carrières — candidature spontanée
+
+Formulaire neuf, sur le modèle de casem.ma/carrieres. Les libellés (`careers.*`) sont
+**nos traductions** sauf le français, qui reprend le briefing.
+
+Deux points demandent l'avis du client :
+
+- **« License » → « Licence ».** La liste des diplômes du briefing écrit *License*, qui est
+  l'orthographe anglaise. Le menu déroulant affiche **Licence**. À confirmer.
+- **« Achats et logistiques » et « Logistique »** figurent tous deux dans la liste des
+  départements fournie, comme deux entrées distinctes. Elles sont reprises telles quelles.
+  À confirmer qu'il ne s'agit pas d'un doublon.
+
+Traductions des deux listes déroulantes :
+
+| FR | EN | ES | NL |
+| --- | --- | --- | --- |
+| Commercial | Sales | Comercial | Commercieel |
+| Finance et comptabilité | Finance and accounting | Finanzas y contabilidad | Financiën en boekhouding |
+| Ressources Humaines | Human Resources | Recursos Humanos | Human Resources |
+| Achats et logistiques | Purchasing and logistics | Compras y logística | Inkoop en logistiek |
+| Recherche et Développement | Research and Development | Investigación y Desarrollo | Onderzoek en Ontwikkeling |
+| Communication et Marketing | Communication and Marketing | Comunicación y Marketing | Communicatie en Marketing |
+| Secrétariat | Secretarial | Secretaría | Secretariaat |
+| Logistique | Logistics | Logística | Logistiek |
+| Ingénieur | Engineer | Ingeniero | Ingenieur |
+| Technicien | Technician | Técnico | Technicus |
+| Master | Master's | Máster | Master |
+| Licence | Bachelor's | Licenciatura | Bachelor |
+| Baccalauréat | Secondary school diploma | Bachillerato | Middelbareschooldiploma |
+| Autre | Other | Otro | Anders |
+
+« MBA » ne se traduit pas.
+
+### Signature du pied de page
+
+À la demande du client, la ligne anglaise devient exactement
+**« Bioavailable silicon for plants, animals and human »** (`site.tagline` en anglais).
+*human* y est employé comme nom au singulier, ce qui n'est pas de l'anglais standard —
+on attendrait *humans*. **C'est la formulation imposée par le client**, reprise telle
+quelle. Les quatre autres langues sont inchangées.
+
+### Gamme Mavita
+
+« Mavita Health » s'appelle désormais **« Mavita Sport »**, et le « Mavita Sport » existant
+garde son nom : **deux fiches portent le même nom**, ce que le briefing demande
+explicitement. Les textes de description n'ont pas été touchés, comme demandé, ce qui
+laisse deux échos de l'ancien nom dans le corps des pages :
+
+- la fiche renommée **commence encore par « Le complexe minéral Mavita Health »** ;
+- la fiche Mavita Beauty conseille d'utiliser le produit « avec **Mavita Health** (agit
+  comme un stimulateur) ».
+
+À trancher : soit les textes citent l'ancien nom (état actuel, conforme à la lettre du
+briefing), soit on y substitue le nouveau.
+
+Deux nouvelles photos (gamme **Human® Laboratoires**, flacons 30 ml gouttes orales) ont
+remplacé les visuels d'archive de **Mavita Sport** et **Mavita Beauty**. L'attribution ne
+relève pas du jugement : l'étiquette du premier flacon porte « ENDURANCE / ANTI-ACIDITE /
+RECUPERATION », qui est mot pour mot l'accroche de `mavita-sport`, et celle du second
+« PEAU / CHEVEUX / ONGLES », qui est celle de `mavita-beauty`.
+
+**La fiche renommée (`mavita-health`) garde donc son visuel d'archive**, sur lequel on lit
+encore « MAVITA health » alors que la page s'intitule Mavita Sport. Il manque une photo.
+
+### Gamme OrthaHealth — trois espèces sur quatre photographiées
+
+Les visuels d'archive des quatre espèces étaient le même logo de gamme. Trois ont reçu
+leur propre photo le 2026-09-17 : **Volailles** (bouteille 1 L et fût 10 L),
+**Chiens & Chats** (OrthaHealth PETS, 50 ml) et **Équidés** (250 ml). **Bovins garde le
+logo** — la photo manque.
+
+### Conditionnements lus sur les emballages
+
+Les nouvelles photos portent leur contenance, reportée dans « Disponible en » comme pour
+les liquides 4G (section 10) : `1 L · 10 L` (volailles), `50 ml` (chiens & chats),
+`250 ml` (équidés), `30 ml` (Mavita Sport et Mavita Beauty).
+
+**À confirmer par le client** : ce sont les formats *visibles sur la photo*, pas une liste
+fournie. S'il en existe d'autres, ils manquent.

@@ -44,7 +44,7 @@
   margin-top: clamp(1rem, 2vw, 2rem);
 }
 
-/* A hairline between rows keeps nineteen of them from reading as one long column. */
+/* A hairline between rows keeps seventeen of them from reading as one long column. */
 .rows > * + * {
   border-top: 1px solid var(--line);
 }
@@ -130,4 +130,42 @@
     text-align: left;
     gap: 1.25rem;
   }
+}
+
+/*
+ * The way through to the trial results, under the figures that count them, and the
+ * bespoke-formulation block that closes the client's Innovation copy.
+ */
+.statsLink {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.trialsLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.trialsLink:hover {
+  color: var(--green-dark);
+}
+
+.bespoke {
+  margin-top: 2.75rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--paper-2);
+}
+
+.bespoke h3 {
+  margin-top: 0;
+}
+
+.bespoke p:last-of-type {
+  margin-bottom: 1.5rem;
 }

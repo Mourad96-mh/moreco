@@ -16,7 +16,7 @@ import s from './ContactView.module.css';
  * The page used to be three cards of details and nothing else — no way to actually write
  * to anyone, and the same address the footer carries two hundred pixels below. The form
  * is the page now; the details sit beside it, and the parts the footer does not repeat
- * (the mobiles, and the way through to careers) earn their place.
+ * (the mobiles, the way through to a quote) earn their place.
  */
 export default function ContactView({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
@@ -80,14 +80,12 @@ export default function ContactView({ locale }: { locale: Locale }) {
               </ul>
             </div>
 
-            {/* A quote is a different errand from a question: it has its own page. */}
+            {/* A quote is a different errand from a question: it has its own page. The
+                careers link that used to sit beside it came off on 2026-09-17 at the
+                client's request; careers is still in the Contacts menu. */}
             <div className={s.links}>
               <Link className={s.sideLink} href={href(locale, 'quote')}>
                 {t.nav.quote}
-                <Arrow />
-              </Link>
-              <Link className={s.sideLink} href={href(locale, 'careers')}>
-                {t.nav.careers}
                 <Arrow />
               </Link>
             </div>

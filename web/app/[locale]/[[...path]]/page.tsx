@@ -14,6 +14,7 @@ import SegmentView from '@/views/SegmentView';
 import RangeView from '@/views/RangeView';
 import ProductView from '@/views/ProductView';
 import RdiView from '@/views/RdiView';
+import TrialsView from '@/views/TrialsView';
 import TrialView from '@/views/TrialView';
 import QuoteView from '@/views/QuoteView';
 import NewsView from '@/views/NewsView';
@@ -64,6 +65,8 @@ function seoFor(route: Route, locale: Locale) {
     }
     case 'rdi':
       return { title: t.rdi.title, description: t.rdi.intro };
+    case 'trials':
+      return { title: t.pages.trials.title, description: t.pages.trials.lead };
     case 'trial': {
       const trial = getTrial(route.params.trial!);
       return {
@@ -133,6 +136,8 @@ export default async function Page(props: PageProps<'/[locale]/[[...path]]'>) {
       return <ProductView locale={locale} slug={route.params.product!} />;
     case 'rdi':
       return <RdiView locale={locale} />;
+    case 'trials':
+      return <TrialsView locale={locale} />;
     case 'trial':
       return <TrialView locale={locale} slug={route.params.trial!} />;
     case 'quote':

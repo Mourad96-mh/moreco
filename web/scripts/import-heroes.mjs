@@ -79,8 +79,6 @@ const TRIAL_FILES = {
   'cactus': 'Arizona_cacti_(Unsplash).jpg',
   'quinoa': 'Grain_Crop_(Unsplash).jpg',
   'raisins': 'Future_wine_on_vine_(Unsplash).png',
-  'prunes': 'Plums_(Unsplash).jpg',
-  'framboises': 'Basket_of_raspberry_(Unsplash).jpg',
   'gazon': 'Green_grass_texture_(Unsplash).jpg',
 };
 

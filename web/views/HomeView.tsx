@@ -128,7 +128,9 @@ export default function HomeView({ locale }: { locale: Locale }) {
               <p className="eyebrow">{t.home.rdiTitle}</p>
               <h2>{t.rdi.trialsTitle}</h2>
               <p className="lead">{t.home.rdiText}</p>
-              <Link className="btn" href={href(locale, 'rdi')}>
+              {/* The block is headed "trial results" and the button says so: it goes to
+                  the trial list, which left R&D + I for Resources on 2026-09-17. */}
+              <Link className="btn" href={href(locale, 'trials')}>
                 {t.home.rdiCta}
               </Link>
             </Reveal>

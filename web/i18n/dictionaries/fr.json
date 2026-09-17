@@ -51,7 +51,7 @@
     "filmCaption": "Moreco | L’innovation pour votre culture",
     "segmentsTitle": "Nos domaines d'application",
     "rdiTitle": "R&D + I",
-    "rdiText": "Des essais en conditions réelles, parcelle témoin contre parcelle traitée, sur la même exploitation et la même saison. Dix-neuf campagnes sont documentées au Maroc, de Midelt à Larache : pommiers, fraises, tomates, agrumes, blé, olives.",
+    "rdiText": "Des essais en conditions réelles, parcelle témoin contre parcelle traitée, sur la même exploitation et la même saison. Les campagnes documentées au Maroc vont de Midelt à Larache : pommiers, fraises, tomates, agrumes, blé, olives.",
     "rdiCta": "Voir les résultats d'essais",
     "stats": [
       {
@@ -128,11 +128,22 @@
     "chooseCategory": "Choisissez une catégorie pour voir les produits."
   },
   "rdi": {
-    "title": "R&D + I",
-    "lead": "Recherche, développement et innovation",
+    "title": "Recherche & Développement Moreco",
     "intro": "Le silicium n'est pas une promesse : c'est une mesure. Depuis 2016, Moreco conduit des essais en conditions réelles chez des producteurs marocains — parcelle témoin contre parcelle traitée, sur la même exploitation, la même saison, la même variété.",
+    "innovationTitle": "Innovation",
+    "innovationLead": "Toujours une longueur d’avance grâce à la R&D de Moreco",
+    "innovationText": [
+      "L’immobilisme n’est pas une option. C’est pourquoi Moreco investit continuellement dans la recherche biotechnologique et le développement de pointe. Notre département R&D interne constitue le moteur de nos intrants agricoles de haute performance, développés grâce aux technologies les plus avancées du secteur.",
+      "Notre équipe d’experts se consacre pleinement à la conception, aux essais et au perfectionnement de formules innovantes. Nous poursuivons un objectif clair : vous offrir une qualité, une efficacité et une durabilité optimales, garantissant ainsi un rendement maximal pour le secteur agricole."
+    ],
+    "customTitle": "Besoin d’une formule ou d’un produit sur mesure ?",
+    "customText": [
+      "Votre entreprise nécessite-t-elle le développement d’un produit spécifique ou d’une formule sur mesure ? Que vous recherchiez une solution directement applicable à vos propres cultures, ou que vous souhaitiez formuler un produit innovant destiné à la vente et à la distribution, notre équipe R&D est à votre disposition. Nous vous accompagnons pour repousser les limites de l’innovation et concevoir des solutions sur mesure qui répondent parfaitement à vos objectifs agronomiques.",
+      "Nous sommes à votre entière disposition pour répondre à toutes vos questions. N’hésitez pas à nous contacter pour explorer les opportunités de collaboration."
+    ],
+    "customCta": "Nous contacter",
     "trialsTitle": "Résultats d'essais",
-    "trialsIntro": "Dix-neuf cultures, du pommier de Midelt au gazon, documentées en photos de terrain.",
+    "trialsIntro": "Du pommier de Midelt au gazon, chaque culture documentée en photos de terrain.",
     "allTrials": "Tous les essais",
     "trialLabel": "Essai",
     "backToTrials": "Retour aux essais",
@@ -199,6 +210,10 @@
       "title": "Ressources",
       "lead": "Fiches produits, catalogues et centre de connaissances."
     },
+    "trials": {
+      "title": "Résultats d'essais",
+      "lead": "Parcelle témoin contre parcelle traitée, sur la même exploitation et la même saison."
+    },
     "knowledge": {
       "title": "Centre de connaissances",
       "lead": "Le silicium expliqué : entretiens et dossiers de fond."
@@ -241,5 +256,43 @@
     "skipToContent": "Aller au contenu",
     "breadcrumb": "Fil d'ariane",
     "mainNav": "Navigation principale"
+  },
+  "resources": {
+    "applicationsIntro": "Les flyers par culture, à emporter au champ."
+  },
+  "careers": {
+    "formTitle": "Candidature spontanée",
+    "intro": "Aucun poste ouvert ne correspond à votre profil ? Envoyez-nous votre candidature : nous la conservons et revenons vers vous dès qu’un poste s’y prête.",
+    "department": "Département",
+    "diploma": "Diplôme",
+    "studyLevel": "Niveau d’étude après bac",
+    "choose": "Sélectionnez…",
+    "cv": "Téléchargez votre CV au format PDF",
+    "cvHint": "PDF uniquement, 1 Mo maximum.",
+    "cvButton": "Choisir un fichier",
+    "cvEmpty": "Aucun fichier sélectionné",
+    "cvType": "Le CV doit être un fichier PDF.",
+    "cvSize": "Le fichier dépasse 1 Mo. Compressez-le ou réduisez sa résolution.",
+    "submit": "Envoyer ma candidature",
+    "success": "Merci, votre candidature nous est bien parvenue. Nous revenons vers vous dès qu’un poste correspond à votre profil.",
+    "departments": [
+      "Commercial",
+      "Finance et comptabilité",
+      "Ressources Humaines",
+      "Achats et logistiques",
+      "Recherche et Développement",
+      "Communication et Marketing",
+      "Secrétariat",
+      "Logistique"
+    ],
+    "diplomas": [
+      "Ingénieur",
+      "Technicien",
+      "MBA",
+      "Master",
+      "Licence",
+      "Baccalauréat",
+      "Autre"
+    ]
   }
 }

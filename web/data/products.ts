@@ -91,7 +91,7 @@ export const FAMILIES: ProductFamily[] = [
   {
     key: 'soil',
     segment: 'agri',
-    products: ['orthagrow-granule', 'orthagrow-soil-conditioner', 'orthagrow-poudre'],
+    products: ['orthagrow-granule', 'orthagrow-soil-conditioner'],
   },
   {
     key: 'biostimulants',
@@ -144,9 +144,10 @@ export const RANGES: ProductRange[] = [
  * OrthaFight and FertiFight were withdrawn on 2026-09-09: the client replaced both with
  * the renamed FertFight (slug `orthagrow-fertifight`, "Orthagrow FertiFight" until that
  * date). The two shared a single datasheet PDF with each other, which is what made the
- * three names impossible to tell apart. Their entries in product-copy.json and
- * media-manifest.json are left in place — those files are extraction output, and an
- * unreferenced entry costs nothing.
+ * three names impossible to tell apart. Orthagrow Poudre followed them out on
+ * 2026-09-17, struck from the catalogue by the client. Their entries in
+ * product-copy.json and media-manifest.json are left in place — those files are
+ * extraction output, and an unreferenced entry costs nothing.
  */
 export const PRODUCTS: Product[] = [
   { slug: 'orthagrow-control', name: 'Orthagrow Control 4TH', segment: 'agri', range: 'orthagrow' },
@@ -157,14 +158,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: 'orthagrow-granule',
     name: 'Orthagrow Granulé',
-    names: { en: 'Orthagrow Granule', es: 'Orthagrow Granule', ar: 'Orthagrow حُبيبات' },
-    segment: 'agri',
-    range: 'orthagrow',
-  },
-  {
-    slug: 'orthagrow-poudre',
-    name: 'Orthagrow Poudre',
-    names: { en: 'Orthagrow Powder', es: 'Orthagrow Polvo', ar: 'Orthagrow مسحوق' },
+    names: { en: 'Orthagrow Granule', es: 'Orthagrow Granule' },
     segment: 'agri',
     range: 'orthagrow',
   },
@@ -195,7 +189,14 @@ export const PRODUCTS: Product[] = [
   /* Named on 2026-09-16; it had been the soil family's unnamed SOON tile until then. */
   { slug: 'orthagrow-myco', name: 'Orthagrow MYCO 4G', segment: 'agri', range: 'orthagrow' },
 
-  { slug: 'mavita-health', name: 'Mavita Health', segment: 'humans', range: 'mavita' },
+  /*
+   * Renamed from "Mavita Health" on 2026-09-17, at the client's instruction, while the
+   * SKU below keeps the same name — their briefing was explicit on both points. The slug
+   * is deliberately untouched: it is the URL the old site's /mavita-health-fr/ redirects
+   * onto, and the client asked for a name change, not a new product. The client still
+   * owes us the two new pack shots; the copy stays word for word as it was.
+   */
+  { slug: 'mavita-health', name: 'Mavita Sport', segment: 'humans', range: 'mavita' },
   { slug: 'mavita-beauty', name: 'Mavita Beauty', segment: 'humans', range: 'mavita' },
   { slug: 'mavita-luxe', name: 'Mavita Luxe', segment: 'humans', range: 'mavita' },
   { slug: 'mavita-slim', name: 'Mavita Slim+', segment: 'humans', range: 'mavita' },
@@ -215,7 +216,6 @@ export const PRODUCTS: Product[] = [
       en: 'OrthaHealth Poultry',
       es: 'OrthaHealth Aves',
       nl: 'OrthaHealth Pluimvee',
-      ar: 'OrthaHealth الدواجن',
     },
     segment: 'animals',
     range: 'orthahealth',
@@ -227,7 +227,6 @@ export const PRODUCTS: Product[] = [
       en: 'OrthaHealth Dogs & Cats',
       es: 'OrthaHealth Perros y Gatos',
       nl: 'OrthaHealth Honden & Katten',
-      ar: 'OrthaHealth الكلاب والقطط',
     },
     segment: 'animals',
     range: 'orthahealth',
@@ -239,7 +238,6 @@ export const PRODUCTS: Product[] = [
       en: 'OrthaHealth Equine',
       es: 'OrthaHealth Équidos',
       nl: 'OrthaHealth Paardachtigen',
-      ar: 'OrthaHealth الخيليات',
     },
     segment: 'animals',
     range: 'orthahealth',
@@ -251,7 +249,6 @@ export const PRODUCTS: Product[] = [
       en: 'OrthaHealth Cattle',
       es: 'OrthaHealth Bovinos',
       nl: 'OrthaHealth Rundvee',
-      ar: 'OrthaHealth الأبقار',
     },
     segment: 'animals',
     range: 'orthahealth',
