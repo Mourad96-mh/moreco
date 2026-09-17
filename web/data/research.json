@@ -350,52 +350,8 @@
     ]
   },
   {
-    "slug": "prunes",
-    "order": 16,
-    "title": {
-      "fr": "Résultats sur les prunes",
-      "en": "Results on plums",
-      "es": "Resultados en ciruela",
-      "nl": "Resultaten bij pruimen",
-      "ar": "نتائج على البرقوق"
-    },
-    "description": {
-      "fr": "Témoignage d’un producteur de Prunes après l’application de Bloom Booster. Région Meknès, Maroc",
-      "en": "Testimonial from a plum grower after applying Bloom Booster. Meknes region, Morocco",
-      "es": "Testimonio de un productor de ciruela tras la aplicación de Bloom Booster. Región de Mequinez, Marruecos",
-      "nl": "Getuigenis van een pruimenteler na de toepassing van Bloom Booster. Regio Meknes, Marokko.",
-      "ar": "شهادة منتج للبرقوق بعد تطبيق Bloom Booster. جهة مكناس، المغرب."
-    },
-    "url": "http://moreco.ma/research/16-resultats-sur-les-prunes/",
-    "images": [
-      "/media/research/prunes-1.webp"
-    ]
-  },
-  {
-    "slug": "framboises",
-    "order": 17,
-    "title": {
-      "fr": "Résultats sur les Framboises",
-      "en": "Results on raspberries",
-      "es": "Resultados en frambuesa",
-      "nl": "Resultaten bij frambozen",
-      "ar": "نتائج على توت العليق"
-    },
-    "description": {
-      "fr": "Resultats sur les FRAMBOISIER avec du produit ORTHAGROW BLOOM BOOSTER *\\*Témoin : Traité avec un bio-stimulant bien connu à base de bore.*",
-      "en": "Results on RASPBERRY canes with ORTHAGROW BLOOM BOOSTER *\\*Control: treated with a well-known boron-based biostimulant.*",
-      "es": "Resultados en FRAMBUESO con ORTHAGROW BLOOM BOOSTER *\\*Testigo: tratado con un bioestimulante muy conocido a base de boro.*",
-      "nl": "Resultaten bij frambozen met het product ORTHAGROW BLOOM BOOSTER. *\\*Controle: behandeld met een bekende biostimulant op basis van boor.*",
-      "ar": "نتائج على توت العليق بمنتج ORTHAGROW BLOOM BOOSTER. *\\*الشاهد: مُعالَج بمنشّط حيوي معروف قائم على البورون.*"
-    },
-    "url": "http://moreco.ma/research/17-resultats-sur-les-framboises/",
-    "images": [
-      "/media/research/framboises-1.webp"
-    ]
-  },
-  {
     "slug": "oignons",
-    "order": 18,
+    "order": 16,
     "title": {
       "fr": "Résultats sur les oignons",
       "en": "Results on onions",
@@ -417,7 +373,7 @@
   },
   {
     "slug": "gazon",
-    "order": 19,
+    "order": 17,
     "title": {
       "fr": "Résultats sur le Gazon",
       "en": "Results on turf",

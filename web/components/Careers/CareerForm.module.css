@@ -1,0 +1,183 @@
+/*
+ * The speculative-application form. Fields inherit the shape of the contact and quote
+ * forms so the three forms on the site read as one thing; what is new here is the pair of
+ * dropdowns and the CV upload.
+ */
+
+.form {
+  display: grid;
+  gap: 1rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.35rem;
+  width: 100%;
+}
+
+.label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink-2);
+}
+
+.req {
+  color: var(--ink-3);
+  font-weight: 500;
+}
+
+.input,
+.textarea,
+.select {
+  width: 100%;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: var(--paper);
+  font: inherit;
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+.input:focus,
+.textarea:focus,
+.select:focus {
+  border-color: var(--green);
+  outline: 2px solid color-mix(in srgb, var(--green) 25%, transparent);
+  outline-offset: 1px;
+}
+
+.textarea {
+  resize: vertical;
+}
+
+/* The native arrow differs wildly between browsers; this draws one of our own. */
+.select {
+  appearance: none;
+  padding-inline-end: 2.25rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235b6670' stroke-width='3'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.85rem center;
+  background-size: 0.7rem;
+}
+
+[dir='rtl'] .select {
+  background-position: left 0.85rem center;
+}
+
+/* --- the CV --------------------------------------------------------------- */
+
+.file {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.fileButton {
+  flex: none;
+  padding: 0.6rem 1.1rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: var(--paper-2);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.fileButton:hover {
+  border-color: var(--green);
+  color: var(--green-dark);
+}
+
+/* Focus lands on the input inside, which is invisible: show it on the button instead. */
+.fileButton:focus-within {
+  border-color: var(--green);
+  outline: 2px solid color-mix(in srgb, var(--green) 25%, transparent);
+  outline-offset: 1px;
+}
+
+/* Off-screen rather than display:none, which would take it out of the tab order. */
+.fileInput {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.fileName {
+  font-size: 0.9rem;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
+.fileEmpty {
+  font-size: 0.9rem;
+  color: var(--ink-3);
+}
+
+.hint {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--ink-3);
+}
+
+.gotcha {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.25rem;
+}
+
+.error {
+  margin: 0;
+  padding: 0.7rem 0.9rem;
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--red) 8%, transparent);
+  border: 1px solid color-mix(in srgb, var(--red) 35%, transparent);
+  color: #8c1414;
+  font-size: 0.9rem;
+}
+
+.done {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  padding: clamp(2rem, 5vw, 3.5rem);
+  text-align: center;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--paper-2);
+  color: var(--green-dark);
+}
+
+.done p {
+  margin: 0;
+  font-size: var(--step-1);
+  color: var(--ink);
+}
+
+@media (max-width: 560px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}

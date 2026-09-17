@@ -82,15 +82,6 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/*
- * Inter carries no Arabic. On /ar/ the layout also loads Noto Sans Arabic and this puts
- * it first, leaving the Latin brand names (Moreco, Orthagrow) on Inter behind it.
- */
-[dir='rtl'] body {
-  font-family: var(--font-arabic), var(--font-sans), system-ui, -apple-system, 'Segoe UI',
-    Roboto, sans-serif;
-}
-
 h1,
 h2,
 h3,

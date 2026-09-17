@@ -76,6 +76,11 @@
   background: var(--green);
 }
 
+/* The formats, directly under the pack shot they qualify. */
+.sizesBlock {
+  margin-top: 1.1rem;
+}
+
 .sizes {
   display: flex;
   flex-wrap: wrap;

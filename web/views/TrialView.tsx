@@ -29,7 +29,8 @@ export default function TrialView({ locale, slug }: { locale: Locale; slug: stri
         crumbLabel={t.a11y.breadcrumb}
         crumbs={[
           { label: t.site.name, href: href(locale, 'home') },
-          { label: t.rdi.title, href: href(locale, 'rdi') },
+          { label: t.pages.resources.title, href: href(locale, 'resources') },
+          { label: t.pages.trials.title, href: href(locale, 'trials') },
           { label: trialTitle(trial, locale) },
         ]}
       />
@@ -56,7 +57,7 @@ export default function TrialView({ locale, slug }: { locale: Locale; slug: stri
           </div>
 
           <nav className={s.pager}>
-            <Link href={href(locale, 'rdi')} className="btn btn--ghost">
+            <Link href={href(locale, 'trials')} className="btn btn--ghost">
               {t.rdi.backToTrials}
             </Link>
             <Link href={trialHref(locale, next.slug)} className="btn">

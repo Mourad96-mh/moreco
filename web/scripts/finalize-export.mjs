@@ -16,7 +16,7 @@ const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, '..');
 const OUT = join(ROOT, 'out');
 const SITE = 'https://moreco.ma';
-const LOCALES = ['fr', 'en', 'es', 'nl', 'ar'];
+const LOCALES = ['fr', 'en', 'es', 'nl'];
 const DEFAULT = 'fr';
 
 if (!existsSync(OUT)) {
@@ -69,18 +69,6 @@ const siblingsOf = (path) => {
     locale: to,
     url: `${SITE}/${[to, ...rest.map((s) => translateSegment(s, from, to))].join('/')}/`,
   }));
-};
-
-/**
- * The /ar/ twin of a freshly built path, or undefined when that page was not exported.
- * Used to retire the old site's Arabic URLs onto the new Arabic pages instead of French.
- */
-const arabicSiblingOf = (target) => {
-  const path = target.replace(/^\/|\/$/g, '');
-  const [from, ...rest] = path.split('/');
-  if (from === 'ar') return target;
-  const twin = ['ar', ...rest.map((seg) => translateSegment(seg, from, 'ar'))].join('/');
-  return built.includes(twin) ? `/${twin}/` : undefined;
 };
 
 /* ------------------------------------------------- old URL -> new URL (301) */
@@ -163,6 +151,9 @@ const RULES = [
   // rather than on the list — the old URLs carry whatever ranking the articles had.
   ['/recherche/', 'fr', 'rd-i'],
   ['/research-products/', 'en', 'rd-i'],
+  /* Live for three weeks under R&D + I before the client moved the section. */
+  ['/fr/rd-i/essais/', 'fr', 'ressources/essais'],
+  ['/en/rd-i/trials/', 'en', 'resources/trials'],
   ['/limportance-du-silicium/', 'fr', 'ressources/centre-de-connaissances/importance-du-silicium'],
   ['/the-importance-of-silicon/', 'en', 'resources/knowledge-centre/importance-du-silicium'],
   ['/le-potentiel-therapeutique-de-lacide-silicique/', 'fr', 'ressources/centre-de-connaissances/acide-silicique'],
@@ -186,7 +177,11 @@ const RULES = [
   ['/career-opportunities-moreco/', 'en', 'contact/careers'],
 ];
 
-/** Crop trial slugs, mapped from their old /research/ URL. */
+/**
+ * Crop trial slugs, mapped from their old /research/ URL. Plums and raspberries are
+ * absent on purpose: the client struck both off on 2026-09-17, so their old URLs fall
+ * through to the catch-all below and land on the trial list.
+ */
 const TRIALS = {
   'resultats-sur-les-pommiers-apres-lapplication-des-produits-la-gamme-orthagrow': 'pommiers',
   'resultats-sur-les-fraises-apres-lapplication-de-la-gamme-orthagrow': 'fraises',
@@ -204,13 +199,12 @@ const TRIALS = {
   'resultats-sur-les-cactus-apres-lapplication-de-orthagrow-control': 'cactus',
   'resultats-de-la-production-de-guinoa-a-lapplication-de-orthagrow-control': 'quinoa',
   '15-resultats-sur-les-grapes': 'raisins',
-  '16-resultats-sur-les-prunes': 'prunes',
-  '17-resultats-sur-les-framboises': 'framboises',
   '18-resultats-sur-les-oignons': 'oignons',
   '19-resultats-sur-le-gazon': 'gazon',
 };
 
-const TRIAL_PREFIX = { fr: 'rd-i/essais', en: 'rd-i/trials' };
+/* The section moved under Resources on 2026-09-17. */
+const TRIAL_PREFIX = { fr: 'ressources/essais', en: 'resources/trials' };
 
 const map = new Map();
 const addRule = (from, locale, to) => map.set(from, `/${locale}${to ? '/' + to : ''}/`);
@@ -221,9 +215,10 @@ for (const [slug, trial] of Object.entries(TRIALS)) {
 }
 
 /**
- * The old site's Arabic pages have a home again: the archive's own translation links
- * give each one a French or English sibling, and that sibling's new path is re-localised
- * into /ar/. Anything without a usable sibling keeps the French target.
+ * The old site's Arabic pages have nowhere of their own to land: the client withdrew the
+ * Arabic translation on 2026-09-17. The archive's own translation links still give each
+ * one a French or English sibling, so an old /ar page keeps whatever equity it had by
+ * redirecting to that sibling's new page rather than to the home page.
  */
 const index = JSON.parse(readFileSync(join(ROOT, '..', 'content-index.json'), 'utf8'));
 const unmapped = [];
@@ -237,7 +232,7 @@ for (const entry of index) {
     if (sibling) {
       const target = map.get(new URL(sibling).pathname.replace(/\/?$/, '/'));
       if (target) {
-        map.set(path, arabicSiblingOf(target) ?? target);
+        map.set(path, target);
         continue;
       }
     }
@@ -250,7 +245,7 @@ for (const entry of index) {
   }
 
   if (path.startsWith('/research/')) {
-    map.set(path, '/fr/rd-i/');
+    map.set(path, `/fr/${TRIAL_PREFIX.fr}/`);
     continue;
   }
 
@@ -273,7 +268,8 @@ DirectoryIndex index.html
 
 # --- 301s from the old moreco.ma (${map.size} rules) ---
 # WPML served every language off the same paths with ?lang=xx, so the query string is
-# dropped here: the language now lives in the path. The old Arabic pages land on /ar/.
+# dropped here: the language now lives in the path. The old Arabic pages land on the
+# French or English page they were translated from — /ar/ no longer exists.
 ${[...map.entries()]
   .filter(([from]) => from !== '/')
   .sort((a, b) => b[0].length - a[0].length)
@@ -355,7 +351,7 @@ ${LOCALES.map((l) => `<link rel="alternate" hreflang="${l}" href="${SITE}/${l}/"
     <img src="/media/brand/moreco-logo.webp" alt="Moreco" width="535" height="200" style="height:56px;width:auto">
     <p>Choose your language / Choisissez votre langue</p>
     <ul>
-${LOCALES.map((l) => `      <li><a href="/${l}/" hreflang="${l}">${{ fr: 'Français', en: 'English', es: 'Español', nl: 'Nederlands', ar: 'العربية' }[l]}</a></li>`).join('\n')}
+${LOCALES.map((l) => `      <li><a href="/${l}/" hreflang="${l}">${{ fr: 'Français', en: 'English', es: 'Español', nl: 'Nederlands' }[l]}</a></li>`).join('\n')}
     </ul>
   </main>
 </body>

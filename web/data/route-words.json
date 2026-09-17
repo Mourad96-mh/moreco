@@ -1,89 +1,77 @@
 {
-  "_comment": "Localised URL words. Shared by data/routes.ts (which builds the routes) and scripts/finalize-export.mjs (which translates a built path into its siblings for the sitemap). Keep them in one place so the two can never drift. Arabic reuses the English words on purpose: the export is a tree of real directories on Hostinger, so Arabic segments would ship percent-encoded.",
+  "_comment": "Localised URL words. Shared by data/routes.ts (which builds the routes) and scripts/finalize-export.mjs (which translates a built path into its siblings for the sitemap). Keep them in one place so the two can never drift. Arabic was withdrawn on 2026-09-17, so every word here is Latin: the export is a tree of real directories on Hostinger and no segment ships percent-encoded.",
   "words": {
     "products": {
       "fr": "produits",
       "en": "products",
       "es": "productos",
-      "nl": "producten",
-      "ar": "products"
+      "nl": "producten"
     },
     "rdi": {
       "fr": "rd-i",
       "en": "rd-i",
       "es": "rd-i",
-      "nl": "oo-i",
-      "ar": "rd-i"
+      "nl": "oo-i"
     },
     "trials": {
       "fr": "essais",
       "en": "trials",
       "es": "ensayos",
-      "nl": "proeven",
-      "ar": "trials"
+      "nl": "proeven"
     },
     "resources": {
       "fr": "ressources",
       "en": "resources",
       "es": "recursos",
-      "nl": "documentatie",
-      "ar": "resources"
+      "nl": "documentatie"
     },
     "knowledge": {
       "fr": "centre-de-connaissances",
       "en": "knowledge-centre",
       "es": "centro-de-conocimiento",
-      "nl": "kenniscentrum",
-      "ar": "knowledge-centre"
+      "nl": "kenniscentrum"
     },
     "news": {
       "fr": "actualites",
       "en": "news",
       "es": "actualidad",
-      "nl": "nieuws",
-      "ar": "news"
+      "nl": "nieuws"
     },
     "media": {
       "fr": "medias",
       "en": "media",
       "es": "medios",
-      "nl": "media",
-      "ar": "media"
+      "nl": "media"
     },
     "about": {
       "fr": "a-propos",
       "en": "about",
       "es": "sobre-nosotros",
-      "nl": "over-ons",
-      "ar": "about"
+      "nl": "over-ons"
     },
     "services": {
       "fr": "services-et-conseils",
       "en": "services-and-advice",
       "es": "servicios-y-asesoramiento",
-      "nl": "diensten-en-advies",
-      "ar": "services-and-advice"
+      "nl": "diensten-en-advies"
     },
     "contact": {
       "fr": "contact",
       "en": "contact",
       "es": "contacto",
-      "nl": "contact",
-      "ar": "contact"
+      "nl": "contact"
     },
     "careers": {
       "fr": "carrieres",
       "en": "careers",
       "es": "empleo",
-      "nl": "vacatures",
-      "ar": "careers"
+      "nl": "vacatures"
     },
     "quote": {
       "fr": "devis",
       "en": "quote",
       "es": "presupuesto",
-      "nl": "offerte",
-      "ar": "quote"
+      "nl": "offerte"
     }
   },
   "segments": {
@@ -91,29 +79,25 @@
       "fr": "agri-horticulture",
       "en": "agri-horticulture",
       "es": "agri-horticultura",
-      "nl": "land-en-tuinbouw",
-      "ar": "agri-horticulture"
+      "nl": "land-en-tuinbouw"
     },
     "humans": {
       "fr": "humains",
       "en": "humans",
       "es": "humanos",
-      "nl": "mensen",
-      "ar": "humans"
+      "nl": "mensen"
     },
     "animals": {
       "fr": "animaux",
       "en": "animals",
       "es": "animales",
-      "nl": "dieren",
-      "ar": "animals"
+      "nl": "dieren"
     },
     "general": {
       "fr": "emploi-general",
       "en": "general-use",
       "es": "uso-general",
-      "nl": "algemeen-gebruik",
-      "ar": "general-use"
+      "nl": "algemeen-gebruik"
     }
   }
 }

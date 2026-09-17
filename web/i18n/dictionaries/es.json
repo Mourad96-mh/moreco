@@ -51,7 +51,7 @@
     "filmCaption": "Moreco | La innovación para su cultivo",
     "segmentsTitle": "Nuestros campos de aplicación",
     "rdiTitle": "R&D + I",
-    "rdiText": "Ensayos en condiciones reales, parcela testigo frente a parcela tratada, en la misma explotación y la misma temporada. Diecinueve campañas están documentadas en Marruecos, de Midelt a Larache: manzano, fresa, tomate, cítricos, trigo, olivo.",
+    "rdiText": "Ensayos en condiciones reales, parcela testigo frente a parcela tratada, en la misma explotación y la misma temporada. Las campañas documentadas en Marruecos van de Midelt a Larache: manzano, fresa, tomate, cítricos, trigo, olivo.",
     "rdiCta": "Ver los resultados de los ensayos",
     "stats": [
       {
@@ -128,11 +128,22 @@
     "chooseCategory": "Elija una categoría para ver los productos."
   },
   "rdi": {
-    "title": "R&D + I",
-    "lead": "Investigación, desarrollo e innovación",
+    "title": "Investigación y Desarrollo Moreco",
     "intro": "El silicio no es una promesa: es una medida. Desde 2016 Moreco realiza ensayos de campo con productores marroquíes — parcela testigo frente a parcela tratada, en la misma finca, la misma campaña, la misma variedad.",
+    "innovationTitle": "Innovación",
+    "innovationLead": "Siempre un paso por delante gracias al I+D de Moreco",
+    "innovationText": [
+      "El inmovilismo no es una opción. Por eso Moreco invierte de forma continua en investigación biotecnológica y en desarrollo de vanguardia. Nuestro departamento interno de I+D es el motor de nuestros insumos agrícolas de alto rendimiento, desarrollados con las tecnologías más avanzadas del sector.",
+      "Nuestro equipo de expertos se dedica por completo al diseño, el ensayo y el perfeccionamiento de fórmulas innovadoras. Perseguimos un objetivo claro: ofrecerle una calidad, una eficacia y una sostenibilidad óptimas, y con ellas el máximo rendimiento para el sector agrícola."
+    ],
+    "customTitle": "¿Necesita una fórmula o un producto a medida?",
+    "customText": [
+      "¿Su empresa necesita desarrollar un producto específico o una fórmula a medida? Tanto si busca una solución directamente aplicable a sus propios cultivos como si desea formular un producto innovador destinado a la venta y la distribución, nuestro equipo de I+D está a su disposición. Le acompañamos para ampliar los límites de la innovación y diseñar soluciones a medida que respondan exactamente a sus objetivos agronómicos.",
+      "Quedamos enteramente a su disposición para cualquier pregunta. No dude en ponerse en contacto con nosotros para explorar las oportunidades de colaboración."
+    ],
+    "customCta": "Contáctenos",
     "trialsTitle": "Resultados de ensayos",
-    "trialsIntro": "Diecinueve cultivos, del manzano de Midelt al césped, documentados con fotografía de campo.",
+    "trialsIntro": "Del manzano de Midelt al césped, cada cultivo documentado con fotografía de campo.",
     "allTrials": "Todos los ensayos",
     "trialLabel": "Ensayo",
     "backToTrials": "Volver a los ensayos",
@@ -199,6 +210,10 @@
       "title": "Recursos",
       "lead": "Fichas de producto, catálogos y centro de conocimiento."
     },
+    "trials": {
+      "title": "Resultados de ensayos",
+      "lead": "Parcela testigo frente a parcela tratada, en la misma explotación y la misma campaña."
+    },
     "knowledge": {
       "title": "Centro de conocimiento",
       "lead": "El silicio explicado: entrevistas y reportajes de fondo."
@@ -241,5 +256,43 @@
     "skipToContent": "Ir al contenido",
     "breadcrumb": "Migas de pan",
     "mainNav": "Navegación principal"
+  },
+  "resources": {
+    "applicationsIntro": "Los folletos por cultivo, para llevar al campo."
+  },
+  "careers": {
+    "formTitle": "Candidatura espontánea",
+    "intro": "¿Ninguna vacante encaja con su perfil? Envíenos igualmente su candidatura: la conservamos y le contactamos en cuanto surja un puesto adecuado.",
+    "department": "Departamento",
+    "diploma": "Titulación",
+    "studyLevel": "Nivel de estudios tras el bachillerato",
+    "choose": "Seleccione…",
+    "cv": "Suba su CV en formato PDF",
+    "cvHint": "Solo PDF, 1 MB como máximo.",
+    "cvButton": "Elegir un archivo",
+    "cvEmpty": "Ningún archivo seleccionado",
+    "cvType": "El CV debe ser un archivo PDF.",
+    "cvSize": "El archivo supera 1 MB. Comprímalo o reduzca su resolución.",
+    "submit": "Enviar mi candidatura",
+    "success": "Gracias, hemos recibido su candidatura. Le contactaremos en cuanto un puesto se ajuste a su perfil.",
+    "departments": [
+      "Comercial",
+      "Finanzas y contabilidad",
+      "Recursos Humanos",
+      "Compras y logística",
+      "Investigación y Desarrollo",
+      "Comunicación y Marketing",
+      "Secretaría",
+      "Logística"
+    ],
+    "diplomas": [
+      "Ingeniero",
+      "Técnico",
+      "MBA",
+      "Máster",
+      "Licenciatura",
+      "Bachillerato",
+      "Otro"
+    ]
   }
 }

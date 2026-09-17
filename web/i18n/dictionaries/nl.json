@@ -51,7 +51,7 @@
     "filmCaption": "Moreco | Innovatie voor uw teelt",
     "segmentsTitle": "Onze toepassingsgebieden",
     "rdiTitle": "R&D + I",
-    "rdiText": "Proeven in reële omstandigheden, controleperceel tegenover behandeld perceel, op hetzelfde bedrijf in hetzelfde seizoen. Negentien campagnes zijn gedocumenteerd in Marokko, van Midelt tot Larache: appel, aardbei, tomaat, citrus, tarwe, olijf.",
+    "rdiText": "Proeven in reële omstandigheden, controleperceel tegenover behandeld perceel, op hetzelfde bedrijf in hetzelfde seizoen. De campagnes die in Marokko zijn gedocumenteerd lopen van Midelt tot Larache: appel, aardbei, tomaat, citrus, tarwe, olijf.",
     "rdiCta": "Bekijk de proefresultaten",
     "stats": [
       {
@@ -128,11 +128,22 @@
     "chooseCategory": "Kies een categorie om de producten te zien."
   },
   "rdi": {
-    "title": "R&D + I",
-    "lead": "Onderzoek, ontwikkeling en innovatie",
+    "title": "Onderzoek & Ontwikkeling Moreco",
     "intro": "Silicium is geen belofte: het is een meting. Sinds 2016 voert Moreco proeven uit in reële omstandigheden bij Marokkaanse telers — controleperceel tegenover behandeld perceel, op hetzelfde bedrijf, in hetzelfde seizoen, met dezelfde variëteit.",
+    "innovationTitle": "Innovatie",
+    "innovationLead": "Altijd een stap voor, dankzij de R&D van Moreco",
+    "innovationText": [
+      "Stilstand is geen optie. Daarom investeert Moreco onafgebroken in biotechnologisch onderzoek en geavanceerde ontwikkeling. Onze eigen R&D-afdeling is de motor achter onze hoogwaardige landbouwinputs, ontwikkeld met de meest geavanceerde technologieën uit de sector.",
+      "Ons team van experts wijdt zich volledig aan het ontwerpen, beproeven en verfijnen van innovatieve formules. Wij streven één duidelijk doel na: u optimale kwaliteit, werkzaamheid en duurzaamheid bieden, en daarmee een maximaal rendement voor de landbouwsector."
+    ],
+    "customTitle": "Een formule of product op maat nodig?",
+    "customText": [
+      "Heeft uw bedrijf een specifiek product of een formule op maat nodig? Of u nu een oplossing zoekt die u meteen op uw eigen teelten kunt toepassen, of een innovatief product wilt laten formuleren voor verkoop en distributie: ons R&D-team staat voor u klaar. Wij werken met u samen om de grenzen van de innovatie te verleggen en oplossingen op maat te ontwerpen die precies aansluiten op uw agronomische doelstellingen.",
+      "Wij staan volledig tot uw beschikking voor al uw vragen. Neem gerust contact met ons op om de mogelijkheden voor samenwerking te verkennen."
+    ],
+    "customCta": "Neem contact op",
     "trialsTitle": "Proefresultaten",
-    "trialsIntro": "Negentien gewassen, van de appelboom van Midelt tot gazon, gedocumenteerd met veldfoto's.",
+    "trialsIntro": "Van de appelboom van Midelt tot gazon, elk gewas gedocumenteerd met veldfoto’s.",
     "allTrials": "Alle proeven",
     "trialLabel": "Proef",
     "backToTrials": "Terug naar de proeven",
@@ -199,6 +210,10 @@
       "title": "Documentatie",
       "lead": "Productfiches, catalogi en kenniscentrum."
     },
+    "trials": {
+      "title": "Proefresultaten",
+      "lead": "Controleperceel tegenover behandeld perceel, op hetzelfde bedrijf in hetzelfde seizoen."
+    },
     "knowledge": {
       "title": "Kenniscentrum",
       "lead": "Silicium uitgelegd: interviews en achtergronddossiers."
@@ -241,5 +256,43 @@
     "skipToContent": "Naar de inhoud",
     "breadcrumb": "Kruimelpad",
     "mainNav": "Hoofdnavigatie"
+  },
+  "resources": {
+    "applicationsIntro": "De flyers per teelt, om mee het veld in te nemen."
+  },
+  "careers": {
+    "formTitle": "Open sollicitatie",
+    "intro": "Geen enkele vacature die bij u past? Stuur ons toch uw sollicitatie: wij bewaren die en nemen contact op zodra er een functie bij aansluit.",
+    "department": "Afdeling",
+    "diploma": "Diploma",
+    "studyLevel": "Opleidingsniveau na het middelbaar",
+    "choose": "Selecteer…",
+    "cv": "Upload uw cv als pdf",
+    "cvHint": "Alleen pdf, maximaal 1 MB.",
+    "cvButton": "Bestand kiezen",
+    "cvEmpty": "Geen bestand gekozen",
+    "cvType": "Het cv moet een pdf-bestand zijn.",
+    "cvSize": "Het bestand is groter dan 1 MB. Comprimeer het of verlaag de resolutie.",
+    "submit": "Mijn sollicitatie versturen",
+    "success": "Dank u, wij hebben uw sollicitatie ontvangen. Wij nemen contact op zodra een functie bij uw profiel past.",
+    "departments": [
+      "Commercieel",
+      "Financiën en boekhouding",
+      "Human Resources",
+      "Inkoop en logistiek",
+      "Onderzoek en Ontwikkeling",
+      "Communicatie en Marketing",
+      "Secretariaat",
+      "Logistiek"
+    ],
+    "diplomas": [
+      "Ingenieur",
+      "Technicus",
+      "MBA",
+      "Master",
+      "Bachelor",
+      "Middelbareschooldiploma",
+      "Anders"
+    ]
   }
 }

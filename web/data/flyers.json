@@ -1,0 +1,4 @@
+{
+  "_comment": "Culture flyers for Resources > Product applications. The client's briefing of 2026-09-17 asks for the flyers they sent by e-mail to be published here; the attachments had not reached the repository when that briefing was applied, so the list is empty and the section does not render. To publish them: drop each PDF in public/media/flyers/, add an entry below, and run `node scripts/measure-media.mjs` if the byte count is wanted. `title` needs French at minimum — the other languages fall back to it.",
+  "flyers": []
+}

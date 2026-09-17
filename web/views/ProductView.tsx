@@ -75,6 +75,23 @@ export default function ProductView({ locale, slug }: { locale: Locale; slug: st
                 />
               </div>
             )}
+
+            {/*
+             * The formats sit under the pack shot, not in the prose column: the client
+             * asked for them there on 2026-09-17, and it is the right place — a photograph
+             * of a 1 L bottle is read as the whole offer until something beside it says
+             * the same product also comes as a 1000 L container.
+             */}
+            {copy.sizes.length > 0 && (
+              <div className={s.sizesBlock}>
+                <h2 className={s.blockTitle}>{t.product.availableIn}</h2>
+                <ul className={s.sizes}>
+                  {copy.sizes.map((size) => (
+                    <li key={size}>{size}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
 
           <div className={s.textCol}>
@@ -92,17 +109,6 @@ export default function ProductView({ locale, slug }: { locale: Locale; slug: st
                 <ul className={s.advantages}>
                   {copy.advantages.map((advantage) => (
                     <li key={advantage.slice(0, 40)}>{advantage}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
-
-            {copy.sizes.length > 0 && (
-              <div className={s.block}>
-                <h2 className={s.blockTitle}>{t.product.availableIn}</h2>
-                <ul className={s.sizes}>
-                  {copy.sizes.map((size) => (
-                    <li key={size}>{size}</li>
                   ))}
                 </ul>
               </div>
