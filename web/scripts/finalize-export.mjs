@@ -1,10 +1,11 @@
 /**
- * Post-build step. Turns `out/` into something a shared host can serve:
+ * Post-build step. Turns `out/` into something a static host can serve:
  *
  *   out/index.html   language landing page for the bare domain
- *   out/.htaccess    root redirect + the 301 map from the old moreco.ma
- *   out/sitemap.xml  every page, in all five languages, with hreflang alternates
+ *   out/.htaccess    root redirect + the 301 map from the old moreco.ma (Apache)
+ *   out/sitemap.xml  every page, in all four languages, with hreflang alternates
  *   out/robots.txt
+ *   vercel.json      the same 301 map, and the settings Vercel needs to serve out/
  *
  * Chained onto `next build` by the package.json build script, so the export is never
  * half-finished: it ran by hand until 2026-09-17, and on Vercel — which runs the build
@@ -303,6 +304,37 @@ ErrorDocument 404 /404.html
 
 writeFileSync(join(OUT, '.htaccess'), htaccess, 'utf8');
 
+/* ------------------------------------------------------------- vercel.json */
+
+/**
+ * The same redirect map, in the other host's dialect, plus the settings that make Vercel
+ * serve this export the way a file host does.
+ *
+ * `framework: null` is the point of the file. Left on the Next.js preset, Vercel collects
+ * the build's own manifest and drops anything this script adds to out/ afterwards — the
+ * root index.html, the sitemap and robots.txt were all 404 on a deployment whose build
+ * log showed them being written. With no framework, out/ is copied wholesale.
+ *
+ * Written into the repository rather than into out/, because Vercel reads it from the
+ * checkout before the build: a copy under out/ would only ever take effect one deploy
+ * late. It is generated, and committed like any generated artifact — the map above is the
+ * single source both hosts are configured from, so the .htaccess and this cannot drift.
+ */
+const vercel = {
+  $schema: 'https://openapi.vercel.sh/vercel.json',
+  framework: null,
+  buildCommand: 'next build && node scripts/finalize-export.mjs',
+  outputDirectory: 'out',
+  trailingSlash: true,
+  redirects: [...map.entries()]
+    .filter(([from]) => from !== '/')
+    .sort((a, b) => b[0].length - a[0].length)
+    .map(([source, destination]) => ({ source, destination, permanent: true })),
+};
+
+writeFileSync(join(ROOT, 'vercel.json'), `${JSON.stringify(vercel, null, 2)}
+`, 'utf8');
+
 /* ------------------------------------------------------- root landing page */
 
 const landing = `<!doctype html>
@@ -404,7 +436,7 @@ writeFileSync(
 /* ------------------------------------------------------------------ report */
 
 console.log(`landing page   out/index.html`);
-console.log(`redirects      ${map.size} rules -> out/.htaccess`);
+console.log(`redirects      ${map.size} rules -> out/.htaccess + vercel.json`);
 console.log(`sitemap        ${built.length} URLs, ${built.length * LOCALES.length} hreflang alternates`);
 if (brokenAlternates.length) {
   const unique = [...new Set(brokenAlternates)];

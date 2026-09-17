@@ -1,0 +1,784 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "next build && node scripts/finalize-export.mjs",
+  "outputDirectory": "out",
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/%d8%a3%d8%ba%d8%b1%d8%a7%d8%b6-%d8%b9%d8%a7%d9%85%d8%a9/%d8%ae%d8%b7-%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-huwa-san/%d8%a7%d9%84%d8%aa%d8%b7%d9%87%d9%8a%d8%b1-%d8%a7%d9%84%d9%85%d9%87%d9%86%d9%8a/%d8%a7%d9%84%d9%85%d8%a3%d9%83%d9%88%d9%84%d8%a7%d8%aa-%d9%88-%d8%a7%d9%84%d9%85%d8%b4%d8%b1%d9%88%d8%a8%d8%a7%d8%aa/",
+      "destination": "/fr/produits/emploi-general/huwa-san-pro/huwa-san-fb/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a7%d9%84%d8%b2%d8%b1%d8%a7%d8%b9%d8%a9%d8%a7%d9%84%d8%a8%d8%b3%d8%aa%d9%86%d8%a9/%d8%ae%d8%b7-%d9%85%d9%86%d8%aa%d8%ac%d8%a7%d8%aa-orthagrow/%d8%a5%d8%b1%d8%b4%d8%a7%d8%af%d8%a7%d8%aa-%d8%a7%d9%84%d8%a7%d8%b3%d8%aa%d8%b9%d9%85%d8%a7%d9%84-%d9%81%d9%8a-%d8%a7%d9%84%d8%ad%d9%82%d9%84/",
+      "destination": "/fr/produits/agri-horticulture/orthagrow/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a3%d8%ba%d8%b1%d8%a7%d8%b6-%d8%b9%d8%a7%d9%85%d8%a9/%d8%ae%d8%b7-%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-huwa-san/%d8%a7%d9%84%d8%aa%d8%b7%d9%87%d9%8a%d8%b1-%d8%a7%d9%84%d9%85%d9%87%d9%86%d9%8a/%d9%85%d8%b9%d8%a7%d9%84%d8%ac%d8%a9-%d8%a7%d9%84%d9%85%d9%8a%d8%a7%d9%87/",
+      "destination": "/fr/produits/emploi-general/huwa-san-pro/huwa-san-water-treatment/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a3%d8%ba%d8%b1%d8%a7%d8%b6-%d8%b9%d8%a7%d9%85%d8%a9/%d8%ae%d8%b7-%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-huwa-san/%d8%a7%d9%84%d8%aa%d8%b7%d9%87%d9%8a%d8%b1-%d8%a7%d9%84%d9%85%d9%87%d9%86%d9%8a/%d8%a7%d9%84%d8%b2%d8%b1%d8%a7%d8%b9%d8%a9/",
+      "destination": "/fr/produits/emploi-general/huwa-san-pro/huwa-san-agro/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a3%d8%ba%d8%b1%d8%a7%d8%b6-%d8%b9%d8%a7%d9%85%d8%a9/%d8%ae%d8%b7-%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-huwa-san/%d8%a7%d9%84%d8%aa%d8%b7%d9%87%d9%8a%d8%b1-%d8%a7%d9%84%d9%85%d9%87%d9%86%d9%8a/%d8%a8%d9%8a%d8%b7%d8%b1%d9%8a/",
+      "destination": "/fr/produits/emploi-general/huwa-san-pro/huwa-san-vet/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a3%d8%ba%d8%b1%d8%a7%d8%b6-%d8%b9%d8%a7%d9%85%d8%a9/%d8%ae%d8%b7-%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-huwa-san/%d8%a7%d9%84%d8%aa%d8%b7%d9%87%d9%8a%d8%b1-%d8%a7%d9%84%d9%85%d9%87%d9%86%d9%8a/hard-surface/",
+      "destination": "/fr/produits/emploi-general/huwa-san-pro/huwa-san-hard-surface/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%ae%d9%84%d9%8a%d8%b7-%d9%85%d8%a7%d9%81%d9%8a%d8%aa%d8%a7-%d9%87%d9%8a%d9%84%d8%ab-mavita-health-%d9%8a%d8%b3%d8%a7%d8%b9%d8%af-%d8%b9%d9%84%d9%89-%d8%aa%d9%82%d9%88%d9%8a%d8%a9-%d8%ac%d9%87%d8%a7/",
+      "destination": "/fr/ressources/centre-de-connaissances/mavita-immunite/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a3%d8%ab%d8%b1-%d8%a7%d9%84%d8%b2%d8%b1%d8%a7%d8%b9%d8%a9-%d8%b9%d9%84%d9%89-%d8%a7%d9%84%d8%af%d9%88%d8%b1%d8%a9-%d8%a7%d9%84%d8%a8%d9%8a%d9%88%d9%84%d9%88%d8%ac%d9%8a%d8%a9-%d9%88%d8%a7%d9%84/",
+      "destination": "/fr/ressources/centre-de-connaissances/cycle-du-silicium/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a7%d9%84%d8%aa%d8%ba%d8%b0%d9%8a%d8%a9-%d8%a7%d9%84%d9%88%d8%b1%d9%82%d9%8a%d8%a9-%d9%84%d9%84%d9%85%d8%ad%d8%a7%d8%b5%d9%8a%d9%84-%d8%ad%d9%82%d8%a7%d8%a6%d9%82-%d9%88%d8%ae%d8%b1%d8%a7%d9%81/",
+      "destination": "/fr/ressources/centre-de-connaissances/nutrition-foliaire/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a7%d9%84%d8%aa%d8%ba%d8%b0%d9%8a%d8%a9-%d9%88%d8%a7%d9%84%d8%b4%d8%b9%d8%b1-%d8%a7%d9%84%d8%a5%d8%ae%d8%aa%d9%84%d8%a7%d9%84%d8%a7%d8%aa-%d9%88%d8%a7%d9%84%d8%a5%d8%b6%d8%a7%d9%81%d8%a7%d8%aa/",
+      "destination": "/fr/ressources/centre-de-connaissances/nutrition-et-cheveux/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a3%d8%ba%d8%b1%d8%a7%d8%b6-%d8%b9%d8%a7%d9%85%d8%a9/%d8%ae%d8%b7-%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-huwa-san/%d8%a7%d9%84%d8%aa%d8%b7%d9%87%d9%8a%d8%b1-%d8%a7%d9%84%d9%85%d9%87%d9%86%d9%8a/",
+      "destination": "/fr/produits/emploi-general/huwa-san-pro/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a7%d9%84%d9%82%d8%af%d8%b1%d8%a9-%d8%a7%d9%84%d8%b9%d9%84%d8%a7%d8%ac%d9%8a%d8%a9-%d9%84%d9%84%d8%ad%d9%85%d8%b6-%d8%a7%d9%84%d8%b3%d9%8a%d9%84%d9%8a%d8%b3%d9%8a%d9%83%d9%8a/",
+      "destination": "/fr/ressources/centre-de-connaissances/acide-silicique/",
+      "permanent": true
+    },
+    {
+      "source": "/%d9%88%d8%ab%d8%a7%d8%a6%d9%82-%d8%a7%d9%84%d8%a5%d8%b9%d9%84%d8%a7%d9%85-%d9%88%d8%a7%d9%84%d9%85%d9%86%d8%a7%d8%b3%d8%a8%d8%a7%d8%aa-%d8%a7%d9%84%d9%82%d8%a7%d8%af%d9%85%d8%a9/",
+      "destination": "/fr/actualites/medias/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%af%d8%b1%d8%a7%d8%b3%d8%a9-%d8%a7%d9%84%d8%aa%d9%88%d8%a7%d9%81%d8%b1-%d8%a7%d9%84%d8%a8%d9%8a%d9%88%d9%84%d9%88%d8%ac%d9%8a-%d9%84%d9%80%d9%80-osa/",
+      "destination": "/fr/ressources/centre-de-connaissances/bio-disponibilite-aos/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a7%d9%84%d8%b2%d8%b1%d8%a7%d8%b9%d8%a9%d8%a7%d9%84%d8%a8%d8%b3%d8%aa%d9%86%d8%a9/%d8%ae%d8%b7-%d9%85%d9%86%d8%aa%d8%ac%d8%a7%d8%aa-orthafight/",
+      "destination": "/fr/produits/agri-horticulture/orthagrow/orthagrow-fertifight/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a7%d9%84%d8%b2%d8%b1%d8%a7%d8%b9%d8%a9%d8%a7%d9%84%d8%a8%d8%b3%d8%aa%d9%86%d8%a9/%d8%ae%d8%b7-%d9%85%d9%86%d8%aa%d8%ac%d8%a7%d8%aa-orthagrow/",
+      "destination": "/fr/produits/agri-horticulture/orthagrow/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a3%d8%ba%d8%b1%d8%a7%d8%b6-%d8%b9%d8%a7%d9%85%d8%a9/%d8%ae%d8%b7-%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-huwa-san/hygiene-home/",
+      "destination": "/fr/produits/emploi-general/huwa-san-home/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a3%d8%ba%d8%b1%d8%a7%d8%b6-%d8%b9%d8%a7%d9%85%d8%a9/%d8%ae%d8%b7-%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-huwa-san/pool/",
+      "destination": "/fr/produits/emploi-general/huwa-san-pool/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a3%d8%ba%d8%b1%d8%a7%d8%b6-%d8%b9%d8%a7%d9%85%d8%a9/%d8%ae%d8%b7-%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-huwa-san/",
+      "destination": "/fr/produits/emploi-general/huwa-san-pro/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a3%d8%ba%d8%b1%d8%a7%d8%b6-%d8%b9%d8%a7%d9%85%d8%a9/%d8%ae%d8%b7-%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-bioxeco/",
+      "destination": "/fr/produits/emploi-general/bioxeco/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a7%d9%84%d8%a8%d8%b4%d8%b1/%d8%ae%d8%b7-%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-mavita/mavita-stress-plex/",
+      "destination": "/fr/produits/humains/mavita/mavita-stress-plex/",
+      "permanent": true
+    },
+    {
+      "source": "/research/resultats-de-la-production-sur-les-arbres-pecher-a-lapplication-de-orthagrow-bloom-booster/",
+      "destination": "/fr/ressources/essais/pechers/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a7%d9%84%d8%a8%d8%b4%d8%b1/%d8%ae%d8%b7-%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-mavita/mavita-slim-maca/",
+      "destination": "/fr/produits/humains/mavita/mavita-slim/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a7%d9%84%d8%a8%d8%b4%d8%b1/%d8%ae%d8%b7-%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-mavita/mavita-beauty/",
+      "destination": "/fr/produits/humains/mavita/mavita-beauty/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a7%d9%84%d8%a8%d8%b4%d8%b1/%d8%ae%d8%b7-%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-mavita/mavita-health/",
+      "destination": "/fr/produits/humains/mavita/mavita-health/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a7%d9%84%d8%a8%d8%b4%d8%b1/%d8%ae%d8%b7-%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-mavita/mavita-sport/",
+      "destination": "/fr/produits/humains/mavita/mavita-sport/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a7%d9%84%d8%a8%d8%b4%d8%b1/%d8%ae%d8%b7-%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-mavita/mavita-luxe/",
+      "destination": "/fr/produits/humains/mavita/mavita-luxe/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a3%d9%87%d9%85%d9%8a%d8%a9-%d8%a7%d9%84%d8%b3%d9%8a%d9%84%d9%8a%d8%b3%d9%8a%d9%88%d9%85/",
+      "destination": "/fr/ressources/centre-de-connaissances/importance-du-silicium/",
+      "permanent": true
+    },
+    {
+      "source": "/research/resultats-sur-les-pommes-de-terre-apres-lapplication-du-produit-orthagrow-control/",
+      "destination": "/fr/ressources/essais/pommes-de-terre/",
+      "permanent": true
+    },
+    {
+      "source": "/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/aliments-et-boissons/",
+      "destination": "/fr/produits/emploi-general/huwa-san-pro/huwa-san-fb/",
+      "permanent": true
+    },
+    {
+      "source": "/research/resultats-de-la-production-de-mais-densilage-a-lapplication-de-orthagrow-poudre/",
+      "destination": "/fr/ressources/essais/mais-ensilage/",
+      "permanent": true
+    },
+    {
+      "source": "/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/traitement-de-leau/",
+      "destination": "/fr/produits/emploi-general/huwa-san-pro/huwa-san-water-treatment/",
+      "permanent": true
+    },
+    {
+      "source": "/research/resultats-sur-les-pommiers-apres-lapplication-des-produits-la-gamme-orthagrow/",
+      "destination": "/fr/ressources/essais/pommiers/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a7%d9%84%d8%b2%d8%b1%d8%a7%d8%b9%d8%a9%d8%a7%d9%84%d8%a8%d8%b3%d8%aa%d9%86%d8%a9/",
+      "destination": "/fr/produits/agri-horticulture/",
+      "permanent": true
+    },
+    {
+      "source": "/research/resultats-sur-les-agrumes-marisol-apres-lapplication-de-orthagrow-control/",
+      "destination": "/fr/ressources/essais/agrumes/",
+      "permanent": true
+    },
+    {
+      "source": "/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/hard-surface/",
+      "destination": "/fr/produits/emploi-general/huwa-san-pro/huwa-san-hard-surface/",
+      "permanent": true
+    },
+    {
+      "source": "/research/resultats-de-la-production-de-guinoa-a-lapplication-de-orthagrow-control/",
+      "destination": "/fr/ressources/essais/quinoa/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a7%d9%84%d8%a8%d8%b4%d8%b1/%d8%ae%d8%b7-%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-mavita/",
+      "destination": "/fr/produits/humains/mavita/",
+      "permanent": true
+    },
+    {
+      "source": "/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/agriculture/",
+      "destination": "/fr/produits/emploi-general/huwa-san-pro/huwa-san-agro/",
+      "permanent": true
+    },
+    {
+      "source": "/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/veterinaire/",
+      "destination": "/fr/produits/emploi-general/huwa-san-pro/huwa-san-vet/",
+      "permanent": true
+    },
+    {
+      "source": "/research/resultats-sur-les-melons-jaune-apres-lapplication-de-la-gamme-orthagrow/",
+      "destination": "/fr/ressources/essais/melons/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a8%d8%ad%d8%ab-%d8%b9%d9%86-%d8%a7%d9%84%d9%85%d9%86%d8%aa%d8%ac%d8%a7%d8%aa/",
+      "destination": "/fr/rd-i/",
+      "permanent": true
+    },
+    {
+      "source": "/research/resultats-de-la-production-de-ble-a-lapplication-de-orthagrow-granule/",
+      "destination": "/fr/ressources/essais/ble/",
+      "permanent": true
+    },
+    {
+      "source": "/research/resultats-sur-les-carottes-apres-lapplication-de-orthagrow-control-2/",
+      "destination": "/fr/ressources/essais/carottes/",
+      "permanent": true
+    },
+    {
+      "source": "/general-use/huwa-san-productline/professional-disinfection-2/water-treatment/",
+      "destination": "/en/products/general-use/huwa-san-pro/huwa-san-water-treatment/",
+      "permanent": true
+    },
+    {
+      "source": "/research/resultats-sur-les-fraises-apres-lapplication-de-la-gamme-orthagrow/",
+      "destination": "/fr/ressources/essais/fraises/",
+      "permanent": true
+    },
+    {
+      "source": "/research/resultats-sur-les-carottes-apres-lapplication-de-orthagrow-control/",
+      "destination": "/fr/ressources/essais/carottes/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a7%d9%84%d8%ad%d9%8a%d9%88%d8%a7%d9%86%d8%a7%d8%aa/huwa-san-for-animals/",
+      "destination": "/fr/produits/emploi-general/huwa-san-pro/",
+      "permanent": true
+    },
+    {
+      "source": "/general-use/huwa-san-productline/professional-disinfection-2/food-beverage/",
+      "destination": "/en/products/general-use/huwa-san-pro/huwa-san-fb/",
+      "permanent": true
+    },
+    {
+      "source": "/research/resultats-sur-les-tomates-apres-lapplication-de-orthagrow-control/",
+      "destination": "/fr/ressources/essais/tomates/",
+      "permanent": true
+    },
+    {
+      "source": "/general-use/huwa-san-productline/professional-disinfection-2/hard-surface/",
+      "destination": "/en/products/general-use/huwa-san-pro/huwa-san-hard-surface/",
+      "permanent": true
+    },
+    {
+      "source": "/research/resultats-sur-les-olives-apres-lapplication-de-orthagrow-control/",
+      "destination": "/fr/ressources/essais/olives/",
+      "permanent": true
+    },
+    {
+      "source": "/research/resultats-sur-les-cactus-apres-lapplication-de-orthagrow-control/",
+      "destination": "/fr/ressources/essais/cactus/",
+      "permanent": true
+    },
+    {
+      "source": "/general-use/huwa-san-productline/professional-disinfection-2/agriculture/",
+      "destination": "/en/products/general-use/huwa-san-pro/huwa-san-agro/",
+      "permanent": true
+    },
+    {
+      "source": "/general-use/huwa-san-productline/professional-disinfection-2/veterinary/",
+      "destination": "/en/products/general-use/huwa-san-pro/huwa-san-vet/",
+      "permanent": true
+    },
+    {
+      "source": "/agri-horticulture-fr/gamme-de-produits-orthagrow/emploi-sur-le-terrain/",
+      "destination": "/fr/produits/agri-horticulture/orthagrow/",
+      "permanent": true
+    },
+    {
+      "source": "/hydroxyaluminosilicates-and-the-therapeutic-potential-of-silicic-acid/",
+      "destination": "/en/resources/knowledge-centre/acide-silicique/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a7%d9%84%d8%ad%d9%8a%d9%88%d8%a7%d9%86%d8%a7%d8%aa/orthahealth-ar/",
+      "destination": "/fr/produits/animaux/",
+      "permanent": true
+    },
+    {
+      "source": "/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/",
+      "destination": "/fr/produits/emploi-general/huwa-san-pro/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a3%d8%ba%d8%b1%d8%a7%d8%b6-%d8%b9%d8%a7%d9%85%d8%a9/clearox-ar/",
+      "destination": "/fr/produits/emploi-general/clearox/clearox/",
+      "permanent": true
+    },
+    {
+      "source": "/agri-horticulture/orthagrow-productline/guidelines-use-field/",
+      "destination": "/en/products/agri-horticulture/orthagrow/",
+      "permanent": true
+    },
+    {
+      "source": "/general-use/huwa-san-productline/professional-disinfection-2/",
+      "destination": "/en/products/general-use/huwa-san-pro/",
+      "permanent": true
+    },
+    {
+      "source": "/les-humains/ligne-de-produit-mavita/mavita-slim-avec-maca/",
+      "destination": "/fr/produits/humains/mavita/mavita-slim/",
+      "permanent": true
+    },
+    {
+      "source": "/les-humains/ligne-de-produit-mavita/mavita-stress-plex-fr/",
+      "destination": "/fr/produits/humains/mavita/mavita-stress-plex/",
+      "permanent": true
+    },
+    {
+      "source": "/limpact-de-lagriculture-sur-le-cycle-biogeochimique-de-si/",
+      "destination": "/fr/ressources/centre-de-connaissances/cycle-du-silicium/",
+      "permanent": true
+    },
+    {
+      "source": "/research/effets-des-produits-orthagrow-sur-les-poivrons/",
+      "destination": "/fr/ressources/essais/poivrons/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a3%d8%ba%d8%b1%d8%a7%d8%b6-%d8%b9%d8%a7%d9%85%d8%a9/",
+      "destination": "/fr/produits/emploi-general/",
+      "permanent": true
+    },
+    {
+      "source": "/emploi-general/gamme-de-produits-huwa-san/hygiene-home/",
+      "destination": "/fr/produits/emploi-general/huwa-san-home/",
+      "permanent": true
+    },
+    {
+      "source": "/foliar-nutrition-of-crops-facts-myths-and-perspectives/",
+      "destination": "/en/resources/knowledge-centre/nutrition-foliaire/",
+      "permanent": true
+    },
+    {
+      "source": "/la-nutrition-et-les-cheveux-deficiences-et-supplements/",
+      "destination": "/fr/ressources/centre-de-connaissances/nutrition-et-cheveux/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a7%d9%84%d8%ad%d9%8a%d9%88%d8%a7%d9%86%d8%a7%d8%aa/",
+      "destination": "/fr/produits/animaux/",
+      "permanent": true
+    },
+    {
+      "source": "/les-humains/ligne-de-produit-mavita/mavita-health-fr/",
+      "destination": "/fr/produits/humains/mavita/mavita-health/",
+      "permanent": true
+    },
+    {
+      "source": "/les-humains/ligne-de-produit-mavita/mavita-beauty-fr/",
+      "destination": "/fr/produits/humains/mavita/mavita-beauty/",
+      "permanent": true
+    },
+    {
+      "source": "/impact-of-agriculture-on-the-si-biogeochemical-cycle/",
+      "destination": "/en/resources/knowledge-centre/cycle-du-silicium/",
+      "permanent": true
+    },
+    {
+      "source": "/les-dossiers-pour-les-medias-et-les-evenements-venir/",
+      "destination": "/fr/actualites/medias/",
+      "permanent": true
+    },
+    {
+      "source": "/les-humains/ligne-de-produit-mavita/mavita-sport-fr/",
+      "destination": "/fr/produits/humains/mavita/mavita-sport/",
+      "permanent": true
+    },
+    {
+      "source": "/les-humains/ligne-de-produit-mavita/mavita-luxe-fr/",
+      "destination": "/fr/produits/humains/mavita/mavita-luxe/",
+      "permanent": true
+    },
+    {
+      "source": "/agri-horticulture-fr/gamme-de-produits-orthafight/",
+      "destination": "/fr/produits/agri-horticulture/orthagrow/orthagrow-fertifight/",
+      "permanent": true
+    },
+    {
+      "source": "/agri-horticulture-fr/gamme-de-produits-orthagrow/",
+      "destination": "/fr/produits/agri-horticulture/orthagrow/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a7%d9%84%d9%85%d9%86%d8%aa%d8%ac%d8%a7%d8%aa/",
+      "destination": "/fr/produits/",
+      "permanent": true
+    },
+    {
+      "source": "/nutrition-and-hair-deficiencies-and-supplements/",
+      "destination": "/en/resources/knowledge-centre/nutrition-et-cheveux/",
+      "permanent": true
+    },
+    {
+      "source": "/emploi-general/gamme-de-produits-huwa-san/pool/",
+      "destination": "/fr/produits/emploi-general/huwa-san-pool/",
+      "permanent": true
+    },
+    {
+      "source": "/le-potentiel-therapeutique-de-lacide-silicique/",
+      "destination": "/fr/ressources/centre-de-connaissances/acide-silicique/",
+      "permanent": true
+    },
+    {
+      "source": "/nutrition-foliare-faits-mythes-et-perspectives/",
+      "destination": "/fr/ressources/centre-de-connaissances/nutrition-foliaire/",
+      "permanent": true
+    },
+    {
+      "source": "/general-use/huwa-san-productline/hygiene-home/",
+      "destination": "/en/products/general-use/huwa-san-home/",
+      "permanent": true
+    },
+    {
+      "source": "/humans/mavita-productline/mavita-stress-plex/",
+      "destination": "/en/products/humans/mavita/mavita-stress-plex/",
+      "permanent": true
+    },
+    {
+      "source": "/mavita-health-renforce-le-systeme-dimmunite/",
+      "destination": "/fr/ressources/centre-de-connaissances/mavita-immunite/",
+      "permanent": true
+    },
+    {
+      "source": "/%d9%85%d9%86%d8%aa%d8%ac%d8%a7%d8%aa-moreco/",
+      "destination": "/fr/produits/",
+      "permanent": true
+    },
+    {
+      "source": "/humans/mavita-productline/mavita-slim-maca/",
+      "destination": "/en/products/humans/mavita/mavita-slim/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a7%d9%84%d8%a3%d8%ae%d8%a8%d8%a7%d8%b1/",
+      "destination": "/fr/actualites/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%aa%d8%b7%d8%a8%d9%8a%d9%82%d8%a7%d8%aa/",
+      "destination": "/fr/a-propos/services-et-conseils/",
+      "permanent": true
+    },
+    {
+      "source": "/emploi-general/gamme-de-produits-huwa-san/",
+      "destination": "/fr/produits/emploi-general/huwa-san-pro/",
+      "permanent": true
+    },
+    {
+      "source": "/agri-horticulture/orthafight-productline/",
+      "destination": "/en/products/agri-horticulture/orthagrow/orthagrow-fertifight/",
+      "permanent": true
+    },
+    {
+      "source": "/research/17-resultats-sur-les-framboises/",
+      "destination": "/fr/ressources/essais/",
+      "permanent": true
+    },
+    {
+      "source": "/agri-horticulture/orthagrow-productline/",
+      "destination": "/en/products/agri-horticulture/orthagrow/",
+      "permanent": true
+    },
+    {
+      "source": "/humans/mavita-productline/mavita-health/",
+      "destination": "/en/products/humans/mavita/mavita-health/",
+      "permanent": true
+    },
+    {
+      "source": "/humans/mavita-productline/mavita-beauty/",
+      "destination": "/en/products/humans/mavita/mavita-beauty/",
+      "permanent": true
+    },
+    {
+      "source": "/humans/mavita-productline/mavita-sport/",
+      "destination": "/en/products/humans/mavita/mavita-sport/",
+      "permanent": true
+    },
+    {
+      "source": "/humans/mavita-productline/mavita-luxe/",
+      "destination": "/en/products/humans/mavita/mavita-luxe/",
+      "permanent": true
+    },
+    {
+      "source": "/general-use/huwa-san-productline/pool/",
+      "destination": "/en/products/general-use/huwa-san-pool/",
+      "permanent": true
+    },
+    {
+      "source": "/etude-de-la-bio-disponibilite-de-laos/",
+      "destination": "/fr/ressources/centre-de-connaissances/bio-disponibilite-aos/",
+      "permanent": true
+    },
+    {
+      "source": "/research/18-resultats-sur-les-oignons/",
+      "destination": "/fr/ressources/essais/oignons/",
+      "permanent": true
+    },
+    {
+      "source": "/osa-bioavailability-cross-over-study/",
+      "destination": "/en/resources/knowledge-centre/bio-disponibilite-aos/",
+      "permanent": true
+    },
+    {
+      "source": "/mavita-health-supports-immune-system/",
+      "destination": "/en/resources/knowledge-centre/mavita-immunite/",
+      "permanent": true
+    },
+    {
+      "source": "/research/15-resultats-sur-les-grapes/",
+      "destination": "/fr/ressources/essais/raisins/",
+      "permanent": true
+    },
+    {
+      "source": "/research/16-resultats-sur-les-prunes/",
+      "destination": "/fr/ressources/essais/",
+      "permanent": true
+    },
+    {
+      "source": "/les-humains/ligne-de-produit-mavita/",
+      "destination": "/fr/produits/humains/mavita/",
+      "permanent": true
+    },
+    {
+      "source": "/research/19-resultats-sur-le-gazon/",
+      "destination": "/fr/ressources/essais/gazon/",
+      "permanent": true
+    },
+    {
+      "source": "/opportunites-de-carriere-a-moreco/",
+      "destination": "/fr/contact/carrieres/",
+      "permanent": true
+    },
+    {
+      "source": "/des-animaux/huwa-san-for-animals/",
+      "destination": "/fr/produits/emploi-general/huwa-san-pro/",
+      "permanent": true
+    },
+    {
+      "source": "/general-use/huwa-san-productline/",
+      "destination": "/en/products/general-use/huwa-san-pro/",
+      "permanent": true
+    },
+    {
+      "source": "/emploi-general/produit-clearox/",
+      "destination": "/fr/produits/emploi-general/clearox/clearox/",
+      "permanent": true
+    },
+    {
+      "source": "/registration-for-launch-moreco/",
+      "destination": "/fr/actualites/",
+      "permanent": true
+    },
+    {
+      "source": "/%d8%a7%d9%84%d8%a8%d8%b4%d8%b1/",
+      "destination": "/fr/produits/humains/",
+      "permanent": true
+    },
+    {
+      "source": "/animals/huwa-san-for-animals/",
+      "destination": "/en/products/general-use/huwa-san-pro/",
+      "permanent": true
+    },
+    {
+      "source": "/career-opportunities-moreco/",
+      "destination": "/en/contact/careers/",
+      "permanent": true
+    },
+    {
+      "source": "/des-animaux/orthahealth-fr/",
+      "destination": "/fr/produits/animaux/",
+      "permanent": true
+    },
+    {
+      "source": "/humans/mavita-productline/",
+      "destination": "/en/products/humans/mavita/",
+      "permanent": true
+    },
+    {
+      "source": "/the-importance-of-silicon/",
+      "destination": "/en/resources/knowledge-centre/importance-du-silicium/",
+      "permanent": true
+    },
+    {
+      "source": "/limportance-du-silicium/",
+      "destination": "/fr/ressources/centre-de-connaissances/importance-du-silicium/",
+      "permanent": true
+    },
+    {
+      "source": "/emploi-general/bioxeco/",
+      "destination": "/fr/produits/emploi-general/bioxeco/",
+      "permanent": true
+    },
+    {
+      "source": "/applications-produits/",
+      "destination": "/fr/a-propos/services-et-conseils/",
+      "permanent": true
+    },
+    {
+      "source": "/agri-horticulture-fr/",
+      "destination": "/fr/produits/agri-horticulture/",
+      "permanent": true
+    },
+    {
+      "source": "/animals/orthahealth/",
+      "destination": "/en/products/animals/",
+      "permanent": true
+    },
+    {
+      "source": "/general-use/bioxeco/",
+      "destination": "/en/products/general-use/bioxeco/",
+      "permanent": true
+    },
+    {
+      "source": "/general-use/clearox/",
+      "destination": "/en/products/general-use/clearox/clearox/",
+      "permanent": true
+    },
+    {
+      "source": "/agri-horticulture/",
+      "destination": "/en/products/agri-horticulture/",
+      "permanent": true
+    },
+    {
+      "source": "/research-products/",
+      "destination": "/en/rd-i/",
+      "permanent": true
+    },
+    {
+      "source": "/produits-moreco/",
+      "destination": "/fr/produits/",
+      "permanent": true
+    },
+    {
+      "source": "/moreco-products/",
+      "destination": "/en/products/",
+      "permanent": true
+    },
+    {
+      "source": "/emploi-general/",
+      "destination": "/fr/produits/emploi-general/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/rd-i/essais/",
+      "destination": "/fr/ressources/essais/",
+      "permanent": true
+    },
+    {
+      "source": "/en/rd-i/trials/",
+      "destination": "/en/resources/trials/",
+      "permanent": true
+    },
+    {
+      "source": "/applications/",
+      "destination": "/en/about/services-and-advice/",
+      "permanent": true
+    },
+    {
+      "source": "/les-humains/",
+      "destination": "/fr/produits/humains/",
+      "permanent": true
+    },
+    {
+      "source": "/des-animaux/",
+      "destination": "/fr/produits/animaux/",
+      "permanent": true
+    },
+    {
+      "source": "/general-use/",
+      "destination": "/en/products/general-use/",
+      "permanent": true
+    },
+    {
+      "source": "/recherche/",
+      "destination": "/fr/rd-i/",
+      "permanent": true
+    },
+    {
+      "source": "/produits/",
+      "destination": "/fr/produits/",
+      "permanent": true
+    },
+    {
+      "source": "/products/",
+      "destination": "/en/products/",
+      "permanent": true
+    },
+    {
+      "source": "/animals/",
+      "destination": "/en/products/animals/",
+      "permanent": true
+    },
+    {
+      "source": "/contact/",
+      "destination": "/fr/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/2012/01/",
+      "destination": "/fr/actualites/",
+      "permanent": true
+    },
+    {
+      "source": "/2012/11/",
+      "destination": "/en/news/",
+      "permanent": true
+    },
+    {
+      "source": "/2013/03/",
+      "destination": "/fr/actualites/",
+      "permanent": true
+    },
+    {
+      "source": "/2013/05/",
+      "destination": "/fr/actualites/",
+      "permanent": true
+    },
+    {
+      "source": "/2014/02/",
+      "destination": "/fr/actualites/",
+      "permanent": true
+    },
+    {
+      "source": "/2014/11/",
+      "destination": "/fr/actualites/",
+      "permanent": true
+    },
+    {
+      "source": "/humans/",
+      "destination": "/en/products/humans/",
+      "permanent": true
+    },
+    {
+      "source": "/media/",
+      "destination": "/en/news/media/",
+      "permanent": true
+    },
+    {
+      "source": "/news/",
+      "destination": "/fr/actualites/",
+      "permanent": true
+    },
+    {
+      "source": "/2011/",
+      "destination": "/fr/actualites/",
+      "permanent": true
+    },
+    {
+      "source": "/2012/",
+      "destination": "/fr/actualites/",
+      "permanent": true
+    },
+    {
+      "source": "/2013/",
+      "destination": "/fr/actualites/",
+      "permanent": true
+    },
+    {
+      "source": "/2014/",
+      "destination": "/fr/actualites/",
+      "permanent": true
+    }
+  ]
+}
