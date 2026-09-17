@@ -6,7 +6,15 @@
  *   out/sitemap.xml  every page, in all five languages, with hreflang alternates
  *   out/robots.txt
  *
- * Run after `next build`. Reads ../content-index.json for the old URL inventory.
+ * Chained onto `next build` by the package.json build script, so the export is never
+ * half-finished: it ran by hand until 2026-09-17, and on Vercel — which runs the build
+ * script and nothing else — that meant a site with no root page, no sitemap and no
+ * robots.txt. Reads ../content-index.json for the old URL inventory.
+ *
+ * The .htaccess it writes is Apache's, i.e. Hostinger's. A host that does not read it
+ * (Vercel among them) serves the pages but none of the 301s from the old moreco.ma, so
+ * pointing a domain at such a host needs that map translated into the host's own config
+ * first.
  */
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
