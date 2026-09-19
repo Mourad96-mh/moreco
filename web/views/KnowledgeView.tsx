@@ -26,8 +26,8 @@ import s from './KnowledgeView.module.css';
  * R&D + I, which is now the one place they are published (see PUBLICATIONS in
  * data/articles.ts and RdiView). Then "L'importance du silicium" lost its pinned
  * flagship block: a single chronological list was asked for, and a 2013 interview held
- * above a 2014 article is not one. The header menu item that pointed at that block
- * (#silicon) now goes straight to the interview's own page.
+ * above a 2014 article is not one. On 2026-09-18 the interview left this list too, for
+ * the scientific publications on R&D + I.
  */
 export default function KnowledgeView({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);

@@ -43,8 +43,8 @@ export function mainNav(locale: Locale, t: Dictionary): NavItem[] {
     /*
      * Resources, as the client reshaped it on 2026-09-17: the knowledge centre lost its
      * menu entry and the trial results took the slot. The centre itself is still online
-     * and still linked — every article page, and the R&D menu's silicon interview, lead
-     * into it — it simply no longer opens a menu of its own.
+     * and still linked from every article page — it simply no longer opens a menu of
+     * its own.
      */
     {
       label: t.nav.resources,
@@ -58,11 +58,13 @@ export function mainNav(locale: Locale, t: Dictionary): NavItem[] {
     {
       label: t.nav.rdi,
       href: at('rdi'),
+      /*
+       * Reordered by the client on 2026-09-18: Innovation first, opening on the
+       * department's own copy, and the scientific publications last. The silicon
+       * interview that used to head this menu is listed among those publications now.
+       */
       children: [
-        /* The knowledge centre no longer pins this interview at #silicon: one
-           chronological list, so the menu points at the article itself. */
-        { label: t.nav.silicon, href: at('article:importance-du-silicium') },
-        /* The studies moved off the knowledge centre on 2026-09-09; this follows them. */
+        { label: t.nav.innovation, href: at('rdi', '#innovation') },
         { label: t.nav.publications, href: at('rdi', '#publications') },
       ],
     },

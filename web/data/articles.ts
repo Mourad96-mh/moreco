@@ -116,14 +116,17 @@ export function articleDate(article: Article): string | null {
 }
 
 /**
- * The four peer-reviewed studies. The client's briefing of 2026-09-09 separated them
- * from the rest: a scientific publication belongs on R&D + I and nowhere else, while
- * the knowledge centre keeps the two interviews and the Mavita piece.
+ * The scientific publications. The client's briefing of 2026-09-09 separated the four
+ * peer-reviewed studies from the rest: a scientific publication belongs on R&D + I and
+ * nowhere else. On 2026-09-18 the silicon interview with Prof. Van den Berghe joined
+ * them, moved out of the R&D menu into this list, leaving the knowledge centre the
+ * hair interview and the Mavita piece.
  *
  * Every article still has its own page at the same URL — this splits the two lists that
  * link to them, not the articles themselves.
  */
 const PUBLICATION_SLUGS = new Set([
+  'importance-du-silicium',
   'acide-silicique',
   'bio-disponibilite-aos',
   'nutrition-foliaire',
@@ -141,5 +144,12 @@ export const KNOWLEDGE_ARTICLES: Article[] = byDateDesc(
   ARTICLES.filter((a) => !isPublication(a.slug))
 );
 
-/** The R&D + I page's list. */
-export const PUBLICATIONS: Article[] = byDateDesc(ARTICLES.filter((a) => isPublication(a.slug)));
+/**
+ * The R&D + I page's list, newest first — except the silicon interview, which leads it:
+ * it headed the R&D menu until 2026-09-18, and the client moved it here to be seen.
+ */
+const PINNED_PUBLICATION = 'importance-du-silicium';
+
+export const PUBLICATIONS: Article[] = byDateDesc(
+  ARTICLES.filter((a) => isPublication(a.slug))
+).sort((a, b) => Number(b.slug === PINNED_PUBLICATION) - Number(a.slug === PINNED_PUBLICATION));

@@ -17,8 +17,8 @@
     "applications": "Product applications",
     "knowledge": "Knowledge centre",
     "trials": "Trial results",
-    "silicon": "The importance of silicon",
-    "publications": "Scientific publications",
+    "innovation": "Innovation",
+    "publications": "Scientific publication",
     "newsList": "News",
     "mediaKit": "Media kits & events",
     "aboutMoreco": "More about Moreco",
@@ -48,7 +48,6 @@
       }
     ],
     "introClose": "By guaranteeing a healthy harvest with higher nutritional value and a longer shelf life, we help growers position their own brand at the very top of the market. That philosophy still guides everything we do today.",
-    "filmCaption": "Moreco | Innovation for your crop",
     "segmentsTitle": "Our fields of application",
     "rdiTitle": "R&D + I",
     "rdiText": "Trials in real conditions, control plot against treated plot, on the same farm in the same season. The campaigns documented in Morocco run from Midelt to Larache: apple, strawberry, tomato, citrus, wheat, olive.",
@@ -56,15 +55,23 @@
     "stats": [
       {
         "value": "215",
-        "label": "Trial campaigns worldwide"
+        "label": "Trial campaigns worldwide",
+        "labelFirst": false
       },
       {
-        "value": "450,000",
-        "label": "Farmers worldwide"
+        "value": "24,000",
+        "label": "Farmers worldwide",
+        "labelFirst": false
       },
       {
         "value": "2001",
-        "label": "In Agadir since"
+        "label": "In Morocco since",
+        "labelFirst": true
+      },
+      {
+        "value": "2001",
+        "label": "In Agadir since",
+        "labelFirst": true
       }
     ],
     "quoteTitle": "Something specific in mind? Ask for a quote",
@@ -94,15 +101,20 @@
     }
   },
   "families": {
-    "nutrients": "Special nutrients",
+    "specialties": "Specialties",
     "soil": "Soil & root health",
     "biostimulants": "Trace elements & biostimulants",
     "protection": "Biological protection",
     "disinfectant": "Disinfectant",
     "poultry": "Poultry",
     "pets": "Pets (dogs & cats)",
-    "equine": "Equine",
+    "equine": "Horses",
     "cattle": "Cattle"
+  },
+  "familyNotes": {
+    "specialties": [],
+    "biostimulants": [],
+    "npk": []
   },
   "product": {
     "ranges": "Ranges",
@@ -125,7 +137,8 @@
     "sds": "Download the safety data sheet",
     "relatedTitle": "Other products in this range",
     "noCopy": "Detailed sheet in preparation. Contact us for any technical information.",
-    "chooseCategory": "Choose a category to see the products."
+    "chooseCategory": "Choose a category to see the products.",
+    "learnMore": "Learn more"
   },
   "rdi": {
     "title": "Moreco Research & Development",
@@ -152,7 +165,7 @@
     "statTrials": "Campaigns documented in Morocco",
     "statPlates": "Result plates",
     "statSince": "First campaign",
-    "publicationsIntro": "The peer-reviewed studies our formulations rest on, free to download."
+    "publicationsIntro": "The studies and the scientific interview our formulations rest on, free to download."
   },
   "article": {
     "download": "Download the study",
@@ -173,7 +186,19 @@
   },
   "contact": {
     "mobile": "Mobile",
-    "formTitle": "Send us a message"
+    "formTitle": "Send us a message",
+    "hoursTitle": "Opening hours",
+    "hours": [
+      {
+        "days": "Monday – Friday",
+        "time": "08:00 – 18:00"
+      },
+      {
+        "days": "Saturday",
+        "time": "08:00 – 13:00"
+      }
+    ],
+    "followUs": "Follow us"
   },
   "quote": {
     "title": "Quote request",
