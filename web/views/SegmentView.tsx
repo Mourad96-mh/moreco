@@ -2,6 +2,7 @@ import type { Locale } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionary';
 import {
   familiesOf,
+  familyName,
   productsOfFamily,
   productsOfSegment,
   productsOutsideFamilies,
@@ -14,6 +15,7 @@ import { segmentHero } from '@/data/hero-images';
 import PageHeader from '@/components/PageHeader/PageHeader';
 import ProductCard from '@/components/ProductCard/ProductCard';
 import FamilyFilter, { type FamilyGroup } from '@/components/FamilyFilter/FamilyFilter';
+import FamilyNote from '@/components/FamilyNote/FamilyNote';
 import Reveal from '@/components/Reveal/Reveal';
 import s from './Catalogue.module.css';
 
@@ -52,11 +54,18 @@ export default function SegmentView({ locale, segment }: { locale: Locale; segme
 
   const familyGroups: FamilyGroup[] = families.map((family) => ({
     key: family.key,
-    label: t.families[family.key],
+    label: familyName(family, t),
     content: (
       <>
-        <h2 className={s.groupTitle}>{t.families[family.key]}</h2>
+        <h2 className={s.groupTitle}>{familyName(family, t)}</h2>
         {grid(productsOfFamily(family), family.soon)}
+        {family.note && (
+          <FamilyNote
+            title={familyName(family, t)}
+            summary={t.product.learnMore}
+            paragraphs={t.familyNotes[family.note]}
+          />
+        )}
       </>
     ),
   }));

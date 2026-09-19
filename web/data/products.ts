@@ -1,4 +1,5 @@
 import type { Locale } from '@/i18n/config';
+import type { Dictionary } from '@/i18n/dictionary';
 import media from './media-manifest.json';
 import copy from './product-copy.json';
 
@@ -51,12 +52,26 @@ export interface ProductFamily {
   /** Product slugs, in the order the client listed them. */
   products: string[];
   soon?: boolean;
+  /**
+   * A name that is the same in every language, and so bypasses the dictionary. Only
+   * HIGH END NPK has one: the client ruled it must never be translated (2026-09-18).
+   */
+  name?: string;
+  /**
+   * Closes the family with a description block, filled from `familyNotes` in the
+   * dictionaries. The client asked for one under three families on 2026-09-18 and will
+   * send the text later; the block stays off the page until it has something to say.
+   */
+  note?: FamilyNoteKey;
 }
 
+export type FamilyNoteKey = 'specialties' | 'biostimulants' | 'npk';
+
 export type FamilyKey =
-  | 'nutrients'
+  | 'specialties'
   | 'soil'
   | 'biostimulants'
+  | 'npk'
   | 'protection'
   | 'disinfectant'
   /* Animals is organised by species rather than by what the product does. */
@@ -66,33 +81,31 @@ export type FamilyKey =
   | 'cattle';
 
 /**
- * The order the filter bar shows, fixed by the client's briefing of 2026-09-09:
- * nutrients, soil, biostimulants, protection, disinfectant — and "all products" last,
- * after the families rather than before them (see components/FamilyFilter).
+ * The order the filter bar shows, set by the client's briefing of 2026-09-09 and
+ * reshaped on 2026-09-18: specialties, soil, trace elements & biostimulants, HIGH END
+ * NPK, protection, disinfectant.
  */
 export const FAMILIES: ProductFamily[] = [
   /*
-   * Nutrients opens the catalogue. The four Orthagrow 4G liquids sit here with Orthagrow
-   * Control rather than under biostimulants, and MYCO 4G with them — the client grouped
-   * them that way on 2026-09-16.
+   * Specialties opens the catalogue — the family was "special nutrients" until
+   * 2026-09-18, when the client renamed it and cut it down to these two.
    */
   {
-    key: 'nutrients',
+    key: 'specialties',
     segment: 'agri',
-    products: [
-      'orthagrow-control',
-      'orthagrow-cal',
-      'orthagrow-zno',
-      'orthagrow-alga-si',
-      'orthagrow-aminactif',
-      'orthagrow-myco',
-    ],
+    products: ['orthagrow-control', 'orthagrow-myco'],
+    note: 'specialties',
   },
   {
     key: 'soil',
     segment: 'agri',
     products: ['orthagrow-granule', 'orthagrow-soil-conditioner'],
   },
+  /*
+   * The four Orthagrow 4G liquids joined this family from specialties on 2026-09-18, in
+   * the order the client listed them. The same list opens with a plain "Orthagrow",
+   * which matches no single product in the catalogue — to be clarified with the client.
+   */
   {
     key: 'biostimulants',
     segment: 'agri',
@@ -100,14 +113,27 @@ export const FAMILIES: ProductFamily[] = [
       'orthagrow-bloom-booster',
       'orthagrow-micro-manager',
       'orthagrow-fertifight',
-      /* The 1 kg pouches of the Orthagrow 4G range, in the order the client sent them. */
+      'orthagrow-alga-si',
+      'orthagrow-aminactif',
+      'orthagrow-cal',
+      'orthagrow-zno',
+    ],
+    soon: true,
+    note: 'biostimulants',
+  },
+  /* Every 1 kg pouch of the Orthagrow 4G range, in the order the client sent them. */
+  {
+    key: 'npk',
+    segment: 'agri',
+    name: 'HIGH END NPK',
+    products: [
       'orthagrow-initio',
       'orthagrow-flor',
       'orthagrow-frucfolia',
       'orthagrow-frucferti',
       'orthagrow-matur',
     ],
-    soon: true,
+    note: 'npk',
   },
   { key: 'protection', segment: 'agri', products: [], soon: true },
   /*
@@ -174,8 +200,8 @@ export const PRODUCTS: Product[] = [
   { slug: 'orthagrow-matur', name: 'Orthagrow Matur 4G', segment: 'agri', range: 'orthagrow' },
 
   /*
-   * The four liquids of the same range, sent on 2026-09-16, and grouped under nutrients
-   * rather than with the pouches — see FAMILIES. Each is sold in both a 1 L bottle and a
+   * The four liquids of the same range, sent on 2026-09-16, and grouped with the trace
+   * elements rather than with the pouches — see FAMILIES. Each is sold in both a 1 L bottle and a
    * 10 L drum, and a product carries a single image, so the pack shot holds both formats
    * side by side at their true relative height rather than the site growing a gallery
    * for what is one photograph's worth of difference. That leaves one of the ten still
@@ -233,11 +259,12 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'orthahealth-equides',
-    name: 'OrthaHealth Équidés',
+    /* "Équidés" became "Chevaux" on 2026-09-18, with the family it sits in. */
+    name: 'OrthaHealth Chevaux',
     names: {
-      en: 'OrthaHealth Equine',
-      es: 'OrthaHealth Équidos',
-      nl: 'OrthaHealth Paardachtigen',
+      en: 'OrthaHealth Horses',
+      es: 'OrthaHealth Caballos',
+      nl: 'OrthaHealth Paarden',
     },
     segment: 'animals',
     range: 'orthahealth',
@@ -314,6 +341,10 @@ export const productsOfSegment = (segment: SegmentKey) =>
   PRODUCTS.filter((p) => p.segment === segment || p.alsoIn?.includes(segment));
 
 export const familiesOf = (segment: SegmentKey) => FAMILIES.filter((f) => f.segment === segment);
+
+/** The family's name in this language — or its fixed name, for the one that has one. */
+export const familyName = (family: ProductFamily, t: Dictionary): string =>
+  family.name ?? t.families[family.key as keyof Dictionary['families']];
 
 /** Resolves a family's slugs to products, dropping any slug that no longer exists. */
 export const productsOfFamily = (family: ProductFamily): Product[] =>

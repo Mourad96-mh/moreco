@@ -8,6 +8,7 @@ import { pageHero } from '@/data/hero-images';
 import PageHeader from '@/components/PageHeader/PageHeader';
 import ContactForm from '@/components/Contact/ContactForm';
 import Reveal from '@/components/Reveal/Reveal';
+import SocialIcon from '@/components/SocialIcon/SocialIcon';
 import s from './ContactView.module.css';
 
 /**
@@ -77,6 +78,33 @@ export default function ContactView({ locale }: { locale: Locale }) {
                 <li>
                   <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
                 </li>
+              </ul>
+            </div>
+
+            {/* Opening hours and the four profiles, asked for on this page by the
+                briefing of 2026-09-18. */}
+            <div className={s.card}>
+              <h3 className={s.cardTitle}>{t.contact.hoursTitle}</h3>
+              <dl className={s.hours}>
+                {t.contact.hours.map((row) => (
+                  <div key={row.days} className={s.hoursRow}>
+                    <dt>{row.days}</dt>
+                    <dd>{row.time}</dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+
+            <div className={s.card}>
+              <h3 className={s.cardTitle}>{t.contact.followUs}</h3>
+              <ul className={s.social}>
+                {CONTACT.social.map((item) => (
+                  <li key={item.label}>
+                    <a href={item.href} target="_blank" rel="noopener noreferrer" aria-label={item.label}>
+                      <SocialIcon name={item.icon} size={20} />
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
 

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import type { Locale } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionary';
 import { PRODUCTS, RANGES, SEGMENTS } from '@/data/products';
-import { TRIALS } from '@/data/trials';
+import { MOROCCO_CAMPAIGNS } from '@/data/trials';
 import { href, segmentHref } from '@/data/routes';
 import { pageHero } from '@/data/hero-images';
 import PageHeader from '@/components/PageHeader/PageHeader';
@@ -34,7 +34,7 @@ export default function AboutView({ locale }: { locale: Locale }) {
     { value: SEGMENTS.length, label: t.about.domains },
     { value: RANGES.length, label: t.product.ranges },
     { value: PRODUCTS.length, label: t.product.products },
-    { value: TRIALS.length, label: t.rdi.statTrials },
+    { value: MOROCCO_CAMPAIGNS, label: t.rdi.statTrials },
   ];
 
   return (
@@ -58,7 +58,8 @@ export default function AboutView({ locale }: { locale: Locale }) {
         </div>
       </section>
 
-      {/* The catalogue and the trial programme, counted from the data itself. */}
+      {/* The catalogue, counted from the data itself, and the trial programme as the
+          client states it. */}
       <section className={s.figuresBand}>
         <div className={`page ${s.figures}`}>
           {figures.map((figure, i) => (

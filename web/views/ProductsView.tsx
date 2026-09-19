@@ -7,6 +7,7 @@ import {
   RANGES,
   SEGMENTS,
   familiesOf,
+  familyName,
   productsOfFamily,
   productsOfSegment,
   type SegmentKey,
@@ -16,6 +17,7 @@ import { pageHero, segmentHero } from '@/data/hero-images';
 import PageHeader from '@/components/PageHeader/PageHeader';
 import ProductCard from '@/components/ProductCard/ProductCard';
 import FamilyFilter, { type FamilyGroup } from '@/components/FamilyFilter/FamilyFilter';
+import FamilyNote from '@/components/FamilyNote/FamilyNote';
 import Reveal from '@/components/Reveal/Reveal';
 import s from './ProductsView.module.css';
 import c from './Catalogue.module.css';
@@ -94,17 +96,17 @@ export default function ProductsView({ locale }: { locale: Locale }) {
   });
 
   /*
-   * The five Agriculture families, as the buttons the client listed on 2026-09-13. They
+   * The Agriculture families, as the buttons the client listed on 2026-09-13. They
    * are the only families with their own filter: Animals is organised by species and is
    * chosen on its own page, where the four sub-categories live.
    */
   const familyGroups: FamilyGroup[] = familiesOf('agri').map((family) => ({
     key: family.key,
-    label: t.families[family.key],
+    label: familyName(family, t),
     content: (
       <div className={`section ${s.familyBand}`}>
         <div className="page">
-          <h2 className={c.groupTitle}>{t.families[family.key]}</h2>
+          <h2 className={c.groupTitle}>{familyName(family, t)}</h2>
           <div className={c.grid}>
             {productsOfFamily(family).map((product, i) => (
               <Reveal key={product.slug} delay={i * 50}>
@@ -117,6 +119,13 @@ export default function ProductsView({ locale }: { locale: Locale }) {
               </Reveal>
             )}
           </div>
+          {family.note && (
+            <FamilyNote
+              title={familyName(family, t)}
+              summary={t.product.learnMore}
+              paragraphs={t.familyNotes[family.note]}
+            />
+          )}
         </div>
       </div>
     ),

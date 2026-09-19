@@ -17,8 +17,8 @@
     "applications": "Applications produits",
     "knowledge": "Centre de connaissances",
     "trials": "Résultats d'essais",
-    "silicon": "L'importance du silicium",
-    "publications": "Publications scientifiques",
+    "innovation": "Innovation",
+    "publications": "Publication scientifique",
     "newsList": "Actualités",
     "mediaKit": "Dossiers médias & événements",
     "aboutMoreco": "En savoir plus sur Moreco",
@@ -48,7 +48,6 @@
       }
     ],
     "introClose": "En garantissant une récolte saine avec une valeur nutritionnelle plus élevée et une shelf-life prolongée, nous aidons les producteurs à positionner leur propre marque au plus haut rang du marché. Cette philosophie continue de guider notre démarche à ce jour.",
-    "filmCaption": "Moreco | L’innovation pour votre culture",
     "segmentsTitle": "Nos domaines d'application",
     "rdiTitle": "R&D + I",
     "rdiText": "Des essais en conditions réelles, parcelle témoin contre parcelle traitée, sur la même exploitation et la même saison. Les campagnes documentées au Maroc vont de Midelt à Larache : pommiers, fraises, tomates, agrumes, blé, olives.",
@@ -56,15 +55,23 @@
     "stats": [
       {
         "value": "215",
-        "label": "Campagnes d’essais mondiales"
+        "label": "Campagnes d’essais mondiales",
+        "labelFirst": false
       },
       {
-        "value": "450 000",
-        "label": "Agriculteurs dans le monde"
+        "value": "24 000",
+        "label": "Agriculteurs dans le monde",
+        "labelFirst": false
       },
       {
         "value": "2001",
-        "label": "Présent à Agadir depuis"
+        "label": "Présent au Maroc depuis",
+        "labelFirst": true
+      },
+      {
+        "value": "2001",
+        "label": "Présent à Agadir depuis",
+        "labelFirst": true
       }
     ],
     "quoteTitle": "Un besoin précis ? Demandez votre devis",
@@ -94,15 +101,20 @@
     }
   },
   "families": {
-    "nutrients": "Nutriments Spéciaux",
+    "specialties": "Spécialités",
     "soil": "Santé du Sol & Racines",
     "biostimulants": "Oligo-Éléments & Biostimulants",
     "protection": "Protection Biologique",
     "disinfectant": "Désinfectant",
     "poultry": "Volailles",
     "pets": "Animaux de compagnie",
-    "equine": "Équidés",
+    "equine": "Chevaux",
     "cattle": "Bovins"
+  },
+  "familyNotes": {
+    "specialties": [],
+    "biostimulants": [],
+    "npk": []
   },
   "product": {
     "ranges": "Gammes",
@@ -125,7 +137,8 @@
     "sds": "Télécharger la fiche de données de sécurité",
     "relatedTitle": "Autres produits de la gamme",
     "noCopy": "Fiche détaillée en préparation. Contactez-nous pour toute information technique.",
-    "chooseCategory": "Choisissez une catégorie pour voir les produits."
+    "chooseCategory": "Choisissez une catégorie pour voir les produits.",
+    "learnMore": "En savoir plus"
   },
   "rdi": {
     "title": "Recherche & Développement Moreco",
@@ -138,7 +151,7 @@
     ],
     "customTitle": "Besoin d’une formule ou d’un produit sur mesure ?",
     "customText": [
-      "Votre entreprise nécessite-t-elle le développement d’un produit spécifique ou d’une formule sur mesure ? Que vous recherchiez une solution directement applicable à vos propres cultures, ou que vous souhaitiez formuler un produit innovant destiné à la vente et à la distribution, notre équipe R&D est à votre disposition. Nous vous accompagnons pour repousser les limites de l’innovation et concevoir des solutions sur mesure qui répondent parfaitement à vos objectifs agronomiques.",
+      "Votre entreprise nécessite-t-elle le développement d’un produit spécifique ou d’une formule sur mesure ? Que vous recherchiez une solution directement applicable à vos cultures, ou que vous souhaitiez formuler un produit innovant destiné à la vente et à la distribution, notre équipe R&D est à votre disposition. Nous vous accompagnons pour repousser les limites de l’innovation et concevoir des solutions sur mesure qui répondent parfaitement à vos objectifs agronomiques.",
       "Nous sommes à votre entière disposition pour répondre à toutes vos questions. N’hésitez pas à nous contacter pour explorer les opportunités de collaboration."
     ],
     "customCta": "Nous contacter",
@@ -152,7 +165,7 @@
     "statTrials": "Campagnes documentées au Maroc",
     "statPlates": "Planches de résultats",
     "statSince": "Première campagne",
-    "publicationsIntro": "Les études évaluées par des pairs sur lesquelles reposent nos formulations, en téléchargement libre."
+    "publicationsIntro": "Les études et l'entretien scientifique sur lesquels reposent nos formulations, en téléchargement libre."
   },
   "article": {
     "download": "Télécharger l'étude",
@@ -173,7 +186,19 @@
   },
   "contact": {
     "mobile": "Mobile",
-    "formTitle": "Écrivez-nous"
+    "formTitle": "Écrivez-nous",
+    "hoursTitle": "Horaires d'ouverture",
+    "hours": [
+      {
+        "days": "Lundi – Vendredi",
+        "time": "08:00 – 18:00"
+      },
+      {
+        "days": "Samedi",
+        "time": "08:00 – 13:00"
+      }
+    ],
+    "followUs": "Suivez-nous"
   },
   "quote": {
     "title": "Demande de devis",

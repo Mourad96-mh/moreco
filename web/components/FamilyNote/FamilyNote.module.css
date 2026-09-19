@@ -1,0 +1,54 @@
+/* The framed disclosure under a family's grid — the same card as the contact page's. */
+
+.note {
+  margin-top: clamp(1.25rem, 2.5vw, 1.75rem);
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.1rem 1.35rem;
+  font-weight: 600;
+  color: var(--ink);
+  cursor: pointer;
+  list-style: none;
+}
+
+.summary::-webkit-details-marker {
+  display: none;
+}
+
+.summary:hover {
+  color: var(--green-dark);
+}
+
+.title {
+  color: var(--accent, var(--green-dark));
+}
+
+.chevron {
+  flex: none;
+  transition: transform 0.25s var(--ease);
+}
+
+.note[open] .chevron {
+  transform: rotate(180deg);
+}
+
+.body {
+  padding: 0 1.35rem 1.25rem;
+  color: var(--ink-2);
+}
+
+.body > p {
+  max-width: 72ch;
+}
+
+.body > p:last-child {
+  margin-bottom: 0;
+}

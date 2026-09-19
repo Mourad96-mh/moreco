@@ -3,7 +3,7 @@ import Link from 'next/link';
 import type { Locale } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionary';
 import { href, articleHref } from '@/data/routes';
-import { TRIALS } from '@/data/trials';
+import { MOROCCO_CAMPAIGNS, TRIALS } from '@/data/trials';
 import { PUBLICATIONS, articleTitle, articleExcerpt, articleDate, articlePdf } from '@/data/articles';
 import { formatDate } from '@/data/news';
 import { pageHero } from '@/data/hero-images';
@@ -20,9 +20,8 @@ import s from './RdiView.module.css';
  * the invitation to have something formulated.
  *
  * The trial results used to run down the middle of this page. They moved to Resources on
- * the same date and are a page of their own now (views/TrialsView.tsx); the counts in the
- * stats band still read off TRIALS, so the two cannot drift apart. The trials keep a way
- * in from here, below the figures they explain.
+ * the same date and are a page of their own now (views/TrialsView.tsx). The trials keep
+ * a way in from here, below the figures they explain.
  *
  * The peer-reviewed studies close the page (#publications, where the header menu points
  * since 2026-09-09). They were listed in the knowledge centre until the client ruled
@@ -45,10 +44,11 @@ export default function RdiView({ locale }: { locale: Locale }) {
 
       {/*
        * Four figures, and the first two must not be confused with each other: 215 is the
-       * group's worldwide trial programme (client briefing, 2026-09-13), while the count
-       * beside it is what this page actually documents — the Moroccan campaigns recovered
-       * from the archive, one page each. The worldwide figure is a claim we are given;
-       * the Moroccan one is counted off the trials themselves and cannot drift.
+       * group's worldwide trial programme (client briefing, 2026-09-13), while the one
+       * beside it is the Moroccan campaigns alone. Both are figures the client gives us
+       * — the Moroccan one was a count of the trial pages until the briefing of
+       * 2026-09-18 set it at 117, the same number the About page quotes. The plates are
+       * still counted off the trials themselves.
        */}
       <section className={s.stats}>
         <div className={`page ${s.statsInner}`}>
@@ -57,7 +57,7 @@ export default function RdiView({ locale }: { locale: Locale }) {
             <p className={s.statLabel}>{t.rdi.statTrialsWorld}</p>
           </Reveal>
           <Reveal className={s.stat} delay={90}>
-            <p className={s.statNumber}>{TRIALS.length}</p>
+            <p className={s.statNumber}>{MOROCCO_CAMPAIGNS}</p>
             <p className={s.statLabel}>{t.rdi.statTrials}</p>
           </Reveal>
           <Reveal className={s.stat} delay={180}>
@@ -70,8 +70,8 @@ export default function RdiView({ locale }: { locale: Locale }) {
           </Reveal>
         </div>
 
-        {/* Two of those four figures are the trials counting themselves, so the page that
-            holds them is one click away from the band that quotes them. */}
+        {/* The campaigns and the plates are what the trial pages show, so those pages
+            are one click away from the band that quotes them. */}
         <div className={`page ${s.statsLink}`}>
           <Link href={href(locale, 'trials')} className={s.trialsLink}>
             {t.rdi.allTrials}

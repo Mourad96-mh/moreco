@@ -11,7 +11,7 @@ import s from './HomeView.module.css';
 
 /**
  * One pictogram per figure, in the order the dictionary lists them: trial campaigns,
- * the growers who use the products, and the Agadir office. Stroked line art at
+ * the growers who use the products, Morocco, and the Agadir office. Stroked line art at
  * currentColor, so they take the band's green without a second asset.
  */
 const STAT_ICONS = [
@@ -25,6 +25,11 @@ const STAT_ICONS = [
     <circle cx="9" cy="8" r="3.2" />
     <path d="M2.5 20.5a6.5 6.5 0 0 1 13 0" />
     <path d="M16.2 5.4a3.2 3.2 0 0 1 0 5.2M18 14.4a6.5 6.5 0 0 1 3.5 6.1" />
+  </svg>,
+  /* Flag — Morocco. */
+  <svg key="morocco" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M5 21.5V3.5" />
+    <path d="M5 4h13.5l-2.6 4.5 2.6 4.5H5" />
   </svg>,
   /* Map pin — Agadir. */
   <svg key="agadir" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
@@ -46,18 +51,17 @@ export default function HomeView({ locale }: { locale: Locale }) {
   return (
     <>
       {/*
-       * Film only — no title, no subtitle, no button (client briefing, 2026-09-09). The
-       * client's own 10 s loop, delivered 2026-09-12, muxed without its audio track:
-       * the banner autoplays, and an autoplaying film with sound is blocked anyway.
-       * BRIEF-VIDEO-ACCUEIL.md holds the shot list this footage was cut to.
+       * Film only — no title, no subtitle, no button (client briefing, 2026-09-09), and
+       * since 2026-09-18 no caption either: the signature burnt into the corner did not
+       * render well enough to keep. The client's own 10 s loop, delivered 2026-09-12,
+       * muxed without its audio track: the banner autoplays, and an autoplaying film
+       * with sound is blocked anyway. BRIEF-VIDEO-ACCUEIL.md holds the shot list.
        */}
       <HeroVideo
         poster="/media/hero/hero-poster.webp"
         /* H.264 only: a VP9 re-encode of this footage came out larger, so a
            second source would cost bandwidth without buying compatibility. */
         sources={[{ src: '/media/hero/hero.mp4', type: 'video/mp4' }]}
-        /* Burnt into the bottom-left of the frame — briefing of 2026-09-13. */
-        caption={t.home.filmCaption}
       />
 
       {/* The page's h1 lives here now that the film carries no headline of its own. */}
@@ -116,10 +120,13 @@ export default function HomeView({ locale }: { locale: Locale }) {
       </section>
 
       {/*
-       * R&D+I, and under it the three figures the client wants read from across the
-       * room (briefing of 2026-09-13). They are reach figures for the group, not the
-       * Moroccan trial count the R&D page documents — which is why they live in the
-       * dictionary rather than being counted off TRIALS.
+       * R&D+I, and under it the figures the client wants read from across the room
+       * (briefings of 2026-09-13 and 2026-09-18). They are reach figures for the group,
+       * not the Moroccan trial count the R&D page documents — which is why they live in
+       * the dictionary rather than being counted off TRIALS.
+       *
+       * The two dates read as sentences — "Présent au Maroc depuis 2001" — so their
+       * label comes before the number; a count reads number first.
        */}
       <section className="section">
         <div className="page">
@@ -142,8 +149,9 @@ export default function HomeView({ locale }: { locale: Locale }) {
                 <span className={s.statIcon} aria-hidden="true">
                   {STAT_ICONS[i]}
                 </span>
+                {stat.labelFirst && <p className={`${s.statLabel} ${s.statLabelFirst}`}>{stat.label}</p>}
                 <p className={s.statNumber}>{stat.value}</p>
-                <p className={s.statLabel}>{stat.label}</p>
+                {!stat.labelFirst && <p className={s.statLabel}>{stat.label}</p>}
               </Reveal>
             ))}
           </div>

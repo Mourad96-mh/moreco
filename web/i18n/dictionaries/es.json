@@ -17,8 +17,8 @@
     "applications": "Aplicaciones de los productos",
     "knowledge": "Centro de conocimiento",
     "trials": "Resultados de ensayos",
-    "silicon": "La importancia del silicio",
-    "publications": "Publicaciones científicas",
+    "innovation": "Innovación",
+    "publications": "Publicación científica",
     "newsList": "Actualidad",
     "mediaKit": "Dosieres de prensa y eventos",
     "aboutMoreco": "Más sobre Moreco",
@@ -48,7 +48,6 @@
       }
     ],
     "introClose": "Al garantizar una cosecha sana con un valor nutricional más elevado y una vida útil prolongada, ayudamos a los productores a situar su propia marca en lo más alto del mercado. Esta filosofía sigue guiando nuestro trabajo hasta hoy.",
-    "filmCaption": "Moreco | La innovación para su cultivo",
     "segmentsTitle": "Nuestros campos de aplicación",
     "rdiTitle": "R&D + I",
     "rdiText": "Ensayos en condiciones reales, parcela testigo frente a parcela tratada, en la misma explotación y la misma temporada. Las campañas documentadas en Marruecos van de Midelt a Larache: manzano, fresa, tomate, cítricos, trigo, olivo.",
@@ -56,15 +55,23 @@
     "stats": [
       {
         "value": "215",
-        "label": "Campañas de ensayo en el mundo"
+        "label": "Campañas de ensayo en el mundo",
+        "labelFirst": false
       },
       {
-        "value": "450.000",
-        "label": "Agricultores en todo el mundo"
+        "value": "24.000",
+        "label": "Agricultores en todo el mundo",
+        "labelFirst": false
       },
       {
         "value": "2001",
-        "label": "Presentes en Agadir desde"
+        "label": "Presentes en Marruecos desde",
+        "labelFirst": true
+      },
+      {
+        "value": "2001",
+        "label": "Presentes en Agadir desde",
+        "labelFirst": true
       }
     ],
     "quoteTitle": "¿Tiene una necesidad concreta? Pida su presupuesto",
@@ -94,15 +101,20 @@
     }
   },
   "families": {
-    "nutrients": "Nutrientes especiales",
+    "specialties": "Especialidades",
     "soil": "Salud del suelo y de las raíces",
     "biostimulants": "Oligoelementos y bioestimulantes",
     "protection": "Protección biológica",
     "disinfectant": "Desinfectante",
     "poultry": "Aves de corral",
     "pets": "Animales de compañía",
-    "equine": "Équidos",
+    "equine": "Caballos",
     "cattle": "Bovinos"
+  },
+  "familyNotes": {
+    "specialties": [],
+    "biostimulants": [],
+    "npk": []
   },
   "product": {
     "ranges": "Gamas",
@@ -125,7 +137,8 @@
     "sds": "Descargar la ficha de datos de seguridad",
     "relatedTitle": "Otros productos de la gama",
     "noCopy": "Ficha detallada en preparación. Contáctenos para cualquier información técnica.",
-    "chooseCategory": "Elija una categoría para ver los productos."
+    "chooseCategory": "Elija una categoría para ver los productos.",
+    "learnMore": "Más información"
   },
   "rdi": {
     "title": "Investigación y Desarrollo Moreco",
@@ -152,7 +165,7 @@
     "statTrials": "Campañas documentadas en Marruecos",
     "statPlates": "Láminas de resultados",
     "statSince": "Primera campaña",
-    "publicationsIntro": "Los estudios revisados por pares en los que se basan nuestras formulaciones, de descarga libre."
+    "publicationsIntro": "Los estudios y la entrevista científica en los que se basan nuestras formulaciones, de descarga libre."
   },
   "article": {
     "download": "Descargar el estudio",
@@ -173,7 +186,19 @@
   },
   "contact": {
     "mobile": "Móvil",
-    "formTitle": "Escríbanos"
+    "formTitle": "Escríbanos",
+    "hoursTitle": "Horario de apertura",
+    "hours": [
+      {
+        "days": "Lunes – Viernes",
+        "time": "08:00 – 18:00"
+      },
+      {
+        "days": "Sábado",
+        "time": "08:00 – 13:00"
+      }
+    ],
+    "followUs": "Síganos"
   },
   "quote": {
     "title": "Solicitud de presupuesto",
