@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import type { Locale } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionary';
-import { productCopy, productImage, productName, type Product } from '@/data/products';
+import { getRange, productCopy, productImage, productName, type Product } from '@/data/products';
 import { productHref } from '@/data/routes';
 import AddToQuote from '@/components/Quote/AddToQuote';
 import s from './ProductCard.module.css';
@@ -19,6 +19,8 @@ export default function ProductCard({ product, locale }: { product: Product; loc
   const t = getDictionary(locale);
   const copy = productCopy(product.slug, locale);
   const image = productImage(product.slug);
+  /* Until its pack shot arrives, a product shows its range's brand mark. */
+  const placeholder = image ? null : getRange(product.range)?.brandMark;
 
   return (
     <article
@@ -35,6 +37,7 @@ export default function ProductCard({ product, locale }: { product: Product; loc
             className={s.img}
           />
         )}
+        {placeholder && <Image src={placeholder} alt="" fill sizes="300px" className={s.placeholder} />}
       </Link>
 
       <div className={s.body}>

@@ -21,13 +21,20 @@
   position: relative;
   display: block;
   aspect-ratio: 4 / 3;
-  background: var(--paper-2);
+  /* White, to meet the white ground of the pack shots (client, 2026-09-22). */
+  background: var(--paper);
   border-bottom: 1px solid var(--line);
 }
 
 .img {
   object-fit: contain;
   padding: 1.1rem;
+}
+
+.placeholder {
+  object-fit: contain;
+  padding: 22% 28%;
+  opacity: 0.5;
 }
 
 .body {

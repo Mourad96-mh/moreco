@@ -626,211 +626,2243 @@
   },
   "orthagrow-initio": {
     "fr": {
-      "claim": "NPK 14-48-0 + oligo-éléments — formulation soluble dans l’eau.",
-      "paragraphs": [],
-      "advantages": [],
+      "claim": "ORTHAGROW INITIO-4G NPK 14-48-0 + TE - Powered by OSA est un mélange breveté de nutriments essentiels pour les plantes (azote et phosphore), enrichi en oligo-éléments et en silicium.",
+      "paragraphs": [
+        "La formule est « Powered by OSA » (Orthosilicic Acid / acide orthosilicique). Le rapport NPK est idéal pour une application au début de la phase de croissance végétative de la culture."
+      ],
+      "advantages": [
+        "Démarrage rapide : active la croissance végétative initiale, la ramification et le développement foliaire de la plante.",
+        "Métabolisme : le soufre stimule les processus métaboliques de la plante.",
+        "Régulation physiologique : les oligo-éléments régulent les processus physiologiques essentiels de la culture."
+      ],
       "sizes": [
         "1 kg"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Spécifications du produit"
+        },
+        {
+          "type": "subheading",
+          "text": "Propriétés physiques & chimiques"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Paramètre",
+            "Spécification"
+          ],
+          "rows": [
+            [
+              "Type de formulation",
+              "Poudre soluble dans l’eau (Water Soluble Powder)"
+            ],
+            [
+              "Aspect",
+              "Poudre hygroscopique (Hygroscopic Powder)"
+            ],
+            [
+              "pH (solution à 1 %)",
+              "4,0 - 6,0"
+            ],
+            [
+              "Solubilité (5 % min.)",
+              "Solution claire (Clear Solution)"
+            ],
+            [
+              "Densité apparente (g/ml)",
+              "0,80 - 1,12"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Composition"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Composant",
+            "Spécification (%, min.)"
+          ],
+          "rows": [
+            [
+              "Azote total (N)",
+              "14,0"
+            ],
+            [
+              "Phosphore (P₂O₅)",
+              "48,0"
+            ],
+            [
+              "Potassium soluble (K₂O)",
+              "0,0"
+            ],
+            [
+              "Soufre (S)",
+              "4,0"
+            ],
+            [
+              "Silicium soluble [Si(OH)₄]",
+              "0,05"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Statut réglementaire (pays d’origine) : conforme aux directives de la FCO relatives aux « Complex Fertilizers »."
+        },
+        {
+          "type": "heading",
+          "text": "Application & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Domaine d’application : spécialement développé pour les applications en agriculture.",
+            "Cultures concernées : convient à toutes les catégories de cultures."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Méthodes d’application & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Pulvérisation foliaire (Foliar sprays) : 1,25 kg par hectare et par application.",
+            "Fertigation : 5,0 à 7,5 kg par hectare et par application."
+          ]
+        }
       ]
     },
     "en": {
-      "claim": "NPK 14-48-0 + trace elements — water soluble formulation.",
-      "paragraphs": [],
-      "advantages": [],
+      "claim": "ORTHAGROW INITIO-4G NPK 14-48-0 + TE - Powered by OSA is a patented blend of essential plant nutrients (nitrogen and phosphorus), enriched with trace elements and silicon.",
+      "paragraphs": [
+        "The formula is “Powered by OSA” (orthosilicic acid). Its NPK ratio is ideal for application at the start of the crop’s vegetative growth stage."
+      ],
+      "advantages": [
+        "Fast start: activates early vegetative growth, branching and leaf development.",
+        "Metabolism: sulphur stimulates the plant’s metabolic processes.",
+        "Physiological regulation: trace elements regulate the crop’s essential physiological processes."
+      ],
       "sizes": [
         "1 kg"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Product specifications"
+        },
+        {
+          "type": "subheading",
+          "text": "Physical & chemical properties"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parameter",
+            "Specification"
+          ],
+          "rows": [
+            [
+              "Formulation type",
+              "Water Soluble Powder"
+            ],
+            [
+              "Appearance",
+              "Hygroscopic Powder"
+            ],
+            [
+              "pH (1% solution)",
+              "4.0 - 6.0"
+            ],
+            [
+              "Solubility (5% min.)",
+              "Clear Solution"
+            ],
+            [
+              "Bulk density (g/ml)",
+              "0.80 - 1.12"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Composition"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Component",
+            "Specification (%, min.)"
+          ],
+          "rows": [
+            [
+              "Total nitrogen (N)",
+              "14.0"
+            ],
+            [
+              "Phosphorus (P₂O₅)",
+              "48.0"
+            ],
+            [
+              "Soluble potassium (K₂O)",
+              "0.0"
+            ],
+            [
+              "Sulphur (S)",
+              "4.0"
+            ],
+            [
+              "Soluble silicon [Si(OH)₄]",
+              "0.05"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Regulatory status (country of origin): complies with the FCO guidelines for “Complex Fertilizers”."
+        },
+        {
+          "type": "heading",
+          "text": "Application & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Field of application: specially developed for agricultural applications.",
+            "Crops: suitable for all crop categories."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Application methods & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Foliar sprays: 1.25 kg per hectare per application.",
+            "Fertigation: 5.0 to 7.5 kg per hectare per application."
+          ]
+        }
       ]
     },
     "es": {
-      "claim": "NPK 14-48-0 + oligoelementos — formulación soluble en agua.",
-      "paragraphs": [],
-      "advantages": [],
+      "claim": "ORTHAGROW INITIO-4G NPK 14-48-0 + TE - Powered by OSA es una mezcla patentada de nutrientes esenciales para las plantas (nitrógeno y fósforo), enriquecida con oligoelementos y silicio.",
+      "paragraphs": [
+        "La fórmula es «Powered by OSA» (Orthosilicic Acid / ácido ortosilícico). La relación NPK es ideal para una aplicación al inicio de la fase de crecimiento vegetativo del cultivo."
+      ],
+      "advantages": [
+        "Arranque rápido: activa el crecimiento vegetativo inicial, la ramificación y el desarrollo foliar de la planta.",
+        "Metabolismo: el azufre estimula los procesos metabólicos de la planta.",
+        "Regulación fisiológica: los oligoelementos regulan los procesos fisiológicos esenciales del cultivo."
+      ],
       "sizes": [
         "1 kg"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Especificaciones del producto"
+        },
+        {
+          "type": "subheading",
+          "text": "Propiedades físicas y químicas"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parámetro",
+            "Especificación"
+          ],
+          "rows": [
+            [
+              "Tipo de formulación",
+              "Polvo soluble en agua (Water Soluble Powder)"
+            ],
+            [
+              "Aspecto",
+              "Polvo higroscópico (Hygroscopic Powder)"
+            ],
+            [
+              "pH (solución al 1 %)",
+              "4,0 - 6,0"
+            ],
+            [
+              "Solubilidad (5 % mín.)",
+              "Solución clara (Clear Solution)"
+            ],
+            [
+              "Densidad aparente (g/ml)",
+              "0,80 - 1,12"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Composición"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Componente",
+            "Especificación (%, mín.)"
+          ],
+          "rows": [
+            [
+              "Nitrógeno total (N)",
+              "14,0"
+            ],
+            [
+              "Fósforo (P₂O₅)",
+              "48,0"
+            ],
+            [
+              "Potasio soluble (K₂O)",
+              "0,0"
+            ],
+            [
+              "Azufre (S)",
+              "4,0"
+            ],
+            [
+              "Silicio soluble [Si(OH)₄]",
+              "0,05"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Estatus reglamentario (país de origen): conforme a las directrices de la FCO relativas a los «Complex Fertilizers»."
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación y dosificación"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Ámbito de aplicación: especialmente desarrollado para aplicaciones en agricultura.",
+            "Cultivos: apto para todas las categorías de cultivos."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Métodos de aplicación y dosificación"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Pulverización foliar (Foliar sprays): 1,25 kg por hectárea y por aplicación.",
+            "Fertirrigación: 5,0 a 7,5 kg por hectárea y por aplicación."
+          ]
+        }
       ]
     },
     "nl": {
-      "claim": "NPK 14-48-0 + sporenelementen — in water oplosbare formulering.",
-      "paragraphs": [],
-      "advantages": [],
+      "claim": "ORTHAGROW INITIO-4G NPK 14-48-0 + TE - Powered by OSA is een gepatenteerd mengsel van essentiële plantenvoedingsstoffen (stikstof en fosfor), verrijkt met sporenelementen en silicium.",
+      "paragraphs": [
+        "De formule is „Powered by OSA” (Orthosilicic Acid / orthokiezelzuur). De NPK-verhouding is ideaal voor toepassing aan het begin van de vegetatieve groeifase van het gewas."
+      ],
+      "advantages": [
+        "Snelle start: activeert de vroege vegetatieve groei, de vertakking en de bladontwikkeling van de plant.",
+        "Metabolisme: zwavel stimuleert de metabole processen van de plant.",
+        "Fysiologische regulatie: sporenelementen reguleren de essentiële fysiologische processen van het gewas."
+      ],
       "sizes": [
         "1 kg"
-      ]
-    },
-    "ar": {
-      "claim": "NPK 14-48-0 + عناصر صغرى — تركيبة قابلة للذوبان في الماء.",
-      "paragraphs": [],
-      "advantages": [],
-      "sizes": [
-        "1 كغ"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Productspecificaties"
+        },
+        {
+          "type": "subheading",
+          "text": "Fysische & chemische eigenschappen"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parameter",
+            "Specificatie"
+          ],
+          "rows": [
+            [
+              "Formuleringstype",
+              "In water oplosbaar poeder (Water Soluble Powder)"
+            ],
+            [
+              "Uiterlijk",
+              "Hygroscopisch poeder (Hygroscopic Powder)"
+            ],
+            [
+              "pH (1% oplossing)",
+              "4,0 - 6,0"
+            ],
+            [
+              "Oplosbaarheid (5% min.)",
+              "Heldere oplossing (Clear Solution)"
+            ],
+            [
+              "Stortdichtheid (g/ml)",
+              "0,80 - 1,12"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Samenstelling"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Component",
+            "Specificatie (%, min.)"
+          ],
+          "rows": [
+            [
+              "Totale stikstof (N)",
+              "14,0"
+            ],
+            [
+              "Fosfor (P₂O₅)",
+              "48,0"
+            ],
+            [
+              "Oplosbare kalium (K₂O)",
+              "0,0"
+            ],
+            [
+              "Zwavel (S)",
+              "4,0"
+            ],
+            [
+              "Oplosbaar silicium [Si(OH)₄]",
+              "0,05"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Wettelijke status (land van herkomst): conform de FCO-richtlijnen voor „Complex Fertilizers”."
+        },
+        {
+          "type": "heading",
+          "text": "Toepassing & dosering"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Toepassingsgebied: speciaal ontwikkeld voor toepassingen in de landbouw.",
+            "Gewassen: geschikt voor alle gewascategorieën."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Toepassingsmethoden & dosering"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Bladbespuiting (Foliar sprays): 1,25 kg per hectare per toepassing.",
+            "Fertigatie: 5,0 tot 7,5 kg per hectare per toepassing."
+          ]
+        }
       ]
     }
   },
   "orthagrow-flor": {
     "fr": {
-      "claim": "NPK 10-54-10 + oligo-éléments — formulation soluble dans l’eau.",
-      "paragraphs": [],
-      "advantages": [],
+      "claim": "ORTHAGROW FLOR-4G NPK 10-54-10 + TE - Powered by OSA est un mélange breveté de nutriments essentiels pour les plantes (azote, phosphore et potassium), enrichi en oligo-éléments et en silicium.",
+      "paragraphs": [
+        "Le rapport NPK a été spécialement conçu pour les applications durant les phases de préfloraison et de nouaison des cultures."
+      ],
+      "advantages": [
+        "Activateur de floraison : active les processus physiologiques nécessaires à une transition optimale de la phase végétative vers la phase reproductive (floraison).",
+        "Régulation physiologique : les oligo-éléments régulent les processus physiologiques essentiels de la culture.",
+        "Rapport NPK optimal : garantit une relation source-puits (source-sink relation) appropriée lors de la transition vers les phases de floraison et de fructification."
+      ],
       "sizes": [
         "1 kg"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Spécifications du produit"
+        },
+        {
+          "type": "subheading",
+          "text": "Propriétés physiques & chimiques"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Paramètre",
+            "Spécification"
+          ],
+          "rows": [
+            [
+              "Type de formulation",
+              "Poudre soluble dans l’eau (Water Soluble Powder)"
+            ],
+            [
+              "Aspect",
+              "Poudre hygroscopique (Hygroscopic Powder)"
+            ],
+            [
+              "pH (solution à 1 %)",
+              "4,0 - 6,0"
+            ],
+            [
+              "Solubilité (5 % min.)",
+              "Solution claire (Clear Solution)"
+            ],
+            [
+              "Densité apparente (g/ml)",
+              "0,90 - 1,15"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Composition"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Composant",
+            "Spécification (%, min.)"
+          ],
+          "rows": [
+            [
+              "Azote total (N)",
+              "10,0"
+            ],
+            [
+              "Phosphore (P₂O₅)",
+              "54,0"
+            ],
+            [
+              "Potassium soluble (K₂O)",
+              "10,0"
+            ],
+            [
+              "Silicium soluble [Si(OH)₄]",
+              "0,05"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Statut réglementaire (pays d’origine) : conforme aux directives de la FCO relatives aux « Complex Fertilizers »."
+        },
+        {
+          "type": "heading",
+          "text": "Application & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Domaine d’application : spécialement développé pour les applications en agriculture.",
+            "Cultures concernées : convient à toutes les catégories de cultures."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Méthodes d’application & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Pulvérisation foliaire (Foliar sprays) : 1,25 kg par hectare et par application.",
+            "Fertigation : 5,0 à 7,5 kg par hectare et par application."
+          ]
+        }
       ]
     },
     "en": {
-      "claim": "NPK 10-54-10 + trace elements — water soluble formulation.",
-      "paragraphs": [],
-      "advantages": [],
+      "claim": "ORTHAGROW FLOR-4G NPK 10-54-10 + TE - Powered by OSA is a patented blend of essential plant nutrients (nitrogen, phosphorus and potassium), enriched with trace elements and silicon.",
+      "paragraphs": [
+        "Its NPK ratio was specially designed for applications during the pre-flowering and fruit-set stages of crops."
+      ],
+      "advantages": [
+        "Flowering activator: activates the physiological processes needed for an optimal transition from the vegetative to the reproductive (flowering) stage.",
+        "Physiological regulation: trace elements regulate the crop’s essential physiological processes.",
+        "Optimal NPK ratio: ensures a proper source-sink relation during the transition to flowering and fruiting."
+      ],
       "sizes": [
         "1 kg"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Product specifications"
+        },
+        {
+          "type": "subheading",
+          "text": "Physical & chemical properties"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parameter",
+            "Specification"
+          ],
+          "rows": [
+            [
+              "Formulation type",
+              "Water Soluble Powder"
+            ],
+            [
+              "Appearance",
+              "Hygroscopic Powder"
+            ],
+            [
+              "pH (1% solution)",
+              "4.0 - 6.0"
+            ],
+            [
+              "Solubility (5% min.)",
+              "Clear Solution"
+            ],
+            [
+              "Bulk density (g/ml)",
+              "0.90 - 1.15"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Composition"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Component",
+            "Specification (%, min.)"
+          ],
+          "rows": [
+            [
+              "Total nitrogen (N)",
+              "10.0"
+            ],
+            [
+              "Phosphorus (P₂O₅)",
+              "54.0"
+            ],
+            [
+              "Soluble potassium (K₂O)",
+              "10.0"
+            ],
+            [
+              "Soluble silicon [Si(OH)₄]",
+              "0.05"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Regulatory status (country of origin): complies with the FCO guidelines for “Complex Fertilizers”."
+        },
+        {
+          "type": "heading",
+          "text": "Application & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Field of application: specially developed for agricultural applications.",
+            "Crops: suitable for all crop categories."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Application methods & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Foliar sprays: 1.25 kg per hectare per application.",
+            "Fertigation: 5.0 to 7.5 kg per hectare per application."
+          ]
+        }
       ]
     },
     "es": {
-      "claim": "NPK 10-54-10 + oligoelementos — formulación soluble en agua.",
-      "paragraphs": [],
-      "advantages": [],
+      "claim": "ORTHAGROW FLOR-4G NPK 10-54-10 + TE - Powered by OSA es una mezcla patentada de nutrientes esenciales para las plantas (nitrógeno, fósforo y potasio), enriquecida con oligoelementos y silicio.",
+      "paragraphs": [
+        "La relación NPK ha sido especialmente diseñada para las aplicaciones durante las fases de prefloración y cuajado de los cultivos."
+      ],
+      "advantages": [
+        "Activador de la floración: activa los procesos fisiológicos necesarios para una transición óptima de la fase vegetativa a la fase reproductiva (floración).",
+        "Regulación fisiológica: los oligoelementos regulan los procesos fisiológicos esenciales del cultivo.",
+        "Relación NPK óptima: garantiza una relación fuente-sumidero (source-sink relation) adecuada durante la transición hacia las fases de floración y fructificación."
+      ],
       "sizes": [
         "1 kg"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Especificaciones del producto"
+        },
+        {
+          "type": "subheading",
+          "text": "Propiedades físicas y químicas"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parámetro",
+            "Especificación"
+          ],
+          "rows": [
+            [
+              "Tipo de formulación",
+              "Polvo soluble en agua (Water Soluble Powder)"
+            ],
+            [
+              "Aspecto",
+              "Polvo higroscópico (Hygroscopic Powder)"
+            ],
+            [
+              "pH (solución al 1 %)",
+              "4,0 - 6,0"
+            ],
+            [
+              "Solubilidad (5 % mín.)",
+              "Solución clara (Clear Solution)"
+            ],
+            [
+              "Densidad aparente (g/ml)",
+              "0,90 - 1,15"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Composición"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Componente",
+            "Especificación (%, mín.)"
+          ],
+          "rows": [
+            [
+              "Nitrógeno total (N)",
+              "10,0"
+            ],
+            [
+              "Fósforo (P₂O₅)",
+              "54,0"
+            ],
+            [
+              "Potasio soluble (K₂O)",
+              "10,0"
+            ],
+            [
+              "Silicio soluble [Si(OH)₄]",
+              "0,05"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Estatus reglamentario (país de origen): conforme a las directrices de la FCO relativas a los «Complex Fertilizers»."
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación y dosificación"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Ámbito de aplicación: especialmente desarrollado para aplicaciones en agricultura.",
+            "Cultivos: apto para todas las categorías de cultivos."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Métodos de aplicación y dosificación"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Pulverización foliar (Foliar sprays): 1,25 kg por hectárea y por aplicación.",
+            "Fertirrigación: 5,0 a 7,5 kg por hectárea y por aplicación."
+          ]
+        }
       ]
     },
     "nl": {
-      "claim": "NPK 10-54-10 + sporenelementen — in water oplosbare formulering.",
-      "paragraphs": [],
-      "advantages": [],
+      "claim": "ORTHAGROW FLOR-4G NPK 10-54-10 + TE - Powered by OSA is een gepatenteerd mengsel van essentiële plantenvoedingsstoffen (stikstof, fosfor en kalium), verrijkt met sporenelementen en silicium.",
+      "paragraphs": [
+        "De NPK-verhouding is speciaal ontworpen voor toepassingen tijdens de voorbloei en de vruchtzetting van gewassen."
+      ],
+      "advantages": [
+        "Bloeiactivator: activeert de fysiologische processen die nodig zijn voor een optimale overgang van de vegetatieve naar de generatieve fase (bloei).",
+        "Fysiologische regulatie: sporenelementen reguleren de essentiële fysiologische processen van het gewas.",
+        "Optimale NPK-verhouding: zorgt voor een juiste source-sinkrelatie bij de overgang naar bloei en vruchtzetting."
+      ],
       "sizes": [
         "1 kg"
-      ]
-    },
-    "ar": {
-      "claim": "NPK 10-54-10 + عناصر صغرى — تركيبة قابلة للذوبان في الماء.",
-      "paragraphs": [],
-      "advantages": [],
-      "sizes": [
-        "1 كغ"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Productspecificaties"
+        },
+        {
+          "type": "subheading",
+          "text": "Fysische & chemische eigenschappen"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parameter",
+            "Specificatie"
+          ],
+          "rows": [
+            [
+              "Formuleringstype",
+              "In water oplosbaar poeder (Water Soluble Powder)"
+            ],
+            [
+              "Uiterlijk",
+              "Hygroscopisch poeder (Hygroscopic Powder)"
+            ],
+            [
+              "pH (1% oplossing)",
+              "4,0 - 6,0"
+            ],
+            [
+              "Oplosbaarheid (5% min.)",
+              "Heldere oplossing (Clear Solution)"
+            ],
+            [
+              "Stortdichtheid (g/ml)",
+              "0,90 - 1,15"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Samenstelling"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Component",
+            "Specificatie (%, min.)"
+          ],
+          "rows": [
+            [
+              "Totale stikstof (N)",
+              "10,0"
+            ],
+            [
+              "Fosfor (P₂O₅)",
+              "54,0"
+            ],
+            [
+              "Oplosbare kalium (K₂O)",
+              "10,0"
+            ],
+            [
+              "Oplosbaar silicium [Si(OH)₄]",
+              "0,05"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Wettelijke status (land van herkomst): conform de FCO-richtlijnen voor „Complex Fertilizers”."
+        },
+        {
+          "type": "heading",
+          "text": "Toepassing & dosering"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Toepassingsgebied: speciaal ontwikkeld voor toepassingen in de landbouw.",
+            "Gewassen: geschikt voor alle gewascategorieën."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Toepassingsmethoden & dosering"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Bladbespuiting (Foliar sprays): 1,25 kg per hectare per toepassing.",
+            "Fertigatie: 5,0 tot 7,5 kg per hectare per toepassing."
+          ]
+        }
       ]
     }
   },
   "orthagrow-frucfolia": {
     "fr": {
-      "claim": "NPK 0-42-47 + Fe 2.8 + oligo-éléments — formulation soluble dans l’eau.",
-      "paragraphs": [],
-      "advantages": [],
+      "claim": "ORTHAGROW FRUCFOLIA-4G 0-42-47 + Fe 2,8 + TE - Powered by OSA est un mélange breveté de nutriments essentiels pour les plantes (phosphore et potassium), enrichi en fer (Fe), en oligo-éléments et en silicium.",
+      "paragraphs": [
+        "Le rapport NPK est idéal pour les applications durant les phases de nouaison et de développement des fruits au cours du cycle de la culture."
+      ],
+      "advantages": [
+        "Développement des fruits : les rapports NPK optimaux favorisent la division et l’élongation cellulaires appropriées nécessaires au développement des fruits.",
+        "Optimisation énergétique : le fer joue un rôle régulateur dans l’optimisation de l’activité mitochondriale de la plante.",
+        "Réduction de la chute des fruits : cette combinaison unique réduit la chute prématurée ou tardive des fruits.",
+        "Mobilité des nutriments : la teneur élevée en potassium optimise la relation source-puits (source-sink) et le transport des produits de la photosynthèse vers les fruits en développement."
+      ],
       "sizes": [
         "1 kg"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Spécifications du produit"
+        },
+        {
+          "type": "subheading",
+          "text": "Propriétés physiques & chimiques"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Paramètre",
+            "Spécification"
+          ],
+          "rows": [
+            [
+              "Type de formulation",
+              "Poudre soluble dans l’eau (Water Soluble Powder)"
+            ],
+            [
+              "Aspect",
+              "Poudre hygroscopique (Hygroscopic Powder)"
+            ],
+            [
+              "pH (solution à 1 %)",
+              "7,0 - 9,0"
+            ],
+            [
+              "Solubilité (5 % min.)",
+              "Solution claire (Clear Solution)"
+            ],
+            [
+              "Densité (g/ml)",
+              "0,70 - 1,10"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Composition"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Composant",
+            "Spécification (%, min.)"
+          ],
+          "rows": [
+            [
+              "Azote total (N)",
+              "0,0"
+            ],
+            [
+              "Phosphore (P₂O₅)",
+              "42,0"
+            ],
+            [
+              "Potassium soluble (K₂O)",
+              "47,0"
+            ],
+            [
+              "Fer (Fe)",
+              "2,8"
+            ],
+            [
+              "Silicium soluble [Si(OH)₄]",
+              "0,05"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Statut réglementaire (pays d’origine) : conforme aux directives de la FCO relatives aux « Complex Fertilizers »."
+        },
+        {
+          "type": "heading",
+          "text": "Application & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Domaine d’application : spécialement développé pour les applications en agriculture.",
+            "Cultures concernées : convient à toutes les catégories de cultures."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Méthodes d’application & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Pulvérisation foliaire (Foliar sprays) : 1,25 kg par hectare et par application.",
+            "Fertigation : 5,0 à 7,5 kg par hectare et par application."
+          ]
+        }
       ]
     },
     "en": {
-      "claim": "NPK 0-42-47 + Fe 2.8 + trace elements — water soluble formulation.",
-      "paragraphs": [],
-      "advantages": [],
+      "claim": "ORTHAGROW FRUCFOLIA-4G 0-42-47 + Fe 2.8 + TE - Powered by OSA is a patented blend of essential plant nutrients (phosphorus and potassium), enriched with iron (Fe), trace elements and silicon.",
+      "paragraphs": [
+        "Its NPK ratio is ideal for applications during fruit set and fruit development in the crop cycle."
+      ],
+      "advantages": [
+        "Fruit development: the optimal NPK ratios support the proper cell division and elongation that fruit development requires.",
+        "Energy optimisation: iron plays a regulating role in optimising the plant’s mitochondrial activity.",
+        "Less fruit drop: this unique combination reduces early or late fruit drop.",
+        "Nutrient mobility: the high potassium content optimises the source-sink relationship and the transport of photosynthesis products to the developing fruit."
+      ],
       "sizes": [
         "1 kg"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Product specifications"
+        },
+        {
+          "type": "subheading",
+          "text": "Physical & chemical properties"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parameter",
+            "Specification"
+          ],
+          "rows": [
+            [
+              "Formulation type",
+              "Water Soluble Powder"
+            ],
+            [
+              "Appearance",
+              "Hygroscopic Powder"
+            ],
+            [
+              "pH (1% solution)",
+              "7.0 - 9.0"
+            ],
+            [
+              "Solubility (5% min.)",
+              "Clear Solution"
+            ],
+            [
+              "Density (g/ml)",
+              "0.70 - 1.10"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Composition"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Component",
+            "Specification (%, min.)"
+          ],
+          "rows": [
+            [
+              "Total nitrogen (N)",
+              "0.0"
+            ],
+            [
+              "Phosphorus (P₂O₅)",
+              "42.0"
+            ],
+            [
+              "Soluble potassium (K₂O)",
+              "47.0"
+            ],
+            [
+              "Iron (Fe)",
+              "2.8"
+            ],
+            [
+              "Soluble silicon [Si(OH)₄]",
+              "0.05"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Regulatory status (country of origin): complies with the FCO guidelines for “Complex Fertilizers”."
+        },
+        {
+          "type": "heading",
+          "text": "Application & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Field of application: specially developed for agricultural applications.",
+            "Crops: suitable for all crop categories."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Application methods & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Foliar sprays: 1.25 kg per hectare per application.",
+            "Fertigation: 5.0 to 7.5 kg per hectare per application."
+          ]
+        }
       ]
     },
     "es": {
-      "claim": "NPK 0-42-47 + Fe 2.8 + oligoelementos — formulación soluble en agua.",
-      "paragraphs": [],
-      "advantages": [],
+      "claim": "ORTHAGROW FRUCFOLIA-4G 0-42-47 + Fe 2,8 + TE - Powered by OSA es una mezcla patentada de nutrientes esenciales para las plantas (fósforo y potasio), enriquecida con hierro (Fe), oligoelementos y silicio.",
+      "paragraphs": [
+        "La relación NPK es ideal para las aplicaciones durante las fases de cuajado y desarrollo de los frutos a lo largo del ciclo del cultivo."
+      ],
+      "advantages": [
+        "Desarrollo de los frutos: las relaciones NPK óptimas favorecen la división y la elongación celulares adecuadas necesarias para el desarrollo de los frutos.",
+        "Optimización energética: el hierro desempeña un papel regulador en la optimización de la actividad mitocondrial de la planta.",
+        "Reducción de la caída de frutos: esta combinación única reduce la caída prematura o tardía de los frutos.",
+        "Movilidad de nutrientes: el alto contenido de potasio optimiza la relación fuente-sumidero (source-sink) y el transporte de los productos de la fotosíntesis hacia los frutos en desarrollo."
+      ],
       "sizes": [
         "1 kg"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Especificaciones del producto"
+        },
+        {
+          "type": "subheading",
+          "text": "Propiedades físicas y químicas"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parámetro",
+            "Especificación"
+          ],
+          "rows": [
+            [
+              "Tipo de formulación",
+              "Polvo soluble en agua (Water Soluble Powder)"
+            ],
+            [
+              "Aspecto",
+              "Polvo higroscópico (Hygroscopic Powder)"
+            ],
+            [
+              "pH (solución al 1 %)",
+              "7,0 - 9,0"
+            ],
+            [
+              "Solubilidad (5 % mín.)",
+              "Solución clara (Clear Solution)"
+            ],
+            [
+              "Densidad (g/ml)",
+              "0,70 - 1,10"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Composición"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Componente",
+            "Especificación (%, mín.)"
+          ],
+          "rows": [
+            [
+              "Nitrógeno total (N)",
+              "0,0"
+            ],
+            [
+              "Fósforo (P₂O₅)",
+              "42,0"
+            ],
+            [
+              "Potasio soluble (K₂O)",
+              "47,0"
+            ],
+            [
+              "Hierro (Fe)",
+              "2,8"
+            ],
+            [
+              "Silicio soluble [Si(OH)₄]",
+              "0,05"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Estatus reglamentario (país de origen): conforme a las directrices de la FCO relativas a los «Complex Fertilizers»."
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación y dosificación"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Ámbito de aplicación: especialmente desarrollado para aplicaciones en agricultura.",
+            "Cultivos: apto para todas las categorías de cultivos."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Métodos de aplicación y dosificación"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Pulverización foliar (Foliar sprays): 1,25 kg por hectárea y por aplicación.",
+            "Fertirrigación: 5,0 a 7,5 kg por hectárea y por aplicación."
+          ]
+        }
       ]
     },
     "nl": {
-      "claim": "NPK 0-42-47 + Fe 2.8 + sporenelementen — in water oplosbare formulering.",
-      "paragraphs": [],
-      "advantages": [],
+      "claim": "ORTHAGROW FRUCFOLIA-4G 0-42-47 + Fe 2,8 + TE - Powered by OSA is een gepatenteerd mengsel van essentiële plantenvoedingsstoffen (fosfor en kalium), verrijkt met ijzer (Fe), sporenelementen en silicium.",
+      "paragraphs": [
+        "De NPK-verhouding is ideaal voor toepassingen tijdens vruchtzetting en vruchtontwikkeling in de teeltcyclus."
+      ],
+      "advantages": [
+        "Vruchtontwikkeling: de optimale NPK-verhoudingen bevorderen de juiste celdeling en celstrekking die nodig zijn voor de vruchtontwikkeling.",
+        "Energieoptimalisatie: ijzer speelt een regulerende rol bij het optimaliseren van de mitochondriale activiteit van de plant.",
+        "Minder vruchtval: deze unieke combinatie vermindert vroegtijdige of late vruchtval.",
+        "Mobiliteit van voedingsstoffen: het hoge kaliumgehalte optimaliseert de source-sinkrelatie en het transport van fotosyntheseproducten naar de zich ontwikkelende vruchten."
+      ],
       "sizes": [
         "1 kg"
-      ]
-    },
-    "ar": {
-      "claim": "NPK 0-42-47 + Fe 2.8 + عناصر صغرى — تركيبة قابلة للذوبان في الماء.",
-      "paragraphs": [],
-      "advantages": [],
-      "sizes": [
-        "1 كغ"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Productspecificaties"
+        },
+        {
+          "type": "subheading",
+          "text": "Fysische & chemische eigenschappen"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parameter",
+            "Specificatie"
+          ],
+          "rows": [
+            [
+              "Formuleringstype",
+              "In water oplosbaar poeder (Water Soluble Powder)"
+            ],
+            [
+              "Uiterlijk",
+              "Hygroscopisch poeder (Hygroscopic Powder)"
+            ],
+            [
+              "pH (1% oplossing)",
+              "7,0 - 9,0"
+            ],
+            [
+              "Oplosbaarheid (5% min.)",
+              "Heldere oplossing (Clear Solution)"
+            ],
+            [
+              "Dichtheid (g/ml)",
+              "0,70 - 1,10"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Samenstelling"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Component",
+            "Specificatie (%, min.)"
+          ],
+          "rows": [
+            [
+              "Totale stikstof (N)",
+              "0,0"
+            ],
+            [
+              "Fosfor (P₂O₅)",
+              "42,0"
+            ],
+            [
+              "Oplosbare kalium (K₂O)",
+              "47,0"
+            ],
+            [
+              "IJzer (Fe)",
+              "2,8"
+            ],
+            [
+              "Oplosbaar silicium [Si(OH)₄]",
+              "0,05"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Wettelijke status (land van herkomst): conform de FCO-richtlijnen voor „Complex Fertilizers”."
+        },
+        {
+          "type": "heading",
+          "text": "Toepassing & dosering"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Toepassingsgebied: speciaal ontwikkeld voor toepassingen in de landbouw.",
+            "Gewassen: geschikt voor alle gewascategorieën."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Toepassingsmethoden & dosering"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Bladbespuiting (Foliar sprays): 1,25 kg per hectare per toepassing.",
+            "Fertigatie: 5,0 tot 7,5 kg per hectare per toepassing."
+          ]
+        }
       ]
     }
   },
   "orthagrow-frucferti": {
     "fr": {
-      "claim": "NPK 0-48-47 + oligo-éléments — formulation soluble dans l’eau.",
-      "paragraphs": [],
-      "advantages": [],
+      "claim": "ORTHAGROW FRUCFERTI-4G 0-48-47 + TE - Powered by OSA est un mélange breveté de nutriments essentiels pour les plantes (phosphore et potassium), enrichi en oligo-éléments et en silicium.",
+      "paragraphs": [
+        "Le rapport NPK est idéal pour les applications durant les phases de nouaison et de développement des fruits au cours du cycle de la culture."
+      ],
+      "advantages": [
+        "Développement des fruits : les rapports NPK optimaux favorisent la division et l’élongation cellulaires appropriées nécessaires au développement des fruits.",
+        "Réduction de la chute des fruits : cette combinaison unique réduit la chute prématurée ou tardive des fruits.",
+        "Mobilité des nutriments : la teneur élevée en potassium optimise la relation source-puits (source-sink) ainsi que le transport des produits de la photosynthèse vers les fruits en développement."
+      ],
       "sizes": [
         "1 kg"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Spécifications du produit"
+        },
+        {
+          "type": "subheading",
+          "text": "Propriétés physiques & chimiques"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Paramètre",
+            "Spécification"
+          ],
+          "rows": [
+            [
+              "Type de formulation",
+              "Poudre soluble dans l’eau (Water Soluble Powder)"
+            ],
+            [
+              "Aspect",
+              "Poudre hygroscopique (Hygroscopic Powder)"
+            ],
+            [
+              "pH (solution à 1 %)",
+              "6,0 - 8,0"
+            ],
+            [
+              "Solubilité (5 % min.)",
+              "Solution claire (Clear Solution)"
+            ],
+            [
+              "Densité apparente (g/ml)",
+              "0,80 - 1,10"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Composition"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Composant",
+            "Spécification (%, min.)"
+          ],
+          "rows": [
+            [
+              "Azote total (N)",
+              "0,0"
+            ],
+            [
+              "Phosphore (P₂O₅)",
+              "48,0"
+            ],
+            [
+              "Potassium soluble (K₂O)",
+              "47,0"
+            ],
+            [
+              "Silicium soluble [Si(OH)₄]",
+              "0,05"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Statut réglementaire (pays d’origine) : conforme aux directives de la FCO relatives aux « Complex Fertilizers »."
+        },
+        {
+          "type": "heading",
+          "text": "Application & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Domaine d’application : spécialement développé pour les applications en agriculture.",
+            "Cultures concernées : convient à toutes les catégories de cultures."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Méthodes d’application & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Pulvérisation foliaire (Foliar sprays) : 1,25 kg par hectare et par application.",
+            "Fertigation : 5,0 à 7,5 kg par hectare et par application."
+          ]
+        }
       ]
     },
     "en": {
-      "claim": "NPK 0-48-47 + trace elements — water soluble formulation.",
-      "paragraphs": [],
-      "advantages": [],
+      "claim": "ORTHAGROW FRUCFERTI-4G 0-48-47 + TE - Powered by OSA is a patented blend of essential plant nutrients (phosphorus and potassium), enriched with trace elements and silicon.",
+      "paragraphs": [
+        "Its NPK ratio is ideal for applications during fruit set and fruit development in the crop cycle."
+      ],
+      "advantages": [
+        "Fruit development: the optimal NPK ratios support the proper cell division and elongation that fruit development requires.",
+        "Less fruit drop: this unique combination reduces early or late fruit drop.",
+        "Nutrient mobility: the high potassium content optimises the source-sink relationship as well as the transport of photosynthesis products to the developing fruit."
+      ],
       "sizes": [
         "1 kg"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Product specifications"
+        },
+        {
+          "type": "subheading",
+          "text": "Physical & chemical properties"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parameter",
+            "Specification"
+          ],
+          "rows": [
+            [
+              "Formulation type",
+              "Water Soluble Powder"
+            ],
+            [
+              "Appearance",
+              "Hygroscopic Powder"
+            ],
+            [
+              "pH (1% solution)",
+              "6.0 - 8.0"
+            ],
+            [
+              "Solubility (5% min.)",
+              "Clear Solution"
+            ],
+            [
+              "Bulk density (g/ml)",
+              "0.80 - 1.10"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Composition"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Component",
+            "Specification (%, min.)"
+          ],
+          "rows": [
+            [
+              "Total nitrogen (N)",
+              "0.0"
+            ],
+            [
+              "Phosphorus (P₂O₅)",
+              "48.0"
+            ],
+            [
+              "Soluble potassium (K₂O)",
+              "47.0"
+            ],
+            [
+              "Soluble silicon [Si(OH)₄]",
+              "0.05"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Regulatory status (country of origin): complies with the FCO guidelines for “Complex Fertilizers”."
+        },
+        {
+          "type": "heading",
+          "text": "Application & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Field of application: specially developed for agricultural applications.",
+            "Crops: suitable for all crop categories."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Application methods & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Foliar sprays: 1.25 kg per hectare per application.",
+            "Fertigation: 5.0 to 7.5 kg per hectare per application."
+          ]
+        }
       ]
     },
     "es": {
-      "claim": "NPK 0-48-47 + oligoelementos — formulación soluble en agua.",
-      "paragraphs": [],
-      "advantages": [],
+      "claim": "ORTHAGROW FRUCFERTI-4G 0-48-47 + TE - Powered by OSA es una mezcla patentada de nutrientes esenciales para las plantas (fósforo y potasio), enriquecida con oligoelementos y silicio.",
+      "paragraphs": [
+        "La relación NPK es ideal para las aplicaciones durante las fases de cuajado y desarrollo de los frutos a lo largo del ciclo del cultivo."
+      ],
+      "advantages": [
+        "Desarrollo de los frutos: las relaciones NPK óptimas favorecen la división y la elongación celulares adecuadas necesarias para el desarrollo de los frutos.",
+        "Reducción de la caída de frutos: esta combinación única reduce la caída prematura o tardía de los frutos.",
+        "Movilidad de nutrientes: el alto contenido de potasio optimiza la relación fuente-sumidero (source-sink), así como el transporte de los productos de la fotosíntesis hacia los frutos en desarrollo."
+      ],
       "sizes": [
         "1 kg"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Especificaciones del producto"
+        },
+        {
+          "type": "subheading",
+          "text": "Propiedades físicas y químicas"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parámetro",
+            "Especificación"
+          ],
+          "rows": [
+            [
+              "Tipo de formulación",
+              "Polvo soluble en agua (Water Soluble Powder)"
+            ],
+            [
+              "Aspecto",
+              "Polvo higroscópico (Hygroscopic Powder)"
+            ],
+            [
+              "pH (solución al 1 %)",
+              "6,0 - 8,0"
+            ],
+            [
+              "Solubilidad (5 % mín.)",
+              "Solución clara (Clear Solution)"
+            ],
+            [
+              "Densidad aparente (g/ml)",
+              "0,80 - 1,10"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Composición"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Componente",
+            "Especificación (%, mín.)"
+          ],
+          "rows": [
+            [
+              "Nitrógeno total (N)",
+              "0,0"
+            ],
+            [
+              "Fósforo (P₂O₅)",
+              "48,0"
+            ],
+            [
+              "Potasio soluble (K₂O)",
+              "47,0"
+            ],
+            [
+              "Silicio soluble [Si(OH)₄]",
+              "0,05"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Estatus reglamentario (país de origen): conforme a las directrices de la FCO relativas a los «Complex Fertilizers»."
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación y dosificación"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Ámbito de aplicación: especialmente desarrollado para aplicaciones en agricultura.",
+            "Cultivos: apto para todas las categorías de cultivos."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Métodos de aplicación y dosificación"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Pulverización foliar (Foliar sprays): 1,25 kg por hectárea y por aplicación.",
+            "Fertirrigación: 5,0 a 7,5 kg por hectárea y por aplicación."
+          ]
+        }
       ]
     },
     "nl": {
-      "claim": "NPK 0-48-47 + sporenelementen — in water oplosbare formulering.",
-      "paragraphs": [],
-      "advantages": [],
+      "claim": "ORTHAGROW FRUCFERTI-4G 0-48-47 + TE - Powered by OSA is een gepatenteerd mengsel van essentiële plantenvoedingsstoffen (fosfor en kalium), verrijkt met sporenelementen en silicium.",
+      "paragraphs": [
+        "De NPK-verhouding is ideaal voor toepassingen tijdens vruchtzetting en vruchtontwikkeling in de teeltcyclus."
+      ],
+      "advantages": [
+        "Vruchtontwikkeling: de optimale NPK-verhoudingen bevorderen de juiste celdeling en celstrekking die nodig zijn voor de vruchtontwikkeling.",
+        "Minder vruchtval: deze unieke combinatie vermindert vroegtijdige of late vruchtval.",
+        "Mobiliteit van voedingsstoffen: het hoge kaliumgehalte optimaliseert de source-sinkrelatie en het transport van fotosyntheseproducten naar de zich ontwikkelende vruchten."
+      ],
       "sizes": [
         "1 kg"
-      ]
-    },
-    "ar": {
-      "claim": "NPK 0-48-47 + عناصر صغرى — تركيبة قابلة للذوبان في الماء.",
-      "paragraphs": [],
-      "advantages": [],
-      "sizes": [
-        "1 كغ"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Productspecificaties"
+        },
+        {
+          "type": "subheading",
+          "text": "Fysische & chemische eigenschappen"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parameter",
+            "Specificatie"
+          ],
+          "rows": [
+            [
+              "Formuleringstype",
+              "In water oplosbaar poeder (Water Soluble Powder)"
+            ],
+            [
+              "Uiterlijk",
+              "Hygroscopisch poeder (Hygroscopic Powder)"
+            ],
+            [
+              "pH (1% oplossing)",
+              "6,0 - 8,0"
+            ],
+            [
+              "Oplosbaarheid (5% min.)",
+              "Heldere oplossing (Clear Solution)"
+            ],
+            [
+              "Stortdichtheid (g/ml)",
+              "0,80 - 1,10"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Samenstelling"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Component",
+            "Specificatie (%, min.)"
+          ],
+          "rows": [
+            [
+              "Totale stikstof (N)",
+              "0,0"
+            ],
+            [
+              "Fosfor (P₂O₅)",
+              "48,0"
+            ],
+            [
+              "Oplosbare kalium (K₂O)",
+              "47,0"
+            ],
+            [
+              "Oplosbaar silicium [Si(OH)₄]",
+              "0,05"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Wettelijke status (land van herkomst): conform de FCO-richtlijnen voor „Complex Fertilizers”."
+        },
+        {
+          "type": "heading",
+          "text": "Toepassing & dosering"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Toepassingsgebied: speciaal ontwikkeld voor toepassingen in de landbouw.",
+            "Gewassen: geschikt voor alle gewascategorieën."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Toepassingsmethoden & dosering"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Bladbespuiting (Foliar sprays): 1,25 kg per hectare per toepassing.",
+            "Fertigatie: 5,0 tot 7,5 kg per hectare per toepassing."
+          ]
+        }
       ]
     }
   },
   "orthagrow-matur": {
     "fr": {
-      "claim": "NPK 0-9-46 + oligo-éléments — formulation soluble dans l’eau.",
-      "paragraphs": [],
-      "advantages": [],
+      "claim": "ORTHAGROW MATUR-4G 0-9-46 + TE - Powered by OSA est un mélange breveté de nutriments essentiels pour les plantes (phosphore et potassium), enrichi en oligo-éléments et en silicium.",
+      "paragraphs": [
+        "Le rapport NPK est idéal pour les applications durant la phase de maturation de toutes les cultures horticoles afin d’accélérer et d’homogénéiser la maturation."
+      ],
+      "advantages": [
+        "Accélérateur de maturation : active et stimule le processus de maturation des fruits durant la phase de prématuration, juste avant la maturation.",
+        "Déclencheur physiologique : les oligo-éléments activent les principaux processus physiologiques et métaboliques de la plante.",
+        "Développement optimal des fruits : la très forte teneur en potassium contribue à une qualité optimale des fruits en :"
+      ],
       "sizes": [
         "1 kg"
+      ],
+      "sections": [
+        {
+          "type": "list",
+          "items": [
+            "maintenant parfaitement la pression de turgescence (pression cellulaire) des fruits ;",
+            "jouant un rôle clé dans la stimulation de la conversion de l’amidon en sucres ;",
+            "optimisant pleinement le rapport sucre-acidité ;",
+            "renforçant la paroi cellulaire, ce qui réduit considérablement la perte d’eau des fruits et légumes."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Spécifications du produit"
+        },
+        {
+          "type": "subheading",
+          "text": "Propriétés physiques & chimiques"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Paramètre",
+            "Spécification"
+          ],
+          "rows": [
+            [
+              "Type de formulation",
+              "Poudre soluble dans l’eau (Water Soluble Powder)"
+            ],
+            [
+              "Aspect",
+              "Poudre hygroscopique (Hygroscopic Powder)"
+            ],
+            [
+              "pH (solution à 1 %)",
+              "2,0 - 3,0"
+            ],
+            [
+              "Solubilité (5 % min.)",
+              "Solution claire (Clear Solution)"
+            ],
+            [
+              "Densité (g/ml)",
+              "1,20 - 1,30"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Composition"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Composant",
+            "Spécification (%, min.)"
+          ],
+          "rows": [
+            [
+              "Azote total (N)",
+              "0,0"
+            ],
+            [
+              "Phosphore (P₂O₅)",
+              "9,0"
+            ],
+            [
+              "Potassium soluble (K₂O)",
+              "46,0"
+            ],
+            [
+              "Silicium soluble [Si(OH)₄]",
+              "0,05"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Statut réglementaire (pays d’origine) : conforme aux directives de la FCO relatives aux « Complex Fertilizers »."
+        },
+        {
+          "type": "heading",
+          "text": "Application & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Domaine d’application : spécialement développé pour les applications en agriculture et en horticulture.",
+            "Cultures concernées : convient à toutes les catégories de cultures."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Méthodes d’application & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Pulvérisation foliaire (Foliar sprays) : 1,25 kg par hectare et par application.",
+            "Fertigation : 5,0 à 7,5 kg par hectare et par application."
+          ]
+        }
       ]
     },
     "en": {
-      "claim": "NPK 0-9-46 + trace elements — water soluble formulation.",
-      "paragraphs": [],
-      "advantages": [],
+      "claim": "ORTHAGROW MATUR-4G 0-9-46 + TE - Powered by OSA is a patented blend of essential plant nutrients (phosphorus and potassium), enriched with trace elements and silicon.",
+      "paragraphs": [
+        "Its NPK ratio is ideal for applications during the ripening stage of all horticultural crops, to speed up ripening and make it more even."
+      ],
+      "advantages": [
+        "Ripening accelerator: activates and stimulates fruit ripening during the pre-ripening stage, just before ripening.",
+        "Physiological trigger: trace elements activate the plant’s main physiological and metabolic processes.",
+        "Optimal fruit development: the very high potassium content contributes to optimal fruit quality by:"
+      ],
       "sizes": [
         "1 kg"
+      ],
+      "sections": [
+        {
+          "type": "list",
+          "items": [
+            "keeping the fruit’s turgor pressure (cell pressure) perfectly maintained;",
+            "playing a key role in stimulating the conversion of starch into sugars;",
+            "fully optimising the sugar-acid ratio;",
+            "strengthening the cell wall, which considerably reduces water loss from fruit and vegetables."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Product specifications"
+        },
+        {
+          "type": "subheading",
+          "text": "Physical & chemical properties"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parameter",
+            "Specification"
+          ],
+          "rows": [
+            [
+              "Formulation type",
+              "Water Soluble Powder"
+            ],
+            [
+              "Appearance",
+              "Hygroscopic Powder"
+            ],
+            [
+              "pH (1% solution)",
+              "2.0 - 3.0"
+            ],
+            [
+              "Solubility (5% min.)",
+              "Clear Solution"
+            ],
+            [
+              "Density (g/ml)",
+              "1.20 - 1.30"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Composition"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Component",
+            "Specification (%, min.)"
+          ],
+          "rows": [
+            [
+              "Total nitrogen (N)",
+              "0.0"
+            ],
+            [
+              "Phosphorus (P₂O₅)",
+              "9.0"
+            ],
+            [
+              "Soluble potassium (K₂O)",
+              "46.0"
+            ],
+            [
+              "Soluble silicon [Si(OH)₄]",
+              "0.05"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Regulatory status (country of origin): complies with the FCO guidelines for “Complex Fertilizers”."
+        },
+        {
+          "type": "heading",
+          "text": "Application & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Field of application: specially developed for applications in agriculture and horticulture.",
+            "Crops: suitable for all crop categories."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Application methods & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Foliar sprays: 1.25 kg per hectare per application.",
+            "Fertigation: 5.0 to 7.5 kg per hectare per application."
+          ]
+        }
       ]
     },
     "es": {
-      "claim": "NPK 0-9-46 + oligoelementos — formulación soluble en agua.",
-      "paragraphs": [],
-      "advantages": [],
+      "claim": "ORTHAGROW MATUR-4G 0-9-46 + TE - Powered by OSA es una mezcla patentada de nutrientes esenciales para las plantas (fósforo y potasio), enriquecida con oligoelementos y silicio.",
+      "paragraphs": [
+        "La relación NPK es ideal para las aplicaciones durante la fase de maduración de todos los cultivos hortícolas, con el fin de acelerar y homogeneizar la maduración."
+      ],
+      "advantages": [
+        "Acelerador de la maduración: activa y estimula el proceso de maduración de los frutos durante la fase de premaduración, justo antes de la maduración.",
+        "Desencadenante fisiológico: los oligoelementos activan los principales procesos fisiológicos y metabólicos de la planta.",
+        "Desarrollo óptimo de los frutos: el altísimo contenido de potasio contribuye a una calidad óptima de los frutos al:"
+      ],
       "sizes": [
         "1 kg"
+      ],
+      "sections": [
+        {
+          "type": "list",
+          "items": [
+            "mantener perfectamente la presión de turgencia (presión celular) de los frutos;",
+            "desempeñar un papel clave en la estimulación de la conversión del almidón en azúcares;",
+            "optimizar plenamente la relación azúcar-acidez;",
+            "reforzar la pared celular, lo que reduce considerablemente la pérdida de agua de frutas y hortalizas."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Especificaciones del producto"
+        },
+        {
+          "type": "subheading",
+          "text": "Propiedades físicas y químicas"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parámetro",
+            "Especificación"
+          ],
+          "rows": [
+            [
+              "Tipo de formulación",
+              "Polvo soluble en agua (Water Soluble Powder)"
+            ],
+            [
+              "Aspecto",
+              "Polvo higroscópico (Hygroscopic Powder)"
+            ],
+            [
+              "pH (solución al 1 %)",
+              "2,0 - 3,0"
+            ],
+            [
+              "Solubilidad (5 % mín.)",
+              "Solución clara (Clear Solution)"
+            ],
+            [
+              "Densidad (g/ml)",
+              "1,20 - 1,30"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Composición"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Componente",
+            "Especificación (%, mín.)"
+          ],
+          "rows": [
+            [
+              "Nitrógeno total (N)",
+              "0,0"
+            ],
+            [
+              "Fósforo (P₂O₅)",
+              "9,0"
+            ],
+            [
+              "Potasio soluble (K₂O)",
+              "46,0"
+            ],
+            [
+              "Silicio soluble [Si(OH)₄]",
+              "0,05"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Estatus reglamentario (país de origen): conforme a las directrices de la FCO relativas a los «Complex Fertilizers»."
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación y dosificación"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Ámbito de aplicación: especialmente desarrollado para aplicaciones en agricultura y horticultura.",
+            "Cultivos: apto para todas las categorías de cultivos."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Métodos de aplicación y dosificación"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Pulverización foliar (Foliar sprays): 1,25 kg por hectárea y por aplicación.",
+            "Fertirrigación: 5,0 a 7,5 kg por hectárea y por aplicación."
+          ]
+        }
       ]
     },
     "nl": {
-      "claim": "NPK 0-9-46 + sporenelementen — in water oplosbare formulering.",
-      "paragraphs": [],
-      "advantages": [],
+      "claim": "ORTHAGROW MATUR-4G 0-9-46 + TE - Powered by OSA is een gepatenteerd mengsel van essentiële plantenvoedingsstoffen (fosfor en kalium), verrijkt met sporenelementen en silicium.",
+      "paragraphs": [
+        "De NPK-verhouding is ideaal voor toepassingen tijdens de rijpingsfase van alle tuinbouwgewassen, om de rijping te versnellen en gelijkmatiger te maken."
+      ],
+      "advantages": [
+        "Rijpingsversneller: activeert en stimuleert de vruchtrijping tijdens de voorrijpingsfase, vlak voor de rijping.",
+        "Fysiologische trigger: sporenelementen activeren de belangrijkste fysiologische en metabole processen van de plant.",
+        "Optimale vruchtontwikkeling: het zeer hoge kaliumgehalte draagt bij aan een optimale vruchtkwaliteit door:"
+      ],
       "sizes": [
         "1 kg"
-      ]
-    },
-    "ar": {
-      "claim": "NPK 0-9-46 + عناصر صغرى — تركيبة قابلة للذوبان في الماء.",
-      "paragraphs": [],
-      "advantages": [],
-      "sizes": [
-        "1 كغ"
+      ],
+      "sections": [
+        {
+          "type": "list",
+          "items": [
+            "de turgordruk (celdruk) van de vruchten perfect op peil te houden;",
+            "een sleutelrol te spelen bij het stimuleren van de omzetting van zetmeel in suikers;",
+            "de suiker-zuurverhouding volledig te optimaliseren;",
+            "de celwand te versterken, wat het waterverlies van groenten en fruit aanzienlijk vermindert."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Productspecificaties"
+        },
+        {
+          "type": "subheading",
+          "text": "Fysische & chemische eigenschappen"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parameter",
+            "Specificatie"
+          ],
+          "rows": [
+            [
+              "Formuleringstype",
+              "In water oplosbaar poeder (Water Soluble Powder)"
+            ],
+            [
+              "Uiterlijk",
+              "Hygroscopisch poeder (Hygroscopic Powder)"
+            ],
+            [
+              "pH (1% oplossing)",
+              "2,0 - 3,0"
+            ],
+            [
+              "Oplosbaarheid (5% min.)",
+              "Heldere oplossing (Clear Solution)"
+            ],
+            [
+              "Dichtheid (g/ml)",
+              "1,20 - 1,30"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Samenstelling"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Component",
+            "Specificatie (%, min.)"
+          ],
+          "rows": [
+            [
+              "Totale stikstof (N)",
+              "0,0"
+            ],
+            [
+              "Fosfor (P₂O₅)",
+              "9,0"
+            ],
+            [
+              "Oplosbare kalium (K₂O)",
+              "46,0"
+            ],
+            [
+              "Oplosbaar silicium [Si(OH)₄]",
+              "0,05"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Wettelijke status (land van herkomst): conform de FCO-richtlijnen voor „Complex Fertilizers”."
+        },
+        {
+          "type": "heading",
+          "text": "Toepassing & dosering"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Toepassingsgebied: speciaal ontwikkeld voor toepassingen in land- en tuinbouw.",
+            "Gewassen: geschikt voor alle gewascategorieën."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Toepassingsmethoden & dosering"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Bladbespuiting (Foliar sprays): 1,25 kg per hectare per toepassing.",
+            "Fertigatie: 5,0 tot 7,5 kg per hectare per toepassing."
+          ]
+        }
       ]
     }
   },
@@ -923,77 +2955,151 @@
   },
   "huwa-san-agro": {
     "fr": {
-      "claim": "Une manière durable pour assurer votre croissance",
+      "claim": "Huwa-San est un désinfectant à base de peroxyde d’hydrogène stabilisé à l’argent, issu d’une technologie avancée. Il a été spécialement développé pour le nettoyage en profondeur, la désinfection et la biodégradation des systèmes hydriques, des surfaces et des environnements agricoles.",
       "paragraphs": [
-        "Votre partenaire idéal pour garder vos cultures en bonne santé et les sauver de bactéries. Huwa-San Agro est la nouvelle génération de peroxyde d’hydrogèn qui surmonte les problèmes de qualité de l’eau, tout en soutenant la santé des plantes robustes."
+        "La stabilisation brevetée à l’argent assure une action microbiologique profonde et durable, sans laisser de résidus nocifs."
       ],
       "advantages": [
-        "Désinfection de l’eau d’irrigation",
-        "Élimination du biofilm dans les systèmes d’eau (système d’arrosage, irrigation goutte à goutte, de l’eau de circulation)",
-        "Désinfection des surfaces, sols, murs et l’équipement dans l’agriculture (serres, hydroculture, la culture hydroponique, …)",
-        "Sol /désinfection de substrat",
-        "Désinfection des surfaces totales de serres par vaporisation du produit (« fogging »)"
+        "Action à large spectre : efficace contre les bactéries, les champignons, les virus, les spores et les algues.",
+        "Élimination du biofilm : décompose efficacement les biofilms existants dans les conduites et les réservoirs de stockage et prévient leur nouvelle formation.",
+        "Stabilité prolongée : grâce à sa formulation unique à base d’argent, le produit conserve son efficacité, même à des températures élevées ou pendant des périodes de stockage prolongées.",
+        "Respectueux de l’environnement : après réaction, il se décompose entièrement en eau (H₂O) et en oxygène (O₂). Il est exempt de chlore, inodore et insipide lorsqu’il est utilisé au dosage approprié."
       ],
       "sizes": [
-        "5L, 10L, 25L, 200L, 1000L"
+        "1 L",
+        "5 L",
+        "10 L",
+        "25 L",
+        "200 L",
+        "1000 L"
+      ],
+      "concentrations": [
+        "50 % uniquement (agriculture)"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Domaines d’application"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Désinfection de l’eau d’irrigation et des systèmes d’eau potable dans l’agriculture et l’élevage.",
+            "Nettoyage et désinfection des serres, locaux de stockage, outils et surfaces.",
+            "Traitement choc des systèmes hydriques afin d’éliminer immédiatement les contaminations microbiennes aiguës."
+          ]
+        }
       ]
     },
     "en": {
-      "claim": "Your perfect partner to keep your crops healthy and save them from bacteria. Huwa-San Agro is the new generation hydrogen peroxide which overcomes water quality issues while supporting robust plant health.",
-      "paragraphs": [],
+      "claim": "Huwa-San is a silver-stabilised hydrogen peroxide disinfectant based on advanced technology. It was specially developed for the deep cleaning, disinfection and biodegradation of water systems, surfaces and agricultural environments.",
+      "paragraphs": [
+        "The patented silver stabilisation ensures a deep and lasting microbiological action, without leaving harmful residues."
+      ],
       "advantages": [
-        "Irrigation water disinfection",
-        "Removal of biofilm in water systems (sprinkler system, drip irrigation, circulation water)",
-        "Disinfection of surfaces, floors, walls and equipment in agriculture (greenhouses, hydroculture, hydroponics, …)",
-        "Soil/substrate disinfection",
-        "Surface disinfection of total greenhouses through vaporization of the product (“fogging”)"
+        "Broad-spectrum action: effective against bacteria, fungi, viruses, spores and algae.",
+        "Biofilm removal: effectively breaks down existing biofilm in pipes and storage tanks and prevents it from forming again.",
+        "Long-lasting stability: thanks to its unique silver-based formulation, the product keeps its efficacy, even at high temperatures or over long storage periods.",
+        "Environmentally friendly: after reacting, it breaks down entirely into water (H₂O) and oxygen (O₂). It is chlorine-free, odourless and tasteless when used at the appropriate dosage."
       ],
       "sizes": [
-        "5L, 10L, 25L, 200L, 1000L"
+        "1 L",
+        "5 L",
+        "10 L",
+        "25 L",
+        "200 L",
+        "1000 L"
+      ],
+      "concentrations": [
+        "50% only (agriculture)"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Fields of application"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Disinfection of irrigation water and drinking-water systems in agriculture and livestock farming.",
+            "Cleaning and disinfection of greenhouses, storage rooms, tools and surfaces.",
+            "Shock treatment of water systems to eliminate acute microbial contamination immediately."
+          ]
+        }
       ]
     },
     "es": {
-      "claim": "Una manera sostenible de asegurar su crecimiento",
+      "claim": "Huwa-San es un desinfectante a base de peróxido de hidrógeno estabilizado con plata, fruto de una tecnología avanzada. Ha sido especialmente desarrollado para la limpieza profunda, la desinfección y la biodegradación de sistemas hídricos, superficies y entornos agrícolas.",
       "paragraphs": [
-        "Su aliado ideal para mantener sanos los cultivos y protegerlos de las bacterias. Huwa-San Agro es la nueva generación de peróxido de hidrógeno, que resuelve los problemas de calidad del agua a la vez que favorece plantas sanas y robustas."
+        "La estabilización patentada con plata garantiza una acción microbiológica profunda y duradera, sin dejar residuos nocivos."
       ],
       "advantages": [
-        "Desinfección del agua de riego",
-        "Eliminación del biofilm en los sistemas de agua (riego, goteo, agua de recirculación)",
-        "Desinfección de superficies, suelos, paredes y equipos agrícolas (invernaderos, hidrocultivo, cultivo hidropónico…)",
-        "Desinfección de suelos y sustratos",
-        "Desinfección de la totalidad de las superficies del invernadero por nebulización del producto («fogging»)"
+        "Acción de amplio espectro: eficaz contra bacterias, hongos, virus, esporas y algas.",
+        "Eliminación del biofilm: descompone eficazmente los biofilms existentes en las tuberías y los depósitos de almacenamiento y previene su nueva formación.",
+        "Estabilidad prolongada: gracias a su formulación única a base de plata, el producto conserva su eficacia, incluso a temperaturas elevadas o durante largos periodos de almacenamiento.",
+        "Respetuoso con el medio ambiente: tras reaccionar, se descompone por completo en agua (H₂O) y oxígeno (O₂). No contiene cloro y es inodoro e insípido cuando se utiliza en la dosis adecuada."
       ],
       "sizes": [
-        "5 L, 10 L, 25 L, 200 L, 1000 L"
+        "1 L",
+        "5 L",
+        "10 L",
+        "25 L",
+        "200 L",
+        "1000 L"
+      ],
+      "concentrations": [
+        "Solo 50 % (agricultura)"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Ámbitos de aplicación"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Desinfección del agua de riego y de los sistemas de agua potable en agricultura y ganadería.",
+            "Limpieza y desinfección de invernaderos, locales de almacenamiento, herramientas y superficies.",
+            "Tratamiento de choque de los sistemas hídricos para eliminar de inmediato las contaminaciones microbianas agudas."
+          ]
+        }
       ]
     },
     "nl": {
-      "claim": "Uw ideale partner om uw gewassen gezond te houden en te beschermen tegen bacteriën. Huwa-San Agro is het waterstofperoxide van de nieuwe generatie dat problemen met waterkwaliteit overwint en tegelijk een robuuste plantgezondheid ondersteunt.",
-      "paragraphs": [],
+      "claim": "Huwa-San is een ontsmettingsmiddel op basis van met zilver gestabiliseerd waterstofperoxide, ontwikkeld met geavanceerde technologie. Het is speciaal ontwikkeld voor het grondig reinigen, ontsmetten en biologisch afbreken in watersystemen, op oppervlakken en in agrarische omgevingen.",
+      "paragraphs": [
+        "De gepatenteerde zilverstabilisatie zorgt voor een diepgaande en langdurige microbiologische werking, zonder schadelijke residuen achter te laten."
+      ],
       "advantages": [
-        "Desinfectie van irrigatiewater",
-        "Verwijdering van biofilm in watersystemen (beregeningssystemen, druppelirrigatie, circulatiewater)",
-        "Desinfectie van oppervlakken, vloeren, wanden en materieel in de landbouw (serres, hydrocultuur, hydroponie, …)",
-        "Desinfectie van bodem en substraat",
-        "Oppervlaktedesinfectie van volledige serres door vernevelen van het product (“fogging”)"
+        "Breedspectrumwerking: werkzaam tegen bacteriën, schimmels, virussen, sporen en algen.",
+        "Verwijdering van biofilm: breekt bestaande biofilm in leidingen en opslagtanks doeltreffend af en voorkomt dat die opnieuw ontstaat.",
+        "Langdurige stabiliteit: dankzij de unieke formulering op basis van zilver blijft het product werkzaam, ook bij hoge temperaturen of na lange opslag.",
+        "Milieuvriendelijk: na de reactie valt het volledig uiteen in water (H₂O) en zuurstof (O₂). Het is chloorvrij, geurloos en smaakloos bij de juiste dosering."
       ],
       "sizes": [
-        "5 l, 10 l, 25 l, 200 l, 1000 l"
-      ]
-    },
-    "ar": {
-      "claim": "شريكك الأمثل للحفاظ على صحة محاصيلك وحمايتها من البكتيريا. Huwa-San Agro هو الجيل الجديد من بيروكسيد الهيدروجين الذي يتجاوز مشاكل جودة الماء مع دعم صحة نباتية متينة.",
-      "paragraphs": [],
-      "advantages": [
-        "تطهير مياه السقي",
-        "إزالة الغشاء الحيوي في شبكات المياه (أنظمة الرشّ، السقي بالتنقيط، مياه الدوران)",
-        "تطهير الأسطح والأرضيات والجدران والمعدات في الزراعة (الدفيئات، الزراعة المائية، الهيدروبونيك…)",
-        "تطهير التربة والركائز",
-        "تطهير سطحي للدفيئات كاملةً عبر تبخير المنتج (الضبابية)"
+        "1 L",
+        "5 L",
+        "10 L",
+        "25 L",
+        "200 L",
+        "1000 L"
       ],
-      "sizes": [
-        "5 ل، 10 ل، 25 ل، 200 ل، 1000 ل"
+      "concentrations": [
+        "Alleen 50% (landbouw)"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Toepassingsgebieden"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Ontsmetting van irrigatiewater en drinkwatersystemen in de land- en veeteelt.",
+            "Reiniging en ontsmetting van kassen, opslagruimtes, gereedschap en oppervlakken.",
+            "Shockbehandeling van watersystemen om acute microbiële besmetting onmiddellijk weg te nemen."
+          ]
+        }
       ]
     }
   },
@@ -2654,129 +4760,156 @@
   },
   "clearox": {
     "fr": {
-      "claim": "Clearox® peut être utilisé comme activateur de peroxyde d’hydrogène à diverses fins générales. Par exemple, la désinfection des surfaces de travail ainsi que pour la désinfection des animaux (par exemple déschlammage des poissons, sanatation dans l’industrie de transformation de la viande) peuvent être accomplies par ajoutant Clearox® au peroxyde d’hydrogène. Il peut également être utilisé pour la purification de l’eau en raison de l’élimination et la prévention du biofilm.",
+      "claim": "Clearox est un désinfectant à base de peroxyde d’hydrogène stabilisé à l’argent, issu d’une technologie avancée. Il a été spécialement développé pour le nettoyage en profondeur, la désinfection et la biodégradation des systèmes hydriques, des surfaces et des environnements agricoles.",
       "paragraphs": [
-        "Clearox® est basée sur l’idée d’ajouter un gel de stabilisation et d’activation de l’eau oxygénée pour assurer une réaction contrôlée du peroxyde d’hydrogène. De cette façon, très peu de produits chimiques est gaspillé et beaucoup mieux la désinfection est réalisée. C’est pourquoi Clearox® est unique et ne sont pas comparables au peroxyde d’hydrogène plus.",
-        "Les industries reconnaissent généralement le peroxyde d’hydrogène en tant que produit agissant contre un vaste éventail de micro-organismes, à excellentes propriétés virucides, qui se décompose en eau et oxygène. Toutefois, il présente un grand inconvénient: sa réaction incontrôlée quand il entre en contact avec les micro-organismes et les matières organiques- cela signifie qu’il n’est pas efficace et cause beaucoup de déchets. Clearox® résout ce problème.",
-        "Les résultats suscitent une nouvelle étape dans la désinfection: avec la dose la plus faible possible de l’efficacité la plus élevée possible.",
-        "La production hydroponique, les plantations, la préservation, la désinfection, pré-et post-récolte, etc.",
-        "Utilisant Clearox®, l’hygiène sera améliorée. Le biofilm qui est utilisé par les bactéries comme la nourriture sera supprimé efficacement. Pour cette raison le processus de production devient plus hygiénique. Le processus plus hygiénique conduira à des cultures de haute qualité.",
-        "Remarque: Une diminution significative de la maladie de la plante après l’utilisation de Clearox en irrigation / l’eau de pulvérisation a été remarquée. En outre, un développement des racines, une croissance significative de l’augmentation de la plante ainsi que la santé générale de la plante ont aussi été remarqués.",
-        "Désinfection dans les élevages de poissons, des fermes de crevettes, moules et les fermes d’huîtres, poissons et crustacés, etc."
+        "La stabilisation brevetée à l’argent assure une action microbiologique profonde et durable, sans laisser de résidus nocifs."
       ],
       "advantages": [
-        "La norme Clearox ® est basée sur 35% de peroxyde d’hydrogène – nous pouvons produire une dilution comprise entre 0,5 et 35% à la demande.",
-        "Est entièrement composé d’ingrédients alimentaires sûrs.",
-        "Formé d’un large spectre d’activité anti-microbienne, très efficace contre les bactéries, (gram positif et à gram négatif).",
-        "Il est également un virucide, efficace contre les moisissures, les levures et moisissures et même tue les spores bactériennes.",
-        "À dosage recommandé, il est non mutagène, non carcinogène, non toxique, non corrosif, non-altérant, non volatile.",
-        "Il n’a pas d’odeur, de goût ou de couleur. A une action prolongée (effet résiduel).",
-        "Très efficace contre les biofilms.",
-        "Est efficace même en présence de la matière organique.",
-        "Les micro-organismes ne peuvent pas développer une résistance contre Clearox®.",
-        "Pas affecté par les niveaux de pH et des températures allant jusqu’à 90°C."
+        "Action à large spectre : efficace contre les bactéries, les champignons, les virus, les spores et les algues.",
+        "Élimination du biofilm : décompose efficacement les biofilms existants dans les conduites et les réservoirs de stockage et prévient leur nouvelle formation.",
+        "Stabilité prolongée : grâce à sa formulation unique à base d’argent, le produit conserve son efficacité, même à des températures élevées ou pendant des périodes de stockage prolongées.",
+        "Respectueux de l’environnement : après réaction, il se décompose entièrement en eau (H₂O) et en oxygène (O₂). Il est exempt de chlore, inodore et insipide lorsqu’il est utilisé au dosage approprié."
       ],
-      "sizes": []
+      "sizes": [
+        "5 L",
+        "10 L",
+        "25 L",
+        "200 L",
+        "1000 L"
+      ],
+      "concentrations": [
+        "25 %",
+        "35 %",
+        "50 %"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Domaines d’application"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Désinfection de l’eau d’irrigation et des systèmes d’eau potable dans l’agriculture et l’élevage.",
+            "Nettoyage et désinfection des serres, locaux de stockage, outils et surfaces.",
+            "Traitement choc des systèmes hydriques afin d’éliminer immédiatement les contaminations microbiennes aiguës."
+          ]
+        }
+      ]
     },
     "en": {
-      "claim": "Clearox® can be used as an activator for hydrogen peroxide for various general purposes. For instance disinfection of work surfaces as well as for disinfection of animals (e.g. desliming of fish, sanatation within the meat processing industry) can be accomplished by assing Clearox® to the Hydrogen Peroxide. It can also be used for purification of water due to the removal and prevention of biofilm.",
+      "claim": "Clearox is a silver-stabilised hydrogen peroxide disinfectant based on advanced technology. It was specially developed for the deep cleaning, disinfection and biodegradation of water systems, surfaces and agricultural environments.",
       "paragraphs": [
-        "Clearox® is based on the idea of adding a stabilising and activating gel to the hydrogen peroxide to ensure a controlled reaction of the hydrogen peroxide. This way very little chemical is wasted and much better disinfection is achieved. This is why Clearox® is unique and not comparable to hydrogen peroxide anymore.",
-        "Hydrogen peroxide has long been recognised to have large amount of benefits – generally it has been recognised as effective against a huge range of micro-organisms, is an excellent virucide and breaks down into water and oxygen. However, it has a major downside and that is it’s uncontrolled reaction once it comes into contact with micro-organisms and organics – this means that it is inefficient and that there is much waste. Clearox® solved this problem.",
-        "The findings give cause for a new step in disinfecting: with the lowest possible dosage the highest possible effectiveness.",
-        "Hydroponic Production, Plantations, Preservation, pre- and postharvest disinfection, etc.",
-        "Using Clearox® the hygiene will be improved. Biofilm that is used by the bacteria as nourishment will be removed effectively. Because of this the complete production process will become more hygienic. The more hygienic process will lead to crops of high quality.",
-        "Note: Using Clearox in irrigation/spraying water a significant decrease in plant disease has been noticed. Furthermore a significant increase it root development, plant growth as well as general plant health has been noticed.",
-        "Disinfection in Fish farms, Shrimp farms, Mussel and Oyster farms, fish & shellfish etc."
+        "The patented silver stabilisation ensures a deep and lasting microbiological action, without leaving harmful residues."
       ],
       "advantages": [
-        "The standard Clearox® is based on 35% hydrogen peroxide – we can produce any dilution between 0,5 and 35% upon requested.",
-        "Is entirely comprised of food safe ingredients.",
-        "Has a broad-spectrum anti-microbial activity, highly effective against bacteria, (gram positive and gram negative).",
-        "It is also a virucide, effective against fungi, yeast and moulds and even kills bacterial spores.",
-        "At user dosage it is non-mutagenic, non-carcinogenic, non-toxic, non-corrosive, non-tainting, non-volatile.",
-        "It has no smell, taste or colour. Has extended action (residual effect).",
-        "Highly effective against biofilm.",
-        "Is effective even in the presence of organic matter.",
-        "Micro-organisms cannot develop a resistance against Clearox® .",
-        "Unaffected by pH levels and temperatures up to 90°C."
+        "Broad-spectrum action: effective against bacteria, fungi, viruses, spores and algae.",
+        "Biofilm removal: effectively breaks down existing biofilm in pipes and storage tanks and prevents it from forming again.",
+        "Long-lasting stability: thanks to its unique silver-based formulation, the product keeps its efficacy, even at high temperatures or over long storage periods.",
+        "Environmentally friendly: after reacting, it breaks down entirely into water (H₂O) and oxygen (O₂). It is chlorine-free, odourless and tasteless when used at the appropriate dosage."
       ],
-      "sizes": []
+      "sizes": [
+        "5 L",
+        "10 L",
+        "25 L",
+        "200 L",
+        "1000 L"
+      ],
+      "concentrations": [
+        "25%",
+        "35%",
+        "50%"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Fields of application"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Disinfection of irrigation water and drinking-water systems in agriculture and livestock farming.",
+            "Cleaning and disinfection of greenhouses, storage rooms, tools and surfaces.",
+            "Shock treatment of water systems to eliminate acute microbial contamination immediately."
+          ]
+        }
+      ]
     },
     "es": {
-      "claim": "Clearox® puede utilizarse como activador del peróxido de hidrógeno para fines muy diversos. Por ejemplo, la desinfección de superficies de trabajo, así como la desinfección en el ámbito animal (el desenlodado del pescado o la higienización en la industria cárnica), se consiguen añadiendo Clearox® al peróxido de hidrógeno. También puede emplearse para la purificación del agua, gracias a la eliminación y la prevención del biofilm.",
+      "claim": "Clearox es un desinfectante a base de peróxido de hidrógeno estabilizado con plata, fruto de una tecnología avanzada. Ha sido especialmente desarrollado para la limpieza profunda, la desinfección y la biodegradación de sistemas hídricos, superficies y entornos agrícolas.",
       "paragraphs": [
-        "Clearox® parte de la idea de añadir un gel de estabilización y activación al agua oxigenada para asegurar una reacción controlada del peróxido de hidrógeno. De este modo se desperdicia muy poco producto químico y se logra una desinfección mucho mejor. Por eso Clearox® es único y no comparable con el peróxido de hidrógeno convencional.",
-        "La industria reconoce el peróxido de hidrógeno como un producto activo frente a un amplio abanico de microorganismos, con excelentes propiedades virucidas, que se descompone en agua y oxígeno. Presenta, sin embargo, un gran inconveniente: su reacción incontrolada al entrar en contacto con los microorganismos y la materia orgánica, lo que lo hace poco eficiente y genera muchos residuos. Clearox® resuelve ese problema.",
-        "Los resultados abren una nueva etapa en la desinfección: con la dosis más baja posible, la mayor eficacia posible.",
-        "Producción hidropónica, plantaciones, conservación, desinfección pre y poscosecha, etc.",
-        "Con Clearox® mejora la higiene. El biofilm, que las bacterias utilizan como alimento, se elimina de forma eficaz, por lo que el proceso de producción se vuelve más higiénico. Y un proceso más higiénico conduce a cultivos de mayor calidad.",
-        "Observación: se ha constatado una disminución significativa de las enfermedades de la planta tras el uso de Clearox en el agua de riego o de pulverización. Se ha observado además un mejor desarrollo radicular, un aumento significativo del crecimiento de la planta y una mejora de su estado general.",
-        "Desinfección en piscifactorías, granjas de gambas, mejillones y ostras, peces y crustáceos, etc."
+        "La estabilización patentada con plata garantiza una acción microbiológica profunda y duradera, sin dejar residuos nocivos."
       ],
       "advantages": [
-        "El Clearox® estándar se basa en peróxido de hidrógeno al 35 %; podemos producir bajo pedido diluciones de entre el 0,5 y el 35 %.",
-        "Está compuesto en su totalidad por ingredientes de grado alimentario seguros.",
-        "Posee un amplio espectro de actividad antimicrobiana, muy eficaz frente a las bacterias (grampositivas y gramnegativas).",
-        "Es también virucida, eficaz frente a mohos y levaduras, e incluso destruye las esporas bacterianas.",
-        "A la dosis recomendada no es mutágeno, ni cancerígeno, ni tóxico, ni corrosivo, ni alterante, ni volátil.",
-        "No tiene olor, sabor ni color. Tiene una acción prolongada (efecto residual).",
-        "Muy eficaz frente a los biofilms.",
-        "Es eficaz incluso en presencia de materia orgánica.",
-        "Los microorganismos no pueden desarrollar resistencia frente a Clearox®.",
-        "No se ve afectado por el pH ni por temperaturas de hasta 90 °C."
+        "Acción de amplio espectro: eficaz contra bacterias, hongos, virus, esporas y algas.",
+        "Eliminación del biofilm: descompone eficazmente los biofilms existentes en las tuberías y los depósitos de almacenamiento y previene su nueva formación.",
+        "Estabilidad prolongada: gracias a su formulación única a base de plata, el producto conserva su eficacia, incluso a temperaturas elevadas o durante largos periodos de almacenamiento.",
+        "Respetuoso con el medio ambiente: tras reaccionar, se descompone por completo en agua (H₂O) y oxígeno (O₂). No contiene cloro y es inodoro e insípido cuando se utiliza en la dosis adecuada."
       ],
-      "sizes": []
+      "sizes": [
+        "5 L",
+        "10 L",
+        "25 L",
+        "200 L",
+        "1000 L"
+      ],
+      "concentrations": [
+        "25 %",
+        "35 %",
+        "50 %"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Ámbitos de aplicación"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Desinfección del agua de riego y de los sistemas de agua potable en agricultura y ganadería.",
+            "Limpieza y desinfección de invernaderos, locales de almacenamiento, herramientas y superficies.",
+            "Tratamiento de choque de los sistemas hídricos para eliminar de inmediato las contaminaciones microbianas agudas."
+          ]
+        }
+      ]
     },
     "nl": {
-      "claim": "Clearox® kan gebruikt worden als activator voor waterstofperoxide voor uiteenlopende algemene toepassingen. Zo kan de desinfectie van werkoppervlakken, maar ook de desinfectie van dieren (bv. het ontslijmen van vis, sanitatie binnen de vleesverwerkende industrie), worden gerealiseerd door Clearox® aan het waterstofperoxide toe te voegen. Het kan ook gebruikt worden voor waterzuivering, dankzij het verwijderen en voorkomen van biofilm.",
+      "claim": "Clearox is een ontsmettingsmiddel op basis van met zilver gestabiliseerd waterstofperoxide, ontwikkeld met geavanceerde technologie. Het is speciaal ontwikkeld voor het grondig reinigen, ontsmetten en biologisch afbreken in watersystemen, op oppervlakken en in agrarische omgevingen.",
       "paragraphs": [
-        "Clearox® is gebaseerd op het idee om een stabiliserende en activerende gel toe te voegen aan waterstofperoxide, zodat een gecontroleerde reactie van het waterstofperoxide verzekerd is. Op die manier gaat er zeer weinig product verloren en wordt een veel betere desinfectie bereikt. Daarom is Clearox® uniek en niet langer vergelijkbaar met waterstofperoxide.",
-        "Waterstofperoxide staat al lang bekend om zijn vele voordelen: het is algemeen erkend als doeltreffend tegen een zeer groot aantal micro-organismen, het is een uitstekend virucide en het breekt af tot water en zuurstof. Het heeft echter één groot nadeel: de ongecontroleerde reactie zodra het in contact komt met micro-organismen en organisch materiaal. Daardoor is het inefficiënt en gaat er veel verloren. Clearox® heeft dat probleem opgelost.",
-        "De bevindingen geven aanleiding tot een nieuwe stap in het desinfecteren: met de laagst mogelijke dosering de hoogst mogelijke doeltreffendheid.",
-        "Hydroponische teelt, plantages, bewaring, desinfectie voor en na de oogst, enz.",
-        "Met Clearox® verbetert de hygiëne. Biofilm, die door bacteriën als voedingsbodem wordt gebruikt, wordt doeltreffend verwijderd. Daardoor wordt het volledige productieproces hygiënischer, en een hygiënischer proces leidt tot gewassen van hoge kwaliteit.",
-        "Opmerking: bij gebruik van Clearox in irrigatie- of spuitwater werd een significante daling van plantenziekten vastgesteld. Daarnaast werd een significante toename van de wortelontwikkeling, de plantengroei en de algemene plantgezondheid waargenomen.",
-        "Desinfectie in viskwekerijen, garnalenkwekerijen, mossel- en oesterkwekerijen, vis en schaaldieren enz."
+        "De gepatenteerde zilverstabilisatie zorgt voor een diepgaande en langdurige microbiologische werking, zonder schadelijke residuen achter te laten."
       ],
       "advantages": [
-        "De standaard Clearox® is gebaseerd op 35% waterstofperoxide – wij kunnen op aanvraag elke verdunning tussen 0,5 en 35% produceren.",
-        "Is volledig samengesteld uit voedselveilige ingrediënten.",
-        "Heeft een breedspectrum antimicrobiële werking, zeer doeltreffend tegen bacteriën (grampositief en gramnegatief).",
-        "Het is ook een virucide, werkzaam tegen schimmels, gisten en schimmelvorming, en doodt zelfs bacteriesporen.",
-        "Bij gebruiksdosering is het niet-mutageen, niet-carcinogeen, niet-toxisch, niet-corrosief, niet-smaakbeïnvloedend en niet-vluchtig.",
-        "Het heeft geen geur, smaak of kleur. Heeft een verlengde werking (restwerking).",
-        "Zeer doeltreffend tegen biofilm.",
-        "Is werkzaam, zelfs in aanwezigheid van organisch materiaal.",
-        "Micro-organismen kunnen geen resistentie ontwikkelen tegen Clearox®.",
-        "Niet beïnvloed door pH-waarden en temperaturen tot 90 °C."
+        "Breedspectrumwerking: werkzaam tegen bacteriën, schimmels, virussen, sporen en algen.",
+        "Verwijdering van biofilm: breekt bestaande biofilm in leidingen en opslagtanks doeltreffend af en voorkomt dat die opnieuw ontstaat.",
+        "Langdurige stabiliteit: dankzij de unieke formulering op basis van zilver blijft het product werkzaam, ook bij hoge temperaturen of na lange opslag.",
+        "Milieuvriendelijk: na de reactie valt het volledig uiteen in water (H₂O) en zuurstof (O₂). Het is chloorvrij, geurloos en smaakloos bij de juiste dosering."
       ],
-      "sizes": []
-    },
-    "ar": {
-      "claim": "يمكن استعمال ‎Clearox®‎ كمنشّط لبيروكسيد الهيدروجين لأغراض عامة متنوعة. فمثلًا يمكن تحقيق تطهير أسطح العمل وكذلك تطهير الحيوانات (كإزالة اللزوجة عن الأسماك، والإصحاح داخل صناعة تحويل اللحوم) بإضافة ‎Clearox®‎ إلى بيروكسيد الهيدروجين. كما يمكن استعماله لتنقية الماء بفضل إزالة الغشاء الحيوي والوقاية منه.",
-      "paragraphs": [
-        "يقوم ‎Clearox®‎ على فكرة إضافة هلام مثبّت ومنشّط إلى بيروكسيد الهيدروجين لضمان تفاعل مضبوط له. وبهذه الطريقة يُهدر قدر ضئيل جدًا من المادة الكيميائية ويتحقّق تطهير أفضل بكثير. ولهذا فإن ‎Clearox®‎ فريد ولم يعد يقارن ببيروكسيد الهيدروجين.",
-        "لطالما عُرف لبيروكسيد الهيدروجين قدر كبير من الفوائد؛ فهو معروف عمومًا بفعاليته ضد طيف واسع جدًا من الكائنات الدقيقة، ومبيد فيروسي ممتاز، ويتحلّل إلى ماء وأكسجين. غير أن له عيبًا كبيرًا هو تفاعله غير المضبوط بمجرد ملامسته للكائنات الدقيقة والمواد العضوية، ما يعني ضعف الكفاءة وكثرة الهدر. وقد حلّ ‎Clearox®‎ هذه المشكلة.",
-        "تفتح هذه النتائج الباب لخطوة جديدة في التطهير: أدنى جرعة ممكنة بأعلى فعالية ممكنة.",
-        "الإنتاج المائي (الهيدروبونيك)، المزارع الكبرى، الحفظ، التطهير قبل الجني وبعده، وغيرها.",
-        "باستعمال ‎Clearox®‎ تتحسّن النظافة، ويُزال بفعالية الغشاء الحيوي الذي تتغذى عليه البكتيريا. وبذلك تصبح عملية الإنتاج كاملةً أكثر نظافة، وتقود العملية الأنظف إلى محاصيل عالية الجودة.",
-        "ملاحظة: عند استعمال Clearox في ماء السقي أو الرشّ، لوحظ انخفاض دالّ في أمراض النبات. كما لوحظت زيادة دالّة في نمو الجذور ونمو النبات وفي صحته العامة.",
-        "التطهير في مزارع الأسماك والروبيان وبلح البحر والمحار، والأسماك والقشريات وغيرها."
+      "sizes": [
+        "5 L",
+        "10 L",
+        "25 L",
+        "200 L",
+        "1000 L"
       ],
-      "advantages": [
-        "‎Clearox®‎ القياسي قائم على بيروكسيد هيدروجين بتركيز 35% — ويمكننا إنتاج أي تخفيف بين 0,5% و35% عند الطلب.",
-        "مكوّن بالكامل من مكوّنات آمنة غذائيًا.",
-        "له نشاط مضاد للجراثيم واسع الطيف، شديد الفعالية ضد البكتيريا (موجبة وسالبة الغرام).",
-        "وهو أيضًا مبيد فيروسي، فعّال ضد الفطريات والخمائر والعفن، بل يقضي على الأبواغ البكتيرية.",
-        "بجرعة الاستعمال فهو غير مُطفِّر ولا مسرطن ولا سامّ ولا أكّال ولا مُكسِب للطعم ولا متطاير.",
-        "بلا رائحة ولا مذاق ولا لون. وله مفعول ممتد (أثر متبقٍّ).",
-        "شديد الفعالية ضد الغشاء الحيوي.",
-        "فعّال حتى بوجود المواد العضوية.",
-        "لا تستطيع الكائنات الدقيقة تطوير مقاومة ضد ‎Clearox®‎.",
-        "لا يتأثّر بدرجات الحموضة ولا بالحرارة حتى 90 °م."
+      "concentrations": [
+        "25 %",
+        "35 %",
+        "50 %"
       ],
-      "sizes": []
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Toepassingsgebieden"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Ontsmetting van irrigatiewater en drinkwatersystemen in de land- en veeteelt.",
+            "Reiniging en ontsmetting van kassen, opslagruimtes, gereedschap en oppervlakken.",
+            "Shockbehandeling van watersystemen om acute microbiële besmetting onmiddellijk weg te nemen."
+          ]
+        }
+      ]
     }
   },
   "mavita-health": {
@@ -3378,332 +5511,2104 @@
   },
   "orthagrow-cal": {
     "fr": {
-      "claim": "Formule unique avec la plus haute concentration de calcium actif par litre (+ zinc et bore) pour une récolte supérieure.",
+      "claim": "ORTHAGROW CAL 21% SC 4G est une formulation brevetée de calcium, enrichie en zinc (Zn) et en bore (B). Cette composition unique présente une très forte concentration de calcium actif par litre, permettant une absorption et une assimilation plus rapides du calcium par les plantes et contribuant ainsi à une augmentation du rendement.",
       "paragraphs": [],
       "advantages": [
-        "Absorption 4G brevetée : assimilation rapide et efficace.",
-        "Suspension maximale : rendement et efficacité par litre.",
-        "Qualité supérieure : stabilité et conservation optimales."
+        "Absorption 4G brevetée : assure une assimilation rapide et efficace.",
+        "Suspension maximale : offre un rendement optimal et une efficacité maximale par litre.",
+        "Qualité supérieure : garantit une stabilité optimale et une durée de conservation prolongée.",
+        "Teneur élevée en calcium : suspension de calcium renforcée présentant une concentration en calcium extrêmement élevée.",
+        "Mobilité des nutriments : stimule le transport des nutriments des feuilles vers les fruits en développement.",
+        "Développement des fruits : joue un rôle essentiel durant la phase de développement des fruits de toutes les cultures.",
+        "Renforcement cellulaire : améliore à la fois la division et l’élongation cellulaires.",
+        "Épiderme renforcé : augmente l’épaisseur de la peau des fruits.",
+        "Qualité & conservation : améliore la qualité globale et prolonge la durée de conservation des fruits récoltés."
       ],
       "sizes": [
         "1 L",
         "10 L"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Spécifications du produit"
+        },
+        {
+          "type": "subheading",
+          "text": "Propriétés physiques & chimiques"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Paramètre",
+            "Spécification"
+          ],
+          "rows": [
+            [
+              "Type de formulation",
+              "Suspension concentrée (Suspension Concentrate)"
+            ],
+            [
+              "Aspect",
+              "Suspension laiteuse (Milky Slurry)"
+            ],
+            [
+              "pH",
+              "8,50 - 10,0"
+            ],
+            [
+              "Densité (g/ml)",
+              "1,74 - 1,76"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Composition"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Composant",
+            "Spécification (%, min. en poids)"
+          ],
+          "rows": [
+            [
+              "Calcium (Ca)",
+              "21,0"
+            ],
+            [
+              "Bore (B)",
+              "0,1"
+            ],
+            [
+              "Zinc (Zn)",
+              "1,5"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Origine : carbonate de calcium, oxyde de zinc et tétraborate de disodium tétrahydraté."
+        },
+        {
+          "type": "paragraph",
+          "text": "Statut réglementaire (pays d’origine) : classifié par la FCO comme « Fortified Calcium Suspension »."
+        },
+        {
+          "type": "heading",
+          "text": "Application & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Domaine d’application : spécialement développé pour les applications foliaires en agriculture.",
+            "Cultures concernées : convient à toutes les catégories de cultures."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Dosage & application"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Dosage recommandé : 1 000 à 2 000 ml par hectare et par application.",
+            "Carences : un dosage plus élevé est recommandé dès l’apparition de symptômes de carence en calcium.",
+            "Fréquence : au minimum 3 à 4 applications sont recommandées pour obtenir les meilleurs résultats."
+          ]
+        }
       ]
     },
     "en": {
-      "claim": "A unique formulation with the highest concentration of active calcium per litre (plus zinc and boron) for a superior harvest.",
+      "claim": "ORTHAGROW CAL 21% SC 4G is a patented calcium formulation, enriched with zinc (Zn) and boron (B). This unique composition has a very high concentration of active calcium per litre, allowing plants to take up and assimilate calcium faster and so helping to increase yield.",
       "paragraphs": [],
       "advantages": [
-        "Patented 4G absorption: fast, efficient uptake.",
-        "Maximum suspension: yield and efficacy per litre.",
-        "Superior quality: optimal stability and shelf life."
+        "Patented 4G absorption: ensures fast, efficient assimilation.",
+        "Maximum suspension: optimal yield and maximum efficacy per litre.",
+        "Superior quality: guarantees optimal stability and a long shelf life.",
+        "High calcium content: a fortified calcium suspension with an extremely high calcium concentration.",
+        "Nutrient mobility: stimulates the transport of nutrients from the leaves to the developing fruit.",
+        "Fruit development: plays an essential role during the fruit development stage of every crop.",
+        "Cell strengthening: improves both cell division and cell elongation.",
+        "Stronger skin: increases the thickness of the fruit skin.",
+        "Quality & storage: improves overall quality and extends the shelf life of harvested fruit."
       ],
       "sizes": [
         "1 L",
         "10 L"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Product specifications"
+        },
+        {
+          "type": "subheading",
+          "text": "Physical & chemical properties"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parameter",
+            "Specification"
+          ],
+          "rows": [
+            [
+              "Formulation type",
+              "Suspension Concentrate"
+            ],
+            [
+              "Appearance",
+              "Milky Slurry"
+            ],
+            [
+              "pH",
+              "8.50 - 10.0"
+            ],
+            [
+              "Density (g/ml)",
+              "1.74 - 1.76"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Composition"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Component",
+            "Specification (%, min. by weight)"
+          ],
+          "rows": [
+            [
+              "Calcium (Ca)",
+              "21.0"
+            ],
+            [
+              "Boron (B)",
+              "0.1"
+            ],
+            [
+              "Zinc (Zn)",
+              "1.5"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Source: calcium carbonate, zinc oxide and disodium tetraborate tetrahydrate."
+        },
+        {
+          "type": "paragraph",
+          "text": "Regulatory status (country of origin): classified by the FCO as “Fortified Calcium Suspension”."
+        },
+        {
+          "type": "heading",
+          "text": "Application & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Field of application: specially developed for foliar applications in agriculture.",
+            "Crops: suitable for all crop categories."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Dosage & application"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Recommended dosage: 1,000 to 2,000 ml per hectare per application.",
+            "Deficiencies: a higher dosage is recommended as soon as symptoms of calcium deficiency appear.",
+            "Frequency: at least 3 to 4 applications are recommended for best results."
+          ]
+        }
       ]
     },
     "es": {
-      "claim": "Formulación única con la mayor concentración de calcio activo por litro (más zinc y boro) para una cosecha superior.",
+      "claim": "ORTHAGROW CAL 21% SC 4G es una formulación patentada de calcio, enriquecida con zinc (Zn) y boro (B). Esta composición única presenta una concentración muy alta de calcio activo por litro, lo que permite una absorción y una asimilación más rápidas del calcio por las plantas y contribuye así a aumentar el rendimiento.",
       "paragraphs": [],
       "advantages": [
-        "Absorción 4G patentada: asimilación rápida y eficaz.",
-        "Suspensión máxima: rendimiento y eficacia por litro.",
-        "Calidad superior: estabilidad y conservación óptimas."
+        "Absorción 4G patentada: garantiza una asimilación rápida y eficaz.",
+        "Suspensión máxima: ofrece un rendimiento óptimo y una eficacia máxima por litro.",
+        "Calidad superior: garantiza una estabilidad óptima y una vida útil prolongada.",
+        "Alto contenido de calcio: suspensión de calcio reforzada con una concentración de calcio extremadamente alta.",
+        "Movilidad de nutrientes: estimula el transporte de nutrientes de las hojas hacia los frutos en desarrollo.",
+        "Desarrollo de los frutos: desempeña un papel esencial durante la fase de desarrollo de los frutos de todos los cultivos.",
+        "Refuerzo celular: mejora tanto la división como la elongación celulares.",
+        "Epidermis reforzada: aumenta el grosor de la piel de los frutos.",
+        "Calidad y conservación: mejora la calidad global y prolonga la vida útil de los frutos cosechados."
       ],
       "sizes": [
         "1 L",
         "10 L"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Especificaciones del producto"
+        },
+        {
+          "type": "subheading",
+          "text": "Propiedades físicas y químicas"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parámetro",
+            "Especificación"
+          ],
+          "rows": [
+            [
+              "Tipo de formulación",
+              "Suspensión concentrada (Suspension Concentrate)"
+            ],
+            [
+              "Aspecto",
+              "Suspensión lechosa (Milky Slurry)"
+            ],
+            [
+              "pH",
+              "8,50 - 10,0"
+            ],
+            [
+              "Densidad (g/ml)",
+              "1,74 - 1,76"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Composición"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Componente",
+            "Especificación (%, mín. en peso)"
+          ],
+          "rows": [
+            [
+              "Calcio (Ca)",
+              "21,0"
+            ],
+            [
+              "Boro (B)",
+              "0,1"
+            ],
+            [
+              "Zinc (Zn)",
+              "1,5"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Origen: carbonato de calcio, óxido de zinc y tetraborato de disodio tetrahidratado."
+        },
+        {
+          "type": "paragraph",
+          "text": "Estatus reglamentario (país de origen): clasificado por la FCO como «Fortified Calcium Suspension»."
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación y dosificación"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Ámbito de aplicación: especialmente desarrollado para aplicaciones foliares en agricultura.",
+            "Cultivos: apto para todas las categorías de cultivos."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Dosificación y aplicación"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Dosis recomendada: 1000 a 2000 ml por hectárea y por aplicación.",
+            "Carencias: se recomienda una dosis más alta en cuanto aparezcan síntomas de carencia de calcio.",
+            "Frecuencia: se recomiendan como mínimo 3 a 4 aplicaciones para obtener los mejores resultados."
+          ]
+        }
       ]
     },
     "nl": {
-      "claim": "Unieke formulering met de hoogste concentratie actief calcium per liter (plus zink en borium) voor een hogere opbrengst.",
+      "claim": "ORTHAGROW CAL 21% SC 4G is een gepatenteerde calciumformulering, verrijkt met zink (Zn) en borium (B). Deze unieke samenstelling heeft een zeer hoge concentratie actief calcium per liter, waardoor planten calcium sneller opnemen en assimileren en de opbrengst toeneemt.",
       "paragraphs": [],
       "advantages": [
-        "Gepatenteerde 4G-opname: snelle en efficiënte assimilatie.",
-        "Maximale suspensie: rendement en werkzaamheid per liter.",
-        "Superieure kwaliteit: optimale stabiliteit en houdbaarheid."
+        "Gepatenteerde 4G-opname: zorgt voor een snelle en efficiënte assimilatie.",
+        "Maximale suspensie: optimaal rendement en maximale werkzaamheid per liter.",
+        "Superieure kwaliteit: garandeert optimale stabiliteit en een lange houdbaarheid.",
+        "Hoog calciumgehalte: versterkte calciumsuspensie met een uitzonderlijk hoge calciumconcentratie.",
+        "Mobiliteit van voedingsstoffen: stimuleert het transport van voedingsstoffen van de bladeren naar de zich ontwikkelende vruchten.",
+        "Vruchtontwikkeling: speelt een essentiële rol tijdens de vruchtontwikkeling van alle gewassen.",
+        "Celversterking: verbetert zowel de celdeling als de celstrekking.",
+        "Sterkere schil: verhoogt de dikte van de vruchtschil.",
+        "Kwaliteit & bewaring: verbetert de algemene kwaliteit en verlengt de houdbaarheid van geoogste vruchten."
       ],
       "sizes": [
         "1 L",
         "10 L"
-      ]
-    },
-    "ar": {
-      "claim": "تركيبة فريدة بأعلى تركيز من الكالسيوم النشط في اللتر (مع الزنك والبورون) من أجل محصول أوفر.",
-      "paragraphs": [],
-      "advantages": [
-        "امتصاص 4G مُسجَّل ببراءة اختراع: استيعاب سريع وفعّال.",
-        "تعليق أقصى: مردود وفعالية في كل لتر.",
-        "جودة عالية: ثبات وحفظ مثاليان."
       ],
-      "sizes": [
-        "1 لتر",
-        "10 لتر"
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Productspecificaties"
+        },
+        {
+          "type": "subheading",
+          "text": "Fysische & chemische eigenschappen"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parameter",
+            "Specificatie"
+          ],
+          "rows": [
+            [
+              "Formuleringstype",
+              "Suspensieconcentraat (Suspension Concentrate)"
+            ],
+            [
+              "Uiterlijk",
+              "Melkachtige suspensie (Milky Slurry)"
+            ],
+            [
+              "pH",
+              "8,50 - 10,0"
+            ],
+            [
+              "Dichtheid (g/ml)",
+              "1,74 - 1,76"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Samenstelling"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Component",
+            "Specificatie (%, min. in gewicht)"
+          ],
+          "rows": [
+            [
+              "Calcium (Ca)",
+              "21,0"
+            ],
+            [
+              "Borium (B)",
+              "0,1"
+            ],
+            [
+              "Zink (Zn)",
+              "1,5"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Oorsprong: calciumcarbonaat, zinkoxide en dinatriumtetraboraat-tetrahydraat."
+        },
+        {
+          "type": "paragraph",
+          "text": "Wettelijke status (land van herkomst): door de FCO geclassificeerd als „Fortified Calcium Suspension”."
+        },
+        {
+          "type": "heading",
+          "text": "Toepassing & dosering"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Toepassingsgebied: speciaal ontwikkeld voor bladtoepassingen in de landbouw.",
+            "Gewassen: geschikt voor alle gewascategorieën."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Dosering & toepassing"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Aanbevolen dosering: 1000 tot 2000 ml per hectare per toepassing.",
+            "Tekorten: een hogere dosering wordt aanbevolen zodra symptomen van calciumtekort optreden.",
+            "Frequentie: minstens 3 tot 4 toepassingen worden aanbevolen voor de beste resultaten."
+          ]
+        }
       ]
     }
   },
   "orthagrow-zno": {
     "fr": {
-      "claim": "Formule micro-zinc brevetée hautement concentrée.",
+      "claim": "ORTHAGROW ZnO 39,5% 4G est une formulation brevetée de zinc micronisé hautement concentrée, sous forme de suspension concentrée. Elle contient du zinc à une concentration extrêmement élevée, provenant d’une source totalement exempte de chlorure, de nitrate et de sulfate.",
       "paragraphs": [
-        "Garantit une biodisponibilité maximale et une absorption directe."
+        "Cette formulation a été spécifiquement développée pour répondre efficacement aux besoins en zinc des cultures. La très petite taille des particules de zinc (microparticules) garantit une biodisponibilité maximale ainsi qu’une absorption et une assimilation directes et aisées à tous les stades de la croissance de la culture."
       ],
       "advantages": [
-        "Absorption maximale par micro-particules.",
-        "100 % sans chlorure, nitrate ni sulfate.",
-        "Croissance supérieure."
+        "Absorption maximale : garantit une absorption et une efficacité maximales grâce aux microparticules avancées.",
+        "100 % pur : totalement exempt de chlorure, de nitrate et de sulfate.",
+        "Croissance supérieure : favorise une croissance vigoureuse et supérieure des cultures.",
+        "Croissance végétative : joue un rôle clé durant la phase de croissance végétative de toutes les cultures.",
+        "Déclencheur métabolique : optimise la croissance des cultures en activant des processus métaboliques essentiels.",
+        "Résistance au stress : renforce la culture face aux stress abiotiques en activant le mécanisme redox.",
+        "Qualité optimale des fruits : améliore la qualité globale des fruits en optimisant la relation source-puits (source-sink)."
       ],
       "sizes": [
         "1 L",
         "10 L"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Spécifications du produit"
+        },
+        {
+          "type": "subheading",
+          "text": "Propriétés physiques & chimiques"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Paramètre",
+            "Spécification"
+          ],
+          "rows": [
+            [
+              "Type de formulation",
+              "Suspension concentrée (Suspension Concentrate)"
+            ],
+            [
+              "Aspect",
+              "Suspension laiteuse (Milky Slurry)"
+            ],
+            [
+              "pH (solution à 5 %)",
+              "8,0 - 10,0"
+            ],
+            [
+              "Densité (g/ml)",
+              "1,71 - 1,75"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Composition"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Composant",
+            "Spécification (%, min.)"
+          ],
+          "rows": [
+            [
+              "Zinc (Zn)",
+              "39,5"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Statut réglementaire (pays d’origine) : classifié par la FCO comme « Zinc Oxide Suspension Concentrate (39.5% Zn) »."
+        },
+        {
+          "type": "heading",
+          "text": "Application & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Domaine d’application : spécialement développé pour les applications foliaires en agriculture.",
+            "Cultures concernées : convient à toutes les catégories de cultures."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Dosage & application"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Dosage recommandé : 600 à 750 ml par hectare et par application.",
+            "Carences : en cas de carence manifeste en zinc, un dosage allant jusqu’à 1 250 ml par hectare est recommandé.",
+            "Fréquence : 2 à 3 applications sont recommandées pour obtenir les meilleurs résultats."
+          ]
+        }
       ]
     },
     "en": {
-      "claim": "A patented, highly concentrated micro-zinc formulation.",
+      "claim": "ORTHAGROW ZnO 39.5% 4G is a highly concentrated, patented micronised zinc formulation in suspension-concentrate form. It contains zinc at an extremely high concentration, from a source entirely free of chloride, nitrate and sulphate.",
       "paragraphs": [
-        "It guarantees maximum bioavailability and direct uptake."
+        "This formulation was developed specifically to meet crops’ zinc requirements effectively. The very small size of the zinc particles (microparticles) guarantees maximum bioavailability and easy, direct uptake and assimilation at every stage of crop growth."
       ],
       "advantages": [
-        "Maximum absorption through micro-particles.",
-        "100% free of chloride, nitrate and sulphate.",
-        "Superior growth."
+        "Maximum absorption: advanced microparticles guarantee maximum uptake and efficacy.",
+        "100% pure: entirely free of chloride, nitrate and sulphate.",
+        "Superior growth: promotes vigorous, superior crop growth.",
+        "Vegetative growth: plays a key role during the vegetative growth stage of every crop.",
+        "Metabolic trigger: optimises crop growth by activating essential metabolic processes.",
+        "Stress resistance: strengthens the crop against abiotic stress by activating the redox mechanism.",
+        "Optimal fruit quality: improves overall fruit quality by optimising the source-sink relationship."
       ],
       "sizes": [
         "1 L",
         "10 L"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Product specifications"
+        },
+        {
+          "type": "subheading",
+          "text": "Physical & chemical properties"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parameter",
+            "Specification"
+          ],
+          "rows": [
+            [
+              "Formulation type",
+              "Suspension Concentrate"
+            ],
+            [
+              "Appearance",
+              "Milky Slurry"
+            ],
+            [
+              "pH (5% solution)",
+              "8.0 - 10.0"
+            ],
+            [
+              "Density (g/ml)",
+              "1.71 - 1.75"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Composition"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Component",
+            "Specification (%, min.)"
+          ],
+          "rows": [
+            [
+              "Zinc (Zn)",
+              "39.5"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Regulatory status (country of origin): classified by the FCO as “Zinc Oxide Suspension Concentrate (39.5% Zn)”."
+        },
+        {
+          "type": "heading",
+          "text": "Application & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Field of application: specially developed for foliar applications in agriculture.",
+            "Crops: suitable for all crop categories."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Dosage & application"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Recommended dosage: 600 to 750 ml per hectare per application.",
+            "Deficiencies: in case of visible zinc deficiency, a dosage of up to 1,250 ml per hectare is recommended.",
+            "Frequency: 2 to 3 applications are recommended for best results."
+          ]
+        }
       ]
     },
     "es": {
-      "claim": "Formulación de micro-zinc patentada y altamente concentrada.",
+      "claim": "ORTHAGROW ZnO 39,5% 4G es una formulación patentada de zinc micronizado altamente concentrada, en forma de suspensión concentrada. Contiene zinc en una concentración extremadamente alta, procedente de una fuente totalmente libre de cloruro, nitrato y sulfato.",
       "paragraphs": [
-        "Garantiza una biodisponibilidad máxima y una absorción directa."
+        "Esta formulación ha sido desarrollada específicamente para cubrir con eficacia las necesidades de zinc de los cultivos. El tamaño muy reducido de las partículas de zinc (micropartículas) garantiza una biodisponibilidad máxima, así como una absorción y una asimilación directas y sencillas en todas las fases de crecimiento del cultivo."
       ],
       "advantages": [
-        "Absorción máxima mediante micropartículas.",
-        "100 % sin cloruro, nitrato ni sulfato.",
-        "Crecimiento superior."
+        "Absorción máxima: garantiza una absorción y una eficacia máximas gracias a las micropartículas avanzadas.",
+        "100 % puro: totalmente libre de cloruro, nitrato y sulfato.",
+        "Crecimiento superior: favorece un crecimiento vigoroso y superior de los cultivos.",
+        "Crecimiento vegetativo: desempeña un papel clave durante la fase de crecimiento vegetativo de todos los cultivos.",
+        "Desencadenante metabólico: optimiza el crecimiento de los cultivos activando procesos metabólicos esenciales.",
+        "Resistencia al estrés: refuerza el cultivo frente a los estreses abióticos activando el mecanismo redox.",
+        "Calidad óptima de los frutos: mejora la calidad global de los frutos optimizando la relación fuente-sumidero (source-sink)."
       ],
       "sizes": [
         "1 L",
         "10 L"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Especificaciones del producto"
+        },
+        {
+          "type": "subheading",
+          "text": "Propiedades físicas y químicas"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parámetro",
+            "Especificación"
+          ],
+          "rows": [
+            [
+              "Tipo de formulación",
+              "Suspensión concentrada (Suspension Concentrate)"
+            ],
+            [
+              "Aspecto",
+              "Suspensión lechosa (Milky Slurry)"
+            ],
+            [
+              "pH (solución al 5 %)",
+              "8,0 - 10,0"
+            ],
+            [
+              "Densidad (g/ml)",
+              "1,71 - 1,75"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Composición"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Componente",
+            "Especificación (%, mín.)"
+          ],
+          "rows": [
+            [
+              "Zinc (Zn)",
+              "39,5"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Estatus reglamentario (país de origen): clasificado por la FCO como «Zinc Oxide Suspension Concentrate (39.5% Zn)»."
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación y dosificación"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Ámbito de aplicación: especialmente desarrollado para aplicaciones foliares en agricultura.",
+            "Cultivos: apto para todas las categorías de cultivos."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Dosificación y aplicación"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Dosis recomendada: 600 a 750 ml por hectárea y por aplicación.",
+            "Carencias: en caso de carencia manifiesta de zinc, se recomienda una dosis de hasta 1250 ml por hectárea.",
+            "Frecuencia: se recomiendan 2 a 3 aplicaciones para obtener los mejores resultados."
+          ]
+        }
       ]
     },
     "nl": {
-      "claim": "Gepatenteerde, sterk geconcentreerde microzinkformulering.",
+      "claim": "ORTHAGROW ZnO 39,5% 4G is een sterk geconcentreerde, gepatenteerde formulering van gemicroniseerd zink in de vorm van een suspensieconcentraat. Ze bevat zink in een uitzonderlijk hoge concentratie, uit een bron die volledig vrij is van chloride, nitraat en sulfaat.",
       "paragraphs": [
-        "Garandeert een maximale biobeschikbaarheid en een directe opname."
+        "Deze formulering is specifiek ontwikkeld om doeltreffend in de zinkbehoefte van gewassen te voorzien. De zeer kleine zinkdeeltjes (microdeeltjes) garanderen een maximale biobeschikbaarheid en een directe, vlotte opname en assimilatie in alle groeistadia van het gewas."
       ],
       "advantages": [
-        "Maximale opname via microdeeltjes.",
-        "100 % vrij van chloride, nitraat en sulfaat.",
-        "Superieure groei."
+        "Maximale opname: geavanceerde microdeeltjes garanderen maximale opname en werkzaamheid.",
+        "100% zuiver: volledig vrij van chloride, nitraat en sulfaat.",
+        "Superieure groei: bevordert een krachtige, superieure gewasgroei.",
+        "Vegetatieve groei: speelt een sleutelrol tijdens de vegetatieve groeifase van alle gewassen.",
+        "Metabole trigger: optimaliseert de gewasgroei door essentiële metabole processen te activeren.",
+        "Stressbestendigheid: versterkt het gewas tegen abiotische stress door het redoxmechanisme te activeren.",
+        "Optimale vruchtkwaliteit: verbetert de algemene vruchtkwaliteit door de source-sinkrelatie te optimaliseren."
       ],
       "sizes": [
         "1 L",
         "10 L"
-      ]
-    },
-    "ar": {
-      "claim": "تركيبة الزنك الدقيق، مُسجَّلة ببراءة اختراع وعالية التركيز.",
-      "paragraphs": [
-        "تضمن أقصى توافر حيوي وامتصاصًا مباشرًا."
       ],
-      "advantages": [
-        "امتصاص أقصى بفضل الجسيمات الدقيقة.",
-        "خالية 100 % من الكلوريد والنترات والكبريتات.",
-        "نمو أفضل."
-      ],
-      "sizes": [
-        "1 لتر",
-        "10 لتر"
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Productspecificaties"
+        },
+        {
+          "type": "subheading",
+          "text": "Fysische & chemische eigenschappen"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parameter",
+            "Specificatie"
+          ],
+          "rows": [
+            [
+              "Formuleringstype",
+              "Suspensieconcentraat (Suspension Concentrate)"
+            ],
+            [
+              "Uiterlijk",
+              "Melkachtige suspensie (Milky Slurry)"
+            ],
+            [
+              "pH (5% oplossing)",
+              "8,0 - 10,0"
+            ],
+            [
+              "Dichtheid (g/ml)",
+              "1,71 - 1,75"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Samenstelling"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Component",
+            "Specificatie (%, min.)"
+          ],
+          "rows": [
+            [
+              "Zink (Zn)",
+              "39,5"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Wettelijke status (land van herkomst): door de FCO geclassificeerd als „Zinc Oxide Suspension Concentrate (39.5% Zn)”."
+        },
+        {
+          "type": "heading",
+          "text": "Toepassing & dosering"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Toepassingsgebied: speciaal ontwikkeld voor bladtoepassingen in de landbouw.",
+            "Gewassen: geschikt voor alle gewascategorieën."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Dosering & toepassing"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Aanbevolen dosering: 600 tot 750 ml per hectare per toepassing.",
+            "Tekorten: bij duidelijk zinktekort wordt een dosering tot 1250 ml per hectare aanbevolen.",
+            "Frequentie: 2 tot 3 toepassingen worden aanbevolen voor de beste resultaten."
+          ]
+        }
       ]
     }
   },
   "orthagrow-alga-si": {
     "fr": {
-      "claim": "Formule exclusive et brevetée offrant une plus grande résistance des cultures contre le stress abiotique (chaleur et froid).",
+      "claim": "ORTHAGROW ALGA-Si 4G est un mélange breveté d’extrait d’algues marines, enrichi en nutriments essentiels et bénéfiques, en silicium bioactif (Si) et en biomolécules naturelles jouant un rôle clé dans la stimulation de la croissance des plantes et du développement des fruits.",
       "paragraphs": [],
       "advantages": [
-        "Effet immédiat anti-stress.",
-        "Synergie exclusive Algues + Si.",
-        "Fructification maximale."
+        "Biomolécules puissantes : source de biomolécules végétales pour un effet renforcé.",
+        "Entièrement biologique : tous les nutriments proviennent de sources organiques.",
+        "Rendement optimal : optimise la croissance des cultures et le développement des fruits.",
+        "Durable : particulièrement adapté à l’utilisation en agriculture biologique (Organic Farming)."
       ],
       "sizes": [
         "1 L",
         "10 L"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Spécifications du produit"
+        },
+        {
+          "type": "subheading",
+          "text": "Propriétés physiques & chimiques"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Paramètre",
+            "Spécification"
+          ],
+          "rows": [
+            [
+              "Type de formulation",
+              "Liquide soluble dans l’eau (Water Soluble Liquid)"
+            ],
+            [
+              "Aspect",
+              "Couleur foncée"
+            ],
+            [
+              "pH (solution à 1 %)",
+              "10,00 - 11,00"
+            ],
+            [
+              "Densité (g/ml)",
+              "1,02 - 1,08"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Composition"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Composant",
+            "Spécification (%, min.)"
+          ],
+          "rows": [
+            [
+              "Total des solides dissous (TDS)",
+              "7,0"
+            ],
+            [
+              "Acide alginique",
+              "0,55"
+            ],
+            [
+              "Carbone organique total",
+              "4,0"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Statut réglementaire (pays d’origine) : conforme aux directives de la FCO « Biostimulants: Ascophyllum nodosum 7% (Liquid) - Catégorie 2-5 »."
+        },
+        {
+          "type": "heading",
+          "text": "Application & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Domaine d’application : spécialement développé pour les applications foliaires en agriculture.",
+            "Cultures concernées : recommandé pour toutes les catégories de cultures."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Méthodes d’application & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Pulvérisation foliaire (Foliar sprays) : 2 500 ml par hectare.",
+            "Fertigation : 2 500 ml par hectare."
+          ]
+        }
       ]
     },
     "en": {
-      "claim": "An exclusive, patented formulation giving crops greater resistance to abiotic stress, both heat and cold.",
+      "claim": "ORTHAGROW ALGA-Si 4G is a patented blend of seaweed extract, enriched with essential and beneficial nutrients, bioactive silicon (Si) and natural biomolecules that play a key role in stimulating plant growth and fruit development.",
       "paragraphs": [],
       "advantages": [
-        "Immediate anti-stress effect.",
-        "Exclusive seaweed + Si synergy.",
-        "Maximum fruit set."
+        "Powerful biomolecules: a source of plant biomolecules for a stronger effect.",
+        "Fully organic: all nutrients come from organic sources.",
+        "Optimal yield: optimises crop growth and fruit development.",
+        "Sustainable: particularly suited to organic farming."
       ],
       "sizes": [
         "1 L",
         "10 L"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Product specifications"
+        },
+        {
+          "type": "subheading",
+          "text": "Physical & chemical properties"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parameter",
+            "Specification"
+          ],
+          "rows": [
+            [
+              "Formulation type",
+              "Water Soluble Liquid"
+            ],
+            [
+              "Appearance",
+              "Dark colour"
+            ],
+            [
+              "pH (1% solution)",
+              "10.00 - 11.00"
+            ],
+            [
+              "Density (g/ml)",
+              "1.02 - 1.08"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Composition"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Component",
+            "Specification (%, min.)"
+          ],
+          "rows": [
+            [
+              "Total dissolved solids (TDS)",
+              "7.0"
+            ],
+            [
+              "Alginic acid",
+              "0.55"
+            ],
+            [
+              "Total organic carbon",
+              "4.0"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Regulatory status (country of origin): complies with the FCO guidelines “Biostimulants: Ascophyllum nodosum 7% (Liquid) - Catégorie 2-5”."
+        },
+        {
+          "type": "heading",
+          "text": "Application & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Field of application: specially developed for foliar applications in agriculture.",
+            "Crops: recommended for all crop categories."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Application methods & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Foliar sprays: 2,500 ml per hectare.",
+            "Fertigation: 2,500 ml per hectare."
+          ]
+        }
       ]
     },
     "es": {
-      "claim": "Formulación exclusiva y patentada que ofrece a los cultivos una mayor resistencia al estrés abiótico, tanto por calor como por frío.",
+      "claim": "ORTHAGROW ALGA-Si 4G es una mezcla patentada de extracto de algas marinas, enriquecida con nutrientes esenciales y beneficiosos, silicio bioactivo (Si) y biomoléculas naturales que desempeñan un papel clave en la estimulación del crecimiento de las plantas y del desarrollo de los frutos.",
       "paragraphs": [],
       "advantages": [
-        "Efecto antiestrés inmediato.",
-        "Sinergia exclusiva de algas + Si.",
-        "Fructificación máxima."
+        "Biomoléculas potentes: fuente de biomoléculas vegetales para un efecto reforzado.",
+        "Totalmente biológico: todos los nutrientes proceden de fuentes orgánicas.",
+        "Rendimiento óptimo: optimiza el crecimiento de los cultivos y el desarrollo de los frutos.",
+        "Sostenible: especialmente adaptado a la agricultura ecológica (Organic Farming)."
       ],
       "sizes": [
         "1 L",
         "10 L"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Especificaciones del producto"
+        },
+        {
+          "type": "subheading",
+          "text": "Propiedades físicas y químicas"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parámetro",
+            "Especificación"
+          ],
+          "rows": [
+            [
+              "Tipo de formulación",
+              "Líquido soluble en agua (Water Soluble Liquid)"
+            ],
+            [
+              "Aspecto",
+              "Color oscuro"
+            ],
+            [
+              "pH (solución al 1 %)",
+              "10,00 - 11,00"
+            ],
+            [
+              "Densidad (g/ml)",
+              "1,02 - 1,08"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Composición"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Componente",
+            "Especificación (%, mín.)"
+          ],
+          "rows": [
+            [
+              "Sólidos disueltos totales (TDS)",
+              "7,0"
+            ],
+            [
+              "Ácido algínico",
+              "0,55"
+            ],
+            [
+              "Carbono orgánico total",
+              "4,0"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Estatus reglamentario (país de origen): conforme a las directrices de la FCO «Biostimulants: Ascophyllum nodosum 7% (Liquid) - Catégorie 2-5»."
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación y dosificación"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Ámbito de aplicación: especialmente desarrollado para aplicaciones foliares en agricultura.",
+            "Cultivos: recomendado para todas las categorías de cultivos."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Métodos de aplicación y dosificación"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Pulverización foliar (Foliar sprays): 2500 ml por hectárea.",
+            "Fertirrigación: 2500 ml por hectárea."
+          ]
+        }
       ]
     },
     "nl": {
-      "claim": "Exclusieve, gepatenteerde formulering die gewassen beter bestand maakt tegen abiotische stress, zowel hitte als kou.",
+      "claim": "ORTHAGROW ALGA-Si 4G is een gepatenteerd mengsel van zeewierextract, verrijkt met essentiële en nuttige voedingsstoffen, bioactief silicium (Si) en natuurlijke biomoleculen die een sleutelrol spelen bij het stimuleren van plantengroei en vruchtontwikkeling.",
       "paragraphs": [],
       "advantages": [
-        "Onmiddellijk antistress-effect.",
-        "Exclusieve synergie van zeewier + Si.",
-        "Maximale vruchtzetting."
+        "Krachtige biomoleculen: een bron van plantaardige biomoleculen voor een versterkt effect.",
+        "Volledig biologisch: alle voedingsstoffen zijn afkomstig van organische bronnen.",
+        "Optimale opbrengst: optimaliseert gewasgroei en vruchtontwikkeling.",
+        "Duurzaam: bijzonder geschikt voor biologische landbouw (Organic Farming)."
       ],
       "sizes": [
         "1 L",
         "10 L"
-      ]
-    },
-    "ar": {
-      "claim": "تركيبة حصرية مُسجَّلة ببراءة اختراع تمنح المحاصيل مقاومة أكبر للإجهاد اللاأحيائي، حرارةً وبرودة.",
-      "paragraphs": [],
-      "advantages": [
-        "أثر فوري مضاد للإجهاد.",
-        "تآزر حصري بين الطحالب والسيليسيوم.",
-        "عقد ثمار أقصى."
       ],
-      "sizes": [
-        "1 لتر",
-        "10 لتر"
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Productspecificaties"
+        },
+        {
+          "type": "subheading",
+          "text": "Fysische & chemische eigenschappen"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parameter",
+            "Specificatie"
+          ],
+          "rows": [
+            [
+              "Formuleringstype",
+              "In water oplosbare vloeistof (Water Soluble Liquid)"
+            ],
+            [
+              "Uiterlijk",
+              "Donkere kleur"
+            ],
+            [
+              "pH (1% oplossing)",
+              "10,00 - 11,00"
+            ],
+            [
+              "Dichtheid (g/ml)",
+              "1,02 - 1,08"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Samenstelling"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Component",
+            "Specificatie (%, min.)"
+          ],
+          "rows": [
+            [
+              "Totaal opgeloste vaste stoffen (TDS)",
+              "7,0"
+            ],
+            [
+              "Alginezuur",
+              "0,55"
+            ],
+            [
+              "Totale organische koolstof",
+              "4,0"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Wettelijke status (land van herkomst): conform de FCO-richtlijnen „Biostimulants: Ascophyllum nodosum 7% (Liquid) - Catégorie 2-5”."
+        },
+        {
+          "type": "heading",
+          "text": "Toepassing & dosering"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Toepassingsgebied: speciaal ontwikkeld voor bladtoepassingen in de landbouw.",
+            "Gewassen: aanbevolen voor alle gewascategorieën."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Toepassingsmethoden & dosering"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Bladbespuiting (Foliar sprays): 2500 ml per hectare.",
+            "Fertigatie: 2500 ml per hectare."
+          ]
+        }
       ]
     }
   },
   "orthagrow-aminactif": {
     "fr": {
-      "claim": "Synergie brevetée d’acides aminés végétaux de soja et de silicium : le combo anti-stress.",
+      "claim": "ORTHAGROW AMINACTIF-4G est un mélange breveté d’hydrolysat de protéines d’origine végétale (soja), enrichi en molécules bioactives, en nutriments essentiels et en silicium (Si) afin d’en améliorer l’efficacité. Ce produit a été spécialement développé pour optimiser la croissance et le développement global de la culture.",
       "paragraphs": [],
       "advantages": [
-        "Optimise la croissance globale.",
-        "Améliore l’assimilation.",
-        "Active les processus physiologiques."
+        "Croissance optimale : optimise la croissance et le développement global de la culture.",
+        "Meilleure absorption : améliore l’absorption et l’assimilation des nutriments par la plante.",
+        "Déclencheur physiologique : la présence d’acides aminés libres active des processus physiologiques essentiels au sein de la plante.",
+        "Résistance au stress : renforce les cultures afin de les rendre plus résistantes à différents types de stress."
       ],
       "sizes": [
         "1 L",
         "10 L"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Spécifications du produit"
+        },
+        {
+          "type": "subheading",
+          "text": "Propriétés physiques & chimiques"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Paramètre",
+            "Spécification"
+          ],
+          "rows": [
+            [
+              "Type de formulation",
+              "Liquide soluble dans l’eau (Water Soluble Liquid)"
+            ],
+            [
+              "Aspect",
+              "Couleur jaune doré"
+            ],
+            [
+              "pH (solution à 5 %)",
+              "2,5 - 3,5"
+            ],
+            [
+              "Densité (g/ml)",
+              "1,00 - 1,20"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Composition"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Composant",
+            "Spécification (%, min.)"
+          ],
+          "rows": [
+            [
+              "Acides aminés libres",
+              "10,0"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Statut réglementaire (pays d’origine) : conforme aux directives de la FCO « Biostimulants: Protein Hydrolysate (Amino Acids 10%) (Plant Source) (Liquid) - Catégorie 5-9 »."
+        },
+        {
+          "type": "heading",
+          "text": "Application & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Domaine d’application : spécialement développé pour les applications foliaires en agriculture.",
+            "Cultures concernées : convient à toutes les catégories de cultures."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Méthodes d’application & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Pulvérisation foliaire (Foliar sprays) : 750 à 1 000 ml par hectare."
+          ]
+        }
       ]
     },
     "en": {
-      "claim": "A patented synergy of plant-based soya amino acids and silicon — the anti-stress combination.",
+      "claim": "ORTHAGROW AMINACTIF-4G is a patented blend of plant-based (soy) protein hydrolysate, enriched with bioactive molecules, essential nutrients and silicon (Si) to improve its efficacy. It was specially developed to optimise the overall growth and development of the crop.",
       "paragraphs": [],
       "advantages": [
-        "Optimises overall growth.",
-        "Improves assimilation.",
-        "Activates physiological processes."
+        "Optimal growth: optimises the overall growth and development of the crop.",
+        "Better uptake: improves the plant’s uptake and assimilation of nutrients.",
+        "Physiological trigger: free amino acids activate essential physiological processes within the plant.",
+        "Stress resistance: strengthens crops to make them more resistant to different kinds of stress."
       ],
       "sizes": [
         "1 L",
         "10 L"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Product specifications"
+        },
+        {
+          "type": "subheading",
+          "text": "Physical & chemical properties"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parameter",
+            "Specification"
+          ],
+          "rows": [
+            [
+              "Formulation type",
+              "Water Soluble Liquid"
+            ],
+            [
+              "Appearance",
+              "Golden yellow"
+            ],
+            [
+              "pH (5% solution)",
+              "2.5 - 3.5"
+            ],
+            [
+              "Density (g/ml)",
+              "1.00 - 1.20"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Composition"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Component",
+            "Specification (%, min.)"
+          ],
+          "rows": [
+            [
+              "Free amino acids",
+              "10.0"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Regulatory status (country of origin): complies with the FCO guidelines “Biostimulants: Protein Hydrolysate (Amino Acids 10%) (Plant Source) (Liquid) - Catégorie 5-9”."
+        },
+        {
+          "type": "heading",
+          "text": "Application & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Field of application: specially developed for foliar applications in agriculture.",
+            "Crops: suitable for all crop categories."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Application methods & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Foliar sprays: 750 to 1,000 ml per hectare."
+          ]
+        }
       ]
     },
     "es": {
-      "claim": "Sinergia patentada de aminoácidos vegetales de soja y silicio: la combinación antiestrés.",
+      "claim": "ORTHAGROW AMINACTIF-4G es una mezcla patentada de hidrolizado de proteínas de origen vegetal (soja), enriquecida con moléculas bioactivas, nutrientes esenciales y silicio (Si) para mejorar su eficacia. Este producto ha sido especialmente desarrollado para optimizar el crecimiento y el desarrollo global del cultivo.",
       "paragraphs": [],
       "advantages": [
-        "Optimiza el crecimiento global.",
-        "Mejora la asimilación.",
-        "Activa los procesos fisiológicos."
+        "Crecimiento óptimo: optimiza el crecimiento y el desarrollo global del cultivo.",
+        "Mejor absorción: mejora la absorción y la asimilación de nutrientes por la planta.",
+        "Desencadenante fisiológico: la presencia de aminoácidos libres activa procesos fisiológicos esenciales en la planta.",
+        "Resistencia al estrés: refuerza los cultivos para hacerlos más resistentes a distintos tipos de estrés."
       ],
       "sizes": [
         "1 L",
         "10 L"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Especificaciones del producto"
+        },
+        {
+          "type": "subheading",
+          "text": "Propiedades físicas y químicas"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parámetro",
+            "Especificación"
+          ],
+          "rows": [
+            [
+              "Tipo de formulación",
+              "Líquido soluble en agua (Water Soluble Liquid)"
+            ],
+            [
+              "Aspecto",
+              "Color amarillo dorado"
+            ],
+            [
+              "pH (solución al 5 %)",
+              "2,5 - 3,5"
+            ],
+            [
+              "Densidad (g/ml)",
+              "1,00 - 1,20"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Composición"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Componente",
+            "Especificación (%, mín.)"
+          ],
+          "rows": [
+            [
+              "Aminoácidos libres",
+              "10,0"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Estatus reglamentario (país de origen): conforme a las directrices de la FCO «Biostimulants: Protein Hydrolysate (Amino Acids 10%) (Plant Source) (Liquid) - Catégorie 5-9»."
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación y dosificación"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Ámbito de aplicación: especialmente desarrollado para aplicaciones foliares en agricultura.",
+            "Cultivos: apto para todas las categorías de cultivos."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Métodos de aplicación y dosificación"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Pulverización foliar (Foliar sprays): 750 a 1000 ml por hectárea."
+          ]
+        }
       ]
     },
     "nl": {
-      "claim": "Gepatenteerde synergie van plantaardige soja-aminozuren en silicium: de antistresscombinatie.",
+      "claim": "ORTHAGROW AMINACTIF-4G is een gepatenteerd mengsel van plantaardig (soja) eiwithydrolysaat, verrijkt met bioactieve moleculen, essentiële voedingsstoffen en silicium (Si) om de werkzaamheid te verbeteren. Het product is speciaal ontwikkeld om de algemene groei en ontwikkeling van het gewas te optimaliseren.",
       "paragraphs": [],
       "advantages": [
-        "Optimaliseert de algehele groei.",
-        "Verbetert de opname.",
-        "Activeert fysiologische processen."
+        "Optimale groei: optimaliseert de algemene groei en ontwikkeling van het gewas.",
+        "Betere opname: verbetert de opname en assimilatie van voedingsstoffen door de plant.",
+        "Fysiologische trigger: vrije aminozuren activeren essentiële fysiologische processen in de plant.",
+        "Stressbestendigheid: versterkt gewassen zodat ze beter bestand zijn tegen verschillende soorten stress."
       ],
       "sizes": [
         "1 L",
         "10 L"
-      ]
-    },
-    "ar": {
-      "claim": "تآزر مُسجَّل ببراءة اختراع بين الأحماض الأمينية النباتية من فول الصويا والسيليسيوم: تركيبة مضادة للإجهاد.",
-      "paragraphs": [],
-      "advantages": [
-        "يحسّن النمو الإجمالي.",
-        "يعزّز الاستيعاب.",
-        "ينشّط العمليات الفسيولوجية."
       ],
-      "sizes": [
-        "1 لتر",
-        "10 لتر"
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Productspecificaties"
+        },
+        {
+          "type": "subheading",
+          "text": "Fysische & chemische eigenschappen"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parameter",
+            "Specificatie"
+          ],
+          "rows": [
+            [
+              "Formuleringstype",
+              "In water oplosbare vloeistof (Water Soluble Liquid)"
+            ],
+            [
+              "Uiterlijk",
+              "Goudgele kleur"
+            ],
+            [
+              "pH (5% oplossing)",
+              "2,5 - 3,5"
+            ],
+            [
+              "Dichtheid (g/ml)",
+              "1,00 - 1,20"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Samenstelling"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Component",
+            "Specificatie (%, min.)"
+          ],
+          "rows": [
+            [
+              "Vrije aminozuren",
+              "10,0"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Wettelijke status (land van herkomst): conform de FCO-richtlijnen „Biostimulants: Protein Hydrolysate (Amino Acids 10%) (Plant Source) (Liquid) - Catégorie 5-9”."
+        },
+        {
+          "type": "heading",
+          "text": "Toepassing & dosering"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Toepassingsgebied: speciaal ontwikkeld voor bladtoepassingen in de landbouw.",
+            "Gewassen: geschikt voor alle gewascategorieën."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Toepassingsmethoden & dosering"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Bladbespuiting (Foliar sprays): 750 tot 1000 ml per hectare."
+          ]
+        }
       ]
     }
   },
   "orthagrow-myco": {
     "fr": {
-      "claim": "Bio-fertilisant mycorhizien à triple action.",
+      "claim": "ORTHAGROW MYCO4G est un mélange de haute qualité composé d’un consortium de mycorhizes vésiculaires-arbusculaires (Rhizophagus irregularis, R. clarus et Funneliformis mosseae). Cette formule puissante est enrichie en nutriments essentiels pour les plantes ainsi qu’en biomolécules afin d’en maximiser l’efficacité.",
       "paragraphs": [
-        "Nouvelle technologie de silicium encapsulé : VAM + 13 nutriments + silicium."
+        "Les mycorhizes sont produites dans des conditions totalement aseptiques à l’aide de la technologie avancée ROC (Root Organ Culture). Cette technologie garantit une qualité constante des spores et exclut tout risque de contamination secondaire."
       ],
-      "advantages": [],
+      "advantages": [
+        "Développement accru de la masse racinaire : stimule activement le développement du système racinaire.",
+        "Meilleure exploration du sol : favorise l’absorption de l’eau et des nutriments bien au-delà de la rhizosphère.",
+        "Disponibilité des nutriments : rend les nutriments immobilisés dans le sol à nouveau disponibles pour la plante grâce à leur solubilisation.",
+        "Installation rapide : favorise une implantation réussie et une croissance précoce de la culture.",
+        "Résistance au stress : atténue l’impact des stress abiotiques, tels que la sécheresse et la salinité.",
+        "Protection des cultures : réduit les risques de dommages racinaires causés par les maladies et ravageurs telluriques."
+      ],
       "sizes": [
         "200 g"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Spécifications du produit"
+        },
+        {
+          "type": "subheading",
+          "text": "Propriétés physiques & chimiques"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Paramètre",
+            "Spécification"
+          ],
+          "rows": [
+            [
+              "Type de formulation",
+              "Poudre soluble dans l’eau (Water Soluble Powder)"
+            ],
+            [
+              "Aspect",
+              "Couleur foncée"
+            ],
+            [
+              "pH (solution à 50 %)",
+              "5,0 - 5,5"
+            ],
+            [
+              "Densité (g/ml)",
+              "1,07 - 1,15"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Propriétés biologiques & réglementation"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Paramètre",
+            "Spécification"
+          ],
+          "rows": [
+            [
+              "Nombre total de spores viables /g",
+              "10⁴ (200)*"
+            ],
+            [
+              "Potentiel d’inoculum /g",
+              "1200*"
+            ],
+            [
+              "Statut réglementaire (pays d’origine)",
+              "Classifié par la FCO comme « Mycorrhizal Biofertilizers »"
+            ]
+          ],
+          "note": "* Selon les spécifications de la FCO."
+        },
+        {
+          "type": "heading",
+          "text": "Application & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Domaine d’application : spécialement développé pour les applications au sol en agriculture et en horticulture.",
+            "Cultures concernées : ce produit convient à toutes les catégories de cultures.",
+            "Dosage recommandé : 400 g par hectare et par application.",
+            "Période d’application : il est recommandé d’appliquer le produit au début du stade végétatif de la culture."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Méthodes d’application"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Arrosage du sol (soil drenching)",
+            "Fertigation",
+            "Enrobage des semences (en association avec un agent adhésif)"
+          ]
+        },
+        {
+          "type": "caution",
+          "text": "⚠️ Précaution importante : lors de l’application de Mycorrhiza WP, respecter un intervalle de 7 à 10 jours par rapport à l’application d’un fongicide de contact."
+        }
       ]
     },
     "en": {
-      "claim": "Triple action mycorrhizal bio-fertilizer.",
+      "claim": "ORTHAGROW MYCO4G is a high-quality blend made of a consortium of vesicular-arbuscular mycorrhizae (Rhizophagus irregularis, R. clarus and Funneliformis mosseae). This powerful formula is enriched with essential plant nutrients and with biomolecules to maximise its efficacy.",
       "paragraphs": [
-        "New encapsulated silicon technology: VAM + 13 nutrients + silicon."
+        "The mycorrhizae are produced under fully aseptic conditions using advanced ROC (Root Organ Culture) technology. This technology guarantees consistent spore quality and rules out any risk of secondary contamination."
       ],
-      "advantages": [],
+      "advantages": [
+        "Greater root mass: actively stimulates the development of the root system.",
+        "Better soil exploration: promotes the uptake of water and nutrients well beyond the rhizosphere.",
+        "Nutrient availability: makes nutrients locked up in the soil available to the plant again by solubilising them.",
+        "Fast establishment: supports successful establishment and early growth of the crop.",
+        "Stress resistance: reduces the impact of abiotic stress such as drought and salinity.",
+        "Crop protection: reduces the risk of root damage caused by soil-borne diseases and pests."
+      ],
       "sizes": [
         "200 g"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Product specifications"
+        },
+        {
+          "type": "subheading",
+          "text": "Physical & chemical properties"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parameter",
+            "Specification"
+          ],
+          "rows": [
+            [
+              "Formulation type",
+              "Water Soluble Powder"
+            ],
+            [
+              "Appearance",
+              "Dark colour"
+            ],
+            [
+              "pH (50% solution)",
+              "5.0 - 5.5"
+            ],
+            [
+              "Density (g/ml)",
+              "1.07 - 1.15"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Biological properties & regulation"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parameter",
+            "Specification"
+          ],
+          "rows": [
+            [
+              "Total viable spores /g",
+              "10⁴ (200)*"
+            ],
+            [
+              "Inoculum potential /g",
+              "1200*"
+            ],
+            [
+              "Regulatory status (country of origin)",
+              "Classified by the FCO as “Mycorrhizal Biofertilizers”"
+            ]
+          ],
+          "note": "* According to the FCO specifications."
+        },
+        {
+          "type": "heading",
+          "text": "Application & dosage"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Field of application: specially developed for soil applications in agriculture and horticulture.",
+            "Crops: this product is suitable for all crop categories.",
+            "Recommended dosage: 400 g per hectare per application.",
+            "Timing: the product is best applied at the start of the crop’s vegetative stage."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Application methods"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Soil drenching",
+            "Fertigation",
+            "Seed coating (together with a sticking agent)"
+          ]
+        },
+        {
+          "type": "caution",
+          "text": "⚠️ Important: when applying Mycorrhiza WP, keep an interval of 7 to 10 days from any application of a contact fungicide."
+        }
       ]
     },
     "es": {
-      "claim": "Biofertilizante micorrícico de triple acción.",
+      "claim": "ORTHAGROW MYCO4G es una mezcla de alta calidad compuesta por un consorcio de micorrizas vesículo-arbusculares (Rhizophagus irregularis, R. clarus y Funneliformis mosseae). Esta potente fórmula está enriquecida con nutrientes esenciales para las plantas y con biomoléculas para maximizar su eficacia.",
       "paragraphs": [
-        "Nueva tecnología de silicio encapsulado: VAM + 13 nutrientes + silicio."
+        "Las micorrizas se producen en condiciones totalmente asépticas mediante la avanzada tecnología ROC (Root Organ Culture). Esta tecnología garantiza una calidad constante de las esporas y excluye cualquier riesgo de contaminación secundaria."
       ],
-      "advantages": [],
+      "advantages": [
+        "Mayor desarrollo de la masa radicular: estimula activamente el desarrollo del sistema radicular.",
+        "Mejor exploración del suelo: favorece la absorción de agua y nutrientes mucho más allá de la rizosfera.",
+        "Disponibilidad de nutrientes: vuelve a poner a disposición de la planta los nutrientes inmovilizados en el suelo gracias a su solubilización.",
+        "Implantación rápida: favorece una implantación exitosa y un crecimiento temprano del cultivo.",
+        "Resistencia al estrés: atenúa el impacto de los estreses abióticos, como la sequía y la salinidad.",
+        "Protección de los cultivos: reduce el riesgo de daños radiculares causados por enfermedades y plagas del suelo."
+      ],
       "sizes": [
         "200 g"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Especificaciones del producto"
+        },
+        {
+          "type": "subheading",
+          "text": "Propiedades físicas y químicas"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parámetro",
+            "Especificación"
+          ],
+          "rows": [
+            [
+              "Tipo de formulación",
+              "Polvo soluble en agua (Water Soluble Powder)"
+            ],
+            [
+              "Aspecto",
+              "Color oscuro"
+            ],
+            [
+              "pH (solución al 50 %)",
+              "5,0 - 5,5"
+            ],
+            [
+              "Densidad (g/ml)",
+              "1,07 - 1,15"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Propiedades biológicas y normativa"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parámetro",
+            "Especificación"
+          ],
+          "rows": [
+            [
+              "Número total de esporas viables /g",
+              "10⁴ (200)*"
+            ],
+            [
+              "Potencial de inóculo /g",
+              "1200*"
+            ],
+            [
+              "Estatus reglamentario (país de origen)",
+              "Clasificado por la FCO como «Mycorrhizal Biofertilizers»"
+            ]
+          ],
+          "note": "* Según las especificaciones de la FCO."
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación y dosificación"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Ámbito de aplicación: especialmente desarrollado para aplicaciones al suelo en agricultura y horticultura.",
+            "Cultivos: este producto es apto para todas las categorías de cultivos.",
+            "Dosis recomendada: 400 g por hectárea y por aplicación.",
+            "Periodo de aplicación: se recomienda aplicar el producto al inicio de la fase vegetativa del cultivo."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Métodos de aplicación"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Riego del suelo (soil drenching)",
+            "Fertirrigación",
+            "Recubrimiento de semillas (junto con un agente adherente)"
+          ]
+        },
+        {
+          "type": "caution",
+          "text": "⚠️ Precaución importante: al aplicar Mycorrhiza WP, respetar un intervalo de 7 a 10 días con respecto a la aplicación de un fungicida de contacto."
+        }
       ]
     },
     "nl": {
-      "claim": "Mycorrhiza-biomeststof met drievoudige werking.",
+      "claim": "ORTHAGROW MYCO4G is een hoogwaardig mengsel van een consortium van vesiculair-arbusculaire mycorrhiza’s (Rhizophagus irregularis, R. clarus en Funneliformis mosseae). Deze krachtige formule is verrijkt met essentiële plantenvoedingsstoffen en met biomoleculen om de werkzaamheid te maximaliseren.",
       "paragraphs": [
-        "Nieuwe technologie met ingekapseld silicium: VAM + 13 nutriënten + silicium."
+        "De mycorrhiza’s worden onder volledig aseptische omstandigheden geproduceerd met de geavanceerde ROC-technologie (Root Organ Culture). Deze technologie garandeert een constante sporenkwaliteit en sluit elk risico op secundaire besmetting uit."
       ],
-      "advantages": [],
+      "advantages": [
+        "Meer wortelmassa: stimuleert actief de ontwikkeling van het wortelstelsel.",
+        "Betere bodemverkenning: bevordert de opname van water en voedingsstoffen tot ver buiten de rhizosfeer.",
+        "Beschikbaarheid van voedingsstoffen: maakt in de bodem vastgelegde voedingsstoffen door oplossing opnieuw beschikbaar voor de plant.",
+        "Snelle vestiging: bevordert een geslaagde vestiging en een vroege groei van het gewas.",
+        "Stressbestendigheid: vermindert de impact van abiotische stress zoals droogte en verzilting.",
+        "Gewasbescherming: verkleint het risico op wortelschade door bodemgebonden ziekten en plagen."
+      ],
       "sizes": [
         "200 g"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Productspecificaties"
+        },
+        {
+          "type": "subheading",
+          "text": "Fysische & chemische eigenschappen"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parameter",
+            "Specificatie"
+          ],
+          "rows": [
+            [
+              "Formuleringstype",
+              "In water oplosbaar poeder (Water Soluble Powder)"
+            ],
+            [
+              "Uiterlijk",
+              "Donkere kleur"
+            ],
+            [
+              "pH (50% oplossing)",
+              "5,0 - 5,5"
+            ],
+            [
+              "Dichtheid (g/ml)",
+              "1,07 - 1,15"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Biologische eigenschappen & regelgeving"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parameter",
+            "Specificatie"
+          ],
+          "rows": [
+            [
+              "Totaal aantal levensvatbare sporen /g",
+              "10⁴ (200)*"
+            ],
+            [
+              "Inoculumpotentieel /g",
+              "1200*"
+            ],
+            [
+              "Wettelijke status (land van herkomst)",
+              "Door de FCO geclassificeerd als „Mycorrhizal Biofertilizers”"
+            ]
+          ],
+          "note": "* Volgens de FCO-specificaties."
+        },
+        {
+          "type": "heading",
+          "text": "Toepassing & dosering"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Toepassingsgebied: speciaal ontwikkeld voor bodemtoepassingen in land- en tuinbouw.",
+            "Gewassen: dit product is geschikt voor alle gewascategorieën.",
+            "Aanbevolen dosering: 400 g per hectare per toepassing.",
+            "Toepassingsperiode: het product wordt bij voorkeur toegepast aan het begin van de vegetatieve fase van het gewas."
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Toepassingsmethoden"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Bodemdrenching (soil drenching)",
+            "Fertigatie",
+            "Zaadcoating (samen met een hechtmiddel)"
+          ]
+        },
+        {
+          "type": "caution",
+          "text": "⚠️ Belangrijke voorzorg: houd bij het toepassen van Mycorrhiza WP een interval van 7 tot 10 dagen aan ten opzichte van een toepassing met een contactfungicide."
+        }
       ]
-    },
-    "ar": {
-      "claim": "سماد حيوي فطري جذري ثلاثي المفعول.",
+    }
+  },
+  "orthagrow-procure": {
+    "fr": {
+      "claim": "ORTHAGROW PROCURE est un insecticide biologique sous forme de granulés.",
       "paragraphs": [
-        "تقنية جديدة للسيليسيوم المغلَّف: فطريات VAM + 13 عنصرًا غذائيًا + سيليسيوم."
+        "Description complète et spécifications : bientôt disponibles."
       ],
       "advantages": [],
-      "sizes": [
-        "200 غ"
-      ]
+      "sizes": []
+    },
+    "en": {
+      "claim": "ORTHAGROW PROCURE is a biological insecticide in granule form.",
+      "paragraphs": [
+        "Full description and specifications: coming soon."
+      ],
+      "advantages": [],
+      "sizes": []
+    },
+    "es": {
+      "claim": "ORTHAGROW PROCURE es un insecticida biológico en forma de gránulos.",
+      "paragraphs": [
+        "Descripción completa y especificaciones: próximamente."
+      ],
+      "advantages": [],
+      "sizes": []
+    },
+    "nl": {
+      "claim": "ORTHAGROW PROCURE is een biologisch insecticide in korrelvorm.",
+      "paragraphs": [
+        "Volledige beschrijving en specificaties: binnenkort beschikbaar."
+      ],
+      "advantages": [],
+      "sizes": []
+    }
+  },
+  "orthagrow-protec": {
+    "fr": {
+      "claim": "ORTHAGROW PROTEC est un insecticide biologique sous forme de poudre soluble dans l’eau (formulation WS).",
+      "paragraphs": [
+        "Description complète et spécifications : bientôt disponibles."
+      ],
+      "advantages": [],
+      "sizes": []
+    },
+    "en": {
+      "claim": "ORTHAGROW PROTEC is a biological insecticide in water-soluble powder form (WS formulation).",
+      "paragraphs": [
+        "Full description and specifications: coming soon."
+      ],
+      "advantages": [],
+      "sizes": []
+    },
+    "es": {
+      "claim": "ORTHAGROW PROTEC es un insecticida biológico en forma de polvo soluble en agua (formulación WS).",
+      "paragraphs": [
+        "Descripción completa y especificaciones: próximamente."
+      ],
+      "advantages": [],
+      "sizes": []
+    },
+    "nl": {
+      "claim": "ORTHAGROW PROTEC is een biologisch insecticide in de vorm van een in water oplosbaar poeder (WS-formulering).",
+      "paragraphs": [
+        "Volledige beschrijving en specificaties: binnenkort beschikbaar."
+      ],
+      "advantages": [],
+      "sizes": []
     }
   }
 }

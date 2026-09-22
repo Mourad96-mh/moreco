@@ -131,6 +131,8 @@
     "allProducts": "Alle producten",
     "advantages": "Voordelen",
     "availableIn": "Verkrijgbaar in",
+    "concentration": "Concentratie",
+    "concentrations": "Concentraties",
     "addToQuote": "Aan offerte toevoegen",
     "inQuote": "In uw offerte",
     "datasheet": "Productfiche downloaden",
@@ -138,7 +140,9 @@
     "relatedTitle": "Andere producten uit het gamma",
     "noCopy": "Gedetailleerde fiche in voorbereiding. Neem contact op voor technische informatie.",
     "chooseCategory": "Kies een categorie om de producten te zien.",
-    "learnMore": "Meer weten"
+    "learnMore": "Meer weten",
+    "zoom": "Foto vergroten",
+    "zoomClose": "Sluiten"
   },
   "rdi": {
     "title": "Onderzoek & Ontwikkeling Moreco",

@@ -1,0 +1,87 @@
+.trigger {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+}
+
+.img {
+  object-fit: contain;
+  padding: clamp(1.5rem, 4vw, 3rem);
+}
+
+.hint {
+  position: absolute;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--ink-2);
+  transition: color 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+
+.trigger:hover .hint,
+.trigger:focus-visible .hint {
+  border-color: var(--green);
+  color: var(--green-dark);
+}
+
+.dialog {
+  max-width: min(92vw, 1100px);
+  max-height: 92vh;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  overflow: visible;
+}
+
+.dialog::backdrop {
+  background: rgb(16 22 28 / 0.78);
+}
+
+/* The same white ground and thin grey frame as on the page, only larger. */
+.sheet {
+  position: relative;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-lg);
+  background: var(--paper);
+  padding: clamp(1rem, 3vw, 2.5rem);
+}
+
+.large {
+  display: block;
+  max-width: 100%;
+  max-height: calc(92vh - 5rem);
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+.close {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.close:hover {
+  border-color: var(--green);
+  color: var(--green-dark);
+}

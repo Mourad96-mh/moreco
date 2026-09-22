@@ -30,7 +30,32 @@ export interface ProductCopy {
   paragraphs: string[];
   advantages: string[];
   sizes: string[];
+  /** Hydrogen peroxide strengths, shown under the pack shot beside the formats. */
+  concentrations?: string[];
+  /**
+   * The technical sheet that follows the advantages: specifications, composition,
+   * application and dosage. Only the products briefed on 2026-09-22 have one — the
+   * archive copy is prose, and stays in `paragraphs`.
+   */
+  sections?: CopySection[];
 }
+
+/** A two-column table: parameter and value. `head` names both columns. */
+export interface CopyTable {
+  type: 'table';
+  head: [string, string];
+  rows: [string, string][];
+  /** A footnote under the table, e.g. the source of the starred values. */
+  note?: string;
+}
+
+export type CopySection =
+  | { type: 'heading'; text: string }
+  | { type: 'subheading'; text: string }
+  | { type: 'paragraph'; text: string }
+  | { type: 'list'; items: string[] }
+  | { type: 'caution'; text: string }
+  | CopyTable;
 
 export const SEGMENTS: SegmentKey[] = ['agri', 'humans', 'animals', 'general'];
 
@@ -41,10 +66,12 @@ export const SEGMENTS: SegmentKey[] = ['agri', 'humans', 'animals', 'general'];
  * unchanged — so a family is purely a presentation layer on the segment page.
  *
  * `soon` closes a family with a tile reading only the word SOON. The client was explicit:
- * no name, no number, no explanation on the site. For our own reference only, the two
- * placeholders left stand for the last of the ten Orthagrow 4G products (biostimulants)
- * and two further products (protection). Soil lost its placeholder on 2026-09-16, when
- * MYCO 4G arrived with a name and a pack shot.
+ * no name, no number, no explanation on the site. For our own reference only, the one
+ * placeholder left stands for the last of the ten Orthagrow 4G products (biostimulants).
+ * Soil lost its placeholder on 2026-09-16, when MYCO 4G arrived with a name and a pack
+ * shot, and protection on 2026-09-22, when Procure and Protec were named. The briefing
+ * of 2026-09-22 lists ten 4G products that are all already here, so this last tile may
+ * have run its course — to be confirmed with the client before removing it.
  */
 export interface ProductFamily {
   key: FamilyKey;
@@ -135,7 +162,11 @@ export const FAMILIES: ProductFamily[] = [
     ],
     note: 'npk',
   },
-  { key: 'protection', segment: 'agri', products: [], soon: true },
+  /*
+   * The two products the SOON tile stood for, named on 2026-09-22 with a one-line
+   * description each. Their full text and pack shots are still to come.
+   */
+  { key: 'protection', segment: 'agri', products: ['orthagrow-procure', 'orthagrow-protec'] },
   /*
    * The two disinfectants already sold into crops. Their home range is Huwa-San /
    * Clearox under the Disinfectant segment, so until now they appeared at the foot of
@@ -190,8 +221,10 @@ export const PRODUCTS: Product[] = [
   },
   /*
    * The Orthagrow 4G range. The five below, sent on 2026-09-13, are water-soluble
-   * foliar formulations in a 1 kg pouch, and only their analysis is public so far —
-   * see product-copy.json.
+   * foliar formulations in a 1 kg pouch; their full technical sheets arrived on
+   * 2026-09-22 — see product-copy.json. Matur, Frucfolia and Frucferti got new studio
+   * pack shots on 2026-09-21, on a coloured ground, as did the four liquids below and
+   * OrthaHealth Volailles and Bovins; Initio and Flor keep their white cut-outs.
    */
   { slug: 'orthagrow-initio', name: 'Orthagrow Initio 4G', segment: 'agri', range: 'orthagrow' },
   { slug: 'orthagrow-flor', name: 'Orthagrow Flor 4G', segment: 'agri', range: 'orthagrow' },
@@ -215,19 +248,21 @@ export const PRODUCTS: Product[] = [
   /* Named on 2026-09-16; it had been the soil family's unnamed SOON tile until then. */
   { slug: 'orthagrow-myco', name: 'Orthagrow MYCO 4G', segment: 'agri', range: 'orthagrow' },
 
+  /* The two biological insecticides of the protection family, named on 2026-09-22. */
+  { slug: 'orthagrow-procure', name: 'Orthagrow Procure', segment: 'agri', range: 'orthagrow' },
+  { slug: 'orthagrow-protec', name: 'Orthagrow Protec', segment: 'agri', range: 'orthagrow' },
+
   /*
-   * Renamed from "Mavita Health" on 2026-09-17, at the client's instruction, while the
-   * SKU below keeps the same name — their briefing was explicit on both points. The slug
-   * is deliberately untouched: it is the URL the old site's /mavita-health-fr/ redirects
-   * onto, and the client asked for a name change, not a new product. The client still
-   * owes us the two new pack shots; the copy stays word for word as it was.
+   * In the order the client set on 2026-09-22: Beauty, Sport, Stress-Plex, then the rest.
+   * The same briefing struck the first of the two "Mavita Sport" entries — the old
+   * Mavita Health SKU, renamed on 2026-09-17 — photo and all; its old URLs now land on
+   * the Mavita Sport below (finalize-export.mjs).
    */
-  { slug: 'mavita-health', name: 'Mavita Sport', segment: 'humans', range: 'mavita' },
   { slug: 'mavita-beauty', name: 'Mavita Beauty', segment: 'humans', range: 'mavita' },
-  { slug: 'mavita-luxe', name: 'Mavita Luxe', segment: 'humans', range: 'mavita' },
-  { slug: 'mavita-slim', name: 'Mavita Slim+', segment: 'humans', range: 'mavita' },
   { slug: 'mavita-sport', name: 'Mavita Sport', segment: 'humans', range: 'mavita' },
   { slug: 'mavita-stress-plex', name: 'Mavita Stress-Plex', segment: 'humans', range: 'mavita' },
+  { slug: 'mavita-luxe', name: 'Mavita Luxe', segment: 'humans', range: 'mavita' },
+  { slug: 'mavita-slim', name: 'Mavita Slim+', segment: 'humans', range: 'mavita' },
 
   /*
    * The single generic "OrthaHealth" SKU was retired on 2026-09-13: the client split the
