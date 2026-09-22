@@ -98,7 +98,9 @@ const RULES = [
   ['/agri-horticulture-fr/gamme-de-produits-orthafight/', 'fr', 'produits/agri-horticulture/orthagrow/orthagrow-fertifight'],
   ['/les-humains/', 'fr', 'produits/humains'],
   ['/les-humains/ligne-de-produit-mavita/', 'fr', 'produits/humains/mavita'],
-  ['/les-humains/ligne-de-produit-mavita/mavita-health-fr/', 'fr', 'produits/humains/mavita/mavita-health'],
+  /* Mavita Health (renamed Mavita Sport on 2026-09-17) was struck on 2026-09-22; the
+     Mavita Sport that remains takes its visitors. */
+  ['/les-humains/ligne-de-produit-mavita/mavita-health-fr/', 'fr', 'produits/humains/mavita/mavita-sport'],
   ['/les-humains/ligne-de-produit-mavita/mavita-beauty-fr/', 'fr', 'produits/humains/mavita/mavita-beauty'],
   ['/les-humains/ligne-de-produit-mavita/mavita-luxe-fr/', 'fr', 'produits/humains/mavita/mavita-luxe'],
   ['/les-humains/ligne-de-produit-mavita/mavita-slim-avec-maca/', 'fr', 'produits/humains/mavita/mavita-slim'],
@@ -133,7 +135,7 @@ const RULES = [
   ['/agri-horticulture/orthafight-productline/', 'en', 'products/agri-horticulture/orthagrow/orthagrow-fertifight'],
   ['/humans/', 'en', 'products/humans'],
   ['/humans/mavita-productline/', 'en', 'products/humans/mavita'],
-  ['/humans/mavita-productline/mavita-health/', 'en', 'products/humans/mavita/mavita-health'],
+  ['/humans/mavita-productline/mavita-health/', 'en', 'products/humans/mavita/mavita-sport'],
   ['/humans/mavita-productline/mavita-beauty/', 'en', 'products/humans/mavita/mavita-beauty'],
   ['/humans/mavita-productline/mavita-luxe/', 'en', 'products/humans/mavita/mavita-luxe'],
   ['/humans/mavita-productline/mavita-slim-maca/', 'en', 'products/humans/mavita/mavita-slim'],
@@ -219,6 +221,20 @@ const map = new Map();
 const addRule = (from, locale, to) => map.set(from, `/${locale}${to ? '/' + to : ''}/`);
 
 for (const [from, locale, to] of RULES) addRule(from, locale, to);
+
+/*
+ * Pages this site itself published and later withdrew. Their URLs were live, so they
+ * redirect like the old site's do, in every language. The path is built from the same
+ * word table as the routes.
+ */
+const WITHDRAWN = [['mavita-health', ['products', 'humans', 'mavita'], 'mavita-sport']];
+for (const [slug, [words, segment, range], target] of WITHDRAWN) {
+  for (const locale of LOCALES) {
+    const base = `${wordTable.words[words][locale]}/${wordTable.segments[segment][locale]}/${range}`;
+    addRule(`/${locale}/${base}/${slug}/`, locale, `${base}/${target}`);
+  }
+}
+
 for (const [slug, trial] of Object.entries(TRIALS)) {
   addRule(`/research/${slug}/`, 'fr', `${TRIAL_PREFIX.fr}/${trial}`);
 }

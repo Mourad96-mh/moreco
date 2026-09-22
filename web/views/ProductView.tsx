@@ -12,6 +12,7 @@ import {
   productImage,
   productName,
   productsOfRange,
+  type CopySection,
   type SegmentKey,
 } from '@/data/products';
 import { href, rangeHref, segmentHref } from '@/data/routes';
@@ -19,6 +20,7 @@ import { productHero } from '@/data/hero-images';
 import PageHeader from '@/components/PageHeader/PageHeader';
 import ProductCard from '@/components/ProductCard/ProductCard';
 import AddToQuote from '@/components/Quote/AddToQuote';
+import ZoomImage from '@/components/ZoomImage/ZoomImage';
 import Reveal from '@/components/Reveal/Reveal';
 import catalogue from './Catalogue.module.css';
 import s from './ProductView.module.css';
@@ -63,16 +65,28 @@ export default function ProductView({ locale, slug }: { locale: Locale; slug: st
       <div className="section">
         <div className={`page ${s.layout}`}>
           <div className={s.mediaCol}>
-            {image && (
+            {image ? (
               <div className={s.frame}>
-                <Image
-                  src={image}
-                  alt={name}
-                  fill
-                  sizes="(min-width: 900px) 460px, 100vw"
-                  className={s.img}
-                  priority
-                />
+                <ZoomImage src={image} alt={name} labels={{ open: t.product.zoom, close: t.product.zoomClose }} />
+              </div>
+            ) : (
+              range?.brandMark && (
+                <div className={s.frame}>
+                  <Image src={range.brandMark} alt="" fill sizes="460px" className={s.placeholder} />
+                </div>
+              )
+            )}
+
+            {copy.concentrations && copy.concentrations.length > 0 && (
+              <div className={s.sizesBlock}>
+                <h2 className={s.blockTitle}>
+                  {copy.concentrations.length > 1 ? t.product.concentrations : t.product.concentration}
+                </h2>
+                <ul className={s.sizes}>
+                  {copy.concentrations.map((value) => (
+                    <li key={value}>{value}</li>
+                  ))}
+                </ul>
               </div>
             )}
 
@@ -114,6 +128,14 @@ export default function ProductView({ locale, slug }: { locale: Locale; slug: st
               </div>
             )}
 
+            {copy.sections && copy.sections.length > 0 && (
+              <div className={s.sheet}>
+                {copy.sections.map((section, i) => (
+                  <Section key={i} section={section} />
+                ))}
+              </div>
+            )}
+
             <div className={s.actions}>
               <AddToQuote
                 slug={slug}
@@ -146,6 +168,55 @@ export default function ProductView({ locale, slug }: { locale: Locale; slug: st
       )}
     </>
   );
+}
+
+function Section({ section }: { section: CopySection }) {
+  switch (section.type) {
+    case 'heading':
+      return <h2>{section.text}</h2>;
+    case 'subheading':
+      return <h3>{section.text}</h3>;
+    case 'paragraph':
+      return <p>{section.text}</p>;
+    case 'caution':
+      return (
+        <p className={s.caution} role="note">
+          {section.text}
+        </p>
+      );
+    case 'list':
+      return (
+        <ul className={s.advantages}>
+          {section.items.map((item) => (
+            <li key={item.slice(0, 40)}>{item}</li>
+          ))}
+        </ul>
+      );
+    case 'table':
+      return (
+        <>
+          <div className={s.tableWrap}>
+            <table className={s.table}>
+              <thead>
+                <tr>
+                  <th scope="col">{section.head[0]}</th>
+                  <th scope="col">{section.head[1]}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {section.rows.map(([label, value]) => (
+                  <tr key={label}>
+                    <th scope="row">{label}</th>
+                    <td>{value}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          {section.note && <p className={s.tableNote}>{section.note}</p>}
+        </>
+      );
+  }
 }
 
 const DownloadIcon = () => (

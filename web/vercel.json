@@ -127,7 +127,7 @@
     },
     {
       "source": "/%d8%a7%d9%84%d8%a8%d8%b4%d8%b1/%d8%ae%d8%b7-%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-mavita/mavita-health/",
-      "destination": "/fr/produits/humains/mavita/mavita-health/",
+      "destination": "/fr/produits/humains/mavita/mavita-sport/",
       "permanent": true
     },
     {
@@ -362,7 +362,7 @@
     },
     {
       "source": "/les-humains/ligne-de-produit-mavita/mavita-health-fr/",
-      "destination": "/fr/produits/humains/mavita/mavita-health/",
+      "destination": "/fr/produits/humains/mavita/mavita-sport/",
       "permanent": true
     },
     {
@@ -466,8 +466,23 @@
       "permanent": true
     },
     {
+      "source": "/es/productos/humanos/mavita/mavita-health/",
+      "destination": "/es/productos/humanos/mavita/mavita-sport/",
+      "permanent": true
+    },
+    {
       "source": "/agri-horticulture/orthafight-productline/",
       "destination": "/en/products/agri-horticulture/orthagrow/orthagrow-fertifight/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/produits/humains/mavita/mavita-health/",
+      "destination": "/fr/produits/humains/mavita/mavita-sport/",
+      "permanent": true
+    },
+    {
+      "source": "/nl/producten/mensen/mavita/mavita-health/",
+      "destination": "/nl/producten/mensen/mavita/mavita-sport/",
       "permanent": true
     },
     {
@@ -482,12 +497,17 @@
     },
     {
       "source": "/humans/mavita-productline/mavita-health/",
-      "destination": "/en/products/humans/mavita/mavita-health/",
+      "destination": "/en/products/humans/mavita/mavita-sport/",
       "permanent": true
     },
     {
       "source": "/humans/mavita-productline/mavita-beauty/",
       "destination": "/en/products/humans/mavita/mavita-beauty/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/humans/mavita/mavita-health/",
+      "destination": "/en/products/humans/mavita/mavita-sport/",
       "permanent": true
     },
     {

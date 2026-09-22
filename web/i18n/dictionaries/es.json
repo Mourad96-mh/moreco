@@ -131,6 +131,8 @@
     "allProducts": "Todos los productos",
     "advantages": "Ventajas",
     "availableIn": "Disponible en",
+    "concentration": "Concentración",
+    "concentrations": "Concentraciones",
     "addToQuote": "Añadir al presupuesto",
     "inQuote": "En su presupuesto",
     "datasheet": "Descargar la ficha de producto",
@@ -138,7 +140,9 @@
     "relatedTitle": "Otros productos de la gama",
     "noCopy": "Ficha detallada en preparación. Contáctenos para cualquier información técnica.",
     "chooseCategory": "Elija una categoría para ver los productos.",
-    "learnMore": "Más información"
+    "learnMore": "Más información",
+    "zoom": "Ampliar la foto",
+    "zoomClose": "Cerrar"
   },
   "rdi": {
     "title": "Investigación y Desarrollo Moreco",

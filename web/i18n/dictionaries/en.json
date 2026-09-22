@@ -131,6 +131,8 @@
     "allProducts": "All products",
     "advantages": "Advantages",
     "availableIn": "Available in",
+    "concentration": "Concentration",
+    "concentrations": "Concentrations",
     "addToQuote": "Add to quote",
     "inQuote": "In your quote",
     "datasheet": "Download the product sheet",
@@ -138,7 +140,9 @@
     "relatedTitle": "Other products in this range",
     "noCopy": "Detailed sheet in preparation. Contact us for any technical information.",
     "chooseCategory": "Choose a category to see the products.",
-    "learnMore": "Learn more"
+    "learnMore": "Learn more",
+    "zoom": "Enlarge the photo",
+    "zoomClose": "Close"
   },
   "rdi": {
     "title": "Moreco Research & Development",
