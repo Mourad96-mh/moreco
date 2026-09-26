@@ -237,7 +237,7 @@ export const PRODUCTS: Product[] = [
    * foliar formulations in a 1 kg pouch; their full technical sheets arrived on
    * 2026-09-22 — see product-copy.json. Matur, Frucfolia and Frucferti got new studio
    * pack shots on 2026-09-21, on a coloured ground, as did the four liquids below and
-   * OrthaHealth Volailles and Bovins; Initio and Flor keep their white cut-outs.
+   * OrthaHealth Volailles and Bovins; Initio and Flor followed on 2026-09-26.
    */
   { slug: 'orthagrow-initio', name: 'Orthagrow Initio 4G', segment: 'agri', range: 'orthagrow' },
   { slug: 'orthagrow-flor', name: 'Orthagrow Flor 4G', segment: 'agri', range: 'orthagrow' },
@@ -258,7 +258,10 @@ export const PRODUCTS: Product[] = [
   { slug: 'orthagrow-alga-si', name: 'Orthagrow ALGA +SI 4G', segment: 'agri', range: 'orthagrow' },
   { slug: 'orthagrow-aminactif', name: 'Orthagrow AMINACTIF-4G', segment: 'agri', range: 'orthagrow' },
 
-  /* Named on 2026-09-16; it had been the soil family's unnamed SOON tile until then. */
+  /*
+   * Named on 2026-09-16; it had been the soil family's unnamed SOON tile until then. The
+   * box on the orange band replaced the first render on 2026-09-26.
+   */
   { slug: 'orthagrow-myco', name: 'Orthagrow MYCO 4G', segment: 'agri', range: 'orthagrow' },
 
   /* The two biological insecticides of the protection family, named on 2026-09-22. */

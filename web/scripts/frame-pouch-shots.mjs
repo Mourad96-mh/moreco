@@ -27,14 +27,13 @@ import sharp from 'sharp';
 const HERE = dirname(fileURLToPath(import.meta.url));
 const PRODUCTS = join(HERE, '..', 'public', 'media', 'products');
 
-/** The five water-soluble 1 kg pouches, sent 2026-09-13. */
-const SHOTS = [
-  'orthagrow-initio',
-  'orthagrow-flor',
-  'orthagrow-frucfolia',
-  'orthagrow-frucferti',
-  'orthagrow-matur',
-];
+/**
+ * The water-soluble 1 kg pouches still on a white render. None are left: Frucfolia,
+ * Frucferti and Matur were replaced by studio shots on a coloured ground on 2026-09-21,
+ * Initio and Flor on 2026-09-26. Those shots have no white surround to measure, so the
+ * list stays empty — running the script over them would shrink them onto a white mat.
+ */
+const SHOTS = [];
 
 /** How far from pure white a pixel must be to count as product rather than backdrop. */
 const THRESHOLD = 8;
