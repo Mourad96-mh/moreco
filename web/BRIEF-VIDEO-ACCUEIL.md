@@ -3,6 +3,11 @@
 Commande client du 2026-09-09. La bannière de la page d'accueil ne porte plus ni titre,
 ni sous-titre, ni bouton : la vidéo est seule à l'écran. Elle doit donc tenir toute seule.
 
+**Mis à jour le 2026-09-26** : le client a remis un titre sur le film, « MORECO | La
+technologie au service de l'agriculture régénérative ». Il est posé en surimpression par
+le site (`t.home.heroTitle`), pas incrusté dans la vidéo : il reste net, traduit, et
+modifiable sans nouveau montage. Toujours ni sous-titre ni bouton.
+
 **Livré le 2026-09-12.** Le film du client est en place (`public/media/hero/hero.mp4`,
 10 s, 1024 × 576, H.264). Sa piste audio a été retirée au montage : la bannière démarre
 toute seule, et un film qui démarre tout seul avec du son est bloqué par les navigateurs.

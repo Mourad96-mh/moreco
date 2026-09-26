@@ -2,6 +2,7 @@ import type { Locale } from '@/i18n/config';
 import type { Dictionary } from '@/i18n/dictionary';
 import media from './media-manifest.json';
 import copy from './product-copy.json';
+import type { FamilyNoteKey } from './family-notes';
 
 /** The four markets the old moreco.ma organised its catalogue around. */
 export type SegmentKey = 'agri' | 'humans' | 'animals' | 'general';
@@ -66,12 +67,10 @@ export const SEGMENTS: SegmentKey[] = ['agri', 'humans', 'animals', 'general'];
  * unchanged — so a family is purely a presentation layer on the segment page.
  *
  * `soon` closes a family with a tile reading only the word SOON. The client was explicit:
- * no name, no number, no explanation on the site. For our own reference only, the one
- * placeholder left stands for the last of the ten Orthagrow 4G products (biostimulants).
- * Soil lost its placeholder on 2026-09-16, when MYCO 4G arrived with a name and a pack
- * shot, and protection on 2026-09-22, when Procure and Protec were named. The briefing
- * of 2026-09-22 lists ten 4G products that are all already here, so this last tile may
- * have run its course — to be confirmed with the client before removing it.
+ * no name, no number, no explanation on the site. No family carries one any more: soil
+ * lost its tile on 2026-09-16 (MYCO 4G), protection on 2026-09-22 (Procure and Protec),
+ * and biostimulants on 2026-09-26, when FertFight had to close the grid. The flag stays
+ * for the next product announced before it has a name.
  */
 export interface ProductFamily {
   key: FamilyKey;
@@ -85,14 +84,11 @@ export interface ProductFamily {
    */
   name?: string;
   /**
-   * Closes the family with a description block, filled from `familyNotes` in the
-   * dictionaries. The client asked for one under three families on 2026-09-18 and will
-   * send the text later; the block stays off the page until it has something to say.
+   * Closes the family with the green box of explanatory text (data/family-notes.ts),
+   * briefing of 2026-09-26. Protection has none yet: its text is still to come.
    */
   note?: FamilyNoteKey;
 }
-
-export type FamilyNoteKey = 'specialties' | 'biostimulants' | 'npk';
 
 export type FamilyKey =
   | 'specialties'
@@ -115,23 +111,30 @@ export type FamilyKey =
 export const FAMILIES: ProductFamily[] = [
   /*
    * Specialties opens the catalogue — the family was "special nutrients" until
-   * 2026-09-18, when the client renamed it and cut it down to these two.
+   * 2026-09-18, when the client renamed it. Since 2026-09-26 it holds Control alone:
+   * MYCO 4G moved to soil & roots.
    */
   {
     key: 'specialties',
     segment: 'agri',
-    products: ['orthagrow-control', 'orthagrow-myco'],
+    products: ['orthagrow-control'],
     note: 'specialties',
   },
+  /* In the order the client set on 2026-09-26: MYCO 4G, Soil Conditioner, Granulé. */
   {
     key: 'soil',
     segment: 'agri',
-    products: ['orthagrow-granule', 'orthagrow-soil-conditioner'],
+    products: ['orthagrow-myco', 'orthagrow-soil-conditioner', 'orthagrow-granule'],
+    note: 'soil',
   },
   /*
    * The four Orthagrow 4G liquids joined this family from specialties on 2026-09-18, in
    * the order the client listed them. The same list opens with a plain "Orthagrow",
    * which matches no single product in the catalogue — to be clarified with the client.
+   *
+   * FertFight goes "absolutely last" (2026-09-26). That took the SOON tile with it: the
+   * tile always closes the grid, and the ten Orthagrow 4G products it stood for are all
+   * on the page since the briefing of 2026-09-22.
    */
   {
     key: 'biostimulants',
@@ -139,13 +142,12 @@ export const FAMILIES: ProductFamily[] = [
     products: [
       'orthagrow-bloom-booster',
       'orthagrow-micro-manager',
-      'orthagrow-fertifight',
       'orthagrow-alga-si',
       'orthagrow-aminactif',
       'orthagrow-cal',
       'orthagrow-zno',
+      'orthagrow-fertifight',
     ],
-    soon: true,
     note: 'biostimulants',
   },
   /* Every 1 kg pouch of the Orthagrow 4G range, in the order the client sent them. */
@@ -171,8 +173,9 @@ export const FAMILIES: ProductFamily[] = [
    * The two disinfectants already sold into crops. Their home range is Huwa-San /
    * Clearox under the Disinfectant segment, so until now they appeared at the foot of
    * the page as "other products in the range"; the family gives them a filter button.
+   * Clearox first, then Huwa-San (2026-09-26).
    */
-  { key: 'disinfectant', segment: 'agri', products: ['huwa-san-agro', 'clearox'] },
+  { key: 'disinfectant', segment: 'agri', products: ['clearox', 'huwa-san-agro'], note: 'disinfectant' },
 
   /*
    * Animals, in the strict order the client gave on 2026-09-13: poultry, pets, equine,
@@ -183,6 +186,16 @@ export const FAMILIES: ProductFamily[] = [
   { key: 'pets', segment: 'animals', products: ['orthahealth-chiens-chats'] },
   { key: 'equine', segment: 'animals', products: ['orthahealth-equides'] },
   { key: 'cattle', segment: 'animals', products: ['orthahealth-bovins'] },
+  /*
+   * The blue drums, which sat at the foot of the page under "other products in the
+   * range" until the client gave them a button of their own after cattle (2026-09-26).
+   * Huwa-San first; the order of the rest is free.
+   */
+  {
+    key: 'disinfectant',
+    segment: 'animals',
+    products: ['huwa-san-vet', 'huwa-san-water-treatment', 'clearox'],
+  },
 ];
 
 export const RANGES: ProductRange[] = [
@@ -253,15 +266,20 @@ export const PRODUCTS: Product[] = [
   { slug: 'orthagrow-protec', name: 'Orthagrow Protec', segment: 'agri', range: 'orthagrow' },
 
   /*
-   * In the order the client set on 2026-09-22: Beauty, Sport, Stress-Plex, then the rest.
-   * The same briefing struck the first of the two "Mavita Sport" entries — the old
-   * Mavita Health SKU, renamed on 2026-09-17 — photo and all; its old URLs now land on
-   * the Mavita Sport below (finalize-export.mjs).
+   * In the order the client set on 2026-09-26: Beauty in the gold-capped dropper, Sport,
+   * Stress-Plex, Luxe, Beauty in the pink pot, Slim+. The 2026-09-22 briefing struck the
+   * first of two "Mavita Sport" entries — the old Mavita Health SKU, renamed on
+   * 2026-09-17 — photo and all; its old URLs now land on the Mavita Sport below
+   * (finalize-export.mjs).
+   *
+   * The two Beauty SKUs share the name the client gives them both; the pack shot and the
+   * format (30 ml drops, or the pot) tell them apart. The pot keeps the archive URL.
    */
-  { slug: 'mavita-beauty', name: 'Mavita Beauty', segment: 'humans', range: 'mavita' },
+  { slug: 'mavita-beauty-gouttes', name: 'Mavita Beauty', segment: 'humans', range: 'mavita' },
   { slug: 'mavita-sport', name: 'Mavita Sport', segment: 'humans', range: 'mavita' },
   { slug: 'mavita-stress-plex', name: 'Mavita Stress-Plex', segment: 'humans', range: 'mavita' },
   { slug: 'mavita-luxe', name: 'Mavita Luxe', segment: 'humans', range: 'mavita' },
+  { slug: 'mavita-beauty', name: 'Mavita Beauty', segment: 'humans', range: 'mavita' },
   { slug: 'mavita-slim', name: 'Mavita Slim+', segment: 'humans', range: 'mavita' },
 
   /*

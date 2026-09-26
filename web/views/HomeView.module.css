@@ -3,8 +3,14 @@
   text-align: center;
 }
 
+/* The client's opening statement: a sentence, so a step under a headline's size. */
+.introTitle {
+  font-size: var(--step-2);
+  line-height: 1.3;
+}
+
 /*
- * The two levels the intro announces. A plain list would put a bullet where the bold
+ * The four pillars the intro announces. A plain list would put a bullet where the bold
  * label already does the marking, so the marker is a short green rule instead.
  */
 .introPoints {

@@ -142,3 +142,14 @@
   max-width: 720px;
   margin-top: 1.5rem;
 }
+
+/* Careers: the client's text, at reading width, and the signature it ends on. */
+.work {
+  max-width: var(--page-narrow);
+}
+
+.signature {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--green-dark);
+}

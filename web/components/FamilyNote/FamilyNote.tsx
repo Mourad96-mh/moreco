@@ -1,55 +1,63 @@
+import type { FamilyNoteContent } from '@/data/family-notes';
 import s from './FamilyNote.module.css';
 
 /**
- * The description block under a product family — the client's briefing of 2026-09-18
- * asked for one under Specialties, Trace elements & biostimulants and HIGH END NPK, in
- * the accordion style of casem.ma's contact page. A native <details>: it opens without
- * JavaScript and a screen reader announces it as the disclosure it is.
- *
- * The text arrives later. Until a family's `familyNotes` entry has a paragraph in it, the
- * block renders nothing — an accordion that opens onto nothing reads as a broken page.
+ * The green box under a product family — the client's briefing of 2026-09-26, after the
+ * category pages of casem.ma: the family's explanatory text, set in full under its
+ * products at the foot of the page. It replaced the "En savoir plus" accordion of
+ * 2026-09-18, which never had text to open onto.
  */
-export default function FamilyNote({
-  title,
-  summary,
-  paragraphs,
-}: {
-  title: string;
-  summary: string;
-  paragraphs: readonly string[];
-}) {
-  if (paragraphs.length === 0) return null;
-
+export default function FamilyNote({ note }: { note: FamilyNoteContent }) {
   return (
-    <details className={s.note}>
-      <summary className={s.summary}>
-        <span>
-          {summary} <span className={s.title}>{title}</span>
-        </span>
-        <Chevron />
-      </summary>
-      <div className={s.body}>
-        {paragraphs.map((paragraph) => (
-          <p key={paragraph.slice(0, 40)}>{paragraph}</p>
-        ))}
-      </div>
-    </details>
+    <aside className={s.note}>
+      <p className={s.eyebrow}>{note.eyebrow}</p>
+      <h3 className={s.title}>{note.title}</h3>
+
+      {note.blocks.map((block, i) => {
+        switch (block.type) {
+          case 'heading':
+            return (
+              <h4 key={i} className={s.heading}>
+                {block.text}
+              </h4>
+            );
+          case 'paragraph':
+            return <p key={i}>{block.text}</p>;
+          case 'list':
+            return (
+              <ul key={i} className={s.list}>
+                {block.items.map((item) => (
+                  <li key={item}>
+                    <ListItem text={item} />
+                  </li>
+                ))}
+              </ul>
+            );
+          case 'closing':
+            return (
+              <p key={i} className={s.closing}>
+                {block.text}
+              </p>
+            );
+        }
+      })}
+    </aside>
   );
 }
 
-const Chevron = () => (
-  <svg
-    className={s.chevron}
-    width="18"
-    height="18"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2.2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    aria-hidden="true"
-  >
-    <path d="m6 9 6 6 6-6" />
-  </svg>
-);
+/**
+ * "Phase de démarrage : favorise…" — an item that opens on a short label and a colon gets
+ * its label in bold, so the four growth stages of HIGH END NPK read as a scannable list.
+ * The colon may carry a French non-breaking space before it, or none in English.
+ */
+function ListItem({ text }: { text: string }) {
+  const match = text.match(/^([^:]{3,90}?)(\s?:\s)(.+)$/);
+  if (!match) return <>{text}</>;
+  return (
+    <>
+      <strong>{match[1]}</strong>
+      {match[2]}
+      {match[3]}
+    </>
+  );
+}

@@ -51,32 +51,33 @@ export default function HomeView({ locale }: { locale: Locale }) {
   return (
     <>
       {/*
-       * Film only — no title, no subtitle, no button (client briefing, 2026-09-09), and
-       * since 2026-09-18 no caption either: the signature burnt into the corner did not
-       * render well enough to keep. The client's own 10 s loop, delivered 2026-09-12,
+       * The film carries a title again since 2026-09-26 — the client's line, over its
+       * opening frame — but still no subtitle and no button (briefing of 2026-09-09), and
+       * no caption since 2026-09-18. The client's own 10 s loop, delivered 2026-09-12,
        * muxed without its audio track: the banner autoplays, and an autoplaying film
        * with sound is blocked anyway. BRIEF-VIDEO-ACCUEIL.md holds the shot list.
        */}
       <HeroVideo
+        title={t.home.heroTitle}
         poster="/media/hero/hero-poster.webp"
         /* H.264 only: a VP9 re-encode of this footage came out larger, so a
            second source would cost bandwidth without buying compatibility. */
         sources={[{ src: '/media/hero/hero.mp4', type: 'video/mp4' }]}
       />
 
-      {/* The page's h1 lives here now that the film carries no headline of its own. */}
+      {/* The film's title is the page's h1; the intro opens on the client's statement. */}
       <section className="section">
         <div className="page-narrow">
           <Reveal>
             <p className="eyebrow">{t.site.name}</p>
-            <h1>{t.home.introTitle}</h1>
+            <h2 className={s.introTitle}>{t.home.introTitle}</h2>
             {t.home.introText.map((paragraph, i) => (
               <p key={i} className={i === 0 ? 'lead' : undefined}>
                 {paragraph}
               </p>
             ))}
 
-            {/* The two levels the last paragraph announces, set as a list so the colon
+            {/* The four pillars the last paragraph announces, set as a list so the colon
                 before them resolves into something the eye can scan. */}
             <ul className={s.introPoints}>
               {t.home.introPoints.map((point) => (

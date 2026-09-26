@@ -99,8 +99,21 @@ function postsIn(blocks: Block[], frBlocks: Block[]): NewsPost[] {
   return posts;
 }
 
+/**
+ * The posts pictured with human products — Mavita Health, and the hair-nutrition study —
+ * go to the very end of the page (briefing of 2026-09-26). Matched by picture, which is
+ * the same file in every language.
+ */
+const HUMAN_PRODUCT_IMAGES = new Set([
+  '/media/pages/mavitahealth-artikel1-870x296.webp',
+  '/media/pages/hair-loss-study1-870x296.webp',
+]);
+
+const isHumanProductPost = (post: NewsPost) => post.image !== null && HUMAN_PRODUCT_IMAGES.has(post.image);
+
 export function newsPosts(locale: Locale): NewsPost[] {
-  return postsIn(blocksFor(locale), blocksFor('fr'));
+  const posts = postsIn(blocksFor(locale), blocksFor('fr'));
+  return [...posts.filter((p) => !isHumanProductPost(p)), ...posts.filter(isHumanProductPost)];
 }
 
 /** Long form, in the reader's own language: "5 novembre 2014". */

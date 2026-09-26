@@ -406,3 +406,36 @@ les liquides 4G (section 10) : `1 L · 10 L` (volailles), `50 ml` (chiens & chat
 
 **À confirmer par le client** : ce sont les formats *visibles sur la photo*, pas une liste
 fournie. S'il en existe d'autres, ils manquent.
+
+## 12. Briefing du 2026-09-26 — encadrés verts, textes d'accueil, à propos, carrières
+
+Le client a écrit le français ; **l'anglais, l'espagnol et le néerlandais sont de nous** et
+sont à faire relire, comme le reste :
+
+| Où | Contenu |
+| --- | --- |
+| `data/family-notes.ts` | les cinq encadrés verts sous les familles agricoles : Spécialité, Santé du sol & des racines, Oligo-éléments & biostimulants, HIGH END NPK, Désinfection |
+| `i18n/dictionaries/*.json` → `home` | titre sur la vidéo, texte d'accueil et ses quatre piliers |
+| `i18n/dictionaries/*.json` → `about` | présentation de Moreco et « Notre vision » |
+| `i18n/dictionaries/*.json` → `news` | bloc « Technologie OSA unique et brevetée » en tête de Médias & Actus |
+| `i18n/dictionaries/*.json` → `careers` | « Travailler chez MORECO » |
+| `data/product-copy.json` → `mavita-beauty-gouttes` | la fiche du Mavita Beauty en flacon doré, écrite **uniquement** à partir de l'étui (« Beauté naturelle de l'intérieur », peau / cheveux / ongles, 30 ml gouttes orales) |
+
+Restent en anglais dans toutes les langues, comme le client les écrit : « Pure OSA »,
+« Powered by OSA », « Micro Input – Macro Impact », « HIGH END NPK » et la signature
+« One World. One Health. ».
+
+**Listes remises en place.** Dans le briefing reçu, toutes les listes à puces étaient
+sorties de leur section et regroupées sous le point 2. Chacune a été replacée sous la
+phrase qui l'annonce (« contribuent à : », « Pour une utilisation optimale : »…), d'après
+le nombre d'éléments et leur grammaire. **À faire valider par le client.**
+
+**Allégations (sections 1 à 3).** Les encadrés parlent de « tolérance aux stress
+abiotiques », de « mécanismes naturels de défense », de « conservation prolongée des
+récoltes » ; le bloc Désinfection parle de maîtrise des « bactéries, virus et
+micro-organismes ». Ce sont les mots du client, traduits fidèlement ; leur recevabilité
+sur les marchés UE (ES, NL) n'a pas été vérifiée.
+
+**Fiche Mavita Beauty en pot.** Elle affichait « Disponible en 30 ml », reste du
+2026-09-17 où elle portait la photo du flacon. Le flacon ayant désormais sa propre fiche,
+le pot n'affiche plus de contenance : **le client doit donner la sienne**.

@@ -2,7 +2,8 @@
   "site": {
     "name": "Moreco",
     "tagline": "Biobeschikbaar silicium voor planten, dieren en mensen",
-    "description": "Moreco produceert en verdeelt een gepatenteerde vorm van biologisch actief en volledig opneembaar silicium (OSA) voor land- en tuinbouw, veehouderij en de menselijke gezondheid, aangevuld met ecologische desinfectie op basis van waterstofperoxide."
+    "description": "Moreco produceert en verdeelt een gepatenteerde vorm van biologisch actief en volledig opneembaar silicium (OSA) voor land- en tuinbouw, veehouderij en de menselijke gezondheid, aangevuld met ecologische desinfectie op basis van waterstofperoxide.",
+    "signature": "One World. One Health."
   },
   "nav": {
     "products": "Producten",
@@ -31,23 +32,33 @@
     "language": "Taal"
   },
   "home": {
-    "introTitle": "Innovatie voor uw teelt",
+    "heroTitle": "MORECO | Technologie in dienst van regeneratieve landbouw",
+    "introTitle": "MORECO verlegt de grenzen van innovatie voor een rendabele, goed presterende en regeneratieve landbouw.",
     "introText": [
-      "Al meer dan 23 jaar werken wij samen met de ontwikkelaars van OSA. Wij ondersteunen de landbouwsector in Europa, Azië en de Verenigde Staten, en sinds 2012 in Marokko.",
-      "De merken die wij op de markt brengen worden met de grootste zorg gekozen en behoren tot de absolute leiders in hun sector. Zo bieden wij onze klanten de garantie van een constante kwaliteit en een veilig gebruik.",
-      "Sinds onze oprichting streven wij ernaar onze klanten nieuwe producten en innovatieve oplossingen te bieden die een antwoord geven op hun specifieke problemen op het veld. Onze exclusieve technologieën werken op twee cruciale niveaus:"
+      "Al meer dan 14 jaar werkt Moreco nauw samen met de pioniers en ontwikkelaars van gestabiliseerd orthokiezelzuur (OSA).",
+      "Dankzij deze expertise begeleiden we landbouwprofessionals in Europa, Azië, de Verenigde Staten en sinds 2012 ook in Marokko.",
+      "We selecteren uitsluitend geavanceerde technologieën die internationaal erkend zijn om hun innovatie, doeltreffendheid en betrouwbaarheid. Ons doel is duidelijk: telers oplossingen bieden die de gewasprestaties duurzaam verbeteren en tegelijk inspelen op de nieuwe uitdagingen van de landbouw.",
+      "Onze exclusieve technologieën steunen op vier essentiële pijlers van plantprestaties:"
     ],
     "introPoints": [
       {
-        "title": "Optimale voeding",
-        "text": "Wij zorgen voor een betere opname van de voedingsstoffen door de plant."
+        "title": "Geoptimaliseerde voeding",
+        "text": "Een efficiënte opname en assimilatie van voedingsstoffen bevorderen, om het potentieel van de plant volledig te ondersteunen."
       },
       {
         "title": "Natuurlijke weerbaarheid",
-        "text": "Wij versterken de gewassen van binnenuit tegen ziekten, plagen en klimaatverandering."
+        "text": "De natuurlijke afweer van de plant versterken tegen ziekten, plagen en klimaatstress."
+      },
+      {
+        "title": "Geoptimaliseerd waterbeheer",
+        "text": "De efficiëntie van het watergebruik en de hydratatie van de plant verbeteren, zodat elke watergift maximaal wordt benut."
+      },
+      {
+        "title": "Superieure voedingskwaliteit",
+        "text": "Bijdragen aan de kwaliteit, de smaak, de voedingswaarde en de houdbaarheid van de oogst."
       }
     ],
-    "introClose": "Door een gezonde oogst met een hogere voedingswaarde en een langere shelf-life te garanderen, helpen wij telers hun eigen merk bovenaan de markt te positioneren. Die filosofie stuurt ons werk tot op vandaag.",
+    "introClose": "MORECO combineert geavanceerde technologieën met agronomische expertise om telers oplossingen te bieden voor de uitdagingen van de landbouw van vandaag en morgen.",
     "segmentsTitle": "Onze toepassingsgebieden",
     "rdiTitle": "R&D + I",
     "rdiText": "Proeven in reële omstandigheden, controleperceel tegenover behandeld perceel, op hetzelfde bedrijf in hetzelfde seizoen. De campagnes die in Marokko zijn gedocumenteerd lopen van Midelt tot Larache: appel, aardbei, tomaat, citrus, tarwe, olijf.",
@@ -111,11 +122,6 @@
     "equine": "Paarden",
     "cattle": "Rundvee"
   },
-  "familyNotes": {
-    "specialties": [],
-    "biostimulants": [],
-    "npk": []
-  },
   "product": {
     "ranges": "Gamma's",
     "range": "Gamma",
@@ -140,7 +146,6 @@
     "relatedTitle": "Andere producten uit het gamma",
     "noCopy": "Gedetailleerde fiche in voorbereiding. Neem contact op voor technische informatie.",
     "chooseCategory": "Kies een categorie om de producten te zien.",
-    "learnMore": "Meer weten",
     "zoom": "Foto vergroten",
     "zoomClose": "Sluiten"
   },
@@ -178,7 +183,20 @@
   "about": {
     "domains": "Domeinen",
     "discover": "Meer weten",
-    "contactLead": "Onze teams beantwoorden technische en commerciële vragen."
+    "contactLead": "Onze teams beantwoorden technische en commerciële vragen.",
+    "introTitle": "MORECO – Wetenschappelijke innovatie in dienst van regeneratieve landbouw",
+    "introText": [
+      "Moreco ontwikkelt en selecteert geavanceerde agronomische technologieën die regeneratieve landbouw ondersteunen en de gewasprestaties verbeteren.",
+      "Onze expertise omvat onder meer plantenfysiologie, gestabiliseerd orthokiezelzuur (OSA), precisievoeding, bodemgezondheid, biostimulatie, efficiënt watergebruik en de natuurlijke weerbaarheid van gewassen.",
+      "We selecteren technologieën met een hoge wetenschappelijke en technologische waarde, om professionals oplossingen te bieden die de wisselwerking tussen bodem, wortels en plant optimaliseren."
+    ],
+    "visionTitle": "Onze visie",
+    "vision": [
+      "Een levende bodem.",
+      "Een weerbare plant.",
+      "Een oogst van hoge kwaliteit.",
+      "Een landbouw die naar de toekomst kijkt."
+    ]
   },
   "press": {
     "archive": "Voorbije evenementen — archief 2014.",
@@ -223,7 +241,7 @@
     "city": "Stad",
     "message": "Bericht",
     "messageHint": "Betrokken oppervlakten, gewassen, geraamde volumes…",
-    "required": "verplicht",
+    "required": "Verplichte velden",
     "submit": "Mijn aanvraag versturen",
     "sending": "Bezig met versturen…",
     "success": "Bedankt, uw aanvraag is verstuurd. Wij antwoorden binnen 48 werkuren.",
@@ -322,6 +340,27 @@
       "Bachelor",
       "Middelbareschooldiploma",
       "Anders"
+    ],
+    "workTitle": "Werken bij MORECO",
+    "workText": [
+      "Bij MORECO ontwikkelen we innovatieve oplossingen voor duurzame landbouw, de gezondheid van mens en dier en een gezonder milieu.",
+      "Met een praktische aanpak, open communicatie en internationale ambitie bouwen we samen aan een duurzame toekomst.",
+      "Wilt u bijdragen aan deze visie? Ontdek onze vacatures of stuur ons een open sollicitatie. We maken graag kennis met u."
     ]
+  },
+  "news": {
+    "techEyebrow": "Moreco-technologie",
+    "techTitle": "MORECO – Unieke, gepatenteerde OSA-technologie",
+    "techText": [
+      "Moreco ontwikkelt gespecialiseerde, gepatenteerde oplossingen op basis van OSA (gestabiliseerd orthokiezelzuur), gebaseerd op geavanceerde technologieën van onze strategische partners, voor toepassingen in de landbouw, de menselijke gezondheid en de diergezondheid.",
+      "Deze OSA-technologie vormt de basis van oplossingen die de biologische beschikbaarheid, de opname en de fysiologische werking van silicium optimaliseren.",
+      "Moreco vertaalt deze technologie naar gespecialiseerde toepassingen voor plant, mens en dier, met een aanpak die draait om wetenschappelijke innovatie, technologische precisie en kwaliteit."
+    ],
+    "techPillars": [
+      "Plant",
+      "Mens",
+      "Dier"
+    ],
+    "postsTitle": "Nieuws"
   }
 }
