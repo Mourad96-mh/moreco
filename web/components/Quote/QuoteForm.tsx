@@ -6,6 +6,7 @@ import { useState, type FormEvent } from 'react';
 
 import type { Locale } from '@/i18n/config';
 import { useQuote } from './QuoteProvider';
+import { requiredFieldsFilled } from '@/components/forms/requiredFields';
 import s from './QuoteForm.module.css';
 
 interface CatalogueEntry {
@@ -69,6 +70,7 @@ export default function QuoteForm({
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget;
+    if (!requiredFieldsFilled(form)) return;
     const data = new FormData(form);
 
     // The basket travels as readable text, so whoever opens the mail sees the request.
@@ -187,6 +189,13 @@ export default function QuoteForm({
           {/* Bot trap: a real person never fills this in. */}
           <input type="text" name="_gotcha" className={s.gotcha} tabIndex={-1} autoComplete="off" />
 
+          <p className={s.legend}>
+            <span className={s.req} aria-hidden="true">
+              *
+            </span>{' '}
+            {labels.required}
+          </p>
+
           <div className={s.row}>
             <Field name="prenom" label={labels.firstName} required autoComplete="given-name" />
             <Field name="nom" label={labels.lastName} required autoComplete="family-name" />
@@ -238,7 +247,12 @@ function Field({
     <label className={s.field}>
       <span className={s.label}>
         {label}
-        {required && <span aria-hidden="true"> *</span>}
+        {required && (
+          <span className={s.req} aria-hidden="true">
+            {' '}
+            *
+          </span>
+        )}
       </span>
       <input type={type} name={name} required={required} autoComplete={autoComplete} />
     </label>

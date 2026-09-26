@@ -42,7 +42,13 @@ export default function ArticlePageView({ locale, view }: { locale: Locale; view
         <div className="page">
           {view === 'resources' && <ResourcesBlock locale={locale} />}
 
-          {bodyFor(view, locale).length > 0 && (
+          {/*
+           * Careers opens on the client's own text since 2026-09-26. The archive prose it
+           * replaced ended on "Postes vacants :" over a widget the crawl never saw.
+           */}
+          {view === 'careers' && <WorkAtMoreco locale={locale} />}
+
+          {view !== 'careers' && bodyFor(view, locale).length > 0 && (
             <Reveal>
               <Blocks blocks={bodyFor(view, locale)} />
             </Reveal>
@@ -111,6 +117,23 @@ function ApplicationsBlock({ locale }: { locale: Locale }) {
         ))}
       </ul>
     </section>
+  );
+}
+
+/** "Travailler chez MORECO", briefing of 2026-09-26, closed by the company's signature. */
+function WorkAtMoreco({ locale }: { locale: Locale }) {
+  const t = getDictionary(locale);
+
+  return (
+    <Reveal className={`${s.section} ${s.work}`}>
+      <h2>{t.careers.workTitle}</h2>
+      {t.careers.workText.map((paragraph, i) => (
+        <p key={i} className={i === 0 ? 'lead' : undefined}>
+          {paragraph}
+        </p>
+      ))}
+      <p className={s.signature}>{t.site.signature}</p>
+    </Reveal>
   );
 }
 

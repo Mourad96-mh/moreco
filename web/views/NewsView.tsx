@@ -3,8 +3,9 @@ import Link from 'next/link';
 
 import type { Locale } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionary';
-import { href, articleHref } from '@/data/routes';
+import { href, articleHref, segmentHref } from '@/data/routes';
 import { newsPosts, formatDate, type NewsPost } from '@/data/news';
+import type { SegmentKey } from '@/data/products';
 import { pageHero } from '@/data/hero-images';
 import PageHeader from '@/components/PageHeader/PageHeader';
 import Reveal from '@/components/Reveal/Reveal';
@@ -17,6 +18,13 @@ import s from './NewsView.module.css';
  * Seven of the eight announced an article that is still on the site, so their read-more
  * line finally goes somewhere: to that article in the knowledge centre.
  */
+/** Plant, human, animal — in the order the technology text names them. */
+const TECH_DOMAINS: { segment: SegmentKey; accent: string }[] = [
+  { segment: 'agri', accent: 'var(--seg-agri)' },
+  { segment: 'humans', accent: 'var(--seg-humans)' },
+  { segment: 'animals', accent: 'var(--seg-animals)' },
+];
+
 export default function NewsView({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
   const posts = newsPosts(locale);
@@ -35,8 +43,49 @@ export default function NewsView({ locale }: { locale: Locale }) {
         crumbs={[{ label: t.site.name, href: href(locale, 'home') }, { label: t.pages.news.title }]}
       />
 
+      {/*
+       * Moreco's technology leads the page (briefing of 2026-09-26), ahead of the
+       * archive's posts: the client's text, and the three domains it names, each one a
+       * way into its catalogue in the colour of its hexagon.
+       */}
+      <section className={`section ${s.tech}`}>
+        <div className={`page ${s.techInner}`}>
+          <Reveal className={s.techText}>
+            <p className="eyebrow">{t.news.techEyebrow}</p>
+            <h2 className={s.techTitle}>{t.news.techTitle}</h2>
+            {t.news.techText.map((paragraph, i) => (
+              <p key={i} className={i === 0 ? 'lead' : undefined}>
+                {paragraph}
+              </p>
+            ))}
+            <p className={s.signature}>
+              {t.site.name.toUpperCase()} — {t.site.signature}
+            </p>
+          </Reveal>
+
+          <Reveal className={s.pillars} delay={100}>
+            {TECH_DOMAINS.map((domain, i) => (
+              <Link
+                key={domain.segment}
+                href={segmentHref(locale, domain.segment)}
+                className={s.pillar}
+                style={{ '--accent': domain.accent } as React.CSSProperties}
+              >
+                <span className={s.pillarMark} aria-hidden="true">
+                  OSA
+                </span>
+                <span className={s.pillarName}>{t.news.techPillars[i]}</span>
+                <span className={s.pillarSegment}>{t.segments[domain.segment].name}</span>
+              </Link>
+            ))}
+          </Reveal>
+        </div>
+      </section>
+
       <div className="section">
         <div className="page">
+          <h2 className={s.postsTitle}>{t.news.postsTitle}</h2>
+
           {lead && (
             <Reveal>
               <article className={s.lead}>

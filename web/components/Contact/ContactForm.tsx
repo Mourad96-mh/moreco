@@ -3,6 +3,7 @@
 import { useState, type FormEvent } from 'react';
 
 import type { Locale } from '@/i18n/config';
+import { requiredFieldsFilled } from '@/components/forms/requiredFields';
 import s from './ContactForm.module.css';
 
 /**
@@ -23,6 +24,7 @@ export interface ContactLabels {
   phone: string;
   city: string;
   message: string;
+  /** The legend under the star: "Champs obligatoires". */
   required: string;
   submit: string;
   sending: string;
@@ -36,6 +38,7 @@ export default function ContactForm({ locale, labels }: { locale: Locale; labels
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget;
+    if (!requiredFieldsFilled(form)) return;
     const data = new FormData(form);
     data.set('langue', locale);
     data.set('origine', 'contact');
@@ -71,25 +74,30 @@ export default function ContactForm({ locale, labels }: { locale: Locale; labels
   }
 
   return (
+    /* Every field is required since 2026-09-26, each marked with a star. */
     <form className={s.form} onSubmit={onSubmit} noValidate={false}>
+      <p className={s.legend}>
+        <Star /> {labels.required}
+      </p>
+
       <div className={s.row}>
-        <Field name="prenom" label={labels.firstName} required requiredLabel={labels.required} />
-        <Field name="nom" label={labels.lastName} required requiredLabel={labels.required} />
+        <Field name="prenom" label={labels.firstName} autoComplete="given-name" />
+        <Field name="nom" label={labels.lastName} autoComplete="family-name" />
       </div>
 
       <div className={s.row}>
-        <Field name="email" type="email" label={labels.email} required requiredLabel={labels.required} />
-        <Field name="telephone" type="tel" label={labels.phone} />
+        <Field name="email" type="email" label={labels.email} autoComplete="email" />
+        <Field name="telephone" type="tel" label={labels.phone} autoComplete="tel" />
       </div>
 
       <div className={s.row}>
-        <Field name="societe" label={labels.company} />
-        <Field name="ville" label={labels.city} />
+        <Field name="societe" label={labels.company} autoComplete="organization" />
+        <Field name="ville" label={labels.city} autoComplete="address-level2" />
       </div>
 
       <label className={s.field}>
         <span className={s.label}>
-          {labels.message} <span className={s.req}>{labels.required}</span>
+          {labels.message} <Star />
         </span>
         <textarea name="message" rows={6} required className={s.textarea} />
       </label>
@@ -115,24 +123,29 @@ function Field({
   name,
   label,
   type = 'text',
-  required = false,
-  requiredLabel,
+  autoComplete,
 }: {
   name: string;
   label: string;
   type?: string;
-  required?: boolean;
-  requiredLabel?: string;
+  autoComplete?: string;
 }) {
   return (
     <label className={s.field}>
       <span className={s.label}>
-        {label} {required && <span className={s.req}>{requiredLabel}</span>}
+        {label} <Star />
       </span>
-      <input type={type} name={name} required={required} className={s.input} />
+      <input type={type} name={name} required autoComplete={autoComplete} className={s.input} />
     </label>
   );
 }
+
+/** The required-field mark. Screen readers get the `required` attribute instead. */
+const Star = () => (
+  <span className={s.req} aria-hidden="true">
+    *
+  </span>
+);
 
 const CheckIcon = () => (
   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" aria-hidden="true">

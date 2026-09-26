@@ -2,7 +2,8 @@
   "site": {
     "name": "Moreco",
     "tagline": "Silicio biodisponible para plantas, animales y personas",
-    "description": "Moreco produce y distribuye una forma patentada de silicio biológicamente activo y totalmente asimilable (OSA) para la agricultura, la ganadería y la salud humana, además de la desinfección ecológica con peróxido de hidrógeno."
+    "description": "Moreco produce y distribuye una forma patentada de silicio biológicamente activo y totalmente asimilable (OSA) para la agricultura, la ganadería y la salud humana, además de la desinfección ecológica con peróxido de hidrógeno.",
+    "signature": "One World. One Health."
   },
   "nav": {
     "products": "Productos",
@@ -31,23 +32,33 @@
     "language": "Idioma"
   },
   "home": {
-    "introTitle": "La innovación para su cultivo",
+    "heroTitle": "MORECO | La tecnología al servicio de la agricultura regenerativa",
+    "introTitle": "MORECO amplía los límites de la innovación para una agricultura rentable, eficiente y regenerativa.",
     "introText": [
-      "Desde hace más de 23 años colaboramos con los desarrolladores de OSA. Apoyamos al sector agrícola en Europa, Asia y Estados Unidos, y desde 2012 en Marruecos.",
-      "Las marcas que comercializamos se eligen con el mayor cuidado y figuran entre los líderes absolutos de su sector. Así ofrecemos a nuestros clientes la garantía de una calidad constante y de una utilización segura.",
-      "Desde nuestra creación nos esforzamos por ofrecer a nuestros clientes nuevos productos y soluciones innovadoras que respondan a sus problemáticas específicas sobre el terreno. Nuestras tecnologías exclusivas actúan en dos niveles cruciales:"
+      "Desde hace más de 14 años, Moreco trabaja en estrecha colaboración con los pioneros y desarrolladores del ácido ortosilícico estabilizado (OSA).",
+      "Gracias a esta experiencia, acompañamos a los profesionales de la agricultura en Europa, Asia, Estados Unidos y, desde 2012, en Marruecos.",
+      "Seleccionamos exclusivamente tecnologías punteras, reconocidas internacionalmente por su innovación, su eficacia y su fiabilidad. Nuestro objetivo es claro: ofrecer a los productores soluciones capaces de mejorar de forma duradera el rendimiento de los cultivos respondiendo a los nuevos retos de la agricultura.",
+      "Nuestras tecnologías exclusivas se basan en cuatro pilares esenciales del rendimiento vegetal:"
     ],
     "introPoints": [
       {
-        "title": "Nutrición óptima",
-        "text": "Garantizamos una mejor asimilación de los nutrientes por la planta."
+        "title": "Nutrición optimizada",
+        "text": "Favorecer una absorción y una asimilación eficaces de los nutrientes para apoyar plenamente el potencial de la planta."
       },
       {
         "title": "Resiliencia natural",
-        "text": "Reforzamos los cultivos desde el interior frente a las enfermedades, las plagas y el cambio climático."
+        "text": "Reforzar los mecanismos naturales de defensa de la planta frente a las enfermedades, las plagas y el estrés climático."
+      },
+      {
+        "title": "Gestión optimizada del agua",
+        "text": "Mejorar la eficiencia en el uso del agua y la hidratación de la planta para aprovechar al máximo cada aporte hídrico."
+      },
+      {
+        "title": "Calidad nutricional superior",
+        "text": "Contribuir a optimizar la calidad, el sabor, el valor nutricional y la conservación de las cosechas."
       }
     ],
-    "introClose": "Al garantizar una cosecha sana con un valor nutricional más elevado y una vida útil prolongada, ayudamos a los productores a situar su propia marca en lo más alto del mercado. Esta filosofía sigue guiando nuestro trabajo hasta hoy.",
+    "introClose": "MORECO une tecnologías avanzadas y experiencia agronómica para ofrecer a los productores soluciones adaptadas a los retos de la agricultura de hoy y de mañana.",
     "segmentsTitle": "Nuestros campos de aplicación",
     "rdiTitle": "R&D + I",
     "rdiText": "Ensayos en condiciones reales, parcela testigo frente a parcela tratada, en la misma explotación y la misma temporada. Las campañas documentadas en Marruecos van de Midelt a Larache: manzano, fresa, tomate, cítricos, trigo, olivo.",
@@ -111,11 +122,6 @@
     "equine": "Caballos",
     "cattle": "Bovinos"
   },
-  "familyNotes": {
-    "specialties": [],
-    "biostimulants": [],
-    "npk": []
-  },
   "product": {
     "ranges": "Gamas",
     "range": "Gama",
@@ -140,7 +146,6 @@
     "relatedTitle": "Otros productos de la gama",
     "noCopy": "Ficha detallada en preparación. Contáctenos para cualquier información técnica.",
     "chooseCategory": "Elija una categoría para ver los productos.",
-    "learnMore": "Más información",
     "zoom": "Ampliar la foto",
     "zoomClose": "Cerrar"
   },
@@ -178,7 +183,20 @@
   "about": {
     "domains": "Áreas",
     "discover": "Saber más",
-    "contactLead": "Nuestros equipos atienden consultas técnicas y comerciales."
+    "contactLead": "Nuestros equipos atienden consultas técnicas y comerciales.",
+    "introTitle": "MORECO – Innovación científica al servicio de la agricultura regenerativa",
+    "introText": [
+      "Moreco desarrolla y selecciona tecnologías agronómicas avanzadas destinadas a apoyar la agricultura regenerativa y mejorar el rendimiento de los cultivos.",
+      "Nuestra experiencia abarca en particular la fisiología vegetal, el ácido ortosilícico estabilizado (OSA), la nutrición de precisión, la salud del suelo, la bioestimulación, la eficiencia en el uso del agua y la resiliencia natural de los cultivos.",
+      "Seleccionamos tecnologías de alto valor científico y tecnológico para ofrecer a los profesionales soluciones que optimizan las interacciones entre el suelo, las raíces y la planta."
+    ],
+    "visionTitle": "Nuestra visión",
+    "vision": [
+      "Un suelo vivo.",
+      "Una planta resiliente.",
+      "Una cosecha de alta calidad.",
+      "Una agricultura orientada al futuro."
+    ]
   },
   "press": {
     "archive": "Eventos pasados — archivo de 2014.",
@@ -223,7 +241,7 @@
     "city": "Ciudad",
     "message": "Mensaje",
     "messageHint": "Superficies, cultivos, volúmenes previstos…",
-    "required": "obligatorio",
+    "required": "Campos obligatorios",
     "submit": "Enviar mi solicitud",
     "sending": "Enviando…",
     "success": "Gracias, su solicitud está en camino. Respondemos en 48 horas laborables.",
@@ -322,6 +340,27 @@
       "Licenciatura",
       "Bachillerato",
       "Otro"
+    ],
+    "workTitle": "Trabajar en MORECO",
+    "workText": [
+      "En MORECO desarrollamos soluciones innovadoras para una agricultura sostenible, la salud humana y animal y un medio ambiente más sano.",
+      "Con un enfoque práctico, una comunicación abierta y una ambición internacional, construimos juntos un futuro sostenible.",
+      "¿Quiere contribuir a esta visión? Descubra nuestras oportunidades profesionales o envíenos una candidatura espontánea. Estaremos encantados de conocerle."
     ]
+  },
+  "news": {
+    "techEyebrow": "Tecnología Moreco",
+    "techTitle": "MORECO – Tecnología OSA única y patentada",
+    "techText": [
+      "Moreco desarrolla soluciones especializadas y patentadas a base de OSA (ácido ortosilícico estabilizado), apoyándose en tecnologías avanzadas desarrolladas por nuestros socios estratégicos para aplicaciones en agricultura, salud humana y salud animal.",
+      "Esta tecnología OSA es la base de soluciones diseñadas para optimizar la biodisponibilidad, la absorción y la acción fisiológica del silicio.",
+      "Moreco transforma esta tecnología en aplicaciones especializadas para la planta, el ser humano y el animal, con un enfoque centrado en la innovación científica, la precisión tecnológica y la calidad."
+    ],
+    "techPillars": [
+      "Planta",
+      "Ser humano",
+      "Animal"
+    ],
+    "postsTitle": "Noticias"
   }
 }

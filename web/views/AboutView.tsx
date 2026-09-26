@@ -23,9 +23,9 @@ const ACCENT = {
  * The archive had nothing of its own to put here: what the crawl filed under "about" was
  * the silicon article — now a page of its own in the knowledge centre — followed by the
  * Applications copy, word for word what /a-propos/services-et-conseils already says. So
- * this page states who Moreco is from what the site can vouch for: the positioning it
- * uses everywhere, the catalogue counted, the trials counted, and the way to reach them.
- * Nothing here is invented, and nothing repeats another page's text.
+ * this page was built from what the site can vouch for: the catalogue counted, the
+ * trials counted, and the way to reach them. Since 2026-09-26 it opens on the client's
+ * own presentation of the company and its vision.
  */
 export default function AboutView({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
@@ -47,13 +47,29 @@ export default function AboutView({ locale }: { locale: Locale }) {
         crumbs={[{ label: t.site.name, href: href(locale, 'home') }, { label: t.pages.about.title }]}
       />
 
+      {/* The client's own presentation of the company, briefing of 2026-09-26. */}
       <section className="section">
         <div className="page-narrow">
           <Reveal>
             <p className="eyebrow">{t.site.name}</p>
-            <h2>{t.home.introTitle}</h2>
-            <p className="lead">{t.site.description}</p>
-            <p className={s.statement}>{t.home.introText}</p>
+            <h2>{t.about.introTitle}</h2>
+            {t.about.introText.map((paragraph, i) => (
+              <p key={i} className={i === 0 ? 'lead' : undefined}>
+                {paragraph}
+              </p>
+            ))}
+          </Reveal>
+
+          <Reveal className={s.vision} delay={80}>
+            <h3 className={s.visionTitle}>{t.about.visionTitle}</h3>
+            <p className={s.visionLines}>
+              {t.about.vision.map((line) => (
+                <span key={line}>{line}</span>
+              ))}
+            </p>
+            <p className={s.signature}>
+              {t.site.name.toUpperCase()} — {t.site.signature}
+            </p>
           </Reveal>
         </div>
       </section>

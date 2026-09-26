@@ -4984,6 +4984,64 @@
       "sizes": []
     }
   },
+  "mavita-beauty-gouttes": {
+    "fr": {
+      "claim": "Beauté naturelle de l’intérieur.",
+      "paragraphs": [
+        "Complément alimentaire à base de silicium, en gouttes orales, pour la peau, les cheveux et les ongles."
+      ],
+      "advantages": [
+        "Peau",
+        "Cheveux",
+        "Ongles"
+      ],
+      "sizes": [
+        "30 ml (gouttes orales)"
+      ]
+    },
+    "en": {
+      "claim": "Natural beauty from within.",
+      "paragraphs": [
+        "A silicon-based food supplement, in oral drops, for skin, hair and nails."
+      ],
+      "advantages": [
+        "Skin",
+        "Hair",
+        "Nails"
+      ],
+      "sizes": [
+        "30 ml (oral drops)"
+      ]
+    },
+    "es": {
+      "claim": "Belleza natural desde el interior.",
+      "paragraphs": [
+        "Complemento alimenticio a base de silicio, en gotas orales, para la piel, el cabello y las uñas."
+      ],
+      "advantages": [
+        "Piel",
+        "Cabello",
+        "Uñas"
+      ],
+      "sizes": [
+        "30 ml (gotas orales)"
+      ]
+    },
+    "nl": {
+      "claim": "Natuurlijke schoonheid van binnenuit.",
+      "paragraphs": [
+        "Voedingssupplement op basis van silicium, in orale druppels, voor huid, haar en nagels."
+      ],
+      "advantages": [
+        "Huid",
+        "Haar",
+        "Nagels"
+      ],
+      "sizes": [
+        "30 ml (orale druppels)"
+      ]
+    }
+  },
   "mavita-beauty": {
     "fr": {
       "claim": "Le silicium est un oligo-élément essentiel requis pour la croissance, le développement normal et la santé des cheveux, de la peau et des ongles. Notre produit est le seul à contenir entièrement absorbé Si! Mavita Beauty est un « état ​​de l’art » nutrition supplément conçu pour favoriser une peau saine, forte et hydratée qui ressemble et se sent plus jeune.",
@@ -5002,9 +5060,7 @@
         "Résultats visibles très rapidement.",
         "Vous pouvez obtenir une peau saine ayant un aspect plus jeune."
       ],
-      "sizes": [
-        "30 ml"
-      ]
+      "sizes": []
     },
     "en": {
       "claim": "Silicon is an essential trace element needed for the normal growth, development and health of hair, skin and nails. Our product is the only one to contain fully absorbed Si! Mavita Beauty is a “state of the art” nutri- supplement designed to promote healthy, strong and hydrated skin that looks and feels more youthful.",
@@ -5023,9 +5079,7 @@
         "Positive visible results in a very short periode",
         "You can maintain optimal skin health and look more youthful"
       ],
-      "sizes": [
-        "30 ml"
-      ]
+      "sizes": []
     },
     "es": {
       "claim": "El silicio es un oligoelemento esencial, necesario para el crecimiento, el desarrollo normal y la salud del cabello, la piel y las uñas. ¡Nuestro producto es el único que contiene Si totalmente absorbible! Mavita Beauty es un complemento nutricional de última generación, concebido para favorecer una piel sana, firme e hidratada, con un aspecto y un tacto más jóvenes.",
@@ -5044,9 +5098,7 @@
         "Resultados visibles muy rápidamente.",
         "Permite lograr una piel sana y de aspecto más joven."
       ],
-      "sizes": [
-        "30 ml"
-      ]
+      "sizes": []
     },
     "nl": {
       "claim": "Silicium is een essentieel spoorelement dat nodig is voor de normale groei, ontwikkeling en gezondheid van haar, huid en nagels. Ons product is het enige dat volledig opneembaar Si bevat! Mavita Beauty is een “state of the art” voedingssupplement, ontworpen om een gezonde, sterke en gehydrateerde huid te bevorderen die er jeugdiger uitziet en aanvoelt.",
@@ -5065,9 +5117,7 @@
         "Positieve zichtbare resultaten op zeer korte termijn",
         "U kunt een optimale huidgezondheid behouden en er jeugdiger uitzien"
       ],
-      "sizes": [
-        "30 ml"
-      ]
+      "sizes": []
     },
     "ar": {
       "claim": "السيليكون عنصر أثري أساسي لازم لنمو الشعر والبشرة والأظافر وتطوّرها وصحتها بشكل طبيعي. ومنتجنا هو الوحيد الذي يحتوي على Si مُمتصّ بالكامل! Mavita Beauty مكمّل غذائي على أحدث مستوى، مصمّم لتعزيز بشرة صحية وقوية ورطبة تبدو أكثر شبابًا ويُحسّ بها كذلك.",
@@ -5086,9 +5136,7 @@
         "نتائج إيجابية مرئية في مدة قصيرة جدًا",
         "يمكنك الحفاظ على صحة بشرة مثلى ومظهر أكثر شبابًا"
       ],
-      "sizes": [
-        "30 ml"
-      ]
+      "sizes": []
     }
   },
   "mavita-luxe": {

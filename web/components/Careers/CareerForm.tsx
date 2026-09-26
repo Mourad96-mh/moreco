@@ -3,6 +3,7 @@
 import { useRef, useState, type FormEvent } from 'react';
 
 import type { Locale } from '@/i18n/config';
+import { requiredFieldsFilled } from '@/components/forms/requiredFields';
 import s from './CareerForm.module.css';
 
 /**
@@ -83,6 +84,7 @@ export default function CareerForm({ locale, labels }: { locale: Locale; labels:
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget;
+    if (!requiredFieldsFilled(form)) return;
 
     if (!checkCv(fileInput.current?.files?.[0])) {
       if (!fileInput.current?.files?.length) setCvError(labels.cvType);
@@ -126,15 +128,23 @@ export default function CareerForm({ locale, labels }: { locale: Locale; labels:
   }
 
   return (
+    /*
+     * Everything but the covering message is required since 2026-09-26, each field marked
+     * with a star; the message stays free, as a CV already says what it has to say.
+     */
     <form className={s.form} onSubmit={onSubmit}>
+      <p className={s.legend}>
+        <Star /> {labels.required}
+      </p>
+
       <div className={s.row}>
-        <Field name="nom" label={labels.lastName} required requiredLabel={labels.required} />
-        <Field name="prenom" label={labels.firstName} required requiredLabel={labels.required} />
+        <Field name="nom" label={labels.lastName} autoComplete="family-name" />
+        <Field name="prenom" label={labels.firstName} autoComplete="given-name" />
       </div>
 
       <div className={s.row}>
-        <Field name="email" type="email" label={labels.email} required requiredLabel={labels.required} />
-        <Field name="telephone" type="tel" label={labels.phone} required requiredLabel={labels.required} />
+        <Field name="email" type="email" label={labels.email} autoComplete="email" />
+        <Field name="telephone" type="tel" label={labels.phone} autoComplete="tel" />
       </div>
 
       <div className={s.row}>
@@ -156,7 +166,7 @@ export default function CareerForm({ locale, labels }: { locale: Locale; labels:
        */}
       <div className={s.field}>
         <span className={s.label}>
-          {labels.cv} <span className={s.req}>{labels.required}</span>
+          {labels.cv} <Star />
         </span>
         <div className={s.file}>
           <label className={s.fileButton}>
@@ -202,21 +212,19 @@ function Field({
   name,
   label,
   type = 'text',
-  required = false,
-  requiredLabel,
+  autoComplete,
 }: {
   name: string;
   label: string;
   type?: string;
-  required?: boolean;
-  requiredLabel?: string;
+  autoComplete?: string;
 }) {
   return (
     <label className={s.field}>
       <span className={s.label}>
-        {label} {required && <span className={s.req}>{requiredLabel}</span>}
+        {label} <Star />
       </span>
-      <input type={type} name={name} required={required} className={s.input} />
+      <input type={type} name={name} required autoComplete={autoComplete} className={s.input} />
     </label>
   );
 }
@@ -234,8 +242,11 @@ function Select({
 }) {
   return (
     <label className={s.field}>
-      <span className={s.label}>{label}</span>
-      <select name={name} className={s.select} defaultValue="">
+      <span className={s.label}>
+        {label} <Star />
+      </span>
+      {/* The placeholder has no value, so a select left on it fails `required`. */}
+      <select name={name} required className={s.select} defaultValue="">
         <option value="" disabled>
           {placeholder}
         </option>
@@ -248,6 +259,13 @@ function Select({
     </label>
   );
 }
+
+/** The required-field mark. Screen readers get the `required` attribute instead. */
+const Star = () => (
+  <span className={s.req} aria-hidden="true">
+    *
+  </span>
+);
 
 const CheckIcon = () => (
   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" aria-hidden="true">

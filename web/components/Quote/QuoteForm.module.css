@@ -229,3 +229,15 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* The required-field star and its legend, as on the contact and careers forms. */
+.req {
+  color: var(--red);
+  font-weight: 700;
+}
+
+.legend {
+  margin: 0;
+  font-size: var(--step--1);
+  color: var(--ink-3);
+}

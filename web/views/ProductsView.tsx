@@ -18,6 +18,7 @@ import PageHeader from '@/components/PageHeader/PageHeader';
 import ProductCard from '@/components/ProductCard/ProductCard';
 import FamilyFilter, { type FamilyGroup } from '@/components/FamilyFilter/FamilyFilter';
 import FamilyNote from '@/components/FamilyNote/FamilyNote';
+import { familyNote } from '@/data/family-notes';
 import Reveal from '@/components/Reveal/Reveal';
 import s from './ProductsView.module.css';
 import c from './Catalogue.module.css';
@@ -120,11 +121,7 @@ export default function ProductsView({ locale }: { locale: Locale }) {
             )}
           </div>
           {family.note && (
-            <FamilyNote
-              title={familyName(family, t)}
-              summary={t.product.learnMore}
-              paragraphs={t.familyNotes[family.note]}
-            />
+            <FamilyNote note={familyNote(family.note, locale)} />
           )}
         </div>
       </div>

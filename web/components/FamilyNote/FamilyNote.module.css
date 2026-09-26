@@ -1,54 +1,83 @@
-/* The framed disclosure under a family's grid — the same card as the contact page's. */
+/*
+ * The green box at the foot of a family, after casem.ma's category pages: a solid brand
+ * green panel, white type, the family's name as an eyebrow over the title.
+ */
 
 .note {
-  margin-top: clamp(1.25rem, 2.5vw, 1.75rem);
-  background: var(--paper-2);
-  border: 1px solid var(--line);
+  margin-top: clamp(2rem, 4vw, 3rem);
+  padding: clamp(1.5rem, 4vw, 2.75rem) clamp(1.25rem, 4vw, 3rem);
+  background: var(--green-dark);
   border-radius: var(--radius-lg);
+  color: rgb(255 255 255 / 0.92);
 }
 
-.summary {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 1.1rem 1.35rem;
-  font-weight: 600;
-  color: var(--ink);
-  cursor: pointer;
-  list-style: none;
+.note > * {
+  max-width: 78ch;
 }
 
-.summary::-webkit-details-marker {
-  display: none;
+.note p {
+  margin: 0 0 0.85em;
 }
 
-.summary:hover {
-  color: var(--green-dark);
+.eyebrow {
+  font-size: var(--step--1);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #c8f0d2;
 }
 
 .title {
-  color: var(--accent, var(--green-dark));
+  margin: 0 0 1.1rem;
+  font-size: var(--step-2);
+  line-height: 1.25;
+  color: #fff;
 }
 
-.chevron {
-  flex: none;
-  transition: transform 0.25s var(--ease);
+.heading {
+  margin: 1.6rem 0 0.6rem;
+  font-size: var(--step-1);
+  line-height: 1.3;
+  color: #fff;
 }
 
-.note[open] .chevron {
-  transform: rotate(180deg);
+.list {
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
 }
 
-.body {
-  padding: 0 1.35rem 1.25rem;
-  color: var(--ink-2);
+.list > li {
+  position: relative;
+  margin-bottom: 0.45em;
+  padding-inline-start: 1.6rem;
 }
 
-.body > p {
-  max-width: 72ch;
+/* A check mark in the light green of the eyebrow, in place of the bullet. */
+.list > li::before {
+  content: '';
+  position: absolute;
+  inset-inline-start: 0.1rem;
+  top: 0.38em;
+  width: 0.8rem;
+  height: 0.45rem;
+  border-inline-start: 2px solid #c8f0d2;
+  border-bottom: 2px solid #c8f0d2;
+  transform: rotate(-45deg);
 }
 
-.body > p:last-child {
+.list strong {
+  color: #fff;
+}
+
+.note .closing {
+  margin-top: 1.4rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid rgb(255 255 255 / 0.25);
+  font-weight: 600;
+  color: #fff;
+}
+
+.note > :last-child {
   margin-bottom: 0;
 }
