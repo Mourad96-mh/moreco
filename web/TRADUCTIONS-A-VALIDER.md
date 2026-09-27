@@ -439,3 +439,28 @@ sur les marchés UE (ES, NL) n'a pas été vérifiée.
 **Fiche Mavita Beauty en pot.** Elle affichait « Disponible en 30 ml », reste du
 2026-09-17 où elle portait la photo du flacon. Le flacon ayant désormais sa propre fiche,
 le pot n'affiche plus de contenance : **le client doit donner la sienne**.
+
+## 13. Briefing du 2026-09-27 — titre du film, rubriques produits, ressources, R&D, à propos
+
+Le client a écrit le français ; **l'anglais, l'espagnol et le néerlandais sont de nous** :
+
+| Où | Contenu |
+| --- | --- |
+| `home.heroTitle` | titre corrigé sur la vidéo : « L'innovation agronomique au service de l'agriculture régénérative » |
+| `segments` | « Agriculture & cultures » (ex-« Agri / Horticulture ») et « Désinfection » (ex-« Désinfectant »), et les quatre textes de présentation |
+| `pages.resources`, `nav.catalogues`, `nav.cropSheets`, `resources.cropSheetsSoon` | Ressources : fiches produits, fiches culturales, résultats d'essais |
+| `rdi` | introduction, bloc Innovation, bloc « sur mesure » et sa question finale |
+| `pages.about`, `about` | « MORECO : One World One Health » sous le titre, présentation et « Notre vision » |
+
+« MORECO : One World One Health » reste en anglais partout, à la demande du client ; seul
+le français garde l'espace avant les deux-points.
+
+**Compteurs.** Les nombres de produits et de gammes du briefing (20/1, 6/1, 7/1, 20/5)
+sont ceux que le site calcule déjà à partir du catalogue ; rien n'a été saisi à la main.
+
+**Fiches culturales.** La rubrique est affichée avec une phrase « en préparation » que
+nous avons rédigée, en attendant les fiches promises par le client.
+
+**2009 contre 2016.** Le texte R&D dit « Depuis 2009 », mais le bandeau de chiffres juste
+en dessous affiche toujours « 2016 — Première campagne ». **À faire trancher par le
+client** : garder 2016 (premier essai documenté au Maroc) ou passer à 2009.

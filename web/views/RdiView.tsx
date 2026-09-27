@@ -95,6 +95,12 @@ export default function RdiView({ locale }: { locale: Locale }) {
             {t.rdi.customText.map((paragraph) => (
               <p key={paragraph.slice(0, 40)}>{paragraph}</p>
             ))}
+            {/* The question the client closes on (2026-09-27), leading into the button. */}
+            <p className={s.bespokeAsk}>
+              <strong>{t.rdi.customAskTitle}</strong>
+              <br />
+              {t.rdi.customAskText}
+            </p>
             <Link className="btn" href={href(locale, 'contact')}>
               {t.rdi.customCta}
             </Link>

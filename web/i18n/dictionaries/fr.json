@@ -14,8 +14,9 @@
     "contact": "Contacts",
     "quote": "Voir la demande de devis",
     "quoteShort": "Devis",
-    "catalogues": "Fiches produits & catalogues",
+    "catalogues": "Fiches produits",
     "applications": "Applications produits",
+    "cropSheets": "Fiches culturales",
     "knowledge": "Centre de connaissances",
     "trials": "Résultats d'essais",
     "innovation": "Innovation",
@@ -32,7 +33,7 @@
     "language": "Langue"
   },
   "home": {
-    "heroTitle": "MORECO | La technologie au service de l’agriculture régénérative",
+    "heroTitle": "MORECO | L’innovation agronomique au service de l’agriculture régénérative",
     "introTitle": "MORECO repousse les limites de l’innovation pour une agriculture rentable, performante et régénérative.",
     "introText": [
       "Depuis plus de 14 ans, Moreco travaille en étroite collaboration avec les pionniers et les développeurs de l’acide orthosilicique stabilisé (OSA).",
@@ -91,24 +92,24 @@
   },
   "segments": {
     "agri": {
-      "name": "Agri / Horticulture",
+      "name": "Agriculture & cultures",
       "short": "Rendement, goût et résistance des cultures",
-      "blurb": "Une forme unique d'acide orthosilicique entièrement assimilable : plus de rendement, un meilleur goût et des cultures plus résistantes. Également disponible pour le contrôle biologique des maladies."
+      "blurb": "Une forme unique d’acide orthosilicique, entièrement assimilable : améliore l’assimilation du phosphore, favorise une utilisation plus efficiente de l’eau et contribue à une meilleure qualité nutritionnelle, à l’augmentation des valeurs Brix, des rendements et de la durée de conservation des productions."
     },
     "humans": {
       "name": "Humains",
       "short": "Silicium biodisponible, beauté et vitalité",
-      "blurb": "Pour être plus jeune, plus sain et plus vital grâce au silicium biologiquement actif. Également en association avec la maca, la L-arginine, l'acide hyaluronique et le collagène."
+      "blurb": "Une formule unique à base de silicium biologiquement actif qui contribue, de l’intérieur, à un organisme plus jeune, plus sain et plus vital."
     },
     "animals": {
       "name": "Animaux",
       "short": "Santé animale et hygiène d'élevage",
-      "blurb": "Améliore la santé et la qualité de vie des animaux par une forme assimilable de silicium biologiquement actif. Applicable aussi à l'éco-désinfection."
+      "blurb": "Contribue à la santé, à la vitalité et à la qualité de vie des animaux grâce à une forme unique et assimilable de silicium biologiquement actif."
     },
     "general": {
-      "name": "Désinfectant",
+      "name": "Désinfection",
       "short": "Désinfection écologique au peroxyde d'hydrogène",
-      "blurb": "La désinfection écologique par le peroxyde d'hydrogène : pour les humains, les animaux, l'agriculture et ses industries."
+      "blurb": "Désinfection écologique à base de peroxyde d’hydrogène pour l’agriculture, les élevages, les applications domestiques et diverses industries."
     }
   },
   "families": {
@@ -151,18 +152,22 @@
   },
   "rdi": {
     "title": "Recherche & Développement Moreco",
-    "intro": "Le silicium n'est pas une promesse : c'est une mesure. Depuis 2016, Moreco conduit des essais en conditions réelles chez des producteurs marocains — parcelle témoin contre parcelle traitée, sur la même exploitation, la même saison, la même variété.",
+    "intro": "Depuis 2009, Moreco développe et teste ses solutions de silicium en conditions réelles, avec des producteurs marocains et des instituts officiels.",
     "innovationTitle": "Innovation",
-    "innovationLead": "Toujours une longueur d’avance grâce à la R&D de Moreco",
+    "innovationLead": "L’innovation au service de la performance agricole",
     "innovationText": [
-      "L’immobilisme n’est pas une option. C’est pourquoi Moreco investit continuellement dans la recherche biotechnologique et le développement de pointe. Notre département R&D interne constitue le moteur de nos intrants agricoles de haute performance, développés grâce aux technologies les plus avancées du secteur.",
-      "Notre équipe d’experts se consacre pleinement à la conception, aux essais et au perfectionnement de formules innovantes. Nous poursuivons un objectif clair : vous offrir une qualité, une efficacité et une durabilité optimales, garantissant ainsi un rendement maximal pour le secteur agricole."
+      "L’innovation est au cœur de la démarche de Moreco. Depuis 2009, notre entreprise investit dans la recherche et le développement de solutions biotechnologiques destinées à l’agriculture.",
+      "Notre département R&D développe et optimise des formulations innovantes à partir de technologies avancées, avec une attention particulière portée à leur efficacité agronomique, leur assimilation par les plantes et leur impact sur la qualité des productions.",
+      "Notre équipe travaille en étroite collaboration avec des producteurs et des instituts de recherche afin de concevoir, tester et améliorer nos solutions dans des conditions réelles. Chaque formulation fait l’objet d’une démarche rigoureuse visant à garantir sa qualité, sa performance et sa régularité d’utilisation."
     ],
-    "customTitle": "Besoin d’une formule ou d’un produit sur mesure ?",
+    "customTitle": "Besoin d’une formulation ou d’un produit sur mesure ?",
     "customText": [
-      "Votre entreprise nécessite-t-elle le développement d’un produit spécifique ou d’une formule sur mesure ? Que vous recherchiez une solution directement applicable à vos cultures, ou que vous souhaitiez formuler un produit innovant destiné à la vente et à la distribution, notre équipe R&D est à votre disposition. Nous vous accompagnons pour repousser les limites de l’innovation et concevoir des solutions sur mesure qui répondent parfaitement à vos objectifs agronomiques.",
-      "Nous sommes à votre entière disposition pour répondre à toutes vos questions. N’hésitez pas à nous contacter pour explorer les opportunités de collaboration."
+      "Vous recherchez le développement d’un produit spécifique ou d’une formulation adaptée à vos besoins agronomiques ?",
+      "Qu’il s’agisse d’une solution destinée directement à vos cultures ou du développement d’un produit innovant destiné à la commercialisation et à la distribution, notre équipe R&D vous accompagne dans la conception et la mise au point de solutions sur mesure.",
+      "Nous étudions vos besoins et travaillons avec vous à l’élaboration de formulations adaptées à vos objectifs techniques et agronomiques."
     ],
+    "customAskTitle": "Vous souhaitez développer une solution avec Moreco ?",
+    "customAskText": "Notre équipe est à votre disposition pour étudier votre projet et envisager les possibilités de collaboration.",
     "customCta": "Nous contacter",
     "trialsTitle": "Résultats d'essais",
     "trialsIntro": "Du pommier de Midelt au gazon, chaque culture documentée en photos de terrain.",
@@ -184,18 +189,19 @@
     "domains": "Domaines",
     "discover": "En savoir plus",
     "contactLead": "Nos équipes répondent aux demandes techniques et commerciales.",
-    "introTitle": "MORECO – Innovation scientifique au service de l’agriculture régénérative",
+    "introTitle": "L’innovation scientifique au service de l’agriculture régénérative",
     "introText": [
-      "Moreco développe et sélectionne des technologies agronomiques avancées destinées à soutenir l’agriculture régénérative et à améliorer les performances des cultures.",
-      "Notre expertise couvre notamment la physiologie végétale, l’acide orthosilicique stabilisé (OSA), la nutrition de précision, la santé des sols, la biostimulation, l’efficacité de l’utilisation de l’eau et la résilience naturelle des cultures.",
-      "Nous sélectionnons des technologies à forte valeur scientifique et technologique afin de proposer aux professionnels des solutions permettant d’optimiser les interactions entre le sol, les racines et la plante."
+      "Moreco développe, sélectionne et optimise des technologies agronomiques avancées qui contribuent à l’agriculture régénérative ainsi qu’à une production agricole plus efficace et durable.",
+      "Notre expertise couvre notamment la physiologie végétale, l’acide orthosilicique stabilisé (OSA), la nutrition de précision, la santé des sols, la biostimulation, l’utilisation efficiente de l’eau et le renforcement de la résilience physiologique des cultures.",
+      "Nous sélectionnons et développons des technologies fondées sur leur pertinence scientifique, leur valeur technologique et leur applicabilité sur le terrain. Nous proposons ainsi aux professionnels de l’agriculture des solutions visant à optimiser les interactions entre le sol, la zone racinaire et la plante.",
+      "Notre approche repose sur une vision intégrée : un sol vivant et sain favorise un système racinaire performant, une plante fonctionnelle et, à terme, une production de qualité, plus efficiente et durable."
     ],
     "visionTitle": "Notre vision",
     "vision": [
-      "Un sol vivant.",
-      "Une plante résiliente.",
-      "Une récolte de haute qualité.",
-      "Une agriculture tournée vers l’avenir."
+      "Des sols vivants, fertiles et fonctionnels.",
+      "Des cultures saines, robustes et résilientes.",
+      "Des productions de qualité, performantes et durables.",
+      "Une agriculture fondée sur l’innovation, la science et la durabilité."
     ]
   },
   "press": {
@@ -255,7 +261,7 @@
     },
     "resources": {
       "title": "Ressources",
-      "lead": "Fiches produits, catalogues et centre de connaissances."
+      "lead": "Fiches produits, fiches culturales et résultats d’essais."
     },
     "trials": {
       "title": "Résultats d'essais",
@@ -275,7 +281,7 @@
     },
     "about": {
       "title": "À propos de Moreco",
-      "lead": "Un miracle de la science, distribué au Maroc."
+      "lead": "MORECO : One World One Health"
     },
     "services": {
       "title": "Services & conseils",
@@ -305,7 +311,8 @@
     "mainNav": "Navigation principale"
   },
   "resources": {
-    "applicationsIntro": "Les flyers par culture, à emporter au champ."
+    "applicationsIntro": "Les flyers par culture, à emporter au champ.",
+    "cropSheetsSoon": "Les fiches culturales sont en cours de préparation et seront publiées ici prochainement."
   },
   "careers": {
     "formTitle": "Candidature spontanée",
