@@ -33,56 +33,56 @@
     "language": "Language"
   },
   "home": {
-    "heroTitle": "MORECO | Agronomic innovation in the service of regenerative agriculture",
-    "introTitle": "MORECO pushes the boundaries of innovation for profitable, high-performing and regenerative agriculture.",
+    "introTitle": "MORECO | Agronomic innovation in the service of regenerative agriculture",
     "introText": [
-      "For more than 14 years, Moreco has worked closely with the pioneers and developers of stabilised orthosilicic acid (OSA).",
-      "Building on this expertise, we support agricultural professionals in Europe, Asia and the United States, and since 2012 in Morocco.",
-      "We select only cutting-edge technologies, internationally recognised for their innovation, effectiveness and reliability. Our aim is clear: to offer growers solutions that lastingly improve crop performance while meeting agriculture’s new challenges.",
-      "Our exclusive technologies rest on four essential pillars of plant performance:"
+      "For more than 14 years, MORECO has worked closely with the pioneers and developers of stabilised orthosilicic acid (OSA).",
+      "Building on this expertise, we support agricultural professionals in Europe, Asia, the United States and, since 2012, in Morocco and the MENA region.",
+      "We exclusively select advanced technologies that are internationally recognised for their innovation, effectiveness and reliability.",
+      "Our objective is clear: to offer growers agronomic solutions that lastingly improve crop performance, input efficiency and produce quality.",
+      "Our exclusive technologies are built on five essential pillars of plant and agronomic performance:"
     ],
     "introPoints": [
       {
-        "title": "Optimised nutrition",
-        "text": "Promoting efficient nutrient uptake and assimilation, to fully support the plant’s potential."
+        "title": "Optimising nutrient efficiency",
+        "text": "Promoting the uptake, assimilation and efficient use of nutrients to support balanced crop development and yield potential."
       },
       {
-        "title": "Natural resilience",
-        "text": "Strengthening the plant’s natural defences against diseases, pests and climate stress."
+        "title": "Strengthening plant resilience",
+        "text": "Supporting the plant’s natural defence mechanisms and its ability to adapt to diseases, pests and abiotic stresses such as drought, heat and salinity."
       },
       {
-        "title": "Optimised water management",
-        "text": "Improving water-use efficiency and plant hydration, so that every drop of water counts."
+        "title": "Optimising water management",
+        "text": "Improving water-use efficiency and the plant’s water balance to optimise irrigation and crop performance under water stress."
       },
       {
-        "title": "Superior nutritional quality",
-        "text": "Helping to optimise the quality, taste, nutritional value and storage life of the harvest."
+        "title": "Improving harvest quality",
+        "text": "Contributing to better quality, uniformity, flavour, nutritional value and shelf life of the harvest."
+      },
+      {
+        "title": "Reducing unwanted residues",
+        "text": "Our technologies help limit the uptake and accumulation of unwanted residues in plants and soil, including certain heavy metals such as cadmium (Cd) and residues from chemical inputs."
       }
     ],
-    "introClose": "MORECO combines advanced technologies with agronomic expertise to bring growers solutions suited to the challenges of today’s and tomorrow’s agriculture.",
+    "introClose": "MORECO combines advanced agronomic technologies with field expertise to support growers in meeting the challenges of today’s and tomorrow’s agriculture, with particular attention to plant health, soil, water, nutrient efficiency and the lasting quality of production.",
     "segmentsTitle": "Our fields of application",
     "rdiText": "Trials in real conditions, control plot against treated plot, on the same farm in the same season. The campaigns documented in Morocco run from Midelt to Larache: apple, strawberry, tomato, citrus, wheat, olive.",
     "rdiCta": "See the trial results",
     "stats": [
       {
         "value": "215",
-        "label": "Trial campaigns worldwide",
-        "labelFirst": false
+        "label": "Agronomic trials worldwide"
       },
       {
         "value": "24,000",
-        "label": "Farmers worldwide",
-        "labelFirst": false
+        "label": "Growers supported worldwide"
       },
       {
         "value": "2001",
-        "label": "In Morocco since",
-        "labelFirst": true
+        "label": "Present in Morocco since"
       },
       {
         "value": "2014",
-        "label": "In Agadir since",
-        "labelFirst": true
+        "label": "Present in Agadir since"
       }
     ],
     "quoteTitle": "Something specific in mind? Ask for a quote",
@@ -93,7 +93,12 @@
     "agri": {
       "name": "Agriculture & crops",
       "short": "Yield, taste and crop resilience",
-      "blurb": "A unique, fully assimilable form of orthosilicic acid: improves phosphorus uptake, supports more efficient water use and contributes to better nutritional quality, higher Brix values, higher yields and a longer shelf life."
+      "blurb": "A unique, fully assimilable form of orthosilicic acid: improves phosphorus uptake, supports more efficient water use and contributes to better nutritional quality, higher Brix values, higher yields and a longer shelf life.",
+      "introTitle": "Exclusive Stabilized OSA Technology",
+      "intro": [
+        "Our exclusive range is built on a unique patented stabilized orthosilicic acid (OSA) technology, designed to deliver highly available silicon for plant uptake.",
+        "It optimizes phosphorus and water-use efficiency while supporting plant performance, resilience, crop quality, °Brix, yield, and post-harvest shelf life."
+      ]
     },
     "humans": {
       "name": "Humans",

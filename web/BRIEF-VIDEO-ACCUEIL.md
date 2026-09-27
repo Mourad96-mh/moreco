@@ -11,6 +11,9 @@ modifiable sans nouveau montage. Toujours ni sous-titre ni bouton.
 **Corrigé le 2026-09-27** : le client s'était trompé de titre. Le bon est « MORECO |
 L'innovation agronomique au service de l'agriculture régénérative ».
 
+**Retiré le 2026-09-27 (second briefing)** : la vidéo ne porte plus aucun texte. Le titre
+ouvre désormais l'introduction de la page d'accueil, dont il est le h1.
+
 **Livré le 2026-09-12.** Le film du client est en place (`public/media/hero/hero.mp4`,
 10 s, 1024 × 576, H.264). Sa piste audio a été retirée au montage : la bannière démarre
 toute seule, et un film qui démarre tout seul avec du son est bloqué par les navigateurs.

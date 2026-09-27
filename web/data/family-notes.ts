@@ -24,8 +24,9 @@ export type NoteBlock =
   | { type: 'closing'; text: string };
 
 export interface FamilyNoteContent {
-  /** The family's name in capitals, as the client sets it above each text. */
+  /** The family's name, set on its own line above the title. */
   eyebrow: string;
+  /** Never repeats the family's name — it opens straight on the statement (2026-09-27). */
   title: string;
   blocks: NoteBlock[];
 }
@@ -33,8 +34,8 @@ export interface FamilyNoteContent {
 const NOTES: Record<FamilyNoteKey, Record<Locale, FamilyNoteContent>> = {
   specialties: {
     fr: {
-      eyebrow: 'Spécialité',
-      title: 'Spécialité : technologie exclusive et brevetée Pure OSA pour des performances maximales des cultures',
+      eyebrow: 'Spécialités',
+      title: 'Technologie OSA Pure exclusive et brevetée pour des performances maximales des cultures',
       blocks: [
         {
           type: 'paragraph',
@@ -76,8 +77,8 @@ const NOTES: Record<FamilyNoteKey, Record<Locale, FamilyNoteContent>> = {
       ],
     },
     en: {
-      eyebrow: 'Specialty',
-      title: 'Specialty: exclusive, patented Pure OSA technology for maximum crop performance',
+      eyebrow: 'Specialties',
+      title: 'Exclusive, patented Pure OSA technology for maximum crop performance',
       blocks: [
         {
           type: 'paragraph',
@@ -119,8 +120,8 @@ const NOTES: Record<FamilyNoteKey, Record<Locale, FamilyNoteContent>> = {
       ],
     },
     es: {
-      eyebrow: 'Especialidad',
-      title: 'Especialidad: tecnología Pure OSA exclusiva y patentada para el máximo rendimiento de los cultivos',
+      eyebrow: 'Especialidades',
+      title: 'Tecnología Pure OSA exclusiva y patentada para el máximo rendimiento de los cultivos',
       blocks: [
         {
           type: 'paragraph',
@@ -162,8 +163,8 @@ const NOTES: Record<FamilyNoteKey, Record<Locale, FamilyNoteContent>> = {
       ],
     },
     nl: {
-      eyebrow: 'Specialiteit',
-      title: 'Specialiteit: exclusieve, gepatenteerde Pure OSA-technologie voor maximale gewasprestaties',
+      eyebrow: 'Specialiteiten',
+      title: 'Exclusieve, gepatenteerde Pure OSA-technologie voor maximale gewasprestaties',
       blocks: [
         {
           type: 'paragraph',
@@ -209,7 +210,7 @@ const NOTES: Record<FamilyNoteKey, Record<Locale, FamilyNoteContent>> = {
   soil: {
     fr: {
       eyebrow: 'Santé du sol & des racines',
-      title: 'Santé du sol & des racines : restaurer le sol, renforcer les racines et développer la performance',
+      title: 'Restaurer le sol, renforcer les racines et développer la performance',
       blocks: [
         { type: 'paragraph', text: 'La performance d’une culture commence sous la surface.' },
         {
@@ -273,7 +274,7 @@ const NOTES: Record<FamilyNoteKey, Record<Locale, FamilyNoteContent>> = {
     },
     en: {
       eyebrow: 'Soil & root health',
-      title: 'Soil & root health: restore the soil, strengthen the roots and build performance',
+      title: 'Restore the soil, strengthen the roots and build performance',
       blocks: [
         { type: 'paragraph', text: 'A crop’s performance starts below the surface.' },
         {
@@ -337,7 +338,7 @@ const NOTES: Record<FamilyNoteKey, Record<Locale, FamilyNoteContent>> = {
     },
     es: {
       eyebrow: 'Salud del suelo y de las raíces',
-      title: 'Salud del suelo y de las raíces: restaurar el suelo, reforzar las raíces y desarrollar el rendimiento',
+      title: 'Restaurar el suelo, reforzar las raíces y desarrollar el rendimiento',
       blocks: [
         { type: 'paragraph', text: 'El rendimiento de un cultivo empieza bajo la superficie.' },
         {
@@ -401,7 +402,7 @@ const NOTES: Record<FamilyNoteKey, Record<Locale, FamilyNoteContent>> = {
     },
     nl: {
       eyebrow: 'Bodem- & wortelgezondheid',
-      title: 'Bodem- & wortelgezondheid: de bodem herstellen, de wortels versterken en de prestaties opbouwen',
+      title: 'De bodem herstellen, de wortels versterken en de prestaties opbouwen',
       blocks: [
         { type: 'paragraph', text: 'De prestaties van een gewas beginnen onder de grond.' },
         {
@@ -667,7 +668,7 @@ const NOTES: Record<FamilyNoteKey, Record<Locale, FamilyNoteContent>> = {
   npk: {
     fr: {
       eyebrow: 'HIGH END NPK',
-      title: 'HIGH END NPK : formulations WSL uniques selon la stratégie MORECO « Micro Input – Macro Impact »',
+      title: 'Formulations WSL uniques selon la stratégie MORECO « Micro Input – Macro Impact »',
       blocks: [
         {
           type: 'paragraph',
@@ -734,7 +735,7 @@ const NOTES: Record<FamilyNoteKey, Record<Locale, FamilyNoteContent>> = {
     },
     en: {
       eyebrow: 'HIGH END NPK',
-      title: 'HIGH END NPK: unique WSL formulations built on the MORECO “Micro Input – Macro Impact” strategy',
+      title: 'Unique WSL formulations built on the MORECO “Micro Input – Macro Impact” strategy',
       blocks: [
         {
           type: 'paragraph',
@@ -801,7 +802,7 @@ const NOTES: Record<FamilyNoteKey, Record<Locale, FamilyNoteContent>> = {
     },
     es: {
       eyebrow: 'HIGH END NPK',
-      title: 'HIGH END NPK: formulaciones WSL únicas según la estrategia MORECO «Micro Input – Macro Impact»',
+      title: 'Formulaciones WSL únicas según la estrategia MORECO «Micro Input – Macro Impact»',
       blocks: [
         {
           type: 'paragraph',
@@ -868,7 +869,7 @@ const NOTES: Record<FamilyNoteKey, Record<Locale, FamilyNoteContent>> = {
     },
     nl: {
       eyebrow: 'HIGH END NPK',
-      title: 'HIGH END NPK: unieke WSL-formuleringen volgens de MORECO-strategie “Micro Input – Macro Impact”',
+      title: 'Unieke WSL-formuleringen volgens de MORECO-strategie “Micro Input – Macro Impact”',
       blocks: [
         {
           type: 'paragraph',
@@ -938,7 +939,7 @@ const NOTES: Record<FamilyNoteKey, Record<Locale, FamilyNoteContent>> = {
   disinfectant: {
     fr: {
       eyebrow: 'Désinfection',
-      title: 'Désinfection : une hygiène maîtrisée pour l’eau, les installations et les cultures',
+      title: 'Une hygiène maîtrisée pour l’eau, les installations et les cultures',
       blocks: [
         {
           type: 'paragraph',
@@ -971,7 +972,7 @@ const NOTES: Record<FamilyNoteKey, Record<Locale, FamilyNoteContent>> = {
     },
     en: {
       eyebrow: 'Disinfection',
-      title: 'Disinfection: controlled hygiene for water, installations and crops',
+      title: 'Controlled hygiene for water, installations and crops',
       blocks: [
         {
           type: 'paragraph',
@@ -1004,7 +1005,7 @@ const NOTES: Record<FamilyNoteKey, Record<Locale, FamilyNoteContent>> = {
     },
     es: {
       eyebrow: 'Desinfección',
-      title: 'Desinfección: una higiene controlada para el agua, las instalaciones y los cultivos',
+      title: 'Una higiene controlada para el agua, las instalaciones y los cultivos',
       blocks: [
         {
           type: 'paragraph',
@@ -1037,7 +1038,7 @@ const NOTES: Record<FamilyNoteKey, Record<Locale, FamilyNoteContent>> = {
     },
     nl: {
       eyebrow: 'Desinfectie',
-      title: 'Desinfectie: beheerste hygiëne voor water, installaties en gewassen',
+      title: 'Beheerste hygiëne voor water, installaties en gewassen',
       blocks: [
         {
           type: 'paragraph',

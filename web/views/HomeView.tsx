@@ -51,42 +51,41 @@ export default function HomeView({ locale }: { locale: Locale }) {
   return (
     <>
       {/*
-       * The film carries a title again since 2026-09-26 — the client's line, over its
-       * opening frame — but still no subtitle and no button (briefing of 2026-09-09), and
-       * no caption since 2026-09-18. The client's own 10 s loop, delivered 2026-09-12,
-       * muxed without its audio track: the banner autoplays, and an autoplaying film
-       * with sound is blocked anyway. BRIEF-VIDEO-ACCUEIL.md holds the shot list.
+       * The film plays on its own: no title, subtitle, button or caption. The title it
+       * carried from 2026-09-26 came off with the briefing of 2026-09-27 (step 1), and
+       * the line moved to the intro below as the page's h1. The client's own 10 s loop,
+       * delivered 2026-09-12, muxed without its audio track: the banner autoplays, and
+       * an autoplaying film with sound is blocked anyway. BRIEF-VIDEO-ACCUEIL.md holds
+       * the shot list.
        */}
       <HeroVideo
-        title={t.home.heroTitle}
         poster="/media/hero/hero-poster.webp"
         /* H.264 only: a VP9 re-encode of this footage came out larger, so a
            second source would cost bandwidth without buying compatibility. */
         sources={[{ src: '/media/hero/hero.mp4', type: 'video/mp4' }]}
       />
 
-      {/* The film's title is the page's h1; the intro opens on the client's statement. */}
+      {/* The intro, rewritten by the client on 2026-09-27, opens the page and holds its h1. */}
       <section className="section">
         <div className="page-narrow">
           <Reveal>
-            <p className="eyebrow">{t.site.name}</p>
-            <h2 className={s.introTitle}>{t.home.introTitle}</h2>
+            <h1 className={s.introTitle}>{t.home.introTitle}</h1>
             {t.home.introText.map((paragraph, i) => (
               <p key={i} className={i === 0 ? 'lead' : undefined}>
                 {paragraph}
               </p>
             ))}
 
-            {/* The four pillars the last paragraph announces, set as a list so the colon
-                before them resolves into something the eye can scan. */}
-            <ul className={s.introPoints}>
+            {/* The five pillars the last paragraph announces, numbered as the client
+                numbers them, so the colon before them resolves into a list to scan. */}
+            <ol className={s.introPoints}>
               {t.home.introPoints.map((point) => (
                 <li key={point.title} className={s.introPoint}>
                   <strong className={s.introPointTitle}>{point.title}</strong>
                   <span>{point.text}</span>
                 </li>
               ))}
-            </ul>
+            </ol>
 
             <p>{t.home.introClose}</p>
           </Reveal>
@@ -127,8 +126,9 @@ export default function HomeView({ locale }: { locale: Locale }) {
        * not the Moroccan trial count the R&D page documents — which is why they live in
        * the dictionary rather than being counted off TRIALS.
        *
-       * The two dates read as sentences — "Présent au Maroc depuis 2001" — so their
-       * label comes before the number; a count reads number first.
+       * Every label sits above its number — "Présence au Maroc depuis" over 2001 — so the
+       * four read the same way (briefing of 2026-09-27, step 2; until then the two
+       * counts put their number first).
        */}
       <section className="section">
         <div className="page">
@@ -138,9 +138,8 @@ export default function HomeView({ locale }: { locale: Locale }) {
                 <span className={s.statIcon} aria-hidden="true">
                   {STAT_ICONS[i]}
                 </span>
-                {stat.labelFirst && <p className={`${s.statLabel} ${s.statLabelFirst}`}>{stat.label}</p>}
+                <p className={s.statLabel}>{stat.label}</p>
                 <p className={s.statNumber}>{stat.value}</p>
-                {!stat.labelFirst && <p className={s.statLabel}>{stat.label}</p>}
               </Reveal>
             ))}
           </div>

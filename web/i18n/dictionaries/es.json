@@ -33,56 +33,56 @@
     "language": "Idioma"
   },
   "home": {
-    "heroTitle": "MORECO | La innovación agronómica al servicio de la agricultura regenerativa",
-    "introTitle": "MORECO amplía los límites de la innovación para una agricultura rentable, eficiente y regenerativa.",
+    "introTitle": "MORECO | La innovación agronómica al servicio de una agricultura regenerativa",
     "introText": [
-      "Desde hace más de 14 años, Moreco trabaja en estrecha colaboración con los pioneros y desarrolladores del ácido ortosilícico estabilizado (OSA).",
-      "Gracias a esta experiencia, acompañamos a los profesionales de la agricultura en Europa, Asia, Estados Unidos y, desde 2012, en Marruecos.",
-      "Seleccionamos exclusivamente tecnologías punteras, reconocidas internacionalmente por su innovación, su eficacia y su fiabilidad. Nuestro objetivo es claro: ofrecer a los productores soluciones capaces de mejorar de forma duradera el rendimiento de los cultivos respondiendo a los nuevos retos de la agricultura.",
-      "Nuestras tecnologías exclusivas se basan en cuatro pilares esenciales del rendimiento vegetal:"
+      "Desde hace más de 14 años, MORECO colabora estrechamente con los pioneros y desarrolladores del ácido ortosilícico estabilizado (OSA).",
+      "Gracias a esta experiencia, acompañamos a los profesionales de la agricultura en Europa, Asia, Estados Unidos y, desde 2012, en Marruecos y la región MENA.",
+      "Seleccionamos exclusivamente tecnologías avanzadas reconocidas a nivel internacional por su innovación, su eficacia y su fiabilidad.",
+      "Nuestro objetivo es claro: ofrecer a los productores soluciones agronómicas que mejoren de forma duradera el rendimiento de los cultivos, la eficiencia de los insumos y la calidad de las producciones.",
+      "Nuestras tecnologías exclusivas se basan en cinco pilares esenciales del rendimiento vegetal y agronómico:"
     ],
     "introPoints": [
       {
-        "title": "Nutrición optimizada",
-        "text": "Favorecer una absorción y una asimilación eficaces de los nutrientes para apoyar plenamente el potencial de la planta."
+        "title": "Optimización de la eficiencia nutricional",
+        "text": "Favorecer la absorción, la asimilación y el uso eficiente de los nutrientes para sostener un desarrollo equilibrado del cultivo y su potencial de rendimiento."
       },
       {
-        "title": "Resiliencia natural",
-        "text": "Reforzar los mecanismos naturales de defensa de la planta frente a las enfermedades, las plagas y el estrés climático."
+        "title": "Refuerzo de la resiliencia de las plantas",
+        "text": "Sostener los mecanismos naturales de defensa y la capacidad de adaptación de las plantas frente a enfermedades, plagas y estrés abiótico como la sequía, el calor y la salinidad."
       },
       {
-        "title": "Gestión optimizada del agua",
-        "text": "Mejorar la eficiencia en el uso del agua y la hidratación de la planta para aprovechar al máximo cada aporte hídrico."
+        "title": "Optimización de la gestión del agua",
+        "text": "Mejorar la eficiencia en el uso del agua y el equilibrio hídrico de la planta para optimizar el riego y el rendimiento de los cultivos en condiciones de estrés hídrico."
       },
       {
-        "title": "Calidad nutricional superior",
-        "text": "Contribuir a optimizar la calidad, el sabor, el valor nutricional y la conservación de las cosechas."
+        "title": "Mejora de la calidad de las cosechas",
+        "text": "Contribuir a mejorar la calidad, la homogeneidad, el sabor, el valor nutricional y la conservación de las cosechas."
+      },
+      {
+        "title": "Reducción de residuos no deseados",
+        "text": "Nuestras tecnologías contribuyen a limitar la absorción y la acumulación de residuos no deseados en la planta y el suelo, en particular ciertos metales pesados como el cadmio (Cd), así como los residuos derivados de los insumos químicos."
       }
     ],
-    "introClose": "MORECO une tecnologías avanzadas y experiencia agronómica para ofrecer a los productores soluciones adaptadas a los retos de la agricultura de hoy y de mañana.",
+    "introClose": "MORECO combina tecnologías agronómicas avanzadas con experiencia de campo para acompañar a los productores ante los retos de la agricultura de hoy y de mañana, con especial atención a la salud de las plantas, el suelo, el agua, la eficiencia nutricional y la calidad duradera de las producciones.",
     "segmentsTitle": "Nuestros campos de aplicación",
     "rdiText": "Ensayos en condiciones reales, parcela testigo frente a parcela tratada, en la misma explotación y la misma temporada. Las campañas documentadas en Marruecos van de Midelt a Larache: manzano, fresa, tomate, cítricos, trigo, olivo.",
     "rdiCta": "Ver los resultados de los ensayos",
     "stats": [
       {
         "value": "215",
-        "label": "Campañas de ensayo en el mundo",
-        "labelFirst": false
+        "label": "Ensayos agronómicos en el mundo"
       },
       {
         "value": "24.000",
-        "label": "Agricultores en todo el mundo",
-        "labelFirst": false
+        "label": "Productores acompañados en el mundo"
       },
       {
         "value": "2001",
-        "label": "Presentes en Marruecos desde",
-        "labelFirst": true
+        "label": "Presencia en Marruecos desde"
       },
       {
         "value": "2014",
-        "label": "Presentes en Agadir desde",
-        "labelFirst": true
+        "label": "Presencia en Agadir desde"
       }
     ],
     "quoteTitle": "¿Tiene una necesidad concreta? Pida su presupuesto",
@@ -93,7 +93,12 @@
     "agri": {
       "name": "Agricultura y cultivos",
       "short": "Rendimiento, sabor y resistencia del cultivo",
-      "blurb": "Una forma única de ácido ortosilícico, totalmente asimilable: mejora la asimilación del fósforo, favorece un uso más eficiente del agua y contribuye a una mejor calidad nutricional, a mayores valores Brix, a mayores rendimientos y a una conservación más larga de las cosechas."
+      "blurb": "Una forma única de ácido ortosilícico, totalmente asimilable: mejora la asimilación del fósforo, favorece un uso más eficiente del agua y contribuye a una mejor calidad nutricional, a mayores valores Brix, a mayores rendimientos y a una conservación más larga de las cosechas.",
+      "introTitle": "Tecnología exclusiva de OSA estabilizado",
+      "intro": [
+        "Nuestra gama exclusiva se basa en una tecnología única y patentada de ácido ortosilícico estabilizado (OSA), diseñada para aportar silicio altamente disponible para la absorción por la planta.",
+        "Optimiza la eficiencia en el uso del fósforo y del agua, al tiempo que favorece el rendimiento de la planta, su resiliencia, la calidad del cultivo, los °Brix, la producción y la vida útil poscosecha."
+      ]
     },
     "humans": {
       "name": "Humanos",

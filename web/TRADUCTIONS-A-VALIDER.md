@@ -104,7 +104,7 @@ Un produit vendu comme fertilisant ou biostimulant (**règlement (UE) 2019/1009*
 pas revendiquer le contrôle d'un organisme nuisible : cela relèverait du **règlement (CE)
 n° 1107/2009** et exigerait une AMM produit phytopharmaceutique dans chaque pays.
 
-- **FertFight** (« Orthagrow FertiFight » jusqu'au 2026-09-09) — « renforce ses défenses
+- **FERTIFIGHT** (« Orthagrow FertiFight » jusqu'au 2026-09-09) — « renforce ses défenses
   contre les agents pathogènes fongiques, mildiou, oïdium, botrytis, gommose », « efficace
   préventive et curative ». **Le point reste entier après le renommage** : le produit est
   toujours au catalogue, dans les cinq langues.
@@ -173,7 +173,7 @@ Les restes de balises WPML (« Nutrition @fr », « silicon @fr », « supplème
 | essai (au champ) | ensayo | proef | تجربة |
 
 Les noms de marques et de produits ne sont **pas** traduits (Orthagrow, Mavita, Huwa-San,
-BioXeco, Clearox, OrthaHealth, FertFight). Seules exceptions, les deux SKU dont le nom
+BioXeco, Clearox, OrthaHealth, FERTIFIGHT). Seules exceptions, les deux SKU dont le nom
 français est un mot commun : *Orthagrow Granulé* → « Orthagrow Granule » / « Orthagrow
 حُبيبات » et *Orthagrow Poudre* → « Orthagrow Polvo » / « Orthagrow مسحوق ».
 
@@ -464,3 +464,28 @@ nous avons rédigée, en attendant les fiches promises par le client.
 **2009 contre 2016.** Le texte R&D dit « Depuis 2009 », mais le bandeau de chiffres juste
 en dessous affiche toujours « 2016 — Première campagne ». **À faire trancher par le
 client** : garder 2016 (premier essai documenté au Maroc) ou passer à 2009.
+
+## 14. Briefing du 2026-09-27 (2) — introduction, chiffres, OSA stabilisé, Whey Protein
+
+Le client a écrit le français, sauf le texte Agriculture & cultures, qu'il a écrit en
+anglais. **Tout le reste est de nous** :
+
+| Où | Contenu |
+| --- | --- |
+| `home.introTitle`, `introText`, `introPoints`, `introClose` | nouvelle introduction MORECO et ses cinq piliers (EN, ES, NL) |
+| `home.stats` | les quatre intitulés : « Essais agronomiques dans le monde », etc. (EN, ES, NL) |
+| `segments.agri.introTitle`, `segments.agri.intro` | « Exclusive Stabilized OSA Technology » (FR, ES, NL) |
+| `data/family-notes.ts` | les titres des encadrés verts, sans le nom de la famille en tête |
+| `data/product-copy.json` → `mavita-whey-protein` | phrase d'attente des cinq langues, en attendant la fiche |
+
+**Titre du film.** `home.heroTitle` n'existe plus : la vidéo ne porte plus aucun texte.
+Le titre « MORECO | L'innovation agronomique au service d'une agriculture régénérative »
+ouvre désormais l'introduction.
+
+**Texte anglais laissé tel quel.** L'anglais d'Agriculture & cultures suit l'orthographe
+américaine du client (« Stabilized », « optimizes »), alors que le reste du site anglais
+est en orthographe britannique. **À faire trancher par le client.**
+
+**Mavita Premium Whey Protein.** Le client n'a envoyé que le nom et la photo : la fiche
+dit ce que porte l'étiquette (formule OSA, saveur fruits rouges, 1 kg) et annonce la
+suite. **Description, composition et conseils d'utilisation à demander au client.**

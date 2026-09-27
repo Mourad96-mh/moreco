@@ -1,20 +1,20 @@
 /*
- * The green box at the foot of a family, after casem.ma's category pages: a brand green
- * frame on white with green type (client, 2026-09-27 — it was a solid green panel with
- * white type), the family's name as an eyebrow over the title. The type uses the darker
- * greens: the brand green itself is too light to read as body text on white.
+ * The green box at the foot of a family, drawn after casem.ma's "su-box-style-Pros"
+ * (client, 2026-09-27): a green frame, a solid green title bar with white type, and the
+ * text on white below it. Frame and bar take the brand green of the "Demander un devis"
+ * button (client, 2026-09-27), so the box and the button read as one colour.
  *
- * It folds (2026-09-27): the summary row carries the eyebrow and title on the left and a
+ * It folds (2026-09-27): the title bar carries the eyebrow and title on the left and a
  * round chevron button in the top-right corner, which turns over when the box is open.
  */
 
 .note {
   margin-top: clamp(2rem, 4vw, 3rem);
-  padding: clamp(1.5rem, 4vw, 2.75rem) clamp(1.25rem, 4vw, 3rem);
   border: 2px solid var(--green);
   border-radius: var(--radius-lg);
+  overflow: hidden;
   background: var(--paper);
-  color: var(--green-dark);
+  color: var(--ink-2);
 }
 
 .summary {
@@ -22,6 +22,9 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: 1.25rem;
+  padding: clamp(1.1rem, 3vw, 1.6rem) clamp(1.25rem, 4vw, 3rem);
+  background: var(--green);
+  color: var(--paper);
   list-style: none;
   cursor: pointer;
 }
@@ -31,13 +34,12 @@
 }
 
 .summary:focus-visible {
-  outline: 2px solid var(--green-dark);
-  outline-offset: 6px;
-  border-radius: 4px;
+  outline: 2px solid var(--paper);
+  outline-offset: -6px;
 }
 
 .summaryText {
-  max-width: 78ch;
+  min-width: 0;
 }
 
 .chevron {
@@ -45,7 +47,7 @@
   flex-shrink: 0;
   width: 2.5rem;
   height: 2.5rem;
-  border: 2px solid var(--green);
+  border: 2px solid var(--paper);
   border-radius: 50%;
   transition: background-color 0.2s ease, transform 0.25s ease;
 }
@@ -58,13 +60,13 @@
   top: 45%;
   width: 0.6rem;
   height: 0.6rem;
-  border-right: 2px solid var(--green-dark);
-  border-bottom: 2px solid var(--green-dark);
+  border-right: 2px solid var(--paper);
+  border-bottom: 2px solid var(--paper);
   transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .summary:hover .chevron {
-  background: rgb(64 171 92 / 0.1);
+  background: rgb(255 255 255 / 0.15);
 }
 
 .note[open] .chevron {
@@ -72,7 +74,7 @@
 }
 
 .body {
-  margin-top: 1.1rem;
+  padding: clamp(1.25rem, 3vw, 2rem) clamp(1.25rem, 4vw, 3rem) clamp(1.5rem, 4vw, 2.5rem);
 }
 
 .body > * {
@@ -83,21 +85,23 @@
   margin: 0 0 0.85em;
 }
 
+/* The family's name, on its own line and a step smaller than the title under it. */
 .eyebrow {
   display: block;
-  margin-bottom: 0.85em;
-  font-size: var(--step--1);
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--green-dark);
+  margin-bottom: 0.2em;
+  font-size: var(--step-0);
+  font-weight: 400;
+  line-height: 1.3;
+  color: rgb(255 255 255 / 0.9);
 }
 
 .title {
   margin: 0;
-  font-size: var(--step-2);
-  line-height: 1.25;
-  color: var(--green-darker);
+  font-size: var(--step-1);
+  line-height: 1.3;
+  color: var(--paper);
+  /* One line wherever the bar is wide enough, rather than two balanced halves. */
+  text-wrap: wrap;
 }
 
 .heading {

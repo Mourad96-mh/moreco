@@ -33,56 +33,56 @@
     "language": "Langue"
   },
   "home": {
-    "heroTitle": "MORECO | L’innovation agronomique au service de l’agriculture régénérative",
-    "introTitle": "MORECO repousse les limites de l’innovation pour une agriculture rentable, performante et régénérative.",
+    "introTitle": "MORECO | L’innovation agronomique au service d’une agriculture régénérative",
     "introText": [
-      "Depuis plus de 14 ans, Moreco travaille en étroite collaboration avec les pionniers et les développeurs de l’acide orthosilicique stabilisé (OSA).",
-      "Grâce à cette expertise, nous accompagnons les professionnels de l’agriculture en Europe, en Asie, aux États-Unis et, depuis 2012, au Maroc.",
-      "Nous sélectionnons exclusivement des technologies de pointe, reconnues au niveau international pour leur innovation, leur efficacité et leur fiabilité. Notre objectif est clair : proposer aux producteurs des solutions capables d’améliorer durablement les performances des cultures tout en répondant aux nouveaux défis de l’agriculture.",
-      "Nos technologies exclusives reposent sur quatre piliers essentiels de la performance végétale :"
+      "Depuis plus de 14 ans, MORECO travaille en étroite collaboration avec les pionniers et développeurs de l’acide orthosilicique stabilisé (OSA).",
+      "Grâce à cette expertise, nous accompagnons les professionnels de l’agriculture en Europe, en Asie, aux États-Unis et, depuis 2012, au Maroc et dans la région MENA.",
+      "Nous sélectionnons exclusivement des technologies avancées reconnues à l’échelle internationale pour leur innovation, leur efficacité et leur fiabilité.",
+      "Notre objectif est clair : proposer aux producteurs des solutions agronomiques permettant d’améliorer durablement les performances des cultures, l’efficience des intrants et la qualité des productions.",
+      "Nos technologies exclusives reposent sur cinq piliers essentiels de la performance végétale et agronomique :"
     ],
     "introPoints": [
       {
-        "title": "Nutrition optimisée",
-        "text": "Favoriser une absorption et une assimilation efficaces des nutriments afin de soutenir pleinement le potentiel de la plante."
+        "title": "Optimisation de l’efficience nutritionnelle",
+        "text": "Favoriser l’absorption, l’assimilation et l’utilisation efficace des éléments nutritifs pour soutenir un développement équilibré de la culture et son potentiel de rendement."
       },
       {
-        "title": "Résilience naturelle",
-        "text": "Renforcer les mécanismes naturels de défense de la plante face aux maladies, aux ravageurs et aux stress climatiques."
+        "title": "Renforcement de la résilience des plantes",
+        "text": "Soutenir les mécanismes naturels de défense et la capacité d’adaptation des plantes face aux maladies, aux ravageurs et aux stress abiotiques tels que la sécheresse, la chaleur et la salinité."
       },
       {
-        "title": "Gestion optimisée de l’eau",
-        "text": "Améliorer l’efficacité de l’utilisation de l’eau et l’hydratation de la plante afin que chaque apport hydrique soit valorisé au maximum."
+        "title": "Optimisation de la gestion de l’eau",
+        "text": "Améliorer l’efficience d’utilisation de l’eau et l’équilibre hydrique de la plante afin d’optimiser l’irrigation et les performances des cultures en conditions de stress hydrique."
       },
       {
-        "title": "Qualité nutritionnelle supérieure",
-        "text": "Contribuer à l’optimisation de la qualité, du goût, de la valeur nutritionnelle et de la conservation des récoltes."
+        "title": "Amélioration de la qualité des récoltes",
+        "text": "Contribuer à l’amélioration de la qualité, de l’homogénéité, de la saveur, de la valeur nutritionnelle et de la conservation des récoltes."
+      },
+      {
+        "title": "Réduction des résidus indésirables",
+        "text": "Nos technologies contribuent à limiter l’absorption et l’accumulation de résidus indésirables dans la plante et le sol, notamment certains métaux lourds tels que le cadmium (Cd) ainsi que les résidus liés aux intrants chimiques."
       }
     ],
-    "introClose": "MORECO associe technologies avancées et expertise agronomique afin d’apporter aux producteurs des solutions adaptées aux défis de l’agriculture d’aujourd’hui et de demain.",
+    "introClose": "MORECO associe des technologies agronomiques avancées à une expertise de terrain afin d’accompagner les producteurs face aux enjeux de l’agriculture d’aujourd’hui et de demain, avec une attention particulière portée à la santé des plantes, au sol, à l’eau, à l’efficience nutritionnelle et à la qualité durable des productions.",
     "segmentsTitle": "Nos domaines d'application",
     "rdiText": "Des essais en conditions réelles, parcelle témoin contre parcelle traitée, sur la même exploitation et la même saison. Les campagnes documentées au Maroc vont de Midelt à Larache : pommiers, fraises, tomates, agrumes, blé, olives.",
     "rdiCta": "Voir les résultats d'essais",
     "stats": [
       {
         "value": "215",
-        "label": "Campagnes d’essais mondiales",
-        "labelFirst": false
+        "label": "Essais agronomiques dans le monde"
       },
       {
         "value": "24 000",
-        "label": "Agriculteurs dans le monde",
-        "labelFirst": false
+        "label": "Producteurs accompagnés dans le monde"
       },
       {
         "value": "2001",
-        "label": "Présent au Maroc depuis",
-        "labelFirst": true
+        "label": "Présence au Maroc depuis"
       },
       {
         "value": "2014",
-        "label": "Présent à Agadir depuis",
-        "labelFirst": true
+        "label": "Présence à Agadir depuis"
       }
     ],
     "quoteTitle": "Un besoin précis ? Demandez votre devis",
@@ -93,7 +93,12 @@
     "agri": {
       "name": "Agriculture & cultures",
       "short": "Rendement, goût et résistance des cultures",
-      "blurb": "Une forme unique d’acide orthosilicique, entièrement assimilable : améliore l’assimilation du phosphore, favorise une utilisation plus efficiente de l’eau et contribue à une meilleure qualité nutritionnelle, à l’augmentation des valeurs Brix, des rendements et de la durée de conservation des productions."
+      "blurb": "Une forme unique d’acide orthosilicique, entièrement assimilable : améliore l’assimilation du phosphore, favorise une utilisation plus efficiente de l’eau et contribue à une meilleure qualité nutritionnelle, à l’augmentation des valeurs Brix, des rendements et de la durée de conservation des productions.",
+      "introTitle": "Technologie OSA stabilisée exclusive",
+      "intro": [
+        "Notre gamme exclusive repose sur une technologie unique et brevetée d’acide orthosilicique stabilisé (OSA), conçue pour fournir du silicium hautement disponible pour l’absorption par la plante.",
+        "Elle optimise l’efficience du phosphore et de l’eau tout en soutenant la performance, la résilience et la qualité des cultures, le °Brix, le rendement et la durée de conservation après récolte."
+      ]
     },
     "humans": {
       "name": "Humains",

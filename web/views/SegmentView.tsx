@@ -82,12 +82,21 @@ export default function SegmentView({ locale, segment }: { locale: Locale; segme
   const claimed = new Set(families.flatMap((f) => f.products));
   const borrowed = products.filter((p) => p.segment !== segment && !claimed.has(p.slug));
 
+  /*
+   * Agriculture opens on a titled text rather than its one-line blurb (briefing of
+   * 2026-09-27, step 3). The blurb stays for the home page and the catalogue overview.
+   */
+  const copy = t.segments[segment];
+  const intro =
+    'intro' in copy ? { title: copy.introTitle, paragraphs: copy.intro } : undefined;
+
   return (
     <>
       <PageHeader
         eyebrow={t.nav.products}
         title={t.segments[segment].name}
         lead={t.segments[segment].blurb}
+        intro={intro}
         accent={ACCENT[segment]}
         image={segmentHero(segment)}
         crumbLabel={t.a11y.breadcrumb}
