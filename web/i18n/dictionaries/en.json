@@ -61,7 +61,6 @@
     ],
     "introClose": "MORECO combines advanced technologies with agronomic expertise to bring growers solutions suited to the challenges of today’s and tomorrow’s agriculture.",
     "segmentsTitle": "Our fields of application",
-    "rdiTitle": "R&D + I",
     "rdiText": "Trials in real conditions, control plot against treated plot, on the same farm in the same season. The campaigns documented in Morocco run from Midelt to Larache: apple, strawberry, tomato, citrus, wheat, olive.",
     "rdiCta": "See the trial results",
     "stats": [
@@ -81,7 +80,7 @@
         "labelFirst": true
       },
       {
-        "value": "2001",
+        "value": "2014",
         "label": "In Agadir since",
         "labelFirst": true
       }

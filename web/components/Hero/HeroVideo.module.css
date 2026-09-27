@@ -150,6 +150,16 @@
     padding-block: var(--header-h) 0;
   }
 
+  /*
+   * The client's title is a full sentence (2026-09-27): at the desktop scale it ran to
+   * six or seven lines on a phone. About 25px at 360px wide, 32px at the breakpoint.
+   */
+  .title {
+    font-size: clamp(1.5rem, 1rem + 2.3vw, 2rem);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
   .subtitle {
     max-width: none;
   }

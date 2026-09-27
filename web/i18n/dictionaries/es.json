@@ -61,7 +61,6 @@
     ],
     "introClose": "MORECO une tecnologías avanzadas y experiencia agronómica para ofrecer a los productores soluciones adaptadas a los retos de la agricultura de hoy y de mañana.",
     "segmentsTitle": "Nuestros campos de aplicación",
-    "rdiTitle": "R&D + I",
     "rdiText": "Ensayos en condiciones reales, parcela testigo frente a parcela tratada, en la misma explotación y la misma temporada. Las campañas documentadas en Marruecos van de Midelt a Larache: manzano, fresa, tomate, cítricos, trigo, olivo.",
     "rdiCta": "Ver los resultados de los ensayos",
     "stats": [
@@ -81,7 +80,7 @@
         "labelFirst": true
       },
       {
-        "value": "2001",
+        "value": "2014",
         "label": "Presentes en Agadir desde",
         "labelFirst": true
       }
