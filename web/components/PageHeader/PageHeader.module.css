@@ -113,6 +113,27 @@
   max-width: 60ch;
 }
 
+.intro {
+  margin-top: 1.1rem;
+  max-width: 62ch;
+}
+
+.introTitle {
+  margin: 0 0 0.5rem;
+  font-size: var(--step-1);
+  line-height: 1.3;
+  color: var(--ink);
+}
+
+.introText {
+  margin: 0 0 0.6rem;
+  color: var(--ink-2);
+}
+
+.introText:last-child {
+  margin-bottom: 0;
+}
+
 /*
  * On a photograph the accent colours cannot be trusted for text — three of the four
  * segment colours fail contrast over a mid-tone picture — so type goes white and the
@@ -140,8 +161,14 @@
   text-shadow: 0 2px 20px rgb(0 0 0 / 0.4);
 }
 
-.onImage .lead {
+.onImage .lead,
+.onImage .introText {
   color: rgb(255 255 255 / 0.94);
+  text-shadow: 0 1px 14px rgb(0 0 0 / 0.45);
+}
+
+.onImage .introTitle {
+  color: #fff;
   text-shadow: 0 1px 14px rgb(0 0 0 / 0.45);
 }
 

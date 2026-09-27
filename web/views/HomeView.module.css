@@ -3,27 +3,48 @@
   text-align: center;
 }
 
-/* The client's opening statement: a sentence, so a step under a headline's size. */
+/*
+ * The client's opening statement, and the page's h1 since the film lost its title
+ * (2026-09-27): a sentence, so it stays a step under a headline's size.
+ */
 .introTitle {
-  font-size: var(--step-2);
-  line-height: 1.3;
+  font-size: var(--step-3);
+  line-height: 1.2;
 }
 
 /*
- * The four pillars the intro announces. A plain list would put a bullet where the bold
- * label already does the marking, so the marker is a short green rule instead.
+ * The five pillars the intro announces, numbered as the client numbers them: the
+ * number sits in a green disc beside the bold label, and the text runs under the label.
  */
 .introPoints {
   margin: 1.4rem 0 1.6rem;
   padding: 0;
   list-style: none;
   display: grid;
-  gap: 0.9rem;
+  gap: 1.1rem;
+  counter-reset: pillar;
 }
 
 .introPoint {
-  padding-inline-start: 1.1rem;
-  border-inline-start: 3px solid var(--green);
+  position: relative;
+  padding-inline-start: 2.75rem;
+  counter-increment: pillar;
+}
+
+.introPoint::before {
+  content: counter(pillar);
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0;
+  display: grid;
+  place-items: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  background: var(--green);
+  color: #fff;
+  font-weight: 700;
+  font-size: var(--step--1);
 }
 
 .introPointTitle {
@@ -78,7 +99,7 @@
 }
 
 .statLabel {
-  margin: 0.5rem 0 0;
+  margin: 0.6rem 0 0;
   max-width: 18ch;
   font-size: var(--step--1);
   font-weight: 700;
@@ -122,12 +143,20 @@
   color: rgb(255 255 255 / 0.82);
 }
 
-/* A date read as a sentence: its label sits above the number, so the gap moves up. */
-.statLabelFirst {
-  margin: 0.6rem 0 0;
+/*
+ * The label sits above its number in all four, so the gap under it is the tight one.
+ * Labels run to two or three lines; each keeps room for three and sits at the foot of
+ * it, so the four numbers line up across the row.
+ */
+.stats .statLabel {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: calc(3 * 1.45em);
+  line-height: 1.45;
 }
 
-.statLabelFirst + .statNumber {
+.statLabel + .statNumber {
   margin-top: 0.4rem;
 }
 
@@ -143,7 +172,7 @@
     grid-template-columns: 1fr;
   }
 
-  /* Pictogram to the side, the number over its label — a row that scans in one pass. */
+  /* Pictogram to the side, the label over its number — a row that scans in one pass. */
   .stat {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -159,12 +188,17 @@
   }
 
   .statNumber {
-    margin: 0;
     font-size: clamp(2.4rem, 11vw, 3.25rem);
   }
 
-  .statLabel {
-    margin: 0.15rem 0 0;
+  .stats .statLabel {
+    display: block;
+    min-height: 0;
+    margin: 0;
     max-width: none;
+  }
+
+  .statLabel + .statNumber {
+    margin-top: 0.15rem;
   }
 }

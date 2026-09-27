@@ -33,56 +33,56 @@
     "language": "Taal"
   },
   "home": {
-    "heroTitle": "MORECO | Agronomische innovatie in dienst van regeneratieve landbouw",
-    "introTitle": "MORECO verlegt de grenzen van innovatie voor een rendabele, goed presterende en regeneratieve landbouw.",
+    "introTitle": "MORECO | Agronomische innovatie in dienst van regeneratieve landbouw",
     "introText": [
-      "Al meer dan 14 jaar werkt Moreco nauw samen met de pioniers en ontwikkelaars van gestabiliseerd orthokiezelzuur (OSA).",
-      "Dankzij deze expertise begeleiden we landbouwprofessionals in Europa, Azië, de Verenigde Staten en sinds 2012 ook in Marokko.",
-      "We selecteren uitsluitend geavanceerde technologieën die internationaal erkend zijn om hun innovatie, doeltreffendheid en betrouwbaarheid. Ons doel is duidelijk: telers oplossingen bieden die de gewasprestaties duurzaam verbeteren en tegelijk inspelen op de nieuwe uitdagingen van de landbouw.",
-      "Onze exclusieve technologieën steunen op vier essentiële pijlers van plantprestaties:"
+      "Al meer dan 14 jaar werkt MORECO nauw samen met de pioniers en ontwikkelaars van gestabiliseerd orthokiezelzuur (OSA).",
+      "Dankzij deze expertise ondersteunen we landbouwprofessionals in Europa, Azië, de Verenigde Staten en, sinds 2012, in Marokko en de MENA-regio.",
+      "We selecteren uitsluitend geavanceerde technologieën die internationaal erkend zijn om hun innovatie, doeltreffendheid en betrouwbaarheid.",
+      "Ons doel is duidelijk: telers agronomische oplossingen bieden die de gewasprestaties, de efficiëntie van inputs en de kwaliteit van de productie duurzaam verbeteren.",
+      "Onze exclusieve technologieën steunen op vijf essentiële pijlers van plantaardige en agronomische prestaties:"
     ],
     "introPoints": [
       {
-        "title": "Geoptimaliseerde voeding",
-        "text": "Een efficiënte opname en assimilatie van voedingsstoffen bevorderen, om het potentieel van de plant volledig te ondersteunen."
+        "title": "Optimalisatie van de nutriëntenefficiëntie",
+        "text": "De opname, assimilatie en het efficiënte gebruik van voedingsstoffen bevorderen, ter ondersteuning van een evenwichtige gewasontwikkeling en het opbrengstpotentieel."
       },
       {
-        "title": "Natuurlijke weerbaarheid",
-        "text": "De natuurlijke afweer van de plant versterken tegen ziekten, plagen en klimaatstress."
+        "title": "Versterking van de weerbaarheid van planten",
+        "text": "De natuurlijke afweermechanismen en het aanpassingsvermogen van planten ondersteunen tegen ziekten, plagen en abiotische stress zoals droogte, hitte en verzilting."
       },
       {
-        "title": "Geoptimaliseerd waterbeheer",
-        "text": "De efficiëntie van het watergebruik en de hydratatie van de plant verbeteren, zodat elke watergift maximaal wordt benut."
+        "title": "Optimalisatie van het waterbeheer",
+        "text": "De efficiëntie van het watergebruik en de waterhuishouding van de plant verbeteren, om irrigatie en gewasprestaties onder droogtestress te optimaliseren."
       },
       {
-        "title": "Superieure voedingskwaliteit",
-        "text": "Bijdragen aan de kwaliteit, de smaak, de voedingswaarde en de houdbaarheid van de oogst."
+        "title": "Verbetering van de oogstkwaliteit",
+        "text": "Bijdragen aan een betere kwaliteit, uniformiteit, smaak, voedingswaarde en houdbaarheid van de oogst."
+      },
+      {
+        "title": "Vermindering van ongewenste residuen",
+        "text": "Onze technologieën helpen de opname en ophoping van ongewenste residuen in plant en bodem te beperken, met name bepaalde zware metalen zoals cadmium (Cd) en residuen van chemische inputs."
       }
     ],
-    "introClose": "MORECO combineert geavanceerde technologieën met agronomische expertise om telers oplossingen te bieden voor de uitdagingen van de landbouw van vandaag en morgen.",
+    "introClose": "MORECO combineert geavanceerde agronomische technologieën met praktijkervaring om telers te begeleiden bij de uitdagingen van de landbouw van vandaag en morgen, met bijzondere aandacht voor plantgezondheid, bodem, water, nutriëntenefficiëntie en de duurzame kwaliteit van de productie.",
     "segmentsTitle": "Onze toepassingsgebieden",
     "rdiText": "Proeven in reële omstandigheden, controleperceel tegenover behandeld perceel, op hetzelfde bedrijf in hetzelfde seizoen. De campagnes die in Marokko zijn gedocumenteerd lopen van Midelt tot Larache: appel, aardbei, tomaat, citrus, tarwe, olijf.",
     "rdiCta": "Bekijk de proefresultaten",
     "stats": [
       {
         "value": "215",
-        "label": "Proefcampagnes wereldwijd",
-        "labelFirst": false
+        "label": "Agronomische proeven wereldwijd"
       },
       {
         "value": "24.000",
-        "label": "Telers wereldwijd",
-        "labelFirst": false
+        "label": "Begeleide telers wereldwijd"
       },
       {
         "value": "2001",
-        "label": "Aanwezig in Marokko sinds",
-        "labelFirst": true
+        "label": "Aanwezig in Marokko sinds"
       },
       {
         "value": "2014",
-        "label": "Aanwezig in Agadir sinds",
-        "labelFirst": true
+        "label": "Aanwezig in Agadir sinds"
       }
     ],
     "quoteTitle": "Een concrete vraag? Vraag uw offerte aan",
@@ -93,7 +93,12 @@
     "agri": {
       "name": "Landbouw & teelten",
       "short": "Opbrengst, smaak en weerbaarheid van gewassen",
-      "blurb": "Een unieke, volledig opneembare vorm van orthokiezelzuur: verbetert de opname van fosfor, bevordert een efficiënter watergebruik en draagt bij aan een betere voedingskwaliteit, hogere Brix-waarden, hogere opbrengsten en een langere houdbaarheid van de oogst."
+      "blurb": "Een unieke, volledig opneembare vorm van orthokiezelzuur: verbetert de opname van fosfor, bevordert een efficiënter watergebruik en draagt bij aan een betere voedingskwaliteit, hogere Brix-waarden, hogere opbrengsten en een langere houdbaarheid van de oogst.",
+      "introTitle": "Exclusieve gestabiliseerde OSA-technologie",
+      "intro": [
+        "Ons exclusieve assortiment is gebaseerd op een unieke, gepatenteerde technologie met gestabiliseerd orthokiezelzuur (OSA), ontwikkeld om zeer beschikbaar silicium te leveren voor opname door de plant.",
+        "Het optimaliseert de efficiëntie van fosfor- en watergebruik en ondersteunt tegelijk de prestaties en weerbaarheid van de plant, de gewaskwaliteit, de °Brix, de opbrengst en de houdbaarheid na de oogst."
+      ]
     },
     "humans": {
       "name": "Mensen",

@@ -23,9 +23,15 @@ export default function PageHeader({
   crumbLabel,
   accent,
   image,
+  intro,
 }: {
   title: string;
   lead?: string;
+  /**
+   * A short titled text in place of the one-line lead — Agriculture's "Exclusive
+   * Stabilized OSA Technology" (briefing of 2026-09-27, step 3). Wins over `lead`.
+   */
+  intro?: { title: string; paragraphs: string[] };
   eyebrow?: string;
   crumbs?: Crumb[];
   crumbLabel: string;
@@ -61,7 +67,18 @@ export default function PageHeader({
 
         {eyebrow && <p className={s.eyebrow}>{eyebrow}</p>}
         <h1 className={s.title}>{title}</h1>
-        {lead && <p className={s.lead}>{lead}</p>}
+        {intro ? (
+          <div className={s.intro}>
+            <h2 className={s.introTitle}>{intro.title}</h2>
+            {intro.paragraphs.map((paragraph) => (
+              <p key={paragraph} className={s.introText}>
+                {paragraph}
+              </p>
+            ))}
+          </div>
+        ) : (
+          lead && <p className={s.lead}>{lead}</p>
+        )}
       </div>
     </header>
   );

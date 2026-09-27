@@ -69,7 +69,7 @@ export const SEGMENTS: SegmentKey[] = ['agri', 'humans', 'animals', 'general'];
  * `soon` closes a family with a tile reading only the word SOON. The client was explicit:
  * no name, no number, no explanation on the site. No family carries one any more: soil
  * lost its tile on 2026-09-16 (MYCO 4G), protection on 2026-09-22 (Procure and Protec),
- * and biostimulants on 2026-09-26, when FertFight had to close the grid. The flag stays
+ * and biostimulants on 2026-09-26, when FERTIFIGHT had to close the grid. The flag stays
  * for the next product announced before it has a name.
  */
 export interface ProductFamily {
@@ -132,7 +132,7 @@ export const FAMILIES: ProductFamily[] = [
    * the order the client listed them. The same list opens with a plain "Orthagrow",
    * which matches no single product in the catalogue — to be clarified with the client.
    *
-   * FertFight goes "absolutely last" (2026-09-26). That took the SOON tile with it: the
+   * FERTIFIGHT goes "absolutely last" (2026-09-26). That took the SOON tile with it: the
    * tile always closes the grid, and the ten Orthagrow 4G products it stood for are all
    * on the page since the briefing of 2026-09-22.
    */
@@ -213,7 +213,7 @@ export const RANGES: ProductRange[] = [
 
 /**
  * OrthaFight and FertiFight were withdrawn on 2026-09-09: the client replaced both with
- * the renamed FertFight (slug `orthagrow-fertifight`, "Orthagrow FertiFight" until that
+ * the renamed FERTIFIGHT (slug `orthagrow-fertifight`, "Orthagrow FertiFight" until that
  * date). The two shared a single datasheet PDF with each other, which is what made the
  * three names impossible to tell apart. Orthagrow Poudre followed them out on
  * 2026-09-17, struck from the catalogue by the client. Their entries in
@@ -225,7 +225,7 @@ export const PRODUCTS: Product[] = [
   { slug: 'orthagrow-bloom-booster', name: 'Orthagrow Bloom Booster', segment: 'agri', range: 'orthagrow' },
   { slug: 'orthagrow-soil-conditioner', name: 'Orthagrow Soil Conditioner 4TH', segment: 'agri', range: 'orthagrow' },
   { slug: 'orthagrow-micro-manager', name: 'Orthagrow Micro Manager', segment: 'agri', range: 'orthagrow' },
-  { slug: 'orthagrow-fertifight', name: 'FertFight', segment: 'agri', range: 'orthagrow' },
+  { slug: 'orthagrow-fertifight', name: 'FERTIFIGHT', segment: 'agri', range: 'orthagrow' },
   {
     slug: 'orthagrow-granule',
     name: 'Orthagrow Granulé',
@@ -271,7 +271,8 @@ export const PRODUCTS: Product[] = [
 
   /*
    * In the order the client set on 2026-09-26: Beauty in the gold-capped dropper, Sport,
-   * Stress-Plex, Luxe, Beauty in the pink pot, Slim+. The 2026-09-22 briefing struck the
+   * Stress-Plex, Luxe, Beauty in the pink pot, Slim+ — with Premium Whey Protein third
+   * since 2026-09-27. The 2026-09-22 briefing struck the
    * first of two "Mavita Sport" entries — the old Mavita Health SKU, renamed on
    * 2026-09-17 — photo and all; its old URLs now land on the Mavita Sport below
    * (finalize-export.mjs).
@@ -285,6 +286,13 @@ export const PRODUCTS: Product[] = [
    */
   { slug: 'mavita-beauty-gouttes', name: 'Mavita Beauty', segment: 'humans', range: 'mavita' },
   { slug: 'mavita-sport', name: 'Mavita Sport', segment: 'humans', range: 'mavita' },
+  /*
+   * Added by the briefing of 2026-09-27 (step 6), and put third by the client the same
+   * day. Red-fruit flavour, 1 kg tub, as the label reads. The shot came in portrait,
+   * 1145 × 1374; its dark ground was carried out to 4:3 like the droppers'. Its full
+   * text is to come.
+   */
+  { slug: 'mavita-whey-protein', name: 'Mavita Premium Whey Protein', segment: 'humans', range: 'mavita' },
   { slug: 'mavita-stress-plex', name: 'Mavita Stress-Plex', segment: 'humans', range: 'mavita' },
   { slug: 'mavita-luxe', name: 'Mavita Luxe', segment: 'humans', range: 'mavita' },
   { slug: 'mavita-beauty', name: 'Mavita Beauty', segment: 'humans', range: 'mavita' },

@@ -162,6 +162,9 @@
     "datasheet": "/media/datasheets/mavita-slim.pdf",
     "datasheetKind": "flyer"
   },
+  "mavita-whey-protein": {
+    "image": "/media/products/mavita-whey-protein.webp"
+  },
   "mavita-sport": {
     "image": "/media/products/mavita-sport.webp",
     "datasheet": "/media/datasheets/mavita-sport.pdf",

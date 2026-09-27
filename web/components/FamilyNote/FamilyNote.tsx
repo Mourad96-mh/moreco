@@ -12,6 +12,10 @@ import s from './FamilyNote.module.css';
  * it needs no script and the text is in the page for search engines either way.
  */
 export default function FamilyNote({ note }: { note: FamilyNoteContent }) {
+  /*
+   * The family's name on its own line, then the title (briefing of 2026-09-27, step 4:
+   * "Spécialités" once, and the title opening straight on "Technologie…").
+   */
   return (
     <details className={s.note}>
       <summary className={s.summary}>

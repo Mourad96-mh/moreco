@@ -46,6 +46,16 @@ const TARGETS: Record<string, SegmentKey | 'rdi'> = {
 const targetFor = (src: string): SegmentKey | 'rdi' | null =>
   TARGETS[src.split('/').pop() ?? ''] ?? null;
 
+/**
+ * The order the client set on 2026-09-27 (step 7): agriculture, humans, animals,
+ * disinfection, research. The archive opened on humans. A section with no known
+ * destination would go last.
+ */
+const ORDER: (SegmentKey | 'rdi')[] = ['agri', 'humans', 'animals', 'general', 'rdi'];
+
+const rank = (target: SegmentKey | 'rdi' | null) =>
+  target ? ORDER.indexOf(target) : ORDER.length;
+
 export function servicesContent(locale: Locale): ServicesContent {
   const blocks = PAGES.services?.[locale] ?? PAGES.services?.fr ?? [];
 
@@ -79,6 +89,8 @@ export function servicesContent(locale: Locale): ServicesContent {
       target,
     });
   });
+
+  sections.sort((a, b) => rank(a.target) - rank(b.target));
 
   return { introTitle, introText, sections };
 }
