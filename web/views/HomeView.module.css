@@ -31,18 +31,6 @@
   color: var(--green-dark, var(--green));
 }
 
-.rdi {
-  padding: clamp(1.75rem, 4vw, 3rem);
-  border: 1px solid var(--line);
-  border-left: 4px solid var(--green);
-  border-radius: var(--radius-lg);
-  background: var(--paper);
-}
-
-.rdiText > :last-child {
-  margin-bottom: 0;
-}
-
 /*
  * The four reach figures. Big enough to be read at a glance from the top of the
  * section — the client asked for counters, not a caption — so the number carries the
@@ -52,7 +40,6 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: clamp(0.75rem, 2vw, 1.5rem);
-  margin-top: clamp(0.75rem, 2vw, 1.5rem);
 }
 
 .stat {

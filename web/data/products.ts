@@ -189,12 +189,13 @@ export const FAMILIES: ProductFamily[] = [
   /*
    * The blue drums, which sat at the foot of the page under "other products in the
    * range" until the client gave them a button of their own after cattle (2026-09-26).
-   * Huwa-San first; the order of the rest is free.
+   * Huwa-San led at first; on 2026-09-27 the client put Clearox first, then the two
+   * Huwa-San products.
    */
   {
     key: 'disinfectant',
     segment: 'animals',
-    products: ['huwa-san-vet', 'huwa-san-water-treatment', 'clearox'],
+    products: ['clearox', 'huwa-san-vet', 'huwa-san-water-treatment'],
   },
 ];
 
@@ -277,6 +278,10 @@ export const PRODUCTS: Product[] = [
    *
    * The two Beauty SKUs share the name the client gives them both; the pack shot and the
    * format (30 ml drops, or the pot) tell them apart. The pot keeps the archive URL.
+   *
+   * The two dropper shots (Beauty and Sport) came in portrait, 900 × 1350, and sat as a
+   * narrow grey strip in the 4:3 card. On 2026-09-27 their grey ground was carried out
+   * to 1800 × 1350 by repeating the edge pixels, so they fill the card like the pots.
    */
   { slug: 'mavita-beauty-gouttes', name: 'Mavita Beauty', segment: 'humans', range: 'mavita' },
   { slug: 'mavita-sport', name: 'Mavita Sport', segment: 'humans', range: 'mavita' },
@@ -290,6 +295,9 @@ export const PRODUCTS: Product[] = [
    * animal catalogue by species and asked that every product read as OrthaHealth plus
    * its own sub-name. Its old URL now points at the segment page (finalize-export.mjs),
    * and its archive copy was split across the four entries below.
+   *
+   * The Chevaux and Chiens & Chats shots came in portrait; on 2026-09-27 their grey
+   * ground was widened to 4:3 by repeating the edge pixels, as for the Mavita droppers.
    */
   {
     slug: 'orthahealth-volailles',

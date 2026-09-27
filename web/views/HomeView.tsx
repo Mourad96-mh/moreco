@@ -121,8 +121,9 @@ export default function HomeView({ locale }: { locale: Locale }) {
       </section>
 
       {/*
-       * R&D+I, and under it the figures the client wants read from across the room
-       * (briefings of 2026-09-13 and 2026-09-18). They are reach figures for the group,
+       * The figures the client wants read from across the room (briefings of 2026-09-13
+       * and 2026-09-18). The R&D+I trial-results block that stood above them was taken
+       * off the home page on 2026-09-27. They are reach figures for the group,
        * not the Moroccan trial count the R&D page documents — which is why they live in
        * the dictionary rather than being counted off TRIALS.
        *
@@ -131,19 +132,6 @@ export default function HomeView({ locale }: { locale: Locale }) {
        */}
       <section className="section">
         <div className="page">
-          <div className={s.rdi}>
-            <Reveal className={s.rdiText}>
-              <p className="eyebrow">{t.home.rdiTitle}</p>
-              <h2>{t.rdi.trialsTitle}</h2>
-              <p className="lead">{t.home.rdiText}</p>
-              {/* The block is headed "trial results" and the button says so: it goes to
-                  the trial list, which left R&D + I for Resources on 2026-09-17. */}
-              <Link className="btn" href={href(locale, 'trials')}>
-                {t.home.rdiCta}
-              </Link>
-            </Reveal>
-          </div>
-
           <div className={s.stats}>
             {t.home.stats.map((stat, i) => (
               <Reveal key={stat.label} className={s.stat} delay={i * 110}>

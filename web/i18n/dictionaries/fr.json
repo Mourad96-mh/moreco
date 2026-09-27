@@ -61,7 +61,6 @@
     ],
     "introClose": "MORECO associe technologies avancées et expertise agronomique afin d’apporter aux producteurs des solutions adaptées aux défis de l’agriculture d’aujourd’hui et de demain.",
     "segmentsTitle": "Nos domaines d'application",
-    "rdiTitle": "R&D + I",
     "rdiText": "Des essais en conditions réelles, parcelle témoin contre parcelle traitée, sur la même exploitation et la même saison. Les campagnes documentées au Maroc vont de Midelt à Larache : pommiers, fraises, tomates, agrumes, blé, olives.",
     "rdiCta": "Voir les résultats d'essais",
     "stats": [
@@ -81,7 +80,7 @@
         "labelFirst": true
       },
       {
-        "value": "2001",
+        "value": "2014",
         "label": "Présent à Agadir depuis",
         "labelFirst": true
       }
