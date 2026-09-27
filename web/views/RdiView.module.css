@@ -169,3 +169,9 @@
 .bespoke p:last-of-type {
   margin-bottom: 1.5rem;
 }
+
+.bespokeAsk {
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}

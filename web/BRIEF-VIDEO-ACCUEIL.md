@@ -8,6 +8,9 @@ technologie au service de l'agriculture régénérative ». Il est posé en suri
 le site (`t.home.heroTitle`), pas incrusté dans la vidéo : il reste net, traduit, et
 modifiable sans nouveau montage. Toujours ni sous-titre ni bouton.
 
+**Corrigé le 2026-09-27** : le client s'était trompé de titre. Le bon est « MORECO |
+L'innovation agronomique au service de l'agriculture régénérative ».
+
 **Livré le 2026-09-12.** Le film du client est en place (`public/media/hero/hero.mp4`,
 10 s, 1024 × 576, H.264). Sa piste audio a été retirée au montage : la bannière démarre
 toute seule, et un film qui démarre tout seul avec du son est bloqué par les navigateurs.

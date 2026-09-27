@@ -1,14 +1,17 @@
 /*
- * The green box at the foot of a family, after casem.ma's category pages: a solid brand
- * green panel, white type, the family's name as an eyebrow over the title.
+ * The green box at the foot of a family, after casem.ma's category pages: a brand green
+ * frame on white with green type (client, 2026-09-27 — it was a solid green panel with
+ * white type), the family's name as an eyebrow over the title. The type uses the darker
+ * greens: the brand green itself is too light to read as body text on white.
  */
 
 .note {
   margin-top: clamp(2rem, 4vw, 3rem);
   padding: clamp(1.5rem, 4vw, 2.75rem) clamp(1.25rem, 4vw, 3rem);
-  background: var(--green-dark);
+  border: 2px solid var(--green);
   border-radius: var(--radius-lg);
-  color: rgb(255 255 255 / 0.92);
+  background: var(--paper);
+  color: var(--green-dark);
 }
 
 .note > * {
@@ -24,21 +27,21 @@
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #c8f0d2;
+  color: var(--green-dark);
 }
 
 .title {
   margin: 0 0 1.1rem;
   font-size: var(--step-2);
   line-height: 1.25;
-  color: #fff;
+  color: var(--green-darker);
 }
 
 .heading {
   margin: 1.6rem 0 0.6rem;
   font-size: var(--step-1);
   line-height: 1.3;
-  color: #fff;
+  color: var(--green-darker);
 }
 
 .list {
@@ -53,7 +56,7 @@
   padding-inline-start: 1.6rem;
 }
 
-/* A check mark in the light green of the eyebrow, in place of the bullet. */
+/* A check mark in the brand green of the frame, in place of the bullet. */
 .list > li::before {
   content: '';
   position: absolute;
@@ -61,21 +64,21 @@
   top: 0.38em;
   width: 0.8rem;
   height: 0.45rem;
-  border-inline-start: 2px solid #c8f0d2;
-  border-bottom: 2px solid #c8f0d2;
+  border-inline-start: 2px solid var(--green);
+  border-bottom: 2px solid var(--green);
   transform: rotate(-45deg);
 }
 
 .list strong {
-  color: #fff;
+  color: var(--green-darker);
 }
 
 .note .closing {
   margin-top: 1.4rem;
   padding-top: 1.1rem;
-  border-top: 1px solid rgb(255 255 255 / 0.25);
+  border-top: 1px solid rgb(64 171 92 / 0.35);
   font-weight: 600;
-  color: #fff;
+  color: var(--green-darker);
 }
 
 .note > :last-child {

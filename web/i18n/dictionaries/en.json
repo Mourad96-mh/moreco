@@ -14,8 +14,9 @@
     "contact": "Contact",
     "quote": "View quote request",
     "quoteShort": "Quote",
-    "catalogues": "Product sheets & catalogues",
+    "catalogues": "Product sheets",
     "applications": "Product applications",
+    "cropSheets": "Crop sheets",
     "knowledge": "Knowledge centre",
     "trials": "Trial results",
     "innovation": "Innovation",
@@ -32,7 +33,7 @@
     "language": "Language"
   },
   "home": {
-    "heroTitle": "MORECO | Technology in the service of regenerative agriculture",
+    "heroTitle": "MORECO | Agronomic innovation in the service of regenerative agriculture",
     "introTitle": "MORECO pushes the boundaries of innovation for profitable, high-performing and regenerative agriculture.",
     "introText": [
       "For more than 14 years, Moreco has worked closely with the pioneers and developers of stabilised orthosilicic acid (OSA).",
@@ -91,24 +92,24 @@
   },
   "segments": {
     "agri": {
-      "name": "Agri / Horticulture",
+      "name": "Agriculture & crops",
       "short": "Yield, taste and crop resilience",
-      "blurb": "A unique, fully absorbable form of orthosilicic acid: higher yield, better taste and more resilient crops. Also available for biological disease control."
+      "blurb": "A unique, fully assimilable form of orthosilicic acid: improves phosphorus uptake, supports more efficient water use and contributes to better nutritional quality, higher Brix values, higher yields and a longer shelf life."
     },
     "humans": {
       "name": "Humans",
       "short": "Bioavailable silicon, beauty and vitality",
-      "blurb": "To be younger, healthier and more vital through biologically active silicon. Also combined with maca, L-arginine, hyaluronic acid and collagen."
+      "blurb": "A unique formula based on biologically active silicon that contributes, from within, to a younger, healthier and more vital body."
     },
     "animals": {
       "name": "Animals",
       "short": "Animal health and livestock hygiene",
-      "blurb": "Improves animal health and quality of life through an absorbable form of biologically active silicon. Also applicable to eco-disinfection."
+      "blurb": "Contributes to the health, vitality and quality of life of animals through a unique, assimilable form of biologically active silicon."
     },
     "general": {
-      "name": "Disinfectant",
+      "name": "Disinfection",
       "short": "Ecological hydrogen-peroxide disinfection",
-      "blurb": "Ecological disinfection with hydrogen peroxide: for people, animals, agriculture and its industries."
+      "blurb": "Eco-friendly disinfection based on hydrogen peroxide for agriculture, livestock farming, household use and a range of industries."
     }
   },
   "families": {
@@ -151,18 +152,22 @@
   },
   "rdi": {
     "title": "Moreco Research & Development",
-    "intro": "Silicon is not a promise, it is a measurement. Since 2016 Moreco has run field trials with Moroccan growers — a control plot against a treated plot, on the same farm, the same season, the same variety.",
+    "intro": "Since 2009, Moreco has been developing and testing its silicon solutions under real-world conditions, with Moroccan growers and official institutes.",
     "innovationTitle": "Innovation",
-    "innovationLead": "Always a step ahead, thanks to Moreco’s R&D",
+    "innovationLead": "Innovation in the service of agricultural performance",
     "innovationText": [
-      "Standing still is not an option. That is why Moreco invests continuously in biotechnological research and advanced development. Our in-house R&D department is the engine behind our high-performance agricultural inputs, developed with the most advanced technologies in the sector.",
-      "Our team of experts is devoted to designing, testing and perfecting innovative formulations. We pursue one clear goal: to give you optimal quality, efficacy and sustainability, and with them the highest possible return for the agricultural sector."
+      "Innovation is at the heart of Moreco’s approach. Since 2009, our company has invested in the research and development of biotechnological solutions for agriculture.",
+      "Our R&D department develops and optimises innovative formulations based on advanced technologies, with particular attention to their agronomic efficacy, their uptake by plants and their impact on crop quality.",
+      "Our team works closely with growers and research institutes to design, test and improve our solutions under real-world conditions. Every formulation goes through a rigorous process designed to guarantee its quality, its performance and consistent results in use."
     ],
-    "customTitle": "Need a bespoke formula or product?",
+    "customTitle": "Need a custom formulation or product?",
     "customText": [
-      "Does your business need a specific product developed, or a formula made to measure? Whether you are looking for a solution to apply directly to your own crops, or want to formulate an innovative product for sale and distribution, our R&D team is at your disposal. We work alongside you to push the limits of innovation and design tailored solutions that meet your agronomic objectives exactly.",
-      "We are entirely at your disposal for any question. Do get in touch to explore the opportunities for working together."
+      "Are you looking to develop a specific product, or a formulation suited to your agronomic needs?",
+      "Whether it is a solution for your own crops or an innovative product to be marketed and distributed, our R&D team supports you through the design and development of tailor-made solutions.",
+      "We study your needs and work with you on formulations suited to your technical and agronomic objectives."
     ],
+    "customAskTitle": "Would you like to develop a solution with Moreco?",
+    "customAskText": "Our team is available to study your project and explore the possibilities for collaboration.",
     "customCta": "Contact us",
     "trialsTitle": "Trial results",
     "trialsIntro": "From the apple orchards of Midelt to turf grass, every crop documented in field photography.",
@@ -184,18 +189,19 @@
     "domains": "Areas",
     "discover": "Find out more",
     "contactLead": "Our teams answer technical and commercial enquiries.",
-    "introTitle": "MORECO – Scientific innovation in the service of regenerative agriculture",
+    "introTitle": "Scientific innovation in the service of regenerative agriculture",
     "introText": [
-      "Moreco develops and selects advanced agronomic technologies that support regenerative agriculture and improve crop performance.",
-      "Our expertise covers plant physiology, stabilised orthosilicic acid (OSA), precision nutrition, soil health, biostimulation, water-use efficiency and the natural resilience of crops.",
-      "We select technologies of high scientific and technological value, to offer professionals solutions that optimise the interactions between soil, roots and plant."
+      "Moreco develops, selects and optimises advanced agronomic technologies that contribute to regenerative agriculture and to more efficient, sustainable agricultural production.",
+      "Our expertise covers in particular plant physiology, stabilised orthosilicic acid (OSA), precision nutrition, soil health, biostimulation, efficient water use and strengthening the physiological resilience of crops.",
+      "We select and develop technologies for their scientific relevance, their technological value and their applicability in the field. In this way we offer agricultural professionals solutions designed to optimise the interactions between the soil, the root zone and the plant.",
+      "Our approach rests on an integrated vision: a living, healthy soil supports a high-performing root system, a functional plant and, ultimately, quality production that is more efficient and sustainable."
     ],
     "visionTitle": "Our vision",
     "vision": [
-      "A living soil.",
-      "A resilient plant.",
-      "A high-quality harvest.",
-      "Agriculture that looks to the future."
+      "Living, fertile and functional soils.",
+      "Healthy, robust and resilient crops.",
+      "Quality production, high-performing and sustainable.",
+      "Agriculture founded on innovation, science and sustainability."
     ]
   },
   "press": {
@@ -255,7 +261,7 @@
     },
     "resources": {
       "title": "Resources",
-      "lead": "Product sheets, catalogues and the knowledge centre."
+      "lead": "Product sheets, crop sheets and trial results."
     },
     "trials": {
       "title": "Trial results",
@@ -275,7 +281,7 @@
     },
     "about": {
       "title": "About Moreco",
-      "lead": "A miracle of science, distributed in Morocco."
+      "lead": "MORECO: One World One Health"
     },
     "services": {
       "title": "Services & advice",
@@ -305,7 +311,8 @@
     "mainNav": "Main navigation"
   },
   "resources": {
-    "applicationsIntro": "The crop-by-crop flyers, to take out into the field."
+    "applicationsIntro": "The crop-by-crop flyers, to take out into the field.",
+    "cropSheetsSoon": "The crop sheets are being prepared and will be published here shortly."
   },
   "careers": {
     "formTitle": "Speculative application",

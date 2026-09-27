@@ -44,14 +44,14 @@ export function mainNav(locale: Locale, t: Dictionary): NavItem[] {
      * Resources, as the client reshaped it on 2026-09-17: the knowledge centre lost its
      * menu entry and the trial results took the slot. The centre itself is still online
      * and still linked from every article page — it simply no longer opens a menu of
-     * its own.
+     * its own. Renamed on 2026-09-27: product sheets, crop sheets, trial results.
      */
     {
       label: t.nav.resources,
       href: at('resources'),
       children: [
         { label: t.nav.catalogues, href: at('resources', '#catalogues') },
-        { label: t.nav.applications, href: at('resources', '#applications') },
+        { label: t.nav.cropSheets, href: at('resources', '#applications') },
         { label: t.nav.trials, href: at('trials') },
       ],
     },

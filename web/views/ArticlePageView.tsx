@@ -55,6 +55,7 @@ export default function ArticlePageView({ locale, view }: { locale: Locale; view
           )}
 
           {view === 'resources' && <ApplicationsBlock locale={locale} />}
+          {view === 'resources' && <TrialsBlock locale={locale} />}
           {view === 'careers' && <CareersBlock locale={locale} />}
         </div>
       </div>
@@ -89,20 +90,29 @@ function ResourcesBlock({ locale }: { locale: Locale }) {
 }
 
 /**
- * Resources > Product applications, where the header menu's #applications has pointed
- * since that menu was built: the flyers written crop by crop.
+ * Resources > Crop sheets, where the header menu's #applications has pointed since that
+ * menu was built: the flyers written crop by crop.
  *
- * The section renders nothing while the list is empty, which is what it is until the
- * client's e-mailed flyers reach the repository — better a menu entry that lands on the
- * page than a heading standing over an empty shelf. See data/flyers.json.
+ * The client made this one of the page's three sections on 2026-09-27 (product sheets,
+ * crop sheets, trial results) and said the sheets would be written with us once the
+ * site is finished. Until then the heading stands with a line saying so, rather than
+ * the menu entry landing on nothing. See data/flyers.json.
  */
 function ApplicationsBlock({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
-  if (FLYERS.length === 0) return null;
+
+  if (FLYERS.length === 0) {
+    return (
+      <section id="applications" className={s.section}>
+        <h2>{t.nav.cropSheets}</h2>
+        <p className="lead">{t.resources.cropSheetsSoon}</p>
+      </section>
+    );
+  }
 
   return (
     <section id="applications" className={s.section}>
-      <h2>{t.nav.applications}</h2>
+      <h2>{t.nav.cropSheets}</h2>
       <p className="lead">{t.resources.applicationsIntro}</p>
       <ul className={s.sheets}>
         {FLYERS.map((flyer) => (
@@ -116,6 +126,21 @@ function ApplicationsBlock({ locale }: { locale: Locale }) {
           </li>
         ))}
       </ul>
+    </section>
+  );
+}
+
+/** Resources > Trial results: the third section, pointing at the trials' own pages. */
+function TrialsBlock({ locale }: { locale: Locale }) {
+  const t = getDictionary(locale);
+
+  return (
+    <section id="trials" className={s.section}>
+      <h2>{t.nav.trials}</h2>
+      <p className="lead">{t.pages.trials.lead}</p>
+      <Link className="btn" href={href(locale, 'trials')}>
+        {t.home.rdiCta}
+      </Link>
     </section>
   );
 }

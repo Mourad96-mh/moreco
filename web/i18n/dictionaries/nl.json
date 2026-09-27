@@ -14,8 +14,9 @@
     "contact": "Contact",
     "quote": "Offerteaanvraag bekijken",
     "quoteShort": "Offerte",
-    "catalogues": "Productfiches & catalogi",
+    "catalogues": "Productfiches",
     "applications": "Producttoepassingen",
+    "cropSheets": "Teeltfiches",
     "knowledge": "Kenniscentrum",
     "trials": "Proefresultaten",
     "innovation": "Innovatie",
@@ -32,7 +33,7 @@
     "language": "Taal"
   },
   "home": {
-    "heroTitle": "MORECO | Technologie in dienst van regeneratieve landbouw",
+    "heroTitle": "MORECO | Agronomische innovatie in dienst van regeneratieve landbouw",
     "introTitle": "MORECO verlegt de grenzen van innovatie voor een rendabele, goed presterende en regeneratieve landbouw.",
     "introText": [
       "Al meer dan 14 jaar werkt Moreco nauw samen met de pioniers en ontwikkelaars van gestabiliseerd orthokiezelzuur (OSA).",
@@ -91,24 +92,24 @@
   },
   "segments": {
     "agri": {
-      "name": "Land- & tuinbouw",
+      "name": "Landbouw & teelten",
       "short": "Opbrengst, smaak en weerbaarheid van gewassen",
-      "blurb": "Een unieke, volledig opneembare vorm van orthokiezelzuur: meer opbrengst, betere smaak en weerbaardere gewassen. Ook beschikbaar voor biologische ziektebestrijding."
+      "blurb": "Een unieke, volledig opneembare vorm van orthokiezelzuur: verbetert de opname van fosfor, bevordert een efficiënter watergebruik en draagt bij aan een betere voedingskwaliteit, hogere Brix-waarden, hogere opbrengsten en een langere houdbaarheid van de oogst."
     },
     "humans": {
       "name": "Mensen",
       "short": "Biobeschikbaar silicium, schoonheid en vitaliteit",
-      "blurb": "Jonger, gezonder en vitaler dankzij biologisch actief silicium. Ook in combinatie met maca, L-arginine, hyaluronzuur en collageen."
+      "blurb": "Een unieke formule op basis van biologisch actief silicium die van binnenuit bijdraagt aan een jonger, gezonder en vitaler lichaam."
     },
     "animals": {
       "name": "Dieren",
       "short": "Diergezondheid en stalhygiëne",
-      "blurb": "Verbetert de gezondheid en levenskwaliteit van dieren dankzij een opneembare vorm van biologisch actief silicium. Ook toepasbaar voor eco-desinfectie."
+      "blurb": "Draagt bij aan de gezondheid, vitaliteit en levenskwaliteit van dieren dankzij een unieke, opneembare vorm van biologisch actief silicium."
     },
     "general": {
       "name": "Desinfectie",
       "short": "Ecologische desinfectie met waterstofperoxide",
-      "blurb": "Ecologische desinfectie met waterstofperoxide: voor mensen, dieren, de landbouw en haar industrieën."
+      "blurb": "Ecologische desinfectie op basis van waterstofperoxide voor de landbouw, de veehouderij, huishoudelijke toepassingen en diverse industrieën."
     }
   },
   "families": {
@@ -151,18 +152,22 @@
   },
   "rdi": {
     "title": "Onderzoek & Ontwikkeling Moreco",
-    "intro": "Silicium is geen belofte: het is een meting. Sinds 2016 voert Moreco proeven uit in reële omstandigheden bij Marokkaanse telers — controleperceel tegenover behandeld perceel, op hetzelfde bedrijf, in hetzelfde seizoen, met dezelfde variëteit.",
+    "intro": "Sinds 2009 ontwikkelt en test Moreco zijn siliciumoplossingen onder praktijkomstandigheden, samen met Marokkaanse telers en officiële instituten.",
     "innovationTitle": "Innovatie",
-    "innovationLead": "Altijd een stap voor, dankzij de R&D van Moreco",
+    "innovationLead": "Innovatie in dienst van landbouwprestaties",
     "innovationText": [
-      "Stilstand is geen optie. Daarom investeert Moreco onafgebroken in biotechnologisch onderzoek en geavanceerde ontwikkeling. Onze eigen R&D-afdeling is de motor achter onze hoogwaardige landbouwinputs, ontwikkeld met de meest geavanceerde technologieën uit de sector.",
-      "Ons team van experts wijdt zich volledig aan het ontwerpen, beproeven en verfijnen van innovatieve formules. Wij streven één duidelijk doel na: u optimale kwaliteit, werkzaamheid en duurzaamheid bieden, en daarmee een maximaal rendement voor de landbouwsector."
+      "Innovatie staat centraal in de aanpak van Moreco. Sinds 2009 investeert ons bedrijf in onderzoek naar en ontwikkeling van biotechnologische oplossingen voor de landbouw.",
+      "Onze R&D-afdeling ontwikkelt en optimaliseert innovatieve formuleringen op basis van geavanceerde technologieën, met bijzondere aandacht voor hun agronomische werkzaamheid, hun opname door de plant en hun invloed op de kwaliteit van de oogst.",
+      "Ons team werkt nauw samen met telers en onderzoeksinstituten om onze oplossingen onder praktijkomstandigheden te ontwerpen, te testen en te verbeteren. Elke formulering doorloopt een strikt traject dat haar kwaliteit, prestaties en constante resultaten in het gebruik moet waarborgen."
     ],
-    "customTitle": "Een formule of product op maat nodig?",
+    "customTitle": "Een formulering of product op maat nodig?",
     "customText": [
-      "Heeft uw bedrijf een specifiek product of een formule op maat nodig? Of u nu een oplossing zoekt die u meteen op uw eigen teelten kunt toepassen, of een innovatief product wilt laten formuleren voor verkoop en distributie: ons R&D-team staat voor u klaar. Wij werken met u samen om de grenzen van de innovatie te verleggen en oplossingen op maat te ontwerpen die precies aansluiten op uw agronomische doelstellingen.",
-      "Wij staan volledig tot uw beschikking voor al uw vragen. Neem gerust contact met ons op om de mogelijkheden voor samenwerking te verkennen."
+      "Wilt u een specifiek product laten ontwikkelen, of een formulering die is afgestemd op uw agronomische behoeften?",
+      "Of het nu gaat om een oplossing voor uw eigen teelten of om de ontwikkeling van een innovatief product voor verkoop en distributie: ons R&D-team begeleidt u bij het ontwerpen en op punt stellen van oplossingen op maat.",
+      "We bestuderen uw behoeften en werken samen met u aan formuleringen die aansluiten bij uw technische en agronomische doelstellingen."
     ],
+    "customAskTitle": "Wilt u samen met Moreco een oplossing ontwikkelen?",
+    "customAskText": "Ons team staat klaar om uw project te bestuderen en de mogelijkheden voor samenwerking te verkennen.",
     "customCta": "Neem contact op",
     "trialsTitle": "Proefresultaten",
     "trialsIntro": "Van de appelboom van Midelt tot gazon, elk gewas gedocumenteerd met veldfoto’s.",
@@ -184,18 +189,19 @@
     "domains": "Domeinen",
     "discover": "Meer weten",
     "contactLead": "Onze teams beantwoorden technische en commerciële vragen.",
-    "introTitle": "MORECO – Wetenschappelijke innovatie in dienst van regeneratieve landbouw",
+    "introTitle": "Wetenschappelijke innovatie in dienst van regeneratieve landbouw",
     "introText": [
-      "Moreco ontwikkelt en selecteert geavanceerde agronomische technologieën die regeneratieve landbouw ondersteunen en de gewasprestaties verbeteren.",
-      "Onze expertise omvat onder meer plantenfysiologie, gestabiliseerd orthokiezelzuur (OSA), precisievoeding, bodemgezondheid, biostimulatie, efficiënt watergebruik en de natuurlijke weerbaarheid van gewassen.",
-      "We selecteren technologieën met een hoge wetenschappelijke en technologische waarde, om professionals oplossingen te bieden die de wisselwerking tussen bodem, wortels en plant optimaliseren."
+      "Moreco ontwikkelt, selecteert en optimaliseert geavanceerde agronomische technologieën die bijdragen aan regeneratieve landbouw en aan een efficiëntere, duurzame landbouwproductie.",
+      "Onze expertise omvat onder meer plantenfysiologie, gestabiliseerd orthokiezelzuur (OSA), precisievoeding, bodemgezondheid, biostimulatie, efficiënt watergebruik en het versterken van de fysiologische weerbaarheid van gewassen.",
+      "We selecteren en ontwikkelen technologieën op basis van hun wetenschappelijke relevantie, hun technologische waarde en hun toepasbaarheid in het veld. Zo bieden we professionals in de landbouw oplossingen om de wisselwerking tussen bodem, wortelzone en plant te optimaliseren.",
+      "Onze aanpak berust op een geïntegreerde visie: een levende, gezonde bodem bevordert een krachtig wortelstelsel, een goed functionerende plant en uiteindelijk een kwaliteitsvolle, efficiëntere en duurzame productie."
     ],
     "visionTitle": "Onze visie",
     "vision": [
-      "Een levende bodem.",
-      "Een weerbare plant.",
-      "Een oogst van hoge kwaliteit.",
-      "Een landbouw die naar de toekomst kijkt."
+      "Levende, vruchtbare en functionele bodems.",
+      "Gezonde, robuuste en weerbare gewassen.",
+      "Kwaliteitsvolle, renderende en duurzame productie.",
+      "Een landbouw gebouwd op innovatie, wetenschap en duurzaamheid."
     ]
   },
   "press": {
@@ -255,7 +261,7 @@
     },
     "resources": {
       "title": "Documentatie",
-      "lead": "Productfiches, catalogi en kenniscentrum."
+      "lead": "Productfiches, teeltfiches en proefresultaten."
     },
     "trials": {
       "title": "Proefresultaten",
@@ -275,7 +281,7 @@
     },
     "about": {
       "title": "Over Moreco",
-      "lead": "Een wonder van de wetenschap, verdeeld in Marokko."
+      "lead": "MORECO: One World One Health"
     },
     "services": {
       "title": "Diensten & advies",
@@ -305,7 +311,8 @@
     "mainNav": "Hoofdnavigatie"
   },
   "resources": {
-    "applicationsIntro": "De flyers per teelt, om mee het veld in te nemen."
+    "applicationsIntro": "De flyers per teelt, om mee het veld in te nemen.",
+    "cropSheetsSoon": "De teeltfiches worden voorbereid en verschijnen hier binnenkort."
   },
   "careers": {
     "formTitle": "Open sollicitatie",
