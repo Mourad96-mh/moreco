@@ -211,10 +211,12 @@
   "press": {
     "archive": "Voorbije evenementen — archief 2014.",
     "dossier": "Standdossier",
-    "productBrochure": "Productbrochure",
-    "salesTerms": "Algemene verkoopvoorwaarden",
-    "downloads": "Downloads",
-    "sessions": "Details van het evenement"
+    "sessions": "Details van het evenement",
+    "radioTitle": "Interview MORECO – Radio FM",
+    "radioPart": "Médina FM — interview {n}",
+    "pressTitle": "In de pers",
+    "readArticle": "Lees het artikel",
+    "eventsTitle": "SIAM Meknes, Saudi Agriculture: onze dossiers en materialen"
   },
   "contact": {
     "mobile": "Gsm",
@@ -281,7 +283,7 @@
     },
     "media": {
       "title": "Persmappen & evenementen",
-      "lead": "SIAM Meknes, Saudi Agriculture: onze dossiers en materialen."
+      "lead": "Radio-interviews, persartikels en beurzen: Moreco in de media."
     },
     "about": {
       "title": "Over Moreco",

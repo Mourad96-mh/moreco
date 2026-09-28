@@ -22,8 +22,8 @@ const OUT = join(HERE, '..', 'public', 'media', 'press');
 const FILES = {
   'siam-stand': 'wp-content/uploads/2014/03/exhibition_stand_siam_moreco.pdf',
   'saudi-stand': 'wp-content/uploads/2014/03/exhibition_stand_saudi_agriculture_moreco.pdf',
-  'product-brochure': 'public/productbrochure/Productsheet_Moreco_FR_web.pdf',
-  'sales-terms': 'wp-content/uploads/2014/04/Salesterms-of-Moreco-Sarl_08-04-2014.pdf',
+  /* The product brochure and the 2014 sales terms came off the site with the briefing
+     of 2026-09-28 (points 5 and 6). */
 };
 
 mkdirSync(OUT, { recursive: true });

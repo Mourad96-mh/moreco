@@ -4,52 +4,204 @@
 }
 
 /*
- * The client's opening statement, and the page's h1 since the film lost its title
- * (2026-09-27): a sentence, so it stays a step under a headline's size.
+ * The intro (client's text of 2026-09-27, laid out on 2026-09-28): a headline under the
+ * brand, a lead beside its three supporting paragraphs, five pillar cards, a closing
+ * panel. The words are theirs; this sheet only gives them a hierarchy.
  */
-.introTitle {
-  font-size: var(--step-3);
-  line-height: 1.2;
+.intro {
+  padding-bottom: clamp(3rem, 6vw, 5rem);
 }
 
-/*
- * The five pillars the intro announces, numbered as the client numbers them: the
- * number sits in a green disc beside the bold label, and the text runs under the label.
- */
-.introPoints {
-  margin: 1.4rem 0 1.6rem;
+.introHead {
+  max-width: 54rem;
+  margin-bottom: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.introEyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 0 0.9rem;
+  font-size: var(--step--1);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--green-dark);
+}
+
+.introEyebrow::before {
+  content: '';
+  width: 2rem;
+  height: 2px;
+  background: var(--green);
+}
+
+.introTitle {
+  margin: 0;
+  font-size: var(--step-4);
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+.introBody {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  align-items: start;
+}
+
+.introLead {
+  margin: 0;
+  font-size: var(--step-2);
+  line-height: 1.4;
+  font-weight: 500;
+  color: var(--ink);
+  text-wrap: pretty;
+}
+
+.introAside {
+  display: grid;
+  gap: 0.85rem;
+  padding-inline-start: clamp(1rem, 2vw, 1.5rem);
+  border-inline-start: 3px solid var(--green);
+  color: var(--ink-2);
+}
+
+.introAside p {
+  margin: 0;
+}
+
+.pillarsTitle {
+  max-width: 52rem;
+  margin: clamp(2.5rem, 5vw, 3.75rem) 0 clamp(1.25rem, 2.5vw, 1.75rem);
+  font-size: var(--step-2);
+  line-height: 1.3;
+  text-wrap: balance;
+}
+
+/* Five across on a wide screen, then three + two, then one column on a phone. */
+.pillars {
+  margin: 0;
   padding: 0;
   list-style: none;
   display: grid;
-  gap: 1.1rem;
-  counter-reset: pillar;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: clamp(0.75rem, 1.5vw, 1.1rem);
 }
 
-.introPoint {
-  position: relative;
-  padding-inline-start: 2.75rem;
-  counter-increment: pillar;
+.pillar {
+  display: flex;
 }
 
-.introPoint::before {
-  content: counter(pillar);
-  position: absolute;
-  inset-inline-start: 0;
-  top: 0;
+.pillarInner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  width: 100%;
+  padding: 1.25rem 1.15rem 1.35rem;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--green);
+  border-radius: var(--radius-lg);
+  transition: box-shadow 0.3s var(--ease), transform 0.3s var(--ease);
+}
+
+.pillarInner:hover {
+  box-shadow: 0 12px 28px rgb(16 22 28 / 0.08);
+  transform: translateY(-2px);
+}
+
+.pillarHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.2rem;
+}
+
+.pillarIcon {
   display: grid;
   place-items: center;
-  width: 1.9rem;
-  height: 1.9rem;
+  width: 2.6rem;
+  height: 2.6rem;
   border-radius: 50%;
-  background: var(--green);
-  color: #fff;
-  font-weight: 700;
-  font-size: var(--step--1);
+  background: color-mix(in srgb, var(--green) 14%, transparent);
+  color: var(--green-dark);
 }
 
-.introPointTitle {
-  display: block;
-  color: var(--green-dark, var(--green));
+.pillarIcon svg {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.pillarNumber {
+  font-size: var(--step-1);
+  font-weight: 700;
+  color: var(--line-strong);
+  font-variant-numeric: tabular-nums;
+}
+
+.pillarTitle {
+  font-size: var(--step-0);
+  line-height: 1.3;
+  color: var(--ink);
+}
+
+.pillarText {
+  font-size: var(--step--1);
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+
+.introClose {
+  margin: clamp(2rem, 4vw, 3rem) 0 0;
+  padding: clamp(1.25rem, 3vw, 2rem) clamp(1.25rem, 3vw, 2.25rem);
+  background: var(--green-darker);
+  border-radius: var(--radius-lg);
+  font-size: var(--step-1);
+  line-height: 1.5;
+  color: #fff;
+  text-wrap: pretty;
+}
+
+@media (max-width: 1100px) {
+  .pillars {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .pillar {
+    grid-column: span 2;
+  }
+
+  .pillar:nth-child(4),
+  .pillar:nth-child(5) {
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 760px) {
+  .introBody {
+    grid-template-columns: 1fr;
+  }
+
+  .pillars {
+    grid-template-columns: 1fr;
+  }
+
+  .pillar,
+  .pillar:nth-child(4),
+  .pillar:nth-child(5) {
+    grid-column: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pillarInner {
+    transition: none;
+  }
+
+  .pillarInner:hover {
+    transform: none;
+  }
 }
 
 /*
