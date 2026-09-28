@@ -8,28 +8,28 @@
     "height": 2214
   },
   "seg-agri": {
-    "title": "Unripe Avocados (Unsplash)",
-    "author": "Nur Afni Setiyaningrum nurafnisetiyaningrum",
-    "license": "CC0",
-    "source": "https://commons.wikimedia.org/wiki/File:Unripe_Avocados_(Unsplash).jpg",
-    "width": 4272,
-    "height": 2848
+    "title": "Mandarins on the tree",
+    "author": "Supplied by Moreco",
+    "license": "Client-supplied, 2026-09-28",
+    "source": "scripts/segment-photos/",
+    "width": 360,
+    "height": 240
   },
   "seg-humans": {
-    "title": "Mother Nature, Summer (Unsplash)",
-    "author": "Autumn Goodman auttgood",
-    "license": "CC0",
-    "source": "https://commons.wikimedia.org/wiki/File:Mother_Nature,_Summer_(Unsplash).jpg",
-    "width": 5472,
-    "height": 3648
+    "title": "Family outdoors",
+    "author": "Shutterstock 147171317, supplied by Moreco",
+    "license": "Watermarked preview - licence to be purchased",
+    "source": "scripts/segment-photos/",
+    "width": 390,
+    "height": 280
   },
   "seg-animals": {
-    "title": "Arkansas chickens (Unsplash)",
-    "author": "Brooke Cagle brookecagle",
-    "license": "CC0",
-    "source": "https://commons.wikimedia.org/wiki/File:Arkansas_chickens_(Unsplash).jpg",
-    "width": 5318,
-    "height": 3545
+    "title": "Broiler chickens",
+    "author": "Supplied by Moreco",
+    "license": "Client-supplied, 2026-09-28",
+    "source": "scripts/segment-photos/",
+    "width": 612,
+    "height": 408
   },
   "seg-general": {
     "title": "Water droplets (Unsplash)",

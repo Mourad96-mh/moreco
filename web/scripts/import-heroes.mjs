@@ -32,11 +32,8 @@ const HEIGHT = 840;
 /** Hero slot -> the file on Wikimedia Commons. All CC0. */
 const FILES = {
   'products': 'Green_plantation_(Unsplash).jpg',
-  /* Avocados, cereals dropped — client briefing of 2026-09-13. */
-  'seg-agri': 'Unripe_Avocados_(Unsplash).jpg',
-  'seg-humans': 'Mother_Nature,_Summer_(Unsplash).jpg',
-  /* Healthy laying flock, replacing the cows in a field the client asked us to drop. */
-  'seg-animals': 'Arkansas_chickens_(Unsplash).jpg',
+  /* seg-agri, seg-humans and seg-animals are the client's own photographs since
+     2026-09-28, written by scripts/segment-photos.mjs. */
   'seg-general': 'Water_droplets_(Unsplash).jpg',
   'orthagrow': 'Wheat_field_sunset_(Unsplash).jpg',
   'orthafight': 'Dewdrops_on_leaves_(Unsplash).jpg',
