@@ -1,4 +1,4 @@
-/* Media & events: two 2014 trade shows, their dossiers and the stand video. */
+/* Media & events: the radio interviews, the press, then the 2014 trade shows. */
 
 .archive {
   display: inline-block;
@@ -73,10 +73,9 @@
   color: var(--ink-3);
 }
 
-/* ------------------------------------------------------- downloads & the film */
+/* ------------------------------------------------------- dossiers & the film */
 
-.dossier,
-.download {
+.dossier {
   display: inline-flex;
   align-items: center;
   gap: 0.65rem;
@@ -94,14 +93,12 @@
   margin-top: 1.5rem;
 }
 
-.dossier:hover,
-.download:hover {
+.dossier:hover {
   border-color: var(--green);
   background: var(--paper);
 }
 
-.dossier svg,
-.download svg {
+.dossier svg {
   flex: none;
   color: var(--green-dark);
 }
@@ -129,9 +126,103 @@
   color: var(--ink-3);
 }
 
-.videoTitle,
-.downloadsTitle {
+.videoTitle {
   margin-bottom: 1.25rem;
+}
+
+.sectionTitle {
+  margin: 0 0 1.5rem;
+}
+
+/* ------------------------------------------------------------ radio interviews */
+
+/*
+ * Portrait phone footage: tall players side by side, never wider than a phone, centred
+ * under a centred title so two narrow columns do not leave the right half of the page
+ * empty.
+ */
+.centred {
+  text-align: center;
+}
+
+.interviews {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 340px));
+  justify-content: center;
+  gap: clamp(1rem, 3vw, 2.5rem);
+}
+
+.interview {
+  margin: 0;
+}
+
+.interviewVideo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9 / 16;
+  border-radius: var(--radius-lg);
+  background: var(--ink);
+  box-shadow: 0 14px 30px rgb(16 22 28 / 0.14);
+}
+
+.interviewCaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.75rem;
+  font-weight: 600;
+}
+
+/* ---------------------------------------------------------------- the press */
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 1rem;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  height: 100%;
+  padding: 1.25rem 1.35rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--green);
+  border-radius: var(--radius-lg);
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color 0.25s var(--ease), box-shadow 0.25s var(--ease);
+}
+
+.article:hover {
+  border-color: var(--green);
+  box-shadow: 0 10px 24px rgb(16 22 28 / 0.08);
+}
+
+.articleMeta {
+  font-size: var(--step--1);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-3);
+}
+
+.articleTitle {
+  flex: 1;
+  font-size: var(--step-1);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.articleLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+  color: var(--green-dark);
 }
 
 /* 16:9, and it stays 16:9 — the iframe has no intrinsic size of its own. */
@@ -149,28 +240,6 @@
   width: 100%;
   height: 100%;
   border: 0;
-}
-
-.downloads {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
-  gap: 0.75rem;
-}
-
-.download {
-  height: 100%;
-  align-items: flex-start;
-}
-
-.downloadText {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-  min-width: 0;
-}
-
-.downloadLabel {
-  font-weight: 600;
 }
 
 @media (max-width: 860px) {

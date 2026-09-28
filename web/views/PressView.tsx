@@ -1,18 +1,19 @@
 import Image from 'next/image';
-import Link from 'next/link';
 
 import type { Locale } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionary';
-import { href, articleHref } from '@/data/routes';
-import { pressContent } from '@/data/press';
+import { href } from '@/data/routes';
+import { pressContent, PRESS_ARTICLES, RADIO_INTERVIEWS } from '@/data/press';
 import { pageHero } from '@/data/hero-images';
 import PageHeader from '@/components/PageHeader/PageHeader';
 import Reveal from '@/components/Reveal/Reveal';
 import s from './PressView.module.css';
 
 /**
- * Media & events: the two trade shows Moreco exhibited at in 2014, with the dossiers,
- * the brochure and the stand video.
+ * Media & events, in the order the briefing of 2026-09-28 set: the Médina FM interviews
+ * first, the press coverage under them, then the two trade shows Moreco exhibited at in
+ * 2014 with their dossiers and the stand video. The downloads block that closed the
+ * page (brochure, sales terms, the silicon interview) came off with the same briefing.
  *
  * Everything here is twelve years old, so the page says so plainly rather than presenting
  * it as what is coming up — the archive's own heading called these "événements à venir",
@@ -20,10 +21,8 @@ import s from './PressView.module.css';
  */
 export default function PressView({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
-  const { events, downloads, articleLink, video } = pressContent(locale);
-
-  const downloadLabel = (key: 'product-brochure' | 'sales-terms') =>
-    key === 'product-brochure' ? t.press.productBrochure : t.press.salesTerms;
+  const { events, video } = pressContent(locale);
+  const month = new Intl.DateTimeFormat(locale, { month: 'long', year: 'numeric' });
 
   return (
     <>
@@ -39,9 +38,73 @@ export default function PressView({ locale }: { locale: Locale }) {
         ]}
       />
 
+      <section className="section">
+        <div className="page">
+          <Reveal>
+            <h2 className={`${s.sectionTitle} ${s.centred}`}>{t.press.radioTitle}</h2>
+          </Reveal>
+
+          <div className={s.interviews}>
+            {RADIO_INTERVIEWS.map((interview, i) => {
+              const label = t.press.radioPart.replace('{n}', String(i + 1));
+              return (
+                <Reveal key={interview.src} delay={i * 80}>
+                  <figure className={s.interview}>
+                    {/* preload="none": two long films, and nothing loads until one is played. */}
+                    <video
+                      className={s.interviewVideo}
+                      src={interview.src}
+                      poster={interview.poster}
+                      controls
+                      preload="none"
+                      playsInline
+                      width={540}
+                      height={960}
+                      aria-label={label}
+                    />
+                    <figcaption className={s.interviewCaption}>
+                      <span>{label}</span>
+                      <span className={s.size}>{interview.minutes} min</span>
+                    </figcaption>
+                  </figure>
+                </Reveal>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section className="section section--tint">
+        <div className="page">
+          <Reveal>
+            <h2 className={s.sectionTitle}>{t.press.pressTitle}</h2>
+          </Reveal>
+
+          <div className={s.articles}>
+            {PRESS_ARTICLES.map((article, i) => (
+              <Reveal key={article.url} delay={i * 70}>
+                <a className={s.article} href={article.url} target="_blank" rel="noopener noreferrer">
+                  <span className={s.articleMeta}>
+                    {article.outlet} · {month.format(new Date(article.date))}
+                  </span>
+                  <span className={s.articleTitle} lang={article.lang}>
+                    {article.title}
+                  </span>
+                  <span className={s.articleLink}>
+                    {t.press.readArticle}
+                    <ExternalIcon />
+                  </span>
+                </a>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <div className="section">
         <div className="page">
           <Reveal>
+            <h2 className={s.sectionTitle}>{t.press.eventsTitle}</h2>
             <p className={s.archive}>{t.press.archive}</p>
           </Reveal>
 
@@ -117,45 +180,6 @@ export default function PressView({ locale }: { locale: Locale }) {
           </div>
         </section>
       )}
-
-      {(downloads.length > 0 || articleLink) && (
-        <section className="section">
-          <div className="page">
-            <Reveal>
-              <h2 className={s.downloadsTitle}>{t.press.downloads}</h2>
-            </Reveal>
-
-            <div className={s.downloads}>
-              {downloads.map((download, i) => (
-                <Reveal key={download.key} delay={i * 70}>
-                  <a className={s.download} href={download.pdf} target="_blank" rel="noopener noreferrer">
-                    <PdfIcon />
-                    <span className={s.downloadText}>
-                      <span className={s.downloadLabel}>{downloadLabel(download.key)}</span>
-                      <span className={s.size}>
-                        PDF · {Math.round(download.bytes / 1024)} {t.article.sizeUnit}
-                      </span>
-                    </span>
-                  </a>
-                </Reveal>
-              ))}
-
-              {/* The interview the page offered as a PDF is a page of its own now. */}
-              {articleLink && (
-                <Reveal delay={downloads.length * 70}>
-                  <Link className={s.download} href={articleHref(locale, articleLink.slug)}>
-                    <DocIcon />
-                    <span className={s.downloadText}>
-                      <span className={s.downloadLabel}>{articleLink.label}</span>
-                      <span className={s.size}>{t.nav.publications}</span>
-                    </span>
-                  </Link>
-                </Reveal>
-              )}
-            </div>
-          </div>
-        </section>
-      )}
     </>
   );
 }
@@ -178,10 +202,10 @@ const PdfIcon = () => (
   </svg>
 );
 
-const DocIcon = () => (
+const ExternalIcon = () => (
   <svg
-    width="18"
-    height="18"
+    width="14"
+    height="14"
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
@@ -190,8 +214,8 @@ const DocIcon = () => (
     strokeLinejoin="round"
     aria-hidden="true"
   >
-    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
-    <path d="M14 2v6h6" />
-    <path d="M9 13h6M9 17h4" />
+    <path d="M14 4h6v6" />
+    <path d="M20 4 10 14" />
+    <path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" />
   </svg>
 );

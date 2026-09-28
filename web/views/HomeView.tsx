@@ -38,6 +38,36 @@ const STAT_ICONS = [
   </svg>,
 ];
 
+/* One pictogram per pillar, in the client's order, drawn like STAT_ICONS. */
+const PILLAR_ICONS = [
+  /* Nutrient efficiency — a seedling. */
+  <svg key="nutrition" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M12 21v-7" />
+    <path d="M12 14c0-5 3.5-9 9-9 0 5.5-4 9-9 9Z" />
+    <path d="M12 16c0-3.5-2.5-6-6.5-6 0 3.8 2.8 6 6.5 6Z" />
+    <path d="M9 21h6" />
+  </svg>,
+  /* Resilience — a shield. */
+  <svg key="resilience" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M12 21.5s7.5-3.2 7.5-9.5V5.2L12 2.5 4.5 5.2V12c0 6.3 7.5 9.5 7.5 9.5Z" />
+    <path d="m8.8 12 2.2 2.2 4.2-4.4" />
+  </svg>,
+  /* Water — a drop. */
+  <svg key="water" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M12 2.8s6.5 7 6.5 11.7a6.5 6.5 0 0 1-13 0C5.5 9.8 12 2.8 12 2.8Z" />
+    <path d="M9 15a3 3 0 0 0 3 3" />
+  </svg>,
+  /* Harvest quality — a fruit. */
+  <svg key="quality" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M12 7.5c-2-1.6-6.5-1.4-6.5 4.2 0 4.6 3 9 5.2 9 .6 0 .9-.3 1.3-.3s.7.3 1.3.3c2.2 0 5.2-4.4 5.2-9 0-5.6-4.5-5.8-6.5-4.2Z" />
+    <path d="M12 7.5c0-2 .8-3.6 2.5-4.5" />
+  </svg>,
+  /* Fewer residues — a filter. */
+  <svg key="residues" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M3.5 4.5h17l-6.5 7.8v6.2l-4 2v-8.2Z" />
+  </svg>,
+];
+
 const SEGMENT_MEDIA = {
   agri: { image: '/media/scenes/segment-agri.webp', accent: 'var(--seg-agri)' },
   humans: { image: '/media/scenes/segment-humans.webp', accent: 'var(--seg-humans)' },
@@ -47,6 +77,15 @@ const SEGMENT_MEDIA = {
 
 export default function HomeView({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
+
+  /* "MORECO | L'innovation agronomique…": the brand becomes the eyebrow. */
+  const [brand, headline] = t.home.introTitle.includes('|')
+    ? t.home.introTitle.split('|').map((part) => part.trim())
+    : [null, t.home.introTitle];
+  /* First paragraph: the lead. Last: the line that announces the pillars. */
+  const [lead, ...rest] = t.home.introText;
+  const pillarsLead = rest.at(-1);
+  const body = rest.slice(0, -1);
 
   return (
     <>
@@ -65,29 +104,64 @@ export default function HomeView({ locale }: { locale: Locale }) {
         sources={[{ src: '/media/hero/hero.mp4', type: 'video/mp4' }]}
       />
 
-      {/* The intro, rewritten by the client on 2026-09-27, opens the page and holds its h1. */}
-      <section className="section">
-        <div className="page-narrow">
+      {/*
+       * The intro, rewritten by the client on 2026-09-27, opens the page and holds its h1.
+       * Laid out on 2026-09-28 (point 2) so the same words read as a page rather than a
+       * column: the brand as an eyebrow over the headline, the opening paragraph as the
+       * lead with the three that follow beside it, the five pillars as cards, and the
+       * closing sentence as a panel. The wording itself is the client's, untouched.
+       */}
+      <section className={`section ${s.intro}`}>
+        <div className="page">
           <Reveal>
-            <h1 className={s.introTitle}>{t.home.introTitle}</h1>
-            {t.home.introText.map((paragraph, i) => (
-              <p key={i} className={i === 0 ? 'lead' : undefined}>
-                {paragraph}
-              </p>
-            ))}
+            <header className={s.introHead}>
+              {brand && (
+                <p className={s.introEyebrow} aria-hidden="true">
+                  {brand}
+                </p>
+              )}
+              <h1 className={s.introTitle}>
+                {brand && <span className="visually-hidden">{brand} | </span>}
+                {headline}
+              </h1>
+            </header>
+          </Reveal>
 
-            {/* The five pillars the last paragraph announces, numbered as the client
-                numbers them, so the colon before them resolves into a list to scan. */}
-            <ol className={s.introPoints}>
-              {t.home.introPoints.map((point) => (
-                <li key={point.title} className={s.introPoint}>
-                  <strong className={s.introPointTitle}>{point.title}</strong>
-                  <span>{point.text}</span>
-                </li>
+          <div className={s.introBody}>
+            <Reveal delay={80}>
+              <p className={s.introLead}>{lead}</p>
+            </Reveal>
+            <Reveal delay={160} className={s.introAside}>
+              {body.map((paragraph) => (
+                <p key={paragraph.slice(0, 40)}>{paragraph}</p>
               ))}
-            </ol>
+            </Reveal>
+          </div>
 
-            <p>{t.home.introClose}</p>
+          {/* The five pillars the last paragraph announces, numbered as the client
+              numbers them. */}
+          {pillarsLead && (
+            <Reveal>
+              <h2 className={s.pillarsTitle}>{pillarsLead}</h2>
+            </Reveal>
+          )}
+          <ol className={s.pillars}>
+            {t.home.introPoints.map((point, i) => (
+              <li key={point.title} className={s.pillar}>
+                <Reveal delay={i * 70} className={s.pillarInner}>
+                  <span className={s.pillarHead} aria-hidden="true">
+                    <span className={s.pillarIcon}>{PILLAR_ICONS[i]}</span>
+                    <span className={s.pillarNumber}>{String(i + 1).padStart(2, '0')}</span>
+                  </span>
+                  <strong className={s.pillarTitle}>{point.title}</strong>
+                  <span className={s.pillarText}>{point.text}</span>
+                </Reveal>
+              </li>
+            ))}
+          </ol>
+
+          <Reveal>
+            <p className={s.introClose}>{t.home.introClose}</p>
           </Reveal>
         </div>
       </section>

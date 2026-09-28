@@ -489,3 +489,22 @@ est en orthographe britannique. **À faire trancher par le client.**
 **Mavita Premium Whey Protein.** Le client n'a envoyé que le nom et la photo : la fiche
 dit ce que porte l'étiquette (formule OSA, saveur fruits rouges, 1 kg) et annonce la
 suite. **Description, composition et conseils d'utilisation à demander au client.**
+
+## 15. Briefing du 2026-09-28 — introduction mise en page, Médias & Actus
+
+La mise en page de l'introduction change, pas son texte. Sur Médias & Actus, les
+libellés nouveaux sont de nous en EN, ES et NL :
+
+| Où | Contenu |
+| --- | --- |
+| `press.radioTitle` | « Interview MORECO – Radio FM » (titre du client) |
+| `press.radioPart` | « Médina FM — entretien 1 / 2 » |
+| `press.pressTitle`, `press.readArticle` | « Ils parlent de nous », « Lire l'article » |
+| `press.eventsTitle` | « SIAM Meknès, Saudi Agriculture : nos dossiers et supports » (texte du client, ancien sous-titre de la page) |
+| `pages.media.lead` | nouveau sous-titre : « Interviews radio, articles de presse et salons : Moreco dans les médias. » |
+
+**Titres d'articles non traduits.** Les trois articles de presse gardent le titre sous
+lequel ils ont paru (deux en français, un en anglais) : ils renvoient au site du journal.
+
+**Deux vidéos, pas trois.** Le client en demandait trois ; seuls deux enregistrements
+Médina FM existent. La troisième sera ajoutée à réception.
