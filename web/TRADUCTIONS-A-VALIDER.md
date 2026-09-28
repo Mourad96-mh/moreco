@@ -508,3 +508,17 @@ lequel ils ont paru (deux en français, un en anglais) : ils renvoient au site d
 
 **Deux vidéos, pas trois.** Le client en demandait trois ; seuls deux enregistrements
 Médina FM existent. La troisième sera ajoutée à réception.
+
+## 16. Briefing du 2026-09-28 (2) — page Produits et catégories sans doublons
+
+Le client a écrit l'anglais : « Moreco Products » / « Elevating crop performance to a new
+benchmark. » **FR, ES et NL sont de nous** (`pages.products.title`, `pages.products.lead`) :
+
+| Langue | Titre | Ligne |
+| --- | --- | --- |
+| FR | Produits Moreco | Porter la performance des cultures vers une nouvelle référence. |
+| ES | Productos Moreco | Llevar el rendimiento de los cultivos a un nuevo referente. |
+| NL | Moreco-producten | Gewasprestaties naar een nieuwe maatstaf tillen. |
+
+L'ancienne ligne « Moreco : Ensemble, faisons de votre culture une référence. » a disparu
+des quatre langues.
