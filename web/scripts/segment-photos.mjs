@@ -32,7 +32,9 @@ const MEDIA = join(HERE, '..', 'public', 'media');
 
 const PHOTOS = {
   agri: { file: 'agri.jpg', page: 'agri-horticulture' },
-  humans: { file: 'humans.webp', page: 'humans' },
+  /* The banner has its own photograph since 2026-09-29, already cut to the band's shape;
+     the plate keeps humans.webp. */
+  humans: { file: 'humans.webp', page: 'humans', banner: 'humans-banner.jpg' },
   animals: { file: 'animals.jpg', page: 'animals' },
 };
 
@@ -52,9 +54,9 @@ const cut = (file, { width, height }, position = 'attention') =>
     /* Only the upscaled cuts need it; on the others it is below what the eye sees. */
     .sharpen({ sigma: 0.6 });
 
-for (const [segment, { file, page }] of Object.entries(PHOTOS)) {
+for (const [segment, { file, page, banner = file }] of Object.entries(PHOTOS)) {
   await cut(file, PLATE).webp(WEBP).toFile(join(MEDIA, 'pages', `${page}.webp`));
-  await cut(file, BANNER, 'centre').webp(WEBP).toFile(join(MEDIA, 'heroes', `seg-${segment}.webp`));
+  await cut(banner, BANNER, 'centre').webp(WEBP).toFile(join(MEDIA, 'heroes', `seg-${segment}.webp`));
 
   console.log(`${segment}: plate ${PLATE.width}x${PLATE.height}, banner ${BANNER.width}x${BANNER.height}`);
 }
