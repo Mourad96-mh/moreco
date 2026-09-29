@@ -1,4 +1,4 @@
-/* Media & events: the radio interviews, then the 2014 trade shows. */
+/* Media & events: the 2014 trade shows and the stand video. */
 
 .archive {
   display: inline-block;
@@ -132,46 +132,6 @@
 
 .sectionTitle {
   margin: 0 0 1.5rem;
-}
-
-/* ------------------------------------------------------------ radio interviews */
-
-/*
- * Portrait phone footage: tall players side by side, never wider than a phone, centred
- * under a centred title so two narrow columns do not leave the right half of the page
- * empty.
- */
-.centred {
-  text-align: center;
-}
-
-.interviews {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 340px));
-  justify-content: center;
-  gap: clamp(1rem, 3vw, 2.5rem);
-}
-
-.interview {
-  margin: 0;
-}
-
-.interviewVideo {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 9 / 16;
-  border-radius: var(--radius-lg);
-  background: var(--ink);
-  box-shadow: 0 14px 30px rgb(16 22 28 / 0.14);
-}
-
-.interviewCaption {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-top: 0.75rem;
-  font-weight: 600;
 }
 
 /* 16:9, and it stays 16:9 — the iframe has no intrinsic size of its own. */

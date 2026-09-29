@@ -212,8 +212,6 @@
     "archive": "Voorbije evenementen — archief 2014.",
     "dossier": "Standdossier",
     "sessions": "Details van het evenement",
-    "radioTitle": "Interview MORECO – Radio FM 2014",
-    "radioPart": "Médina FM — interview {n}",
     "eventsTitle": "SIAM Meknes, Saudi Agriculture: onze dossiers en materialen"
   },
   "contact": {
@@ -281,7 +279,7 @@
     },
     "media": {
       "title": "Persmappen & evenementen",
-      "lead": "Radio-interviews en beurzen: Moreco in de media."
+      "lead": "Beurzen en evenementen: Moreco in de media."
     },
     "about": {
       "title": "Over Moreco",

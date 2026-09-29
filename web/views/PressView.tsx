@@ -3,17 +3,17 @@ import Image from 'next/image';
 import type { Locale } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionary';
 import { href } from '@/data/routes';
-import { pressContent, RADIO_INTERVIEWS } from '@/data/press';
+import { pressContent } from '@/data/press';
 import { pageHero } from '@/data/hero-images';
 import PageHeader from '@/components/PageHeader/PageHeader';
 import Reveal from '@/components/Reveal/Reveal';
 import s from './PressView.module.css';
 
 /**
- * Media & events, in the order the briefing of 2026-09-28 set: the Médina FM interviews
- * first, then the two trade shows Moreco exhibited at in
- * 2014 with their dossiers and the stand video. The downloads block that closed the
- * page (brochure, sales terms, the silicon interview) came off with the same briefing.
+ * Media & events: the two trade shows Moreco exhibited at in 2014, with their dossiers
+ * and the stand video. The downloads block that closed the page (brochure, sales terms,
+ * the silicon interview) came off with the briefing of 2026-09-28; the Médina FM
+ * interviews and the press coverage came off on 2026-09-29.
  *
  * Everything here is twelve years old, so the page says so plainly rather than presenting
  * it as what is coming up — the archive's own heading called these "événements à venir",
@@ -36,42 +36,6 @@ export default function PressView({ locale }: { locale: Locale }) {
           { label: t.pages.media.title },
         ]}
       />
-
-      <section className="section">
-        <div className="page">
-          <Reveal>
-            <h2 className={`${s.sectionTitle} ${s.centred}`}>{t.press.radioTitle}</h2>
-          </Reveal>
-
-          <div className={s.interviews}>
-            {RADIO_INTERVIEWS.map((interview, i) => {
-              const label = t.press.radioPart.replace('{n}', String(i + 1));
-              return (
-                <Reveal key={interview.src} delay={i * 80}>
-                  <figure className={s.interview}>
-                    {/* preload="none": two long films, and nothing loads until one is played. */}
-                    <video
-                      className={s.interviewVideo}
-                      src={interview.src}
-                      poster={interview.poster}
-                      controls
-                      preload="none"
-                      playsInline
-                      width={540}
-                      height={960}
-                      aria-label={label}
-                    />
-                    <figcaption className={s.interviewCaption}>
-                      <span>{label}</span>
-                      <span className={s.size}>{interview.minutes} min</span>
-                    </figcaption>
-                  </figure>
-                </Reveal>
-              );
-            })}
-          </div>
-        </div>
-      </section>
 
       <div className="section">
         <div className="page">
