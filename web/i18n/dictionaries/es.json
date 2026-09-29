@@ -214,8 +214,6 @@
     "sessions": "Detalles del evento",
     "radioTitle": "Entrevista MORECO – Radio FM 2014",
     "radioPart": "Médina FM — entrevista {n}",
-    "pressTitle": "En la prensa",
-    "readArticle": "Leer el artículo",
     "eventsTitle": "SIAM Meknès, Saudi Agriculture: nuestros dosieres y materiales"
   },
   "contact": {
@@ -283,7 +281,7 @@
     },
     "media": {
       "title": "Dosieres de prensa y eventos",
-      "lead": "Entrevistas de radio, artículos de prensa y ferias: Moreco en los medios."
+      "lead": "Entrevistas de radio y ferias: Moreco en los medios."
     },
     "about": {
       "title": "Sobre Moreco",

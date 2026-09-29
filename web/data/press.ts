@@ -55,43 +55,6 @@ export const RADIO_INTERVIEWS: RadioInterview[] = [
   { src: '/media/press/medina-fm-2.mp4', poster: '/media/press/medina-fm-2.webp', minutes: 7 },
 ];
 
-/**
- * Articles about Moreco in the press, linked rather than copied: the text belongs to the
- * paper. Headlines stay in the language they were printed in; newest first.
- */
-export interface PressArticle {
-  title: string;
-  outlet: string;
-  /** ISO date, from the article's own published_time. */
-  date: string;
-  url: string;
-  lang: 'fr' | 'en';
-}
-
-export const PRESS_ARTICLES: PressArticle[] = [
-  {
-    title: 'MORECO : la start-up marocaine œuvre pour une agriculture verte',
-    outlet: 'Agrimaroc',
-    date: '2016-07-13',
-    url: 'https://www.agrimaroc.ma/moreco-la-start-up-marocaine-oeuvre-pour-une-agriculture-verte/',
-    lang: 'fr',
-  },
-  {
-    title: 'Fertilisants écologiques : Moreco commercialise ses produits au Maroc',
-    outlet: "Aujourd'hui le Maroc",
-    date: '2015-11-29',
-    url: 'https://aujourdhui.ma/economie/fertilisants-ecologiques-moreco-commercialise-ses-produits-au-maroc-122121',
-    lang: 'fr',
-  },
-  {
-    title: 'Kasim Chihabi: Journey from Scratch to Business Success in Morocco',
-    outlet: 'Morocco World News',
-    date: '2015-08-25',
-    url: 'https://www.moroccoworldnews.com/2015/08/116181/kasim-chihabi-journey-from-scratch-to-business-success-in-morocco/',
-    lang: 'en',
-  },
-];
-
 type Block = { type: string; text?: string; items?: string[]; src?: string };
 type PageStore = Record<string, Partial<Record<Locale, Block[]>>>;
 const PAGES = pages as PageStore;
