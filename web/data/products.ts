@@ -166,7 +166,7 @@ export const FAMILIES: ProductFamily[] = [
   },
   /*
    * The two products the SOON tile stood for, named on 2026-09-22 with a one-line
-   * description each. Their full text and pack shots are still to come.
+   * description each; their pack shots came on 2026-09-29. Their full text is still to come.
    */
   { key: 'protection', segment: 'agri', products: ['orthagrow-procure', 'orthagrow-protec'] },
   /*
