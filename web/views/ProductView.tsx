@@ -47,8 +47,12 @@ export default function ProductView({ locale, slug }: { locale: Locale; slug: st
 
   return (
     <>
+      {/*
+       * A product sheet sits three levels down, so it keeps the trail back up — but the
+       * trail stops at the range: the product's own name is the title, and the range
+       * name no longer stands as an eyebrow as well (briefing of 2026-09-28).
+       */}
       <PageHeader
-        eyebrow={range?.name}
         title={name}
         accent={ACCENT[product.segment]}
         image={productHero(product)}
@@ -58,7 +62,6 @@ export default function ProductView({ locale, slug }: { locale: Locale; slug: st
           { label: t.nav.products, href: href(locale, 'products') },
           { label: t.segments[product.segment].name, href: segmentHref(locale, product.segment) },
           ...(range ? [{ label: range.name, href: rangeHref(locale, range.slug) }] : []),
-          { label: name },
         ]}
       />
 

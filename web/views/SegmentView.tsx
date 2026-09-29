@@ -10,7 +10,6 @@ import {
   type Product,
   type SegmentKey,
 } from '@/data/products';
-import { href } from '@/data/routes';
 import { segmentHero } from '@/data/hero-images';
 import PageHeader from '@/components/PageHeader/PageHeader';
 import ProductCard from '@/components/ProductCard/ProductCard';
@@ -92,19 +91,18 @@ export default function SegmentView({ locale, segment }: { locale: Locale; segme
 
   return (
     <>
+      {/*
+       * The category's name and its text, once each (briefing of 2026-09-28). The
+       * "Products" eyebrow and the "Moreco / Products / <name>" breadcrumb only repeated
+       * the menu and the title; the header menu already leads back to Products.
+       */}
       <PageHeader
-        eyebrow={t.nav.products}
         title={t.segments[segment].name}
         lead={t.segments[segment].blurb}
         intro={intro}
         accent={ACCENT[segment]}
         image={segmentHero(segment)}
         crumbLabel={t.a11y.breadcrumb}
-        crumbs={[
-          { label: t.site.name, href: href(locale, 'home') },
-          { label: t.nav.products, href: href(locale, 'products') },
-          { label: t.segments[segment].name },
-        ]}
       />
 
       <div className="section">

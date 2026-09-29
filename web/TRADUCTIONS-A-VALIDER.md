@@ -500,3 +500,16 @@ libellés nouveaux sont de nous en EN, ES et NL :
 | `press.eventsTitle` | « SIAM Meknès, Saudi Agriculture : nos dossiers et supports » (texte du client, ancien sous-titre de la page) |
 | `pages.media.lead` | nouveau sous-titre : « Salons et événements : Moreco dans les médias. » (la rubrique « Ils parlent de nous » et les interviews Médina FM ont été retirées le 29 septembre) |
 
+## 16. Briefing du 2026-09-28 (2) — page Produits et catégories sans doublons
+
+Le client a écrit l'anglais : « Moreco Products » / « Elevating crop performance to a new
+benchmark. » **FR, ES et NL sont de nous** (`pages.products.title`, `pages.products.lead`) :
+
+| Langue | Titre | Ligne |
+| --- | --- | --- |
+| FR | Produits Moreco | Porter la performance des cultures vers une nouvelle référence. |
+| ES | Productos Moreco | Llevar el rendimiento de los cultivos a un nuevo referente. |
+| NL | Moreco-producten | Gewasprestaties naar een nieuwe maatstaf tillen. |
+
+L'ancienne ligne « Moreco : Ensemble, faisons de votre culture une référence. » a disparu
+des quatre langues.

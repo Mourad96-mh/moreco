@@ -12,7 +12,7 @@ import {
   productsOfSegment,
   type SegmentKey,
 } from '@/data/products';
-import { href, segmentHref } from '@/data/routes';
+import { segmentHref } from '@/data/routes';
 import { pageHero, segmentHero } from '@/data/hero-images';
 import PageHeader from '@/components/PageHeader/PageHeader';
 import ProductCard from '@/components/ProductCard/ProductCard';
@@ -130,12 +130,16 @@ export default function ProductsView({ locale }: { locale: Locale }) {
 
   return (
     <>
+      {/*
+       * Two lines and nothing else (briefing of 2026-09-28): "Moreco Products" and its
+       * line. The breadcrumb that stood over them — "Moreco / Products" — only said the
+       * title again, so this page, the top of the catalogue, goes without one.
+       */}
       <PageHeader
         title={t.pages.products.title}
         image={pageHero('products')}
         lead={t.pages.products.lead}
         crumbLabel={t.a11y.breadcrumb}
-        crumbs={[{ label: t.site.name, href: href(locale, 'home') }, { label: t.nav.products }]}
       />
 
       {/*
