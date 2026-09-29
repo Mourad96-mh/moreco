@@ -212,10 +212,6 @@
     "archive": "Past events — 2014 archive.",
     "dossier": "Stand dossier",
     "sessions": "Event details",
-    "radioTitle": "MORECO interview – Radio FM 2014",
-    "radioPart": "Médina FM — interview {n}",
-    "pressTitle": "In the press",
-    "readArticle": "Read the article",
     "eventsTitle": "SIAM Meknès, Saudi Agriculture: our press kits and materials"
   },
   "contact": {
@@ -283,7 +279,7 @@
     },
     "media": {
       "title": "Media kits & events",
-      "lead": "Radio interviews, press articles and trade shows: Moreco in the media."
+      "lead": "Trade shows and events: Moreco in the media."
     },
     "about": {
       "title": "About Moreco",

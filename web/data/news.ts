@@ -100,6 +100,21 @@ function postsIn(blocks: Block[], frBlocks: Block[]): NewsPost[] {
 }
 
 /**
+ * Posts are matched to their article by the French title, so on the EN, ES and NL pages
+ * none matched and every read-more link was dropped. The posts line up one-to-one across
+ * locales, so post *n* takes the article of French post *n* — checked against the
+ * picture, which is the same file in every language.
+ */
+function withFrenchArticles(posts: NewsPost[]): NewsPost[] {
+  const fr = postsIn(blocksFor('fr'), blocksFor('fr'));
+  return posts.map((post, i) =>
+    post.articleSlug || fr[i]?.image !== post.image
+      ? post
+      : { ...post, articleSlug: fr[i].articleSlug }
+  );
+}
+
+/**
  * The posts pictured with human products — Mavita Health, and the hair-nutrition study —
  * go to the very end of the page (briefing of 2026-09-26). Matched by picture, which is
  * the same file in every language.
@@ -112,7 +127,7 @@ const HUMAN_PRODUCT_IMAGES = new Set([
 const isHumanProductPost = (post: NewsPost) => post.image !== null && HUMAN_PRODUCT_IMAGES.has(post.image);
 
 export function newsPosts(locale: Locale): NewsPost[] {
-  const posts = postsIn(blocksFor(locale), blocksFor('fr'));
+  const posts = withFrenchArticles(postsIn(blocksFor(locale), blocksFor('fr')));
   return [...posts.filter((p) => !isHumanProductPost(p)), ...posts.filter(isHumanProductPost)];
 }
 

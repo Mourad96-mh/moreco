@@ -497,17 +497,8 @@ libellés nouveaux sont de nous en EN, ES et NL :
 
 | Où | Contenu |
 | --- | --- |
-| `press.radioTitle` | « Interview MORECO – Radio FM 2014 » (titre du client) |
-| `press.radioPart` | « Médina FM — entretien 1 / 2 » |
-| `press.pressTitle`, `press.readArticle` | « Ils parlent de nous », « Lire l'article » |
 | `press.eventsTitle` | « SIAM Meknès, Saudi Agriculture : nos dossiers et supports » (texte du client, ancien sous-titre de la page) |
-| `pages.media.lead` | nouveau sous-titre : « Interviews radio, articles de presse et salons : Moreco dans les médias. » |
-
-**Titres d'articles non traduits.** Les trois articles de presse gardent le titre sous
-lequel ils ont paru (deux en français, un en anglais) : ils renvoient au site du journal.
-
-**Deux vidéos, pas trois.** Le client en demandait trois ; seuls deux enregistrements
-Médina FM existent. La troisième sera ajoutée à réception.
+| `pages.media.lead` | nouveau sous-titre : « Salons et événements : Moreco dans les médias. » (la rubrique « Ils parlent de nous » et les interviews Médina FM ont été retirées le 29 septembre) |
 
 ## 16. Briefing du 2026-09-28 (2) — page Produits et catégories sans doublons
 
