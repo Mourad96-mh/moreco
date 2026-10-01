@@ -39,7 +39,7 @@ export default function ContactView({ locale }: { locale: Locale }) {
         <div className={`page ${s.layout}`}>
           <Reveal className={s.formSide}>
             <h2 className={s.formTitle}>{t.contact.formTitle}</h2>
-            <ContactForm locale={locale} labels={t.quote} />
+            <ContactForm locale={locale} labels={t.quote} service={t.contact.service} />
           </Reveal>
 
           <Reveal className={s.details} delay={90}>

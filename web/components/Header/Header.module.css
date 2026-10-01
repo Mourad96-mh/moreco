@@ -822,14 +822,19 @@
 }
 
 @media (max-width: 620px) {
-  .social,
   .topLink span {
     display: none;
   }
 
-  /* With the icons gone the left group is only the phone link. */
+  /* The social icons stay on phones (asked for on 2026-10-01); a tighter gap keeps them,
+     the phone icon and the four languages on one line down to 320px. */
+  .social {
+    gap: 0.75rem;
+  }
+
+  /* The phone link pulls itself 0.75rem left (below); this leaves a clear gap after it. */
   .topLeft {
-    gap: 0;
+    gap: 1.1rem;
   }
 
   /*

@@ -217,6 +217,27 @@
   "contact": {
     "mobile": "Móvil",
     "formTitle": "Escríbanos",
+    "service": {
+      "label": "¿Con qué departamento desea contactar?",
+      "options": [
+        {
+          "value": "Service Commercial",
+          "label": "Departamento Comercial"
+        },
+        {
+          "value": "Service Après-Vente",
+          "label": "Servicio Posventa"
+        },
+        {
+          "value": "Réclamations / Suggestions",
+          "label": "Reclamaciones / Sugerencias"
+        },
+        {
+          "value": "Service Recrutement",
+          "label": "Departamento de Selección"
+        }
+      ]
+    },
     "hoursTitle": "Horario de apertura",
     "hours": [
       {

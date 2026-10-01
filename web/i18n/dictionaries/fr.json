@@ -217,6 +217,27 @@
   "contact": {
     "mobile": "Mobile",
     "formTitle": "Écrivez-nous",
+    "service": {
+      "label": "Quel service souhaitez-vous contacter ?",
+      "options": [
+        {
+          "value": "Service Commercial",
+          "label": "Service Commercial"
+        },
+        {
+          "value": "Service Après-Vente",
+          "label": "Service Après-Vente"
+        },
+        {
+          "value": "Réclamations / Suggestions",
+          "label": "Réclamations / Suggestions"
+        },
+        {
+          "value": "Service Recrutement",
+          "label": "Service Recrutement"
+        }
+      ]
+    },
     "hoursTitle": "Horaires d'ouverture",
     "hours": [
       {

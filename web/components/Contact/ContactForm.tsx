@@ -32,7 +32,21 @@ export interface ContactLabels {
   error: string;
 }
 
-export default function ContactForm({ locale, labels }: { locale: Locale; labels: ContactLabels }) {
+/** Which department the message is for. Each choice is mailed under its French name. */
+export interface ServiceChoice {
+  label: string;
+  options: { value: string; label: string }[];
+}
+
+export default function ContactForm({
+  locale,
+  labels,
+  service,
+}: {
+  locale: Locale;
+  labels: ContactLabels;
+  service: ServiceChoice;
+}) {
   const [state, setState] = useState<'idle' | 'sending' | 'sent' | 'failed'>('idle');
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
@@ -101,6 +115,20 @@ export default function ContactForm({ locale, labels }: { locale: Locale; labels
         </span>
         <textarea name="message" rows={6} required className={s.textarea} />
       </label>
+
+      <fieldset className={s.choice}>
+        <legend className={s.label}>
+          {service.label} <Star />
+        </legend>
+        <div className={s.options}>
+          {service.options.map((option) => (
+            <label key={option.value} className={s.option}>
+              <input type="radio" name="service" value={option.value} required />
+              {option.label}
+            </label>
+          ))}
+        </div>
+      </fieldset>
 
       {/* Bots fill every field they find; people never see this one. */}
       <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" className={s.gotcha} aria-hidden="true" />

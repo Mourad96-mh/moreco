@@ -217,6 +217,27 @@
   "contact": {
     "mobile": "Gsm",
     "formTitle": "Schrijf ons",
+    "service": {
+      "label": "Met welke afdeling wilt u contact opnemen?",
+      "options": [
+        {
+          "value": "Service Commercial",
+          "label": "Verkoop"
+        },
+        {
+          "value": "Service Après-Vente",
+          "label": "Klantenservice"
+        },
+        {
+          "value": "Réclamations / Suggestions",
+          "label": "Klachten / Suggesties"
+        },
+        {
+          "value": "Service Recrutement",
+          "label": "Werving"
+        }
+      ]
+    },
     "hoursTitle": "Openingstijden",
     "hours": [
       {
