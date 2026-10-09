@@ -91,7 +91,7 @@
   },
   "segments": {
     "agri": {
-      "name": "Agriculture & cultures",
+      "name": "Agriculture & Horticulture",
       "short": "Rendement, goût et résistance des cultures",
       "blurb": "Une forme unique d’acide orthosilicique, entièrement assimilable : améliore l’assimilation du phosphore, favorise une utilisation plus efficiente de l’eau et contribue à une meilleure qualité nutritionnelle, à l’augmentation des valeurs Brix, des rendements et de la durée de conservation des productions.",
       "introTitle": "Technologie OSA stabilisée exclusive",
@@ -175,6 +175,10 @@
     "customCta": "Nous contacter",
     "trialsTitle": "Résultats d'essais",
     "trialsIntro": "Du pommier de Midelt au gazon, chaque culture documentée en photos de terrain.",
+    "trialDocumentsTitle": "Rapports d'essais",
+    "trialDocumentsIntro": "Les comptes rendus complets de nos essais au champ, à télécharger.",
+    "testimonialsTitle": "Témoignages",
+    "testimonialsIntro": "Ce que disent les producteurs qui ont testé Orthagrow sur leurs parcelles, au Maroc, en 2018 et 2019.",
     "allTrials": "Tous les essais",
     "trialLabel": "Essai",
     "backToTrials": "Retour aux essais",
@@ -212,10 +216,12 @@
     "archive": "Événements passés — archives 2014.",
     "dossier": "Dossier du stand",
     "sessions": "Détails de l’événement",
-    "eventsTitle": "SIAM Meknès, Saudi Agriculture : nos dossiers et supports"
+    "eventsTitle": "SIAM Meknès, Saudi Agriculture : nos dossiers et supports",
+    "articlesTitle": "La presse en parle",
+    "articlesIntro": "Ce que les journaux ont écrit sur Moreco."
   },
   "contact": {
-    "mobile": "Mobile",
+    "landline": "Fixe",
     "formTitle": "Écrivez-nous",
     "service": {
       "label": "Quel service souhaitez-vous contacter ?",
@@ -320,7 +326,7 @@
     }
   },
   "footer": {
-    "company": "Moreco Sarl",
+    "company": "Moreco Maroc",
     "navTitle": "Navigation",
     "productsTitle": "Produits",
     "contactTitle": "Contact",

@@ -64,8 +64,8 @@
   text-decoration: underline;
 }
 
-.mobileLabel {
-  margin: 1rem 0 0.4rem;
+.phoneLabel {
+  margin: 0 0 0.4rem;
   font-size: var(--step--1);
   font-weight: 600;
   color: var(--ink-3);

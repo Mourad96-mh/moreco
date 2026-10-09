@@ -202,15 +202,20 @@ function Section({ section }: { section: CopySection }) {
             <table className={s.table}>
               <thead>
                 <tr>
-                  <th scope="col">{section.head[0]}</th>
-                  <th scope="col">{section.head[1]}</th>
+                  {section.head.map((label, i) => (
+                    <th key={i} scope="col">
+                      {label}
+                    </th>
+                  ))}
                 </tr>
               </thead>
               <tbody>
-                {section.rows.map(([label, value]) => (
+                {section.rows.map(([label, ...values]) => (
                   <tr key={label}>
                     <th scope="row">{label}</th>
-                    <td>{value}</td>
+                    {values.map((value, i) => (
+                      <td key={i}>{value}</td>
+                    ))}
                   </tr>
                 ))}
               </tbody>

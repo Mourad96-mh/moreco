@@ -91,7 +91,7 @@
   },
   "segments": {
     "agri": {
-      "name": "Landbouw & teelten",
+      "name": "Landbouw & Tuinbouw",
       "short": "Opbrengst, smaak en weerbaarheid van gewassen",
       "blurb": "Een unieke, volledig opneembare vorm van orthokiezelzuur: verbetert de opname van fosfor, bevordert een efficiënter watergebruik en draagt bij aan een betere voedingskwaliteit, hogere Brix-waarden, hogere opbrengsten en een langere houdbaarheid van de oogst.",
       "introTitle": "Exclusieve gestabiliseerde OSA-technologie",
@@ -175,6 +175,10 @@
     "customCta": "Neem contact op",
     "trialsTitle": "Proefresultaten",
     "trialsIntro": "Van de appelboom van Midelt tot gazon, elk gewas gedocumenteerd met veldfoto’s.",
+    "trialDocumentsTitle": "Proefrapporten",
+    "trialDocumentsIntro": "De volledige verslagen van onze veldproeven, om te downloaden.",
+    "testimonialsTitle": "Getuigenissen",
+    "testimonialsIntro": "Wat telers die Orthagrow op hun eigen percelen in Marokko testten, zeiden in 2018 en 2019.",
     "allTrials": "Alle proeven",
     "trialLabel": "Proef",
     "backToTrials": "Terug naar de proeven",
@@ -212,10 +216,12 @@
     "archive": "Voorbije evenementen — archief 2014.",
     "dossier": "Standdossier",
     "sessions": "Details van het evenement",
-    "eventsTitle": "SIAM Meknes, Saudi Agriculture: onze dossiers en materialen"
+    "eventsTitle": "SIAM Meknes, Saudi Agriculture: onze dossiers en materialen",
+    "articlesTitle": "In de pers",
+    "articlesIntro": "Wat de kranten over Moreco hebben geschreven."
   },
   "contact": {
-    "mobile": "Gsm",
+    "landline": "Vast",
     "formTitle": "Schrijf ons",
     "service": {
       "label": "Met welke afdeling wilt u contact opnemen?",
@@ -320,7 +326,7 @@
     }
   },
   "footer": {
-    "company": "Moreco Sarl",
+    "company": "Moreco Maroc",
     "navTitle": "Navigatie",
     "productsTitle": "Producten",
     "contactTitle": "Contact",

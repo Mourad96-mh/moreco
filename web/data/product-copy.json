@@ -5342,8 +5342,7 @@
     "fr": {
       "claim": "Cette variante, qui contient le composant principal du silicium, assure une récupération plus rapide des blessures, quand elle est prise par jour. Il empêche également l’acidification des muscles et il prend soin d’une meilleure endurance.",
       "paragraphs": [
-        "Suspension énergisante de silicium biodisponible et de 8 MINÉRAUX sélectionnés.",
-        "| | | | | --- | --- | --- | | Ingrédients | | % ARJ | | Silicium (Si) comme acide silicique | 5 mg | 5% | | Zinc (Zn) comme zinc chloride | 0,7 mg | 73% | | Sélénium (Se) | 45 mcg | | | Bore (B) comme acide borique | 0,55 mg | | | MSM | 45 mg | | | Taurine | 6,0 mg | | | Carnitine | 275 mg | | | Manganèse(Mn) | 0,5 mg | |"
+        "Suspension énergisante de silicium biodisponible et de 8 MINÉRAUX sélectionnés."
       ],
       "advantages": [
         "Une récupération plus rapide de blessures;",
@@ -5358,13 +5357,68 @@
       ],
       "sizes": [
         "30 ml"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Composition"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Ingrédients",
+            "Quantité",
+            "% ARJ"
+          ],
+          "rows": [
+            [
+              "Silicium (Si) comme acide silicique",
+              "5 mg",
+              "5%"
+            ],
+            [
+              "Zinc (Zn) comme zinc chloride",
+              "0,7 mg",
+              "73%"
+            ],
+            [
+              "Sélénium (Se)",
+              "45 mcg",
+              ""
+            ],
+            [
+              "Bore (B) comme acide borique",
+              "0,55 mg",
+              ""
+            ],
+            [
+              "MSM",
+              "45 mg",
+              ""
+            ],
+            [
+              "Taurine",
+              "6,0 mg",
+              ""
+            ],
+            [
+              "Carnitine",
+              "275 mg",
+              ""
+            ],
+            [
+              "Manganèse(Mn)",
+              "0,5 mg",
+              ""
+            ]
+          ]
+        }
       ]
     },
     "en": {
       "claim": "This variant, which contains the main component silicon, ensures a faster recovery from injuries, when it is daily taken. It also prevents acidification of muscles and it takes care of a better endurance.",
       "paragraphs": [
-        "Energized suspension of bioavailable silica and 8 selected MINERALS.",
-        "| | | | | --- | --- | --- | | Ingredients | | % RDI | | Silicon(Si) as Silicic acid | 5 mg | 5% | | Zinc (Zn) as zinc chloride | 0,7 mg | 73% | | Selenium (Se) as sodium selenite | 45 mcg | | | Boron(B) as Boric acid | 0,55 mg | | | MSM | 45 mg | | | Taurine | 6,0 mg | | | Carnitine | 275 mg | | | Manganese(Mn) | 0,5 mg | |"
+        "Energized suspension of bioavailable silica and 8 selected MINERALS."
       ],
       "advantages": [
         "Faster recovery from injuries;",
@@ -5379,13 +5433,68 @@
       ],
       "sizes": [
         "30 ml"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Composition"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Ingredients",
+            "Amount",
+            "% RDI"
+          ],
+          "rows": [
+            [
+              "Silicon(Si) as Silicic acid",
+              "5 mg",
+              "5%"
+            ],
+            [
+              "Zinc (Zn) as zinc chloride",
+              "0,7 mg",
+              "73%"
+            ],
+            [
+              "Selenium (Se) as sodium selenite",
+              "45 mcg",
+              ""
+            ],
+            [
+              "Boron(B) as Boric acid",
+              "0,55 mg",
+              ""
+            ],
+            [
+              "MSM",
+              "45 mg",
+              ""
+            ],
+            [
+              "Taurine",
+              "6,0 mg",
+              ""
+            ],
+            [
+              "Carnitine",
+              "275 mg",
+              ""
+            ],
+            [
+              "Manganese(Mn)",
+              "0,5 mg",
+              ""
+            ]
+          ]
+        }
       ]
     },
     "es": {
       "claim": "Esta variante, que contiene el silicio como componente principal, favorece una recuperación más rápida de las lesiones cuando se toma a diario. Previene además la acidificación de los músculos y contribuye a una mejor resistencia.",
       "paragraphs": [
-        "Suspensión energizante de silicio biodisponible y 8 MINERALES seleccionados.",
-        "| | | | | --- | --- | --- | | Ingredientes | | % CDR | | Silicio (Si) como ácido silícico | 5 mg | 5% | | Zinc (Zn) como cloruro de zinc | 0,7 mg | 73% | | Selenio (Se) | 45 mcg | | | Boro (B) como ácido bórico | 0,55 mg | | | MSM | 45 mg | | | Taurina | 6,0 mg | | | Carnitina | 275 mg | | | Manganeso (Mn) | 0,5 mg | |"
+        "Suspensión energizante de silicio biodisponible y 8 MINERALES seleccionados."
       ],
       "advantages": [
         "Una recuperación más rápida de las lesiones;",
@@ -5400,13 +5509,68 @@
       ],
       "sizes": [
         "30 ml"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Composición"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Ingredientes",
+            "Cantidad",
+            "% CDR"
+          ],
+          "rows": [
+            [
+              "Silicio (Si) como ácido silícico",
+              "5 mg",
+              "5%"
+            ],
+            [
+              "Zinc (Zn) como cloruro de zinc",
+              "0,7 mg",
+              "73%"
+            ],
+            [
+              "Selenio (Se)",
+              "45 mcg",
+              ""
+            ],
+            [
+              "Boro (B) como ácido bórico",
+              "0,55 mg",
+              ""
+            ],
+            [
+              "MSM",
+              "45 mg",
+              ""
+            ],
+            [
+              "Taurina",
+              "6,0 mg",
+              ""
+            ],
+            [
+              "Carnitina",
+              "275 mg",
+              ""
+            ],
+            [
+              "Manganeso (Mn)",
+              "0,5 mg",
+              ""
+            ]
+          ]
+        }
       ]
     },
     "nl": {
       "claim": "Deze variant, met silicium als hoofdbestanddeel, zorgt bij dagelijkse inname voor een sneller herstel van blessures. Ze voorkomt ook verzuring van de spieren en zorgt voor een beter uithoudingsvermogen.",
       "paragraphs": [
-        "Geënergiseerde suspensie van biobeschikbare silica en 8 geselecteerde MINERALEN.",
-        "| | | | | --- | --- | --- | | Ingrediënten | | % ADH | | Silicium (Si) als kiezelzuur | 5 mg | 5% | | Zink (Zn) als zinkchloride | 0,7 mg | 73% | | Selenium (Se) als natriumseleniet | 45 mcg | | | Boor (B) als boorzuur | 0,55 mg | | | MSM | 45 mg | | | Taurine | 6,0 mg | | | Carnitine | 275 mg | | | Mangaan (Mn) | 0,5 mg | |"
+        "Geënergiseerde suspensie van biobeschikbare silica en 8 geselecteerde MINERALEN."
       ],
       "advantages": [
         "Sneller herstel van blessures;",
@@ -5421,13 +5585,68 @@
       ],
       "sizes": [
         "30 ml"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "Samenstelling"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Ingrediënten",
+            "Hoeveelheid",
+            "% ADH"
+          ],
+          "rows": [
+            [
+              "Silicium (Si) als kiezelzuur",
+              "5 mg",
+              "5%"
+            ],
+            [
+              "Zink (Zn) als zinkchloride",
+              "0,7 mg",
+              "73%"
+            ],
+            [
+              "Selenium (Se) als natriumseleniet",
+              "45 mcg",
+              ""
+            ],
+            [
+              "Boor (B) als boorzuur",
+              "0,55 mg",
+              ""
+            ],
+            [
+              "MSM",
+              "45 mg",
+              ""
+            ],
+            [
+              "Taurine",
+              "6,0 mg",
+              ""
+            ],
+            [
+              "Carnitine",
+              "275 mg",
+              ""
+            ],
+            [
+              "Mangaan (Mn)",
+              "0,5 mg",
+              ""
+            ]
+          ]
+        }
       ]
     },
     "ar": {
       "claim": "هذه الصيغة، التي مكوّنها الرئيسي السيليكون، تضمن تعافيًا أسرع من الإصابات عند تناولها يوميًا. كما تقي من تحمّض العضلات وتعتني بتحمّل أفضل.",
       "paragraphs": [
-        "معلّق مُنشَّط من السيليكا المتاحة حيويًا و8 معادن مختارة.",
-        "| | | | | --- | --- | --- | | المكوّنات | | % من الاحتياج اليومي | | السيليكون (Si) على شكل حمض السيليسيك | 5 ملغ | 5% | | الزنك (Zn) على شكل كلوريد الزنك | 0,7 ملغ | 73% | | السيلينيوم (Se) على شكل سيلينيت الصوديوم | 45 ميكروغرام | | | البورون (B) على شكل حمض البوريك | 0,55 ملغ | | | MSM | 45 ملغ | | | التورين | 6,0 ملغ | | | الكارنيتين | 275 ملغ | | | المنغنيز (Mn) | 0,5 ملغ | |"
+        "معلّق مُنشَّط من السيليكا المتاحة حيويًا و8 معادن مختارة."
       ],
       "advantages": [
         "تعافٍ أسرع من الإصابات؛",
@@ -5442,6 +5661,62 @@
       ],
       "sizes": [
         "30 ml"
+      ],
+      "sections": [
+        {
+          "type": "heading",
+          "text": "التركيبة"
+        },
+        {
+          "type": "table",
+          "head": [
+            "المكوّنات",
+            "الكمية",
+            "% من الاحتياج اليومي"
+          ],
+          "rows": [
+            [
+              "السيليكون (Si) على شكل حمض السيليسيك",
+              "5 ملغ",
+              "5%"
+            ],
+            [
+              "الزنك (Zn) على شكل كلوريد الزنك",
+              "0,7 ملغ",
+              "73%"
+            ],
+            [
+              "السيلينيوم (Se) على شكل سيلينيت الصوديوم",
+              "45 ميكروغرام",
+              ""
+            ],
+            [
+              "البورون (B) على شكل حمض البوريك",
+              "0,55 ملغ",
+              ""
+            ],
+            [
+              "MSM",
+              "45 ملغ",
+              ""
+            ],
+            [
+              "التورين",
+              "6,0 ملغ",
+              ""
+            ],
+            [
+              "الكارنيتين",
+              "275 ملغ",
+              ""
+            ],
+            [
+              "المنغنيز (Mn)",
+              "0,5 ملغ",
+              ""
+            ]
+          ]
+        }
       ]
     }
   },

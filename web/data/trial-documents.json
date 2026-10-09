@@ -1,0 +1,110 @@
+{
+  "_comment": "The trial reports the client sent by e-mail on 2026-10-07, published as downloads under Resources > Trial results. Titles and dates are the ones written on each document; the Domaine Louata study carries no date, so it has none here. To add one: drop the file in public/media/research/documents/, add an entry below with `bytes` set to the file size. `title` and `date` need French at minimum — the other languages fall back to it.",
+  "documents": [
+    {
+      "slug": "mais-ensilage-2016",
+      "title": {
+        "fr": "Résultats des essais sur le maïs ensilage",
+        "en": "Trial results on silage maize",
+        "es": "Resultados de los ensayos en maíz para ensilado",
+        "nl": "Proefresultaten bij snijmaïs"
+      },
+      "date": { "fr": "Mai 2016", "en": "May 2016", "es": "Mayo de 2016", "nl": "Mei 2016" },
+      "file": "/media/research/documents/mais-ensilage-2016.pdf",
+      "bytes": 4157172
+    },
+    {
+      "slug": "fraise-larache-felgar-2015",
+      "title": {
+        "fr": "Orthagrow Résultat – Fraise Fortuna, Larache (FELGAR)",
+        "en": "Orthagrow results – Fortuna strawberry, Larache (FELGAR)",
+        "es": "Resultados Orthagrow – Fresa Fortuna, Larache (FELGAR)",
+        "nl": "Orthagrow-resultaten – Fortuna-aardbei, Larache (FELGAR)"
+      },
+      "date": { "fr": "26 mars 2015", "en": "26 March 2015", "es": "26 de marzo de 2015", "nl": "26 maart 2015" },
+      "file": "/media/research/documents/fraise-larache-felgar-2015.pdf",
+      "bytes": 674675
+    },
+    {
+      "slug": "poivron-paprika-biougra-2015",
+      "title": {
+        "fr": "Orthagrow Control – Poivron Paprika, Biougra, Agadir (AGAFONTE)",
+        "en": "Orthagrow Control – Paprika pepper, Biougra, Agadir (AGAFONTE)",
+        "es": "Orthagrow Control – Pimiento pimentón, Biougra, Agadir (AGAFONTE)",
+        "nl": "Orthagrow Control – Paprika, Biougra, Agadir (AGAFONTE)"
+      },
+      "date": { "fr": "18 mars 2015", "en": "18 March 2015", "es": "18 de marzo de 2015", "nl": "18 maart 2015" },
+      "file": "/media/research/documents/poivron-paprika-biougra-2015.pdf",
+      "bytes": 951232
+    },
+    {
+      "slug": "tomate-adana-agadir-2014-2015",
+      "title": {
+        "fr": "Orthagrow Control – Tomates ADANA, Khmis Ait Amira, Agadir",
+        "en": "Orthagrow Control – ADANA tomatoes, Khmis Ait Amira, Agadir",
+        "es": "Orthagrow Control – Tomates ADANA, Khmis Ait Amira, Agadir",
+        "nl": "Orthagrow Control – ADANA-tomaten, Khmis Ait Amira, Agadir"
+      },
+      "date": {
+        "fr": "Août 2014 – mai 2015",
+        "en": "August 2014 – May 2015",
+        "es": "Agosto de 2014 – mayo de 2015",
+        "nl": "Augustus 2014 – mei 2015"
+      },
+      "file": "/media/research/documents/tomate-adana-agadir-2014-2015.pdf",
+      "bytes": 816488
+    },
+    {
+      "slug": "haricot-moraleda-agadir-2014-2015",
+      "title": {
+        "fr": "Orthagrow Control – Haricots MORALEDA, Khmis Ait Amira, Agadir",
+        "en": "Orthagrow Control – MORALEDA beans, Khmis Ait Amira, Agadir",
+        "es": "Orthagrow Control – Judías MORALEDA, Khmis Ait Amira, Agadir",
+        "nl": "Orthagrow Control – MORALEDA-bonen, Khmis Ait Amira, Agadir"
+      },
+      "date": {
+        "fr": "Novembre 2014 – mai 2015",
+        "en": "November 2014 – May 2015",
+        "es": "Noviembre de 2014 – mayo de 2015",
+        "nl": "November 2014 – mei 2015"
+      },
+      "file": "/media/research/documents/haricot-moraleda-agadir-2014-2015.pdf",
+      "bytes": 575012
+    },
+    {
+      "slug": "station-agadir-tomate-haricot-2014",
+      "title": {
+        "fr": "Essai station Agadir – Tomate et haricot",
+        "en": "Agadir station trial – Tomato and bean",
+        "es": "Ensayo en la estación de Agadir – Tomate y judía",
+        "nl": "Stationsproef Agadir – Tomaat en boon"
+      },
+      "date": { "fr": "2014", "en": "2014", "es": "2014", "nl": "2014" },
+      "file": "/media/research/documents/station-agadir-tomate-haricot-2014.png",
+      "bytes": 21229
+    },
+    {
+      "slug": "fraise-fortuna-laghzaoui-2014",
+      "title": {
+        "fr": "Orthagrow Résultat – Fraise Fortuna, Laghzaoui, Larache",
+        "en": "Orthagrow results – Fortuna strawberry, Laghzaoui, Larache",
+        "es": "Resultados Orthagrow – Fresa Fortuna, Laghzaoui, Larache",
+        "nl": "Orthagrow-resultaten – Fortuna-aardbei, Laghzaoui, Larache"
+      },
+      "date": { "fr": "22 novembre 2014", "en": "22 November 2014", "es": "22 de noviembre de 2014", "nl": "22 november 2014" },
+      "file": "/media/research/documents/fraise-fortuna-laghzaoui-2014.pdf",
+      "bytes": 863022
+    },
+    {
+      "slug": "domaine-louata-ble-silice",
+      "title": {
+        "fr": "Étude de l’importance de l’application de la silice au sol sur la productivité et la qualité du blé – Domaine Louata",
+        "en": "Study of the importance of applying silica to the soil on wheat productivity and quality – Domaine Louata",
+        "es": "Estudio de la importancia de la aplicación de sílice al suelo sobre la productividad y la calidad del trigo – Domaine Louata",
+        "nl": "Studie naar het belang van silica in de bodem voor de productiviteit en kwaliteit van tarwe – Domaine Louata"
+      },
+      "file": "/media/research/documents/domaine-louata-ble-silice.png",
+      "bytes": 26556
+    }
+  ]
+}

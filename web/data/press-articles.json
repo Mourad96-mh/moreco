@@ -1,0 +1,21 @@
+{
+  "_comment": "Press articles about Moreco, published as downloads on the media page (client's e-mail of 2026-10-07: they retype the articles a couple at a time, so more will follow). Each headline stays in the language the paper printed it in; `date` is the ISO publication date printed on the article. To add one: drop the PDF in public/media/press/ and add an entry below with `bytes` set to the file size — newest first.",
+  "articles": [
+    {
+      "slug": "aujourdhui-le-maroc-2015-11-30",
+      "outlet": "Aujourd'hui Le Maroc",
+      "title": "Fertilisants écologiques commercialisés au Maroc",
+      "date": "2015-11-30",
+      "file": "/media/press/aujourdhui-le-maroc-2015-11-30.pdf",
+      "bytes": 550207
+    },
+    {
+      "slug": "morocco-world-news-2015-08-25",
+      "outlet": "Morocco World News",
+      "title": "Kasim Chihabi: Journey from Scratch to Business Success in Morocco",
+      "date": "2015-08-25",
+      "file": "/media/press/morocco-world-news-2015-08-25.pdf",
+      "bytes": 981115
+    }
+  ]
+}

@@ -65,7 +65,9 @@ export default function ArticlePageView({ locale, view }: { locale: Locale; view
 
 function ResourcesBlock({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
-  const withSheets = PRODUCTS.filter((p) => productDatasheet(p.slug));
+  // Mavita's sheets stay on its own product pages but are not listed here (client's request
+  // of 2026-10-08): this list is for the agricultural, animal and hygiene ranges.
+  const withSheets = PRODUCTS.filter((p) => productDatasheet(p.slug) && p.range !== 'mavita');
 
   return (
     <section id="catalogues" className={s.section}>

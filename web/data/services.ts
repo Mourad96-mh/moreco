@@ -92,5 +92,9 @@ export function servicesContent(locale: Locale): ServicesContent {
 
   sections.sort((a, b) => rank(a.target) - rank(b.target));
 
-  return { introTitle, introText, sections };
+  // The general-use row ("Applications pour utilisation générale") came off at the
+  // client's request of 2026-10-08; the archive text stays in pages.json.
+  const shown = sections.filter((section) => section.target !== 'general');
+
+  return { introTitle, introText, sections: shown };
 }

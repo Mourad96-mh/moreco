@@ -6,6 +6,7 @@ import { href, articleHref } from '@/data/routes';
 import { MOROCCO_CAMPAIGNS, TRIALS } from '@/data/trials';
 import { PUBLICATIONS, articleTitle, articleExcerpt, articleDate, articlePdf } from '@/data/articles';
 import { formatDate } from '@/data/news';
+import { PUBLICATION_DOCUMENTS, publicationDocumentDate } from '@/data/publication-documents';
 import { pageHero } from '@/data/hero-images';
 import PageHeader from '@/components/PageHeader/PageHeader';
 import Reveal from '@/components/Reveal/Reveal';
@@ -137,6 +138,23 @@ export default function RdiView({ locale }: { locale: Locale }) {
                 </Reveal>
               );
             })}
+
+            {/* Papers with no page of their own: the card is the download. */}
+            {PUBLICATION_DOCUMENTS.map((doc, i) => (
+              <Reveal key={doc.slug} as="li" delay={((PUBLICATIONS.length + i) % 3) * 70} className={s.paper}>
+                <a className={s.paperLink} href={doc.file} download>
+                  <span className={s.paperMeta}>
+                    <span>{publicationDocumentDate(doc, locale)}</span>
+                    <span className={s.pdf}>
+                      {doc.file.split('.').pop()!.toUpperCase()}
+                      {doc.bytes ? ` · ${Math.round(doc.bytes / 1024)} ${t.article.sizeUnit}` : ''}
+                    </span>
+                  </span>
+                  <span className={s.paperTitle}>{doc.title}</span>
+                  <span className={s.paperExcerpt}>{doc.source}</span>
+                </a>
+              </Reveal>
+            ))}
           </ul>
         </div>
       </section>

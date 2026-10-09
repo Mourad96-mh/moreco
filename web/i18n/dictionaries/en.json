@@ -91,7 +91,7 @@
   },
   "segments": {
     "agri": {
-      "name": "Agriculture & crops",
+      "name": "Agriculture & Horticulture",
       "short": "Yield, taste and crop resilience",
       "blurb": "A unique, fully assimilable form of orthosilicic acid: improves phosphorus uptake, supports more efficient water use and contributes to better nutritional quality, higher Brix values, higher yields and a longer shelf life.",
       "introTitle": "Exclusive Stabilized OSA Technology",
@@ -175,6 +175,10 @@
     "customCta": "Contact us",
     "trialsTitle": "Trial results",
     "trialsIntro": "From the apple orchards of Midelt to turf grass, every crop documented in field photography.",
+    "trialDocumentsTitle": "Trial reports",
+    "trialDocumentsIntro": "The full write-ups of our field trials, to download.",
+    "testimonialsTitle": "Testimonials",
+    "testimonialsIntro": "What growers who tested Orthagrow on their own fields in Morocco said, in 2018 and 2019.",
     "allTrials": "All trials",
     "trialLabel": "Trial",
     "backToTrials": "Back to the trials",
@@ -212,10 +216,12 @@
     "archive": "Past events — 2014 archive.",
     "dossier": "Stand dossier",
     "sessions": "Event details",
-    "eventsTitle": "SIAM Meknès, Saudi Agriculture: our press kits and materials"
+    "eventsTitle": "SIAM Meknès, Saudi Agriculture: our press kits and materials",
+    "articlesTitle": "In the press",
+    "articlesIntro": "What the newspapers have written about Moreco."
   },
   "contact": {
-    "mobile": "Mobile",
+    "landline": "Landline",
     "formTitle": "Send us a message",
     "service": {
       "label": "Which department would you like to contact?",
@@ -320,7 +326,7 @@
     }
   },
   "footer": {
-    "company": "Moreco Sarl",
+    "company": "Moreco Maroc",
     "navTitle": "Navigation",
     "productsTitle": "Products",
     "contactTitle": "Contact",

@@ -40,13 +40,119 @@
   color: rgb(255 255 255 / 0.66);
 }
 
-.rows {
+/*
+ * The campaigns as an accordion (client, 2026-10-09): one line per campaign, its number
+ * and title, and a chevron that turns over when the panel is open on the plates.
+ */
+.trials {
   margin-top: clamp(1rem, 2vw, 2rem);
+  border-top: 1px solid var(--line);
 }
 
-/* A hairline between rows keeps seventeen of them from reading as one long column. */
-.rows > * + * {
-  border-top: 1px solid var(--line);
+.trial {
+  border-bottom: 1px solid var(--line);
+}
+
+.trialSummary {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem 0.25rem;
+  list-style: none;
+  cursor: pointer;
+}
+
+.trialSummary::-webkit-details-marker {
+  display: none;
+}
+
+.trialSummary:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 2px;
+}
+
+.trialOrder {
+  flex-shrink: 0;
+  min-width: 4.5rem;
+  font-size: var(--step--1);
+  font-weight: 600;
+  color: var(--ink-3);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.trialTitle {
+  flex: 1;
+  margin: 0;
+  font-size: var(--step-1);
+  line-height: 1.3;
+}
+
+.trialSummary:hover .trialTitle,
+.trial[open] .trialTitle {
+  color: var(--green-dark);
+}
+
+.trialChevron {
+  position: relative;
+  flex-shrink: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 2px solid var(--green);
+  border-radius: 50%;
+  transition: background-color 0.2s ease, transform 0.25s ease;
+}
+
+/* Two borders of a square, turned to point down. */
+.trialChevron::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-right: 2px solid var(--green);
+  border-bottom: 2px solid var(--green);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.trialSummary:hover .trialChevron {
+  background: rgb(64 171 92 / 0.12);
+}
+
+.trial[open] .trialChevron {
+  transform: rotate(180deg);
+}
+
+.trialBody {
+  display: grid;
+  gap: 1.25rem;
+  padding: 0.25rem 0.25rem 2rem;
+}
+
+.trialDescription {
+  max-width: 78ch;
+  margin: 0;
+  color: var(--ink-2);
+}
+
+.trialPlates {
+  display: grid;
+  gap: 1rem;
+  max-width: 1000px;
+}
+
+.trialPlate {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--paper-2);
+}
+
+.trialLink {
+  justify-self: start;
+  font-weight: 600;
 }
 
 /*
@@ -174,4 +280,119 @@
   margin-top: 1.75rem;
   padding-top: 1.25rem;
   border-top: 1px solid var(--line);
+}
+
+/* The trial reports: one card per download, the same shape as the datasheets on Resources. */
+.documents {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  gap: 0.75rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.documents li {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+
+.document {
+  display: grid;
+  gap: 0.25rem;
+  height: 100%;
+  padding: 0.9rem 1.1rem;
+  text-decoration: none;
+}
+
+.documentName {
+  font-weight: 600;
+}
+
+.documentDate {
+  font-size: 0.88rem;
+  color: var(--ink-2);
+}
+
+.documentKind {
+  font-size: 0.82rem;
+  color: var(--ink-3);
+}
+
+.document:hover .documentName {
+  color: var(--green-dark);
+  text-decoration: underline;
+}
+
+/* The growers' testimonials: two field photos over the quote, the video card among them. */
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
+  margin: clamp(1.5rem, 3vw, 2.5rem) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+}
+
+.testimonialPhotos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+}
+
+.testimonialPhotos img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.testimonialVideo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 352 / 640;
+  max-height: 34rem;
+  background: #000;
+}
+
+.testimonialBody {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 0;
+  padding: clamp(1.1rem, 2vw, 1.5rem);
+}
+
+.testimonialMeta {
+  font-size: var(--step--1);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--green-dark);
+}
+
+.testimonialQuote {
+  margin: 0;
+}
+
+.testimonialQuote p {
+  margin: 0;
+  line-height: 1.55;
+}
+
+.testimonialName {
+  margin: auto 0 0;
+  font-size: var(--step--1);
+  color: var(--ink-2);
 }

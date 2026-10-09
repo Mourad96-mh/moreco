@@ -17,7 +17,7 @@ import s from './ContactView.module.css';
  * The page used to be three cards of details and nothing else — no way to actually write
  * to anyone, and the same address the footer carries two hundred pixels below. The form
  * is the page now; the details sit beside it, and the parts the footer does not repeat
- * (the mobiles, the way through to a quote) earn their place.
+ * (the opening hours, the way through to a quote) earn their place.
  */
 export default function ContactView({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
@@ -54,17 +54,9 @@ export default function ContactView({ locale }: { locale: Locale }) {
 
             <div className={s.card}>
               <h3 className={s.cardTitle}>{t.quote.phone}</h3>
+              <p className={s.phoneLabel}>{t.contact.landline}</p>
               <ul className={s.plain}>
                 {CONTACT.phones.map((p) => (
-                  <li key={p.href}>
-                    <a href={p.href}>{p.label}</a>
-                  </li>
-                ))}
-              </ul>
-
-              <p className={s.mobileLabel}>{t.contact.mobile}</p>
-              <ul className={s.plain}>
-                {CONTACT.mobiles.map((p) => (
                   <li key={p.href}>
                     <a href={p.href}>{p.label}</a>
                   </li>

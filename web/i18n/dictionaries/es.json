@@ -91,7 +91,7 @@
   },
   "segments": {
     "agri": {
-      "name": "Agricultura y cultivos",
+      "name": "Agricultura y Horticultura",
       "short": "Rendimiento, sabor y resistencia del cultivo",
       "blurb": "Una forma única de ácido ortosilícico, totalmente asimilable: mejora la asimilación del fósforo, favorece un uso más eficiente del agua y contribuye a una mejor calidad nutricional, a mayores valores Brix, a mayores rendimientos y a una conservación más larga de las cosechas.",
       "introTitle": "Tecnología exclusiva de OSA estabilizado",
@@ -175,6 +175,10 @@
     "customCta": "Contáctenos",
     "trialsTitle": "Resultados de ensayos",
     "trialsIntro": "Del manzano de Midelt al césped, cada cultivo documentado con fotografía de campo.",
+    "trialDocumentsTitle": "Informes de ensayos",
+    "trialDocumentsIntro": "Los informes completos de nuestros ensayos de campo, para descargar.",
+    "testimonialsTitle": "Testimonios",
+    "testimonialsIntro": "Lo que dicen los productores que probaron Orthagrow en sus parcelas en Marruecos, en 2018 y 2019.",
     "allTrials": "Todos los ensayos",
     "trialLabel": "Ensayo",
     "backToTrials": "Volver a los ensayos",
@@ -212,10 +216,12 @@
     "archive": "Eventos pasados — archivo de 2014.",
     "dossier": "Dossier del estand",
     "sessions": "Detalles del evento",
-    "eventsTitle": "SIAM Meknès, Saudi Agriculture: nuestros dosieres y materiales"
+    "eventsTitle": "SIAM Meknès, Saudi Agriculture: nuestros dosieres y materiales",
+    "articlesTitle": "En la prensa",
+    "articlesIntro": "Lo que los periódicos han escrito sobre Moreco."
   },
   "contact": {
-    "mobile": "Móvil",
+    "landline": "Fijo",
     "formTitle": "Escríbanos",
     "service": {
       "label": "¿Con qué departamento desea contactar?",
@@ -320,7 +326,7 @@
     }
   },
   "footer": {
-    "company": "Moreco Sarl",
+    "company": "Moreco Maroc",
     "navTitle": "Navegación",
     "productsTitle": "Productos",
     "contactTitle": "Contacto",

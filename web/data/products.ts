@@ -41,11 +41,14 @@ export interface ProductCopy {
   sections?: CopySection[];
 }
 
-/** A two-column table: parameter and value. `head` names both columns. */
+/**
+ * A table whose first column labels the row: parameter and value, or ingredient, amount
+ * and % RDI. `head` names every column, and each row has as many cells as `head`.
+ */
 export interface CopyTable {
   type: 'table';
-  head: [string, string];
-  rows: [string, string][];
+  head: string[];
+  rows: string[][];
   /** A footnote under the table, e.g. the source of the starred values. */
   note?: string;
 }
