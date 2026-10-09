@@ -7,6 +7,7 @@ import { useState, type FormEvent } from 'react';
 import type { Locale } from '@/i18n/config';
 import { useQuote } from './QuoteProvider';
 import { requiredFieldsFilled } from '@/components/forms/requiredFields';
+import { sendForm } from '@/components/forms/sendForm';
 import s from './QuoteForm.module.css';
 
 interface CatalogueEntry {
@@ -42,13 +43,9 @@ type Labels = {
 /**
  * The quote request itself: the basket on the left, the contact form on the right.
  *
- * The site is a static export, so there is no server to post to — the request goes
- * straight to a form-mail endpoint. Set NEXT_PUBLIC_QUOTE_ENDPOINT to the Web3Forms /
- * Formspree URL; without it the form still validates and reports the failure honestly
+ * The request is mailed by the site's own PHP script (see sendForm); when that fails the form says so
  * rather than pretending to have sent.
  */
-const ENDPOINT = process.env.NEXT_PUBLIC_QUOTE_ENDPOINT ?? '';
-const ACCESS_KEY = process.env.NEXT_PUBLIC_QUOTE_ACCESS_KEY ?? '';
 
 export default function QuoteForm({
   locale,
@@ -81,21 +78,10 @@ export default function QuoteForm({
         .join('\n') || '—'
     );
     data.set('langue', locale);
-    if (ACCESS_KEY) data.set('access_key', ACCESS_KEY);
-
-    if (!ENDPOINT) {
-      setState('failed');
-      return;
-    }
 
     setState('sending');
     try {
-      const response = await fetch(ENDPOINT, {
-        method: 'POST',
-        body: data,
-        headers: { Accept: 'application/json' },
-      });
-      if (!response.ok) throw new Error(String(response.status));
+      await sendForm('devis', data);
       setState('sent');
       clear();
       form.reset();

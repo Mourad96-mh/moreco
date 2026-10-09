@@ -1,0 +1,5 @@
+# candidature-config.php holds the mailbox password, mailer.php only the code the form
+# scripts share: neither is ever served, even as source.
+<FilesMatch "^(candidature-config|mailer)">
+  Require all denied
+</FilesMatch>
