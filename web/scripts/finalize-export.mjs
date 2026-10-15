@@ -385,6 +385,7 @@ const landing = `<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Moreco</title>
+<meta name="google-site-verification" content="SROOQq4go2ALnO1e2Wfnuy5Sx1cwkWfHSc1bmrdopKo">
 <link rel="canonical" href="${SITE}/${DEFAULT}/">
 ${LOCALES.map((l) => `<link rel="alternate" hreflang="${l}" href="${SITE}/${l}/">`).join('\n')}
 <link rel="alternate" hreflang="x-default" href="${SITE}/${DEFAULT}/">

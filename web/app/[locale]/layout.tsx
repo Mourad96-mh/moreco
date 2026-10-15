@@ -53,6 +53,8 @@ export async function generateMetadata(): Promise<Metadata> {
       description: t.site.description,
       locale: LOCALE_HREFLANG[value],
     },
+    // Search Console ownership (URL-prefix property https://moreco.ma/).
+    verification: { google: 'SROOQq4go2ALnO1e2Wfnuy5Sx1cwkWfHSc1bmrdopKo' },
   };
 }
 

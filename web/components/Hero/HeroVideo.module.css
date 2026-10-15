@@ -21,6 +21,13 @@
  * the heavy foot that was only ever there to carry a headline.
  */
 .bare {
+  /*
+   * Exactly one screen: the header floats over the film, so the section starts at the
+   * top of the viewport. svh is the height with the phone's address bar showing, so the
+   * film never hides under it; vh is the fallback for browsers without svh.
+   */
+  min-height: 100vh;
+  min-height: 100svh;
   padding-block: calc(var(--topbar-h) + var(--header-h)) 0;
 }
 
@@ -144,9 +151,9 @@
     padding-block: calc(var(--header-h) + 3.5rem) 3.5rem;
   }
 
-  /* No text to set the height, so keep a cinematic band rather than a strip of padding. */
   .bare {
-    min-height: clamp(360px, 58vh, 520px);
+    min-height: 100vh;
+    min-height: 100svh;
     padding-block: var(--header-h) 0;
   }
 
