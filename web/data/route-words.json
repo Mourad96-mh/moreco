@@ -1,18 +1,6 @@
 {
   "_comment": "Localised URL words. Shared by data/routes.ts (which builds the routes) and scripts/finalize-export.mjs (which translates a built path into its siblings for the sitemap). Keep them in one place so the two can never drift. Arabic was withdrawn on 2026-09-17, so every word here is Latin: the export is a tree of real directories on Hostinger and no segment ships percent-encoded.",
   "words": {
-    "technology": {
-      "fr": "technologie-aos",
-      "en": "aos-technology",
-      "es": "tecnologia-aos",
-      "nl": "aos-technologie"
-    },
-    "solutions": {
-      "fr": "solutions-par-culture",
-      "en": "crop-solutions",
-      "es": "soluciones-por-cultivo",
-      "nl": "oplossingen-per-teelt"
-    },
     "products": {
       "fr": "produits",
       "en": "products",

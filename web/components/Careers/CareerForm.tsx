@@ -5,7 +5,6 @@ import { useRef, useState, type FormEvent } from 'react';
 import type { Locale } from '@/i18n/config';
 import { requiredFieldsFilled } from '@/components/forms/requiredFields';
 import { sendForm } from '@/components/forms/sendForm';
-import { track } from '@/components/analytics/track';
 import s from './CareerForm.module.css';
 
 /**
@@ -98,7 +97,6 @@ export default function CareerForm({ locale, labels }: { locale: Locale; labels:
     try {
       await sendForm('candidature', data);
       setState('sent');
-      track('job_application', { language: locale });
       form.reset();
       setCvName(null);
     } catch {

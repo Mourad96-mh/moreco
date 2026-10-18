@@ -7,8 +7,6 @@ import { ALL_ROUTES, resolveRoute, translationsOf, type Route } from '@/data/rou
 import { getProduct, getRange, productName } from '@/data/products';
 import { getTrial, trialTitle, trialDescription } from '@/data/trials';
 import { getArticle, articleTitle, articleExcerpt } from '@/data/articles';
-import { SEO_OVERRIDES } from '@/data/seo';
-import { AOS_TECHNOLOGY, getCropSolution } from '@/data/crop-solutions';
 
 import HomeView from '@/views/HomeView';
 import ProductsView from '@/views/ProductsView';
@@ -27,7 +25,6 @@ import PressView from '@/views/PressView';
 import KnowledgeView from '@/views/KnowledgeView';
 import ContactView from '@/views/ContactView';
 import ArticlePageView from '@/views/ArticlePageView';
-import { TechnologyView, SolutionsIndexView, SolutionView } from '@/views/SolutionsView';
 
 /**
  * Every page of the site is rendered from here. A static export cannot run middleware,
@@ -51,8 +48,7 @@ function seoFor(route: Route, locale: Locale) {
 
   switch (route.view) {
     case 'home':
-      // The client's own Google title and description since the SEO briefing of 2026-10-18.
-      return { title: t.site.homeTitle, description: t.site.homeDescription, absolute: true };
+      return { title: `${t.site.name} — ${t.site.tagline}`, description: t.site.description, absolute: true };
     case 'products':
       return { title: t.pages.products.title, description: t.pages.products.lead };
     case 'segment': {
@@ -87,14 +83,6 @@ function seoFor(route: Route, locale: Locale) {
     }
     case 'quote':
       return { title: t.quote.title, description: t.quote.intro };
-    case 'technology':
-      return { ...AOS_TECHNOLOGY.seo, absolute: true };
-    case 'solutions':
-      return { title: t.solutions.title, description: t.solutions.lead };
-    case 'solution': {
-      const crop = getCropSolution(route.params.crop!);
-      return crop ? { ...crop.seo, absolute: true } : { title: t.solutions.title, description: t.solutions.lead };
-    }
     default: {
       const page = t.pages[route.view as keyof typeof t.pages];
       return page ? { title: page.title, description: page.lead } : { title: t.site.name, description: t.site.description };
@@ -108,8 +96,7 @@ export async function generateMetadata(props: PageProps<'/[locale]/[[...path]]'>
   const route = resolveRoute(raw, path ?? []);
   if (!route) return {};
 
-  const override = SEO_OVERRIDES[route.key]?.[raw];
-  const seo = override ? { ...override, absolute: true } : seoFor(route, raw);
+  const seo = seoFor(route, raw);
   const alternates = translationsOf(route.key);
 
   return {
@@ -169,12 +156,6 @@ export default async function Page(props: PageProps<'/[locale]/[[...path]]'>) {
       return <ContactView locale={locale} />;
     case 'article':
       return <KnowledgeArticleView locale={locale} slug={route.params.article!} />;
-    case 'technology':
-      return <TechnologyView locale={locale} />;
-    case 'solutions':
-      return <SolutionsIndexView locale={locale} />;
-    case 'solution':
-      return <SolutionView locale={locale} slug={route.params.crop!} />;
     default:
       return <ArticlePageView locale={locale} view={route.view} />;
   }

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import type { Locale } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionary';
 import { href, trialHref } from '@/data/routes';
-import { TRIALS, trialTitle } from '@/data/trials';
+import { TRIALS, trialTitle, trialDescription } from '@/data/trials';
 import { TESTIMONIALS, TESTIMONIAL_VIDEO, localized } from '@/data/testimonials';
 import { TRIAL_DOCUMENTS, trialDocumentTitle, trialDocumentDate } from '@/data/trial-documents';
 import { pageHero } from '@/data/hero-images';
@@ -23,10 +23,10 @@ import s from './RdiView.module.css';
  * The same briefing struck two campaigns off, plums and raspberries, and the seventeen
  * that remain were renumbered so the list counts without a gap.
  *
- * Since 2026-10-10 the campaigns are a grid of cards: the client found the seventeen-line
- * accordion that replaced the full list on 2026-10-09 still too long. Each card is the
- * campaign's first plate, its number and its title, and opens the campaign's own page,
- * where the description and every plate are.
+ * Since the client's e-mail of 2026-10-09 the campaigns are an accordion: only the titles
+ * show, and a click on one unrolls its description and plates. A native <details>, as in
+ * FamilyNote — no script, and the plates stay in the page for search engines. Each
+ * campaign keeps its own page, linked from the bottom of its panel.
  *
  * Under the campaigns, the growers' testimonials from the client's 2018–2019 deck, then
  * the reports themselves as downloads (client's e-mail of
@@ -57,28 +57,42 @@ export default function TrialsView({ locale }: { locale: Locale }) {
             <p className="lead">{t.rdi.trialsIntro}</p>
           </Reveal>
 
-          <ul className={s.trials}>
-            {TRIALS.map((trial, i) => (
-              <Reveal key={trial.slug} as="li" delay={(i % 4) * 60}>
-                <Link href={trialHref(locale, trial.slug)} className={s.trial} id={trial.slug}>
-                  {trial.images[0] && (
-                    <Image
-                      src={trial.images[0]}
-                      alt=""
-                      width={751}
-                      height={531}
-                      sizes="(min-width: 1200px) 280px, (min-width: 640px) 45vw, 100vw"
-                      className={s.trialPlate}
-                    />
-                  )}
-                  <span className={s.trialOrder}>
-                    {t.rdi.trialLabel} {String(trial.order).padStart(2, '0')}
-                  </span>
-                  <h3 className={s.trialTitle}>{trialTitle(trial, locale)}</h3>
-                </Link>
-              </Reveal>
-            ))}
-          </ul>
+          <div className={s.trials}>
+            {TRIALS.map((trial) => {
+              const title = trialTitle(trial, locale);
+              return (
+                <details key={trial.slug} className={s.trial} id={trial.slug}>
+                  <summary className={s.trialSummary}>
+                    <span className={s.trialOrder}>
+                      {t.rdi.trialLabel} {String(trial.order).padStart(2, '0')}
+                    </span>
+                    <h3 className={s.trialTitle}>{title}</h3>
+                    <span className={s.trialChevron} aria-hidden="true" />
+                  </summary>
+
+                  <div className={s.trialBody}>
+                    <p className={s.trialDescription}>{trialDescription(trial, locale)}</p>
+                    <div className={s.trialPlates}>
+                      {trial.images.map((image, i) => (
+                        <Image
+                          key={image}
+                          src={image}
+                          alt={`${title} — ${i + 1}`}
+                          width={1400}
+                          height={900}
+                          sizes="(min-width: 1100px) 1000px, 100vw"
+                          className={s.trialPlate}
+                        />
+                      ))}
+                    </div>
+                    <Link href={trialHref(locale, trial.slug)} className={s.trialLink}>
+                      {t.rdi.projectDescription}
+                    </Link>
+                  </div>
+                </details>
+              );
+            })}
+          </div>
         </div>
       </section>
 

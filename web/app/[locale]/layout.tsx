@@ -13,8 +13,6 @@ import {
   type Locale,
 } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionary';
-import { GA_MEASUREMENT_ID } from '@/data/analytics';
-import LinkTracker from '@/components/analytics/LinkTracker';
 import { QuoteProvider } from '@/components/Quote/QuoteProvider';
 import SiteHeader from '@/components/Header/SiteHeader';
 import SiteFooter from '@/components/Footer/SiteFooter';
@@ -93,17 +91,6 @@ export default async function RootLayout({ children }: LayoutProps<'/[locale]'>)
         <script
           dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }}
         />
-        {/* GA4, on every page and language once data/analytics.ts holds an ID. */}
-        {GA_MEASUREMENT_ID && (
-          <>
-            <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} />
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_MEASUREMENT_ID}');`,
-              }}
-            />
-          </>
-        )}
       </head>
       <body suppressHydrationWarning>
         <QuoteProvider>
@@ -113,7 +100,6 @@ export default async function RootLayout({ children }: LayoutProps<'/[locale]'>)
           <SiteHeader locale={locale} />
           <main id="main">{children}</main>
           <SiteFooter locale={locale} />
-          {GA_MEASUREMENT_ID && <LinkTracker />}
         </QuoteProvider>
       </body>
     </html>

@@ -5,10 +5,9 @@ import Link from 'next/link';
 import { useState, type FormEvent } from 'react';
 
 import type { Locale } from '@/i18n/config';
-import { MAX_QUANTITY, useQuote } from './QuoteProvider';
+import { useQuote } from './QuoteProvider';
 import { requiredFieldsFilled } from '@/components/forms/requiredFields';
 import { sendForm } from '@/components/forms/sendForm';
-import { track } from '@/components/analytics/track';
 import s from './QuoteForm.module.css';
 
 interface CatalogueEntry {
@@ -84,12 +83,6 @@ export default function QuoteForm({
     try {
       await sendForm('devis', data);
       setState('sent');
-      track('generate_lead', {
-        form: 'devis',
-        products: selection.length,
-        units: selection.reduce((sum, l) => sum + l.quantity, 0),
-        language: locale,
-      });
       clear();
       form.reset();
     } catch {
@@ -151,9 +144,12 @@ export default function QuoteForm({
                     <p className={s.lineName}>{line.product?.name ?? line.slug}</p>
                     <label className={s.qty}>
                       <span className="visually-hidden">{labels.quantity}</span>
-                      <QuantityInput
+                      <input
+                        type="number"
+                        min={1}
+                        max={999}
                         value={line.quantity}
-                        onChange={(q) => setQuantity(line.slug, q)}
+                        onChange={(e) => setQuantity(line.slug, Number(e.target.value))}
                       />
                     </label>
                   </div>
@@ -246,38 +242,6 @@ function Field({
       </span>
       <input type={type} name={name} required={required} autoComplete={autoComplete} />
     </label>
-  );
-}
-
-/**
- * Keeps what is typed as text, so the field can be emptied to type a new number; the basket only takes
- * whole numbers of at least 1, and leaving the field with nothing valid puts the last quantity back.
- */
-function QuantityInput({ value, onChange }: { value: number; onChange: (quantity: number) => void }) {
-  const [draft, setDraft] = useState(String(value));
-  const [synced, setSynced] = useState(value);
-
-  // Follow changes made elsewhere (adding the same product again, for instance).
-  if (value !== synced) {
-    setSynced(value);
-    setDraft(String(value));
-  }
-
-  return (
-    <input
-      type="number"
-      inputMode="numeric"
-      min={1}
-      max={MAX_QUANTITY}
-      value={draft}
-      onChange={(e) => {
-        const text = e.target.value;
-        setDraft(text);
-        const n = Number(text);
-        if (text !== '' && Number.isFinite(n) && n >= 1) onChange(n);
-      }}
-      onBlur={() => setDraft(String(value))}
-    />
   );
 }
 

@@ -10,8 +10,6 @@ import {
   type ReactNode,
 } from 'react';
 
-import { track } from '@/components/analytics/track';
-
 /**
  * The "demande de devis" basket, modelled on casem.ma: products are collected as the
  * visitor browses, the header shows the count, and /devis turns the list into a request.
@@ -38,9 +36,6 @@ interface QuoteContextValue {
 
 const STORAGE_KEY = 'moreco.quote.v1';
 
-/** Large orders (pallets, tonnes) are common, so the cap is only a guard against typos. */
-export const MAX_QUANTITY = 99999;
-
 const QuoteContext = createContext<QuoteContextValue | null>(null);
 
 function read(): QuoteLine[] {
@@ -54,7 +49,7 @@ function read(): QuoteLine[] {
         (l): l is QuoteLine =>
           !!l && typeof (l as QuoteLine).slug === 'string' && Number.isFinite((l as QuoteLine).quantity)
       )
-      .map((l) => ({ slug: l.slug, quantity: Math.max(1, Math.min(MAX_QUANTITY, Math.round(l.quantity))) }));
+      .map((l) => ({ slug: l.slug, quantity: Math.max(1, Math.min(999, Math.round(l.quantity))) }));
   } catch {
     // Private mode, blocked storage, corrupted value: start from an empty basket.
     return [];
@@ -80,12 +75,11 @@ export function QuoteProvider({ children }: { children: ReactNode }) {
   }, [lines, ready]);
 
   const add = useCallback((slug: string, quantity = 1) => {
-    track('add_to_quote', { item_id: slug, quantity });
     setLines((current) => {
       const found = current.find((l) => l.slug === slug);
       if (!found) return [...current, { slug, quantity }];
       return current.map((l) =>
-        l.slug === slug ? { ...l, quantity: Math.min(MAX_QUANTITY, l.quantity + quantity) } : l
+        l.slug === slug ? { ...l, quantity: Math.min(999, l.quantity + quantity) } : l
       );
     });
   }, []);
@@ -95,7 +89,7 @@ export function QuoteProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const setQuantity = useCallback((slug: string, quantity: number) => {
-    const q = Math.max(1, Math.min(MAX_QUANTITY, Math.round(quantity)));
+    const q = Math.max(1, Math.min(999, Math.round(quantity)));
     setLines((current) => current.map((l) => (l.slug === slug ? { ...l, quantity: q } : l)));
   }, []);
 

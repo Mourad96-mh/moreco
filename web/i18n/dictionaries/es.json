@@ -3,8 +3,6 @@
     "name": "Moreco",
     "tagline": "Silicio biodisponible para plantas, animales y personas",
     "description": "Moreco produce y distribuye una forma patentada de silicio biológicamente activo y totalmente asimilable (OSA) para la agricultura, la ganadería y la salud humana, además de la desinfección ecológica con peróxido de hidrógeno.",
-    "homeTitle": "Moreco — Silicio biodisponible para plantas, animales y personas",
-    "homeDescription": "Moreco produce y distribuye una forma patentada de silicio biológicamente activo y totalmente asimilable (OSA) para la agricultura, la ganadería y la salud humana, además de la desinfección ecológica con peróxido de hidrógeno.",
     "signature": "One World. One Health."
   },
   "nav": {
@@ -19,8 +17,6 @@
     "catalogues": "Fichas de producto",
     "applications": "Aplicaciones de los productos",
     "cropSheets": "Fichas de cultivo",
-    "technology": "Tecnología A.O.S.",
-    "solutions": "Cultivos",
     "knowledge": "Centro de conocimiento",
     "trials": "Resultados de ensayos",
     "innovation": "Innovación",
@@ -402,19 +398,5 @@
       "Animal"
     ],
     "postsTitle": "Noticias"
-  },
-  "solutions": {
-    "title": "Soluciones por cultivo",
-    "lead": "Las respuestas de la gama Orthagrow, cultivo por cultivo, a las limitaciones de la agricultura marroquí: calor, sequía, salinidad.",
-    "all": "Todas las soluciones por cultivo",
-    "vegetables": "Hortalizas y frutos rojos",
-    "orchards": "Arboricultura",
-    "faq": "Preguntas frecuentes",
-    "range": "La gama Orthagrow en este cultivo",
-    "trial": "Ver los resultados del ensayo",
-    "discover": "Descubrir",
-    "orthagrow": "Ver la gama Orthagrow",
-    "technologyCta": "Descubrir la tecnología A.O.S.",
-    "technologyLead": "Ácido ortosilícico estabilizado: el silicio biológicamente activo de la gama Orthagrow."
   }
 }

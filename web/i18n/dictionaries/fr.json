@@ -3,8 +3,6 @@
     "name": "Moreco",
     "tagline": "Le silicium biodisponible pour les plantes, les animaux et les humains",
     "description": "Moreco produit et distribue une forme brevetée de silicium biologiquement actif et entièrement assimilable (OSA) pour l'agriculture, l'élevage et la santé humaine, ainsi que la désinfection écologique au peroxyde d'hydrogène.",
-    "homeTitle": "MORECO | Solutions Stress Thermique, Sécheresse & Salinité",
-    "homeDescription": "Optimisez la résilience de l'agriculture marocaine. Notre acide orthosilicique renforce les cultures face au stress hydrique en situation extrême.",
     "signature": "One World. One Health."
   },
   "nav": {
@@ -19,8 +17,6 @@
     "catalogues": "Fiches produits",
     "applications": "Applications produits",
     "cropSheets": "Fiches culturales",
-    "technology": "Technologie A.O.S.",
-    "solutions": "Solutions par culture",
     "knowledge": "Centre de connaissances",
     "trials": "Résultats d'essais",
     "innovation": "Innovation",
@@ -402,19 +398,5 @@
       "Animal"
     ],
     "postsTitle": "Actualités"
-  },
-  "solutions": {
-    "title": "Solutions par culture",
-    "lead": "Les réponses de la gamme Orthagrow, culture par culture, aux contraintes de l’agriculture marocaine : chaleur, sécheresse, salinité.",
-    "all": "Toutes les solutions par culture",
-    "vegetables": "Maraîchage & petits fruits",
-    "orchards": "Arboriculture",
-    "faq": "Questions fréquentes",
-    "range": "La gamme Orthagrow sur cette culture",
-    "trial": "Voir les résultats d’essai",
-    "discover": "Découvrir",
-    "orthagrow": "Voir la gamme Orthagrow",
-    "technologyCta": "Découvrir la technologie A.O.S.",
-    "technologyLead": "Acide orthosilicique stabilisé : le silicium biologiquement actif de la gamme Orthagrow."
   }
 }

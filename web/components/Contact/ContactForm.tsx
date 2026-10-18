@@ -5,7 +5,6 @@ import { useState, type FormEvent } from 'react';
 import type { Locale } from '@/i18n/config';
 import { requiredFieldsFilled } from '@/components/forms/requiredFields';
 import { sendForm } from '@/components/forms/sendForm';
-import { track } from '@/components/analytics/track';
 import s from './ContactForm.module.css';
 
 /**
@@ -58,7 +57,6 @@ export default function ContactForm({
     try {
       await sendForm('contact', data);
       setState('sent');
-      track('contact_submit', { department: String(data.get('service') ?? ''), language: locale });
       form.reset();
     } catch {
       setState('failed');

@@ -3,8 +3,6 @@
     "name": "Moreco",
     "tagline": "Biobeschikbaar silicium voor planten, dieren en mensen",
     "description": "Moreco produceert en verdeelt een gepatenteerde vorm van biologisch actief en volledig opneembaar silicium (OSA) voor land- en tuinbouw, veehouderij en de menselijke gezondheid, aangevuld met ecologische desinfectie op basis van waterstofperoxide.",
-    "homeTitle": "Moreco — Biobeschikbaar silicium voor planten, dieren en mensen",
-    "homeDescription": "Moreco produceert en verdeelt een gepatenteerde vorm van biologisch actief en volledig opneembaar silicium (OSA) voor land- en tuinbouw, veehouderij en de menselijke gezondheid, aangevuld met ecologische desinfectie op basis van waterstofperoxide.",
     "signature": "One World. One Health."
   },
   "nav": {
@@ -19,8 +17,6 @@
     "catalogues": "Productfiches",
     "applications": "Producttoepassingen",
     "cropSheets": "Teeltfiches",
-    "technology": "A.O.S.-technologie",
-    "solutions": "Oplossingen per teelt",
     "knowledge": "Kenniscentrum",
     "trials": "Proefresultaten",
     "innovation": "Innovatie",
@@ -402,19 +398,5 @@
       "Dier"
     ],
     "postsTitle": "Nieuws"
-  },
-  "solutions": {
-    "title": "Oplossingen per teelt",
-    "lead": "Wat het Orthagrow-gamma per teelt doet tegen de beperkingen van de Marokkaanse landbouw: hitte, droogte, verzilting.",
-    "all": "Alle oplossingen per teelt",
-    "vegetables": "Groenteteelt & kleinfruit",
-    "orchards": "Fruitteelt",
-    "faq": "Veelgestelde vragen",
-    "range": "Het Orthagrow-gamma in deze teelt",
-    "trial": "Bekijk de proefresultaten",
-    "discover": "Ontdekken",
-    "orthagrow": "Bekijk het Orthagrow-gamma",
-    "technologyCta": "Ontdek de A.O.S.-technologie",
-    "technologyLead": "Gestabiliseerd orthokiezelzuur: het biologisch actieve silicium van het Orthagrow-gamma."
   }
 }

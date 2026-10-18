@@ -3,8 +3,6 @@
     "name": "Moreco",
     "tagline": "Bioavailable silicon for plants, animals and human",
     "description": "Moreco produces and distributes a patented, biologically active and fully absorbable form of silicon (OSA) for agriculture, livestock and human health, alongside ecological disinfection with hydrogen peroxide.",
-    "homeTitle": "MORECO | Crop Solutions for Drought, Salt & Heat Stress",
-    "homeDescription": "Combat climate stress in Moroccan agriculture. Our bioavailable silicon strengthens plant resistance to severe drought, high salinity, and extreme heat.",
     "signature": "One World. One Health."
   },
   "nav": {
@@ -19,8 +17,6 @@
     "catalogues": "Product sheets",
     "applications": "Product applications",
     "cropSheets": "Crop sheets",
-    "technology": "A.O.S. Technology",
-    "solutions": "Crop solutions",
     "knowledge": "Knowledge centre",
     "trials": "Trial results",
     "innovation": "Innovation",
@@ -402,19 +398,5 @@
       "Animals"
     ],
     "postsTitle": "News"
-  },
-  "solutions": {
-    "title": "Crop solutions",
-    "lead": "What the Orthagrow range does, crop by crop, against the constraints of Moroccan farming: heat, drought, salinity.",
-    "all": "All crop solutions",
-    "vegetables": "Vegetables & soft fruit",
-    "orchards": "Fruit trees",
-    "faq": "Frequently asked questions",
-    "range": "The Orthagrow range on this crop",
-    "trial": "See the trial results",
-    "discover": "Discover",
-    "orthagrow": "See the Orthagrow range",
-    "technologyCta": "Discover A.O.S. technology",
-    "technologyLead": "Stabilised orthosilicic acid: the biologically active silicon of the Orthagrow range."
   }
 }
