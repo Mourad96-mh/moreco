@@ -8,6 +8,7 @@ import type { Locale } from '@/i18n/config';
 import { MAX_QUANTITY, useQuote } from './QuoteProvider';
 import { requiredFieldsFilled } from '@/components/forms/requiredFields';
 import { sendForm } from '@/components/forms/sendForm';
+import { track } from '@/components/analytics/track';
 import s from './QuoteForm.module.css';
 
 interface CatalogueEntry {
@@ -83,6 +84,12 @@ export default function QuoteForm({
     try {
       await sendForm('devis', data);
       setState('sent');
+      track('generate_lead', {
+        form: 'devis',
+        products: selection.length,
+        units: selection.reduce((sum, l) => sum + l.quantity, 0),
+        language: locale,
+      });
       clear();
       form.reset();
     } catch {

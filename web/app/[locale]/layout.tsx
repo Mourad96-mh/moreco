@@ -14,6 +14,7 @@ import {
 } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionary';
 import { GA_MEASUREMENT_ID } from '@/data/analytics';
+import LinkTracker from '@/components/analytics/LinkTracker';
 import { QuoteProvider } from '@/components/Quote/QuoteProvider';
 import SiteHeader from '@/components/Header/SiteHeader';
 import SiteFooter from '@/components/Footer/SiteFooter';
@@ -112,6 +113,7 @@ export default async function RootLayout({ children }: LayoutProps<'/[locale]'>)
           <SiteHeader locale={locale} />
           <main id="main">{children}</main>
           <SiteFooter locale={locale} />
+          {GA_MEASUREMENT_ID && <LinkTracker />}
         </QuoteProvider>
       </body>
     </html>

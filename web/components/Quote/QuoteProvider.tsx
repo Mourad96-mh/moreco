@@ -10,6 +10,8 @@ import {
   type ReactNode,
 } from 'react';
 
+import { track } from '@/components/analytics/track';
+
 /**
  * The "demande de devis" basket, modelled on casem.ma: products are collected as the
  * visitor browses, the header shows the count, and /devis turns the list into a request.
@@ -78,6 +80,7 @@ export function QuoteProvider({ children }: { children: ReactNode }) {
   }, [lines, ready]);
 
   const add = useCallback((slug: string, quantity = 1) => {
+    track('add_to_quote', { item_id: slug, quantity });
     setLines((current) => {
       const found = current.find((l) => l.slug === slug);
       if (!found) return [...current, { slug, quantity }];
