@@ -37,7 +37,7 @@ export default function SegmentView({ locale, segment }: { locale: Locale; segme
   const families = familiesOf(segment);
 
   const grid = (list: Product[], soon = false) => (
-    <div className={s.grid}>
+    <div className={segment === 'general' ? `${s.grid} ${s.gridCentered}` : s.grid}>
       {list.map((product, i) => (
         <Reveal key={product.slug} delay={i * 50}>
           <ProductCard product={product} locale={locale} />

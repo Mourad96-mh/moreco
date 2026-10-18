@@ -78,11 +78,11 @@
       },
       {
         "value": "2001",
-        "label": "Aanwezig in Marokko sinds"
+        "label": "Eerste proef in Marokko"
       },
       {
-        "value": "2014",
-        "label": "Aanwezig in Agadir sinds"
+        "value": "2012",
+        "label": "Aanwezig in Marokko sinds"
       }
     ],
     "quoteTitle": "Een concrete vraag? Vraag uw offerte aan",
@@ -156,13 +156,11 @@
   },
   "rdi": {
     "title": "Onderzoek & Ontwikkeling Moreco",
-    "intro": "Sinds 2009 ontwikkelt en test Moreco zijn siliciumoplossingen onder praktijkomstandigheden, samen met Marokkaanse telers en officiële instituten.",
+    "intro": "Sinds 2012 ontwikkelt en test Moreco zijn oplossingen op basis van silicium onder praktijkomstandigheden, in samenwerking met Marokkaanse telers en officiële instituten.",
     "innovationTitle": "Innovatie",
     "innovationLead": "Innovatie in dienst van landbouwprestaties",
     "innovationText": [
-      "Innovatie staat centraal in de aanpak van Moreco. Sinds 2009 investeert ons bedrijf in onderzoek naar en ontwikkeling van biotechnologische oplossingen voor de landbouw.",
-      "Onze R&D-afdeling ontwikkelt en optimaliseert innovatieve formuleringen op basis van geavanceerde technologieën, met bijzondere aandacht voor hun agronomische werkzaamheid, hun opname door de plant en hun invloed op de kwaliteit van de oogst.",
-      "Ons team werkt nauw samen met telers en onderzoeksinstituten om onze oplossingen onder praktijkomstandigheden te ontwerpen, te testen en te verbeteren. Elke formulering doorloopt een strikt traject dat haar kwaliteit, prestaties en constante resultaten in het gebruik moet waarborgen."
+      "Bij Moreco geeft innovatie vorm aan de toekomst van de landbouw. Sinds 2012 investeren we gericht in de ontwikkeling van hoogwaardige biotechnologische oplossingen. Met onze R&D-experts en partners ontwerpen en optimaliseren we geavanceerde formuleringen die rechtstreeks bijdragen aan uw rendabiliteit. Onze prioriteit is een maximale agronomische werkzaamheid, een superieure opname door de gewassen en een aantoonbaar betere oogstkwaliteit. In nauwe samenwerking met innovatieve telers en toonaangevende onderzoeksinstituten testen en verfijnen we onze producten onder praktijkomstandigheden. Dankzij dit strikte kwaliteitscontroleproces garanderen we constante prestaties en betrouwbare resultaten in het veld."
     ],
     "customTitle": "Een formulering of product op maat nodig?",
     "customText": [
@@ -185,7 +183,7 @@
     "projectDescription": "Projectbeschrijving",
     "statTrialsWorld": "Proefcampagnes wereldwijd",
     "statTrials": "Gedocumenteerde campagnes in Marokko",
-    "statPlates": "Resultatenplaten",
+    "statPlates": "Resultatenfiches",
     "statSince": "Eerste campagne",
     "publicationsIntro": "De studies en het wetenschappelijke interview waarop onze formuleringen steunen, vrij te downloaden."
   },
@@ -199,17 +197,11 @@
     "contactLead": "Onze teams beantwoorden technische en commerciële vragen.",
     "introTitle": "Wetenschappelijke innovatie in dienst van regeneratieve landbouw",
     "introText": [
-      "Moreco ontwikkelt, selecteert en optimaliseert geavanceerde agronomische technologieën die bijdragen aan regeneratieve landbouw en aan een efficiëntere, duurzame landbouwproductie.",
-      "Onze expertise omvat onder meer plantenfysiologie, gestabiliseerd orthokiezelzuur (OSA), precisievoeding, bodemgezondheid, biostimulatie, efficiënt watergebruik en het versterken van de fysiologische weerbaarheid van gewassen.",
-      "We selecteren en ontwikkelen technologieën op basis van hun wetenschappelijke relevantie, hun technologische waarde en hun toepasbaarheid in het veld. Zo bieden we professionals in de landbouw oplossingen om de wisselwerking tussen bodem, wortelzone en plant te optimaliseren.",
-      "Onze aanpak berust op een geïntegreerde visie: een levende, gezonde bodem bevordert een krachtig wortelstelsel, een goed functionerende plant en uiteindelijk een kwaliteitsvolle, efficiëntere en duurzame productie."
+      "Moreco selecteert en optimaliseert geavanceerde technologieën voor regeneratieve landbouw en duurzame productie. In nauwe samenwerking met de ontwikkelaars van de wereldwijd gepatenteerde OSA-formulering versterken we de plantenfysiologie en de efficiëntie van het watergebruik. Zo maximaliseren we de synergie tussen de bodemmatrix, de rizosfeer en het gewas. Een biologisch actieve bodem bevordert een krachtig wortelstelsel, wat zich vertaalt in fysiologisch superieure gewassen en duurzame opbrengsten voor de toekomst."
     ],
     "visionTitle": "Onze visie",
     "vision": [
-      "Levende, vruchtbare en functionele bodems.",
-      "Gezonde, robuuste en weerbare gewassen.",
-      "Kwaliteitsvolle, renderende en duurzame productie.",
-      "Een landbouw gebouwd op innovatie, wetenschap en duurzaamheid."
+      "Unlock the power of soil biology to reduce input costs & boost crop yield."
     ]
   },
   "press": {

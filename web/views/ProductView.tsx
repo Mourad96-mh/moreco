@@ -61,7 +61,9 @@ export default function ProductView({ locale, slug }: { locale: Locale; slug: st
           { label: t.site.name, href: href(locale, 'home') },
           { label: t.nav.products, href: href(locale, 'products') },
           { label: t.segments[product.segment].name, href: segmentHref(locale, product.segment) },
-          ...(range ? [{ label: range.name, href: rangeHref(locale, range.slug) }] : []),
+          ...(range && productsOfRange(range.slug).length > 0
+            ? [{ label: range.name, href: rangeHref(locale, range.slug) }]
+            : []),
         ]}
       />
 

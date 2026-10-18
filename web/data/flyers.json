@@ -1,4 +1,641 @@
 {
-  "_comment": "Culture flyers for Resources > Product applications. The client's briefing of 2026-09-17 asks for the flyers they sent by e-mail to be published here; the attachments had not reached the repository when that briefing was applied, so the list is empty and the section does not render. To publish them: drop each PDF in public/media/flyers/, add an entry below, and run `node scripts/measure-media.mjs` if the byte count is wanted. `title` needs French at minimum — the other languages fall back to it.",
-  "flyers": []
+  "_comment": "The crop sheets of Resources > Crop sheets, in the order of the client's e-mail of 2026-10-18 (\"tekst below each exact flyer culture\"). Each crop carries the client's text; the flyer itself sits above it once it reaches us: drop the PDF in public/media/flyers/ and set `file`, and optionally a preview picture in `image`. Until then the card shows the text alone. In all four languages: French as the client wrote it, English, Spanish and Dutch translated by us. Sugar beet (no. 14 in the e-mail) came without any text and is left out until it has some; the citrus closing was cut off in the source and ends on its last complete clause.",
+  "flyers": [
+    {
+      "slug": "palmier-dattier",
+      "title": {
+        "fr": "Palmier dattier",
+        "en": "Date palm",
+        "es": "Palmera datilera",
+        "nl": "Dadelpalm"
+      },
+      "latin": "Phoenix dactylifera",
+      "text": {
+        "fr": [
+          "Maximalisez l’efficience physiologique et le rendement qualitatif de votre phéniciculture grâce à la gamme complète Orthagrow.",
+          "Le métabolisme et le bilan hydrique interne sont soutenus de manière optimale lors des phases phénologiques critiques sous l’effet de stress climatiques, hydriques et salins extrêmes. Grâce à la capacité d’échange cationique (CEC) élevée de nos produits, les nutriments essentiels bénéficient d’un effet tampon optimal dans le sol et sont protégés du lessivage, tandis que la stimulation de la rhizosphère initie une prolifération de 700 à 1000 fois plus de poils absorbants fonctionnels, permettant une augmentation de 40 % de l’absorption du phosphore. Cette maximisation de la biodisponibilité nutritionnelle et de la régulation osmotique induit une augmentation substantielle du taux de nouaison, minimise l’abscission gémellaire/la chute des fruits et protège directement le palmier contre une salinité sévère du sol. De plus, la gamme réduit de 30 % le besoin en intrants chimiques ainsi que la présence de résidus délétères, tout en stimulant la division cellulaire pour l’obtention de calibres supérieurs, d’un indice Brix plus élevé et d’une augmentation significative des valeurs nutritionnelles du fruit.",
+          "Choisissez la gamme Orthagrow : optimisez votre volume de récolte et la qualité nutritionnelle sous l’effet de stress thermiques, salins et hydriques sévères, et transformez votre plantation en un écosystème résilient et hautement productif, générant des dattes de qualité export premium."
+        ],
+        "en": [
+          "Maximise the physiological efficiency and the quality yield of your date palm plantation with the complete Orthagrow range.",
+          "Metabolism and internal water balance are optimally supported during critical phenological phases under extreme climatic, water and salt stress. Thanks to the high cation exchange capacity (CEC) of our products, essential nutrients are optimally buffered in the soil and protected from leaching, while stimulation of the rhizosphere triggers the growth of 700 to 1,000 times more functional root hairs, raising phosphorus uptake by 40%. This maximised nutrient bioavailability and osmotic regulation substantially increase fruit set, minimise twin-fruit abscission and fruit drop, and directly protect the palm against severe soil salinity. The range also cuts the need for chemical inputs and harmful residues by 30%, while stimulating cell division for larger fruit sizes, a higher Brix index and a significant rise in the fruit's nutritional value.",
+          "Choose the Orthagrow range: optimise your harvest volume and nutritional quality under severe heat, salt and water stress, and turn your plantation into a resilient, highly productive ecosystem that yields premium export-quality dates."
+        ],
+        "es": [
+          "Maximice la eficiencia fisiológica y el rendimiento cualitativo de su cultivo de palmera datilera con la gama completa Orthagrow.",
+          "El metabolismo y el balance hídrico interno reciben un apoyo óptimo durante las fases fenológicas críticas bajo un estrés climático, hídrico y salino extremo. Gracias a la elevada capacidad de intercambio catiónico (CIC) de nuestros productos, los nutrientes esenciales quedan óptimamente amortiguados en el suelo y protegidos de la lixiviación, mientras que la estimulación de la rizosfera desencadena el desarrollo de 700 a 1000 veces más pelos absorbentes funcionales, lo que aumenta un 40 % la absorción de fósforo. Esta máxima biodisponibilidad de nutrientes y regulación osmótica aumenta sustancialmente el cuajado, minimiza la abscisión de frutos gemelos y la caída de frutos, y protege directamente la palmera frente a una salinidad severa del suelo. Además, la gama reduce un 30 % la necesidad de insumos químicos y la presencia de residuos nocivos, a la vez que estimula la división celular para obtener calibres mayores, un índice Brix más alto y un aumento significativo del valor nutricional del fruto.",
+          "Elija la gama Orthagrow: optimice su volumen de cosecha y la calidad nutricional bajo un estrés térmico, salino e hídrico severo, y convierta su plantación en un ecosistema resiliente y altamente productivo que produce dátiles de calidad de exportación premium."
+        ],
+        "nl": [
+          "Maximaliseer de fysiologische efficiëntie en de kwalitatieve opbrengst van uw dadelpalmteelt met het volledige Orthagrow-gamma.",
+          "Het metabolisme en de interne waterhuishouding worden optimaal ondersteund tijdens kritieke fenologische fasen onder extreme klimaat-, water- en zoutstress. Dankzij de hoge kationenuitwisselingscapaciteit (CEC) van onze producten worden essentiële voedingsstoffen optimaal gebufferd in de bodem en beschermd tegen uitspoeling, terwijl de stimulatie van de rizosfeer de groei van 700 tot 1000 keer meer functionele wortelharen op gang brengt, wat de fosforopname met 40 % verhoogt. Deze maximale biologische beschikbaarheid van voedingsstoffen en osmotische regulatie verhogen de vruchtzetting aanzienlijk, beperken de afstoting van tweelingvruchten en vruchtval tot een minimum en beschermen de palm rechtstreeks tegen ernstige bodemverzilting. Daarnaast verlaagt het gamma de behoefte aan chemische inputs en schadelijke residuen met 30 %, terwijl de celdeling wordt gestimuleerd voor grotere kalibers, een hogere Brix-index en een aanzienlijk hogere voedingswaarde van de vrucht.",
+          "Kies voor het Orthagrow-gamma: optimaliseer uw oogstvolume en voedingskwaliteit onder zware hitte-, zout- en waterstress, en maak van uw plantage een veerkrachtig, zeer productief ecosysteem dat dadels van premium exportkwaliteit oplevert."
+        ]
+      }
+    },
+    {
+      "slug": "myrtille",
+      "title": {
+        "fr": "Myrtille",
+        "en": "Blueberry",
+        "es": "Arándano",
+        "nl": "Blauwe bes"
+      },
+      "latin": "Vaccinium corymbosum",
+      "text": {
+        "fr": [
+          "Grâce à l’application biologique avancée de notre topline liquide et de nos amendements nutritionnels du sol, la plante est protégée de façon optimale durant les phases critiques de croissance et de production sous de fortes contraintes de stress climatiques, hydriques et salins. Par une stimulation ciblée de la rhizosphère, la culture développe 700 à 1000 fois plus de poils absorbants fonctionnels, ce qui entraîne une augmentation de 40 % de l’absorption du phosphore pour un métabolisme énergétique maximal dans des conditions physiologiques sévères. Cette efficience nutritionnelle supérieure et une régulation osmotique améliorée réduisent le craquellement (cracking) et la chute abiotique des fruits jusqu’à 50 %. Même sous une pression abiotique extrême, la culture maintient sa vitalité, garantissant une maturation homogène et une fermeté optimale des baies.",
+          "Choisissez la gamme Orthagrow et transformez votre plantation en un écosystème résilient et hautement productif, générant des myrtilles de qualité export premium."
+        ],
+        "en": [
+          "Through the advanced biological application of our liquid topline and our soil nutrition amendments, the plant is optimally protected during the critical growth and production phases under heavy climatic, water and salt stress. Targeted stimulation of the rhizosphere lets the crop develop 700 to 1,000 times more functional root hairs, raising phosphorus uptake by 40% for maximum energy metabolism under severe physiological conditions. This superior nutrient efficiency and improved osmotic regulation reduce cracking and abiotic fruit drop by up to 50%. Even under extreme abiotic pressure the crop keeps its vitality, ensuring even ripening and optimal berry firmness.",
+          "Choose the Orthagrow range and turn your plantation into a resilient, highly productive ecosystem that yields premium export-quality blueberries."
+        ],
+        "es": [
+          "Gracias a la aplicación biológica avanzada de nuestra topline líquida y de nuestras enmiendas nutricionales del suelo, la planta queda protegida de forma óptima durante las fases críticas de crecimiento y producción bajo fuertes condiciones de estrés climático, hídrico y salino. Mediante una estimulación específica de la rizosfera, el cultivo desarrolla de 700 a 1000 veces más pelos absorbentes funcionales, lo que aumenta un 40 % la absorción de fósforo para un metabolismo energético máximo en condiciones fisiológicas severas. Esta eficiencia nutricional superior y una mejor regulación osmótica reducen el agrietado (cracking) y la caída abiótica de frutos hasta en un 50 %. Incluso bajo una presión abiótica extrema, el cultivo mantiene su vitalidad, garantizando una maduración homogénea y una firmeza óptima de las bayas.",
+          "Elija la gama Orthagrow y convierta su plantación en un ecosistema resiliente y altamente productivo que produce arándanos de calidad de exportación premium."
+        ],
+        "nl": [
+          "Dankzij de geavanceerde biologische toepassing van onze vloeibare topline en onze bodemverbeteraars wordt de plant optimaal beschermd tijdens de kritieke groei- en productiefasen onder zware klimaat-, water- en zoutstress. Door een gerichte stimulatie van de rizosfeer ontwikkelt het gewas 700 tot 1000 keer meer functionele wortelharen, wat de fosforopname met 40 % verhoogt voor een maximaal energiemetabolisme onder zware fysiologische omstandigheden. Deze hogere voedingsefficiëntie en verbeterde osmotische regulatie verminderen barsten (cracking) en abiotische vruchtval met tot 50 %. Zelfs onder extreme abiotische druk behoudt het gewas zijn vitaliteit, met een gelijkmatige afrijping en een optimale stevigheid van de bessen.",
+          "Kies voor het Orthagrow-gamma en maak van uw plantage een veerkrachtig, zeer productief ecosysteem dat blauwe bessen van premium exportkwaliteit oplevert."
+        ]
+      }
+    },
+    {
+      "slug": "avocatier",
+      "title": {
+        "fr": "Avocatier",
+        "en": "Avocado",
+        "es": "Aguacate",
+        "nl": "Avocado"
+      },
+      "latin": "Persea americana",
+      "text": {
+        "fr": [
+          "Maximalisez l’efficience physiologique et la tolérance au stress de votre culture d’avocats grâce à la technologie brevetée OSA d’Orthagrow.",
+          "Cette formule avancée à base d’acide orthosilicique biologiquement actif renforce de manière systémique la structure cellulaire et les défenses endogènes de l’avocatier. Son application ciblée optimise la rhizosphère, stimule le système racinaire actif et minimise l’asphyxie radiculaire ainsi que la pression pathogène. Par le dépôt de silicium dans les parois cellulaires, Orthagrow régule la conductance stomatique et protège les arbres contre les chocs osmotiques induits par les stress thermiques, salins et hydriques. Cela prévient la chute physiologique des fruits et garantit une activité photosynthétique continue durant les phases critiques de la floraison et de la nouaison.",
+          "Le résultat se traduit par un indice de qualité supérieur : des avocats parfaitement calibrés avec une teneur en matière sèche accrue, une structure cellulaire plus ferme et une durée de conservation (shelf-life) significativement prolongée."
+        ],
+        "en": [
+          "Maximise the physiological efficiency and stress tolerance of your avocado crop with Orthagrow's patented OSA technology.",
+          "This advanced formula based on biologically active orthosilicic acid systemically strengthens the avocado tree's cell structure and endogenous defences. Its targeted application optimises the rhizosphere, stimulates the active root system and minimises root asphyxia and pathogen pressure. By depositing silicon in the cell walls, Orthagrow regulates stomatal conductance and protects the trees against osmotic shocks caused by heat, salt and water stress. This prevents physiological fruit drop and ensures continuous photosynthetic activity during the critical flowering and fruit-set phases.",
+          "The result is a superior quality index: perfectly sized avocados with a higher dry-matter content, a firmer cell structure and a significantly longer shelf life."
+        ],
+        "es": [
+          "Maximice la eficiencia fisiológica y la tolerancia al estrés de su cultivo de aguacate con la tecnología patentada OSA de Orthagrow.",
+          "Esta fórmula avanzada a base de ácido ortosilícico biológicamente activo refuerza de forma sistémica la estructura celular y las defensas endógenas del aguacate. Su aplicación específica optimiza la rizosfera, estimula el sistema radicular activo y minimiza la asfixia radicular y la presión de patógenos. Mediante el depósito de silicio en las paredes celulares, Orthagrow regula la conductancia estomática y protege los árboles frente a los choques osmóticos provocados por el estrés térmico, salino e hídrico. Esto previene la caída fisiológica de frutos y garantiza una actividad fotosintética continua durante las fases críticas de floración y cuajado.",
+          "El resultado es un índice de calidad superior: aguacates de calibre perfecto con un mayor contenido de materia seca, una estructura celular más firme y una vida útil (shelf-life) significativamente más larga."
+        ],
+        "nl": [
+          "Maximaliseer de fysiologische efficiëntie en de stresstolerantie van uw avocadoteelt met de gepatenteerde OSA-technologie van Orthagrow.",
+          "Deze geavanceerde formule op basis van biologisch actief orthokiezelzuur versterkt systemisch de celstructuur en de eigen afweer van de avocadoboom. De gerichte toepassing optimaliseert de rizosfeer, stimuleert het actieve wortelstelsel en beperkt wortelverstikking en ziektedruk tot een minimum. Door de afzetting van silicium in de celwanden reguleert Orthagrow de huidmondjesgeleiding en beschermt het de bomen tegen osmotische schokken door hitte-, zout- en waterstress. Dit voorkomt fysiologische vruchtval en zorgt voor een ononderbroken fotosynthese tijdens de kritieke bloei en vruchtzetting.",
+          "Het resultaat is een hogere kwaliteitsindex: perfect gekalibreerde avocado's met een hoger drogestofgehalte, een stevigere celstructuur en een aanzienlijk langere houdbaarheid (shelf-life)."
+        ]
+      }
+    },
+    {
+      "slug": "fraisier",
+      "title": {
+        "fr": "Fraisier",
+        "en": "Strawberry",
+        "es": "Fresa",
+        "nl": "Aardbei"
+      },
+      "latin": "Fragaria ananassa",
+      "text": {
+        "fr": [
+          "Maximalisez l’efficience physiologique et le rendement qualitatif de votre fraisiculture grâce à la gamme complète Orthagrow.",
+          "Le métabolisme est soutenu de manière optimale lors des phases phénologiques critiques sous l’effet de stress abiotiques climatiques, hydriques et salins. Par la stimulation de la rhizosphère, la culture initie une prolifération de 700 à 1000 fois plus de poils absorbants fonctionnels, entraînant une hausse de 40 % de l’absorption du phosphore pour une synthèse supérieure d’ATP. Cette efficience nutritionnelle accrue réduit jusqu’à 50 % les désordres physiologiques tels que l’albinisme et la nécrose marginale des feuilles (tipburn). De plus, la gamme induit une résistance systémique contre les champignons pathogènes tels que Botrytis cinerea et Podosphaera aphanis, ce qui se traduit par une réduction de 30 % de vos intrants chimiques.",
+          "Choisissez la gamme Orthagrow : prolongez la durée de conservation de 6 jours grâce à une dégradation minimale post-récolte, et transformez votre plantation en un écosystème résilient et hautement productif, générant des fraises de qualité export premium."
+        ],
+        "en": [
+          "Maximise the physiological efficiency and the quality yield of your strawberry crop with the complete Orthagrow range.",
+          "Metabolism is optimally supported during critical phenological phases under abiotic climatic, water and salt stress. Stimulation of the rhizosphere triggers the growth of 700 to 1,000 times more functional root hairs, raising phosphorus uptake by 40% for greater ATP synthesis. This higher nutrient efficiency reduces physiological disorders such as albinism and leaf-edge necrosis (tipburn) by up to 50%. The range also induces systemic resistance against pathogenic fungi such as Botrytis cinerea and Podosphaera aphanis, which translates into a 30% reduction in your chemical inputs.",
+          "Choose the Orthagrow range: extend shelf life by 6 days through minimal post-harvest decay, and turn your plantation into a resilient, highly productive ecosystem that yields premium export-quality strawberries."
+        ],
+        "es": [
+          "Maximice la eficiencia fisiológica y el rendimiento cualitativo de su cultivo de fresas con la gama completa Orthagrow.",
+          "El metabolismo recibe un apoyo óptimo durante las fases fenológicas críticas bajo un estrés abiótico climático, hídrico y salino. Mediante la estimulación de la rizosfera, el cultivo desarrolla de 700 a 1000 veces más pelos absorbentes funcionales, lo que aumenta un 40 % la absorción de fósforo para una mayor síntesis de ATP. Esta mayor eficiencia nutricional reduce hasta en un 50 % los trastornos fisiológicos como el albinismo y la necrosis marginal de las hojas (tipburn). Además, la gama induce una resistencia sistémica frente a hongos patógenos como Botrytis cinerea y Podosphaera aphanis, lo que se traduce en una reducción del 30 % de sus insumos químicos.",
+          "Elija la gama Orthagrow: prolongue la vida útil 6 días gracias a una degradación poscosecha mínima, y convierta su plantación en un ecosistema resiliente y altamente productivo que produce fresas de calidad de exportación premium."
+        ],
+        "nl": [
+          "Maximaliseer de fysiologische efficiëntie en de kwalitatieve opbrengst van uw aardbeienteelt met het volledige Orthagrow-gamma.",
+          "Het metabolisme wordt optimaal ondersteund tijdens kritieke fenologische fasen onder abiotische klimaat-, water- en zoutstress. Door de stimulatie van de rizosfeer komt de groei van 700 tot 1000 keer meer functionele wortelharen op gang, wat de fosforopname met 40 % verhoogt voor een hogere ATP-synthese. Deze hogere voedingsefficiëntie vermindert fysiologische afwijkingen zoals albinisme en randnecrose van de bladeren (tipburn) met tot 50 %. Daarnaast wekt het gamma systemische resistentie op tegen pathogene schimmels zoals Botrytis cinerea en Podosphaera aphanis, wat zich vertaalt in 30 % minder chemische inputs.",
+          "Kies voor het Orthagrow-gamma: verleng de houdbaarheid met 6 dagen dankzij minimaal bederf na de oogst, en maak van uw plantage een veerkrachtig, zeer productief ecosysteem dat aardbeien van premium exportkwaliteit oplevert."
+        ]
+      }
+    },
+    {
+      "slug": "olivier",
+      "title": {
+        "fr": "Olivier",
+        "en": "Olive",
+        "es": "Olivo",
+        "nl": "Olijf"
+      },
+      "latin": "Olea europaea",
+      "text": {
+        "fr": [
+          "Maximalisez l’efficience physiologique et le rendement qualitatif de votre oléiculture grâce à la gamme complète Orthagrow.",
+          "Le métabolisme et le bilan hydrique interne sont soutenus de manière optimale lors des phases phénologiques critiques sous l’effet de stress climatiques, hydriques et salins extrêmes. Grâce à la capacité d’échange cationique (CEC) élevée de nos produits, les nutriments essentiels bénéficient d’un effet tampon optimal dans le sol et sont protégés du lessivage, tandis que la stimulation de la rhizosphère initie une prolifération de 700 à 1000 fois plus de poils absorbants fonctionnels pour une absorption du phosphore supérieure de 40 %. Cette biodisponibilité maximale des nutriments favorise une floraison et une nouaison uniformes, minimise la chute abiotique des fruits et offre une solution physiologique directe contre la sécheresse extrême, la chaleur et la salinisation. De même, la gamme réduit de 30 % le besoin en intrants chimiques et la présence de résidus nocifs, tandis que l’accumulation lipidique enzymatique est directement stimulée pour un taux d’extraction d’huile supérieur et une diminution significative des acides gras libres (indice d’acidité).",
+          "Choisissez la gamme Orthagrow : optimisez votre rendement en huile et la pureté de celle-ci sous de forts stress thermiques, salins et hydriques, et transformez votre plantation en un écosystème résilient et hautement productif avec une récolte de qualité premium."
+        ],
+        "en": [
+          "Maximise the physiological efficiency and the quality yield of your olive grove with the complete Orthagrow range.",
+          "Metabolism and internal water balance are optimally supported during critical phenological phases under extreme climatic, water and salt stress. Thanks to the high cation exchange capacity (CEC) of our products, essential nutrients are optimally buffered in the soil and protected from leaching, while stimulation of the rhizosphere triggers the growth of 700 to 1,000 times more functional root hairs for 40% higher phosphorus uptake. This maximum nutrient bioavailability promotes even flowering and fruit set, minimises abiotic fruit drop and offers a direct physiological answer to extreme drought, heat and salinisation. The range also cuts the need for chemical inputs and harmful residues by 30%, while enzymatic lipid accumulation is directly stimulated for a higher oil extraction rate and a significant reduction in free fatty acids (acidity index).",
+          "Choose the Orthagrow range: optimise your oil yield and its purity under strong heat, salt and water stress, and turn your plantation into a resilient, highly productive ecosystem with a premium-quality harvest."
+        ],
+        "es": [
+          "Maximice la eficiencia fisiológica y el rendimiento cualitativo de su olivar con la gama completa Orthagrow.",
+          "El metabolismo y el balance hídrico interno reciben un apoyo óptimo durante las fases fenológicas críticas bajo un estrés climático, hídrico y salino extremo. Gracias a la elevada capacidad de intercambio catiónico (CIC) de nuestros productos, los nutrientes esenciales quedan óptimamente amortiguados en el suelo y protegidos de la lixiviación, mientras que la estimulación de la rizosfera desencadena el desarrollo de 700 a 1000 veces más pelos absorbentes funcionales para una absorción de fósforo un 40 % mayor. Esta máxima biodisponibilidad de nutrientes favorece una floración y un cuajado uniformes, minimiza la caída abiótica de frutos y ofrece una solución fisiológica directa frente a la sequía extrema, el calor y la salinización. Asimismo, la gama reduce un 30 % la necesidad de insumos químicos y la presencia de residuos nocivos, mientras que la acumulación enzimática de lípidos se estimula directamente para un mayor rendimiento de extracción de aceite y una disminución significativa de los ácidos grasos libres (índice de acidez).",
+          "Elija la gama Orthagrow: optimice su rendimiento en aceite y la pureza de este bajo un fuerte estrés térmico, salino e hídrico, y convierta su plantación en un ecosistema resiliente y altamente productivo con una cosecha de calidad premium."
+        ],
+        "nl": [
+          "Maximaliseer de fysiologische efficiëntie en de kwalitatieve opbrengst van uw olijventeelt met het volledige Orthagrow-gamma.",
+          "Het metabolisme en de interne waterhuishouding worden optimaal ondersteund tijdens kritieke fenologische fasen onder extreme klimaat-, water- en zoutstress. Dankzij de hoge kationenuitwisselingscapaciteit (CEC) van onze producten worden essentiële voedingsstoffen optimaal gebufferd in de bodem en beschermd tegen uitspoeling, terwijl de stimulatie van de rizosfeer de groei van 700 tot 1000 keer meer functionele wortelharen op gang brengt voor een 40 % hogere fosforopname. Deze maximale biologische beschikbaarheid van voedingsstoffen bevordert een gelijkmatige bloei en vruchtzetting, beperkt abiotische vruchtval tot een minimum en biedt een rechtstreekse fysiologische oplossing tegen extreme droogte, hitte en verzilting. Daarnaast verlaagt het gamma de behoefte aan chemische inputs en schadelijke residuen met 30 %, terwijl de enzymatische vetopbouw rechtstreeks wordt gestimuleerd voor een hoger oliegehalte bij de extractie en een aanzienlijke daling van de vrije vetzuren (zuurgraad).",
+          "Kies voor het Orthagrow-gamma: optimaliseer uw olieopbrengst en de zuiverheid ervan onder zware hitte-, zout- en waterstress, en maak van uw plantage een veerkrachtig, zeer productief ecosysteem met een oogst van premiumkwaliteit."
+        ]
+      }
+    },
+    {
+      "slug": "vigne",
+      "title": {
+        "fr": "Vigne",
+        "en": "Grapevine",
+        "es": "Vid",
+        "nl": "Wijnstok"
+      },
+      "latin": "Vitis vinifera",
+      "text": {
+        "fr": [
+          "Maximalisez l’efficience physiologique, l’homogénéité des grappes et le potentiel de fermentation de votre viticulture grâce à la gamme complète Orthagrow.",
+          "La gamme Orthagrow Topline offre une solution physiologique directe pour protéger de façon optimale vos vignes par effet tampon lors des phases critiques de la floraison, de la nouaison et de la maturation (véraison) sous l’effet de stress thermiques, hydriques et salins extrêmes. Grâce à une CEC élevée, les nutriments sont ancrés de manière optimale dans le sol contre le lessivage, tandis que la stimulation active de la rhizosphère assure le développement de 700 à 1000 fois plus de poils absorbants fonctionnels et une augmentation de 40 % de l’absorption du phosphore pour une énergie cellulaire maximale (ATP). Cela optimise la pression de turgor et le flux de sève, ce qui minimise la chute abiotique des baies, renforce l’architecture des grappes et assure un équilibre sucre/acide optimal (°Brix) requis pour une fermentation stable. De plus, l’acide orthosilicique assimilable (OSA) active le système immunitaire endogène de la plante et renforce les parois cellulaires d’un bouclier physiologique protecteur contre Plasmopara viticola (mildiou) et Botrytis cinerea (pourriture grise), réduisant directement vos intrants chimiques et résidus de 40 %.",
+          "Choisissez la gamme Orthagrow : optimisez la qualité de vos grappes et le volume de récolte sous de lourds stress abiotiques, et transformez votre vignoble en un écosystème résilient et hautement productif pour une récolte premium."
+        ],
+        "en": [
+          "Maximise the physiological efficiency, bunch uniformity and fermentation potential of your vineyard with the complete Orthagrow range.",
+          "The Orthagrow Topline range offers a direct physiological solution that optimally buffers and protects your vines during the critical phases of flowering, fruit set and ripening (veraison) under extreme heat, water and salt stress. Thanks to a high CEC, nutrients are optimally anchored in the soil against leaching, while active stimulation of the rhizosphere develops 700 to 1,000 times more functional root hairs and raises phosphorus uptake by 40% for maximum cellular energy (ATP). This optimises turgor pressure and sap flow, which minimises abiotic berry drop, strengthens bunch architecture and ensures the optimal sugar/acid balance (°Brix) needed for a stable fermentation. In addition, plant-available orthosilicic acid (OSA) activates the plant's endogenous immune system and reinforces the cell walls with a protective physiological shield against Plasmopara viticola (downy mildew) and Botrytis cinerea (grey mould), directly cutting your chemical inputs and residues by 40%.",
+          "Choose the Orthagrow range: optimise bunch quality and harvest volume under heavy abiotic stress, and turn your vineyard into a resilient, highly productive ecosystem for a premium harvest."
+        ],
+        "es": [
+          "Maximice la eficiencia fisiológica, la homogeneidad de los racimos y el potencial de fermentación de su viñedo con la gama completa Orthagrow.",
+          "La gama Orthagrow Topline ofrece una solución fisiológica directa que amortigua y protege de forma óptima sus vides durante las fases críticas de floración, cuajado y maduración (envero) bajo un estrés térmico, hídrico y salino extremo. Gracias a una CIC elevada, los nutrientes quedan óptimamente anclados en el suelo frente a la lixiviación, mientras que la estimulación activa de la rizosfera desarrolla de 700 a 1000 veces más pelos absorbentes funcionales y aumenta un 40 % la absorción de fósforo para una energía celular máxima (ATP). Esto optimiza la presión de turgencia y el flujo de savia, lo que minimiza la caída abiótica de bayas, refuerza la arquitectura de los racimos y garantiza el equilibrio óptimo azúcar/acidez (°Brix) necesario para una fermentación estable. Además, el ácido ortosilícico asimilable (OSA) activa el sistema inmunitario endógeno de la planta y refuerza las paredes celulares con un escudo fisiológico protector frente a Plasmopara viticola (mildiu) y Botrytis cinerea (podredumbre gris), reduciendo directamente sus insumos químicos y residuos en un 40 %.",
+          "Elija la gama Orthagrow: optimice la calidad de sus racimos y el volumen de cosecha bajo un fuerte estrés abiótico, y convierta su viñedo en un ecosistema resiliente y altamente productivo para una cosecha premium."
+        ],
+        "nl": [
+          "Maximaliseer de fysiologische efficiëntie, de homogeniteit van de trossen en het fermentatiepotentieel van uw wijngaard met het volledige Orthagrow-gamma.",
+          "Het Orthagrow Topline-gamma biedt een rechtstreekse fysiologische oplossing die uw wijnstokken optimaal buffert en beschermt tijdens de kritieke fasen van bloei, vruchtzetting en afrijping (veraison) onder extreme hitte-, water- en zoutstress. Dankzij een hoge CEC worden voedingsstoffen optimaal in de bodem verankerd tegen uitspoeling, terwijl de actieve stimulatie van de rizosfeer zorgt voor 700 tot 1000 keer meer functionele wortelharen en een 40 % hogere fosforopname voor maximale celenergie (ATP). Dit optimaliseert de turgordruk en de sapstroom, wat abiotische bessenval tot een minimum beperkt, de architectuur van de trossen versterkt en zorgt voor de optimale suiker-zuurbalans (°Brix) die nodig is voor een stabiele gisting. Daarnaast activeert opneembaar orthokiezelzuur (OSA) het eigen immuunsysteem van de plant en versterkt het de celwanden met een beschermend fysiologisch schild tegen Plasmopara viticola (valse meeldauw) en Botrytis cinerea (grauwe schimmel), wat uw chemische inputs en residuen rechtstreeks met 40 % vermindert.",
+          "Kies voor het Orthagrow-gamma: optimaliseer de kwaliteit van uw trossen en uw oogstvolume onder zware abiotische stress, en maak van uw wijngaard een veerkrachtig, zeer productief ecosysteem voor een premium oogst."
+        ]
+      }
+    },
+    {
+      "slug": "agrumes",
+      "title": {
+        "fr": "Agrumes",
+        "en": "Citrus",
+        "es": "Cítricos",
+        "nl": "Citrus"
+      },
+      "latin": "Citrus spp.",
+      "text": {
+        "fr": [
+          "Maximalisez l’efficience physiologique, le calibre des fruits et le rendement commercial de votre agrumiculture grâce à la gamme complète Orthagrow.",
+          "La gamme Orthagrow Topline offre la solution physiologique directe pour protéger de façon optimale vos agrumes par effet tampon durant les phases critiques de la floraison et du développement des fruits sous l’effet d’une chaleur extrême, du stress hydrique et de la salinité du sol. Grâce à sa capacité d’échange cationique (CEC) élevée, les macro- et micronutriments essentiels sont ancrés de manière optimale dans le sol contre le lessivage, tandis que la stimulation active de la rhizosphère assure la formation de 700 à 1000 fois plus de poils absorbants fonctionnels et une augmentation de 40 % de l’absorption du phosphore pour une énergie cellulaire maximale (synthèse d’ATP). Cette efficience nutritionnelle supérieure et cette pression de turgor stimulent une floraison homogène, des calibres plus grands (taille des fruits) ainsi qu’une synchronisation stable de la production. Sur le plan physiologique, l’acide orthosilicique assimilable (OSA) régule l’élasticité de la paroi cellulaire au niveau de l’albédo et du flavédo, ce qui prévient efficacement le décollement de l’écorce (puffing et creasing), optimise le flux de sève pour une augmentation du rendement en jus de +11 % et accroît l’accumulation des sucres jusqu’à obtenir une valeur Brix supérieure de +8 %.",
+          "Choisissez la gamme Orthagrow : maximalisez votre rendement en jus, la synchronisation des sucres et le calibre des fruits sous de lourds stress thermiques, salins et hydriques, et transformez votre verger d’agrumes en un écosystème résilient et hautement productif."
+        ],
+        "en": [
+          "Maximise the physiological efficiency, fruit size and marketable yield of your citrus orchard with the complete Orthagrow range.",
+          "The Orthagrow Topline range offers the direct physiological solution that optimally buffers and protects your citrus trees during the critical phases of flowering and fruit development under extreme heat, water stress and soil salinity. Thanks to its high cation exchange capacity (CEC), essential macro- and micronutrients are optimally anchored in the soil against leaching, while active stimulation of the rhizosphere forms 700 to 1,000 times more functional root hairs and raises phosphorus uptake by 40% for maximum cellular energy (ATP synthesis). This superior nutrient efficiency and turgor pressure promote even flowering, larger fruit sizes and stable synchronisation of production. Physiologically, plant-available orthosilicic acid (OSA) regulates cell-wall elasticity in the albedo and flavedo, which effectively prevents rind separation (puffing and creasing), optimises sap flow for an 11% increase in juice yield and raises sugar accumulation to an 8% higher Brix value.",
+          "Choose the Orthagrow range: maximise your juice yield, sugar synchronisation and fruit size under heavy heat, salt and water stress, and turn your citrus orchard into a resilient, highly productive ecosystem."
+        ],
+        "es": [
+          "Maximice la eficiencia fisiológica, el calibre de los frutos y el rendimiento comercial de su cultivo de cítricos con la gama completa Orthagrow.",
+          "La gama Orthagrow Topline ofrece la solución fisiológica directa que amortigua y protege de forma óptima sus cítricos durante las fases críticas de floración y desarrollo del fruto bajo un calor extremo, estrés hídrico y salinidad del suelo. Gracias a su elevada capacidad de intercambio catiónico (CIC), los macro y micronutrientes esenciales quedan óptimamente anclados en el suelo frente a la lixiviación, mientras que la estimulación activa de la rizosfera forma de 700 a 1000 veces más pelos absorbentes funcionales y aumenta un 40 % la absorción de fósforo para una energía celular máxima (síntesis de ATP). Esta eficiencia nutricional superior y la presión de turgencia estimulan una floración homogénea, calibres mayores y una sincronización estable de la producción. En el plano fisiológico, el ácido ortosilícico asimilable (OSA) regula la elasticidad de la pared celular en el albedo y el flavedo, lo que previene eficazmente el despegue de la corteza (puffing y creasing), optimiza el flujo de savia para un aumento del 11 % del rendimiento en zumo y eleva la acumulación de azúcares hasta un valor Brix un 8 % superior.",
+          "Elija la gama Orthagrow: maximice su rendimiento en zumo, la sincronización de los azúcares y el calibre de los frutos bajo un fuerte estrés térmico, salino e hídrico, y convierta su huerto de cítricos en un ecosistema resiliente y altamente productivo."
+        ],
+        "nl": [
+          "Maximaliseer de fysiologische efficiëntie, het vruchtkaliber en de handelsopbrengst van uw citrusteelt met het volledige Orthagrow-gamma.",
+          "Het Orthagrow Topline-gamma biedt de rechtstreekse fysiologische oplossing die uw citrusbomen optimaal buffert en beschermt tijdens de kritieke fasen van bloei en vruchtontwikkeling onder extreme hitte, waterstress en bodemverzilting. Dankzij de hoge kationenuitwisselingscapaciteit (CEC) worden essentiële macro- en micronutriënten optimaal in de bodem verankerd tegen uitspoeling, terwijl de actieve stimulatie van de rizosfeer zorgt voor 700 tot 1000 keer meer functionele wortelharen en een 40 % hogere fosforopname voor maximale celenergie (ATP-synthese). Deze hogere voedingsefficiëntie en turgordruk bevorderen een gelijkmatige bloei, grotere kalibers en een stabiele synchronisatie van de productie. Fysiologisch reguleert opneembaar orthokiezelzuur (OSA) de elasticiteit van de celwand in het albedo en flavedo, wat het loskomen van de schil (puffing en creasing) doeltreffend voorkomt, de sapstroom optimaliseert voor 11 % meer sapopbrengst en de suikeropbouw verhoogt tot een 8 % hogere Brix-waarde.",
+          "Kies voor het Orthagrow-gamma: maximaliseer uw sapopbrengst, de synchronisatie van de suikers en het vruchtkaliber onder zware hitte-, zout- en waterstress, en maak van uw citrusboomgaard een veerkrachtig, zeer productief ecosysteem."
+        ]
+      }
+    },
+    {
+      "slug": "haricot-vert",
+      "title": {
+        "fr": "Haricot vert",
+        "en": "Green bean",
+        "es": "Judía verde",
+        "nl": "Sperzieboon"
+      },
+      "latin": "Phaseolus vulgaris",
+      "text": {
+        "fr": [
+          "Maximalisez l’efficience physiologique, l’homogénéité des gousses et l’indice de biomasse de votre culture de haricots grâce à la gamme complète Orthagrow.",
+          "La gamme Orthagrow Topline offre la solution physiologique directe pour protéger de façon optimale vos plants de haricots par effet tampon durant les phases critiques de la floraison, de la nouaison et de l’élongation des gousses sous l’effet de stress thermiques, hydriques et salins extrêmes. Via une CEC maximisée, la gamme ancre les macro- et micronutriments dans le sol contre le lessivage, tandis que la stimulation ciblée de la rhizosphère assure le développement de 700 à 1000 fois plus de poils absorbants fonctionnels et une augmentation de 40 % de l’absorption du phosphore pour une synthèse maximale d’ATP. Cette efficience nutritionnelle supérieure optimise la pression de turgor, ce qui prévient l’abscission abiotique des fleurs et des gousses et garantit un développement homogène de la culture. De plus, l’acide orthosilicique assimilable (OSA) active les barrières physiologiques contre les champignons pathogènes tels que Colletotrichum lindemuthianum (anthracnose) et Uromyces appendiculatus (rouille du haricot), réduisant les intrants chimiques et les résidus de 20 %.",
+          "Choisissez la gamme Orthagrow : réalisez jusqu’à +35 % de rendement supplémentaire sous un stress abiotique sévère, et transformez votre plantation en un écosystème hautement productif générant une récolte premium."
+        ],
+        "en": [
+          "Maximise the physiological efficiency, pod uniformity and biomass index of your bean crop with the complete Orthagrow range.",
+          "The Orthagrow Topline range offers the direct physiological solution that optimally buffers and protects your bean plants during the critical phases of flowering, pod set and pod elongation under extreme heat, water and salt stress. Through a maximised CEC, the range anchors macro- and micronutrients in the soil against leaching, while targeted stimulation of the rhizosphere develops 700 to 1,000 times more functional root hairs and raises phosphorus uptake by 40% for maximum ATP synthesis. This superior nutrient efficiency optimises turgor pressure, which prevents abiotic flower and pod abscission and ensures even crop development. In addition, plant-available orthosilicic acid (OSA) activates physiological barriers against pathogenic fungi such as Colletotrichum lindemuthianum (anthracnose) and Uromyces appendiculatus (bean rust), cutting chemical inputs and residues by 20%.",
+          "Choose the Orthagrow range: achieve up to 35% more yield under severe abiotic stress, and turn your plantation into a highly productive ecosystem that yields a premium harvest."
+        ],
+        "es": [
+          "Maximice la eficiencia fisiológica, la homogeneidad de las vainas y el índice de biomasa de su cultivo de judías con la gama completa Orthagrow.",
+          "La gama Orthagrow Topline ofrece la solución fisiológica directa que amortigua y protege de forma óptima sus plantas de judía durante las fases críticas de floración, cuajado y alargamiento de las vainas bajo un estrés térmico, hídrico y salino extremo. Mediante una CIC maximizada, la gama ancla los macro y micronutrientes en el suelo frente a la lixiviación, mientras que la estimulación específica de la rizosfera desarrolla de 700 a 1000 veces más pelos absorbentes funcionales y aumenta un 40 % la absorción de fósforo para una síntesis máxima de ATP. Esta eficiencia nutricional superior optimiza la presión de turgencia, lo que previene la abscisión abiótica de flores y vainas y garantiza un desarrollo homogéneo del cultivo. Además, el ácido ortosilícico asimilable (OSA) activa barreras fisiológicas frente a hongos patógenos como Colletotrichum lindemuthianum (antracnosis) y Uromyces appendiculatus (roya de la judía), reduciendo los insumos químicos y los residuos en un 20 %.",
+          "Elija la gama Orthagrow: logre hasta un 35 % más de rendimiento bajo un estrés abiótico severo, y convierta su plantación en un ecosistema altamente productivo que genera una cosecha premium."
+        ],
+        "nl": [
+          "Maximaliseer de fysiologische efficiëntie, de homogeniteit van de peulen en de biomassa-index van uw bonenteelt met het volledige Orthagrow-gamma.",
+          "Het Orthagrow Topline-gamma biedt de rechtstreekse fysiologische oplossing die uw bonenplanten optimaal buffert en beschermt tijdens de kritieke fasen van bloei, vruchtzetting en strekking van de peulen onder extreme hitte-, water- en zoutstress. Via een maximale CEC verankert het gamma macro- en micronutriënten in de bodem tegen uitspoeling, terwijl de gerichte stimulatie van de rizosfeer zorgt voor 700 tot 1000 keer meer functionele wortelharen en een 40 % hogere fosforopname voor een maximale ATP-synthese. Deze hogere voedingsefficiëntie optimaliseert de turgordruk, wat abiotische bloem- en peulval voorkomt en een gelijkmatige ontwikkeling van het gewas garandeert. Daarnaast activeert opneembaar orthokiezelzuur (OSA) fysiologische barrières tegen pathogene schimmels zoals Colletotrichum lindemuthianum (vlekkenziekte) en Uromyces appendiculatus (bonenroest), wat chemische inputs en residuen met 20 % vermindert.",
+          "Kies voor het Orthagrow-gamma: realiseer tot 35 % meer opbrengst onder zware abiotische stress, en maak van uw teelt een zeer productief ecosysteem met een premium oogst."
+        ]
+      }
+    },
+    {
+      "slug": "mais-ensilage",
+      "title": {
+        "fr": "Maïs ensilage",
+        "en": "Silage maize",
+        "es": "Maíz para ensilado",
+        "nl": "Snijmaïs"
+      },
+      "latin": "Zea mays",
+      "text": {
+        "fr": [
+          "Maximalisez l’efficience physiologique, la fixation des épis et le rendement total en matière sèche de votre culture de maïs ensilage grâce à la gamme complète Orthagrow.",
+          "La gamme Orthagrow Topline offre la solution physiologique directe pour protéger de façon optimale vos plants de maïs par effet tampon durant les phases critiques de la floraison, de la formation de l’épi et du remplissage des grains sous l’effet de stress thermiques, hydriques et salins extrêmes. Via une CEC maximisée, la gamme ancre les macro- et micronutriments dans le sol contre le lessivage, tandis que la stimulation ciblée de la rhizosphère assure le développement de 700 à 1000 fois plus de poils absorbants fonctionnels et une augmentation de 40 % de l’absorption du phosphore pour une synthèse maximale d’ATP. Cette efficience nutritionnelle supérieure optimise la photosynthèse, ce qui prévient l’avortement abiotique des épis et garantit une teneur élevée en amidon ainsi qu’une digestibilité optimale des parois cellulaires ; cela favorise la santé globale du bétail bovin et a un impact positif direct sur la quantité, la qualité et le taux butyreux de la production laitière. De même, l’acide orthosilicique assimilable (OSA) active les structures mécaniques des parois cellulaires contre les agents pathogènes destructeurs tels qu’Exserohilum turcicum (helminthosporiose du maïs) et Ustilago maydis (charbon du maïs), réduisant les intrants chimiques et les résidus de 20 %.",
+          "Choisissez la gamme Orthagrow : réalisez jusqu’à +38 % de rendement et de valeur énergétique supplémentaires sous un stress abiotique sévère, et transformez votre culture de maïs en un écosystème hautement productif générant une récolte premium."
+        ],
+        "en": [
+          "Maximise the physiological efficiency, ear set and total dry-matter yield of your silage maize with the complete Orthagrow range.",
+          "The Orthagrow Topline range offers the direct physiological solution that optimally buffers and protects your maize plants during the critical phases of flowering, ear formation and grain filling under extreme heat, water and salt stress. Through a maximised CEC, the range anchors macro- and micronutrients in the soil against leaching, while targeted stimulation of the rhizosphere develops 700 to 1,000 times more functional root hairs and raises phosphorus uptake by 40% for maximum ATP synthesis. This superior nutrient efficiency optimises photosynthesis, which prevents abiotic ear abortion and ensures a high starch content and optimal cell-wall digestibility; this supports the overall health of dairy cattle and has a direct positive impact on the quantity, quality and butterfat content of milk production. Plant-available orthosilicic acid (OSA) also activates the mechanical structures of the cell walls against destructive pathogens such as Exserohilum turcicum (northern corn leaf blight) and Ustilago maydis (corn smut), cutting chemical inputs and residues by 20%.",
+          "Choose the Orthagrow range: achieve up to 38% more yield and energy value under severe abiotic stress, and turn your maize crop into a highly productive ecosystem that yields a premium harvest."
+        ],
+        "es": [
+          "Maximice la eficiencia fisiológica, la formación de mazorcas y el rendimiento total en materia seca de su maíz para ensilado con la gama completa Orthagrow.",
+          "La gama Orthagrow Topline ofrece la solución fisiológica directa que amortigua y protege de forma óptima sus plantas de maíz durante las fases críticas de floración, formación de la mazorca y llenado del grano bajo un estrés térmico, hídrico y salino extremo. Mediante una CIC maximizada, la gama ancla los macro y micronutrientes en el suelo frente a la lixiviación, mientras que la estimulación específica de la rizosfera desarrolla de 700 a 1000 veces más pelos absorbentes funcionales y aumenta un 40 % la absorción de fósforo para una síntesis máxima de ATP. Esta eficiencia nutricional superior optimiza la fotosíntesis, lo que previene el aborto abiótico de las mazorcas y garantiza un alto contenido de almidón y una digestibilidad óptima de las paredes celulares; esto favorece la salud general del ganado bovino y tiene un impacto positivo directo en la cantidad, la calidad y el contenido de grasa de la producción de leche. Asimismo, el ácido ortosilícico asimilable (OSA) activa las estructuras mecánicas de las paredes celulares frente a patógenos destructivos como Exserohilum turcicum (tizón foliar del maíz) y Ustilago maydis (carbón del maíz), reduciendo los insumos químicos y los residuos en un 20 %.",
+          "Elija la gama Orthagrow: logre hasta un 38 % más de rendimiento y valor energético bajo un estrés abiótico severo, y convierta su cultivo de maíz en un ecosistema altamente productivo que genera una cosecha premium."
+        ],
+        "nl": [
+          "Maximaliseer de fysiologische efficiëntie, de kolfzetting en de totale drogestofopbrengst van uw snijmaïs met het volledige Orthagrow-gamma.",
+          "Het Orthagrow Topline-gamma biedt de rechtstreekse fysiologische oplossing die uw maïsplanten optimaal buffert en beschermt tijdens de kritieke fasen van bloei, kolfvorming en korrelvulling onder extreme hitte-, water- en zoutstress. Via een maximale CEC verankert het gamma macro- en micronutriënten in de bodem tegen uitspoeling, terwijl de gerichte stimulatie van de rizosfeer zorgt voor 700 tot 1000 keer meer functionele wortelharen en een 40 % hogere fosforopname voor een maximale ATP-synthese. Deze hogere voedingsefficiëntie optimaliseert de fotosynthese, wat abiotische kolfabortie voorkomt en zorgt voor een hoog zetmeelgehalte en een optimale verteerbaarheid van de celwanden; dit bevordert de algemene gezondheid van het melkvee en heeft een rechtstreeks positief effect op de hoeveelheid, de kwaliteit en het vetgehalte van de melkproductie. Daarnaast activeert opneembaar orthokiezelzuur (OSA) de mechanische structuren van de celwanden tegen schadelijke ziekteverwekkers zoals Exserohilum turcicum (bladvlekkenziekte) en Ustilago maydis (builenbrand), wat chemische inputs en residuen met 20 % vermindert.",
+          "Kies voor het Orthagrow-gamma: realiseer tot 38 % meer opbrengst en energiewaarde onder zware abiotische stress, en maak van uw maïsteelt een zeer productief ecosysteem met een premium oogst."
+        ]
+      }
+    },
+    {
+      "slug": "melon-cantaloup",
+      "title": {
+        "fr": "Melon cantaloup",
+        "en": "Cantaloupe melon",
+        "es": "Melón cantalupo",
+        "nl": "Cantaloupe meloen"
+      },
+      "latin": "Cucumis melo var. cantalupensis",
+      "text": {
+        "fr": [
+          "Optimisez la pression de turgor, la nouaison nette et le taux Brix de votre culture de melons cantaloups grâce à la gamme complète Orthagrow.",
+          "La gamme Orthagrow Topline offre la solution physiologique directe pour protéger de façon optimale vos plants de melons par effet tampon durant les phases critiques de la floraison, de la nouaison et de la phase de division cellulaire intensive sous l’effet de stress thermiques, hydriques et salins extrêmes. Via une CEC maximisée, la gamme ancre les macro- et micronutriments dans le sol contre le lessivage, tandis que la stimulation ciblée de la rhizosphère assure le développement de 700 à 1000 fois plus de poils absorbants fonctionnels et une augmentation de 40 % de l’absorption du phosphore pour une synthèse maximale d’ATP. Cette efficience nutritionnelle supérieure optimise la gestion hydrique, ce qui prévient la chute abiotique des fruits et le craquellement (cracking), stimule le développement du feuillage pour protéger contre l’échaudure solaire (sunscald) et garantit une formation parfaite de l’écriture (brodequinage) de l’écorce. De plus, l’acide orthosilicique assimilable (OSA) active les structures mécaniques des parois cellulaires et le système immunitaire contre les agents pathogènes destructeurs tels que Podosphaera xanthii (oïdium) et Alternaria, réduisant les intrants chimiques et les résidus de 20 %.",
+          "Choisissez la gamme Orthagrow : optimisez le calibre de vos fruits et la maturation synchrone des sucres sous un stress abiotique sévère, et transformez votre plantation en un écosystème hautement productif générant une récolte premium."
+        ],
+        "en": [
+          "Optimise the turgor pressure, net fruit set and Brix level of your cantaloupe crop with the complete Orthagrow range.",
+          "The Orthagrow Topline range offers the direct physiological solution that optimally buffers and protects your melon plants during the critical phases of flowering, fruit set and intensive cell division under extreme heat, water and salt stress. Through a maximised CEC, the range anchors macro- and micronutrients in the soil against leaching, while targeted stimulation of the rhizosphere develops 700 to 1,000 times more functional root hairs and raises phosphorus uptake by 40% for maximum ATP synthesis. This superior nutrient efficiency optimises water management, which prevents abiotic fruit drop and cracking, stimulates foliage development to protect against sunscald and ensures perfect netting of the rind. In addition, plant-available orthosilicic acid (OSA) activates the mechanical structures of the cell walls and the immune system against destructive pathogens such as Podosphaera xanthii (powdery mildew) and Alternaria, cutting chemical inputs and residues by 20%.",
+          "Choose the Orthagrow range: optimise fruit size and synchronous sugar ripening under severe abiotic stress, and turn your plantation into a highly productive ecosystem that yields a premium harvest."
+        ],
+        "es": [
+          "Optimice la presión de turgencia, el cuajado neto y el grado Brix de su cultivo de melón cantalupo con la gama completa Orthagrow.",
+          "La gama Orthagrow Topline ofrece la solución fisiológica directa que amortigua y protege de forma óptima sus plantas de melón durante las fases críticas de floración, cuajado y división celular intensiva bajo un estrés térmico, hídrico y salino extremo. Mediante una CIC maximizada, la gama ancla los macro y micronutrientes en el suelo frente a la lixiviación, mientras que la estimulación específica de la rizosfera desarrolla de 700 a 1000 veces más pelos absorbentes funcionales y aumenta un 40 % la absorción de fósforo para una síntesis máxima de ATP. Esta eficiencia nutricional superior optimiza la gestión del agua, lo que previene la caída abiótica de frutos y el agrietado (cracking), estimula el desarrollo del follaje para proteger frente a las quemaduras solares (sunscald) y garantiza un escriturado perfecto de la corteza. Además, el ácido ortosilícico asimilable (OSA) activa las estructuras mecánicas de las paredes celulares y el sistema inmunitario frente a patógenos destructivos como Podosphaera xanthii (oídio) y Alternaria, reduciendo los insumos químicos y los residuos en un 20 %.",
+          "Elija la gama Orthagrow: optimice el calibre de sus frutos y la maduración sincronizada de los azúcares bajo un estrés abiótico severo, y convierta su plantación en un ecosistema altamente productivo que genera una cosecha premium."
+        ],
+        "nl": [
+          "Optimaliseer de turgordruk, de netto vruchtzetting en het Brix-gehalte van uw cantaloupeteelt met het volledige Orthagrow-gamma.",
+          "Het Orthagrow Topline-gamma biedt de rechtstreekse fysiologische oplossing die uw meloenplanten optimaal buffert en beschermt tijdens de kritieke fasen van bloei, vruchtzetting en intensieve celdeling onder extreme hitte-, water- en zoutstress. Via een maximale CEC verankert het gamma macro- en micronutriënten in de bodem tegen uitspoeling, terwijl de gerichte stimulatie van de rizosfeer zorgt voor 700 tot 1000 keer meer functionele wortelharen en een 40 % hogere fosforopname voor een maximale ATP-synthese. Deze hogere voedingsefficiëntie optimaliseert het waterbeheer, wat abiotische vruchtval en barsten (cracking) voorkomt, de bladontwikkeling stimuleert ter bescherming tegen zonnebrand (sunscald) en zorgt voor een perfecte netvorming op de schil. Daarnaast activeert opneembaar orthokiezelzuur (OSA) de mechanische structuren van de celwanden en het immuunsysteem tegen schadelijke ziekteverwekkers zoals Podosphaera xanthii (echte meeldauw) en Alternaria, wat chemische inputs en residuen met 20 % vermindert.",
+          "Kies voor het Orthagrow-gamma: optimaliseer het kaliber van uw vruchten en de gelijktijdige suikerrijping onder zware abiotische stress, en maak van uw teelt een zeer productief ecosysteem met een premium oogst."
+        ]
+      }
+    },
+    {
+      "slug": "melon-jaune",
+      "title": {
+        "fr": "Melon jaune",
+        "en": "Yellow melon",
+        "es": "Melón amarillo",
+        "nl": "Gele meloen"
+      },
+      "latin": "Cucumis melo",
+      "text": {
+        "fr": [
+          "Accélérez la croissance juvénile précoce, le poids des fruits et l’accumulation des sucres de votre culture de melons jaunes grâce à la gamme complète Orthagrow.",
+          "La gamme Orthagrow Topline garantit un démarrage physiologique rapide et un développement végétatif vigoureux, permettant à la culture d’être protégée de façon optimale par effet tampon durant les phases phénologiques critiques sous l’effet de stress abiotiques thermiques, hydriques et salins. Via une CEC maximisée, la gamme ancre les macro- et micronutriments dans le sol contre le lessivage, tandis que la stimulation ciblée de la rhizosphère assure le développement de 700 à 1000 fois plus de poils absorbants fonctionnels et une augmentation de 40 % de l’absorption du phosphore pour un bilan énergétique cellulaire supérieur (ATP). Cet équilibre physiologique optimise la régulation osmotique et la pression de turgor interne, ce qui prévient la chute abiotique des fruits et renforce l’intégrité de l’écorce contre la nécrose et l’éclatement physiologique. De même, l’acide orthosilicique assimilable (OSA) active une barrière mécanique et le système immunitaire contre les agents pathogènes destructeurs, réduisant les intrants chimiques et les résidus de 20 % tout en augmentant physiologiquement la teneur en sucre pour atteindre une valeur Brix supérieure de +11 %.",
+          "Choisissez la gamme Orthagrow : réalisez un démarrage rapide et jusqu’à +23 % de rendement supplémentaire sous un stress abiotique sévère, et transformez votre plantation en un écosystème hautement productif générant une récolte premium."
+        ],
+        "en": [
+          "Accelerate early juvenile growth, fruit weight and sugar accumulation in your yellow melon crop with the complete Orthagrow range.",
+          "The Orthagrow Topline range ensures a fast physiological start and vigorous vegetative development, so the crop is optimally buffered and protected during critical phenological phases under abiotic heat, water and salt stress. Through a maximised CEC, the range anchors macro- and micronutrients in the soil against leaching, while targeted stimulation of the rhizosphere develops 700 to 1,000 times more functional root hairs and raises phosphorus uptake by 40% for a superior cellular energy balance (ATP). This physiological balance optimises osmotic regulation and internal turgor pressure, which prevents abiotic fruit drop and strengthens rind integrity against necrosis and physiological splitting. Plant-available orthosilicic acid (OSA) also activates a mechanical barrier and the immune system against destructive pathogens, cutting chemical inputs and residues by 20% while physiologically raising sugar content to an 11% higher Brix value.",
+          "Choose the Orthagrow range: achieve a fast start and up to 23% more yield under severe abiotic stress, and turn your plantation into a highly productive ecosystem that yields a premium harvest."
+        ],
+        "es": [
+          "Acelere el crecimiento juvenil temprano, el peso de los frutos y la acumulación de azúcares de su cultivo de melón amarillo con la gama completa Orthagrow.",
+          "La gama Orthagrow Topline garantiza un arranque fisiológico rápido y un desarrollo vegetativo vigoroso, de modo que el cultivo queda amortiguado y protegido de forma óptima durante las fases fenológicas críticas bajo un estrés abiótico térmico, hídrico y salino. Mediante una CIC maximizada, la gama ancla los macro y micronutrientes en el suelo frente a la lixiviación, mientras que la estimulación específica de la rizosfera desarrolla de 700 a 1000 veces más pelos absorbentes funcionales y aumenta un 40 % la absorción de fósforo para un balance energético celular superior (ATP). Este equilibrio fisiológico optimiza la regulación osmótica y la presión de turgencia interna, lo que previene la caída abiótica de frutos y refuerza la integridad de la corteza frente a la necrosis y el rajado fisiológico. Asimismo, el ácido ortosilícico asimilable (OSA) activa una barrera mecánica y el sistema inmunitario frente a patógenos destructivos, reduciendo los insumos químicos y los residuos en un 20 % y aumentando fisiológicamente el contenido de azúcar hasta un valor Brix un 11 % superior.",
+          "Elija la gama Orthagrow: logre un arranque rápido y hasta un 23 % más de rendimiento bajo un estrés abiótico severo, y convierta su plantación en un ecosistema altamente productivo que genera una cosecha premium."
+        ],
+        "nl": [
+          "Versnel de vroege jeugdgroei, het vruchtgewicht en de suikeropbouw van uw gele meloenen met het volledige Orthagrow-gamma.",
+          "Het Orthagrow Topline-gamma zorgt voor een snelle fysiologische start en een krachtige vegetatieve ontwikkeling, zodat het gewas optimaal gebufferd en beschermd is tijdens kritieke fenologische fasen onder abiotische hitte-, water- en zoutstress. Via een maximale CEC verankert het gamma macro- en micronutriënten in de bodem tegen uitspoeling, terwijl de gerichte stimulatie van de rizosfeer zorgt voor 700 tot 1000 keer meer functionele wortelharen en een 40 % hogere fosforopname voor een betere energiebalans van de cel (ATP). Dit fysiologische evenwicht optimaliseert de osmotische regulatie en de interne turgordruk, wat abiotische vruchtval voorkomt en de schil beter bestand maakt tegen necrose en fysiologisch openbarsten. Daarnaast activeert opneembaar orthokiezelzuur (OSA) een mechanische barrière en het immuunsysteem tegen schadelijke ziekteverwekkers, wat chemische inputs en residuen met 20 % vermindert en het suikergehalte fysiologisch verhoogt tot een 11 % hogere Brix-waarde.",
+          "Kies voor het Orthagrow-gamma: realiseer een snelle start en tot 23 % meer opbrengst onder zware abiotische stress, en maak van uw teelt een zeer productief ecosysteem met een premium oogst."
+        ]
+      }
+    },
+    {
+      "slug": "oignon",
+      "title": {
+        "fr": "Oignon",
+        "en": "Onion",
+        "es": "Cebolla",
+        "nl": "Ui"
+      },
+      "latin": "Allium cepa",
+      "text": {
+        "fr": [
+          "Maximalisez l’efficience physiologique, l’homogénéité des bulbes et l’accumulation totale de matière sèche de votre culture d’oignons grâce à la gamme complète Orthagrow.",
+          "La gamme Orthagrow Topline offre la solution physiologique directe pour protéger de façon optimale vos plants d’oignons par effet tampon durant le développement critique du feuillage, la bulbification et la phase finale de maturation sous l’effet de stress thermiques, hydriques et salins extrêmes. Via une CEC maximisée, la gamme ancre les macro- et micronutriments dans le sol contre le lessivage, tandis que la stimulation ciblée de la rhizosphère assure le développement de 700 à 1000 fois plus de poils absorbants fonctionnels et une augmentation de 40 % de l’absorption du phosphore pour une synthèse maximale d’ATP. Cette efficience nutritionnelle supérieure optimise la régulation osmotique et la tension cellulaire (turgor), ce qui régule la dynamique hydraulique afin d’optimiser la rétention d’eau dans les tuniques du bulbe sans perte de qualité, se traduisant par des oignons plus fermes, homogènes, avec une masse et une densité tissulaire accrues. De plus, l’acide orthosilicique assimilable (OSA) active une barrière physiologique qui renforce l’épiderme contre les agents pathogènes destructeurs, diminuant directement vos intrants chimiques et résidus de 25 % tout en prolongeant significativement la durée de conservation post-récolte et la qualité de stockage.",
+          "Choisissez la gamme Orthagrow : réalisez une fermeté de bulbe supérieure et des rendements maximaux sous un stress abiotique sévère, et transformez votre culture d’oignons en un écosystème hautement productif générant une récolte premium."
+        ],
+        "en": [
+          "Maximise the physiological efficiency, bulb uniformity and total dry-matter accumulation of your onion crop with the complete Orthagrow range.",
+          "The Orthagrow Topline range offers the direct physiological solution that optimally buffers and protects your onion plants during critical foliage development, bulbing and the final ripening phase under extreme heat, water and salt stress. Through a maximised CEC, the range anchors macro- and micronutrients in the soil against leaching, while targeted stimulation of the rhizosphere develops 700 to 1,000 times more functional root hairs and raises phosphorus uptake by 40% for maximum ATP synthesis. This superior nutrient efficiency optimises osmotic regulation and cell tension (turgor), which regulates hydraulic dynamics to optimise water retention in the bulb scales without loss of quality, resulting in firmer, more uniform onions with greater mass and tissue density. In addition, plant-available orthosilicic acid (OSA) activates a physiological barrier that strengthens the epidermis against destructive pathogens, directly cutting your chemical inputs and residues by 25% while significantly extending post-harvest shelf life and storage quality.",
+          "Choose the Orthagrow range: achieve superior bulb firmness and maximum yields under severe abiotic stress, and turn your onion crop into a highly productive ecosystem that yields a premium harvest."
+        ],
+        "es": [
+          "Maximice la eficiencia fisiológica, la homogeneidad de los bulbos y la acumulación total de materia seca de su cultivo de cebolla con la gama completa Orthagrow.",
+          "La gama Orthagrow Topline ofrece la solución fisiológica directa que amortigua y protege de forma óptima sus plantas de cebolla durante el desarrollo crítico del follaje, la bulbificación y la fase final de maduración bajo un estrés térmico, hídrico y salino extremo. Mediante una CIC maximizada, la gama ancla los macro y micronutrientes en el suelo frente a la lixiviación, mientras que la estimulación específica de la rizosfera desarrolla de 700 a 1000 veces más pelos absorbentes funcionales y aumenta un 40 % la absorción de fósforo para una síntesis máxima de ATP. Esta eficiencia nutricional superior optimiza la regulación osmótica y la tensión celular (turgencia), lo que regula la dinámica hidráulica para optimizar la retención de agua en las túnicas del bulbo sin pérdida de calidad, y se traduce en cebollas más firmes y homogéneas, con mayor masa y densidad de tejido. Además, el ácido ortosilícico asimilable (OSA) activa una barrera fisiológica que refuerza la epidermis frente a patógenos destructivos, reduciendo directamente sus insumos químicos y residuos en un 25 % y prolongando de forma significativa la vida útil poscosecha y la calidad de almacenamiento.",
+          "Elija la gama Orthagrow: logre una firmeza de bulbo superior y rendimientos máximos bajo un estrés abiótico severo, y convierta su cultivo de cebolla en un ecosistema altamente productivo que genera una cosecha premium."
+        ],
+        "nl": [
+          "Maximaliseer de fysiologische efficiëntie, de homogeniteit van de bollen en de totale drogestofopbouw van uw uienteelt met het volledige Orthagrow-gamma.",
+          "Het Orthagrow Topline-gamma biedt de rechtstreekse fysiologische oplossing die uw uienplanten optimaal buffert en beschermt tijdens de kritieke bladontwikkeling, de bolvorming en de laatste afrijpingsfase onder extreme hitte-, water- en zoutstress. Via een maximale CEC verankert het gamma macro- en micronutriënten in de bodem tegen uitspoeling, terwijl de gerichte stimulatie van de rizosfeer zorgt voor 700 tot 1000 keer meer functionele wortelharen en een 40 % hogere fosforopname voor een maximale ATP-synthese. Deze hogere voedingsefficiëntie optimaliseert de osmotische regulatie en de celspanning (turgor), wat de hydraulische dynamiek reguleert om het watervasthoudend vermogen van de rokken zonder kwaliteitsverlies te optimaliseren, met stevigere, homogenere uien met meer massa en een hogere weefseldichtheid als resultaat. Daarnaast activeert opneembaar orthokiezelzuur (OSA) een fysiologische barrière die de opperhuid versterkt tegen schadelijke ziekteverwekkers, wat uw chemische inputs en residuen rechtstreeks met 25 % vermindert en de houdbaarheid en bewaarkwaliteit na de oogst aanzienlijk verlengt.",
+          "Kies voor het Orthagrow-gamma: realiseer stevigere bollen en maximale opbrengsten onder zware abiotische stress, en maak van uw uienteelt een zeer productief ecosysteem met een premium oogst."
+        ]
+      }
+    },
+    {
+      "slug": "pommier-golden",
+      "title": {
+        "fr": "Pommier Golden Delicious",
+        "en": "Golden Delicious apple",
+        "es": "Manzano Golden Delicious",
+        "nl": "Appel Golden Delicious"
+      },
+      "latin": "Malus domestica ‘Golden Delicious’",
+      "text": {
+        "fr": [
+          "Maximalisez l’efficience physiologique, l’aspect lisse de l’épiderme et le tri commercial de votre culture de pommes Golden Delicious grâce à la gamme complète Orthagrow.",
+          "La gamme Orthagrow Topline offre la solution physiologique directe pour protéger de façon optimale vos pommiers par effet tampon durant les phases critiques de la floraison, de la nouaison et de la phase d’élongation cellulaire sous l’effet de stress thermiques, hydriques et salins extrêmes. Via une CEC maximisée, la gamme ancre les macro- et micronutriments dans le sol contre le lessivage, tandis que la stimulation ciblée de la rhizosphère assure le développement de 700 à 1000 fois plus de poils absorbants fonctionnels et une augmentation de 40 % de l’absorption du phosphore pour une synthèse maximale d’ATP. Cette efficience nutritionnelle supérieure optimise la pression de turgor interne, ce qui minimise la chute abiotique précoce des fruits et garantit un développement homogène des pommes. De même, l’acide orthosilicique assimilable (OSA) régule l’élasticité de la cuticule (couche cireuse) et de l’épiderme, ce qui diminue drastiquement le risque de roussissure physiologique (russeting), augmente la fermeté et active le système immunitaire contre les agents pathogènes destructeurs, entraînant une baisse de 25 % de vos intrants chimiques et résidus.",
+          "Choisissez la gamme Orthagrow : réalisez une qualité d’écorce homogène, jaune d’or, et des calibres de fruits maximaux sous un stress abiotique sévère, et transformez votre verger en un écosystème hautement productif générant une récolte premium."
+        ],
+        "en": [
+          "Maximise the physiological efficiency, smooth skin and commercial grading of your Golden Delicious apple crop with the complete Orthagrow range.",
+          "The Orthagrow Topline range offers the direct physiological solution that optimally buffers and protects your apple trees during the critical phases of flowering, fruit set and cell elongation under extreme heat, water and salt stress. Through a maximised CEC, the range anchors macro- and micronutrients in the soil against leaching, while targeted stimulation of the rhizosphere develops 700 to 1,000 times more functional root hairs and raises phosphorus uptake by 40% for maximum ATP synthesis. This superior nutrient efficiency optimises internal turgor pressure, which minimises early abiotic fruit drop and ensures even apple development. Plant-available orthosilicic acid (OSA) also regulates the elasticity of the cuticle (wax layer) and the epidermis, which drastically reduces the risk of physiological russeting, increases firmness and activates the immune system against destructive pathogens, cutting your chemical inputs and residues by 25%.",
+          "Choose the Orthagrow range: achieve an even, golden-yellow skin and maximum fruit sizes under severe abiotic stress, and turn your orchard into a highly productive ecosystem that yields a premium harvest."
+        ],
+        "es": [
+          "Maximice la eficiencia fisiológica, el aspecto liso de la piel y la clasificación comercial de su cultivo de manzanas Golden Delicious con la gama completa Orthagrow.",
+          "La gama Orthagrow Topline ofrece la solución fisiológica directa que amortigua y protege de forma óptima sus manzanos durante las fases críticas de floración, cuajado y elongación celular bajo un estrés térmico, hídrico y salino extremo. Mediante una CIC maximizada, la gama ancla los macro y micronutrientes en el suelo frente a la lixiviación, mientras que la estimulación específica de la rizosfera desarrolla de 700 a 1000 veces más pelos absorbentes funcionales y aumenta un 40 % la absorción de fósforo para una síntesis máxima de ATP. Esta eficiencia nutricional superior optimiza la presión de turgencia interna, lo que minimiza la caída abiótica temprana de frutos y garantiza un desarrollo homogéneo de las manzanas. Asimismo, el ácido ortosilícico asimilable (OSA) regula la elasticidad de la cutícula (capa cerosa) y de la epidermis, lo que reduce drásticamente el riesgo de russeting fisiológico, aumenta la firmeza y activa el sistema inmunitario frente a patógenos destructivos, con una reducción del 25 % de sus insumos químicos y residuos.",
+          "Elija la gama Orthagrow: logre una piel homogénea de color amarillo dorado y calibres máximos bajo un estrés abiótico severo, y convierta su huerto en un ecosistema altamente productivo que genera una cosecha premium."
+        ],
+        "nl": [
+          "Maximaliseer de fysiologische efficiëntie, een gladde schil en de handelssortering van uw Golden Delicious-appels met het volledige Orthagrow-gamma.",
+          "Het Orthagrow Topline-gamma biedt de rechtstreekse fysiologische oplossing die uw appelbomen optimaal buffert en beschermt tijdens de kritieke fasen van bloei, vruchtzetting en celstrekking onder extreme hitte-, water- en zoutstress. Via een maximale CEC verankert het gamma macro- en micronutriënten in de bodem tegen uitspoeling, terwijl de gerichte stimulatie van de rizosfeer zorgt voor 700 tot 1000 keer meer functionele wortelharen en een 40 % hogere fosforopname voor een maximale ATP-synthese. Deze hogere voedingsefficiëntie optimaliseert de interne turgordruk, wat vroege abiotische vruchtval tot een minimum beperkt en een gelijkmatige ontwikkeling van de appels garandeert. Daarnaast reguleert opneembaar orthokiezelzuur (OSA) de elasticiteit van de cuticula (waslaag) en de opperhuid, wat het risico op fysiologische ruwschilligheid (russeting) drastisch verlaagt, de stevigheid verhoogt en het immuunsysteem activeert tegen schadelijke ziekteverwekkers, met 25 % minder chemische inputs en residuen als resultaat.",
+          "Kies voor het Orthagrow-gamma: realiseer een gelijkmatige, goudgele schil en maximale vruchtkalibers onder zware abiotische stress, en maak van uw boomgaard een zeer productief ecosysteem met een premium oogst."
+        ]
+      }
+    },
+    {
+      "slug": "carotte",
+      "title": {
+        "fr": "Carotte",
+        "en": "Carrot",
+        "es": "Zanahoria",
+        "nl": "Wortel"
+      },
+      "latin": "Daucus carota",
+      "text": {
+        "fr": [
+          "Maximalisez l’efficience physiologique, l’homogénéité des racines et la densité tissulaire totale de votre culture de carottes grâce à la gamme complète Orthagrow.",
+          "La gamme Orthagrow Topline offre la solution physiologique directe pour protéger de façon optimale votre culture par effet tampon durant le développement critique du feuillage et l’élongation intensive de la racine pivotante sous l’effet de stress thermiques, hydriques et salins extrêmes. Via une CEC maximisée, la gamme ancre les macro- et micronutriments dans le sol contre le lessivage, tandis que la stimulation ciblée de la rhizosphère assure le développement de 700 à 1000 fois plus de poils absorbants fonctionnels et une augmentation de 40 % de l’absorption du phosphore pour une synthèse maximale d’ATP. Cette efficience nutritionnelle supérieure optimise la régulation osmotique et la pression de turgor interne, ce qui régule la dynamique hydraulique afin de stabiliser la teneur en eau cellulaire et d’élever physiologiquement l’indice Brix (taux de sucre). De même, l’acide orthosilicique assimilable (OSA) renforce la flexibilité des parois cellulaires et de l’épiderme de la racine pivotante, ce qui diminue drastiquement le risque de fractures et de fêlures lors des processus de récolte et de lavage, tout en activant les défenses de la plante contre les agents pathogènes destructeurs.",
+          "Choisissez la gamme Orthagrow : minimisez les pertes de récolte grâce à une élasticité supérieure de la paroi cellulaire sous un stress abiotique sévère, et transformez votre culture de carottes en un écosystème hautement productif générant une récolte premium."
+        ],
+        "en": [
+          "Maximise the physiological efficiency, root uniformity and total tissue density of your carrot crop with the complete Orthagrow range.",
+          "The Orthagrow Topline range offers the direct physiological solution that optimally buffers and protects your crop during critical foliage development and intensive taproot elongation under extreme heat, water and salt stress. Through a maximised CEC, the range anchors macro- and micronutrients in the soil against leaching, while targeted stimulation of the rhizosphere develops 700 to 1,000 times more functional root hairs and raises phosphorus uptake by 40% for maximum ATP synthesis. This superior nutrient efficiency optimises osmotic regulation and internal turgor pressure, which regulates hydraulic dynamics to stabilise cellular water content and physiologically raise the Brix index (sugar content). Plant-available orthosilicic acid (OSA) also strengthens the flexibility of the cell walls and the taproot epidermis, which drastically reduces the risk of breaks and cracks during harvesting and washing, while activating the plant's defences against destructive pathogens.",
+          "Choose the Orthagrow range: minimise harvest losses through superior cell-wall elasticity under severe abiotic stress, and turn your carrot crop into a highly productive ecosystem that yields a premium harvest."
+        ],
+        "es": [
+          "Maximice la eficiencia fisiológica, la homogeneidad de las raíces y la densidad total de tejido de su cultivo de zanahoria con la gama completa Orthagrow.",
+          "La gama Orthagrow Topline ofrece la solución fisiológica directa que amortigua y protege de forma óptima su cultivo durante el desarrollo crítico del follaje y la elongación intensiva de la raíz pivotante bajo un estrés térmico, hídrico y salino extremo. Mediante una CIC maximizada, la gama ancla los macro y micronutrientes en el suelo frente a la lixiviación, mientras que la estimulación específica de la rizosfera desarrolla de 700 a 1000 veces más pelos absorbentes funcionales y aumenta un 40 % la absorción de fósforo para una síntesis máxima de ATP. Esta eficiencia nutricional superior optimiza la regulación osmótica y la presión de turgencia interna, lo que regula la dinámica hidráulica para estabilizar el contenido de agua celular y elevar fisiológicamente el índice Brix (contenido de azúcar). Asimismo, el ácido ortosilícico asimilable (OSA) refuerza la flexibilidad de las paredes celulares y de la epidermis de la raíz pivotante, lo que reduce drásticamente el riesgo de roturas y grietas durante la cosecha y el lavado, a la vez que activa las defensas de la planta frente a patógenos destructivos.",
+          "Elija la gama Orthagrow: minimice las pérdidas de cosecha gracias a una elasticidad superior de la pared celular bajo un estrés abiótico severo, y convierta su cultivo de zanahoria en un ecosistema altamente productivo que genera una cosecha premium."
+        ],
+        "nl": [
+          "Maximaliseer de fysiologische efficiëntie, de homogeniteit van de wortels en de totale weefseldichtheid van uw wortelteelt met het volledige Orthagrow-gamma.",
+          "Het Orthagrow Topline-gamma biedt de rechtstreekse fysiologische oplossing die uw gewas optimaal buffert en beschermt tijdens de kritieke bladontwikkeling en de intensieve strekking van de penwortel onder extreme hitte-, water- en zoutstress. Via een maximale CEC verankert het gamma macro- en micronutriënten in de bodem tegen uitspoeling, terwijl de gerichte stimulatie van de rizosfeer zorgt voor 700 tot 1000 keer meer functionele wortelharen en een 40 % hogere fosforopname voor een maximale ATP-synthese. Deze hogere voedingsefficiëntie optimaliseert de osmotische regulatie en de interne turgordruk, wat de hydraulische dynamiek reguleert om het watergehalte van de cellen te stabiliseren en de Brix-index (suikergehalte) fysiologisch te verhogen. Daarnaast versterkt opneembaar orthokiezelzuur (OSA) de soepelheid van de celwanden en de opperhuid van de penwortel, wat het risico op breuken en barsten bij het oogsten en wassen drastisch verlaagt en tegelijk de afweer van de plant tegen schadelijke ziekteverwekkers activeert.",
+          "Kies voor het Orthagrow-gamma: beperk oogstverliezen tot een minimum dankzij een betere elasticiteit van de celwand onder zware abiotische stress, en maak van uw wortelteelt een zeer productief ecosysteem met een premium oogst."
+        ]
+      }
+    },
+    {
+      "slug": "pecher",
+      "title": {
+        "fr": "Pêcher",
+        "en": "Peach",
+        "es": "Melocotonero",
+        "nl": "Perzik"
+      },
+      "latin": "Prunus persica",
+      "text": {
+        "fr": [
+          "Maximalisez l’efficience physiologique, la densité du mésocarpe (pulpe) et le taux Brix de votre culture de pêches grâce à la gamme complète Orthagrow.",
+          "La gamme Orthagrow Topline offre la solution physiologique directe pour protéger de façon optimale vos arbres fruitiers à noyau par effet tampon durant les phases critiques de la floraison, de la nouaison et de la phase finale d’élongation cellulaire sous l’effet de stress thermiques, hydriques et salins extrêmes. Via une CEC maximisée, la gamme ancre les macro- et micronutriments dans le sol contre le lessivage, tandis que la stimulation ciblée de la rhizosphère assure le développement de 700 à 1000 fois plus de poils absorbants fonctionnels et une augmentation de 40 % de l’absorption du phosphore pour une synthèse maximale d’ATP. Cette efficience nutritionnelle supérieure optimise la pression de turgor interne et le flux de sève, ce qui prévient la chute abiotique des fruits et minimise drastiquement l’incidence physiologique du fendage du noyau. De plus, l’acide orthosilicique assimilable (OSA) renforce l’élasticité de l’épiderme et de la cuticule, ce qui augmente la fermeté, s’oppose à la dégradation des fruits post-récolte et active le système immunitaire contre les agents pathogènes destructeurs.",
+          "Choisissez la gamme Orthagrow : optimisez le calibre de vos fruits, le rendement en jus et la résistance mécanique de l’écorce sous un stress abiotique sévère, et transformez votre verger en un écosystème hautement productif générant une récolte premium."
+        ],
+        "en": [
+          "Maximise the physiological efficiency, mesocarp (flesh) density and Brix level of your peach crop with the complete Orthagrow range.",
+          "The Orthagrow Topline range offers the direct physiological solution that optimally buffers and protects your stone-fruit trees during the critical phases of flowering, fruit set and final cell elongation under extreme heat, water and salt stress. Through a maximised CEC, the range anchors macro- and micronutrients in the soil against leaching, while targeted stimulation of the rhizosphere develops 700 to 1,000 times more functional root hairs and raises phosphorus uptake by 40% for maximum ATP synthesis. This superior nutrient efficiency optimises internal turgor pressure and sap flow, which prevents abiotic fruit drop and drastically reduces the physiological incidence of split pits. In addition, plant-available orthosilicic acid (OSA) strengthens the elasticity of the epidermis and cuticle, which increases firmness, counters post-harvest fruit decay and activates the immune system against destructive pathogens.",
+          "Choose the Orthagrow range: optimise fruit size, juice yield and the mechanical strength of the skin under severe abiotic stress, and turn your orchard into a highly productive ecosystem that yields a premium harvest."
+        ],
+        "es": [
+          "Maximice la eficiencia fisiológica, la densidad del mesocarpio (pulpa) y el grado Brix de su cultivo de melocotón con la gama completa Orthagrow.",
+          "La gama Orthagrow Topline ofrece la solución fisiológica directa que amortigua y protege de forma óptima sus frutales de hueso durante las fases críticas de floración, cuajado y elongación celular final bajo un estrés térmico, hídrico y salino extremo. Mediante una CIC maximizada, la gama ancla los macro y micronutrientes en el suelo frente a la lixiviación, mientras que la estimulación específica de la rizosfera desarrolla de 700 a 1000 veces más pelos absorbentes funcionales y aumenta un 40 % la absorción de fósforo para una síntesis máxima de ATP. Esta eficiencia nutricional superior optimiza la presión de turgencia interna y el flujo de savia, lo que previene la caída abiótica de frutos y reduce drásticamente la incidencia fisiológica del hueso partido. Además, el ácido ortosilícico asimilable (OSA) refuerza la elasticidad de la epidermis y de la cutícula, lo que aumenta la firmeza, frena la degradación poscosecha de los frutos y activa el sistema inmunitario frente a patógenos destructivos.",
+          "Elija la gama Orthagrow: optimice el calibre de sus frutos, el rendimiento en zumo y la resistencia mecánica de la piel bajo un estrés abiótico severo, y convierta su huerto en un ecosistema altamente productivo que genera una cosecha premium."
+        ],
+        "nl": [
+          "Maximaliseer de fysiologische efficiëntie, de dichtheid van het vruchtvlees en het Brix-gehalte van uw perzikteelt met het volledige Orthagrow-gamma.",
+          "Het Orthagrow Topline-gamma biedt de rechtstreekse fysiologische oplossing die uw steenvruchtbomen optimaal buffert en beschermt tijdens de kritieke fasen van bloei, vruchtzetting en de laatste celstrekking onder extreme hitte-, water- en zoutstress. Via een maximale CEC verankert het gamma macro- en micronutriënten in de bodem tegen uitspoeling, terwijl de gerichte stimulatie van de rizosfeer zorgt voor 700 tot 1000 keer meer functionele wortelharen en een 40 % hogere fosforopname voor een maximale ATP-synthese. Deze hogere voedingsefficiëntie optimaliseert de interne turgordruk en de sapstroom, wat abiotische vruchtval voorkomt en het fysiologisch splijten van de pit drastisch beperkt. Daarnaast versterkt opneembaar orthokiezelzuur (OSA) de elasticiteit van de opperhuid en de cuticula, wat de stevigheid verhoogt, bederf na de oogst tegengaat en het immuunsysteem activeert tegen schadelijke ziekteverwekkers.",
+          "Kies voor het Orthagrow-gamma: optimaliseer het kaliber van uw vruchten, de sapopbrengst en de mechanische sterkte van de schil onder zware abiotische stress, en maak van uw boomgaard een zeer productief ecosysteem met een premium oogst."
+        ]
+      }
+    },
+    {
+      "slug": "poivron",
+      "title": {
+        "fr": "Poivron",
+        "en": "Sweet pepper",
+        "es": "Pimiento",
+        "nl": "Paprika"
+      },
+      "latin": "Capsicum annuum",
+      "text": {
+        "fr": [
+          "Maximalisez l’efficience physiologique, l’épaisseur du péricarpe (paroi) et le tri commercial de votre culture de poivrons grâce à la gamme complète Orthagrow.",
+          "La gamme Orthagrow Topline offre la solution physiologique directe pour protéger de façon optimale vos cultures fructifères durant la floraison continue, la nouaison et la division cellulaire intensive sous l’effet de stress thermiques, hydriques et de la salinité du sol extrêmes. Via une CEC maximisée, la gamme ancre les ions vitaux dans le sol contre le lessivage, tandis que la stimulation ciblée de la rhizosphère assure le développement de 700 à 1000 fois plus de poils absorbants fonctionnels et une augmentation de 40 % de l’absorption du phosphore pour une énergie cellulaire supérieure (ATP). Cet équilibre physiologique optimise la régulation osmotique et le flux de sève hydraulique, ce qui prévient l’abscission abiotique des fleurs et exclut efficacement les désordres physiologiques tels que la pourriture apicale (necrosis) induite par le stress de transpiration. De même, l’acide orthosilicique assimilable (OSA) renforce la matrice cellulaire de la paroi du fruit, ce qui augmente la résistance contre l’échaudure solaire (sunscald) et active le système immunitaire contre les agents pathogènes destructeurs, réduisant les intrants chimiques et les résidus de 20 % à 28 %.",
+          "Choisissez la gamme Orthagrow : réalisez jusqu’à +22 % de rendement supplémentaire sous un stress abiotique sévère, et transformez votre plantation en un écosystème hautement productif générant une récolte premium."
+        ],
+        "en": [
+          "Maximise the physiological efficiency, pericarp (wall) thickness and commercial grading of your pepper crop with the complete Orthagrow range.",
+          "The Orthagrow Topline range offers the direct physiological solution that optimally protects your fruiting crops during continuous flowering, fruit set and intensive cell division under extreme heat, water stress and soil salinity. Through a maximised CEC, the range anchors vital ions in the soil against leaching, while targeted stimulation of the rhizosphere develops 700 to 1,000 times more functional root hairs and raises phosphorus uptake by 40% for superior cellular energy (ATP). This physiological balance optimises osmotic regulation and hydraulic sap flow, which prevents abiotic flower abscission and effectively rules out physiological disorders such as blossom-end rot (necrosis) caused by transpiration stress. Plant-available orthosilicic acid (OSA) also strengthens the cell matrix of the fruit wall, which increases resistance to sunscald and activates the immune system against destructive pathogens, cutting chemical inputs and residues by 20% to 28%.",
+          "Choose the Orthagrow range: achieve up to 22% more yield under severe abiotic stress, and turn your plantation into a highly productive ecosystem that yields a premium harvest."
+        ],
+        "es": [
+          "Maximice la eficiencia fisiológica, el grosor del pericarpio (pared) y la clasificación comercial de su cultivo de pimiento con la gama completa Orthagrow.",
+          "La gama Orthagrow Topline ofrece la solución fisiológica directa que protege de forma óptima sus cultivos de fruto durante la floración continua, el cuajado y la división celular intensiva bajo un estrés térmico, hídrico y de salinidad del suelo extremo. Mediante una CIC maximizada, la gama ancla los iones vitales en el suelo frente a la lixiviación, mientras que la estimulación específica de la rizosfera desarrolla de 700 a 1000 veces más pelos absorbentes funcionales y aumenta un 40 % la absorción de fósforo para una energía celular superior (ATP). Este equilibrio fisiológico optimiza la regulación osmótica y el flujo hidráulico de savia, lo que previene la abscisión abiótica de flores y excluye eficazmente trastornos fisiológicos como la podredumbre apical (necrosis) inducida por el estrés de transpiración. Asimismo, el ácido ortosilícico asimilable (OSA) refuerza la matriz celular de la pared del fruto, lo que aumenta la resistencia frente a las quemaduras solares (sunscald) y activa el sistema inmunitario frente a patógenos destructivos, reduciendo los insumos químicos y los residuos entre un 20 % y un 28 %.",
+          "Elija la gama Orthagrow: logre hasta un 22 % más de rendimiento bajo un estrés abiótico severo, y convierta su plantación en un ecosistema altamente productivo que genera una cosecha premium."
+        ],
+        "nl": [
+          "Maximaliseer de fysiologische efficiëntie, de wanddikte (pericarp) en de handelssortering van uw paprikateelt met het volledige Orthagrow-gamma.",
+          "Het Orthagrow Topline-gamma biedt de rechtstreekse fysiologische oplossing die uw vruchtgewassen optimaal beschermt tijdens de doorlopende bloei, de vruchtzetting en de intensieve celdeling onder extreme hitte, waterstress en bodemverzilting. Via een maximale CEC verankert het gamma vitale ionen in de bodem tegen uitspoeling, terwijl de gerichte stimulatie van de rizosfeer zorgt voor 700 tot 1000 keer meer functionele wortelharen en een 40 % hogere fosforopname voor meer celenergie (ATP). Dit fysiologische evenwicht optimaliseert de osmotische regulatie en de hydraulische sapstroom, wat abiotische bloemval voorkomt en fysiologische afwijkingen zoals neusrot (necrose) door verdampingsstress doeltreffend uitsluit. Daarnaast versterkt opneembaar orthokiezelzuur (OSA) de celmatrix van de vruchtwand, wat de weerstand tegen zonnebrand (sunscald) verhoogt en het immuunsysteem activeert tegen schadelijke ziekteverwekkers, met 20 % tot 28 % minder chemische inputs en residuen.",
+          "Kies voor het Orthagrow-gamma: realiseer tot 22 % meer opbrengst onder zware abiotische stress, en maak van uw teelt een zeer productief ecosysteem met een premium oogst."
+        ]
+      }
+    },
+    {
+      "slug": "pomme-de-terre",
+      "title": {
+        "fr": "Pomme de terre",
+        "en": "Potato",
+        "es": "Patata",
+        "nl": "Aardappel"
+      },
+      "latin": "Solanum tuberosum",
+      "text": {
+        "fr": [
+          "Maximalisez l’efficience physiologique, l’homogénéité des tubercules et la teneur totale en matière sèche de votre culture de pommes de terre grâce à la gamme complète Orthagrow.",
+          "La gamme Orthagrow Topline offre la solution physiologique directe pour protéger de façon optimale votre culture par effet tampon durant les phases critiques de l’initiation des stolons, de la tubérisation et du grossissement intensif sous l’effet de stress thermiques, hydriques et salins extrêmes. Via une CEC maximisée, la gamme ancre les macro- et micronutriments dans le sol contre le lessivage, tandis que la stimulation ciblée de la rhizosphère assure le développement de 700 à 1000 fois plus de poils absorbants fonctionnels et une augmentation de 40 % de l’absorption du phosphore pour un développement précoce des tubercules et une synthèse maximale d’ATP. Cette efficience nutritionnelle supérieure optimise la régulation osmotique et la pression de turgor interne, ce qui prévient l’avortement abiotique des tubercules et minimise les désordres physiologiques au niveau du tissu médullaire (comme le cœur creux). De même, l’acide orthosilicique assimilable (OSA) renforce les structures mécaniques de la paroi cellulaire du périderme (pelure), ce qui augmente la qualité de conservation post-récolte et active le système immunitaire contre les agents pathogènes destructeurs du sol et du feuillage, entraînant une baisse de 30 % à 38 % de vos intrants chimiques et résidus.",
+          "Choisissez la gamme Orthagrow : réalisez une augmentation significative du calibre de vos tubercules et du rendement en matière sèche sous un stress abiotique sévère, et transformez votre culture de pommes de terre en un écosystème hautement productif générant une récolte premium."
+        ],
+        "en": [
+          "Maximise the physiological efficiency, tuber uniformity and total dry-matter content of your potato crop with the complete Orthagrow range.",
+          "The Orthagrow Topline range offers the direct physiological solution that optimally buffers and protects your crop during the critical phases of stolon initiation, tuberisation and intensive bulking under extreme heat, water and salt stress. Through a maximised CEC, the range anchors macro- and micronutrients in the soil against leaching, while targeted stimulation of the rhizosphere develops 700 to 1,000 times more functional root hairs and raises phosphorus uptake by 40% for early tuber development and maximum ATP synthesis. This superior nutrient efficiency optimises osmotic regulation and internal turgor pressure, which prevents abiotic tuber abortion and minimises physiological disorders of the pith tissue (such as hollow heart). Plant-available orthosilicic acid (OSA) also strengthens the mechanical structures of the periderm (skin) cell walls, which improves post-harvest storage quality and activates the immune system against destructive soil and foliar pathogens, cutting your chemical inputs and residues by 30% to 38%.",
+          "Choose the Orthagrow range: achieve a significant increase in tuber size and dry-matter yield under severe abiotic stress, and turn your potato crop into a highly productive ecosystem that yields a premium harvest."
+        ],
+        "es": [
+          "Maximice la eficiencia fisiológica, la homogeneidad de los tubérculos y el contenido total de materia seca de su cultivo de patata con la gama completa Orthagrow.",
+          "La gama Orthagrow Topline ofrece la solución fisiológica directa que amortigua y protege de forma óptima su cultivo durante las fases críticas de iniciación de estolones, tuberización y engorde intensivo bajo un estrés térmico, hídrico y salino extremo. Mediante una CIC maximizada, la gama ancla los macro y micronutrientes en el suelo frente a la lixiviación, mientras que la estimulación específica de la rizosfera desarrolla de 700 a 1000 veces más pelos absorbentes funcionales y aumenta un 40 % la absorción de fósforo para un desarrollo temprano de los tubérculos y una síntesis máxima de ATP. Esta eficiencia nutricional superior optimiza la regulación osmótica y la presión de turgencia interna, lo que previene el aborto abiótico de tubérculos y minimiza los trastornos fisiológicos del tejido medular (como el corazón hueco). Asimismo, el ácido ortosilícico asimilable (OSA) refuerza las estructuras mecánicas de la pared celular del peridermo (piel), lo que mejora la calidad de conservación poscosecha y activa el sistema inmunitario frente a patógenos destructivos del suelo y del follaje, con una reducción del 30 % al 38 % de sus insumos químicos y residuos.",
+          "Elija la gama Orthagrow: logre un aumento significativo del calibre de sus tubérculos y del rendimiento en materia seca bajo un estrés abiótico severo, y convierta su cultivo de patata en un ecosistema altamente productivo que genera una cosecha premium."
+        ],
+        "nl": [
+          "Maximaliseer de fysiologische efficiëntie, de homogeniteit van de knollen en het totale drogestofgehalte van uw aardappelteelt met het volledige Orthagrow-gamma.",
+          "Het Orthagrow Topline-gamma biedt de rechtstreekse fysiologische oplossing die uw gewas optimaal buffert en beschermt tijdens de kritieke fasen van stoloninitiatie, knolzetting en intensieve knolgroei onder extreme hitte-, water- en zoutstress. Via een maximale CEC verankert het gamma macro- en micronutriënten in de bodem tegen uitspoeling, terwijl de gerichte stimulatie van de rizosfeer zorgt voor 700 tot 1000 keer meer functionele wortelharen en een 40 % hogere fosforopname voor een vroege knolontwikkeling en een maximale ATP-synthese. Deze hogere voedingsefficiëntie optimaliseert de osmotische regulatie en de interne turgordruk, wat abiotische knolabortie voorkomt en fysiologische afwijkingen in het mergweefsel (zoals holheid) tot een minimum beperkt. Daarnaast versterkt opneembaar orthokiezelzuur (OSA) de mechanische structuren van de celwand van het periderm (schil), wat de bewaarkwaliteit na de oogst verhoogt en het immuunsysteem activeert tegen schadelijke bodem- en bladziekten, met 30 % tot 38 % minder chemische inputs en residuen als resultaat.",
+          "Kies voor het Orthagrow-gamma: realiseer een aanzienlijk groter knolkaliber en een hogere drogestofopbrengst onder zware abiotische stress, en maak van uw aardappelteelt een zeer productief ecosysteem met een premium oogst."
+        ]
+      }
+    },
+    {
+      "slug": "riz",
+      "title": {
+        "fr": "Riz",
+        "en": "Rice",
+        "es": "Arroz",
+        "nl": "Rijst"
+      },
+      "latin": "Oryza sativa",
+      "text": {
+        "fr": [
+          "Maximalisez l’efficience physiologique, la rigidité des tiges et le remplissage total des grains de votre riziculture grâce à la gamme complète Orthagrow.",
+          "Le riz étant physiologiquement reconnu comme une culture hyper-accumulatrice extrême de silicium, la gamme Orthagrow Topline offre l’ultime source biodisponible pour résoudre directement les blocages physiologiques critiques sous de fortes contraintes de stress thermiques, salins et de transpiration. Via une CEC maximisée, les nutriments vitaux bénéficient d’un effet tampon dans la rhizosphère, où la stimulation active génère 700 à 1000 fois plus de poils absorbants fonctionnels et une augmentation de 40 % de l’absorption du phosphore afin de neutraliser les effets délétères de l’eau d’irrigation saline. L’absorption massive et la translocation de l’acide orthosilicique bio-actif (OSA) se polymérisent en une matrice mécanique imperméable au sein de l’épiderme, ce qui régule les pertes par transpiration foliaire, exclut la verse physiologique et maintient les feuilles étendards parfaitement érigées pour une photosynthèse optimisée. Ce renforcement structurel et cette régulation osmotique améliorée préviennent efficacement l’avortement abiotique des épillets, optimisent le flux de sève hydraulique lors de l’initiation de la panicule et minimisent les brisures physiologiques des grains lors de la phase de maturation.",
+          "Choisissez la gamme Orthagrow : réalisez une hausse massive de vos rendements allant jusqu’à +40 % grâce à l’accumulation physiologique optimale de silicium sous de lourds stress thermiques, salins et hydriques, et transformez votre riziculture en un écosystème hautement productif générant une récolte premium."
+        ],
+        "en": [
+          "Maximise the physiological efficiency, stem rigidity and total grain filling of your rice crop with the complete Orthagrow range.",
+          "As rice is physiologically recognised as an extreme silicon hyper-accumulator, the Orthagrow Topline range offers the ultimate bioavailable source to directly resolve critical physiological blockages under heavy heat, salt and transpiration stress. Through a maximised CEC, vital nutrients are buffered in the rhizosphere, where active stimulation generates 700 to 1,000 times more functional root hairs and a 40% increase in phosphorus uptake to neutralise the harmful effects of saline irrigation water. The massive uptake and translocation of bioactive orthosilicic acid (OSA) polymerise into an impermeable mechanical matrix within the epidermis, which regulates leaf transpiration losses, rules out physiological lodging and keeps flag leaves perfectly upright for optimised photosynthesis. This structural reinforcement and improved osmotic regulation effectively prevent abiotic spikelet abortion, optimise hydraulic sap flow at panicle initiation and minimise physiological grain breakage during ripening.",
+          "Choose the Orthagrow range: achieve a massive yield increase of up to 40% through optimal physiological silicon accumulation under heavy heat, salt and water stress, and turn your rice crop into a highly productive ecosystem that yields a premium harvest."
+        ],
+        "es": [
+          "Maximice la eficiencia fisiológica, la rigidez de los tallos y el llenado total del grano de su cultivo de arroz con la gama completa Orthagrow.",
+          "Dado que el arroz está reconocido fisiológicamente como un cultivo hiperacumulador extremo de silicio, la gama Orthagrow Topline ofrece la fuente biodisponible definitiva para resolver directamente los bloqueos fisiológicos críticos bajo un fuerte estrés térmico, salino y de transpiración. Mediante una CIC maximizada, los nutrientes vitales quedan amortiguados en la rizosfera, donde la estimulación activa genera de 700 a 1000 veces más pelos absorbentes funcionales y un aumento del 40 % de la absorción de fósforo para neutralizar los efectos nocivos del agua de riego salina. La absorción masiva y la translocación del ácido ortosilícico bioactivo (OSA) se polimerizan en una matriz mecánica impermeable dentro de la epidermis, lo que regula las pérdidas por transpiración foliar, excluye el encamado fisiológico y mantiene las hojas bandera perfectamente erguidas para una fotosíntesis optimizada. Este refuerzo estructural y una mejor regulación osmótica previenen eficazmente el aborto abiótico de las espiguillas, optimizan el flujo hidráulico de savia en la iniciación de la panícula y minimizan la rotura fisiológica de los granos durante la maduración.",
+          "Elija la gama Orthagrow: logre un aumento masivo de sus rendimientos de hasta un 40 % gracias a la acumulación fisiológica óptima de silicio bajo un fuerte estrés térmico, salino e hídrico, y convierta su cultivo de arroz en un ecosistema altamente productivo que genera una cosecha premium."
+        ],
+        "nl": [
+          "Maximaliseer de fysiologische efficiëntie, de stevigheid van de stengels en de totale korrelvulling van uw rijstteelt met het volledige Orthagrow-gamma.",
+          "Aangezien rijst fysiologisch erkend is als een extreme hyperaccumulator van silicium, biedt het Orthagrow Topline-gamma de ultieme biologisch beschikbare bron om kritieke fysiologische blokkades onder zware hitte-, zout- en verdampingsstress rechtstreeks op te heffen. Via een maximale CEC worden vitale voedingsstoffen gebufferd in de rizosfeer, waar de actieve stimulatie 700 tot 1000 keer meer functionele wortelharen en een 40 % hogere fosforopname oplevert om de schadelijke effecten van zout irrigatiewater te neutraliseren. De massale opname en verplaatsing van bioactief orthokiezelzuur (OSA) polymeriseren tot een ondoorlaatbare mechanische matrix in de opperhuid, wat het verdampingsverlies via de bladeren reguleert, fysiologische legering uitsluit en de vlagbladeren perfect rechtop houdt voor een optimale fotosynthese. Deze structurele versterking en verbeterde osmotische regulatie voorkomen doeltreffend abiotische abortie van de aartjes, optimaliseren de hydraulische sapstroom bij de pluimaanleg en beperken fysiologische korrelbreuk tijdens de afrijping tot een minimum.",
+          "Kies voor het Orthagrow-gamma: realiseer een massale opbrengststijging tot 40 % dankzij een optimale fysiologische opbouw van silicium onder zware hitte-, zout- en waterstress, en maak van uw rijstteelt een zeer productief ecosysteem met een premium oogst."
+        ]
+      }
+    },
+    {
+      "slug": "bananier",
+      "title": {
+        "fr": "Bananier",
+        "en": "Banana",
+        "es": "Platanera",
+        "nl": "Banaan"
+      },
+      "latin": "Musa spp.",
+      "text": {
+        "fr": [
+          "Maximalisez l’efficience physiologique, l’architecture du régime et le poids moyen du régime de votre culture de bananes grâce à la gamme complète Orthagrow.",
+          "La gamme Orthagrow Topline offre la solution physiologique directe pour protéger de façon optimale votre culture par effet tampon durant l’initiation florale critique et la phase de remplissage intensif du régime sous l’effet de stress thermiques, hydriques et salins extrêmes. Via une CEC maximisée, la gamme ancre les macro-ions dans le sol contre le lessivage, tandis que la stimulation ciblée de la rhizosphère assure le développement de 700 à 1000 fois plus de poils absorbants fonctionnels et une augmentation de 40 % de l’absorption du phosphore qui propulse hydrauliquement l’absorption massive de potassium – le nutriment clé absolu pour la translocation enzymatique des sucres vers le régime. Le bananier étant un hyper-accumulateur de silicium, l’absorption d’acide orthosilicique bio-actif (OSA) induit une polymérisation mécanique dans les parois cellulaires du pseudo-tronc et des feuilles, ce qui garantit la rigidité structurelle contre le pliage induit par le poids des régimes lourds et minimise les pertes par transpiration. Cette stabilité pariétale accrue au niveau de l’épiderme des fruits prévient en outre le craquellement abiotique des doigts (fruits), réduit la dégradation post-récolte et active le système immunitaire contre les agents pathogènes destructeurs, diminuant vos intrants chimiques de 20 %.",
+          "Choisissez la gamme Orthagrow : augmentez votre récolte totale de +25 % grâce à l’optimisation du poids des régimes et du calibre des doigts sous un stress abiotique sévère, et transformez votre plantation en un écosystème hautement productif générant une récolte premium."
+        ],
+        "en": [
+          "Maximise the physiological efficiency, bunch architecture and average bunch weight of your banana crop with the complete Orthagrow range.",
+          "The Orthagrow Topline range offers the direct physiological solution that optimally buffers and protects your crop during critical floral initiation and the intensive bunch-filling phase under extreme heat, water and salt stress. Through a maximised CEC, the range anchors macro-ions in the soil against leaching, while targeted stimulation of the rhizosphere develops 700 to 1,000 times more functional root hairs and a 40% increase in phosphorus uptake that hydraulically drives massive potassium uptake – the absolute key nutrient for the enzymatic translocation of sugars to the bunch. As the banana plant is a silicon hyper-accumulator, the uptake of bioactive orthosilicic acid (OSA) induces mechanical polymerisation in the cell walls of the pseudostem and leaves, which ensures structural rigidity against bending under the weight of heavy bunches and minimises transpiration losses. This greater wall stability in the fruit epidermis also prevents abiotic finger (fruit) splitting, reduces post-harvest decay and activates the immune system against destructive pathogens, cutting your chemical inputs by 20%.",
+          "Choose the Orthagrow range: increase your total harvest by 25% by optimising bunch weight and finger size under severe abiotic stress, and turn your plantation into a highly productive ecosystem that yields a premium harvest."
+        ],
+        "es": [
+          "Maximice la eficiencia fisiológica, la arquitectura del racimo y el peso medio del racimo de su cultivo de plátano con la gama completa Orthagrow.",
+          "La gama Orthagrow Topline ofrece la solución fisiológica directa que amortigua y protege de forma óptima su cultivo durante la inducción floral crítica y la fase de llenado intensivo del racimo bajo un estrés térmico, hídrico y salino extremo. Mediante una CIC maximizada, la gama ancla los macroiones en el suelo frente a la lixiviación, mientras que la estimulación específica de la rizosfera desarrolla de 700 a 1000 veces más pelos absorbentes funcionales y un aumento del 40 % de la absorción de fósforo que impulsa hidráulicamente una absorción masiva de potasio, el nutriente clave por excelencia para la translocación enzimática de los azúcares hacia el racimo. Dado que la platanera es una hiperacumuladora de silicio, la absorción de ácido ortosilícico bioactivo (OSA) induce una polimerización mecánica en las paredes celulares del pseudotallo y de las hojas, lo que garantiza la rigidez estructural frente al doblado causado por el peso de los racimos y minimiza las pérdidas por transpiración. Esta mayor estabilidad de la pared en la epidermis de los frutos previene además el rajado abiótico de los dedos (frutos), reduce la degradación poscosecha y activa el sistema inmunitario frente a patógenos destructivos, reduciendo sus insumos químicos en un 20 %.",
+          "Elija la gama Orthagrow: aumente su cosecha total un 25 % optimizando el peso de los racimos y el calibre de los dedos bajo un estrés abiótico severo, y convierta su plantación en un ecosistema altamente productivo que genera una cosecha premium."
+        ],
+        "nl": [
+          "Maximaliseer de fysiologische efficiëntie, de architectuur van de tros en het gemiddelde trosgewicht van uw bananenteelt met het volledige Orthagrow-gamma.",
+          "Het Orthagrow Topline-gamma biedt de rechtstreekse fysiologische oplossing die uw gewas optimaal buffert en beschermt tijdens de kritieke bloei-inductie en de intensieve vullingsfase van de tros onder extreme hitte-, water- en zoutstress. Via een maximale CEC verankert het gamma macro-ionen in de bodem tegen uitspoeling, terwijl de gerichte stimulatie van de rizosfeer zorgt voor 700 tot 1000 keer meer functionele wortelharen en een 40 % hogere fosforopname, die hydraulisch een massale kaliumopname aandrijft – de absolute sleutelvoedingsstof voor het enzymatische transport van suikers naar de tros. Aangezien de bananenplant een hyperaccumulator van silicium is, leidt de opname van bioactief orthokiezelzuur (OSA) tot een mechanische polymerisatie in de celwanden van de schijnstam en de bladeren, wat zorgt voor structurele stevigheid tegen het doorbuigen onder het gewicht van zware trossen en verdampingsverliezen tot een minimum beperkt. Deze grotere wandstabiliteit in de opperhuid van de vruchten voorkomt bovendien het abiotisch openbarsten van de vingers (vruchten), vermindert bederf na de oogst en activeert het immuunsysteem tegen schadelijke ziekteverwekkers, met 20 % minder chemische inputs.",
+          "Kies voor het Orthagrow-gamma: verhoog uw totale oogst met 25 % door het trosgewicht en het kaliber van de vingers te optimaliseren onder zware abiotische stress, en maak van uw plantage een zeer productief ecosysteem met een premium oogst."
+        ]
+      }
+    },
+    {
+      "slug": "prunier",
+      "title": {
+        "fr": "Prunier",
+        "en": "Plum",
+        "es": "Ciruelo",
+        "nl": "Pruim"
+      },
+      "latin": "Prunus domestica",
+      "text": {
+        "fr": [
+          "Maximalisez l’efficience physiologique, la densité de la pulpe et le taux Brix de votre culture de prunes grâce à la gamme complète Orthagrow.",
+          "La gamme Orthagrow Topline offre la solution physiologique directe pour protéger de façon optimale vos arbres fruitiers à noyau par effet tampon durant les phases hautement critiques de la floraison, de la nouaison et de la phase finale d’élongation cellulaire sous l’effet de stress thermiques, hydriques et salins extrêmes. Via une CEC maximisée, la gamme ancre les macro- et micronutriments dans le sol contre le lessivage, tandis que la stimulation ciblée de la rhizosphère assure le développement de 700 à 1000 fois plus de poils absorbants fonctionnels et une augmentation de 40 % de l’absorption du phosphore pour une énergie cellulaire maximale (synthèse d’ATP). Cette efficience nutritionnelle supérieure optimise la pression de turgor interne et l’équilibre hormonal, ce qui minimise efficacement la chute abiotique des fleurs et des fruits et garantit un développement homogène des grappes de fruits. De même, l’acide orthosilicique assimilable (OSA) renforce l’élasticité de l’épiderme du fruit, ce qui optimise la qualité nutritionnelle, l’indice Brix (accumulation des sucres) et les propriétés organoleptiques, tandis que les défenses naturelles de la plante sont activées pour une réduction de 20 % de vos intrants chimiques.",
+          "Choisissez la gamme Orthagrow : maximalisez le calibre de vos fruits et leur profil aromatique en minimisant la chute des fleurs et des fruits sous un stress abiotique sévère, et transformez votre verger en un écosystème hautement productif générant une récolte premium."
+        ],
+        "en": [
+          "Maximise the physiological efficiency, flesh density and Brix level of your plum crop with the complete Orthagrow range.",
+          "The Orthagrow Topline range offers the direct physiological solution that optimally buffers and protects your stone-fruit trees during the highly critical phases of flowering, fruit set and final cell elongation under extreme heat, water and salt stress. Through a maximised CEC, the range anchors macro- and micronutrients in the soil against leaching, while targeted stimulation of the rhizosphere develops 700 to 1,000 times more functional root hairs and raises phosphorus uptake by 40% for maximum cellular energy (ATP synthesis). This superior nutrient efficiency optimises internal turgor pressure and hormonal balance, which effectively minimises abiotic flower and fruit drop and ensures even development of the fruit clusters. Plant-available orthosilicic acid (OSA) also strengthens the elasticity of the fruit epidermis, which optimises nutritional quality, the Brix index (sugar accumulation) and organoleptic properties, while the plant's natural defences are activated for a 20% reduction in your chemical inputs.",
+          "Choose the Orthagrow range: maximise fruit size and aromatic profile by minimising flower and fruit drop under severe abiotic stress, and turn your orchard into a highly productive ecosystem that yields a premium harvest."
+        ],
+        "es": [
+          "Maximice la eficiencia fisiológica, la densidad de la pulpa y el grado Brix de su cultivo de ciruela con la gama completa Orthagrow.",
+          "La gama Orthagrow Topline ofrece la solución fisiológica directa que amortigua y protege de forma óptima sus frutales de hueso durante las fases sumamente críticas de floración, cuajado y elongación celular final bajo un estrés térmico, hídrico y salino extremo. Mediante una CIC maximizada, la gama ancla los macro y micronutrientes en el suelo frente a la lixiviación, mientras que la estimulación específica de la rizosfera desarrolla de 700 a 1000 veces más pelos absorbentes funcionales y aumenta un 40 % la absorción de fósforo para una energía celular máxima (síntesis de ATP). Esta eficiencia nutricional superior optimiza la presión de turgencia interna y el equilibrio hormonal, lo que minimiza eficazmente la caída abiótica de flores y frutos y garantiza un desarrollo homogéneo de los racimos de frutos. Asimismo, el ácido ortosilícico asimilable (OSA) refuerza la elasticidad de la epidermis del fruto, lo que optimiza la calidad nutricional, el índice Brix (acumulación de azúcares) y las propiedades organolépticas, mientras que las defensas naturales de la planta se activan para una reducción del 20 % de sus insumos químicos.",
+          "Elija la gama Orthagrow: maximice el calibre de sus frutos y su perfil aromático minimizando la caída de flores y frutos bajo un estrés abiótico severo, y convierta su huerto en un ecosistema altamente productivo que genera una cosecha premium."
+        ],
+        "nl": [
+          "Maximaliseer de fysiologische efficiëntie, de dichtheid van het vruchtvlees en het Brix-gehalte van uw pruimenteelt met het volledige Orthagrow-gamma.",
+          "Het Orthagrow Topline-gamma biedt de rechtstreekse fysiologische oplossing die uw steenvruchtbomen optimaal buffert en beschermt tijdens de zeer kritieke fasen van bloei, vruchtzetting en de laatste celstrekking onder extreme hitte-, water- en zoutstress. Via een maximale CEC verankert het gamma macro- en micronutriënten in de bodem tegen uitspoeling, terwijl de gerichte stimulatie van de rizosfeer zorgt voor 700 tot 1000 keer meer functionele wortelharen en een 40 % hogere fosforopname voor maximale celenergie (ATP-synthese). Deze hogere voedingsefficiëntie optimaliseert de interne turgordruk en het hormonale evenwicht, wat abiotische bloem- en vruchtval doeltreffend beperkt en een gelijkmatige ontwikkeling van de vruchttrossen garandeert. Daarnaast versterkt opneembaar orthokiezelzuur (OSA) de elasticiteit van de opperhuid van de vrucht, wat de voedingskwaliteit, de Brix-index (suikeropbouw) en de smaakeigenschappen optimaliseert, terwijl de natuurlijke afweer van de plant wordt geactiveerd voor 20 % minder chemische inputs.",
+          "Kies voor het Orthagrow-gamma: maximaliseer het kaliber en het aromaprofiel van uw vruchten door bloem- en vruchtval tot een minimum te beperken onder zware abiotische stress, en maak van uw boomgaard een zeer productief ecosysteem met een premium oogst."
+        ]
+      }
+    }
+  ]
 }

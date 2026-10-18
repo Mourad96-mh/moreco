@@ -38,12 +38,30 @@ export default function ProductCard({ product, locale }: { product: Product; loc
           />
         )}
         {placeholder && <Image src={placeholder} alt="" fill sizes="300px" className={s.placeholder} />}
+        {/* The one thing that tells the Clearox strengths apart, so it sits on the drum. */}
+        {product.concentration && <span className={s.badge}>{product.concentration}</span>}
       </Link>
 
       <div className={s.body}>
-        <h3 className={s.title}>
-          <Link href={productHref(locale, product.slug)}>{productName(product, locale)}</Link>
-        </h3>
+        {product.concentration ? (
+          /* "CLEAROX – 25 % concentraat" broke at random in a narrow card: the brand on
+             one line, the strength centred under it. */
+          <h3 className={`${s.title} ${s.titleVariant}`}>
+            <Link href={productHref(locale, product.slug)}>
+              {productName(product, locale)
+                .split(' – ')
+                .map((line) => (
+                  <span key={line} className={s.titleLine}>
+                    {line}
+                  </span>
+                ))}
+            </Link>
+          </h3>
+        ) : (
+          <h3 className={s.title}>
+            <Link href={productHref(locale, product.slug)}>{productName(product, locale)}</Link>
+          </h3>
+        )}
 
         {copy.claim && <p className={s.claim}>{copy.claim}</p>}
 

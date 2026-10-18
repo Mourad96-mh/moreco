@@ -1,5 +1,5 @@
 import { LOCALES, type Locale } from '@/i18n/config';
-import { PRODUCTS, RANGES, SEGMENTS, type SegmentKey } from './products';
+import { PRODUCTS, RANGES, SEGMENTS, productsOfRange, type SegmentKey } from './products';
 import { TRIALS } from './trials';
 import { ARTICLES } from './articles';
 import { words, segments } from './route-words.json';
@@ -109,10 +109,14 @@ function routesFor(locale: Locale): Route[] {
     add('segment', `segment:${segment}`, [w('products', locale), seg], { segment });
 
     for (const range of RANGES.filter((r) => r.segment === segment)) {
-      add('range', `range:${range.slug}`, [w('products', locale), seg, range.slug], {
-        segment,
-        range: range.slug,
-      });
+      /* A range whose products are all unlisted (Huwa-San Professionnel) has no page of
+         its own; its products keep theirs. */
+      if (productsOfRange(range.slug).length > 0) {
+        add('range', `range:${range.slug}`, [w('products', locale), seg, range.slug], {
+          segment,
+          range: range.slug,
+        });
+      }
 
       for (const product of PRODUCTS.filter((p) => p.range === range.slug)) {
         add('product', `product:${product.slug}`, [w('products', locale), seg, range.slug, product.slug], {

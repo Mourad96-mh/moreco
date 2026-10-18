@@ -78,11 +78,11 @@
       },
       {
         "value": "2001",
-        "label": "Présence au Maroc depuis"
+        "label": "Premier essai au Maroc"
       },
       {
-        "value": "2014",
-        "label": "Présence à Agadir depuis"
+        "value": "2012",
+        "label": "Présence au Maroc depuis"
       }
     ],
     "quoteTitle": "Un besoin précis ? Demandez votre devis",
@@ -156,13 +156,11 @@
   },
   "rdi": {
     "title": "Recherche & Développement Moreco",
-    "intro": "Depuis 2009, Moreco développe et teste ses solutions de silicium en conditions réelles, avec des producteurs marocains et des instituts officiels.",
+    "intro": "Depuis 2012, Moreco développe et teste ses solutions à base de silicium en conditions réelles, en collaboration avec des producteurs marocains et des instituts officiels.",
     "innovationTitle": "Innovation",
     "innovationLead": "L’innovation au service de la performance agricole",
     "innovationText": [
-      "L’innovation est au cœur de la démarche de Moreco. Depuis 2009, notre entreprise investit dans la recherche et le développement de solutions biotechnologiques destinées à l’agriculture.",
-      "Notre département R&D développe et optimise des formulations innovantes à partir de technologies avancées, avec une attention particulière portée à leur efficacité agronomique, leur assimilation par les plantes et leur impact sur la qualité des productions.",
-      "Notre équipe travaille en étroite collaboration avec des producteurs et des instituts de recherche afin de concevoir, tester et améliorer nos solutions dans des conditions réelles. Chaque formulation fait l’objet d’une démarche rigoureuse visant à garantir sa qualité, sa performance et sa régularité d’utilisation."
+      "Chez Moreco, l’innovation façonne l’avenir de l’agriculture. Depuis 2012, nous investissons de manière ciblée dans le développement de solutions biotechnologiques de haute qualité. Avec nos experts R&D et nos partenaires, nous concevons et optimisons des formulations avancées qui contribuent directement à votre rentabilité. Notre priorité est d’atteindre une efficacité agronomique maximale, une absorption supérieure par les cultures et une amélioration démontrée de la qualité des récoltes. En étroite collaboration avec des producteurs innovants et des instituts de recherche de premier plan, nous testons et perfectionnons nos produits dans des conditions réelles. Grâce à ce processus rigoureux de contrôle de la qualité, nous garantissons des performances constantes et des résultats fiables sur le terrain."
     ],
     "customTitle": "Besoin d’une formulation ou d’un produit sur mesure ?",
     "customText": [
@@ -183,9 +181,9 @@
     "trialLabel": "Essai",
     "backToTrials": "Retour aux essais",
     "projectDescription": "Description du projet",
-    "statTrialsWorld": "Campagnes d’essais mondiales",
+    "statTrialsWorld": "Campagnes d’essais dans le monde",
     "statTrials": "Campagnes documentées au Maroc",
-    "statPlates": "Planches de résultats",
+    "statPlates": "Fiches de résultats",
     "statSince": "Première campagne",
     "publicationsIntro": "Les études et l'entretien scientifique sur lesquels reposent nos formulations, en téléchargement libre."
   },
@@ -197,19 +195,13 @@
     "domains": "Domaines",
     "discover": "En savoir plus",
     "contactLead": "Nos équipes répondent aux demandes techniques et commerciales.",
-    "introTitle": "L’innovation scientifique au service de l’agriculture régénérative",
+    "introTitle": "L’innovation scientifique au service de l’agriculture régénératrice",
     "introText": [
-      "Moreco développe, sélectionne et optimise des technologies agronomiques avancées qui contribuent à l’agriculture régénérative ainsi qu’à une production agricole plus efficace et durable.",
-      "Notre expertise couvre notamment la physiologie végétale, l’acide orthosilicique stabilisé (OSA), la nutrition de précision, la santé des sols, la biostimulation, l’utilisation efficiente de l’eau et le renforcement de la résilience physiologique des cultures.",
-      "Nous sélectionnons et développons des technologies fondées sur leur pertinence scientifique, leur valeur technologique et leur applicabilité sur le terrain. Nous proposons ainsi aux professionnels de l’agriculture des solutions visant à optimiser les interactions entre le sol, la zone racinaire et la plante.",
-      "Notre approche repose sur une vision intégrée : un sol vivant et sain favorise un système racinaire performant, une plante fonctionnelle et, à terme, une production de qualité, plus efficiente et durable."
+      "Moreco sélectionne et optimise des technologies avancées pour l’agriculture régénératrice et une production durable. En étroite collaboration avec les développeurs de la formulation OSA brevetée à l’échelle mondiale, nous renforçons la physiologie végétale et l’efficacité d’utilisation de l’eau. Nous maximisons ainsi la synergie entre la matrice du sol, la rhizosphère et la culture. Un sol biologiquement actif favorise un système racinaire puissant, ce qui se traduit par des cultures physiologiquement supérieures et des rendements durables pour l’avenir."
     ],
     "visionTitle": "Notre vision",
     "vision": [
-      "Des sols vivants, fertiles et fonctionnels.",
-      "Des cultures saines, robustes et résilientes.",
-      "Des productions de qualité, performantes et durables.",
-      "Une agriculture fondée sur l’innovation, la science et la durabilité."
+      "Unlock the power of soil biology to reduce input costs & boost crop yield."
     ]
   },
   "press": {

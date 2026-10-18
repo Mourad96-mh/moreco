@@ -24,6 +24,16 @@ export interface Product {
   range: string;
   /** Segments the product is also sold into, e.g. Huwa-San VET for livestock. */
   alsoIn?: SegmentKey[];
+  /**
+   * Kept off its own segment's page and range page, but still claimed by a family in
+   * another segment, so it keeps its product page. Huwa-San AGRO, VET and Water
+   * Treatment, and the all-strengths Clearox, since the briefing of 2026-10-18.
+   */
+  unlisted?: boolean;
+  /** A variant shares the pack shot, text and datasheet of the product named here. */
+  variantOf?: string;
+  /** The variant's strength, which replaces the parent's list of concentrations. */
+  concentration?: string;
 }
 
 export interface ProductCopy {
@@ -207,10 +217,13 @@ export const RANGES: ProductRange[] = [
   /* The OrthaFight range went with its two products — see the note above PRODUCTS. */
   { slug: 'mavita', segment: 'humans', name: 'Mavita', brandMark: '/media/brand/mavita.webp' },
   { slug: 'orthahealth', segment: 'animals', name: 'OrthaHealth', brandMark: '/media/brand/orthahealth.webp' },
+  /*
+   * General use holds Clearox alone since the briefing of 2026-10-18: Huwa-San Hygiene @
+   * Home, Huwa-San Pool and BioXeco went with their products. Huwa-San Professionnel
+   * stays only as the home of the three products the Agriculture and Animals
+   * disinfectant families still show; finalize-export.mjs redirects the rest.
+   */
   { slug: 'huwa-san-pro', segment: 'general', name: 'Huwa-San Professionnel', brandMark: '/media/brand/huwa-san.webp' },
-  { slug: 'huwa-san-home', segment: 'general', name: 'Huwa-San Hygiene @ Home', brandMark: '/media/brand/huwa-san.webp' },
-  { slug: 'huwa-san-pool', segment: 'general', name: 'Huwa-San Pool', brandMark: '/media/brand/huwa-san.webp' },
-  { slug: 'bioxeco', segment: 'general', name: 'BioXeco', brandMark: '/media/brand/bioxeco.webp' },
   { slug: 'clearox', segment: 'general', name: 'Clearox', brandMark: '/media/brand/clearox.webp' },
 ];
 
@@ -356,50 +369,77 @@ export const PRODUCTS: Product[] = [
     range: 'orthahealth',
   },
 
-  { slug: 'huwa-san-agro', name: 'Huwa-San AGRO', segment: 'general', range: 'huwa-san-pro', alsoIn: ['agri'] },
-  { slug: 'huwa-san-vet', name: 'Huwa-San VET', segment: 'general', range: 'huwa-san-pro', alsoIn: ['animals'] },
-  { slug: 'huwa-san-fb', name: 'Huwa-San F&B', segment: 'general', range: 'huwa-san-pro' },
-  { slug: 'huwa-san-hard-surface', name: 'Huwa-San Hard Surface', segment: 'general', range: 'huwa-san-pro' },
-  { slug: 'huwa-san-water-treatment', name: 'Huwa-San Water Treatment', segment: 'general', range: 'huwa-san-pro', alsoIn: ['animals'] },
-  { slug: 'huwa-san-hands', name: 'Huwa-San Hands', segment: 'general', range: 'huwa-san-home' },
-  { slug: 'huwa-san-toilet', name: 'Huwa-San Toilet', segment: 'general', range: 'huwa-san-home' },
-  { slug: 'huwa-san-bathroom', name: 'Huwa-San Bathroom', segment: 'general', range: 'huwa-san-home' },
-  { slug: 'huwa-san-fruit-vegetables', name: 'Huwa-San Fruit & Vegetables', segment: 'general', range: 'huwa-san-home' },
-  { slug: 'huwa-san-kitchen', name: 'Huwa-San Kitchen', segment: 'general', range: 'huwa-san-home' },
-  { slug: 'huwa-san-kiddiepool', name: 'Huwa-San KiddiePOOL', segment: 'general', range: 'huwa-san-pool' },
-  { slug: 'huwa-san-minipool', name: 'Huwa-San MiniPOOL', segment: 'general', range: 'huwa-san-pool' },
-  { slug: 'huwa-san-pool', name: 'Huwa-San POOL', segment: 'general', range: 'huwa-san-pool' },
-  { slug: 'huwa-san-whirlpool', name: 'Huwa-San WhirlPOOL', segment: 'general', range: 'huwa-san-pool' },
-  { slug: 'huwa-san-wellness', name: 'Huwa-San Wellness', segment: 'general', range: 'huwa-san-pool' },
-  { slug: 'bioxeco-hand', name: 'BioXeco Hand', segment: 'general', range: 'bioxeco' },
-  { slug: 'bioxeco-25s', name: 'BioXeco 25S', segment: 'general', range: 'bioxeco' },
-  { slug: 'bioxeco-dw', name: 'BioXeco DW', segment: 'general', range: 'bioxeco' },
-  { slug: 'bioxeco-fog', name: 'BioXeco FOG', segment: 'general', range: 'bioxeco' },
-  { slug: 'clearox', name: 'Clearox', segment: 'general', range: 'clearox', alsoIn: ['animals', 'agri'] },
+  { slug: 'huwa-san-agro', name: 'Huwa-San AGRO', segment: 'general', range: 'huwa-san-pro', alsoIn: ['agri'], unlisted: true },
+  { slug: 'huwa-san-vet', name: 'Huwa-San VET', segment: 'general', range: 'huwa-san-pro', alsoIn: ['animals'], unlisted: true },
+  {
+    slug: 'huwa-san-water-treatment',
+    name: 'Huwa-San Water Treatment',
+    segment: 'general',
+    range: 'huwa-san-pro',
+    alsoIn: ['animals'],
+    unlisted: true,
+  },
+  /*
+   * The all-strengths Clearox stays for the Agriculture and Animals disinfectant
+   * families. General use shows the three strengths below instead, one card each with
+   * the same drum (briefing of 2026-10-18), strongest first.
+   */
+  { slug: 'clearox', name: 'Clearox', segment: 'general', range: 'clearox', alsoIn: ['animals', 'agri'], unlisted: true },
+  {
+    slug: 'clearox-50',
+    name: 'CLEAROX – Concentré à 50 %',
+    names: { en: 'CLEAROX – 50% concentrate', es: 'CLEAROX – Concentrado al 50 %', nl: 'CLEAROX – 50 % concentraat' },
+    segment: 'general',
+    range: 'clearox',
+    variantOf: 'clearox',
+    concentration: '50 %',
+  },
+  {
+    slug: 'clearox-35',
+    name: 'CLEAROX – Concentré à 35 %',
+    names: { en: 'CLEAROX – 35% concentrate', es: 'CLEAROX – Concentrado al 35 %', nl: 'CLEAROX – 35 % concentraat' },
+    segment: 'general',
+    range: 'clearox',
+    variantOf: 'clearox',
+    concentration: '35 %',
+  },
+  {
+    slug: 'clearox-25',
+    name: 'CLEAROX – Concentré à 25 %',
+    names: { en: 'CLEAROX – 25% concentrate', es: 'CLEAROX – Concentrado al 25 %', nl: 'CLEAROX – 25 % concentraat' },
+    segment: 'general',
+    range: 'clearox',
+    variantOf: 'clearox',
+    concentration: '25 %',
+  },
 ];
 
 type MediaEntry = { image?: string; datasheet?: string; datasheetKind?: string };
 const MEDIA = media as Record<string, MediaEntry>;
 const COPY = copy as Record<string, Partial<Record<Locale, ProductCopy>>>;
 
-export const productImage = (slug: string): string | null => MEDIA[slug]?.image ?? null;
-export const productDatasheet = (slug: string): string | null => MEDIA[slug]?.datasheet ?? null;
+/** A variant's pack shot, text and datasheet are its parent's. */
+const sourceOf = (slug: string): string => PRODUCTS.find((p) => p.slug === slug)?.variantOf ?? slug;
+
+export const productImage = (slug: string): string | null => MEDIA[sourceOf(slug)]?.image ?? null;
+export const productDatasheet = (slug: string): string | null => MEDIA[sourceOf(slug)]?.datasheet ?? null;
 
 /** 'flyer' = commercial product sheet, 'sds' = safety data sheet. Labelled differently. */
 export const productDatasheetKind = (slug: string): 'flyer' | 'sds' =>
-  MEDIA[slug]?.datasheetKind === 'sds' ? 'sds' : 'flyer';
+  MEDIA[sourceOf(slug)]?.datasheetKind === 'sds' ? 'sds' : 'flyer';
 
 /**
  * All four locales are filled in — FR and EN from the archive, ES and DE translated by us.
  * The FR -> EN fallback stays as a safety net for any SKU a future extraction adds.
  */
 export function productCopy(slug: string, locale: Locale): ProductCopy {
-  const entry = COPY[slug] ?? {};
-  return (
+  const entry = COPY[sourceOf(slug)] ?? {};
+  const found =
     entry[locale] ??
     entry.fr ??
-    entry.en ?? { claim: null, paragraphs: [], advantages: [], sizes: [] }
-  );
+    entry.en ?? { claim: null, paragraphs: [], advantages: [], sizes: [] };
+  const concentration = getProduct(slug)?.concentration;
+  return concentration ? { ...found, concentrations: [concentration] } : found;
 }
 
 /** The product's name in this language — French unless the SKU carries a translation. */
@@ -409,11 +449,12 @@ export const productName = (product: Product, locale: Locale): string =>
 export const getProduct = (slug: string) => PRODUCTS.find((p) => p.slug === slug);
 export const getRange = (slug: string) => RANGES.find((r) => r.slug === slug);
 export const rangesOf = (segment: SegmentKey) => RANGES.filter((r) => r.segment === segment);
-export const productsOfRange = (range: string) => PRODUCTS.filter((p) => p.range === range);
+/** The products a range page lists — an unlisted product keeps its page but not a card. */
+export const productsOfRange = (range: string) => PRODUCTS.filter((p) => p.range === range && !p.unlisted);
 
 /** Everything sold into a segment, including products whose home range sits elsewhere. */
 export const productsOfSegment = (segment: SegmentKey) =>
-  PRODUCTS.filter((p) => p.segment === segment || p.alsoIn?.includes(segment));
+  PRODUCTS.filter((p) => (p.segment === segment && !p.unlisted) || p.alsoIn?.includes(segment));
 
 export const familiesOf = (segment: SegmentKey) => FAMILIES.filter((f) => f.segment === segment);
 

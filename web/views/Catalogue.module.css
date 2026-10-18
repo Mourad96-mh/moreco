@@ -4,6 +4,12 @@
   gap: clamp(1rem, 2vw, 1.75rem);
 }
 
+/* A short row centred on the page — General use, three Clearox cards (2026-10-18). */
+.gridCentered {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+  justify-content: center;
+}
+
 
 
 

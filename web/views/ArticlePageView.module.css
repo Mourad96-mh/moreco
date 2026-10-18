@@ -103,6 +103,130 @@
   color: var(--ink-3);
 }
 
+/* Crop sheets: the flyer, then the client's text beneath it (2026-10-18). */
+.crops {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
+  /* An open card grows on its own; the closed ones beside it keep their height. */
+  align-items: start;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.crop {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1.25rem 1.35rem 1.4rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--paper);
+  scroll-margin-top: 6rem;
+}
+
+.crop p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.cropFlyer {
+  display: block;
+  margin: -1.25rem -1.35rem 0.4rem;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  background: var(--paper-2);
+}
+
+.cropFlyer img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The fold: the name and Latin name with a round chevron, as on the family notes. */
+.cropSummary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  list-style: none;
+  cursor: pointer;
+}
+
+.cropSummary::-webkit-details-marker {
+  display: none;
+}
+
+.cropSummary:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 4px;
+  border-radius: var(--radius);
+}
+
+.cropName {
+  margin: 0;
+  font-size: var(--step-1);
+  line-height: 1.25;
+}
+
+.cropLatin {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.92rem;
+  font-style: italic;
+  color: var(--ink-3);
+}
+
+.cropChevron {
+  position: relative;
+  flex-shrink: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 2px solid var(--green);
+  border-radius: 50%;
+  transition: background-color 0.2s ease, transform 0.25s ease;
+}
+
+.cropChevron::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-right: 2px solid var(--green);
+  border-bottom: 2px solid var(--green);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.cropSummary:hover .cropChevron {
+  background: rgb(64 171 92 / 0.1);
+}
+
+.cropFold[open] .cropChevron {
+  transform: rotate(180deg);
+}
+
+.cropBody {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.crop .cropClosing {
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--line);
+  font-weight: 600;
+  color: var(--green-dark);
+}
+
 /* ---------- knowledge ---------- */
 
 .articles {

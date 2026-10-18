@@ -161,6 +161,11 @@
   text-shadow: 0 2px 20px rgb(0 0 0 / 0.4);
 }
 
+.title.titleWide {
+  max-width: none;
+  font-size: var(--step-3);
+}
+
 .onImage .lead,
 .onImage .introText {
   color: rgb(255 255 255 / 0.94);

@@ -111,18 +111,18 @@ const RULES = [
      split the animal catalogue by species; its old URL lands on the segment page,
      which is where the four sub-categories are chosen. */
   ['/des-animaux/orthahealth-fr/', 'fr', 'produits/animaux'],
-  ['/des-animaux/huwa-san-for-animals/', 'fr', 'produits/emploi-general/huwa-san-pro'],
+  ['/des-animaux/huwa-san-for-animals/', 'fr', 'produits/emploi-general'],
   ['/emploi-general/', 'fr', 'produits/emploi-general'],
-  ['/emploi-general/gamme-de-produits-huwa-san/', 'fr', 'produits/emploi-general/huwa-san-pro'],
-  ['/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/', 'fr', 'produits/emploi-general/huwa-san-pro'],
+  ['/emploi-general/gamme-de-produits-huwa-san/', 'fr', 'produits/emploi-general'],
+  ['/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/', 'fr', 'produits/emploi-general'],
   ['/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/agriculture/', 'fr', 'produits/emploi-general/huwa-san-pro/huwa-san-agro'],
   ['/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/veterinaire/', 'fr', 'produits/emploi-general/huwa-san-pro/huwa-san-vet'],
-  ['/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/aliments-et-boissons/', 'fr', 'produits/emploi-general/huwa-san-pro/huwa-san-fb'],
-  ['/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/hard-surface/', 'fr', 'produits/emploi-general/huwa-san-pro/huwa-san-hard-surface'],
+  ['/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/aliments-et-boissons/', 'fr', 'produits/emploi-general'],
+  ['/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/hard-surface/', 'fr', 'produits/emploi-general'],
   ['/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/traitement-de-leau/', 'fr', 'produits/emploi-general/huwa-san-pro/huwa-san-water-treatment'],
-  ['/emploi-general/gamme-de-produits-huwa-san/hygiene-home/', 'fr', 'produits/emploi-general/huwa-san-home'],
-  ['/emploi-general/gamme-de-produits-huwa-san/pool/', 'fr', 'produits/emploi-general/huwa-san-pool'],
-  ['/emploi-general/bioxeco/', 'fr', 'produits/emploi-general/bioxeco'],
+  ['/emploi-general/gamme-de-produits-huwa-san/hygiene-home/', 'fr', 'produits/emploi-general'],
+  ['/emploi-general/gamme-de-produits-huwa-san/pool/', 'fr', 'produits/emploi-general'],
+  ['/emploi-general/bioxeco/', 'fr', 'produits/emploi-general'],
   ['/emploi-general/produit-clearox/', 'fr', 'produits/emploi-general/clearox/clearox'],
 
   // Catalogue — English
@@ -143,18 +143,18 @@ const RULES = [
   ['/humans/mavita-productline/mavita-stress-plex/', 'en', 'products/humans/mavita/mavita-stress-plex'],
   ['/animals/', 'en', 'products/animals'],
   ['/animals/orthahealth/', 'en', 'products/animals'],
-  ['/animals/huwa-san-for-animals/', 'en', 'products/general-use/huwa-san-pro'],
+  ['/animals/huwa-san-for-animals/', 'en', 'products/general-use'],
   ['/general-use/', 'en', 'products/general-use'],
-  ['/general-use/huwa-san-productline/', 'en', 'products/general-use/huwa-san-pro'],
-  ['/general-use/huwa-san-productline/professional-disinfection-2/', 'en', 'products/general-use/huwa-san-pro'],
+  ['/general-use/huwa-san-productline/', 'en', 'products/general-use'],
+  ['/general-use/huwa-san-productline/professional-disinfection-2/', 'en', 'products/general-use'],
   ['/general-use/huwa-san-productline/professional-disinfection-2/agriculture/', 'en', 'products/general-use/huwa-san-pro/huwa-san-agro'],
   ['/general-use/huwa-san-productline/professional-disinfection-2/veterinary/', 'en', 'products/general-use/huwa-san-pro/huwa-san-vet'],
-  ['/general-use/huwa-san-productline/professional-disinfection-2/food-beverage/', 'en', 'products/general-use/huwa-san-pro/huwa-san-fb'],
-  ['/general-use/huwa-san-productline/professional-disinfection-2/hard-surface/', 'en', 'products/general-use/huwa-san-pro/huwa-san-hard-surface'],
+  ['/general-use/huwa-san-productline/professional-disinfection-2/food-beverage/', 'en', 'products/general-use'],
+  ['/general-use/huwa-san-productline/professional-disinfection-2/hard-surface/', 'en', 'products/general-use'],
   ['/general-use/huwa-san-productline/professional-disinfection-2/water-treatment/', 'en', 'products/general-use/huwa-san-pro/huwa-san-water-treatment'],
-  ['/general-use/huwa-san-productline/hygiene-home/', 'en', 'products/general-use/huwa-san-home'],
-  ['/general-use/huwa-san-productline/pool/', 'en', 'products/general-use/huwa-san-pool'],
-  ['/general-use/bioxeco/', 'en', 'products/general-use/bioxeco'],
+  ['/general-use/huwa-san-productline/hygiene-home/', 'en', 'products/general-use'],
+  ['/general-use/huwa-san-productline/pool/', 'en', 'products/general-use'],
+  ['/general-use/bioxeco/', 'en', 'products/general-use'],
   ['/general-use/clearox/', 'en', 'products/general-use/clearox/clearox'],
 
   // R&D + I, knowledge centre, editorial.
@@ -232,6 +232,25 @@ for (const [slug, [words, segment, range], target] of WITHDRAWN) {
   for (const locale of LOCALES) {
     const base = `${wordTable.words[words][locale]}/${wordTable.segments[segment][locale]}/${range}`;
     addRule(`/${locale}/${base}/${slug}/`, locale, `${base}/${target}`);
+  }
+}
+
+/*
+ * General use was cut down to Clearox on 2026-10-18. The ranges and products that went
+ * send their visitors to the General use page. Huwa-San Professionnel lost its range
+ * page but keeps AGRO, VET and Water Treatment, which the disinfectant families show.
+ */
+const GENERAL_WITHDRAWN = {
+  'huwa-san-pro': ['huwa-san-fb', 'huwa-san-hard-surface'],
+  'huwa-san-home': ['huwa-san-hands', 'huwa-san-toilet', 'huwa-san-bathroom', 'huwa-san-fruit-vegetables', 'huwa-san-kitchen'],
+  'huwa-san-pool': ['huwa-san-kiddiepool', 'huwa-san-minipool', 'huwa-san-pool', 'huwa-san-whirlpool', 'huwa-san-wellness'],
+  bioxeco: ['bioxeco-hand', 'bioxeco-25s', 'bioxeco-dw', 'bioxeco-fog'],
+};
+for (const locale of LOCALES) {
+  const segment = `${wordTable.words.products[locale]}/${wordTable.segments.general[locale]}`;
+  for (const [range, slugs] of Object.entries(GENERAL_WITHDRAWN)) {
+    addRule(`/${locale}/${segment}/${range}/`, locale, segment);
+    for (const slug of slugs) addRule(`/${locale}/${segment}/${range}/${slug}/`, locale, segment);
   }
 }
 

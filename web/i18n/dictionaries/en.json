@@ -78,11 +78,11 @@
       },
       {
         "value": "2001",
-        "label": "Present in Morocco since"
+        "label": "First trial in Morocco"
       },
       {
-        "value": "2014",
-        "label": "Present in Agadir since"
+        "value": "2012",
+        "label": "Present in Morocco since"
       }
     ],
     "quoteTitle": "Something specific in mind? Ask for a quote",
@@ -156,13 +156,11 @@
   },
   "rdi": {
     "title": "Moreco Research & Development",
-    "intro": "Since 2009, Moreco has been developing and testing its silicon solutions under real-world conditions, with Moroccan growers and official institutes.",
+    "intro": "Since 2012, Moreco has been developing and testing its silicon-based solutions under real-world conditions, in collaboration with Moroccan growers and official institutes.",
     "innovationTitle": "Innovation",
     "innovationLead": "Innovation in the service of agricultural performance",
     "innovationText": [
-      "Innovation is at the heart of Moreco’s approach. Since 2009, our company has invested in the research and development of biotechnological solutions for agriculture.",
-      "Our R&D department develops and optimises innovative formulations based on advanced technologies, with particular attention to their agronomic efficacy, their uptake by plants and their impact on crop quality.",
-      "Our team works closely with growers and research institutes to design, test and improve our solutions under real-world conditions. Every formulation goes through a rigorous process designed to guarantee its quality, its performance and consistent results in use."
+      "At Moreco, innovation shapes the future of agriculture. Since 2012, we have been investing in a targeted way in the development of high-quality biotechnological solutions. With our R&D experts and partners, we design and optimise advanced formulations that contribute directly to your profitability. Our priority is to achieve maximum agronomic efficacy, superior uptake by crops and a proven improvement in harvest quality. In close collaboration with innovative growers and leading research institutes, we test and refine our products under real-world conditions. Thanks to this rigorous quality-control process, we guarantee consistent performance and reliable results in the field."
     ],
     "customTitle": "Need a custom formulation or product?",
     "customText": [
@@ -185,7 +183,7 @@
     "projectDescription": "Project description",
     "statTrialsWorld": "Trial campaigns worldwide",
     "statTrials": "Campaigns documented in Morocco",
-    "statPlates": "Result plates",
+    "statPlates": "Result sheets",
     "statSince": "First campaign",
     "publicationsIntro": "The studies and the scientific interview our formulations rest on, free to download."
   },
@@ -199,17 +197,11 @@
     "contactLead": "Our teams answer technical and commercial enquiries.",
     "introTitle": "Scientific innovation in the service of regenerative agriculture",
     "introText": [
-      "Moreco develops, selects and optimises advanced agronomic technologies that contribute to regenerative agriculture and to more efficient, sustainable agricultural production.",
-      "Our expertise covers in particular plant physiology, stabilised orthosilicic acid (OSA), precision nutrition, soil health, biostimulation, efficient water use and strengthening the physiological resilience of crops.",
-      "We select and develop technologies for their scientific relevance, their technological value and their applicability in the field. In this way we offer agricultural professionals solutions designed to optimise the interactions between the soil, the root zone and the plant.",
-      "Our approach rests on an integrated vision: a living, healthy soil supports a high-performing root system, a functional plant and, ultimately, quality production that is more efficient and sustainable."
+      "Moreco selects and optimises advanced technologies for regenerative agriculture and sustainable production. In close collaboration with the developers of the globally patented OSA formulation, we strengthen plant physiology and water-use efficiency. In this way we maximise the synergy between the soil matrix, the rhizosphere and the crop. A biologically active soil promotes a powerful root system, which translates into physiologically superior crops and sustainable yields for the future."
     ],
     "visionTitle": "Our vision",
     "vision": [
-      "Living, fertile and functional soils.",
-      "Healthy, robust and resilient crops.",
-      "Quality production, high-performing and sustainable.",
-      "Agriculture founded on innovation, science and sustainability."
+      "Unlock the power of soil biology to reduce input costs & boost crop yield."
     ]
   },
   "press": {

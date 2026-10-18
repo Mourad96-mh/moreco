@@ -3,7 +3,7 @@ import Link from 'next/link';
 import type { Locale } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionary';
 import { PRODUCTS, productDatasheet, productDatasheetKind, productName } from '@/data/products';
-import { FLYERS, flyerTitle } from '@/data/flyers';
+import { FLYERS, flyerText, flyerTitle } from '@/data/flyers';
 import { href, productHref } from '@/data/routes';
 import pages from '@/data/pages.json';
 import { pageHero } from '@/data/hero-images';
@@ -67,7 +67,7 @@ function ResourcesBlock({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
   // Mavita's sheets stay on its own product pages but are not listed here (client's request
   // of 2026-10-08): this list is for the agricultural, animal and hygiene ranges.
-  const withSheets = PRODUCTS.filter((p) => productDatasheet(p.slug) && p.range !== 'mavita');
+  const withSheets = PRODUCTS.filter((p) => productDatasheet(p.slug) && p.range !== 'mavita' && !p.variantOf);
 
   return (
     <section id="catalogues" className={s.section}>
@@ -100,6 +100,14 @@ function ResourcesBlock({ locale }: { locale: Locale }) {
  * site is finished. Until then the heading stands with a line saying so, rather than
  * the menu entry landing on nothing. See data/flyers.json.
  */
+/** How the call to action that closes a crop's text opens, in each language. */
+const CROP_CALL: Record<Locale, string> = {
+  fr: 'Choisissez',
+  en: 'Choose',
+  es: 'Elija',
+  nl: 'Kies',
+};
+
 function ApplicationsBlock({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
 
@@ -112,19 +120,51 @@ function ApplicationsBlock({ locale }: { locale: Locale }) {
     );
   }
 
+  /*
+   * One card per crop since the client's e-mail of 2026-10-18: the flyer, then the crop's
+   * text beneath it. The flyers have not reached us yet, so a card without one opens
+   * straight on its title; the preview and the download appear as soon as `image` or
+   * `file` is filled in data/flyers.json.
+   */
   return (
     <section id="applications" className={s.section}>
       <h2>{t.nav.cropSheets}</h2>
       <p className="lead">{t.resources.applicationsIntro}</p>
-      <ul className={s.sheets}>
+      <ul className={s.crops}>
         {FLYERS.map((flyer) => (
-          <li key={flyer.slug}>
-            <a href={flyer.file} download className={s.sheet}>
-              <span className={s.sheetName}>{flyerTitle(flyer, locale)}</span>
-              <span className={s.sheetKind}>
-                PDF{flyer.bytes ? ` · ${Math.round(flyer.bytes / 1024)} ${t.article.sizeUnit}` : ''}
-              </span>
-            </a>
+          <li key={flyer.slug} id={flyer.slug} className={s.crop}>
+            {flyer.image && (
+              <a href={flyer.file ?? flyer.image} className={s.cropFlyer}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={flyer.image} alt={flyerTitle(flyer, locale)} loading="lazy" />
+              </a>
+            )}
+            {/* Folded by default: the texts run long, so a card shows the crop's name and
+                opens on its text, like the family notes of the catalogue (2026-10-19). */}
+            <details className={s.cropFold}>
+              <summary className={s.cropSummary}>
+                <span>
+                  <h3 className={s.cropName}>{flyerTitle(flyer, locale)}</h3>
+                  {flyer.latin && <span className={s.cropLatin}>{flyer.latin}</span>}
+                </span>
+                <span className={s.cropChevron} aria-hidden="true" />
+              </summary>
+              <div className={s.cropBody}>
+                {flyerText(flyer, locale).map((paragraph, i) => (
+                  <p key={i} className={paragraph.startsWith(CROP_CALL[locale]) ? s.cropClosing : undefined}>
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            </details>
+            {flyer.file && (
+              <a href={flyer.file} download className={s.sheet}>
+                <span className={s.sheetName}>{t.nav.cropSheets}</span>
+                <span className={s.sheetKind}>
+                  PDF{flyer.bytes ? ` · ${Math.round(flyer.bytes / 1024)} ${t.article.sizeUnit}` : ''}
+                </span>
+              </a>
+            )}
           </li>
         ))}
       </ul>

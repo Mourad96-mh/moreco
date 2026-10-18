@@ -3,7 +3,7 @@ import Link from 'next/link';
 import type { Locale } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionary';
 import { href, articleHref } from '@/data/routes';
-import { MOROCCO_CAMPAIGNS, TRIALS } from '@/data/trials';
+import { MOROCCO_CAMPAIGNS } from '@/data/trials';
 import { PUBLICATIONS, articleTitle, articleExcerpt, articleDate, articlePdf } from '@/data/articles';
 import { formatDate } from '@/data/news';
 import { PUBLICATION_DOCUMENTS, publicationDocumentDate } from '@/data/publication-documents';
@@ -33,14 +33,15 @@ export default function RdiView({ locale }: { locale: Locale }) {
 
   return (
     <>
-      {/* No eyebrow: the H1 the client asked for already names the department in full,
-          and the line that used to sit above it said the same thing in other words. */}
+      {/* One title line, as the client set it on 2026-10-18: Moreco / R&D + I / the
+          department's full name. The breadcrumb went: it read "Moreco / R&D + I", the
+          same words again. */}
       <PageHeader
-        title={t.rdi.title}
+        title={`${t.site.name} / ${t.nav.rdi} / ${t.rdi.title}`}
+        wide
         lead={t.rdi.intro}
         image={pageHero('rdi')}
         crumbLabel={t.a11y.breadcrumb}
-        crumbs={[{ label: t.site.name, href: href(locale, 'home') }, { label: t.nav.rdi }]}
       />
 
       {/*
@@ -48,8 +49,9 @@ export default function RdiView({ locale }: { locale: Locale }) {
        * group's worldwide trial programme (client briefing, 2026-09-13), while the one
        * beside it is the Moroccan campaigns alone. Both are figures the client gives us
        * — the Moroccan one was a count of the trial pages until the briefing of
-       * 2026-09-18 set it at 117, the same number the About page quotes. The plates are
-       * still counted off the trials themselves.
+       * 2026-09-18 set it at 117, then 24 on 2026-10-18; the About page quotes the same
+       * number. The result sheets (37) and the first campaign (2012) are the client's
+       * figures too since that briefing.
        */}
       <section className={s.stats}>
         <div className={`page ${s.statsInner}`}>
@@ -62,11 +64,11 @@ export default function RdiView({ locale }: { locale: Locale }) {
             <p className={s.statLabel}>{t.rdi.statTrials}</p>
           </Reveal>
           <Reveal className={s.stat} delay={180}>
-            <p className={s.statNumber}>{TRIALS.reduce((n, x) => n + x.images.length, 0)}</p>
+            <p className={s.statNumber}>37</p>
             <p className={s.statLabel}>{t.rdi.statPlates}</p>
           </Reveal>
           <Reveal className={s.stat} delay={270}>
-            <p className={s.statNumber}>2016</p>
+            <p className={s.statNumber}>2012</p>
             <p className={s.statLabel}>{t.rdi.statSince}</p>
           </Reveal>
         </div>

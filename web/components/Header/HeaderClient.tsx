@@ -56,7 +56,14 @@ export default function HeaderClient({
   const navRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
+    /*
+     * Two thresholds, not one. The bar loses 20px when it compacts, which pulls the page
+     * up by as much; with a single line at 24px that moved the scroll back under it, the
+     * bar grew again, and the header shook at that point (2026-10-19). Compacting past
+     * 60px and growing back only under 20px leaves a 40px gap the 20px cannot cross.
+     */
+    const onScroll = () =>
+      setScrolled((was) => (was ? window.scrollY > 20 : window.scrollY > 60));
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
@@ -150,6 +157,7 @@ export default function HeaderClient({
     <header
       className={[
         s.header,
+        isHome ? s.isHome : '',
         transparent ? s.isTransparent : s.isSolid,
         scrolled ? s.isScrolled : '',
       ].join(' ')}

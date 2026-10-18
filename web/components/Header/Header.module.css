@@ -16,6 +16,16 @@
   box-shadow: var(--shadow-1);
 }
 
+/*
+ * On the home page the bar floats over the film whether it is clear or solid. It used to
+ * drop back into the page when it turned solid, which pushed everything down by its full
+ * height at the moment of the switch (2026-10-19); the hero already leaves room for it.
+ */
+.isHome {
+  position: fixed;
+  inset-inline: 0;
+}
+
 .isTransparent {
   position: fixed;
   inset-inline: 0;

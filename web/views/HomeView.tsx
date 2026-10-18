@@ -11,7 +11,8 @@ import s from './HomeView.module.css';
 
 /**
  * One pictogram per figure, in the order the dictionary lists them: trial campaigns,
- * the growers who use the products, Morocco, and the Agadir office. Stroked line art at
+ * the growers who use the products, the first trial in Morocco, and the presence in
+ * Morocco — which replaced the Agadir office on 2026-10-18. Stroked line art at
  * currentColor, so they take the band's green without a second asset.
  */
 const STAT_ICONS = [
@@ -26,13 +27,13 @@ const STAT_ICONS = [
     <path d="M2.5 20.5a6.5 6.5 0 0 1 13 0" />
     <path d="M16.2 5.4a3.2 3.2 0 0 1 0 5.2M18 14.4a6.5 6.5 0 0 1 3.5 6.1" />
   </svg>,
-  /* Flag — Morocco. */
-  <svg key="morocco" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+  /* Flag — the first trial in Morocco. */
+  <svg key="first-trial" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
     <path d="M5 21.5V3.5" />
     <path d="M5 4h13.5l-2.6 4.5 2.6 4.5H5" />
   </svg>,
-  /* Map pin — Agadir. */
-  <svg key="agadir" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+  /* Map pin — present in Morocco. */
+  <svg key="morocco" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
     <path d="M12 21.5s7-6.1 7-11.2a7 7 0 1 0-14 0c0 5.1 7 11.2 7 11.2Z" />
     <circle cx="12" cy="10" r="2.6" />
   </svg>,
@@ -200,7 +201,7 @@ export default function HomeView({ locale }: { locale: Locale }) {
        * not the Moroccan trial count the R&D page documents — which is why they live in
        * the dictionary rather than being counted off TRIALS.
        *
-       * Every label sits above its number — "Présence au Maroc depuis" over 2001 — so the
+       * Every label sits above its number — "Présence au Maroc depuis" over 2012 — so the
        * four read the same way (briefing of 2026-09-27, step 2; until then the two
        * counts put their number first).
        */}

@@ -9,6 +9,7 @@ import {
   familiesOf,
   familyName,
   productsOfFamily,
+  productsOfRange,
   productsOfSegment,
   type SegmentKey,
 } from '@/data/products';
@@ -46,7 +47,7 @@ export default function ProductsView({ locale }: { locale: Locale }) {
    * and brings it back to page width with a class of its own.
    */
   const bands = SEGMENTS.map((segment, index) => {
-    const ranges = RANGES.filter((r) => r.segment === segment);
+    const ranges = RANGES.filter((r) => r.segment === segment && productsOfRange(r.slug).length > 0);
     const total = productsOfSegment(segment).length;
     const to = segmentHref(locale, segment);
 

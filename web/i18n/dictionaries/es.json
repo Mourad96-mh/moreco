@@ -78,11 +78,11 @@
       },
       {
         "value": "2001",
-        "label": "Presencia en Marruecos desde"
+        "label": "Primer ensayo en Marruecos"
       },
       {
-        "value": "2014",
-        "label": "Presencia en Agadir desde"
+        "value": "2012",
+        "label": "Presencia en Marruecos desde"
       }
     ],
     "quoteTitle": "¿Tiene una necesidad concreta? Pida su presupuesto",
@@ -156,13 +156,11 @@
   },
   "rdi": {
     "title": "Investigación y Desarrollo Moreco",
-    "intro": "Desde 2009, Moreco desarrolla y prueba sus soluciones de silicio en condiciones reales, con productores marroquíes e institutos oficiales.",
+    "intro": "Desde 2012, Moreco desarrolla y prueba sus soluciones a base de silicio en condiciones reales, en colaboración con productores marroquíes e institutos oficiales.",
     "innovationTitle": "Innovación",
     "innovationLead": "La innovación al servicio del rendimiento agrícola",
     "innovationText": [
-      "La innovación está en el centro del enfoque de Moreco. Desde 2009, nuestra empresa invierte en la investigación y el desarrollo de soluciones biotecnológicas para la agricultura.",
-      "Nuestro departamento de I+D desarrolla y optimiza formulaciones innovadoras a partir de tecnologías avanzadas, con especial atención a su eficacia agronómica, su asimilación por las plantas y su impacto en la calidad de las cosechas.",
-      "Nuestro equipo trabaja en estrecha colaboración con productores e institutos de investigación para diseñar, probar y mejorar nuestras soluciones en condiciones reales. Cada formulación sigue un proceso riguroso destinado a garantizar su calidad, su rendimiento y la regularidad de sus resultados."
+      "En Moreco, la innovación da forma al futuro de la agricultura. Desde 2012, invertimos de manera específica en el desarrollo de soluciones biotecnológicas de alta calidad. Con nuestros expertos en I+D y nuestros socios, diseñamos y optimizamos formulaciones avanzadas que contribuyen directamente a su rentabilidad. Nuestra prioridad es lograr la máxima eficacia agronómica, una absorción superior por parte de los cultivos y una mejora demostrada de la calidad de las cosechas. En estrecha colaboración con productores innovadores e institutos de investigación de primer nivel, probamos y perfeccionamos nuestros productos en condiciones reales. Gracias a este riguroso proceso de control de calidad, garantizamos un rendimiento constante y resultados fiables en el campo."
     ],
     "customTitle": "¿Necesita una formulación o un producto a medida?",
     "customText": [
@@ -185,7 +183,7 @@
     "projectDescription": "Descripción del proyecto",
     "statTrialsWorld": "Campañas de ensayo en el mundo",
     "statTrials": "Campañas documentadas en Marruecos",
-    "statPlates": "Láminas de resultados",
+    "statPlates": "Fichas de resultados",
     "statSince": "Primera campaña",
     "publicationsIntro": "Los estudios y la entrevista científica en los que se basan nuestras formulaciones, de descarga libre."
   },
@@ -199,17 +197,11 @@
     "contactLead": "Nuestros equipos atienden consultas técnicas y comerciales.",
     "introTitle": "La innovación científica al servicio de la agricultura regenerativa",
     "introText": [
-      "Moreco desarrolla, selecciona y optimiza tecnologías agronómicas avanzadas que contribuyen a la agricultura regenerativa y a una producción agrícola más eficiente y sostenible.",
-      "Nuestra experiencia abarca, en particular, la fisiología vegetal, el ácido ortosilícico estabilizado (OSA), la nutrición de precisión, la salud del suelo, la bioestimulación, el uso eficiente del agua y el refuerzo de la resiliencia fisiológica de los cultivos.",
-      "Seleccionamos y desarrollamos tecnologías por su pertinencia científica, su valor tecnológico y su aplicabilidad en el campo. Así ofrecemos a los profesionales de la agricultura soluciones destinadas a optimizar las interacciones entre el suelo, la zona radicular y la planta.",
-      "Nuestro enfoque se basa en una visión integrada: un suelo vivo y sano favorece un sistema radicular eficaz, una planta funcional y, en última instancia, una producción de calidad, más eficiente y sostenible."
+      "Moreco selecciona y optimiza tecnologías avanzadas para la agricultura regenerativa y una producción sostenible. En estrecha colaboración con los desarrolladores de la formulación OSA patentada a nivel mundial, reforzamos la fisiología vegetal y la eficiencia en el uso del agua. Así maximizamos la sinergia entre la matriz del suelo, la rizosfera y el cultivo. Un suelo biológicamente activo favorece un sistema radicular potente, lo que se traduce en cultivos fisiológicamente superiores y rendimientos sostenibles para el futuro."
     ],
     "visionTitle": "Nuestra visión",
     "vision": [
-      "Suelos vivos, fértiles y funcionales.",
-      "Cultivos sanos, robustos y resilientes.",
-      "Producciones de calidad, eficientes y sostenibles.",
-      "Una agricultura basada en la innovación, la ciencia y la sostenibilidad."
+      "Unlock the power of soil biology to reduce input costs & boost crop yield."
     ]
   },
   "press": {

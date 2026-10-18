@@ -31,6 +31,19 @@
   padding: 1.1rem;
 }
 
+.badge {
+  position: absolute;
+  inset-block-start: 0.75rem;
+  inset-inline-start: 0.75rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  background: var(--accent, var(--green));
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
 .placeholder {
   object-fit: contain;
   padding: 22% 28%;
@@ -51,6 +64,15 @@
   /* Two lines' worth, so a one-line name and a wrapping one still start their claim on
      the same baseline across a row. */
   min-height: 2.5em;
+}
+
+.titleVariant {
+  text-align: center;
+}
+
+.titleLine {
+  display: block;
+  white-space: nowrap;
 }
 
 .title a {

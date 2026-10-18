@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import type { Locale } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionary';
-import { PRODUCTS, RANGES, SEGMENTS } from '@/data/products';
+import { PRODUCTS, RANGES, SEGMENTS, productsOfRange } from '@/data/products';
 import { MOROCCO_CAMPAIGNS } from '@/data/trials';
 import { href, segmentHref } from '@/data/routes';
 import { pageHero } from '@/data/hero-images';
@@ -32,7 +32,7 @@ export default function AboutView({ locale }: { locale: Locale }) {
 
   const figures = [
     { value: SEGMENTS.length, label: t.about.domains },
-    { value: RANGES.length, label: t.product.ranges },
+    { value: RANGES.filter((r) => productsOfRange(r.slug).length > 0).length, label: t.product.ranges },
     { value: PRODUCTS.length, label: t.product.products },
     { value: MOROCCO_CAMPAIGNS, label: t.rdi.statTrials },
   ];

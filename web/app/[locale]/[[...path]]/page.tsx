@@ -42,13 +42,34 @@ function routeFrom(locale: string, path?: string[]): { locale: Locale; route: Ro
   return { locale, route };
 }
 
+/**
+ * The Google title and description the client wrote for the French and English home
+ * pages (briefing of 2026-10-19, heat and water stress). The French description is
+ * theirs too, cut to fit Google's 155 characters. Spanish and Dutch keep the tagline.
+ */
+const HOME_SEO: Partial<Record<Locale, { title: string; description: string }>> = {
+  fr: {
+    title: 'MORECO | Solutions Stress Thermique, Sécheresse & Salinité',
+    description:
+      "Optimisez la résilience de l'agriculture marocaine. Notre acide orthosilicique renforce les cultures face au stress hydrique en situation extrême.",
+  },
+  en: {
+    title: 'MORECO | Crop Solutions for Drought, Salt & Heat Stress',
+    description:
+      'Combat climate stress in Moroccan agriculture. Our bioavailable silicon strengthens plant resistance to severe drought, high salinity, and extreme heat.',
+  },
+};
+
 /** Page title and description per view — the products and trials name themselves. */
 function seoFor(route: Route, locale: Locale) {
   const t = getDictionary(locale);
 
   switch (route.view) {
-    case 'home':
+    case 'home': {
+      const own = HOME_SEO[locale];
+      if (own) return { title: own.title, description: own.description, absolute: true };
       return { title: `${t.site.name} — ${t.site.tagline}`, description: t.site.description, absolute: true };
+    }
     case 'products':
       return { title: t.pages.products.title, description: t.pages.products.lead };
     case 'segment': {
