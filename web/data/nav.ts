@@ -1,7 +1,8 @@
 import type { Locale } from '@/i18n/config';
 import type { Dictionary } from '@/i18n/dictionary';
 import { SEGMENTS } from './products';
-import { href, segmentHref } from './routes';
+import { href, segmentHref, solutionHref } from './routes';
+import { CROP_GROUPS, CROP_SOLUTIONS } from './crop-solutions';
 
 /**
  * The casem.ma header shape: five or six top-level items, each opening a small
@@ -39,6 +40,26 @@ export function mainNav(locale: Locale, t: Dictionary): NavItem[] {
         accent: `var(--seg-${segment})`,
       })),
       footer: { label: t.product.allProducts, href: at('products') },
+    },
+    /*
+     * Briefing of 2026-10-18: the technology page, then the crops in the client's two
+     * groups. The mega panel lists each crop with its group as the tagline, the
+     * vegetables in the brand green and the orchards in the darker one.
+     */
+    { label: t.nav.technology, href: at('technology') },
+    {
+      label: t.nav.solutions,
+      href: at('solutions'),
+      mega: true,
+      children: CROP_GROUPS.flatMap((group) =>
+        CROP_SOLUTIONS.filter((crop) => crop.group === group).map((crop) => ({
+          label: crop.name[locale],
+          href: solutionHref(locale, crop.slug),
+          description: t.solutions[group],
+          accent: group === 'vegetables' ? 'var(--green)' : 'var(--green-darker)',
+        }))
+      ),
+      footer: { label: t.solutions.all, href: at('solutions') },
     },
     /*
      * Resources, as the client reshaped it on 2026-09-17: the knowledge centre lost its
@@ -114,9 +135,13 @@ export const CONTACT = {
       icon: 'instagram' as const,
     },
     { label: 'YouTube', href: 'https://www.youtube.com/@morecomaroc6237', icon: 'youtube' as const },
-    /* The client has no company page yet: the briefing of 2026-09-13 asks for this
-       bare link and nothing else, so it stays until they send a real profile URL. */
-    { label: 'LinkedIn', href: 'https://linkedin.com', icon: 'linkedin' as const },
+    /* The company page the client sent on 2026-10-18, without the admin-only
+       ?viewAsMember part of the address they copied it from. */
+    {
+      label: 'LinkedIn',
+      href: 'https://www.linkedin.com/company/atak-afrique/',
+      icon: 'linkedin' as const,
+    },
   ],
 };
 

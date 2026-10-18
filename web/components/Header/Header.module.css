@@ -789,7 +789,9 @@
 
 /* ---------- responsive ---------- */
 
-@media (max-width: 1180px) {
+/* Eight menu items since 2026-10-18 (Technologie A.O.S. and Solutions par culture), so the
+   tighter labels and the short quote button take over earlier, and the drawer from 1260px. */
+@media (max-width: 1680px) {
   .navLink {
     font-size: 0.88rem;
   }
@@ -803,7 +805,7 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1260px) {
   .nav {
     display: none;
   }

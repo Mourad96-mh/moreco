@@ -2,6 +2,7 @@ import { LOCALES, type Locale } from '@/i18n/config';
 import { PRODUCTS, RANGES, SEGMENTS, type SegmentKey } from './products';
 import { TRIALS } from './trials';
 import { ARTICLES } from './articles';
+import { CROP_SOLUTIONS } from './crop-solutions';
 import { words, segments } from './route-words.json';
 
 /**
@@ -29,7 +30,10 @@ export type View =
   | 'services'
   | 'contact'
   | 'careers'
-  | 'quote';
+  | 'quote'
+  | 'technology'
+  | 'solutions'
+  | 'solution';
 
 type Words = Record<Locale, string>;
 
@@ -50,7 +54,9 @@ export type WordKey =
   | 'services'
   | 'contact'
   | 'careers'
-  | 'quote';
+  | 'quote'
+  | 'technology'
+  | 'solutions';
 
 export const WORDS = words as Record<WordKey, Words>;
 
@@ -63,6 +69,7 @@ export interface RouteParams {
   product?: string;
   trial?: string;
   article?: string;
+  crop?: string;
 }
 
 export interface Route {
@@ -103,6 +110,13 @@ function routesFor(locale: Locale): Route[] {
   add('contact', 'contact', [w('contact', locale)]);
   add('careers', 'careers', [w('contact', locale), w('careers', locale)]);
   add('quote', 'quote', [w('quote', locale)]);
+  /* Briefing of 2026-10-18: the technology page and the crop-by-crop solutions. The crop
+     slugs are French and not translated, like the trial slugs. */
+  add('technology', 'technology', [w('technology', locale)]);
+  add('solutions', 'solutions', [w('solutions', locale)]);
+  for (const crop of CROP_SOLUTIONS) {
+    add('solution', `solution:${crop.slug}`, [w('solutions', locale), crop.slug], { crop: crop.slug });
+  }
 
   for (const segment of SEGMENTS) {
     const seg = SEGMENT_WORDS[segment][locale];
@@ -175,3 +189,4 @@ export const rangeHref = (locale: Locale, slug: string) => href(locale, `range:$
 export const segmentHref = (locale: Locale, key: SegmentKey) => href(locale, `segment:${key}`);
 export const trialHref = (locale: Locale, slug: string) => href(locale, `trial:${slug}`);
 export const articleHref = (locale: Locale, slug: string) => href(locale, `article:${slug}`);
+export const solutionHref = (locale: Locale, slug: string) => href(locale, `solution:${slug}`);
