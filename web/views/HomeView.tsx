@@ -9,6 +9,9 @@ import FeatureRow from '@/components/FeatureRow/FeatureRow';
 import Reveal from '@/components/Reveal/Reveal';
 import s from './HomeView.module.css';
 
+/** The home film's version, appended to its URL — see the note above <HeroVideo>. */
+const HERO_VERSION = '20261019';
+
 /**
  * One pictogram per figure, in the order the dictionary lists them: trial campaigns,
  * the growers who use the products, the first trial in Morocco, and the presence in
@@ -98,11 +101,17 @@ export default function HomeView({ locale }: { locale: Locale }) {
        * an autoplaying film with sound is blocked anyway. BRIEF-VIDEO-ACCUEIL.md holds
        * the shot list.
        */}
+      {/*
+       * `?v=` names the version of the film. The server lets browsers keep media for a
+       * year, so a film replaced under the same URL is never fetched again by anyone who
+       * saw the old one — the Gemini mark stayed on screen after it was removed
+       * (2026-10-19). Change the value whenever hero.mp4 or its poster is replaced.
+       */}
       <HeroVideo
-        poster="/media/hero/hero-poster.webp"
+        poster={`/media/hero/hero-poster.webp?v=${HERO_VERSION}`}
         /* H.264 only: a VP9 re-encode of this footage came out larger, so a
            second source would cost bandwidth without buying compatibility. */
-        sources={[{ src: '/media/hero/hero.mp4', type: 'video/mp4' }]}
+        sources={[{ src: `/media/hero/hero.mp4?v=${HERO_VERSION}`, type: 'video/mp4' }]}
       />
 
       {/*
