@@ -26,7 +26,7 @@ export interface Product {
   alsoIn?: SegmentKey[];
   /**
    * Kept off its own segment's page and range page, but still claimed by a family in
-   * another segment, so it keeps its product page. Huwa-San AGRO, VET and Water
+   * another segment, so it keeps its product page. Clearox AGRO (ex Huwa-San AGRO), Huwa-San VET and Water
    * Treatment, and the all-strengths Clearox, since the briefing of 2026-10-18.
    */
   unlisted?: boolean;
@@ -369,7 +369,7 @@ export const PRODUCTS: Product[] = [
     range: 'orthahealth',
   },
 
-  { slug: 'huwa-san-agro', name: 'Huwa-San AGRO', segment: 'general', range: 'huwa-san-pro', alsoIn: ['agri'], unlisted: true },
+  { slug: 'huwa-san-agro', name: 'Clearox AGRO', segment: 'general', range: 'huwa-san-pro', alsoIn: ['agri'], unlisted: true },
   { slug: 'huwa-san-vet', name: 'Huwa-San VET', segment: 'general', range: 'huwa-san-pro', alsoIn: ['animals'], unlisted: true },
   {
     slug: 'huwa-san-water-treatment',
