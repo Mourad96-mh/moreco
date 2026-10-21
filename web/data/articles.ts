@@ -145,17 +145,16 @@ export const KNOWLEDGE_ARTICLES: Article[] = byDateDesc(
 );
 
 /**
- * The R&D + I page's list, newest first — except the silicon interview, which leads it:
- * it headed the R&D menu until 2026-09-18, and the client moved it here to be seen.
- */
-const PINNED_PUBLICATION = 'importance-du-silicium';
-
-/**
  * Taken off the R&D + I list at the client's request of 2026-10-08 (the 2011, 2012 and
  * 2013 studies). They stay publications, so they do not drift into the knowledge centre.
  */
 const UNLISTED_PUBLICATIONS = new Set(['nutrition-foliaire', 'bio-disponibilite-aos', 'acide-silicique']);
 
+/**
+ * The R&D + I page's articles, newest first. The silicon interview led the list whatever
+ * its date until the briefing of 2026-10-21 asked for strict chronological order; the
+ * page merges these with the downloadable papers by date (views/RdiView.tsx).
+ */
 export const PUBLICATIONS: Article[] = byDateDesc(
   ARTICLES.filter((a) => isPublication(a.slug) && !UNLISTED_PUBLICATIONS.has(a.slug))
-).sort((a, b) => Number(b.slug === PINNED_PUBLICATION) - Number(a.slug === PINNED_PUBLICATION));
+);

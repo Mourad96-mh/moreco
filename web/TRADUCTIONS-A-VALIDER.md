@@ -513,3 +513,61 @@ benchmark. » **FR, ES et NL sont de nous** (`pages.products.title`, `pages.prod
 
 L'ancienne ligne « Moreco : Ensemble, faisons de votre culture une référence. » a disparu
 des quatre langues.
+
+## 17. Briefing du 2026-10-21 — introduction OSA, titres des encadrés Spécialités et Sol
+
+Le client a écrit le français. **EN, ES et NL sont de nous** :
+
+| Où | Langue | Nouveau texte |
+| --- | --- | --- |
+| `segments.agri.introTitle` | FR | Innovation OSA : Biodisponibilité Maximale & Performance des Cultures |
+| | EN | OSA Innovation: Maximum Bioavailability & Crop Performance |
+| | ES | Innovación OSA: Máxima biodisponibilidad y rendimiento de los cultivos |
+| | NL | OSA-innovatie: maximale biobeschikbaarheid & gewasprestaties |
+| `data/family-notes.ts` → `specialties.title` | FR | Innovation OSA Pure \| Anti-Stress Abiotique & Rendement Maximal |
+| | EN | Pure OSA Innovation \| Abiotic Anti-Stress & Maximum Yield |
+| | ES | Innovación Pure OSA \| Antiestrés abiótico y rendimiento máximo |
+| | NL | Pure OSA-innovatie \| Anti-abiotische stress & maximale opbrengst |
+| `data/family-notes.ts` → `soil.title` | FR | Exploitez la puissance de la biologie des sols : réduisez les coûts et optimisez la récolte. |
+| | EN | Harness the power of soil biology: reduce costs and optimise the harvest. |
+| | ES | Aproveche el poder de la biología del suelo: reduzca los costes y optimice la cosecha. |
+| | NL | Benut de kracht van de bodembiologie: verlaag de kosten en optimaliseer de oogst. |
+
+`segments.agri.intro` passe de deux paragraphes à un seul, traduit de la même façon.
+
+**FAQ sous les encadrés verts.** Deux questions sous Spécialités, Oligo-éléments &
+biostimulants et HIGH END NPK, en barres vertes repliables comme l'encadré. Le texte est
+dans `data/family-faqs.ts` : **EN, ES et NL sont de nous**, les six questions et réponses
+entières. Deux coquilles du français corrigées : « récolte and du transport » → « et »,
+« leur mobility interne » → « mobilité ». Santé du sol et Désinfectant n'ont pas de FAQ.
+
+**Publications scientifiques (R&D + I).** Une seule liste, strictement de la plus récente
+à la plus ancienne : 2017–2018, 2013, 2012, 2009, 2005. L'entretien sur le silicium (2013)
+n'est plus épinglé en tête, et les documents téléchargeables ne sont plus relégués après
+les articles. Rien à traduire.
+
+**Technologie Moreco (Médias & Actus).** `news.techTitle` : « unique » devient « bioactive »
+(EN Bioactive, ES bioactiva, NL Bioactieve). Le briefing renvoie à « un briefing
+précédent » pour le texte complet, que nous n'avons pas : `news.techText` est inchangé
+en attendant. **Texte complet à demander au client.**
+
+Les trois cartes Plante / Humain / Animal à droite de ce bloc sont retirées, et avec
+elles `news.techPillars` des quatre dictionnaires.
+
+Plus bas sur la même page, le logo MORECO qui illustrait l'article « Produits Moreco »
+(5 novembre 2014) est retiré ; l'article garde son texte, sur toute la largeur.
+
+Le texte de cet article change (`data/pages.json` → `news`, 3e bloc) : « Depuis 2012,
+Moreco valide et distribue des solutions brevetées… ». **EN, ES et NL sont de nous.**
+Coquille corrigée : « En collaboration with » → « avec ». Le titre reste « Produits
+Moreco » (Moreco products, Productos Moreco, Moreco-producten).
+
+**Services & conseils — « À Propos de Moreco ».** L'introduction de la page (`data/pages.json`
+→ `services`, avant la première image) est remplacée par le texte du client : titre,
+deux paragraphes, l'intertitre « Notre Mission & Notre Savoir-Faire », trois paragraphes,
+puis la signature « MORECO — One World. One Health. ». **EN, ES et NL sont de nous.**
+Le surtitre « Applications produits » au-dessus de l'ancien texte est retiré : le
+nouveau titre nomme Moreco. Les rangées Applications (Agri, Humains…) ne changent pas.
+Le briefing situe ces deux textes « en haut de moreco.ma » : ils sont en fait sur la page
+Agriculture & Horticulture (et, pour l'encadré Spécialités, aussi sur la page Produits).
+L'anglais garde l'orthographe américaine du texte qu'il remplace (« optimizes »).

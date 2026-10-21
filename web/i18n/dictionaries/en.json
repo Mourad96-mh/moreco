@@ -94,10 +94,9 @@
       "name": "Agriculture & Horticulture",
       "short": "Yield, taste and crop resilience",
       "blurb": "A unique, fully assimilable form of orthosilicic acid: improves phosphorus uptake, supports more efficient water use and contributes to better nutritional quality, higher Brix values, higher yields and a longer shelf life.",
-      "introTitle": "Exclusive Stabilized OSA Technology",
+      "introTitle": "OSA Innovation: Maximum Bioavailability & Crop Performance",
       "intro": [
-        "Our exclusive range is built on a unique patented stabilized orthosilicic acid (OSA) technology, designed to deliver highly available silicon for plant uptake.",
-        "It optimizes phosphorus and water-use efficiency while supporting plant performance, resilience, crop quality, °Brix, yield, and post-harvest shelf life."
+        "Our patented range is built on a unique stabilized orthosilicic acid (OSA) technology, designed for maximum silicon bioavailability. It optimizes the plant’s physiological functioning and improves phosphorus and water-use efficiency. This strengthens natural resilience to heat stress, water stress and salinity, while maximizing °Brix, nutritional value, yield and post-harvest shelf life."
       ]
     },
     "humans": {
@@ -378,16 +377,11 @@
   },
   "news": {
     "techEyebrow": "Moreco technology",
-    "techTitle": "MORECO – Unique, patented OSA technology",
+    "techTitle": "MORECO – Bioactive, patented OSA technology",
     "techText": [
       "Moreco develops specialised, patented solutions based on OSA (stabilised orthosilicic acid), drawing on advanced technologies developed by our strategic partners for applications in agriculture, human health and animal health.",
       "This OSA technology is the basis of solutions designed to optimise the bioavailability, absorption and physiological action of silicon.",
       "Moreco turns this technology into specialised applications for plants, people and animals, with an approach centred on scientific innovation, technological precision and quality."
-    ],
-    "techPillars": [
-      "Plants",
-      "People",
-      "Animals"
     ],
     "postsTitle": "News"
   }

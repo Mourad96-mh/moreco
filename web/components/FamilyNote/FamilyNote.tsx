@@ -1,4 +1,5 @@
 import type { FamilyNoteContent } from '@/data/family-notes';
+import type { FamilyFaq } from '@/data/family-faqs';
 import s from './FamilyNote.module.css';
 
 /**
@@ -10,53 +11,70 @@ import s from './FamilyNote.module.css';
  * Since 2026-09-27 the box folds: closed, it shows the family's name and the title with
  * a chevron in the top-right corner, and opens on the full text. A native <details>, so
  * it needs no script and the text is in the page for search engines either way.
+ *
+ * The family's questions follow it (briefing of 2026-10-21): one bar each, in the same
+ * green and with the same chevron, the question in the bar and the answer folded under it.
  */
-export default function FamilyNote({ note }: { note: FamilyNoteContent }) {
+export default function FamilyNote({ note, faqs = [] }: { note: FamilyNoteContent; faqs?: FamilyFaq[] }) {
   /*
    * The family's name on its own line, then the title (briefing of 2026-09-27, step 4:
    * "Spécialités" once, and the title opening straight on "Technologie…").
    */
   return (
-    <details className={s.note}>
-      <summary className={s.summary}>
-        <span className={s.summaryText}>
-          <span className={s.eyebrow}>{note.eyebrow}</span>
-          <h3 className={s.title}>{note.title}</h3>
-        </span>
-        <span className={s.chevron} aria-hidden="true" />
-      </summary>
+    <>
+      <details className={s.note}>
+        <summary className={s.summary}>
+          <span className={s.summaryText}>
+            <span className={s.eyebrow}>{note.eyebrow}</span>
+            <h3 className={s.title}>{note.title}</h3>
+          </span>
+          <span className={s.chevron} aria-hidden="true" />
+        </summary>
 
-      <div className={s.body}>
-        {note.blocks.map((block, i) => {
-          switch (block.type) {
-            case 'heading':
-              return (
-                <h4 key={i} className={s.heading}>
-                  {block.text}
-                </h4>
-              );
-            case 'paragraph':
-              return <p key={i}>{block.text}</p>;
-            case 'list':
-              return (
-                <ul key={i} className={s.list}>
-                  {block.items.map((item) => (
-                    <li key={item}>
-                      <ListItem text={item} />
-                    </li>
-                  ))}
-                </ul>
-              );
-            case 'closing':
-              return (
-                <p key={i} className={s.closing}>
-                  {block.text}
-                </p>
-              );
-          }
-        })}
-      </div>
-    </details>
+        <div className={s.body}>
+          {note.blocks.map((block, i) => {
+            switch (block.type) {
+              case 'heading':
+                return (
+                  <h4 key={i} className={s.heading}>
+                    {block.text}
+                  </h4>
+                );
+              case 'paragraph':
+                return <p key={i}>{block.text}</p>;
+              case 'list':
+                return (
+                  <ul key={i} className={s.list}>
+                    {block.items.map((item) => (
+                      <li key={item}>
+                        <ListItem text={item} />
+                      </li>
+                    ))}
+                  </ul>
+                );
+              case 'closing':
+                return (
+                  <p key={i} className={s.closing}>
+                    {block.text}
+                  </p>
+                );
+            }
+          })}
+        </div>
+      </details>
+
+      {faqs.map((faq) => (
+        <details key={faq.question} className={`${s.note} ${s.faq}`}>
+          <summary className={s.summary}>
+            <h3 className={`${s.title} ${s.question}`}>{faq.question}</h3>
+            <span className={s.chevron} aria-hidden="true" />
+          </summary>
+          <div className={s.body}>
+            <p>{faq.answer}</p>
+          </div>
+        </details>
+      ))}
+    </>
   );
 }
 

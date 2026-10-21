@@ -126,8 +126,17 @@ const HUMAN_PRODUCT_IMAGES = new Set([
 
 const isHumanProductPost = (post: NewsPost) => post.image !== null && HUMAN_PRODUCT_IMAGES.has(post.image);
 
+/**
+ * The Moreco logo pictured the "Produits Moreco" post; the client had it taken off on
+ * 2026-10-21. The picture stays in the archive data, where it marks the start of the post.
+ */
+const HIDDEN_IMAGES = new Set(['/media/pages/moreco-products-video.webp']);
+
+const withoutHiddenImages = (post: NewsPost): NewsPost =>
+  post.image !== null && HIDDEN_IMAGES.has(post.image) ? { ...post, image: null } : post;
+
 export function newsPosts(locale: Locale): NewsPost[] {
-  const posts = withFrenchArticles(postsIn(blocksFor(locale), blocksFor('fr')));
+  const posts = withFrenchArticles(postsIn(blocksFor(locale), blocksFor('fr'))).map(withoutHiddenImages);
   return [...posts.filter((p) => !isHumanProductPost(p)), ...posts.filter(isHumanProductPost)];
 }
 

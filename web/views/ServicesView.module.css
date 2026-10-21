@@ -5,3 +5,17 @@
 .rows {
   padding-bottom: clamp(3rem, 6vw, 5rem);
 }
+
+/* "Notre Mission & Notre Savoir-Faire": a break in the intro, not a new section. */
+.introHeading {
+  margin: 2rem 0 0.75rem;
+  font-size: var(--step-1);
+}
+
+/* The client's signature under the intro, as on Medias & Actus. */
+.signature {
+  margin: 1.5rem 0 0;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--green-dark);
+}

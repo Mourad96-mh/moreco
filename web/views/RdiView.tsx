@@ -6,7 +6,8 @@ import { href, articleHref } from '@/data/routes';
 import { MOROCCO_CAMPAIGNS } from '@/data/trials';
 import { PUBLICATIONS, articleTitle, articleExcerpt, articleDate, articlePdf } from '@/data/articles';
 import { formatDate } from '@/data/news';
-import { PUBLICATION_DOCUMENTS, publicationDocumentDate } from '@/data/publication-documents';
+import { PUBLICATION_DOCUMENTS, publicationDocumentDate, type PublicationDocument } from '@/data/publication-documents';
+import type { Article } from '@/data/articles';
 import { pageHero } from '@/data/hero-images';
 import PageHeader from '@/components/PageHeader/PageHeader';
 import Reveal from '@/components/Reveal/Reveal';
@@ -27,7 +28,17 @@ import s from './RdiView.module.css';
  * The peer-reviewed studies close the page (#publications, where the header menu points
  * since 2026-09-09). They were listed in the knowledge centre until the client ruled
  * that a scientific publication belongs here and nowhere else.
+ *
+ * Articles and downloadable papers make one list, strictly newest first (briefing of
+ * 2026-10-21): the papers used to follow the articles, so the 2017 study sat below 2012.
  */
+type Paper = { date: string } & ({ article: Article } | { doc: PublicationDocument });
+
+const PAPERS: Paper[] = [
+  ...PUBLICATIONS.map((article) => ({ date: articleDate(article) ?? '', article })),
+  ...PUBLICATION_DOCUMENTS.map((doc) => ({ date: doc.sortDate, doc })),
+].sort((a, b) => b.date.localeCompare(a.date));
+
 export default function RdiView({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
 
@@ -119,8 +130,28 @@ export default function RdiView({ locale }: { locale: Locale }) {
           </Reveal>
 
           <ul className={s.papers}>
-            {PUBLICATIONS.map((article, i) => {
-              const date = articleDate(article);
+            {PAPERS.map((paper, i) => {
+              /* Papers with no page of their own: the card is the download. */
+              if ('doc' in paper) {
+                const { doc } = paper;
+                return (
+                  <Reveal key={doc.slug} as="li" delay={(i % 3) * 70} className={s.paper}>
+                    <a className={s.paperLink} href={doc.file} download>
+                      <span className={s.paperMeta}>
+                        <span>{publicationDocumentDate(doc, locale)}</span>
+                        <span className={s.pdf}>
+                          {doc.file.split('.').pop()!.toUpperCase()}
+                          {doc.bytes ? ` · ${Math.round(doc.bytes / 1024)} ${t.article.sizeUnit}` : ''}
+                        </span>
+                      </span>
+                      <span className={s.paperTitle}>{doc.title}</span>
+                      <span className={s.paperExcerpt}>{doc.source}</span>
+                    </a>
+                  </Reveal>
+                );
+              }
+
+              const { article, date } = paper;
               const pdf = articlePdf(article.slug);
 
               return (
@@ -140,23 +171,6 @@ export default function RdiView({ locale }: { locale: Locale }) {
                 </Reveal>
               );
             })}
-
-            {/* Papers with no page of their own: the card is the download. */}
-            {PUBLICATION_DOCUMENTS.map((doc, i) => (
-              <Reveal key={doc.slug} as="li" delay={((PUBLICATIONS.length + i) % 3) * 70} className={s.paper}>
-                <a className={s.paperLink} href={doc.file} download>
-                  <span className={s.paperMeta}>
-                    <span>{publicationDocumentDate(doc, locale)}</span>
-                    <span className={s.pdf}>
-                      {doc.file.split('.').pop()!.toUpperCase()}
-                      {doc.bytes ? ` · ${Math.round(doc.bytes / 1024)} ${t.article.sizeUnit}` : ''}
-                    </span>
-                  </span>
-                  <span className={s.paperTitle}>{doc.title}</span>
-                  <span className={s.paperExcerpt}>{doc.source}</span>
-                </a>
-              </Reveal>
-            ))}
           </ul>
         </div>
       </section>

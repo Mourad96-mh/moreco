@@ -94,10 +94,9 @@
       "name": "Agricultura y Horticultura",
       "short": "Rendimiento, sabor y resistencia del cultivo",
       "blurb": "Una forma única de ácido ortosilícico, totalmente asimilable: mejora la asimilación del fósforo, favorece un uso más eficiente del agua y contribuye a una mejor calidad nutricional, a mayores valores Brix, a mayores rendimientos y a una conservación más larga de las cosechas.",
-      "introTitle": "Tecnología exclusiva de OSA estabilizado",
+      "introTitle": "Innovación OSA: Máxima biodisponibilidad y rendimiento de los cultivos",
       "intro": [
-        "Nuestra gama exclusiva se basa en una tecnología única y patentada de ácido ortosilícico estabilizado (OSA), diseñada para aportar silicio altamente disponible para la absorción por la planta.",
-        "Optimiza la eficiencia en el uso del fósforo y del agua, al tiempo que favorece el rendimiento de la planta, su resiliencia, la calidad del cultivo, los °Brix, la producción y la vida útil poscosecha."
+        "Nuestra gama patentada se basa en una tecnología única de ácido ortosilícico estabilizado (OSA), diseñada para una biodisponibilidad máxima del silicio. Optimiza el funcionamiento fisiológico de la planta y mejora la eficiencia en el uso del fósforo y del agua. Esto refuerza la resiliencia natural frente al estrés térmico, el estrés hídrico y la salinidad, al tiempo que maximiza los °Brix, el valor nutricional, el rendimiento y la vida útil poscosecha."
       ]
     },
     "humans": {
@@ -378,16 +377,11 @@
   },
   "news": {
     "techEyebrow": "Tecnología Moreco",
-    "techTitle": "MORECO – Tecnología OSA única y patentada",
+    "techTitle": "MORECO – Tecnología OSA bioactiva y patentada",
     "techText": [
       "Moreco desarrolla soluciones especializadas y patentadas a base de OSA (ácido ortosilícico estabilizado), apoyándose en tecnologías avanzadas desarrolladas por nuestros socios estratégicos para aplicaciones en agricultura, salud humana y salud animal.",
       "Esta tecnología OSA es la base de soluciones diseñadas para optimizar la biodisponibilidad, la absorción y la acción fisiológica del silicio.",
       "Moreco transforma esta tecnología en aplicaciones especializadas para la planta, el ser humano y el animal, con un enfoque centrado en la innovación científica, la precisión tecnológica y la calidad."
-    ],
-    "techPillars": [
-      "Planta",
-      "Ser humano",
-      "Animal"
     ],
     "postsTitle": "Noticias"
   }

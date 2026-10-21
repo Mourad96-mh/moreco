@@ -20,6 +20,7 @@ import ProductCard from '@/components/ProductCard/ProductCard';
 import FamilyFilter, { type FamilyGroup } from '@/components/FamilyFilter/FamilyFilter';
 import FamilyNote from '@/components/FamilyNote/FamilyNote';
 import { familyNote } from '@/data/family-notes';
+import { familyFaqs } from '@/data/family-faqs';
 import Reveal from '@/components/Reveal/Reveal';
 import s from './ProductsView.module.css';
 import c from './Catalogue.module.css';
@@ -122,7 +123,7 @@ export default function ProductsView({ locale }: { locale: Locale }) {
             )}
           </div>
           {family.note && (
-            <FamilyNote note={familyNote(family.note, locale)} />
+            <FamilyNote note={familyNote(family.note, locale)} faqs={familyFaqs(family.note, locale)} />
           )}
         </div>
       </div>

@@ -3,9 +3,8 @@ import Link from 'next/link';
 
 import type { Locale } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionary';
-import { href, articleHref, segmentHref } from '@/data/routes';
+import { href, articleHref } from '@/data/routes';
 import { newsPosts, formatDate, type NewsPost } from '@/data/news';
-import type { SegmentKey } from '@/data/products';
 import { pageHero } from '@/data/hero-images';
 import PageHeader from '@/components/PageHeader/PageHeader';
 import Reveal from '@/components/Reveal/Reveal';
@@ -18,13 +17,6 @@ import s from './NewsView.module.css';
  * Seven of the eight announced an article that is still on the site, so their read-more
  * line finally goes somewhere: to that article in the knowledge centre.
  */
-/** Plant, human, animal — in the order the technology text names them. */
-const TECH_DOMAINS: { segment: SegmentKey; accent: string }[] = [
-  { segment: 'agri', accent: 'var(--seg-agri)' },
-  { segment: 'humans', accent: 'var(--seg-humans)' },
-  { segment: 'animals', accent: 'var(--seg-animals)' },
-];
-
 export default function NewsView({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
   const posts = newsPosts(locale);
@@ -45,11 +37,11 @@ export default function NewsView({ locale }: { locale: Locale }) {
 
       {/*
        * Moreco's technology leads the page (briefing of 2026-09-26), ahead of the
-       * archive's posts: the client's text, and the three domains it names, each one a
-       * way into its catalogue in the colour of its hexagon.
+       * archive's posts. The three cards beside it — plant, human, animal — were taken
+       * off on 2026-10-21: the client found they no longer fit there.
        */}
       <section className={`section ${s.tech}`}>
-        <div className={`page ${s.techInner}`}>
+        <div className="page">
           <Reveal className={s.techText}>
             <p className="eyebrow">{t.news.techEyebrow}</p>
             <h2 className={s.techTitle}>{t.news.techTitle}</h2>
@@ -62,23 +54,6 @@ export default function NewsView({ locale }: { locale: Locale }) {
               {t.site.name.toUpperCase()} — {t.site.signature}
             </p>
           </Reveal>
-
-          <Reveal className={s.pillars} delay={100}>
-            {TECH_DOMAINS.map((domain, i) => (
-              <Link
-                key={domain.segment}
-                href={segmentHref(locale, domain.segment)}
-                className={s.pillar}
-                style={{ '--accent': domain.accent } as React.CSSProperties}
-              >
-                <span className={s.pillarMark} aria-hidden="true">
-                  OSA
-                </span>
-                <span className={s.pillarName}>{t.news.techPillars[i]}</span>
-                <span className={s.pillarSegment}>{t.segments[domain.segment].name}</span>
-              </Link>
-            ))}
-          </Reveal>
         </div>
       </section>
 
@@ -88,7 +63,7 @@ export default function NewsView({ locale }: { locale: Locale }) {
 
           {lead && (
             <Reveal>
-              <article className={s.lead}>
+              <article className={lead.image ? s.lead : `${s.lead} ${s.leadTextOnly}`}>
                 {lead.image && (
                   <div className={s.leadMedia}>
                     <Image

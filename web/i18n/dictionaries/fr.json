@@ -94,10 +94,9 @@
       "name": "Agriculture & Horticulture",
       "short": "Rendement, goût et résistance des cultures",
       "blurb": "Une forme unique d’acide orthosilicique, entièrement assimilable : améliore l’assimilation du phosphore, favorise une utilisation plus efficiente de l’eau et contribue à une meilleure qualité nutritionnelle, à l’augmentation des valeurs Brix, des rendements et de la durée de conservation des productions.",
-      "introTitle": "Technologie OSA stabilisée exclusive",
+      "introTitle": "Innovation OSA : Biodisponibilité Maximale & Performance des Cultures",
       "intro": [
-        "Notre gamme exclusive repose sur une technologie unique et brevetée d’acide orthosilicique stabilisé (OSA), conçue pour fournir du silicium hautement disponible pour l’absorption par la plante.",
-        "Elle optimise l’efficience du phosphore et de l’eau tout en soutenant la performance, la résilience et la qualité des cultures, le °Brix, le rendement et la durée de conservation après récolte."
+        "Notre gamme brevetée repose sur une technologie unique d’acide orthosilicique stabilisé (OSA), conçue pour une biodisponibilité maximale du silicium. Elle optimise le fonctionnement physiologique de la plante et améliore l’efficience du phosphore et de l’eau. Cela renforce la résilience naturelle face au stress thermique, au stress hydrique et à la salinité, tout en maximisant le taux de °Brix, la valeur nutritionnelle, le rendement et la durée de conservation après-récolte."
       ]
     },
     "humans": {
@@ -378,16 +377,11 @@
   },
   "news": {
     "techEyebrow": "Technologie Moreco",
-    "techTitle": "MORECO – Technologie OSA unique et brevetée",
+    "techTitle": "MORECO – Technologie OSA bioactive et brevetée",
     "techText": [
       "Moreco développe des solutions spécialisées et brevetées à base d’OSA (acide orthosilicique stabilisé), en s’appuyant sur des technologies avancées développées par nos partenaires stratégiques pour des applications dans les domaines de l’agriculture, de la santé humaine et de la santé animale.",
       "Cette technologie OSA constitue la base de solutions conçues pour optimiser la biodisponibilité, l’absorption et l’action physiologique du silicium.",
       "Moreco transforme cette technologie en applications spécialisées pour la plante, l’humain et l’animal, avec une approche centrée sur l’innovation scientifique, la précision technologique et la qualité."
-    ],
-    "techPillars": [
-      "Plante",
-      "Humain",
-      "Animal"
     ],
     "postsTitle": "Actualités"
   }

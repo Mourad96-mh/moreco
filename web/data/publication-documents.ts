@@ -14,6 +14,8 @@ export interface PublicationDocument {
   source: string;
   /** As printed on the document, per language; French at minimum. */
   date: Partial<Record<Locale, string>>;
+  /** The same date as YYYY-MM-DD, to sort the papers among the articles. */
+  sortDate: string;
   /** Path under public/, e.g. /media/research/publications/….pdf */
   file: string;
   bytes?: number;
