@@ -547,9 +547,13 @@ n'est plus épinglé en tête, et les documents téléchargeables ne sont plus r
 les articles. Rien à traduire.
 
 **Technologie Moreco (Médias & Actus).** `news.techTitle` : « unique » devient « bioactive »
-(EN Bioactive, ES bioactiva, NL Bioactieve). Le briefing renvoie à « un briefing
-précédent » pour le texte complet, que nous n'avons pas : `news.techText` est inchangé
-en attendant. **Texte complet à demander au client.**
+(EN Bioactive, ES bioactiva, NL Bioactieve). Le texte complet est arrivé avec la version
+française du briefing, renvoyée le 2026-10-22 : `news.techText` reprend ses trois
+paragraphes (« Moreco valide et distribue… », « Cette technologie moléculaire OSA… »,
+« En intégrant l'innovation scientifique… »), la signature « MORECO — One World. One
+Health. » étant déjà affichée sous le bloc. **EN, ES et NL sont de nous** ; les phrases
+communes avec « À Propos de Moreco » (Services & conseils) reprennent mot pour mot la
+traduction de cette page.
 
 Les trois cartes Plante / Humain / Animal à droite de ce bloc sont retirées, et avec
 elles `news.techPillars` des quatre dictionnaires.
