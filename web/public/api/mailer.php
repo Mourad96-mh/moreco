@@ -15,7 +15,9 @@
  * copy candidature-config.example.php to create it.
  *
  * Written for PHP 5.6, which is what the Plesk server runs for moreco.ma (2026-10-09):
- * no scalar type hints, no ?? and no arrow functions.
+ * no scalar type hints, no ?? and no arrow functions. Nor the json extension, which that
+ * PHP does not load: json_encode() was a fatal error, so every answer reached the form
+ * empty and every send was reported as failed (2026-10-22).
  */
 
 // A PHP warning printed into the answer would break the JSON the form reads.
@@ -23,11 +25,11 @@ ini_set('display_errors', '0');
 // PHP 5.6 warns on date() when the server sets no timezone.
 date_default_timezone_set('Africa/Casablanca');
 
-/** Answers the form and stops. */
+/** Answers the form and stops. $error is one of the scripts' own ASCII codes. */
 function reply($status, $success, $error = '')
 {
     http_response_code($status);
-    echo json_encode($error === '' ? array('success' => $success) : array('success' => $success, 'error' => $error));
+    echo '{"success":' . ($success ? 'true' : 'false') . ($error === '' ? '' : ',"error":"' . $error . '"') . '}';
     exit;
 }
 
@@ -106,17 +108,16 @@ function requireFields(array $fields, $email)
 function rateFile($form)
 {
     $ip = isset($_SERVER['REMOTE_ADDR']) ? $_SERVER['REMOTE_ADDR'] : '';
-    return sys_get_temp_dir() . '/moreco-' . $form . '-' . md5($ip) . '.json';
+    return sys_get_temp_dir() . '/moreco-' . $form . '-' . md5($ip) . '.txt';
 }
 
-/** This visitor's sends of the form within the last hour. */
+/** This visitor's sends of the form within the last hour, kept as comma-separated times. */
 function recentSends($form)
 {
     $file = rateFile($form);
-    $recent = is_file($file) ? json_decode((string)file_get_contents($file), true) : array();
-    if (!is_array($recent)) $recent = array();
+    $recent = is_file($file) ? array_map('intval', explode(',', (string)file_get_contents($file))) : array();
     $hourAgo = time() - 3600;
-    return array_values(array_filter($recent, function ($t) use ($hourAgo) { return is_int($t) && $t > $hourAgo; }));
+    return array_values(array_filter($recent, function ($t) use ($hourAgo) { return $t > $hourAgo; }));
 }
 
 /**
@@ -132,7 +133,7 @@ function recordSend($form)
 {
     $recent = recentSends($form);
     $recent[] = time();
-    @file_put_contents(rateFile($form), json_encode($recent));
+    @file_put_contents(rateFile($form), implode(',', $recent));
 }
 
 /* -------------------------------------------------------------- the message */
