@@ -373,7 +373,14 @@
       "At MORECO, we develop innovative solutions for sustainable agriculture, human and animal health, and a healthier environment.",
       "With a hands-on approach, open communication and international ambition, we are building a sustainable future together.",
       "Would you like to contribute to this vision? Explore our career opportunities or send us a speculative application. We look forward to meeting you."
-    ]
+    ],
+    "vacanciesTitle": "Vacancies",
+    "vacanciesIntro": "To apply, send us your application and CV using the form at the bottom of the page, stating the job title in your message.",
+    "jobDescription": "Job description",
+    "jobMissions": "Main responsibilities",
+    "jobProfile": "Your profile",
+    "jobOffer": "What we offer",
+    "jobApply": "Apply"
   },
   "news": {
     "techEyebrow": "Moreco technology",

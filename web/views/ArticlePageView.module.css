@@ -267,6 +267,158 @@
   margin-top: 1.5rem;
 }
 
+/*
+ * Vacancies (2026-10-22): the green bar of the family boxes, one per opening, closed on
+ * its title and place of work. Open, the facts, then the client's four headings.
+ */
+.jobs {
+  display: grid;
+  gap: 0.75rem;
+  max-width: var(--page-narrow);
+  margin-top: 1.5rem;
+}
+
+.job {
+  border: 2px solid var(--green);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--paper);
+  color: var(--ink-2);
+  scroll-margin-top: 6rem;
+}
+
+.jobSummary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding: clamp(1rem, 2.5vw, 1.35rem) clamp(1.25rem, 3vw, 2rem);
+  background: var(--green);
+  color: var(--paper);
+  list-style: none;
+  cursor: pointer;
+}
+
+.jobSummary::-webkit-details-marker {
+  display: none;
+}
+
+.jobSummary:focus-visible {
+  outline: 2px solid var(--paper);
+  outline-offset: -6px;
+}
+
+.jobHead {
+  min-width: 0;
+}
+
+.jobTitle {
+  margin: 0;
+  font-size: var(--step-1);
+  line-height: 1.3;
+  color: var(--paper);
+}
+
+.jobPlace {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.92rem;
+  color: rgb(255 255 255 / 0.9);
+}
+
+.jobChevron {
+  position: relative;
+  flex-shrink: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 2px solid var(--paper);
+  border-radius: 50%;
+  transition: background-color 0.2s ease, transform 0.25s ease;
+}
+
+.jobChevron::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-right: 2px solid var(--paper);
+  border-bottom: 2px solid var(--paper);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.jobSummary:hover .jobChevron {
+  background: rgb(255 255 255 / 0.15);
+}
+
+.job[open] .jobChevron {
+  transform: rotate(180deg);
+}
+
+.jobBody {
+  padding: clamp(1.25rem, 3vw, 2rem) clamp(1.25rem, 3vw, 2rem) clamp(1.5rem, 3vw, 2rem);
+}
+
+.jobBody h4 {
+  margin: 1.5rem 0 0.5rem;
+  font-size: var(--step-0);
+  color: var(--green-dark);
+}
+
+.jobBody p,
+.jobBody ul {
+  margin: 0;
+}
+
+.jobBody li + li {
+  margin-top: 0.35rem;
+}
+
+.jobBody :global(.btn) {
+  margin-top: 1.5rem;
+  text-decoration: none;
+}
+
+.jobFacts {
+  display: grid;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0 0 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.jobFacts div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.5rem;
+}
+
+.jobFacts dt {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.jobFacts dt::after {
+  content: ':';
+}
+
+/* French sets a space before the colon; the other languages do not. */
+:global(:lang(fr)) .jobFacts dt::after {
+  content: '\00a0:';
+}
+
+.jobFacts dd {
+  margin: 0;
+}
+
+.jobBody .jobNote {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--ink-3);
+}
+
 /* Careers: the client's text, at reading width, and the signature it ends on. */
 .work {
   max-width: var(--page-narrow);

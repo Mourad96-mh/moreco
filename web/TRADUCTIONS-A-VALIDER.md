@@ -575,3 +575,32 @@ nouveau titre nomme Moreco. Les rangées Applications (Agri, Humains…) ne chan
 Le briefing situe ces deux textes « en haut de moreco.ma » : ils sont en fait sur la page
 Agriculture & Horticulture (et, pour l'encadré Spécialités, aussi sur la page Produits).
 L'anglais garde l'orthographe américaine du texte qu'il remplace (« optimizes »).
+
+## 18. Briefing du 2026-10-22 — Postes vacants (Carrières)
+
+Quatre offres d'emploi de Moreco Maroc, publiées sur la page Carrières sous « Travailler
+chez MORECO » et au-dessus du formulaire de candidature (`data/jobs.ts`). Une offre par
+bandeau vert repliable ; le bouton « Postuler » descend au formulaire, et une phrase sous
+le titre demande d'indiquer l'intitulé du poste dans le message. **Le français est celui
+du client ; EN, ES et NL sont de nous.**
+
+- Senior Key Account Manager – Région d'expertise Agadir
+- Technicien Commercial – 5 postes (Agadir 3, Casablanca - Gharb 2)
+- Office Manager / Secrétaire Expérimentée
+- Senior Social Media & Content Creation Expert
+
+Choix de traduction à valider :
+
+- **(H/F)** devient (M/F) en anglais, (H/M) en espagnol, (m/v) en néerlandais.
+- **Technicien Commercial** : *Sales Technician*, *Técnico Comercial*, *Commercieel
+  Technicus*. Les intitulés anglais (Key Account Manager, Social Media Expert) restent
+  tels quels dans toutes les langues, comme le fait le client en français.
+- **CDI** et **mutuelle** sont gardés entre parenthèses après leur traduction : ce sont
+  les termes du droit du travail marocain.
+- « cultures nationales » est rendu par « les cultures du Maroc » (*Moroccan crops*,
+  *cultivos del país*, *Marokkaanse gewassen*).
+- La note « (Note : aucune prime sur objectifs ne s'applique à ce poste) » de l'offre
+  Office Manager est publiée sans le mot « Note », en petit sous les avantages.
+
+Pas de date limite de candidature dans le briefing : les offres restent en ligne jusqu'à
+ce que le client demande de les retirer.

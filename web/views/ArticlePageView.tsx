@@ -9,6 +9,7 @@ import { pageHero } from '@/data/hero-images';
 import PageHeader from '@/components/PageHeader/PageHeader';
 import Blocks, { type Block } from '@/components/Blocks/Blocks';
 import CareerForm from '@/components/Careers/CareerForm';
+import { jobsFor } from '@/data/jobs';
 import Reveal from '@/components/Reveal/Reveal';
 import s from './ArticlePageView.module.css';
 
@@ -46,6 +47,7 @@ export default function ArticlePageView({ locale, view }: { locale: Locale; view
            * replaced ended on "Postes vacants :" over a widget the crawl never saw.
            */}
           {view === 'careers' && <WorkAtMoreco locale={locale} />}
+          {view === 'careers' && <VacanciesBlock locale={locale} />}
 
           {view !== 'careers' && bodyFor(view, locale).length > 0 && (
             <Reveal>
@@ -139,6 +141,71 @@ function WorkAtMoreco({ locale }: { locale: Locale }) {
       ))}
       <p className={s.signature}>{t.site.signature}</p>
     </Reveal>
+  );
+}
+
+/**
+ * "Postes vacants", briefing of 2026-10-22: one fold per opening, its title and facts on
+ * the bar, the full text inside. Applications go through the form below, so each opening
+ * ends on a link down to it.
+ */
+function VacanciesBlock({ locale }: { locale: Locale }) {
+  const t = getDictionary(locale);
+  const jobs = jobsFor(locale);
+  if (jobs.length === 0) return null;
+
+  return (
+    <section id="postes-vacants" className={s.section}>
+      <h2>{t.careers.vacanciesTitle}</h2>
+      <p className="lead">{t.careers.vacanciesIntro}</p>
+      <div className={s.jobs}>
+        {jobs.map((job) => (
+          <details key={job.slug} id={job.slug} className={s.job}>
+            <summary className={s.jobSummary}>
+              <span className={s.jobHead}>
+                <h3 className={s.jobTitle}>{job.title}</h3>
+                <span className={s.jobPlace}>{job.facts[0].value}</span>
+              </span>
+              <span className={s.jobChevron} aria-hidden="true" />
+            </summary>
+            <div className={s.jobBody}>
+              <dl className={s.jobFacts}>
+                {job.facts.map((fact) => (
+                  <div key={fact.label}>
+                    <dt>{fact.label}</dt>
+                    <dd>{fact.value}</dd>
+                  </div>
+                ))}
+              </dl>
+              <h4>{t.careers.jobDescription}</h4>
+              <p>{job.description}</p>
+              <h4>{t.careers.jobMissions}</h4>
+              <ul>
+                {job.missions.map((line) => (
+                  <li key={line}>{line}</li>
+                ))}
+              </ul>
+              <h4>{t.careers.jobProfile}</h4>
+              <ul>
+                {job.profile.map((line) => (
+                  <li key={line}>{line}</li>
+                ))}
+              </ul>
+              <h4>{t.careers.jobOffer}</h4>
+              <ul>
+                {job.offer.map((line) => (
+                  <li key={line}>{line}</li>
+                ))}
+              </ul>
+              {job.note && <p className={s.jobNote}>{job.note}</p>}
+              <a className="btn" href="#candidature">
+                {t.careers.jobApply}
+              </a>
+            </div>
+          </details>
+        ))}
+      </div>
+    </section>
   );
 }
 

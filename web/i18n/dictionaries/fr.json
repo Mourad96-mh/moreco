@@ -373,7 +373,14 @@
       "Chez MORECO, nous travaillons au développement de solutions innovantes pour une agriculture durable, la santé humaine et animale ainsi qu’un environnement plus sain.",
       "Avec une approche pratique, une communication ouverte et une ambition internationale, nous construisons ensemble un avenir durable.",
       "Vous souhaitez contribuer à cette vision ? Découvrez nos opportunités de carrière ou envoyez-nous une candidature spontanée. Nous serons heureux de faire votre connaissance."
-    ]
+    ],
+    "vacanciesTitle": "Postes vacants",
+    "vacanciesIntro": "Pour postuler, envoyez votre candidature et votre CV via le formulaire en bas de page, en indiquant l’intitulé du poste dans votre message.",
+    "jobDescription": "Description du poste",
+    "jobMissions": "Missions principales",
+    "jobProfile": "Votre profil",
+    "jobOffer": "Ce que nous offrons",
+    "jobApply": "Postuler"
   },
   "news": {
     "techEyebrow": "Technologie Moreco",
