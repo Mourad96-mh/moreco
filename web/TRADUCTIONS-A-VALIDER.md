@@ -604,3 +604,32 @@ Choix de traduction à valider :
 
 Pas de date limite de candidature dans le briefing : les offres restent en ligne jusqu'à
 ce que le client demande de les retirer.
+
+## 19. Briefing du 2026-10-23 — FAQ Santé du sol et des racines
+
+Quatre questions sous l'encadré vert Santé du sol, en barres vertes repliables comme
+celles des autres familles (`data/family-faqs.ts`). **Le français est celui du client ;
+EN, ES et NL sont de nous.** Le client numérote 1, 2, 3, 5 : aucune question 4 n'a été
+reçue, les quatre sont publiées à la suite.
+
+Corrections du français :
+
+- « Soil Conditioner 4THoptimisent » → « Soil Conditioner 4TH optimisent » ; « tels que
+  Orthagrow » → « tels qu'Orthagrow ».
+- « La technologie brevetée A.O.S. Technology de Moreco fournit du silicium… (OSA) » →
+  « La technologie brevetée de Moreco fournit du silicium… (OSA) » : le site dit OSA
+  partout, et la question elle-même parle de « technologie OSA ».
+- « deviennent maximaux mobiles et assimilables » → « deviennent pleinement mobiles et
+  assimilables ».
+- « (Azote, Phosphore, Potassium) » en minuscules ; « 100% » → « 100 % ».
+
+Choix de traduction à valider :
+
+- **Orthagrow Granulé** : *Orthagrow Granule* en anglais et en néerlandais (nom de la
+  fiche produit), *Granulé* gardé en espagnol.
+- **amendements de sol** : *soil conditioners*, *enmiendas de suelo*, *bodemverbeteraars*.
+- **stress salin (salinité)** : *salt stress (soil salinity)*, *estrés salino
+  (salinidad)*, *zoutstress (verzilting)*.
+
+**Arabe.** Le client a demandé la FAQ aussi en arabe, mais le site n'a plus de version
+arabe depuis le 2026-09-17 : rien n'est publié en arabe.

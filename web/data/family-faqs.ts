@@ -7,7 +7,10 @@ import type { FamilyNoteKey } from './family-notes';
  * TRADUCTIONS-A-VALIDER.md. Two slips in the French were corrected: "récolte and du
  * transport" (et) and "leur mobility interne" (mobilité).
  *
- * Soil and Disinfectant have no questions yet: a family without an entry shows none.
+ * Soil's four questions came on 2026-10-23, French again by the client; its slips were
+ * corrected too (see TRADUCTIONS-A-VALIDER.md, section 19).
+ *
+ * Disinfectant has no questions yet: a family without an entry shows none.
  */
 export interface FamilyFaq {
   question: string;
@@ -68,6 +71,100 @@ const FAQS: Partial<Record<FamilyNoteKey, Record<Locale, FamilyFaq[]>>> = {
         question: 'Hoe helpt OrthaGrow Control 4TH om zacht worden en openbarsten van blauwe bessen vóór de oogst te voorkomen?',
         answer:
           'Zachte bessen en openbarstende vruchten zijn het gevolg van een fragiele celwandstructuur en een instabiele turgordruk. OrthaGrow Control 4TH bouwt een elastische siliciummatrix in de cuticula en de epidermiscellen van de blauwe bes. Dat verhoogt de mechanische sterkte van de schil en voorkomt microscheurtjes en openbarsten door irrigatiepieken of schommelingen in de luchtvochtigheid. Deze celversteviging beperkt mechanische schade bij oogst en transport tot een minimum en zorgt voor stevigere vruchten, met behoud van de waslaag en een aanzienlijk langere houdbaarheid (shelf life).',
+      },
+    ],
+  },
+
+  soil: {
+    fr: [
+      {
+        question: 'Quel est le rôle d’Orthagrow MYCO 4G dans l’amélioration de la santé des racines ?',
+        answer:
+          'Orthagrow MYCO 4G contient un consortium de haute qualité de mycorhizes vésiculo-arbusculaires (Rhizophagus irregularis, R. clarus et Funneliformis mosseae). Ces champignons bénéfiques créent un réseau racinaire secondaire qui augmente considérablement la surface d’absorption des racines. Cela permet aux cultures d’absorber l’eau et les nutriments essentiels (tels que le phosphore et les micronutriments) de manière beaucoup plus efficace, même dans des conditions difficiles.',
+      },
+      {
+        question:
+          'Comment la technologie OSA des produits Orthagrow protège-t-elle le sol et les racines contre le stress abiotique ?',
+        answer:
+          'La technologie brevetée de Moreco fournit du silicium 100 % biologiquement actif et assimilable (OSA). Au niveau du sol et des racines, cela aide la plante à réguler la pression osmotique. Des produits comme Orthagrow Granulé améliorent le système racinaire en longueur et en poids, ce qui augmente la tolérance des cultures face à la sécheresse extrême, à la chaleur et au stress salin (salinité) du sol.',
+      },
+      {
+        question: 'Comment les amendements de sol Orthagrow contribuent-ils à l’agriculture régénérative ?',
+        answer:
+          'Selon la vision de Moreco sur l’agriculture régénérative, un sol biologiquement actif est la base d’un système racinaire puissant. Des produits tels qu’Orthagrow Soil Conditioner 4TH optimisent la synergie entre la matrice du sol, la rhizosphère (l’environnement des racines) et la culture. Cela restaure la fertilité naturelle du sol et garantit des cultures physiologiquement supérieures ainsi que des rendements durables à long terme.',
+      },
+      {
+        question:
+          'Quel est l’effet d’une matrice de sol saine grâce à Orthagrow sur l’absorption des engrais (NPK) ?',
+        answer:
+          'Un sol sain et un système racinaire fort garantissent que les macro-éléments apportés (azote, phosphore, potassium) et les micronutriments deviennent pleinement mobiles et assimilables. La technologie OSA de la gamme de produits Orthagrow stimule la capacité d’absorption cellulaire des racines. Cela réduit le lessivage des engrais coûteux et augmente le retour sur investissement de votre nutrition végétale.',
+      },
+    ],
+    en: [
+      {
+        question: 'What role does Orthagrow MYCO 4G play in improving root health?',
+        answer:
+          'Orthagrow MYCO 4G contains a high-quality consortium of vesicular-arbuscular mycorrhizae (Rhizophagus irregularis, R. clarus and Funneliformis mosseae). These beneficial fungi build a secondary root network that considerably increases the absorbing surface of the roots. Crops can then take up water and essential nutrients (such as phosphorus and micronutrients) far more efficiently, even in difficult conditions.',
+      },
+      {
+        question: 'How does the OSA technology in Orthagrow products protect soil and roots against abiotic stress?',
+        answer:
+          'Moreco’s patented technology supplies 100% biologically active, assimilable silicon (OSA). At soil and root level, it helps the plant regulate osmotic pressure. Products such as Orthagrow Granule develop a longer and heavier root system, which raises the crop’s tolerance of extreme drought, heat and salt stress (soil salinity).',
+      },
+      {
+        question: 'How do Orthagrow soil conditioners contribute to regenerative agriculture?',
+        answer:
+          'In Moreco’s view of regenerative agriculture, a biologically active soil is the foundation of a powerful root system. Products such as Orthagrow Soil Conditioner 4TH optimise the synergy between the soil matrix, the rhizosphere (the root environment) and the crop. This restores the soil’s natural fertility and ensures physiologically superior crops and sustainable yields over the long term.',
+      },
+      {
+        question: 'How does a healthy soil matrix built with Orthagrow affect fertiliser (NPK) uptake?',
+        answer:
+          'A healthy soil and a strong root system make sure that the macronutrients applied (nitrogen, phosphorus, potassium) and the micronutrients become fully mobile and assimilable. The OSA technology of the Orthagrow range stimulates the cellular uptake capacity of the roots. This reduces the leaching of costly fertilisers and increases the return on your investment in plant nutrition.',
+      },
+    ],
+    es: [
+      {
+        question: '¿Qué papel desempeña Orthagrow MYCO 4G en la mejora de la salud de las raíces?',
+        answer:
+          'Orthagrow MYCO 4G contiene un consorcio de alta calidad de micorrizas vesículo-arbusculares (Rhizophagus irregularis, R. clarus y Funneliformis mosseae). Estos hongos beneficiosos crean una red radicular secundaria que aumenta considerablemente la superficie de absorción de las raíces. Así, los cultivos absorben el agua y los nutrientes esenciales (como el fósforo y los micronutrientes) de forma mucho más eficaz, incluso en condiciones difíciles.',
+      },
+      {
+        question:
+          '¿Cómo protege la tecnología OSA de los productos Orthagrow el suelo y las raíces frente al estrés abiótico?',
+        answer:
+          'La tecnología patentada de Moreco aporta silicio 100 % biológicamente activo y asimilable (OSA). En el suelo y las raíces, ayuda a la planta a regular la presión osmótica. Productos como Orthagrow Granulé mejoran el sistema radicular en longitud y en peso, lo que aumenta la tolerancia de los cultivos a la sequía extrema, al calor y al estrés salino (salinidad) del suelo.',
+      },
+      {
+        question: '¿Cómo contribuyen las enmiendas de suelo Orthagrow a la agricultura regenerativa?',
+        answer:
+          'Según la visión de Moreco sobre la agricultura regenerativa, un suelo biológicamente activo es la base de un sistema radicular potente. Productos como Orthagrow Soil Conditioner 4TH optimizan la sinergia entre la matriz del suelo, la rizosfera (el entorno de las raíces) y el cultivo. Esto restablece la fertilidad natural del suelo y garantiza cultivos fisiológicamente superiores y rendimientos sostenibles a largo plazo.',
+      },
+      {
+        question: '¿Qué efecto tiene una matriz de suelo sana gracias a Orthagrow en la absorción de los fertilizantes (NPK)?',
+        answer:
+          'Un suelo sano y un sistema radicular fuerte garantizan que los macroelementos aportados (nitrógeno, fósforo, potasio) y los micronutrientes sean plenamente móviles y asimilables. La tecnología OSA de la gama Orthagrow estimula la capacidad de absorción celular de las raíces. Esto reduce la lixiviación de fertilizantes costosos y aumenta el retorno de la inversión en la nutrición de sus cultivos.',
+      },
+    ],
+    nl: [
+      {
+        question: 'Welke rol speelt Orthagrow MYCO 4G bij het verbeteren van de wortelgezondheid?',
+        answer:
+          'Orthagrow MYCO 4G bevat een hoogwaardig consortium van vesiculair-arbusculaire mycorrhiza’s (Rhizophagus irregularis, R. clarus en Funneliformis mosseae). Deze nuttige schimmels vormen een secundair wortelnetwerk dat het opnameoppervlak van de wortels aanzienlijk vergroot. Zo nemen gewassen water en essentiële voedingsstoffen (zoals fosfor en micronutriënten) veel efficiënter op, ook onder moeilijke omstandigheden.',
+      },
+      {
+        question: 'Hoe beschermt de OSA-technologie van de Orthagrow-producten bodem en wortels tegen abiotische stress?',
+        answer:
+          'De gepatenteerde technologie van Moreco levert 100% biologisch actief en opneembaar silicium (OSA). In de bodem en de wortels helpt het de plant de osmotische druk te reguleren. Producten als Orthagrow Granule geven een langer en zwaarder wortelstelsel, waardoor het gewas beter bestand is tegen extreme droogte, hitte en zoutstress (verzilting) van de bodem.',
+      },
+      {
+        question: 'Hoe dragen de bodemverbeteraars van Orthagrow bij aan regeneratieve landbouw?',
+        answer:
+          'In Moreco’s visie op regeneratieve landbouw is een biologisch actieve bodem de basis van een krachtig wortelstelsel. Producten als Orthagrow Soil Conditioner 4TH optimaliseren de synergie tussen de bodemmatrix, de rizosfeer (de omgeving van de wortels) en het gewas. Dat herstelt de natuurlijke vruchtbaarheid van de bodem en zorgt voor fysiologisch sterkere gewassen en duurzame opbrengsten op lange termijn.',
+      },
+      {
+        question: 'Wat doet een gezonde bodemmatrix dankzij Orthagrow met de opname van meststoffen (NPK)?',
+        answer:
+          'Een gezonde bodem en een sterk wortelstelsel zorgen ervoor dat de toegediende macro-elementen (stikstof, fosfor, kalium) en micronutriënten volledig mobiel en opneembaar worden. De OSA-technologie van het Orthagrow-assortiment stimuleert het cellulaire opnamevermogen van de wortels. Dat beperkt de uitspoeling van dure meststoffen en verhoogt het rendement van uw investering in plantenvoeding.',
       },
     ],
   },
