@@ -10,6 +10,7 @@ import { TRIAL_DOCUMENTS, trialDocumentTitle, trialDocumentDate } from '@/data/t
 import { pageHero } from '@/data/hero-images';
 import PageHeader from '@/components/PageHeader/PageHeader';
 import Reveal from '@/components/Reveal/Reveal';
+import TrialDialog from '@/components/TrialDialog/TrialDialog';
 import s from './RdiView.module.css';
 
 /**
@@ -23,10 +24,9 @@ import s from './RdiView.module.css';
  * The same briefing struck two campaigns off, plums and raspberries, and the seventeen
  * that remain were renumbered so the list counts without a gap.
  *
- * Since the client's e-mail of 2026-10-09 the campaigns are an accordion: only the titles
- * show, and a click on one unrolls its description and plates. A native <details>, as in
- * FamilyNote — no script, and the plates stay in the page for search engines. Each
- * campaign keeps its own page, linked from the bottom of its panel.
+ * Only the titles show (client's e-mail of 2026-10-09), as cards four to a row, and a
+ * click on one opens its description and plates over the page (2026-10-23) — see
+ * TrialDialog. Each campaign keeps its own page, linked from the bottom of its sheet.
  *
  * Under the campaigns, the growers' testimonials from the client's 2018–2019 deck, then
  * the reports themselves as downloads (client's e-mail of
@@ -61,35 +61,31 @@ export default function TrialsView({ locale }: { locale: Locale }) {
             {TRIALS.map((trial) => {
               const title = trialTitle(trial, locale);
               return (
-                <details key={trial.slug} className={s.trial} id={trial.slug}>
-                  <summary className={s.trialSummary}>
-                    <span className={s.trialOrder}>
-                      {t.rdi.trialLabel} {String(trial.order).padStart(2, '0')}
-                    </span>
-                    <h3 className={s.trialTitle}>{title}</h3>
-                    <span className={s.trialChevron} aria-hidden="true" />
-                  </summary>
-
-                  <div className={s.trialBody}>
-                    <p className={s.trialDescription}>{trialDescription(trial, locale)}</p>
-                    <div className={s.trialPlates}>
-                      {trial.images.map((image, i) => (
-                        <Image
-                          key={image}
-                          src={image}
-                          alt={`${title} — ${i + 1}`}
-                          width={1400}
-                          height={900}
-                          sizes="(min-width: 1100px) 1000px, 100vw"
-                          className={s.trialPlate}
-                        />
-                      ))}
-                    </div>
-                    <Link href={trialHref(locale, trial.slug)} className={s.trialLink}>
-                      {t.rdi.projectDescription}
-                    </Link>
+                <TrialDialog
+                  key={trial.slug}
+                  id={trial.slug}
+                  order={`${t.rdi.trialLabel} ${String(trial.order).padStart(2, '0')}`}
+                  title={title}
+                  closeLabel={t.product.zoomClose}
+                >
+                  <p className={s.trialDescription}>{trialDescription(trial, locale)}</p>
+                  <div className={s.trialPlates}>
+                    {trial.images.map((image, i) => (
+                      <Image
+                        key={image}
+                        src={image}
+                        alt={`${title} — ${i + 1}`}
+                        width={1400}
+                        height={900}
+                        sizes="(min-width: 1100px) 1000px, 92vw"
+                        className={s.trialPlate}
+                      />
+                    ))}
                   </div>
-                </details>
+                  <Link href={trialHref(locale, trial.slug)} className={s.trialLink}>
+                    {t.rdi.projectDescription}
+                  </Link>
+                </TrialDialog>
               );
             })}
           </div>
