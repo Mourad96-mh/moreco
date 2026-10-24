@@ -19,12 +19,19 @@ export interface Flyer {
    * paragraph opening on "Choisissez la gamme Orthagrow" is the call to action.
    */
   text?: Partial<Record<Locale, string[]>>;
+  /** The crop's questions, folded under the flyer (briefing of 2026-10-24). */
+  faq?: Partial<Record<Locale, CropFaq[]>>;
   /** Path under public/, e.g. /media/flyers/tomate.pdf. Absent until the flyer reaches us. */
   file?: string;
   /** Preview of the flyer shown above the text, e.g. /media/flyers/tomate.webp. */
   image?: string;
   /** Size of the PDF, for the weight chip. Optional. */
   bytes?: number;
+}
+
+export interface CropFaq {
+  question: string;
+  answer: string;
 }
 
 export const FLYERS = (raw.flyers ?? []) as Flyer[];
@@ -34,3 +41,6 @@ export const flyerTitle = (flyer: Flyer, locale: Locale): string =>
 
 export const flyerText = (flyer: Flyer, locale: Locale): string[] =>
   flyer.text?.[locale] ?? flyer.text?.fr ?? [];
+
+export const flyerFaq = (flyer: Flyer, locale: Locale): CropFaq[] =>
+  flyer.faq?.[locale] ?? flyer.faq?.fr ?? [];

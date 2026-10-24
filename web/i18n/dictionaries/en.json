@@ -33,7 +33,7 @@
     "language": "Language"
   },
   "home": {
-    "introTitle": "MORECO | Agronomic innovation in the service of regenerative agriculture",
+    "introTitle": "MORECO | High crop performance",
     "introText": [
       "For more than 14 years, MORECO has worked closely with the pioneers and developers of stabilised orthosilicic acid (OSA).",
       "Building on this expertise, we support agricultural professionals in Europe, Asia, the United States and, since 2012, in Morocco and the MENA region.",
@@ -194,9 +194,32 @@
     "domains": "Areas",
     "discover": "Find out more",
     "contactLead": "Our teams answer technical and commercial enquiries.",
-    "introTitle": "Scientific innovation in the service of regenerative agriculture",
+    "introTitle": "Technological innovation in the service of profitability and premium quality",
     "introText": [
-      "Moreco selects and optimises advanced technologies for regenerative agriculture and sustainable production. In close collaboration with the developers of the globally patented OSA formulation, we strengthen plant physiology and water-use efficiency. In this way we maximise the synergy between the soil matrix, the rhizosphere and the crop. A biologically active soil promotes a powerful root system, which translates into physiologically superior crops and sustainable yields for the future."
+      "Since 2012, Moreco has supported growers in Morocco by selecting and deploying cutting-edge technologies designed to maximise yields and add value to the premium quality of your produce. Working directly with the developers of the patented OSA (orthosilicic acid) formulation, we stimulate plant physiology and optimise water efficiency to secure your harvests.",
+      "Our mission is to create a powerful synergy between the soil matrix, the rhizosphere and the plant. By activating soil biology, we promote a high-performing root system that unlocks high crop performance, built on 5 pillars of profitability:"
+    ],
+    "introPoints": [
+      {
+        "title": "Maximum nutrient efficiency",
+        "text": "Optimised uptake and assimilation of nutrients to express the full yield potential."
+      },
+      {
+        "title": "Resilience to stress",
+        "text": "Stronger natural defences against diseases, pests and climatic shocks (drought, extreme heat, salinity)."
+      },
+      {
+        "title": "Strategic water management",
+        "text": "A better water balance to sustain economic performance, even under severe water stress."
+      },
+      {
+        "title": "Premium harvest quality",
+        "text": "Optimised size, uniformity, flavour and shelf life to maximise market value."
+      },
+      {
+        "title": "Zero blocking residues",
+        "text": "A drastic reduction in the build-up of heavy metals (such as cadmium) and chemical residues, ensuring unrestricted access to premium export markets."
+      }
     ],
     "visionTitle": "Our vision",
     "vision": [
@@ -332,7 +355,8 @@
   },
   "resources": {
     "applicationsIntro": "The crop-by-crop flyers, to take out into the field.",
-    "cropSheetsSoon": "The crop sheets are being prepared and will be published here shortly."
+    "cropSheetsSoon": "The crop sheets are being prepared and will be published here shortly.",
+    "downloadFlyer": "Download the flyer"
   },
   "careers": {
     "formTitle": "Speculative application",

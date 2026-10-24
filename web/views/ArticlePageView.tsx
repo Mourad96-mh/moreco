@@ -3,6 +3,7 @@ import Link from 'next/link';
 import type { Locale } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionary';
 import { PRODUCTS, productDatasheet, productDatasheetKind, productName } from '@/data/products';
+import { FLYERS, flyerFaq, flyerTitle } from '@/data/flyers';
 import { href, productHref } from '@/data/routes';
 import pages from '@/data/pages.json';
 import { pageHero } from '@/data/hero-images';
@@ -98,9 +99,12 @@ function ResourcesBlock({ locale }: { locale: Locale }) {
 }
 
 /**
- * Resources > Crop sheets, where the header menu's #applications points. The client had
- * the crop cards taken out on 2026-10-19, so only the heading stands; the crops' texts
- * stay in data/flyers.json.
+ * Resources > Crop sheets, where the header menu's #applications points: since the
+ * briefing of 2026-10-24, one card per crop in a grid of four (three, two, one as the
+ * screen narrows), the flyer on top and the crop's questions folded beneath it at the
+ * flyer's own width. The crops come in the briefing's order, left to right then row by
+ * row. The flyers came on 2026-10-24; a crop without one opens on its name, and its
+ * preview and download appear once `image` and `file` are set in data/flyers.json.
  */
 function ApplicationsBlock({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
@@ -108,6 +112,39 @@ function ApplicationsBlock({ locale }: { locale: Locale }) {
   return (
     <section id="applications" className={s.section}>
       <h2>{t.nav.cropSheets}</h2>
+      <ul className={s.crops}>
+        {FLYERS.map((flyer) => (
+          <li key={flyer.slug} id={flyer.slug} className={s.crop}>
+            {flyer.image && (
+              <a href={flyer.file ?? flyer.image} className={s.cropFlyer}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={flyer.image} alt={flyerTitle(flyer, locale)} loading="lazy" />
+              </a>
+            )}
+            <div className={s.cropHead}>
+              <h3 className={s.cropName}>{flyerTitle(flyer, locale)}</h3>
+              {flyer.latin && <span className={s.cropLatin}>{flyer.latin}</span>}
+            </div>
+            {flyerFaq(flyer, locale).map((faq) => (
+              <details key={faq.question} className={s.cropFaq}>
+                <summary className={s.cropSummary}>
+                  <h4 className={s.cropQuestion}>{faq.question}</h4>
+                  <span className={s.cropChevron} aria-hidden="true" />
+                </summary>
+                <p className={s.cropAnswer}>{faq.answer}</p>
+              </details>
+            ))}
+            {flyer.file && (
+              <a href={flyer.file} download className={s.sheet}>
+                <span className={s.sheetName}>{t.resources.downloadFlyer}</span>
+                <span className={s.sheetKind}>
+                  PDF{flyer.bytes ? ` · ${Math.round(flyer.bytes / 1024)} ${t.article.sizeUnit}` : ''}
+                </span>
+              </a>
+            )}
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }

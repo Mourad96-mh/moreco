@@ -58,6 +58,18 @@ export default function AboutView({ locale }: { locale: Locale }) {
                 {paragraph}
               </p>
             ))}
+            {/* The five pillars the last paragraph announces, briefing of 2026-10-24. */}
+            <ul className={s.points}>
+              {t.about.introPoints.map((point) => (
+                <li key={point.title}>
+                  <strong>
+                    {point.title}
+                    {locale === 'fr' ? ' :' : ':'}
+                  </strong>{' '}
+                  {point.text}
+                </li>
+              ))}
+            </ul>
           </Reveal>
 
           <Reveal className={s.vision} delay={80}>

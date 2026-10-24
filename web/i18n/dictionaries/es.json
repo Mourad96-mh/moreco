@@ -33,7 +33,7 @@
     "language": "Idioma"
   },
   "home": {
-    "introTitle": "MORECO | La innovación agronómica al servicio de una agricultura regenerativa",
+    "introTitle": "MORECO | Alto rendimiento de los cultivos",
     "introText": [
       "Desde hace más de 14 años, MORECO colabora estrechamente con los pioneros y desarrolladores del ácido ortosilícico estabilizado (OSA).",
       "Gracias a esta experiencia, acompañamos a los profesionales de la agricultura en Europa, Asia, Estados Unidos y, desde 2012, en Marruecos y la región MENA.",
@@ -194,9 +194,32 @@
     "domains": "Áreas",
     "discover": "Saber más",
     "contactLead": "Nuestros equipos atienden consultas técnicas y comerciales.",
-    "introTitle": "La innovación científica al servicio de la agricultura regenerativa",
+    "introTitle": "La innovación tecnológica al servicio de la rentabilidad y la alta calidad",
     "introText": [
-      "Moreco selecciona y optimiza tecnologías avanzadas para la agricultura regenerativa y una producción sostenible. En estrecha colaboración con los desarrolladores de la formulación OSA patentada a nivel mundial, reforzamos la fisiología vegetal y la eficiencia en el uso del agua. Así maximizamos la sinergia entre la matriz del suelo, la rizosfera y el cultivo. Un suelo biológicamente activo favorece un sistema radicular potente, lo que se traduce en cultivos fisiológicamente superiores y rendimientos sostenibles para el futuro."
+      "Desde 2012, Moreco acompaña a los productores en Marruecos seleccionando e implantando tecnologías de vanguardia diseñadas para maximizar los rendimientos y poner en valor la calidad premium de sus producciones. En colaboración directa con los creadores de la formulación patentada OSA (ácido ortosilícico), estimulamos la fisiología vegetal y optimizamos la eficiencia hídrica para asegurar sus cosechas.",
+      "Nuestra misión es generar una potente sinergia entre la matriz del suelo, la rizosfera y la planta. Al activar la biología del suelo, favorecemos un sistema radicular de alto rendimiento que libera el alto rendimiento de los cultivos, articulado en torno a 5 pilares de rentabilidad:"
+    ],
+    "introPoints": [
+      {
+        "title": "Máxima eficiencia nutricional",
+        "text": "Optimización de la absorción y la asimilación de los nutrientes para expresar todo el potencial de rendimiento."
+      },
+      {
+        "title": "Resiliencia frente al estrés",
+        "text": "Refuerzo de las defensas naturales contra enfermedades, plagas y choques climáticos (sequía, calor extremo, salinidad)."
+      },
+      {
+        "title": "Gestión estratégica del agua",
+        "text": "Mejora del equilibrio hídrico para mantener el rendimiento económico, incluso en condiciones de estrés hídrico severo."
+      },
+      {
+        "title": "Alta calidad de cosecha",
+        "text": "Optimización del calibre, la homogeneidad, el sabor y la conservación para maximizar el valor comercial."
+      },
+      {
+        "title": "Cero residuos bloqueantes",
+        "text": "Limitación drástica de la acumulación de metales pesados (como el cadmio) y de residuos químicos, que garantiza un acceso sin restricciones a los mercados de exportación premium."
+      }
     ],
     "visionTitle": "Nuestra visión",
     "vision": [
@@ -332,7 +355,8 @@
   },
   "resources": {
     "applicationsIntro": "Los folletos por cultivo, para llevar al campo.",
-    "cropSheetsSoon": "Las fichas de cultivo están en preparación y se publicarán aquí próximamente."
+    "cropSheetsSoon": "Las fichas de cultivo están en preparación y se publicarán aquí próximamente.",
+    "downloadFlyer": "Descargar el folleto"
   },
   "careers": {
     "formTitle": "Candidatura espontánea",

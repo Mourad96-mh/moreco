@@ -633,3 +633,69 @@ Choix de traduction à valider :
 
 **Arabe.** Le client a demandé la FAQ aussi en arabe, mais le site n'a plus de version
 arabe depuis le 2026-09-17 : rien n'est publié en arabe.
+
+## 20. Briefing du 2026-10-24 — titre d'accueil et présentation « À propos »
+
+**Le français est celui du client ; EN, ES et NL sont de nous.**
+
+| Où | Contenu |
+| --- | --- |
+| `home.introTitle` | « Haute performance des cultures » remplace « L'innovation agronomique au service d'une agriculture régénérative » ; « MORECO » reste au-dessus du titre |
+| `about.introTitle`, `about.introText`, `about.introPoints` | nouvelle présentation sous le titre et ses cinq piliers de rentabilité, en liste à puces |
+
+Le bloc « Notre vision » qui suit n'a pas été touché.
+
+Corrections du français : apostrophes typographiques, « Acide Orthosilicique » →
+« acide orthosilicique ».
+
+Choix de traduction à valider :
+
+- **Haute performance des cultures** : *High crop performance*, *Alto rendimiento de los
+  cultivos*, *Hoge gewasprestaties*.
+- **Zéro résidu bloquant** : *Zero blocking residues*, *Cero residuos bloqueantes*, *Nul
+  blokkerende residuen*.
+
+## 21. Briefing du 2026-10-24 — FAQ des fiches culturales
+
+Ressources > Fiches culturales : une carte par culture dans une grille de quatre (trois,
+deux, une selon l'écran), le flyer en haut et ses deux questions repliées dessous, à la
+même largeur. Les 22 cultures suivent l'ordre du briefing ; la tomate et la betterave
+sucrière ont été ajoutées. Flyers reçus le 2026-10-24 pour 21 cultures ; la myrtille, sans
+flyer, a été retirée à la demande du client (ses questions restent dans l'historique git) ; le flyer Blé du même envoi est mis de côté, le blé ne
+faisant pas partie des 22 cultures.
+**Le français est celui du client ; EN, ES et NL sont de nous.**
+
+Corrections du français :
+
+- « Orthagrow Gamma » → « la gamme Orthagrow » et « le Moreco gamma » → « la gamme
+  Moreco » (*gamma* est le mot néerlandais), avec l'accord qui suit (« prévient-elle »,
+  « aide-t-elle »…).
+- « (orthosilicic acid) » → « (acide orthosilicique) ».
+- Noms de produits alignés sur les fiches : « MYCO4G » → « MYCO 4G », « Orthagrow
+  granule » → « Orthagrow Granulé », « topline » → « Topline », « control » → « Control ».
+- Mots néerlandais restés dans le texte : « sapstroom » → « flux de sève » (pêcher),
+  « fysiologique » → « physiologique » (pêcher), « knollen creuses » → « tubercules
+  creux » (pomme de terre), « Antwoord » → réponse (poivron).
+- Espaces manquantes : « creasingchez », « cinerea(pourriture », « controlcombinée ».
+- « maximalise » → « maximise » (betterave) ; vigne : « renforce les parois cellulaires
+  d'un bouclier » → « dote les parois cellulaires d'un bouclier ».
+
+Choix de traduction à valider :
+
+- **gamme Orthagrow / gamme Moreco** : *Orthagrow range*, *gama Orthagrow*,
+  *Orthagrow-gamma*.
+- **Orthagrow Granulé** : *Granule* en anglais et en néerlandais, *Granulé* en espagnol,
+  comme à la section 19.
+- **nécrose / pourriture apicale** : *blossom-end rot*, *podredumbre apical*, *neusrot*.
+- **verse** : *lodging*, *encamado*, *legering*.
+- **roussissure** : *russeting*, *russeting*, *ruwschilligheid*.
+- **brodequinage** (melon) : *netting*, *reticulado*, *netvorming*.
+- **fendage du noyau** : *split pit*, *rotura del hueso*, *gespleten pit*.
+- **cœur creux** : *hollow heart*, *corazón hueco*, *holheid*.
+- **helminthosporiose, charbon** (maïs) : *northern leaf blight, smut* ;
+  *helmintosporiosis, carbón* ; *Helminthosporium, builenbrand*.
+- **taux butyreux** : *butterfat content*, *contenido de grasa*, *vetgehalte*.
+- **Télécharger le flyer** (bouton sous chaque fiche) : *Download the flyer*,
+  *Descargar el folleto*, *Flyer downloaden*.
+- **haricot vert** : *judías* en espagnol (Espagne) ; à remplacer par *ejotes* ou
+  *porotos verdes* si le site vise l'Amérique latine.

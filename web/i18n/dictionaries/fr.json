@@ -33,7 +33,7 @@
     "language": "Langue"
   },
   "home": {
-    "introTitle": "MORECO | L’innovation agronomique au service d’une agriculture régénérative",
+    "introTitle": "MORECO | Haute performance des cultures",
     "introText": [
       "Depuis plus de 14 ans, MORECO travaille en étroite collaboration avec les pionniers et développeurs de l’acide orthosilicique stabilisé (OSA).",
       "Grâce à cette expertise, nous accompagnons les professionnels de l’agriculture en Europe, en Asie, aux États-Unis et, depuis 2012, au Maroc et dans la région MENA.",
@@ -194,9 +194,32 @@
     "domains": "Domaines",
     "discover": "En savoir plus",
     "contactLead": "Nos équipes répondent aux demandes techniques et commerciales.",
-    "introTitle": "L’innovation scientifique au service de l’agriculture régénératrice",
+    "introTitle": "L’innovation technologique au service de la rentabilité et de la haute qualité",
     "introText": [
-      "Moreco sélectionne et optimise des technologies avancées pour l’agriculture régénératrice et une production durable. En étroite collaboration avec les développeurs de la formulation OSA brevetée à l’échelle mondiale, nous renforçons la physiologie végétale et l’efficacité d’utilisation de l’eau. Nous maximisons ainsi la synergie entre la matrice du sol, la rhizosphère et la culture. Un sol biologiquement actif favorise un système racinaire puissant, ce qui se traduit par des cultures physiologiquement supérieures et des rendements durables pour l’avenir."
+      "Depuis 2012, Moreco accompagne les producteurs au Maroc en sélectionnant et déployant des technologies d’avant-garde conçues pour maximiser les rendements et valoriser la qualité premium de vos productions. En partenariat direct avec les concepteurs de la formulation brevetée OSA (acide orthosilicique), nous stimulons la physiologie végétale et optimisons l’efficacité hydrique pour sécuriser vos récoltes.",
+      "Notre mission est de générer une synergie puissante entre la matrice du sol, la rhizosphère et la plante. En activant la biologie du sol, nous favorisons un système racinaire ultra-performant qui libère la haute performance des cultures, articulée autour de 5 piliers de rentabilité :"
+    ],
+    "introPoints": [
+      {
+        "title": "Efficience nutritionnelle maximale",
+        "text": "Optimisation de l’absorption et de l’assimilation des nutriments pour exprimer le plein potentiel de rendement."
+      },
+      {
+        "title": "Résilience face aux stress",
+        "text": "Renforcement des défenses naturelles contre les maladies, les ravageurs et les chocs climatiques (sécheresse, forte chaleur, salinité)."
+      },
+      {
+        "title": "Gestion stratégique de l’eau",
+        "text": "Amélioration de l’équilibre hydrique pour maintenir les performances économiques, même en conditions de stress hydrique sévère."
+      },
+      {
+        "title": "Haute qualité de récolte",
+        "text": "Optimisation du calibre, de l’homogénéité, de la saveur et de la conservation pour maximiser la valeur commerciale."
+      },
+      {
+        "title": "Zéro résidu bloquant",
+        "text": "Limitation drastique de l’accumulation des métaux lourds (comme le cadmium) et des résidus chimiques, garantissant un accès sans restriction aux marchés d’exportation premium."
+      }
     ],
     "visionTitle": "Notre vision",
     "vision": [
@@ -332,7 +355,8 @@
   },
   "resources": {
     "applicationsIntro": "Les flyers par culture, à emporter au champ.",
-    "cropSheetsSoon": "Les fiches culturales sont en cours de préparation et seront publiées ici prochainement."
+    "cropSheetsSoon": "Les fiches culturales sont en cours de préparation et seront publiées ici prochainement.",
+    "downloadFlyer": "Télécharger le flyer"
   },
   "careers": {
     "formTitle": "Candidature spontanée",

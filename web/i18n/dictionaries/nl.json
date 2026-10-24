@@ -33,7 +33,7 @@
     "language": "Taal"
   },
   "home": {
-    "introTitle": "MORECO | Agronomische innovatie in dienst van regeneratieve landbouw",
+    "introTitle": "MORECO | Hoge gewasprestaties",
     "introText": [
       "Al meer dan 14 jaar werkt MORECO nauw samen met de pioniers en ontwikkelaars van gestabiliseerd orthokiezelzuur (OSA).",
       "Dankzij deze expertise ondersteunen we landbouwprofessionals in Europa, Azië, de Verenigde Staten en, sinds 2012, in Marokko en de MENA-regio.",
@@ -194,9 +194,32 @@
     "domains": "Domeinen",
     "discover": "Meer weten",
     "contactLead": "Onze teams beantwoorden technische en commerciële vragen.",
-    "introTitle": "Wetenschappelijke innovatie in dienst van regeneratieve landbouw",
+    "introTitle": "Technologische innovatie in dienst van rendabiliteit en topkwaliteit",
     "introText": [
-      "Moreco selecteert en optimaliseert geavanceerde technologieën voor regeneratieve landbouw en duurzame productie. In nauwe samenwerking met de ontwikkelaars van de wereldwijd gepatenteerde OSA-formulering versterken we de plantenfysiologie en de efficiëntie van het watergebruik. Zo maximaliseren we de synergie tussen de bodemmatrix, de rizosfeer en het gewas. Een biologisch actieve bodem bevordert een krachtig wortelstelsel, wat zich vertaalt in fysiologisch superieure gewassen en duurzame opbrengsten voor de toekomst."
+      "Sinds 2012 begeleidt Moreco telers in Marokko door baanbrekende technologieën te selecteren en in te zetten die zijn ontworpen om de opbrengst te maximaliseren en de premiumkwaliteit van uw productie te verwaarden. In rechtstreekse samenwerking met de ontwikkelaars van de gepatenteerde OSA-formulering (orthokiezelzuur) stimuleren we de plantenfysiologie en optimaliseren we de waterefficiëntie om uw oogst veilig te stellen.",
+      "Onze missie is een krachtige synergie te creëren tussen de bodemmatrix, de rizosfeer en de plant. Door het bodemleven te activeren, bevorderen we een uiterst krachtig wortelstelsel dat hoge gewasprestaties vrijmaakt, gebouwd op 5 pijlers van rendabiliteit:"
+    ],
+    "introPoints": [
+      {
+        "title": "Maximale nutriëntenefficiëntie",
+        "text": "Optimale opname en assimilatie van voedingsstoffen om het volledige opbrengstpotentieel te benutten."
+      },
+      {
+        "title": "Weerbaarheid tegen stress",
+        "text": "Versterking van de natuurlijke afweer tegen ziekten, plagen en klimaatschokken (droogte, extreme hitte, verzilting)."
+      },
+      {
+        "title": "Strategisch waterbeheer",
+        "text": "Een betere waterhuishouding om de economische prestaties op peil te houden, zelfs bij ernstige waterstress."
+      },
+      {
+        "title": "Topkwaliteit van de oogst",
+        "text": "Optimalisatie van kaliber, uniformiteit, smaak en houdbaarheid om de handelswaarde te maximaliseren."
+      },
+      {
+        "title": "Nul blokkerende residuen",
+        "text": "Drastische beperking van de ophoping van zware metalen (zoals cadmium) en chemische residuen, voor onbeperkte toegang tot premium exportmarkten."
+      }
     ],
     "visionTitle": "Onze visie",
     "vision": [
@@ -332,7 +355,8 @@
   },
   "resources": {
     "applicationsIntro": "De flyers per teelt, om mee het veld in te nemen.",
-    "cropSheetsSoon": "De teeltfiches worden voorbereid en verschijnen hier binnenkort."
+    "cropSheetsSoon": "De teeltfiches worden voorbereid en verschijnen hier binnenkort.",
+    "downloadFlyer": "Flyer downloaden"
   },
   "careers": {
     "formTitle": "Open sollicitatie",

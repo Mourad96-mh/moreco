@@ -103,41 +103,53 @@
   color: var(--ink-3);
 }
 
-/* Crop sheets: the flyer, then the client's text beneath it (2026-10-18). */
+/*
+ * Crop sheets (briefing of 2026-10-24): a grid of four cards on desktop, three, two and
+ * one as the screen narrows. Each card is the flyer with its questions folded beneath
+ * it, both at the card's width so they read as one block.
+ */
 .crops {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+  grid-template-columns: 1fr;
   gap: clamp(1rem, 2vw, 1.5rem);
-  /* An open card grows on its own; the closed ones beside it keep their height. */
+  /* An open question grows its own card; the cards beside it keep their height. */
   align-items: start;
   margin: 1.5rem 0 0;
   padding: 0;
   list-style: none;
 }
 
+@media (min-width: 560px) {
+  .crops {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 900px) {
+  .crops {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .crops {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
 .crop {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
-  padding: 1.25rem 1.35rem 1.4rem;
+  overflow: hidden;
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   background: var(--paper);
   scroll-margin-top: 6rem;
 }
 
-.crop p {
-  margin: 0;
-  font-size: 0.92rem;
-  line-height: 1.6;
-}
-
 .cropFlyer {
   display: block;
-  margin: -1.25rem -1.35rem 0.4rem;
-  overflow: hidden;
   border-bottom: 1px solid var(--line);
-  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
   background: var(--paper-2);
 }
 
@@ -147,24 +159,14 @@
   height: auto;
 }
 
-/* The fold: the name and Latin name with a round chevron, as on the family notes. */
-.cropSummary {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  list-style: none;
-  cursor: pointer;
+.cropHead {
+  padding: 1rem 1.1rem 0.9rem;
+  border-top: 3px solid var(--green);
+  background: var(--paper-2);
 }
 
-.cropSummary::-webkit-details-marker {
-  display: none;
-}
-
-.cropSummary:focus-visible {
-  outline: 2px solid var(--green);
-  outline-offset: 4px;
-  border-radius: var(--radius);
+.cropFlyer + .cropHead {
+  border-top: 0;
 }
 
 .cropName {
@@ -176,16 +178,48 @@
 .cropLatin {
   display: block;
   margin-top: 0.15rem;
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   font-style: italic;
   color: var(--ink-3);
+}
+
+/* One fold per question: the question with a round chevron, as on the family notes. */
+.cropFaq {
+  border-top: 1px solid var(--line);
+}
+
+.cropSummary {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.85rem 1.1rem;
+  list-style: none;
+  cursor: pointer;
+}
+
+.cropSummary::-webkit-details-marker {
+  display: none;
+}
+
+.cropSummary:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: -2px;
+}
+
+.cropQuestion {
+  margin: 0;
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--ink);
 }
 
 .cropChevron {
   position: relative;
   flex-shrink: 0;
-  width: 2.25rem;
-  height: 2.25rem;
+  width: 1.6rem;
+  height: 1.6rem;
   border: 2px solid var(--green);
   border-radius: 50%;
   transition: background-color 0.2s ease, transform 0.25s ease;
@@ -196,8 +230,8 @@
   position: absolute;
   left: 50%;
   top: 45%;
-  width: 0.55rem;
-  height: 0.55rem;
+  width: 0.42rem;
+  height: 0.42rem;
   border-right: 2px solid var(--green);
   border-bottom: 2px solid var(--green);
   transform: translate(-50%, -50%) rotate(45deg);
@@ -207,24 +241,21 @@
   background: rgb(64 171 92 / 0.1);
 }
 
-.cropFold[open] .cropChevron {
+.cropFaq[open] .cropChevron {
   transform: rotate(180deg);
 }
 
-.cropBody {
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-  margin-top: 1rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--line);
+.cropAnswer {
+  margin: 0;
+  padding: 0 1.1rem 1rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--ink-2);
 }
 
-.crop .cropClosing {
-  padding-top: 0.75rem;
+.crop .sheet {
+  padding: 0.85rem 1.1rem 1rem;
   border-top: 1px solid var(--line);
-  font-weight: 600;
-  color: var(--green-dark);
 }
 
 /* ---------- knowledge ---------- */
