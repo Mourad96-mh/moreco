@@ -699,3 +699,20 @@ Choix de traduction à valider :
   *Descargar el folleto*, *Flyer downloaden*.
 - **haricot vert** : *judías* en espagnol (Espagne) ; à remplacer par *ejotes* ou
   *porotos verdes* si le site vise l'Amérique latine.
+
+## 22. Envoi du 2026-10-24 — essais ICARDA 2020 (Publication scientifique)
+
+R&D + I > Publication scientifique : les quatre rapports ICARDA Rabat (Dr. El Fakhouri K.,
+station de Marchouch, 2020) — fève, pois chiche, lentille, blé tendre — sont publiés en
+téléchargement PDF, tels que reçus, en tête de la liste. Les titres restent dans la langue
+du document, comme les autres publications : le rapport blé est titré en anglais.
+
+Points à faire corriger par le client dans les PDF (rien n'a été modifié) :
+
+- **Pois chiche** : le texte dit que l'infestation baisse pour Moubarak (4,5 → 4) ; le
+  tableau 3 donne 4,5 → 4,5 pour Moubarak et 5 → 4 pour Farrihane.
+- **Lentille** : « 15 days » au lieu de « 15 jours ».
+- **Pois chiche** : « l'effect » au lieu de « l'effet ».
+- **Blé et lentille**, traitement (3) : « trempage des graines dans l'eau avec l'application
+  foliaire d'Orthagrow Control » — un trempage avec une application foliaire ; à
+  reformuler (trempage dans une solution d'Orthagrow Control ?).
