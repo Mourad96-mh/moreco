@@ -17,7 +17,7 @@
     },
     {
       "source": "/%d8%a3%d8%ba%d8%b1%d8%a7%d8%b6-%d8%b9%d8%a7%d9%85%d8%a9/%d8%ae%d8%b7-%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-huwa-san/%d8%a7%d9%84%d8%aa%d8%b7%d9%87%d9%8a%d8%b1-%d8%a7%d9%84%d9%85%d9%87%d9%86%d9%8a/%d9%85%d8%b9%d8%a7%d9%84%d8%ac%d8%a9-%d8%a7%d9%84%d9%85%d9%8a%d8%a7%d9%87/",
-      "destination": "/fr/produits/emploi-general/huwa-san-pro/huwa-san-water-treatment/",
+      "destination": "/fr/produits/emploi-general/clearox/clearox/",
       "permanent": true
     },
     {
@@ -27,7 +27,7 @@
     },
     {
       "source": "/%d8%a3%d8%ba%d8%b1%d8%a7%d8%b6-%d8%b9%d8%a7%d9%85%d8%a9/%d8%ae%d8%b7-%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-huwa-san/%d8%a7%d9%84%d8%aa%d8%b7%d9%87%d9%8a%d8%b1-%d8%a7%d9%84%d9%85%d9%87%d9%86%d9%8a/%d8%a8%d9%8a%d8%b7%d8%b1%d9%8a/",
-      "destination": "/fr/produits/emploi-general/huwa-san-pro/huwa-san-vet/",
+      "destination": "/fr/produits/emploi-general/clearox/clearox/",
       "permanent": true
     },
     {
@@ -162,7 +162,7 @@
     },
     {
       "source": "/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/traitement-de-leau/",
-      "destination": "/fr/produits/emploi-general/huwa-san-pro/huwa-san-water-treatment/",
+      "destination": "/fr/produits/emploi-general/clearox/clearox/",
       "permanent": true
     },
     {
@@ -202,7 +202,7 @@
     },
     {
       "source": "/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/veterinaire/",
-      "destination": "/fr/produits/emploi-general/huwa-san-pro/huwa-san-vet/",
+      "destination": "/fr/produits/emploi-general/clearox/clearox/",
       "permanent": true
     },
     {
@@ -227,7 +227,7 @@
     },
     {
       "source": "/general-use/huwa-san-productline/professional-disinfection-2/water-treatment/",
-      "destination": "/en/products/general-use/huwa-san-pro/huwa-san-water-treatment/",
+      "destination": "/en/products/general-use/clearox/clearox/",
       "permanent": true
     },
     {
@@ -277,7 +277,7 @@
     },
     {
       "source": "/general-use/huwa-san-productline/professional-disinfection-2/veterinary/",
-      "destination": "/en/products/general-use/huwa-san-pro/huwa-san-vet/",
+      "destination": "/en/products/general-use/clearox/clearox/",
       "permanent": true
     },
     {
@@ -306,12 +306,22 @@
       "permanent": true
     },
     {
+      "source": "/nl/producten/algemeen-gebruik/huwa-san-pro/huwa-san-water-treatment/",
+      "destination": "/nl/producten/algemeen-gebruik/clearox/clearox/",
+      "permanent": true
+    },
+    {
       "source": "/fr/produits/emploi-general/huwa-san-home/huwa-san-fruit-vegetables/",
       "destination": "/fr/produits/emploi-general/",
       "permanent": true
     },
     {
       "source": "/%d8%a3%d8%ba%d8%b1%d8%a7%d8%b6-%d8%b9%d8%a7%d9%85%d8%a9/clearox-ar/",
+      "destination": "/fr/produits/emploi-general/clearox/clearox/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/produits/emploi-general/huwa-san-pro/huwa-san-water-treatment/",
       "destination": "/fr/produits/emploi-general/clearox/clearox/",
       "permanent": true
     },
@@ -336,6 +346,11 @@
       "permanent": true
     },
     {
+      "source": "/es/productos/uso-general/huwa-san-pro/huwa-san-water-treatment/",
+      "destination": "/es/productos/uso-general/clearox/clearox/",
+      "permanent": true
+    },
+    {
       "source": "/nl/producten/algemeen-gebruik/huwa-san-pool/huwa-san-whirlpool/",
       "destination": "/nl/producten/algemeen-gebruik/",
       "permanent": true
@@ -343,6 +358,11 @@
     {
       "source": "/fr/produits/emploi-general/huwa-san-pro/huwa-san-hard-surface/",
       "destination": "/fr/produits/emploi-general/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/general-use/huwa-san-pro/huwa-san-water-treatment/",
+      "destination": "/en/products/general-use/clearox/clearox/",
       "permanent": true
     },
     {
@@ -511,6 +531,11 @@
       "permanent": true
     },
     {
+      "source": "/nl/producten/algemeen-gebruik/huwa-san-pro/huwa-san-vet/",
+      "destination": "/nl/producten/algemeen-gebruik/clearox/clearox/",
+      "permanent": true
+    },
+    {
       "source": "/research/effets-des-produits-orthagrow-sur-les-poivrons/",
       "destination": "/fr/ressources/essais/poivrons/",
       "permanent": true
@@ -591,6 +616,11 @@
       "permanent": true
     },
     {
+      "source": "/fr/produits/emploi-general/huwa-san-pro/huwa-san-vet/",
+      "destination": "/fr/produits/emploi-general/clearox/clearox/",
+      "permanent": true
+    },
+    {
       "source": "/en/products/general-use/huwa-san-home/huwa-san-hands/",
       "destination": "/en/products/general-use/",
       "permanent": true
@@ -621,6 +651,11 @@
       "permanent": true
     },
     {
+      "source": "/es/productos/uso-general/huwa-san-pro/huwa-san-vet/",
+      "destination": "/es/productos/uso-general/clearox/clearox/",
+      "permanent": true
+    },
+    {
       "source": "/nl/producten/algemeen-gebruik/bioxeco/bioxeco-hand/",
       "destination": "/nl/producten/algemeen-gebruik/",
       "permanent": true
@@ -628,6 +663,11 @@
     {
       "source": "/agri-horticulture-fr/gamme-de-produits-orthafight/",
       "destination": "/fr/produits/agri-horticulture/orthagrow/orthagrow-fertifight/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/general-use/huwa-san-pro/huwa-san-vet/",
+      "destination": "/en/products/general-use/clearox/clearox/",
       "permanent": true
     },
     {

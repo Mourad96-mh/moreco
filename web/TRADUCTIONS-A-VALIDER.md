@@ -805,3 +805,24 @@ Choix de traduction à valider :
 - **brûlure de la pointe** : *tip burn*, *quemadura de la punta*, *tipburn*.
 - **classe 1** : *class 1*, *categoría 1*, *klasse 1*. **Dakhla** : *Dajla* en espagnol.
 - **Orthagrow Cal 21% SC 4G** : nom du produit, « 21% » sans espace comme sur sa page.
+
+## 25. 2026-10-30 — fiche technique de Clearox
+
+Le client signale que la fiche technique n'est pas intégrée à la page Clearox. Les tableaux
+de la page 2 du flyer Clearox (2e contrôle, 2026-10-29) sont repris sous un titre
+*Fiche technique*, après les domaines d'application, sur les quatre pages Clearox
+(toutes concentrations, 50 %, 35 %, 25 %) : présentation du produit, méthodes
+d'application et dosages, contrôle qualité et stockage, traçabilité et sécurité. Le
+tableau « Domaines d'application » du flyer n'est pas repris : la liste déjà en ligne dit
+la même chose et cite l'élevage. **Le français est celui du flyer ; EN, ES et NL sont de
+nous.**
+
+À faire vérifier par le client : le traitement choc et l'élimination du biofilm sont tous
+deux à 50 ppm, mais l'un à 100 ml et l'autre à 50 ml pour 1 000 L ; repris tel quel.
+
+Choix de traduction à valider :
+
+- **Fiche technique** : *Technical sheet*, *Ficha técnica*, *Technische fiche*.
+- **Jar test** : gardé en anglais, *prueba en frasco (jar test)* en espagnol.
+- **Statut d'homologation** : *Approval status*, *Estado de homologación*,
+  *Homologatiestatus*.

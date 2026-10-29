@@ -116,10 +116,10 @@ const RULES = [
   ['/emploi-general/gamme-de-produits-huwa-san/', 'fr', 'produits/emploi-general'],
   ['/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/', 'fr', 'produits/emploi-general'],
   ['/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/agriculture/', 'fr', 'produits/emploi-general/huwa-san-pro/huwa-san-agro'],
-  ['/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/veterinaire/', 'fr', 'produits/emploi-general/huwa-san-pro/huwa-san-vet'],
+  ['/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/veterinaire/', 'fr', 'produits/emploi-general/clearox/clearox'],
   ['/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/aliments-et-boissons/', 'fr', 'produits/emploi-general'],
   ['/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/hard-surface/', 'fr', 'produits/emploi-general'],
-  ['/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/traitement-de-leau/', 'fr', 'produits/emploi-general/huwa-san-pro/huwa-san-water-treatment'],
+  ['/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/traitement-de-leau/', 'fr', 'produits/emploi-general/clearox/clearox'],
   ['/emploi-general/gamme-de-produits-huwa-san/hygiene-home/', 'fr', 'produits/emploi-general'],
   ['/emploi-general/gamme-de-produits-huwa-san/pool/', 'fr', 'produits/emploi-general'],
   ['/emploi-general/bioxeco/', 'fr', 'produits/emploi-general'],
@@ -148,10 +148,10 @@ const RULES = [
   ['/general-use/huwa-san-productline/', 'en', 'products/general-use'],
   ['/general-use/huwa-san-productline/professional-disinfection-2/', 'en', 'products/general-use'],
   ['/general-use/huwa-san-productline/professional-disinfection-2/agriculture/', 'en', 'products/general-use/huwa-san-pro/huwa-san-agro'],
-  ['/general-use/huwa-san-productline/professional-disinfection-2/veterinary/', 'en', 'products/general-use/huwa-san-pro/huwa-san-vet'],
+  ['/general-use/huwa-san-productline/professional-disinfection-2/veterinary/', 'en', 'products/general-use/clearox/clearox'],
   ['/general-use/huwa-san-productline/professional-disinfection-2/food-beverage/', 'en', 'products/general-use'],
   ['/general-use/huwa-san-productline/professional-disinfection-2/hard-surface/', 'en', 'products/general-use'],
-  ['/general-use/huwa-san-productline/professional-disinfection-2/water-treatment/', 'en', 'products/general-use/huwa-san-pro/huwa-san-water-treatment'],
+  ['/general-use/huwa-san-productline/professional-disinfection-2/water-treatment/', 'en', 'products/general-use/clearox/clearox'],
   ['/general-use/huwa-san-productline/hygiene-home/', 'en', 'products/general-use'],
   ['/general-use/huwa-san-productline/pool/', 'en', 'products/general-use'],
   ['/general-use/bioxeco/', 'en', 'products/general-use'],
@@ -238,7 +238,8 @@ for (const [slug, [words, segment, range], target] of WITHDRAWN) {
 /*
  * General use was cut down to Clearox on 2026-10-18. The ranges and products that went
  * send their visitors to the General use page. Huwa-San Professionnel lost its range
- * page but keeps AGRO, VET and Water Treatment, which the disinfectant families show.
+ * page but keeps AGRO, which the Agriculture disinfectant family shows. VET and Water
+ * Treatment, which Animals showed, went on 2026-10-30 and send theirs to Clearox.
  */
 const GENERAL_WITHDRAWN = {
   'huwa-san-pro': ['huwa-san-fb', 'huwa-san-hard-surface'],
@@ -251,6 +252,9 @@ for (const locale of LOCALES) {
   for (const [range, slugs] of Object.entries(GENERAL_WITHDRAWN)) {
     addRule(`/${locale}/${segment}/${range}/`, locale, segment);
     for (const slug of slugs) addRule(`/${locale}/${segment}/${range}/${slug}/`, locale, segment);
+  }
+  for (const slug of ['huwa-san-vet', 'huwa-san-water-treatment']) {
+    addRule(`/${locale}/${segment}/huwa-san-pro/${slug}/`, locale, `${segment}/clearox/clearox`);
   }
 }
 

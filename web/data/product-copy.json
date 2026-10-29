@@ -4843,6 +4843,124 @@
             "Nettoyage et désinfection des serres, locaux de stockage, outils et surfaces.",
             "Traitement choc des systèmes hydriques afin d’éliminer immédiatement les contaminations microbiennes aiguës."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Fiche technique"
+        },
+        {
+          "type": "subheading",
+          "text": "Présentation du produit"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Paramètre",
+            "Description"
+          ],
+          "rows": [
+            [
+              "Nature du produit",
+              "Désinfectant à base de peroxyde d’hydrogène stabilisé à l’argent."
+            ],
+            [
+              "Fonction principale",
+              "Désinfection"
+            ],
+            [
+              "Action",
+              "Biodégradation dans les systèmes hydriques et environnements agricoles."
+            ],
+            [
+              "Propriétés",
+              "Sans chlore, inodore et insipide au dosage approprié."
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Méthodes d’application et dosages"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Domaine / pathogène",
+            "Dosage recommandé",
+            "Méthode / fréquence"
+          ],
+          "rows": [
+            [
+              "Désinfection des surfaces",
+              "Solution à 1 % – 3 % (10 – 30 ml/L)",
+              "Application sur les surfaces"
+            ],
+            [
+              "Traitement choc (système hydrique)",
+              "50 ppm (100 ml pour 1 000 L)",
+              "Pendant 24 heures"
+            ],
+            [
+              "Élimination du biofilm",
+              "50 ppm (50 ml pour 1 000 L)",
+              "Application continue"
+            ],
+            [
+              "Bactéries",
+              "40 ppm (40 ml pour 1 000 L)",
+              "Application continue"
+            ],
+            [
+              "Virus",
+              "40 – 50 ppm (40 – 50 ml pour 1 000 L)",
+              "Application continue"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Contrôle qualité et stockage"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Paramètre",
+            "Description"
+          ],
+          "rows": [
+            [
+              "Conditions de stockage",
+              "Conserver dans un endroit frais et sec, entre 5 °C et 20 °C."
+            ],
+            [
+              "Durée de conservation",
+              "24 mois après fabrication, dans l’emballage d’origine non ouvert."
+            ],
+            [
+              "Test de compatibilité",
+              "Jar test préalable recommandé avant tout mélange en cuve."
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Traçabilité et sécurité"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Paramètre",
+            "Description"
+          ],
+          "rows": [
+            [
+              "Année de production / batch",
+              "Voir mention imprimée sur l’emballage."
+            ],
+            [
+              "Statut d’homologation",
+              "Contrôles de viabilité et de pureté microbiologique."
+            ]
+          ]
         }
       ]
     },
@@ -4880,6 +4998,124 @@
             "Disinfection of irrigation water and drinking-water systems in agriculture and livestock farming.",
             "Cleaning and disinfection of greenhouses, storage rooms, tools and surfaces.",
             "Shock treatment of water systems to eliminate acute microbial contamination immediately."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Technical sheet"
+        },
+        {
+          "type": "subheading",
+          "text": "Product overview"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parameter",
+            "Description"
+          ],
+          "rows": [
+            [
+              "Product type",
+              "Disinfectant based on silver-stabilised hydrogen peroxide."
+            ],
+            [
+              "Main function",
+              "Disinfection"
+            ],
+            [
+              "Action",
+              "Biodegradation in water systems and agricultural environments."
+            ],
+            [
+              "Properties",
+              "Chlorine-free, odourless and tasteless at the correct dosage."
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Application methods and dosages"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Area / pathogen",
+            "Recommended dosage",
+            "Method / frequency"
+          ],
+          "rows": [
+            [
+              "Surface disinfection",
+              "1% – 3% solution (10 – 30 ml/L)",
+              "Applied to surfaces"
+            ],
+            [
+              "Shock treatment (water system)",
+              "50 ppm (100 ml per 1 000 L)",
+              "For 24 hours"
+            ],
+            [
+              "Biofilm removal",
+              "50 ppm (50 ml per 1 000 L)",
+              "Continuous application"
+            ],
+            [
+              "Bacteria",
+              "40 ppm (40 ml per 1 000 L)",
+              "Continuous application"
+            ],
+            [
+              "Viruses",
+              "40 – 50 ppm (40 – 50 ml per 1 000 L)",
+              "Continuous application"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Quality control and storage"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parameter",
+            "Description"
+          ],
+          "rows": [
+            [
+              "Storage conditions",
+              "Store in a cool, dry place, between 5 °C and 20 °C."
+            ],
+            [
+              "Shelf life",
+              "24 months from manufacture, in the unopened original packaging."
+            ],
+            [
+              "Compatibility test",
+              "A jar test is recommended before any tank mix."
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Traceability and safety"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parameter",
+            "Description"
+          ],
+          "rows": [
+            [
+              "Production year / batch",
+              "See the information printed on the packaging."
+            ],
+            [
+              "Approval status",
+              "Viability and microbiological purity checks."
+            ]
           ]
         }
       ]
@@ -4919,6 +5155,124 @@
             "Limpieza y desinfección de invernaderos, locales de almacenamiento, herramientas y superficies.",
             "Tratamiento de choque de los sistemas hídricos para eliminar de inmediato las contaminaciones microbianas agudas."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Ficha técnica"
+        },
+        {
+          "type": "subheading",
+          "text": "Presentación del producto"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parámetro",
+            "Descripción"
+          ],
+          "rows": [
+            [
+              "Naturaleza del producto",
+              "Desinfectante a base de peróxido de hidrógeno estabilizado con plata."
+            ],
+            [
+              "Función principal",
+              "Desinfección"
+            ],
+            [
+              "Acción",
+              "Biodegradación en los sistemas hídricos y los entornos agrícolas."
+            ],
+            [
+              "Propiedades",
+              "Sin cloro, inodoro e insípido a la dosis adecuada."
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Métodos de aplicación y dosis"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Ámbito / patógeno",
+            "Dosis recomendada",
+            "Método / frecuencia"
+          ],
+          "rows": [
+            [
+              "Desinfección de superficies",
+              "Solución al 1 % – 3 % (10 – 30 ml/L)",
+              "Aplicación sobre las superficies"
+            ],
+            [
+              "Tratamiento de choque (sistema hídrico)",
+              "50 ppm (100 ml por 1 000 L)",
+              "Durante 24 horas"
+            ],
+            [
+              "Eliminación del biofilm",
+              "50 ppm (50 ml por 1 000 L)",
+              "Aplicación continua"
+            ],
+            [
+              "Bacterias",
+              "40 ppm (40 ml por 1 000 L)",
+              "Aplicación continua"
+            ],
+            [
+              "Virus",
+              "40 – 50 ppm (40 – 50 ml por 1 000 L)",
+              "Aplicación continua"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Control de calidad y almacenamiento"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parámetro",
+            "Descripción"
+          ],
+          "rows": [
+            [
+              "Condiciones de almacenamiento",
+              "Conservar en un lugar fresco y seco, entre 5 °C y 20 °C."
+            ],
+            [
+              "Vida útil",
+              "24 meses desde la fabricación, en el envase original sin abrir."
+            ],
+            [
+              "Prueba de compatibilidad",
+              "Se recomienda una prueba en frasco (jar test) antes de cualquier mezcla en tanque."
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Trazabilidad y seguridad"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parámetro",
+            "Descripción"
+          ],
+          "rows": [
+            [
+              "Año de producción / lote",
+              "Véase la indicación impresa en el envase."
+            ],
+            [
+              "Estado de homologación",
+              "Controles de viabilidad y de pureza microbiológica."
+            ]
+          ]
         }
       ]
     },
@@ -4956,6 +5310,124 @@
             "Ontsmetting van irrigatiewater en drinkwatersystemen in de land- en veeteelt.",
             "Reiniging en ontsmetting van kassen, opslagruimtes, gereedschap en oppervlakken.",
             "Shockbehandeling van watersystemen om acute microbiële besmetting onmiddellijk weg te nemen."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Technische fiche"
+        },
+        {
+          "type": "subheading",
+          "text": "Productpresentatie"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parameter",
+            "Omschrijving"
+          ],
+          "rows": [
+            [
+              "Aard van het product",
+              "Ontsmettingsmiddel op basis van met zilver gestabiliseerd waterstofperoxide."
+            ],
+            [
+              "Hoofdfunctie",
+              "Ontsmetting"
+            ],
+            [
+              "Werking",
+              "Biologische afbraak in watersystemen en agrarische omgevingen."
+            ],
+            [
+              "Eigenschappen",
+              "Chloorvrij, geurloos en smaakloos bij de juiste dosering."
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Toepassingsmethoden en doseringen"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Toepassing / ziekteverwekker",
+            "Aanbevolen dosering",
+            "Methode / frequentie"
+          ],
+          "rows": [
+            [
+              "Ontsmetting van oppervlakken",
+              "Oplossing van 1% – 3% (10 – 30 ml/L)",
+              "Aanbrengen op de oppervlakken"
+            ],
+            [
+              "Shockbehandeling (watersysteem)",
+              "50 ppm (100 ml per 1 000 L)",
+              "Gedurende 24 uur"
+            ],
+            [
+              "Verwijdering van biofilm",
+              "50 ppm (50 ml per 1 000 L)",
+              "Continue toepassing"
+            ],
+            [
+              "Bacteriën",
+              "40 ppm (40 ml per 1 000 L)",
+              "Continue toepassing"
+            ],
+            [
+              "Virussen",
+              "40 – 50 ppm (40 – 50 ml per 1 000 L)",
+              "Continue toepassing"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Kwaliteitscontrole en opslag"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parameter",
+            "Omschrijving"
+          ],
+          "rows": [
+            [
+              "Opslagomstandigheden",
+              "Koel en droog bewaren, tussen 5 °C en 20 °C."
+            ],
+            [
+              "Houdbaarheid",
+              "24 maanden na productie, in de ongeopende originele verpakking."
+            ],
+            [
+              "Mengbaarheidstest",
+              "Een jartest wordt aanbevolen vóór elke tankmenging."
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "Traceerbaarheid en veiligheid"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Parameter",
+            "Omschrijving"
+          ],
+          "rows": [
+            [
+              "Productiejaar / batch",
+              "Zie de vermelding op de verpakking."
+            ],
+            [
+              "Homologatiestatus",
+              "Controles op levensvatbaarheid en microbiologische zuiverheid."
+            ]
           ]
         }
       ]

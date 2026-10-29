@@ -22,12 +22,12 @@ export interface Product {
   names?: Partial<Record<Locale, string>>;
   segment: SegmentKey;
   range: string;
-  /** Segments the product is also sold into, e.g. Huwa-San VET for livestock. */
+  /** Segments the product is also sold into, e.g. Clearox for livestock. */
   alsoIn?: SegmentKey[];
   /**
    * Kept off its own segment's page and range page, but still claimed by a family in
-   * another segment, so it keeps its product page. Clearox AGRO (ex Huwa-San AGRO), Huwa-San VET and Water
-   * Treatment, and the all-strengths Clearox, since the briefing of 2026-10-18.
+   * another segment, so it keeps its product page. Clearox AGRO (ex Huwa-San AGRO) and the
+   * all-strengths Clearox, since the briefing of 2026-10-18.
    */
   unlisted?: boolean;
   /** A variant shares the pack shot, text and datasheet of the product named here. */
@@ -203,13 +203,9 @@ export const FAMILIES: ProductFamily[] = [
    * The blue drums, which sat at the foot of the page under "other products in the
    * range" until the client gave them a button of their own after cattle (2026-09-26).
    * Huwa-San led at first; on 2026-09-27 the client put Clearox first, then the two
-   * Huwa-San products.
+   * Huwa-San products; on 2026-10-30 Huwa-San VET and Water Treatment went, leaving Clearox.
    */
-  {
-    key: 'disinfectant',
-    segment: 'animals',
-    products: ['clearox', 'huwa-san-vet', 'huwa-san-water-treatment'],
-  },
+  { key: 'disinfectant', segment: 'animals', products: ['clearox'] },
 ];
 
 export const RANGES: ProductRange[] = [
@@ -220,8 +216,8 @@ export const RANGES: ProductRange[] = [
   /*
    * General use holds Clearox alone since the briefing of 2026-10-18: Huwa-San Hygiene @
    * Home, Huwa-San Pool and BioXeco went with their products. Huwa-San Professionnel
-   * stays only as the home of the three products the Agriculture and Animals
-   * disinfectant families still show; finalize-export.mjs redirects the rest.
+   * stays only as the home of Clearox AGRO, which the Agriculture disinfectant family
+   * still shows; finalize-export.mjs redirects the rest.
    */
   { slug: 'huwa-san-pro', segment: 'general', name: 'Huwa-San Professionnel', brandMark: '/media/brand/huwa-san.webp' },
   { slug: 'clearox', segment: 'general', name: 'Clearox', brandMark: '/media/brand/clearox.webp' },
@@ -370,15 +366,8 @@ export const PRODUCTS: Product[] = [
   },
 
   { slug: 'huwa-san-agro', name: 'Clearox AGRO', segment: 'general', range: 'huwa-san-pro', alsoIn: ['agri'], unlisted: true },
-  { slug: 'huwa-san-vet', name: 'Huwa-San VET', segment: 'general', range: 'huwa-san-pro', alsoIn: ['animals'], unlisted: true },
-  {
-    slug: 'huwa-san-water-treatment',
-    name: 'Huwa-San Water Treatment',
-    segment: 'general',
-    range: 'huwa-san-pro',
-    alsoIn: ['animals'],
-    unlisted: true,
-  },
+  /* Huwa-San VET and Water Treatment were withdrawn on 2026-10-30; finalize-export.mjs
+     sends their pages to Clearox. */
   /*
    * The all-strengths Clearox stays for the Agriculture and Animals disinfectant
    * families. General use shows the three strengths below instead, one card each with
