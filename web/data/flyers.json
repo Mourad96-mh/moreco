@@ -1,5 +1,5 @@
 {
-  "_comment": "The crop sheets of Resources > Crop sheets, in the order of the client's briefing of 2026-10-24: one card per crop, the flyer on top and the crop's two questions (faq) folded beneath it. The flyers came on 2026-10-24 (21 of them; blueberry came without one and was taken out at the client's request the same day; the wheat flyer in the same batch is kept aside, wheat not being one of the 22 crops). `file` is a light A4 PDF of the print file (crop marks cut, pages at 150 dpi) and `image` its cover in WebP. The FAQ is in all four languages: French as the client wrote it with its slips corrected, English, Spanish and Dutch translated by us (TRADUCTIONS-A-VALIDER.md, section 21). `text` is the client's longer text of 2026-10-18, taken off with the cards on 2026-10-19 and shown again in each crop’s sheet, above its questions, since 2026-10-29; tomato and sugar beet came without one.",
+  "_comment": "The crop sheets of Resources > Crop sheets, in the order of the client's briefing of 2026-10-24: one card per crop, the flyer on top and the crop's two questions (faq) folded beneath it. The flyers came on 2026-10-24 (21 of them; blueberry came without one and was taken out at the client's request the same day; the wheat flyer in the same batch is kept aside, wheat not being one of the 22 crops). `file` is a light A4 PDF of the print file (crop marks cut, pages at 150 dpi) and `image` its cover in WebP. The FAQ is in all four languages: French as the client wrote it with its slips corrected, English, Spanish and Dutch translated by us (TRADUCTIONS-A-VALIDER.md, section 21). `text` is the client's longer text of 2026-10-18, taken off with the cards on 2026-10-19 and shown again in each crop’s sheet, above its questions, since 2026-10-29; tomato’s and sugar beet’s came on 2026-10-30.",
   "flyers": [
     {
       "slug": "tomate",
@@ -13,6 +13,44 @@
       "file": "/media/flyers/tomate.pdf",
       "image": "/media/flyers/tomate.webp",
       "bytes": 708456,
+      "text": {
+        "fr": [
+          "La culture de la tomate à Agadir et Dakhla est soumise à une pression abiotique constante. Moreco introduit la gamme Orthagrow, propulsée par la technologie brevetée de formulation de l’acide orthosilicique (OSA), qui renforce structurellement la biologie végétale au niveau cellulaire.",
+          "Triple résistance abiotique : l’acide orthosilicique biodisponible maintient l’homéostasie des cultures via des mécanismes physiologiques ciblés.",
+          "Stress salin : régule la sélectivité ionique des membranes racinaires ; bloque la translocation phytotoxique du Na⁺ et du Cl⁻ et stimule l’absorption du K⁺ pour l’équilibre osmotique.",
+          "Stress thermique : induit les protéines de choc thermique (HSP) et active le système enzymatique antioxydant contre la dégradation cellulaire.",
+          "Stress hydrique : forme une couche sous-cuticulaire de gel de silice amorphe dans l’épiderme foliaire, optimisant la conductance stomatique et réduisant la transpiration pour le maintien de la turgescence.",
+          "Efficience nutritionnelle (+38 % d’absorption) et ROI. Orthagrow active les pompes enzymatiques ATPase des membranes racinaires. Cela se traduit par une absorption uniforme du phosphore (P) et des nutriments supérieure à 38 %. L’OSA débloque le phosphate de calcium chimiquement fixé dans le sol, rendant le phosphore directement biodisponible. Cela réduit les coûts d’intrants et garantit un ROI extrêmement élevé grâce à un poids de fruit supérieur et un rendement maximal de tomates d’exportation de classe 1.",
+          "Prévention de la nécrose physiologique. Pour la prévention ciblée des nécroses, telles que la nécrose apicale (Blossom-End Rot) et la brûlure de la pointe, l’exclusif Orthagrow Cal 21% SC 4G agit comme un bouclier physiologique. Grâce à la synergie entre la technologie brevetée OSA et une formulation de calcium de haute qualité, une réticulation rigide se crée avec la pectine et la cellulose dans la matrice cellulaire. Cela préserve l’intégrité de la paroi cellulaire et stabilise le flux de transpiration, garantissant une translocation homogène du calcium (Ca²⁺) vers les parties distales du fruit en croissance rapide."
+        ],
+        "en": [
+          "Tomatoes grown in Agadir and Dakhla are under constant abiotic pressure. Moreco introduces the Orthagrow range, powered by its patented orthosilicic acid (OSA) formulation technology, which strengthens plant biology structurally at cellular level.",
+          "Threefold abiotic resistance: bioavailable orthosilicic acid maintains crop homeostasis through targeted physiological mechanisms.",
+          "Salt stress: regulates the ion selectivity of root membranes; blocks the phytotoxic translocation of Na⁺ and Cl⁻ and stimulates K⁺ uptake for osmotic balance.",
+          "Heat stress: induces heat shock proteins (HSP) and activates the antioxidant enzyme system against cell breakdown.",
+          "Water stress: forms a sub-cuticular layer of amorphous silica gel in the leaf epidermis, optimising stomatal conductance and reducing transpiration to maintain turgor.",
+          "Nutrient efficiency (+38% uptake) and ROI. Orthagrow activates the ATPase enzyme pumps of the root membranes. This results in an even uptake of phosphorus (P) and nutrients more than 38% higher. OSA releases the calcium phosphate chemically fixed in the soil, making phosphorus directly bioavailable. This cuts input costs and guarantees a very high ROI through greater fruit weight and maximum yields of class 1 export tomatoes.",
+          "Preventing physiological necrosis. For the targeted prevention of necrosis such as blossom-end rot and tip burn, the exclusive Orthagrow Cal 21% SC 4G acts as a physiological shield. Through the synergy between the patented OSA technology and a high-quality calcium formulation, rigid cross-links form with the pectin and cellulose of the cell matrix. This preserves the integrity of the cell wall and stabilises the transpiration stream, ensuring an even translocation of calcium (Ca²⁺) to the distal parts of the fast-growing fruit."
+        ],
+        "es": [
+          "El cultivo del tomate en Agadir y Dajla está sometido a una presión abiótica constante. Moreco presenta la gama Orthagrow, impulsada por su tecnología patentada de formulación del ácido ortosilícico (OSA), que refuerza estructuralmente la biología vegetal a nivel celular.",
+          "Triple resistencia abiótica: el ácido ortosilícico biodisponible mantiene la homeostasis de los cultivos mediante mecanismos fisiológicos específicos.",
+          "Estrés salino: regula la selectividad iónica de las membranas radiculares; bloquea la translocación fitotóxica del Na⁺ y del Cl⁻ y estimula la absorción del K⁺ para el equilibrio osmótico.",
+          "Estrés térmico: induce las proteínas de choque térmico (HSP) y activa el sistema enzimático antioxidante contra la degradación celular.",
+          "Estrés hídrico: forma una capa subcuticular de gel de sílice amorfa en la epidermis foliar, que optimiza la conductancia estomática y reduce la transpiración para mantener la turgencia.",
+          "Eficiencia nutricional (+38 % de absorción) y ROI. Orthagrow activa las bombas enzimáticas ATPasa de las membranas radiculares. El resultado es una absorción uniforme del fósforo (P) y de los nutrientes superior en más de un 38 %. El OSA libera el fosfato cálcico fijado químicamente en el suelo y hace que el fósforo sea directamente biodisponible. Esto reduce los costes de insumos y garantiza un ROI muy elevado gracias a un mayor peso del fruto y un rendimiento máximo de tomates de exportación de categoría 1.",
+          "Prevención de la necrosis fisiológica. Para la prevención específica de necrosis como la podredumbre apical (necrosis apical) y la quemadura de la punta, el exclusivo Orthagrow Cal 21% SC 4G actúa como un escudo fisiológico. Gracias a la sinergia entre la tecnología patentada OSA y una formulación de calcio de alta calidad, se crea un entrecruzamiento rígido con la pectina y la celulosa de la matriz celular. Esto preserva la integridad de la pared celular y estabiliza el flujo de transpiración, lo que garantiza una translocación homogénea del calcio (Ca²⁺) hacia las partes distales del fruto en rápido crecimiento."
+        ],
+        "nl": [
+          "De tomatenteelt in Agadir en Dakhla staat onder voortdurende abiotische druk. Moreco introduceert de Orthagrow-reeks, aangedreven door de gepatenteerde formuleringstechnologie van orthokiezelzuur (OSA), die de plantenbiologie op celniveau structureel versterkt.",
+          "Drievoudige abiotische weerstand: biobeschikbaar orthokiezelzuur handhaaft de homeostase van het gewas via gerichte fysiologische mechanismen.",
+          "Zoutstress: regelt de ionenselectiviteit van de wortelmembranen; blokkeert de fytotoxische translocatie van Na⁺ en Cl⁻ en stimuleert de opname van K⁺ voor het osmotisch evenwicht.",
+          "Hittestress: induceert hitteshockeiwitten (HSP) en activeert het antioxidatieve enzymsysteem tegen celafbraak.",
+          "Droogtestress: vormt een subcuticulaire laag amorfe silicagel in de epidermis van het blad, die de huidmondjesgeleiding optimaliseert en de verdamping vermindert om de turgor te behouden.",
+          "Nutriëntenefficiëntie (+38% opname) en ROI. Orthagrow activeert de ATPase-enzympompen van de wortelmembranen. Dat geeft een gelijkmatige opname van fosfor (P) en voedingsstoffen die meer dan 38% hoger ligt. OSA maakt het chemisch in de bodem vastgelegde calciumfosfaat vrij, zodat fosfor direct biobeschikbaar wordt. Dat verlaagt de inputkosten en garandeert een zeer hoge ROI dankzij een hoger vruchtgewicht en een maximale opbrengst aan exporttomaten van klasse 1.",
+          "Preventie van fysiologische necrose. Voor de gerichte preventie van necrose zoals neusrot en tipburn werkt het exclusieve Orthagrow Cal 21% SC 4G als een fysiologisch schild. Dankzij de synergie tussen de gepatenteerde OSA-technologie en een hoogwaardige calciumformulering ontstaan stevige verbindingen met de pectine en cellulose in de celmatrix. Dat bewaart de integriteit van de celwand en stabiliseert de transpiratiestroom, wat zorgt voor een gelijkmatige translocatie van calcium (Ca²⁺) naar de verste delen van de snelgroeiende vrucht."
+        ]
+      },
       "faq": {
         "fr": [
           {
@@ -761,6 +799,48 @@
       "file": "/media/flyers/betterave-sucriere.pdf",
       "image": "/media/flyers/betterave-sucriere.webp",
       "bytes": 796906,
+      "text": {
+        "fr": [
+          "La culture de la betterave sucrière dans les Doukkala et le Gharb (Sidi Kacem) est soumise à une pression constante de stress abiotique. Moreco introduit la gamme Orthagrow, propulsée par la technologie brevetée de formulation de l’acide orthosilicique (OSA), pour renforcer structurellement la biologie végétale au niveau cellulaire.",
+          "Triple prévention du stress abiotique et 30 % d’économie d’eau : l’acide orthosilicique biodisponible maintient l’homéostasie des cultures via des mécanismes physiologiques ciblés.",
+          "Stress salin (salinité) : régule la sélectivité ionique des membranes racinaires ; bloque la translocation phytotoxique du Na⁺ et du Cl⁻ et stimule l’absorption du K⁺ pour l’équilibre osmotique.",
+          "Stress thermique : induit les protéines de choc thermique (HSP) et active le système enzymatique antioxydant pour prévenir la dégradation cellulaire lors des températures extrêmes.",
+          "Stress hydrique : forme une couche sous-cuticulaire de gel de silice amorphe dans l’épiderme foliaire. Cela optimise la conductance stomatique et réduit la transpiration, ce qui se traduit par une économie d’eau de 30 % tout en maintenant la turgescence.",
+          "Synergie nutritionnelle, réduction des intrants et ROI maximal. Moins d’engrais et de pesticides : Orthagrow active les pompes enzymatiques ATPase et débloque le phosphate de calcium chimiquement fixé, entraînant une absorption des nutriments de +38 %. Cela minimise les apports nécessaires en fertilisants et en protection des cultures.",
+          "+28 % de rendement et +8 % de Brix : l’optimisation physiologique se traduit par une augmentation du tonnage racinaire de 28 % et une hausse du taux de sucre (Brix) de 8 %.",
+          "ROI total supérieur à 75 % : la combinaison de rendements plus élevés, d’une qualité supérieure et d’une réduction de 30 % de la consommation d’eau garantit un retour sur investissement supérieur à 75 %."
+        ],
+        "en": [
+          "Sugar beet grown in Doukkala and the Gharb (Sidi Kacem) is under constant pressure from abiotic stress. Moreco introduces the Orthagrow range, powered by its patented orthosilicic acid (OSA) formulation technology, to strengthen plant biology structurally at cellular level.",
+          "Threefold prevention of abiotic stress and 30% water savings: bioavailable orthosilicic acid maintains crop homeostasis through targeted physiological mechanisms.",
+          "Salt stress (salinity): regulates the ion selectivity of root membranes; blocks the phytotoxic translocation of Na⁺ and Cl⁻ and stimulates K⁺ uptake for osmotic balance.",
+          "Heat stress: induces heat shock proteins (HSP) and activates the antioxidant enzyme system to prevent cell breakdown at extreme temperatures.",
+          "Water stress: forms a sub-cuticular layer of amorphous silica gel in the leaf epidermis. This optimises stomatal conductance and reduces transpiration, which translates into 30% water savings while maintaining turgor.",
+          "Nutritional synergy, fewer inputs and maximum ROI. Less fertiliser and fewer pesticides: Orthagrow activates the ATPase enzyme pumps and releases chemically fixed calcium phosphate, raising nutrient uptake by 38%. This minimises the fertiliser and crop protection needed.",
+          "+28% yield and +8% Brix: physiological optimisation translates into a 28% increase in root tonnage and an 8% rise in sugar content (Brix).",
+          "Total ROI above 75%: the combination of higher yields, better quality and a 30% reduction in water use guarantees a return on investment above 75%."
+        ],
+        "es": [
+          "El cultivo de la remolacha azucarera en Doukkala y el Gharb (Sidi Kacem) está sometido a una presión constante de estrés abiótico. Moreco presenta la gama Orthagrow, impulsada por su tecnología patentada de formulación del ácido ortosilícico (OSA), para reforzar estructuralmente la biología vegetal a nivel celular.",
+          "Triple prevención del estrés abiótico y 30 % de ahorro de agua: el ácido ortosilícico biodisponible mantiene la homeostasis de los cultivos mediante mecanismos fisiológicos específicos.",
+          "Estrés salino (salinidad): regula la selectividad iónica de las membranas radiculares; bloquea la translocación fitotóxica del Na⁺ y del Cl⁻ y estimula la absorción del K⁺ para el equilibrio osmótico.",
+          "Estrés térmico: induce las proteínas de choque térmico (HSP) y activa el sistema enzimático antioxidante para prevenir la degradación celular con temperaturas extremas.",
+          "Estrés hídrico: forma una capa subcuticular de gel de sílice amorfa en la epidermis foliar. Esto optimiza la conductancia estomática y reduce la transpiración, lo que se traduce en un ahorro de agua del 30 % manteniendo la turgencia.",
+          "Sinergia nutricional, menos insumos y máximo ROI. Menos fertilizantes y pesticidas: Orthagrow activa las bombas enzimáticas ATPasa y libera el fosfato cálcico fijado químicamente, lo que aumenta un 38 % la absorción de nutrientes. Así se reducen al mínimo los aportes necesarios de fertilizantes y de protección de cultivos.",
+          "+28 % de rendimiento y +8 % de Brix: la optimización fisiológica se traduce en un aumento del 28 % del tonelaje de raíces y del 8 % del contenido de azúcar (Brix).",
+          "ROI total superior al 75 %: la combinación de mayores rendimientos, una calidad superior y una reducción del 30 % del consumo de agua garantiza un retorno de la inversión superior al 75 %."
+        ],
+        "nl": [
+          "De teelt van suikerbieten in Doukkala en de Gharb (Sidi Kacem) staat onder voortdurende druk van abiotische stress. Moreco introduceert de Orthagrow-reeks, aangedreven door de gepatenteerde formuleringstechnologie van orthokiezelzuur (OSA), om de plantenbiologie op celniveau structureel te versterken.",
+          "Drievoudige preventie van abiotische stress en 30% waterbesparing: biobeschikbaar orthokiezelzuur handhaaft de homeostase van het gewas via gerichte fysiologische mechanismen.",
+          "Zoutstress (verzilting): regelt de ionenselectiviteit van de wortelmembranen; blokkeert de fytotoxische translocatie van Na⁺ en Cl⁻ en stimuleert de opname van K⁺ voor het osmotisch evenwicht.",
+          "Hittestress: induceert hitteshockeiwitten (HSP) en activeert het antioxidatieve enzymsysteem om celafbraak bij extreme temperaturen te voorkomen.",
+          "Droogtestress: vormt een subcuticulaire laag amorfe silicagel in de epidermis van het blad. Dit optimaliseert de huidmondjesgeleiding en vermindert de verdamping, wat neerkomt op 30% waterbesparing met behoud van turgor.",
+          "Nutritionele synergie, minder inputs en maximale ROI. Minder meststoffen en bestrijdingsmiddelen: Orthagrow activeert de ATPase-enzympompen en maakt chemisch vastgelegd calciumfosfaat vrij, waardoor de opname van voedingsstoffen met 38% stijgt. Zo zijn er zo min mogelijk meststoffen en gewasbescherming nodig.",
+          "+28% opbrengst en +8% Brix: de fysiologische optimalisatie vertaalt zich in 28% meer wortelgewicht en een 8% hoger suikergehalte (Brix).",
+          "Totale ROI boven 75%: de combinatie van hogere opbrengsten, betere kwaliteit en 30% minder waterverbruik garandeert een rendement op investering van meer dan 75%."
+        ]
+      },
       "faq": {
         "fr": [
           {

@@ -105,7 +105,6 @@ const JOBS: Record<Locale, Job[]> = {
         'Un salaire basé sur votre expérience (à discuter).',
         'Excellentes conditions secondaires incluant une assurance maladie complémentaire (Mutuelle complémentaire).',
       ],
-      note: 'Aucune prime sur objectifs ne s’applique à ce poste.',
     },
     {
       slug: 'social-media-content-expert',
@@ -217,7 +216,6 @@ const JOBS: Record<Locale, Job[]> = {
         'A salary based on your experience (to be discussed).',
         'Excellent benefits, including supplementary health insurance (mutuelle).',
       ],
-      note: 'No target-related bonus applies to this position.',
     },
     {
       slug: 'social-media-content-expert',
@@ -329,7 +327,6 @@ const JOBS: Record<Locale, Job[]> = {
         'Un salario según su experiencia (a negociar).',
         'Excelentes beneficios sociales, incluido un seguro médico complementario (mutua complementaria).',
       ],
-      note: 'Este puesto no incluye prima por objetivos.',
     },
     {
       slug: 'social-media-content-expert',
@@ -441,7 +438,6 @@ const JOBS: Record<Locale, Job[]> = {
         'Een salaris op basis van je ervaring (bespreekbaar).',
         'Uitstekende secundaire arbeidsvoorwaarden, waaronder een aanvullende ziektekostenverzekering (mutuelle).',
       ],
-      note: 'Voor deze functie geldt geen bonus op basis van doelstellingen.',
     },
     {
       slug: 'social-media-content-expert',

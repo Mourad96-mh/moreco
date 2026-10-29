@@ -600,7 +600,8 @@ Choix de traduction à valider :
 - « cultures nationales » est rendu par « les cultures du Maroc » (*Moroccan crops*,
   *cultivos del país*, *Marokkaanse gewassen*).
 - La note « (Note : aucune prime sur objectifs ne s'applique à ce poste) » de l'offre
-  Office Manager est publiée sans le mot « Note », en petit sous les avantages.
+  Office Manager a été retirée le 2026-10-30 à la demande du client (une traduction
+  automatique restée par erreur dans le briefing).
 
 Pas de date limite de candidature dans le briefing : les offres restent en ligne jusqu'à
 ce que le client demande de les retirer.
@@ -771,3 +772,36 @@ Choix de traduction à valider :
 - **CEC** : *CEC* en anglais et en néerlandais, *CIC* en espagnol.
 - **Dakhla** : *Dajla* en espagnol.
 - **Orthagrow Granule** : *Granulé* en espagnol, comme à la section 19.
+
+## 24. Envoi du 2026-10-30 — textes des fiches Betterave sucrière et Tomate
+
+Le texte du client s'affiche dans la fiche culturale, au-dessus des deux questions, comme
+pour les autres cultures (ni l’une ni l’autre n’en avait encore). **Le français est celui
+du client ; EN, ES et NL sont de nous.** La fiche ne prend que des paragraphes : les
+intertitres ouvrent chacun leur paragraphe et chaque puce devient un paragraphe qui commence par son libellé. Les lignes de titre
+(« Orthagrow Culture de la Betterave Sucrière Doukkala & Gharb : Prévention du Stress
+Abiotique », « Culture de la Tomate à Agadir & Dakhla : Prévention des Stress Salin,
+Thermique & Hydrique ») ne sont pas reprises, la fiche portant déjà le titre de la culture.
+
+Corrections du français : majuscules des intertitres et libellés en minuscules (« Triple
+prévention du stress abiotique… », « retour sur investissement ») ; « & » → « et » ;
+« ATP-ase » → « ATPase » ; « bio-disponible » → « biodisponible » (tomate) ; « 30% »,
+« +38% »… → « 30 % », « +38 % »… ; apostrophes typographiques.
+
+Choix de traduction à valider :
+
+- **Triple prévention** : *Threefold prevention*, *Triple prevención*, *Drievoudige
+  preventie*.
+- **conductance stomatique** : *stomatal conductance*, *conductancia estomática*,
+  *huidmondjesgeleiding*.
+- **tonnage racinaire** : *root tonnage*, *tonelaje de raíces*, *wortelgewicht*.
+- **Stress hydrique** : *Water stress*, *Estrés hídrico*, *Droogtestress*.
+- **Gharb** : laissé tel quel dans les trois langues.
+- **Triple résistance abiotique** (tomate) : *Threefold abiotic resistance*, *Triple
+  resistencia abiótica*, *Drievoudige abiotische weerstand*.
+- **nécrose apicale (Blossom-End Rot)** : *blossom-end rot*, *podredumbre apical (necrosis
+  apical)*, *neusrot*, comme à la section 23 ; l’anglais entre parenthèses n’est gardé
+  qu’en français.
+- **brûlure de la pointe** : *tip burn*, *quemadura de la punta*, *tipburn*.
+- **classe 1** : *class 1*, *categoría 1*, *klasse 1*. **Dakhla** : *Dajla* en espagnol.
+- **Orthagrow Cal 21% SC 4G** : nom du produit, « 21% » sans espace comme sur sa page.
