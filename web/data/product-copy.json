@@ -315,7 +315,10 @@
         "Diminue l’incidence de fissuration et d’éclatement des fruits.",
         "Améliore la préservation de la qualité du produit et réduit les pertes après la récolte."
       ],
-      "sizes": []
+      "sizes": [
+        "1 kg",
+        "5 kg"
+      ]
     },
     "en": {
       "claim": "ORTHAGROW MICRO MANAGER is a water-soluble, organically chelated formulation based on patented encapsulation technology",
@@ -331,7 +334,10 @@
         "Decreases the incidence of fruit cracking and bursting.",
         "Improves the preservation of product quality and reduces post-harvest losses."
       ],
-      "sizes": []
+      "sizes": [
+        "1 kg",
+        "5 kg"
+      ]
     },
     "es": {
       "claim": "ORTHAGROW MICRO MANAGER es una formulación superior hidrosoluble, quelatada orgánicamente y basada en una tecnología patentada de encapsulación",
@@ -347,7 +353,10 @@
         "Reduce la incidencia del agrietado y el rajado de los frutos.",
         "Mejora la conservación de la calidad del producto y reduce las pérdidas poscosecha."
       ],
-      "sizes": []
+      "sizes": [
+        "1 kg",
+        "5 kg"
+      ]
     },
     "nl": {
       "claim": "ORTHAGROW MICRO MANAGER is een wateroplosbare, organisch gechelateerde formulering op basis van een gepatenteerde inkapselingstechnologie.",
@@ -363,7 +372,10 @@
         "Vermindert het optreden van scheuren en barsten in vruchten.",
         "Verbetert het behoud van de productkwaliteit en beperkt verliezen na de oogst."
       ],
-      "sizes": []
+      "sizes": [
+        "1 kg",
+        "5 kg"
+      ]
     },
     "ar": {
       "claim": "ORTHAGROW MICRO MANAGER صيغة ذائبة في الماء ومُخلَّبة عضويًا، قائمة على تقنية تغليف مسجّلة ببراءة اختراع.",
@@ -379,7 +391,10 @@
         "يقلّل حالات تشقّق الثمار وانفجارها.",
         "يحسّن حفظ جودة المنتج ويقلّل خسائر ما بعد الجني."
       ],
-      "sizes": []
+      "sizes": [
+        "1 kg",
+        "5 kg"
+      ]
     }
   },
   "orthagrow-fertifight": {
@@ -387,31 +402,46 @@
       "claim": "FERTIFIGHT est une première et unique formulation au Maroc avec le double avantage d’améliorer la nutrition de la plante tout en renforçant ses défenses contre les agents pathogènes fongiques, mildiou, oidium, botrytis, goumose,…est efficace préventive et curative.",
       "paragraphs": [],
       "advantages": [],
-      "sizes": []
+      "sizes": [
+        "1 kg",
+        "5 kg"
+      ]
     },
     "en": {
       "claim": "FERTIFIGHT is a first and only formulation in Morocco with the double advantage of improving the nutrition of the plant while strengthening its defenses against fungal pathogens, mildew, oidium, botrytis, gumosis, … is effective preventive and curative.",
       "paragraphs": [],
       "advantages": [],
-      "sizes": []
+      "sizes": [
+        "1 kg",
+        "5 kg"
+      ]
     },
     "es": {
       "claim": "FERTIFIGHT es la primera y única formulación en Marruecos con la doble ventaja de mejorar la nutrición de la planta a la vez que refuerza sus defensas frente a los agentes patógenos fúngicos —mildiu, oídio, botritis, gomosis…—, con eficacia preventiva y curativa.",
       "paragraphs": [],
       "advantages": [],
-      "sizes": []
+      "sizes": [
+        "1 kg",
+        "5 kg"
+      ]
     },
     "nl": {
       "claim": "FERTIFIGHT is de eerste en enige formulering in Marokko met het dubbele voordeel dat ze de voeding van de plant verbetert én haar afweer versterkt tegen schimmelpathogenen: valse meeldauw, echte meeldauw, botrytis, gommose… Ze werkt zowel preventief als curatief.",
       "paragraphs": [],
       "advantages": [],
-      "sizes": []
+      "sizes": [
+        "1 kg",
+        "5 kg"
+      ]
     },
     "ar": {
       "claim": "FERTIFIGHT هو أول وأوحد صيغة في المغرب تجمع ميزتين: تحسين تغذية النبتة وتقوية دفاعاتها ضد مسبّبات الأمراض الفطرية — البياض الزغبي، البياض الدقيقي، البوتريتيس، الصمغية… وهو فعّال وقائيًا وعلاجيًا.",
       "paragraphs": [],
       "advantages": [],
-      "sizes": []
+      "sizes": [
+        "1 kg",
+        "5 kg"
+      ]
     }
   },
   "orthagrow-granule": {
@@ -433,7 +463,10 @@
         "Économie d’eau de 40% !!",
         "Pour rajeunissement du sol"
       ],
-      "sizes": []
+      "sizes": [
+        "10 kg",
+        "20 kg"
+      ]
     },
     "en": {
       "claim": "ORTHAGROW GRANULE is a unique 4th generation formulation developed by the same inventor of OSA (Ortho Silicic Acid Stabilized) in cooperation with UA (University of Antwerp Belgium).",
@@ -454,7 +487,10 @@
         "40% water saving !!",
         "For rejuvenation of the soil"
       ],
-      "sizes": []
+      "sizes": [
+        "10 kg",
+        "20 kg"
+      ]
     },
     "es": {
       "claim": "ORTHAGROW GRANULE es una formulación única de 4ª generación desarrollada por el mismo inventor del OSA (ácido ortosilícico estabilizado) en cooperación con la UA (Universidad de Amberes, Bélgica).",
@@ -474,7 +510,10 @@
         "¡Un 40 % de ahorro de agua!",
         "Para la regeneración del suelo"
       ],
-      "sizes": []
+      "sizes": [
+        "10 kg",
+        "20 kg"
+      ]
     },
     "nl": {
       "claim": "ORTHAGROW GRANULE is een unieke formulering van de 4de generatie, ontwikkeld door dezelfde uitvinder van OSA (gestabiliseerd orthokiezelzuur) in samenwerking met de UA (Universiteit Antwerpen, België).",
@@ -495,7 +534,10 @@
         "40% waterbesparing !!",
         "Voor het herstel van de bodem"
       ],
-      "sizes": []
+      "sizes": [
+        "10 kg",
+        "20 kg"
+      ]
     },
     "ar": {
       "claim": "ORTHAGROW GRANULE صيغة فريدة من الجيل الرابع طوّرها مخترع OSA نفسه (حمض الأورثوسيليسيك المستقر) بالتعاون مع جامعة أنتويرب ببلجيكا (UA).",
@@ -516,7 +558,10 @@
         "توفير 40% من الماء !!",
         "لتجديد حيوية التربة"
       ],
-      "sizes": []
+      "sizes": [
+        "10 kg",
+        "20 kg"
+      ]
     }
   },
   "orthagrow-poudre": {
@@ -636,7 +681,8 @@
         "Régulation physiologique : les oligo-éléments régulent les processus physiologiques essentiels de la culture."
       ],
       "sizes": [
-        "1 kg"
+        "1 kg",
+        "5 kg"
       ],
       "sections": [
         {
@@ -744,7 +790,8 @@
         "Physiological regulation: trace elements regulate the crop’s essential physiological processes."
       ],
       "sizes": [
-        "1 kg"
+        "1 kg",
+        "5 kg"
       ],
       "sections": [
         {
@@ -852,7 +899,8 @@
         "Regulación fisiológica: los oligoelementos regulan los procesos fisiológicos esenciales del cultivo."
       ],
       "sizes": [
-        "1 kg"
+        "1 kg",
+        "5 kg"
       ],
       "sections": [
         {
@@ -960,7 +1008,8 @@
         "Fysiologische regulatie: sporenelementen reguleren de essentiële fysiologische processen van het gewas."
       ],
       "sizes": [
-        "1 kg"
+        "1 kg",
+        "5 kg"
       ],
       "sections": [
         {
@@ -1070,7 +1119,8 @@
         "Rapport NPK optimal : garantit une relation source-puits (source-sink relation) appropriée lors de la transition vers les phases de floraison et de fructification."
       ],
       "sizes": [
-        "1 kg"
+        "1 kg",
+        "5 kg"
       ],
       "sections": [
         {
@@ -1178,7 +1228,8 @@
         "Optimal NPK ratio: ensures a proper source-sink relation during the transition to flowering and fruiting."
       ],
       "sizes": [
-        "1 kg"
+        "1 kg",
+        "5 kg"
       ],
       "sections": [
         {
@@ -1286,7 +1337,8 @@
         "Relación NPK óptima: garantiza una relación fuente-sumidero (source-sink relation) adecuada durante la transición hacia las fases de floración y fructificación."
       ],
       "sizes": [
-        "1 kg"
+        "1 kg",
+        "5 kg"
       ],
       "sections": [
         {
@@ -1394,7 +1446,8 @@
         "Optimale NPK-verhouding: zorgt voor een juiste source-sinkrelatie bij de overgang naar bloei en vruchtzetting."
       ],
       "sizes": [
-        "1 kg"
+        "1 kg",
+        "5 kg"
       ],
       "sections": [
         {
@@ -1505,7 +1558,8 @@
         "Mobilité des nutriments : la teneur élevée en potassium optimise la relation source-puits (source-sink) et le transport des produits de la photosynthèse vers les fruits en développement."
       ],
       "sizes": [
-        "1 kg"
+        "1 kg",
+        "5 kg"
       ],
       "sections": [
         {
@@ -1618,7 +1672,8 @@
         "Nutrient mobility: the high potassium content optimises the source-sink relationship and the transport of photosynthesis products to the developing fruit."
       ],
       "sizes": [
-        "1 kg"
+        "1 kg",
+        "5 kg"
       ],
       "sections": [
         {
@@ -1731,7 +1786,8 @@
         "Movilidad de nutrientes: el alto contenido de potasio optimiza la relación fuente-sumidero (source-sink) y el transporte de los productos de la fotosíntesis hacia los frutos en desarrollo."
       ],
       "sizes": [
-        "1 kg"
+        "1 kg",
+        "5 kg"
       ],
       "sections": [
         {
@@ -1844,7 +1900,8 @@
         "Mobiliteit van voedingsstoffen: het hoge kaliumgehalte optimaliseert de source-sinkrelatie en het transport van fotosyntheseproducten naar de zich ontwikkelende vruchten."
       ],
       "sizes": [
-        "1 kg"
+        "1 kg",
+        "5 kg"
       ],
       "sections": [
         {
@@ -1958,7 +2015,8 @@
         "Mobilité des nutriments : la teneur élevée en potassium optimise la relation source-puits (source-sink) ainsi que le transport des produits de la photosynthèse vers les fruits en développement."
       ],
       "sizes": [
-        "1 kg"
+        "1 kg",
+        "5 kg"
       ],
       "sections": [
         {
@@ -2066,7 +2124,8 @@
         "Nutrient mobility: the high potassium content optimises the source-sink relationship as well as the transport of photosynthesis products to the developing fruit."
       ],
       "sizes": [
-        "1 kg"
+        "1 kg",
+        "5 kg"
       ],
       "sections": [
         {
@@ -2174,7 +2233,8 @@
         "Movilidad de nutrientes: el alto contenido de potasio optimiza la relación fuente-sumidero (source-sink), así como el transporte de los productos de la fotosíntesis hacia los frutos en desarrollo."
       ],
       "sizes": [
-        "1 kg"
+        "1 kg",
+        "5 kg"
       ],
       "sections": [
         {
@@ -2282,7 +2342,8 @@
         "Mobiliteit van voedingsstoffen: het hoge kaliumgehalte optimaliseert de source-sinkrelatie en het transport van fotosyntheseproducten naar de zich ontwikkelende vruchten."
       ],
       "sizes": [
-        "1 kg"
+        "1 kg",
+        "5 kg"
       ],
       "sections": [
         {
@@ -2392,7 +2453,8 @@
         "Développement optimal des fruits : la très forte teneur en potassium contribue à une qualité optimale des fruits en :"
       ],
       "sizes": [
-        "1 kg"
+        "1 kg",
+        "5 kg"
       ],
       "sections": [
         {
@@ -2509,7 +2571,8 @@
         "Optimal fruit development: the very high potassium content contributes to optimal fruit quality by:"
       ],
       "sizes": [
-        "1 kg"
+        "1 kg",
+        "5 kg"
       ],
       "sections": [
         {
@@ -2626,7 +2689,8 @@
         "Desarrollo óptimo de los frutos: el altísimo contenido de potasio contribuye a una calidad óptima de los frutos al:"
       ],
       "sizes": [
-        "1 kg"
+        "1 kg",
+        "5 kg"
       ],
       "sections": [
         {
@@ -2743,7 +2807,8 @@
         "Optimale vruchtontwikkeling: het zeer hoge kaliumgehalte draagt bij aan een optimale vruchtkwaliteit door:"
       ],
       "sizes": [
-        "1 kg"
+        "1 kg",
+        "5 kg"
       ],
       "sections": [
         {
@@ -5833,7 +5898,9 @@
       ],
       "sizes": [
         "1 L",
-        "10 L"
+        "10 L",
+        "20 L",
+        "1000 L"
       ],
       "sections": [
         {
@@ -5943,7 +6010,9 @@
       ],
       "sizes": [
         "1 L",
-        "10 L"
+        "10 L",
+        "20 L",
+        "1000 L"
       ],
       "sections": [
         {
@@ -6053,7 +6122,9 @@
       ],
       "sizes": [
         "1 L",
-        "10 L"
+        "10 L",
+        "20 L",
+        "1000 L"
       ],
       "sections": [
         {
@@ -6163,7 +6234,9 @@
       ],
       "sizes": [
         "1 L",
-        "10 L"
+        "10 L",
+        "20 L",
+        "1000 L"
       ],
       "sections": [
         {
@@ -6275,7 +6348,9 @@
       ],
       "sizes": [
         "1 L",
-        "10 L"
+        "10 L",
+        "20 L",
+        "1000 L"
       ],
       "sections": [
         {
@@ -6373,7 +6448,9 @@
       ],
       "sizes": [
         "1 L",
-        "10 L"
+        "10 L",
+        "20 L",
+        "1000 L"
       ],
       "sections": [
         {
@@ -6471,7 +6548,9 @@
       ],
       "sizes": [
         "1 L",
-        "10 L"
+        "10 L",
+        "20 L",
+        "1000 L"
       ],
       "sections": [
         {
@@ -6569,7 +6648,9 @@
       ],
       "sizes": [
         "1 L",
-        "10 L"
+        "10 L",
+        "20 L",
+        "1000 L"
       ],
       "sections": [
         {
@@ -6664,7 +6745,9 @@
       ],
       "sizes": [
         "1 L",
-        "10 L"
+        "10 L",
+        "20 L",
+        "1000 L"
       ],
       "sections": [
         {
@@ -6764,7 +6847,9 @@
       ],
       "sizes": [
         "1 L",
-        "10 L"
+        "10 L",
+        "20 L",
+        "1000 L"
       ],
       "sections": [
         {
@@ -6864,7 +6949,9 @@
       ],
       "sizes": [
         "1 L",
-        "10 L"
+        "10 L",
+        "20 L",
+        "1000 L"
       ],
       "sections": [
         {
@@ -6964,7 +7051,9 @@
       ],
       "sizes": [
         "1 L",
-        "10 L"
+        "10 L",
+        "20 L",
+        "1000 L"
       ],
       "sections": [
         {
@@ -7066,7 +7155,9 @@
       ],
       "sizes": [
         "1 L",
-        "10 L"
+        "10 L",
+        "20 L",
+        "1000 L"
       ],
       "sections": [
         {
@@ -7157,7 +7248,9 @@
       ],
       "sizes": [
         "1 L",
-        "10 L"
+        "10 L",
+        "20 L",
+        "1000 L"
       ],
       "sections": [
         {
@@ -7248,7 +7341,9 @@
       ],
       "sizes": [
         "1 L",
-        "10 L"
+        "10 L",
+        "20 L",
+        "1000 L"
       ],
       "sections": [
         {
@@ -7339,7 +7434,9 @@
       ],
       "sizes": [
         "1 L",
-        "10 L"
+        "10 L",
+        "20 L",
+        "1000 L"
       ],
       "sections": [
         {
@@ -7435,7 +7532,9 @@
         "Protection des cultures : réduit les risques de dommages racinaires causés par les maladies et ravageurs telluriques."
       ],
       "sizes": [
-        "200 g"
+        "200 g",
+        "1 kg",
+        "5 kg"
       ],
       "sections": [
         {
@@ -7542,7 +7641,9 @@
         "Crop protection: reduces the risk of root damage caused by soil-borne diseases and pests."
       ],
       "sizes": [
-        "200 g"
+        "200 g",
+        "1 kg",
+        "5 kg"
       ],
       "sections": [
         {
@@ -7649,7 +7750,9 @@
         "Protección de los cultivos: reduce el riesgo de daños radiculares causados por enfermedades y plagas del suelo."
       ],
       "sizes": [
-        "200 g"
+        "200 g",
+        "1 kg",
+        "5 kg"
       ],
       "sections": [
         {
@@ -7756,7 +7859,9 @@
         "Gewasbescherming: verkleint het risico op wortelschade door bodemgebonden ziekten en plagen."
       ],
       "sizes": [
-        "200 g"
+        "200 g",
+        "1 kg",
+        "5 kg"
       ],
       "sections": [
         {

@@ -1,0 +1,9 @@
+/* Under the product's text and sheet, before the related products. The questions take
+   the family boxes' grid (FamilyNote's .faqs). */
+.faq {
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+}
+
+.title {
+  margin: 0 0 0.5rem;
+}

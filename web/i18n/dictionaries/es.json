@@ -127,6 +127,7 @@
     "cattle": "Bovinos"
   },
   "product": {
+    "faqTitle": "Preguntas frecuentes",
     "ranges": "Gamas",
     "range": "Gama",
     "products": "Productos",
@@ -184,7 +185,7 @@
     "statTrials": "Campañas documentadas en Marruecos",
     "statPlates": "Fichas de resultados",
     "statSince": "Primera campaña",
-    "publicationsIntro": "Los estudios y la entrevista científica en los que se basan nuestras formulaciones, de descarga libre."
+    "publicationsIntro": "Investigación científica y resultados"
   },
   "article": {
     "download": "Descargar el estudio",
@@ -231,6 +232,7 @@
     "dossier": "Dossier del estand",
     "sessions": "Detalles del evento",
     "eventsTitle": "SIAM Meknès, Saudi Agriculture: nuestros dosieres y materiales",
+    "siamVideo": "Moreco SIAM Mequinez",
     "articlesTitle": "En la prensa",
     "articlesIntro": "Lo que los periódicos han escrito sobre Moreco."
   },
@@ -316,7 +318,7 @@
     },
     "news": {
       "title": "Medios y actualidad",
-      "lead": "Las novedades de Moreco y su presencia sobre el terreno."
+      "lead": "Siga nuestra actualidad: las últimas novedades, los comunicados de prensa y los eventos de Moreco."
     },
     "media": {
       "title": "Dosieres de prensa y eventos",
@@ -355,8 +357,11 @@
   },
   "resources": {
     "applicationsIntro": "Los folletos por cultivo, para llevar al campo.",
-    "cropSheetsSoon": "Las fichas de cultivo están en preparación y se publicarán aquí próximamente.",
-    "downloadFlyer": "Descargar el folleto"
+    "cropSheetsSoon": "Las fichas de cultivo están en preparación y se publicarán aquí próximamente.",
+    "downloadFlyer": "Descargar el folleto",
+    "sheetFlyer": "Ficha de producto",
+    "sheetSds": "Ficha de datos de seguridad",
+    "seeProduct": "Ver el producto"
   },
   "careers": {
     "formTitle": "Candidatura espontánea",

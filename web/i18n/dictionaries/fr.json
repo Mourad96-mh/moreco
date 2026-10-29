@@ -127,6 +127,7 @@
     "cattle": "Bovins"
   },
   "product": {
+    "faqTitle": "Questions fréquentes",
     "ranges": "Gammes",
     "range": "Gamme",
     "products": "Produits",
@@ -184,7 +185,7 @@
     "statTrials": "Campagnes documentées au Maroc",
     "statPlates": "Fiches de résultats",
     "statSince": "Première campagne",
-    "publicationsIntro": "Les études et l'entretien scientifique sur lesquels reposent nos formulations, en téléchargement libre."
+    "publicationsIntro": "Recherche scientifique & résultats"
   },
   "article": {
     "download": "Télécharger l'étude",
@@ -231,6 +232,7 @@
     "dossier": "Dossier du stand",
     "sessions": "Détails de l’événement",
     "eventsTitle": "SIAM Meknès, Saudi Agriculture : nos dossiers et supports",
+    "siamVideo": "Moreco SIAM Meknès",
     "articlesTitle": "La presse en parle",
     "articlesIntro": "Ce que les journaux ont écrit sur Moreco."
   },
@@ -316,7 +318,7 @@
     },
     "news": {
       "title": "Medias & Actus",
-      "lead": "Les actualités de Moreco et sa présence sur le terrain."
+      "lead": "Suivez notre actualité : les dernières nouveautés, les communiqués médias et les événements de Moreco."
     },
     "media": {
       "title": "Dossiers médias & événements",
@@ -355,8 +357,11 @@
   },
   "resources": {
     "applicationsIntro": "Les flyers par culture, à emporter au champ.",
-    "cropSheetsSoon": "Les fiches culturales sont en cours de préparation et seront publiées ici prochainement.",
-    "downloadFlyer": "Télécharger le flyer"
+    "cropSheetsSoon": "Les fiches culturales sont en cours de préparation et seront publiées ici prochainement.",
+    "downloadFlyer": "Télécharger le flyer",
+    "sheetFlyer": "Fiche produit",
+    "sheetSds": "Fiche de données de sécurité",
+    "seeProduct": "Voir le produit"
   },
   "careers": {
     "formTitle": "Candidature spontanée",

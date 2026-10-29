@@ -414,7 +414,14 @@ export const PRODUCTS: Product[] = [
   },
 ];
 
-type MediaEntry = { image?: string; datasheet?: string; datasheetKind?: string };
+type MediaEntry = {
+  image?: string;
+  datasheet?: string;
+  datasheetKind?: string;
+  /** WebP renders of the sheet's first pages (recto, verso), previewed before the download. */
+  datasheetPages?: string[];
+  datasheetBytes?: number;
+};
 const MEDIA = media as Record<string, MediaEntry>;
 const COPY = copy as Record<string, Partial<Record<Locale, ProductCopy>>>;
 
@@ -423,6 +430,8 @@ const sourceOf = (slug: string): string => PRODUCTS.find((p) => p.slug === slug)
 
 export const productImage = (slug: string): string | null => MEDIA[sourceOf(slug)]?.image ?? null;
 export const productDatasheet = (slug: string): string | null => MEDIA[sourceOf(slug)]?.datasheet ?? null;
+export const productDatasheetPages = (slug: string): string[] => MEDIA[sourceOf(slug)]?.datasheetPages ?? [];
+export const productDatasheetBytes = (slug: string): number | null => MEDIA[sourceOf(slug)]?.datasheetBytes ?? null;
 
 /** 'flyer' = commercial product sheet, 'sds' = safety data sheet. Labelled differently. */
 export const productDatasheetKind = (slug: string): 'flyer' | 'sds' =>

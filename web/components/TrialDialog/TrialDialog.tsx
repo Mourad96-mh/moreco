@@ -13,12 +13,15 @@ import s from './TrialDialog.module.css';
 export default function TrialDialog({
   id,
   order,
+  orderClassName,
   title,
   closeLabel,
   children,
 }: {
   id: string;
   order: string;
+  /** Restyles the line above the title: the crop sheets put a Latin name there. */
+  orderClassName?: string;
   title: string;
   closeLabel: string;
   children: ReactNode;
@@ -31,7 +34,7 @@ export default function TrialDialog({
       {/* The button sits in the heading (a heading may not sit in a button) and stretches
           over the whole card, so the card is one click target. */}
       <div className={s.card} id={id}>
-        <span className={s.order}>{order}</span>
+        <span className={`${s.order} ${orderClassName ?? ''}`}>{order}</span>
         <h3 className={s.title}>
           <button type="button" className={s.open} onClick={() => dialog.current?.showModal()}>
             {title}
@@ -50,7 +53,7 @@ export default function TrialDialog({
       >
         <div className={s.sheet}>
           <header className={s.head}>
-            <span className={s.order}>{order}</span>
+            <span className={`${s.order} ${orderClassName ?? ''}`}>{order}</span>
             <h2 className={s.sheetTitle} id={titleId}>
               {title}
             </h2>

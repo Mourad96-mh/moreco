@@ -56,42 +56,25 @@
 
 /* ---------- resources ---------- */
 
-.sheets {
+/* Product sheets (2026-10-29): the cards share the crop sheets' grid; in the sheet, the
+   recto and verso side by side (stacked on a phone), the download beneath them. */
+.sheetPages {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 0.75rem;
-  margin: 1.5rem 0 0;
-  padding: 0;
-  list-style: none;
+  gap: clamp(0.75rem, 2vw, 1.25rem);
 }
 
-.sheets li {
-  display: grid;
-  gap: 0.35rem;
-  padding: 0.9rem 1.1rem;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: var(--paper);
+@media (min-width: 640px) {
+  .sheetPages {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
-.sheet {
-  display: grid;
-  gap: 0.15rem;
-  text-decoration: none;
-}
-
-.sheetName {
-  font-weight: 600;
-}
-
-.sheetKind {
-  font-size: 0.82rem;
-  color: var(--ink-3);
-}
-
-.sheet:hover .sheetName {
-  color: var(--green-dark);
-  text-decoration: underline;
+.sheetActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+  margin-top: 1.25rem;
 }
 
 .sheetLink {
@@ -104,16 +87,14 @@
 }
 
 /*
- * Crop sheets (briefing of 2026-10-24): a grid of four cards on desktop, three, two and
- * one as the screen narrows. Each card is the flyer with its questions folded beneath
- * it, both at the card's width so they read as one block.
+ * Crop sheets (briefings of 2026-10-24 and 2026-10-25): a grid of four cards on desktop,
+ * three, two and one as the screen narrows. A card is the crop's name; the flyer, its
+ * questions and the download open over the page (TrialDialog).
  */
 .crops {
   display: grid;
   grid-template-columns: 1fr;
-  gap: clamp(1rem, 2vw, 1.5rem);
-  /* An open question grows its own card; the cards beside it keep their height. */
-  align-items: start;
+  gap: clamp(0.75rem, 1.5vw, 1rem);
   margin: 1.5rem 0 0;
   padding: 0;
   list-style: none;
@@ -137,19 +118,37 @@
   }
 }
 
-.crop {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-lg);
-  background: var(--paper);
+.crops > li {
   scroll-margin-top: 6rem;
+}
+
+/* The Latin name above the crop's, where a trial card has its number. */
+.cropLatin {
+  font-style: italic;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+/* In the sheet: the flyer on the left, the questions and the download on the right;
+   stacked on a phone. */
+.cropSheet {
+  display: grid;
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+  align-items: start;
+}
+
+@media (min-width: 760px) {
+  .cropSheet {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  }
 }
 
 .cropFlyer {
   display: block;
-  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
   background: var(--paper-2);
 }
 
@@ -159,103 +158,73 @@
   height: auto;
 }
 
-.cropHead {
-  padding: 1rem 1.1rem 0.9rem;
-  border-top: 3px solid var(--green);
-  background: var(--paper-2);
+.cropText {
+  display: grid;
+  gap: 1.25rem;
 }
 
-.cropFlyer + .cropHead {
-  border-top: 0;
+/* The crop's text above its questions: the opening line a step larger, the closing call
+   to action in the brand green. */
+.cropIntro p {
+  margin: 0 0 0.85em;
 }
 
-.cropName {
-  margin: 0;
+.cropIntro p:last-child {
+  margin-bottom: 0;
+}
+
+.cropLead {
   font-size: var(--step-1);
-  line-height: 1.25;
-}
-
-.cropLatin {
-  display: block;
-  margin-top: 0.15rem;
-  font-size: 0.88rem;
-  font-style: italic;
-  color: var(--ink-3);
-}
-
-/* One fold per question: the question with a round chevron, as on the family notes. */
-.cropFaq {
-  border-top: 1px solid var(--line);
-}
-
-.cropSummary {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 0.75rem;
-  padding: 0.85rem 1.1rem;
-  list-style: none;
-  cursor: pointer;
-}
-
-.cropSummary::-webkit-details-marker {
-  display: none;
-}
-
-.cropSummary:focus-visible {
-  outline: 2px solid var(--green);
-  outline-offset: -2px;
-}
-
-.cropQuestion {
-  margin: 0;
-  font-size: 0.92rem;
-  font-weight: 600;
   line-height: 1.4;
   color: var(--ink);
 }
 
-.cropChevron {
-  position: relative;
-  flex-shrink: 0;
-  width: 1.6rem;
-  height: 1.6rem;
-  border: 2px solid var(--green);
-  border-radius: 50%;
-  transition: background-color 0.2s ease, transform 0.25s ease;
+.cropClosing {
+  font-weight: 600;
+  color: var(--green-darker);
 }
 
-.cropChevron::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 45%;
-  width: 0.42rem;
-  height: 0.42rem;
-  border-right: 2px solid var(--green);
-  border-bottom: 2px solid var(--green);
-  transform: translate(-50%, -50%) rotate(45deg);
+/* The crop's questions: the family boxes' green folds, stacked, and a little tighter in
+   the sheet's narrow column. */
+.cropFaqs {
+  display: grid;
+  gap: 0.6rem;
 }
 
-.cropSummary:hover .cropChevron {
-  background: rgb(64 171 92 / 0.1);
+.cropFaqs > details.cropFaq {
+  margin-top: 0;
 }
 
-.cropFaq[open] .cropChevron {
-  transform: rotate(180deg);
+.cropFaq > summary {
+  padding: 0.9rem 1.1rem;
 }
 
-.cropAnswer {
-  margin: 0;
-  padding: 0 1.1rem 1rem;
-  font-size: 0.9rem;
-  line-height: 1.6;
-  color: var(--ink-2);
+.cropFaq > summary > span {
+  width: 2.1rem;
+  height: 2.1rem;
 }
 
-.crop .sheet {
-  padding: 0.85rem 1.1rem 1rem;
-  border-top: 1px solid var(--line);
+.cropFaq > div {
+  padding: 1rem 1.1rem 1.2rem;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* The flyer and, right under it, its download. */
+.cropMedia {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.cropDownload {
+  justify-self: start;
+  gap: 0.6rem;
+}
+
+.cropDownloadKind {
+  font-size: 0.8rem;
+  font-weight: 400;
+  opacity: 0.85;
 }
 
 /* ---------- knowledge ---------- */

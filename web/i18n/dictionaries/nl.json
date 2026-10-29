@@ -127,6 +127,7 @@
     "cattle": "Rundvee"
   },
   "product": {
+    "faqTitle": "Veelgestelde vragen",
     "ranges": "Gamma's",
     "range": "Gamma",
     "products": "Producten",
@@ -184,7 +185,7 @@
     "statTrials": "Gedocumenteerde campagnes in Marokko",
     "statPlates": "Resultatenfiches",
     "statSince": "Eerste campagne",
-    "publicationsIntro": "De studies en het wetenschappelijke interview waarop onze formuleringen steunen, vrij te downloaden."
+    "publicationsIntro": "Wetenschappelijk onderzoek & resultaten"
   },
   "article": {
     "download": "Studie downloaden",
@@ -231,6 +232,7 @@
     "dossier": "Standdossier",
     "sessions": "Details van het evenement",
     "eventsTitle": "SIAM Meknes, Saudi Agriculture: onze dossiers en materialen",
+    "siamVideo": "Moreco SIAM Meknes",
     "articlesTitle": "In de pers",
     "articlesIntro": "Wat de kranten over Moreco hebben geschreven."
   },
@@ -316,7 +318,7 @@
     },
     "news": {
       "title": "Media & nieuws",
-      "lead": "Het nieuws van Moreco en haar aanwezigheid op het terrein."
+      "lead": "Volg ons nieuws: de laatste nieuwtjes, persberichten en evenementen van Moreco."
     },
     "media": {
       "title": "Persmappen & evenementen",
@@ -355,8 +357,11 @@
   },
   "resources": {
     "applicationsIntro": "De flyers per teelt, om mee het veld in te nemen.",
-    "cropSheetsSoon": "De teeltfiches worden voorbereid en verschijnen hier binnenkort.",
-    "downloadFlyer": "Flyer downloaden"
+    "cropSheetsSoon": "De teeltfiches worden voorbereid en verschijnen hier binnenkort.",
+    "downloadFlyer": "Flyer downloaden",
+    "sheetFlyer": "Productfiche",
+    "sheetSds": "Veiligheidsinformatieblad",
+    "seeProduct": "Bekijk het product"
   },
   "careers": {
     "formTitle": "Open sollicitatie",

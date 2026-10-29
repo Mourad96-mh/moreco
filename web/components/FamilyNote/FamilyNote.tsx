@@ -63,17 +63,21 @@ export default function FamilyNote({ note, faqs = [] }: { note: FamilyNoteConten
         </div>
       </details>
 
-      {faqs.map((faq) => (
-        <details key={faq.question} className={`${s.note} ${s.faq}`}>
-          <summary className={s.summary}>
-            <h3 className={`${s.title} ${s.question}`}>{faq.question}</h3>
-            <span className={s.chevron} aria-hidden="true" />
-          </summary>
-          <div className={s.body}>
-            <p>{faq.answer}</p>
-          </div>
-        </details>
-      ))}
+      {faqs.length > 0 && (
+        <div className={s.faqs}>
+          {faqs.map((faq) => (
+            <details key={faq.question} className={`${s.note} ${s.faq}`}>
+              <summary className={s.summary}>
+                <h3 className={`${s.title} ${s.question}`}>{faq.question}</h3>
+                <span className={s.chevron} aria-hidden="true" />
+              </summary>
+              <div className={s.body}>
+                <p>{faq.answer}</p>
+              </div>
+            </details>
+          ))}
+        </div>
+      )}
     </>
   );
 }

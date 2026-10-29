@@ -5,6 +5,7 @@ import { LOCALE_HREFLANG, SITE_URL, DEFAULT_LOCALE, isLocale, type Locale } from
 import { getDictionary } from '@/i18n/dictionary';
 import { ALL_ROUTES, resolveRoute, translationsOf, type Route } from '@/data/routes';
 import { getProduct, getRange, productName } from '@/data/products';
+import { productSeo } from '@/data/product-faqs';
 import { getTrial, trialTitle, trialDescription } from '@/data/trials';
 import { getArticle, articleTitle, articleExcerpt } from '@/data/articles';
 
@@ -81,6 +82,9 @@ function seoFor(route: Route, locale: Locale) {
       return { title: range?.name ?? t.pages.products.title, description: t.pages.products.lead };
     }
     case 'product': {
+      // The client's French meta-title and description for the 17 sheet products (2026-10-29).
+      const own = productSeo(route.params.product!, locale);
+      if (own) return { title: own.title, description: own.description, absolute: true };
       const product = getProduct(route.params.product!);
       return { title: product ? productName(product, locale) : '', description: t.site.description };
     }

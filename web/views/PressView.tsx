@@ -9,6 +9,7 @@ import { formatDate } from '@/data/news';
 import { pageHero } from '@/data/hero-images';
 import PageHeader from '@/components/PageHeader/PageHeader';
 import Reveal from '@/components/Reveal/Reveal';
+import VideoFold from '@/components/VideoFold/VideoFold';
 import s from './PressView.module.css';
 
 /**
@@ -129,20 +130,12 @@ export default function PressView({ locale }: { locale: Locale }) {
         </section>
       )}
 
+      {/* The stand video stays closed behind its title until asked for (2026-10-29, point 9). */}
       {video && (
         <section className="section section--tint">
           <div className="page-narrow">
             <Reveal>
-              <h2 className={s.videoTitle}>{video.title}</h2>
-              <div className={s.video}>
-                <iframe
-                  src={video.embed}
-                  title={video.title}
-                  loading="lazy"
-                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
+              <VideoFold title={t.press.siamVideo} embed={video.embed} />
             </Reveal>
           </div>
         </section>

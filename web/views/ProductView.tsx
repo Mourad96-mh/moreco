@@ -20,6 +20,8 @@ import { productHero } from '@/data/hero-images';
 import PageHeader from '@/components/PageHeader/PageHeader';
 import ProductCard from '@/components/ProductCard/ProductCard';
 import AddToQuote from '@/components/Quote/AddToQuote';
+import ProductFaq from '@/components/ProductFaq/ProductFaq';
+import { productFaqs } from '@/data/product-faqs';
 import ZoomImage from '@/components/ZoomImage/ZoomImage';
 import Reveal from '@/components/Reveal/Reveal';
 import catalogue from './Catalogue.module.css';
@@ -154,6 +156,10 @@ export default function ProductView({ locale, slug }: { locale: Locale; slug: st
               )}
             </div>
           </div>
+        </div>
+
+        <div className="page">
+          <ProductFaq title={t.product.faqTitle} faqs={productFaqs(slug, locale)} />
         </div>
       </div>
 

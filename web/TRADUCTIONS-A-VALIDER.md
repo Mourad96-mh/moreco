@@ -716,3 +716,58 @@ Points à faire corriger par le client dans les PDF (rien n'a été modifié) :
 - **Blé et lentille**, traitement (3) : « trempage des graines dans l'eau avec l'application
   foliaire d'Orthagrow Control » — un trempage avec une application foliaire ; à
   reformuler (trempage dans une solution d'Orthagrow Control ?).
+
+## 23. Briefing final du 2026-10-29 — fiches produits, textes et FAQ des pages produits
+
+**Fiches produits (Ressources).** Les 17 flyers corrigés (« 2e contrôle ») s'ouvrent en
+aperçu recto-verso avant le téléchargement. Nouveaux libellés, de nous :
+
+- **Fiche produit / Fiche de données de sécurité** : *Product sheet / Safety data sheet*,
+  *Ficha de producto / Ficha de datos de seguridad*, *Productfiche /
+  Veiligheidsinformatieblad*.
+- **Voir le produit** : *View the product*, *Ver el producto*, *Bekijk het product*.
+
+À faire corriger dans le PDF AMINACTIF-4G : « Ila été » → « Il a été ».
+
+**Textes (points 7 à 9).** L'anglais du point 7 et le français du point 8 sont du client ;
+le reste est de nous :
+
+- **Scientific Research & Results** : *Recherche scientifique & résultats*,
+  *Investigación científica y resultados*, *Wetenschappelijk onderzoek & resultaten*.
+- **Suivez notre actualité…** : *Follow our news: the latest updates, press releases and
+  events from Moreco.* ; *Siga nuestra actualidad: las últimas novedades, los comunicados
+  de prensa y los eventos de Moreco.* ; *Volg ons nieuws: de laatste nieuwtjes,
+  persberichten en evenementen van Moreco.*
+- **Moreco SIAM Meknes** (titre de la vidéo) : *Moreco SIAM Meknès* en français,
+  *Moreco SIAM Mequinez* en espagnol.
+
+**FAQ des pages produits** (« Moreco Product Pages SEO & FAQ »), deux questions en bas de
+chacune des 17 pages produits, sous le titre *Questions fréquentes* (*Frequently asked
+questions*, *Preguntas frecuentes*, *Veelgestelde vragen*), dans `data/product-faqs.ts`.
+**Le français est celui du client ; EN, ES et NL sont de nous.** Les méta-titres et
+méta-descriptions ne sont publiés qu'en français : ils visent des régions marocaines.
+
+Corrections du français :
+
+- Granule et Fertifight : « une gavage précoce », « la gavage des spores » →
+  « une germination précoce », « la germination des spores ».
+- « coeur » → « cœur » ; « Si(OH)4 », « H2O », « O2 » → *Si(OH)₄*, *H₂O*, *O₂* ;
+  « 40% », « 95% », « 100% » → « 40 % », « 95 % », « 100 % » ; « 1,71 - 1,75 g/ml » →
+  « 1,71 – 1,75 g/ml ».
+- En italique, à la demande du client : *in situ*, *in vitro*, *Ascophyllum nodosum*,
+  *Phytophthora*, *Xanthomonas* (pas d'italique dans les méta-descriptions, que Google
+  affiche en texte brut).
+
+Choix de traduction à valider :
+
+- **phoeniciculture** : *date palm growing*, *cultivo de la palmera datilera*,
+  *dadelpalmteelt*. **KSA** : *Saudi Arabia*, *Arabia Saudí*, *Saoedi-Arabië*.
+- **cul noir (nécrose apicale)** : *blossom-end rot*, *podredumbre apical (necrosis
+  apical)*, *neusrot*.
+- **coulure** : *flower and fruitlet drop*, *caída de flores y frutitos*, *bloem- en
+  vruchtval*.
+- **relation source-puits** : *source–sink relationship*, *relación fuente-sumidero*,
+  *source-sinkrelatie*.
+- **CEC** : *CEC* en anglais et en néerlandais, *CIC* en espagnol.
+- **Dakhla** : *Dajla* en espagnol.
+- **Orthagrow Granule** : *Granulé* en espagnol, comme à la section 19.

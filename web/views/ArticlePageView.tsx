@@ -2,8 +2,15 @@ import Link from 'next/link';
 
 import type { Locale } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionary';
-import { PRODUCTS, productDatasheet, productDatasheetKind, productName } from '@/data/products';
-import { FLYERS, flyerFaq, flyerTitle } from '@/data/flyers';
+import {
+  PRODUCTS,
+  productDatasheet,
+  productDatasheetBytes,
+  productDatasheetKind,
+  productDatasheetPages,
+  productName,
+} from '@/data/products';
+import { FLYERS, flyerFaq, flyerText, flyerTitle } from '@/data/flyers';
 import { href, productHref } from '@/data/routes';
 import pages from '@/data/pages.json';
 import { pageHero } from '@/data/hero-images';
@@ -12,6 +19,8 @@ import Blocks, { type Block } from '@/components/Blocks/Blocks';
 import CareerForm from '@/components/Careers/CareerForm';
 import { jobsFor } from '@/data/jobs';
 import Reveal from '@/components/Reveal/Reveal';
+import TrialDialog from '@/components/TrialDialog/TrialDialog';
+import note from '@/components/FamilyNote/FamilyNote.module.css';
 import s from './ArticlePageView.module.css';
 
 /** What is left for the generic renderer: the pages with no shape of their own. */
@@ -65,46 +74,93 @@ export default function ArticlePageView({ locale, view }: { locale: Locale; view
   );
 }
 
-const NOT_LISTED = new Set(['huwa-san-vet', 'huwa-san-water-treatment']);
+/**
+ * The product sheets, strictly in the order of the client's final briefing (2026-10-29),
+ * Clearox last. The list names its sheets rather than filtering the catalogue: Mavita's
+ * (2026-10-08), Huwa-San's (2026-10-19) and Clearox AGRO's stay on their product pages only.
+ */
+const SHEET_ORDER = [
+  'orthagrow-granule',
+  'orthagrow-myco',
+  'orthagrow-soil-conditioner',
+  'orthagrow-control',
+  'orthagrow-fertifight',
+  'orthagrow-bloom-booster',
+  'orthagrow-micro-manager',
+  'orthagrow-alga-si',
+  'orthagrow-aminactif',
+  'orthagrow-zno',
+  'orthagrow-cal',
+  'orthagrow-initio',
+  'orthagrow-flor',
+  'orthagrow-frucfolia',
+  'orthagrow-frucferti',
+  'orthagrow-matur',
+  'clearox',
+];
 
 function ResourcesBlock({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
-  // Mavita's sheets stay on its own product pages but are not listed here (client's request
-  // of 2026-10-08): this list is for the agricultural, animal and hygiene ranges. Huwa-San
-  // VET and Water Treatment left the list on 2026-10-19, their pages keeping their sheets.
-  const withSheets = PRODUCTS.filter(
-    (p) => productDatasheet(p.slug) && p.range !== 'mavita' && !p.variantOf && !NOT_LISTED.has(p.slug),
+  const withSheets = SHEET_ORDER.map((slug) => PRODUCTS.find((p) => p.slug === slug)).filter(
+    (p): p is (typeof PRODUCTS)[number] => !!p && !!productDatasheet(p.slug),
   );
 
+  // A card opens the sheet's recto and verso over the page (TrialDialog, as the crop
+  // sheets); the download is offered there, once the visitor has seen it (2026-10-29).
   return (
     <section id="catalogues" className={s.section}>
       <h2>{t.nav.catalogues}</h2>
-      <ul className={s.sheets}>
-        {withSheets.map((product) => (
-          <li key={product.slug}>
-            <a href={productDatasheet(product.slug)!} download className={s.sheet}>
-              <span className={s.sheetName}>{productName(product, locale)}</span>
-              <span className={s.sheetKind}>
-                {productDatasheetKind(product.slug) === 'sds' ? t.product.sds : t.product.datasheet}
-              </span>
-            </a>
-            <Link href={productHref(locale, product.slug)} className={s.sheetLink}>
-              {t.product.products}
-            </Link>
-          </li>
-        ))}
+      <ul className={s.crops}>
+        {withSheets.map((product) => {
+          const name = productName(product, locale);
+          const file = productDatasheet(product.slug)!;
+          const sds = productDatasheetKind(product.slug) === 'sds';
+          const bytes = productDatasheetBytes(product.slug);
+          return (
+            <li key={product.slug}>
+              <TrialDialog
+                id={`fiche-${product.slug}`}
+                order={sds ? t.resources.sheetSds : t.resources.sheetFlyer}
+                title={name}
+                closeLabel={t.product.zoomClose}
+              >
+                <div className={s.sheetPages}>
+                  {productDatasheetPages(product.slug).map((page, i) => (
+                    <a key={page} href={file} className={s.cropFlyer} target="_blank" rel="noopener">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={page} alt={`${name} (${i + 1})`} loading="lazy" width={900} height={1273} />
+                    </a>
+                  ))}
+                </div>
+                <div className={s.sheetActions}>
+                  <a href={file} download className={`btn ${s.cropDownload}`}>
+                    {sds ? t.product.sds : t.product.datasheet}
+                    <span className={s.cropDownloadKind}>
+                      PDF{bytes ? ` · ${Math.round(bytes / 1024)} ${t.article.sizeUnit}` : ''}
+                    </span>
+                  </a>
+                  <Link href={productHref(locale, product.slug)} className={s.sheetLink}>
+                    {t.resources.seeProduct}
+                  </Link>
+                </div>
+              </TrialDialog>
+            </li>
+          );
+        })}
       </ul>
     </section>
   );
 }
 
 /**
- * Resources > Crop sheets, where the header menu's #applications points: since the
- * briefing of 2026-10-24, one card per crop in a grid of four (three, two, one as the
- * screen narrows), the flyer on top and the crop's questions folded beneath it at the
- * flyer's own width. The crops come in the briefing's order, left to right then row by
- * row. The flyers came on 2026-10-24; a crop without one opens on its name, and its
- * preview and download appear once `image` and `file` are set in data/flyers.json.
+ * Resources > Crop sheets, where the header menu's #applications points: one card per
+ * crop in a grid of four (three, two, one as the screen narrows), in the briefing's
+ * order (2026-10-24). The client wanted the flyers out of sight until asked for
+ * (2026-10-25), so a card is the crop's name alone, and a click opens the flyer over the
+ * page beside the crop's questions and the download — the same sheet as the trial
+ * results (TrialDialog). The flyer is lazy and the sheet closed, so no flyer loads with
+ * the page. A crop without a flyer opens on its questions alone, and its preview and
+ * download appear once `image` and `file` are set in data/flyers.json.
  */
 function ApplicationsBlock({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
@@ -113,37 +169,72 @@ function ApplicationsBlock({ locale }: { locale: Locale }) {
     <section id="applications" className={s.section}>
       <h2>{t.nav.cropSheets}</h2>
       <ul className={s.crops}>
-        {FLYERS.map((flyer) => (
-          <li key={flyer.slug} id={flyer.slug} className={s.crop}>
-            {flyer.image && (
-              <a href={flyer.file ?? flyer.image} className={s.cropFlyer}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={flyer.image} alt={flyerTitle(flyer, locale)} loading="lazy" />
-              </a>
-            )}
-            <div className={s.cropHead}>
-              <h3 className={s.cropName}>{flyerTitle(flyer, locale)}</h3>
-              {flyer.latin && <span className={s.cropLatin}>{flyer.latin}</span>}
-            </div>
-            {flyerFaq(flyer, locale).map((faq) => (
-              <details key={faq.question} className={s.cropFaq}>
-                <summary className={s.cropSummary}>
-                  <h4 className={s.cropQuestion}>{faq.question}</h4>
-                  <span className={s.cropChevron} aria-hidden="true" />
-                </summary>
-                <p className={s.cropAnswer}>{faq.answer}</p>
-              </details>
-            ))}
-            {flyer.file && (
-              <a href={flyer.file} download className={s.sheet}>
-                <span className={s.sheetName}>{t.resources.downloadFlyer}</span>
-                <span className={s.sheetKind}>
-                  PDF{flyer.bytes ? ` · ${Math.round(flyer.bytes / 1024)} ${t.article.sizeUnit}` : ''}
-                </span>
-              </a>
-            )}
-          </li>
-        ))}
+        {FLYERS.map((flyer) => {
+          const title = flyerTitle(flyer, locale);
+          return (
+            <li key={flyer.slug}>
+              <TrialDialog
+                id={flyer.slug}
+                order={flyer.latin ?? ''}
+                orderClassName={s.cropLatin}
+                title={title}
+                closeLabel={t.product.zoomClose}
+              >
+                <div className={s.cropSheet}>
+                  {/* The download sits right under the flyer it saves (2026-10-29). */}
+                  {(flyer.image || flyer.file) && (
+                    <div className={s.cropMedia}>
+                      {flyer.image && (
+                        <a href={flyer.file ?? flyer.image} className={s.cropFlyer} target="_blank" rel="noopener">
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img src={flyer.image} alt={title} loading="lazy" />
+                        </a>
+                      )}
+                      {flyer.file && (
+                        <a href={flyer.file} download className={`btn ${s.cropDownload}`}>
+                          {t.resources.downloadFlyer}
+                          <span className={s.cropDownloadKind}>
+                            PDF{flyer.bytes ? ` · ${Math.round(flyer.bytes / 1024)} ${t.article.sizeUnit}` : ''}
+                          </span>
+                        </a>
+                      )}
+                    </div>
+                  )}
+                  <div className={s.cropText}>
+                    {/* The crop's text of 2026-10-18, back in the sheet on 2026-10-29; its
+                        last paragraph ("Choisissez la gamme Orthagrow…") is the call to action. */}
+                    {flyerText(flyer, locale).length > 0 && (
+                      <div className={s.cropIntro}>
+                        {flyerText(flyer, locale).map((paragraph, i, all) => (
+                          <p key={i} className={i === all.length - 1 ? s.cropClosing : i === 0 ? s.cropLead : undefined}>
+                            {paragraph}
+                          </p>
+                        ))}
+                      </div>
+                    )}
+                    {/* The questions fold like the family ones (2026-10-29), one under the
+                        other: the sheet's text column is too narrow for two side by side. */}
+                    {flyerFaq(flyer, locale).length > 0 && (
+                      <div className={s.cropFaqs}>
+                        {flyerFaq(flyer, locale).map((faq) => (
+                          <details key={faq.question} className={`${note.note} ${note.faq} ${s.cropFaq}`}>
+                            <summary className={note.summary}>
+                              <h3 className={`${note.title} ${note.question}`}>{faq.question}</h3>
+                              <span className={note.chevron} aria-hidden="true" />
+                            </summary>
+                            <div className={note.body}>
+                              <p>{faq.answer}</p>
+                            </div>
+                          </details>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </TrialDialog>
+            </li>
+          );
+        })}
       </ul>
     </section>
   );

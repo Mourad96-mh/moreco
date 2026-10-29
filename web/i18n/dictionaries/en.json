@@ -127,6 +127,7 @@
     "cattle": "Cattle"
   },
   "product": {
+    "faqTitle": "Frequently asked questions",
     "ranges": "Ranges",
     "range": "Range",
     "products": "Products",
@@ -184,7 +185,7 @@
     "statTrials": "Campaigns documented in Morocco",
     "statPlates": "Result sheets",
     "statSince": "First campaign",
-    "publicationsIntro": "The studies and the scientific interview our formulations rest on, free to download."
+    "publicationsIntro": "Scientific Research & Results"
   },
   "article": {
     "download": "Download the study",
@@ -231,6 +232,7 @@
     "dossier": "Stand dossier",
     "sessions": "Event details",
     "eventsTitle": "SIAM Meknès, Saudi Agriculture: our press kits and materials",
+    "siamVideo": "Moreco SIAM Meknes",
     "articlesTitle": "In the press",
     "articlesIntro": "What the newspapers have written about Moreco."
   },
@@ -316,7 +318,7 @@
     },
     "news": {
       "title": "Media & News",
-      "lead": "Moreco news and where to find us in the field."
+      "lead": "Follow our news: the latest updates, press releases and events from Moreco."
     },
     "media": {
       "title": "Media kits & events",
@@ -355,8 +357,11 @@
   },
   "resources": {
     "applicationsIntro": "The crop-by-crop flyers, to take out into the field.",
-    "cropSheetsSoon": "The crop sheets are being prepared and will be published here shortly.",
-    "downloadFlyer": "Download the flyer"
+    "cropSheetsSoon": "The crop sheets are being prepared and will be published here shortly.",
+    "downloadFlyer": "Download the flyer",
+    "sheetFlyer": "Product sheet",
+    "sheetSds": "Safety data sheet",
+    "seeProduct": "View the product"
   },
   "careers": {
     "formTitle": "Speculative application",
