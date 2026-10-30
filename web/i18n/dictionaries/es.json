@@ -274,6 +274,42 @@
     ],
     "followUs": "Síganos"
   },
+  "trialsAccess": {
+    "formTitle": "Solicitar acceso",
+    "profile": {
+      "label": "Usted es",
+      "options": [
+        {
+          "value": "Agriculteur / producteur",
+          "label": "Agricultor / productor"
+        },
+        {
+          "value": "Distributeur / revendeur",
+          "label": "Distribuidor / revendedor"
+        },
+        {
+          "value": "Ingénieur agronome / conseiller",
+          "label": "Ingeniero agrónomo / asesor"
+        },
+        {
+          "value": "Autre",
+          "label": "Otro"
+        }
+      ]
+    },
+    "crops": "Sus cultivos (opcional)",
+    "success": "Gracias, su solicitud ha sido enviada. En cuanto Moreco la apruebe, recibirá por correo electrónico un enlace personal para consultar los resultados de ensayos.",
+    "howTitle": "Cómo funciona",
+    "steps": [
+      "Usted envía este formulario.",
+      "Nuestro equipo examina su solicitud.",
+      "Recibe por correo electrónico un enlace personal, válido 12 meses, que abre los resultados de ensayos."
+    ],
+    "approvedTitle": "¿Ya aprobado?",
+    "approvedText": "Abra el enlace recibido por correo electrónico. En otro teléfono u ordenador, abra el mismo enlace una vez más.",
+    "coveredTitle": "Lo que encontrará",
+    "coveredText": "{n} campañas de campo, parcela testigo frente a parcela tratada, testimonios de productores y los informes de ensayos para descargar."
+  },
   "quote": {
     "title": "Solicitud de presupuesto",
     "lead": "Su selección",
@@ -312,6 +348,10 @@
     "trials": {
       "title": "Resultados de ensayos",
       "lead": "Parcela testigo frente a parcela tratada, en la misma explotación y la misma campaña."
+    },
+    "trialsAccess": {
+      "title": "Acceso a los resultados de ensayos",
+      "lead": "Nuestros resultados de campo están reservados a los profesionales. Envíe su solicitud: en cuanto se apruebe, recibirá su acceso por correo electrónico."
     },
     "knowledge": {
       "title": "Centro de conocimiento",

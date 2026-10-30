@@ -187,9 +187,24 @@ function randomHex($bytes)
  */
 function sendAndReply(array $smtp, $form, $subject, $replyName, $replyEmail, $html, $attachment = null)
 {
+    try {
+        smtpSend($smtp, $smtp['from'], $smtp['to'], composeMail($smtp, $smtp['to'], $subject, $replyName, $replyEmail, $html, $attachment));
+    } catch (Exception $e) {
+        error_log("$form.php: " . $e->getMessage());
+        reply(502, false, 'send');
+    }
+    recordSend($form);
+    reply(200, true);
+}
+
+/**
+ * The whole mail, headers and body, from the info@moreco.ma mailbox to $to. Shared by the
+ * forms, which write to Moreco, and the trial access, which also writes to the visitor.
+ */
+function composeMail(array $smtp, $to, $subject, $replyName, $replyEmail, $html, $attachment = null)
+{
     $boundary = 'moreco-' . randomHex(12);
     $from = $smtp['from'];
-    $to = $smtp['to'];
     $lines = [
         'Date: ' . date('r'),
         'From: ' . encodeHeader('Site moreco.ma') . " <$from>",
@@ -217,15 +232,7 @@ function sendAndReply(array $smtp, $form, $subject, $replyName, $replyEmail, $ht
     }
     $lines[] = "--$boundary--";
     $lines[] = '';
-
-    try {
-        smtpSend($smtp, $from, $to, implode("\r\n", $lines));
-    } catch (Exception $e) {
-        error_log("$form.php: " . $e->getMessage());
-        reply(502, false, 'send');
-    }
-    recordSend($form);
-    reply(200, true);
+    return implode("\r\n", $lines);
 }
 
 /**

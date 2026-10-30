@@ -17,6 +17,7 @@ import ProductView from '@/views/ProductView';
 import RdiView from '@/views/RdiView';
 import TrialsView from '@/views/TrialsView';
 import TrialView from '@/views/TrialView';
+import TrialsAccessView from '@/views/TrialsAccessView';
 import QuoteView from '@/views/QuoteView';
 import NewsView from '@/views/NewsView';
 import KnowledgeArticleView from '@/views/KnowledgeArticleView';
@@ -165,6 +166,8 @@ export default async function Page(props: PageProps<'/[locale]/[[...path]]'>) {
       return <TrialsView locale={locale} />;
     case 'trial':
       return <TrialView locale={locale} slug={route.params.trial!} />;
+    case 'trialsAccess':
+      return <TrialsAccessView locale={locale} />;
     case 'quote':
       return <QuoteView locale={locale} />;
     case 'news':

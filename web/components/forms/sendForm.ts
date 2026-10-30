@@ -9,7 +9,7 @@
  * titles the reader of the mail sees. The scripts only run on the PHP host, so under
  * `next dev` every form reports a failure.
  */
-export type MailerForm = 'contact' | 'devis' | 'candidature';
+export type MailerForm = 'contact' | 'devis' | 'candidature' | 'essais-demande';
 
 /** Resolves once the server has mailed the form, throws otherwise. */
 export async function sendForm(form: MailerForm, data: FormData): Promise<void> {

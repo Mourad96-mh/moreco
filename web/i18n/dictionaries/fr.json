@@ -274,6 +274,42 @@
     ],
     "followUs": "Suivez-nous"
   },
+  "trialsAccess": {
+    "formTitle": "Demander l'accès",
+    "profile": {
+      "label": "Vous êtes",
+      "options": [
+        {
+          "value": "Agriculteur / producteur",
+          "label": "Agriculteur / producteur"
+        },
+        {
+          "value": "Distributeur / revendeur",
+          "label": "Distributeur / revendeur"
+        },
+        {
+          "value": "Ingénieur agronome / conseiller",
+          "label": "Ingénieur agronome / conseiller"
+        },
+        {
+          "value": "Autre",
+          "label": "Autre"
+        }
+      ]
+    },
+    "crops": "Vos cultures (facultatif)",
+    "success": "Merci, votre demande est envoyée. Dès que Moreco l'aura validée, vous recevrez par e-mail un lien personnel pour consulter les résultats d'essais.",
+    "howTitle": "Comment ça marche",
+    "steps": [
+      "Vous envoyez ce formulaire.",
+      "Notre équipe examine votre demande.",
+      "Vous recevez par e-mail un lien personnel, valable 12 mois, qui ouvre les résultats d'essais."
+    ],
+    "approvedTitle": "Déjà validé ?",
+    "approvedText": "Ouvrez le lien reçu par e-mail. Sur un autre téléphone ou ordinateur, ouvrez le même lien une fois de plus.",
+    "coveredTitle": "Ce que vous y trouverez",
+    "coveredText": "{n} campagnes au champ, parcelle témoin contre parcelle traitée, les témoignages de producteurs et les rapports d'essais à télécharger."
+  },
   "quote": {
     "title": "Demande de devis",
     "lead": "Votre sélection",
@@ -312,6 +348,10 @@
     "trials": {
       "title": "Résultats d'essais",
       "lead": "Parcelle témoin contre parcelle traitée, sur la même exploitation et la même saison."
+    },
+    "trialsAccess": {
+      "title": "Accès aux résultats d'essais",
+      "lead": "Nos résultats au champ sont réservés aux professionnels. Faites votre demande : dès qu'elle est validée, vous recevez votre accès par e-mail."
     },
     "knowledge": {
       "title": "Centre de connaissances",

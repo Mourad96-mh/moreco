@@ -20,6 +20,7 @@ export type View =
   | 'rdi'
   | 'trials'
   | 'trial'
+  | 'trialsAccess'
   | 'resources'
   | 'knowledge'
   | 'article'
@@ -42,6 +43,7 @@ export type WordKey =
   | 'products'
   | 'rdi'
   | 'trials'
+  | 'trialsAccess'
   | 'resources'
   | 'knowledge'
   | 'news'
@@ -95,6 +97,10 @@ function routesFor(locale: Locale): Route[] {
      that still answered on /rd-i/essais/ would leave the section split across two
      branches of the site. finalize-export.mjs redirects the old paths. */
   add('trials', 'trials', [w('resources', locale), w('trials', locale)]);
+  /* Since 2026-10-30 the trials open only to visitors Moreco has approved; the rest are
+     sent here to ask. A sibling of the trials, not a child: everything under the trials
+     path is locked (finalize-export.mjs), and this page must stay open. */
+  add('trialsAccess', 'trialsAccess', [w('resources', locale), w('trialsAccess', locale)]);
   add('knowledge', 'knowledge', [w('resources', locale), w('knowledge', locale)]);
   add('news', 'news', [w('news', locale)]);
   add('media', 'media', [w('news', locale), w('media', locale)]);

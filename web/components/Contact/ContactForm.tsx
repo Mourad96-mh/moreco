@@ -4,13 +4,16 @@ import { useState, type FormEvent } from 'react';
 
 import type { Locale } from '@/i18n/config';
 import { requiredFieldsFilled } from '@/components/forms/requiredFields';
-import { sendForm } from '@/components/forms/sendForm';
+import { sendForm, type MailerForm } from '@/components/forms/sendForm';
 import s from './ContactForm.module.css';
 
 /**
  * The message form. Same plumbing as the quote basket's: it is mailed by the site's own
  * PHP script (see sendForm). When sending fails it says so rather than pretending to have sent — a
  * contact form that silently swallows messages is worse than none at all.
+ *
+ * The trial-results access request (2026-10-30) is the same form: its own script, a
+ * profile in place of the department, and the message optional.
  */
 
 export interface ContactLabels {
@@ -39,10 +42,18 @@ export default function ContactForm({
   locale,
   labels,
   service,
+  form: script = 'contact',
+  messageOptional = false,
+  analyticsEvent,
 }: {
   locale: Locale;
   labels: ContactLabels;
-  service: ServiceChoice;
+  service?: ServiceChoice;
+  /** The PHP script that mails it. */
+  form?: MailerForm;
+  messageOptional?: boolean;
+  /** A GA4 event sent once the form has gone through. */
+  analyticsEvent?: string;
 }) {
   const [state, setState] = useState<'idle' | 'sending' | 'sent' | 'failed'>('idle');
 
@@ -55,8 +66,9 @@ export default function ContactForm({
 
     setState('sending');
     try {
-      await sendForm('contact', data);
+      await sendForm(script, data);
       setState('sent');
+      if (analyticsEvent) (window as { gtag?: (...args: unknown[]) => void }).gtag?.('event', analyticsEvent);
       form.reset();
     } catch {
       setState('failed');
@@ -96,24 +108,26 @@ export default function ContactForm({
 
       <label className={s.field}>
         <span className={s.label}>
-          {labels.message} <Star />
+          {labels.message} {!messageOptional && <Star />}
         </span>
-        <textarea name="message" rows={6} required className={s.textarea} />
+        <textarea name="message" rows={messageOptional ? 3 : 6} required={!messageOptional} className={s.textarea} />
       </label>
 
-      <fieldset className={s.choice}>
-        <legend className={s.label}>
-          {service.label} <Star />
-        </legend>
-        <div className={s.options}>
-          {service.options.map((option) => (
-            <label key={option.value} className={s.option}>
-              <input type="radio" name="service" value={option.value} required />
-              {option.label}
-            </label>
-          ))}
-        </div>
-      </fieldset>
+      {service && (
+        <fieldset className={s.choice}>
+          <legend className={s.label}>
+            {service.label} <Star />
+          </legend>
+          <div className={s.options}>
+            {service.options.map((option) => (
+              <label key={option.value} className={s.option}>
+                <input type="radio" name="service" value={option.value} required />
+                {option.label}
+              </label>
+            ))}
+          </div>
+        </fieldset>
+      )}
 
       {/* Bots fill every field they find; people never see this one. */}
       <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" className={s.gotcha} aria-hidden="true" />

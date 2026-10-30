@@ -274,6 +274,42 @@
     ],
     "followUs": "Follow us"
   },
+  "trialsAccess": {
+    "formTitle": "Request access",
+    "profile": {
+      "label": "You are",
+      "options": [
+        {
+          "value": "Agriculteur / producteur",
+          "label": "Farmer / grower"
+        },
+        {
+          "value": "Distributeur / revendeur",
+          "label": "Distributor / reseller"
+        },
+        {
+          "value": "Ingénieur agronome / conseiller",
+          "label": "Agronomist / adviser"
+        },
+        {
+          "value": "Autre",
+          "label": "Other"
+        }
+      ]
+    },
+    "crops": "Your crops (optional)",
+    "success": "Thank you, your request has been sent. As soon as Moreco approves it, you will receive a personal link by e-mail to view the trial results.",
+    "howTitle": "How it works",
+    "steps": [
+      "You send this form.",
+      "Our team reviews your request.",
+      "You receive a personal link by e-mail, valid for 12 months, that opens the trial results."
+    ],
+    "approvedTitle": "Already approved?",
+    "approvedText": "Open the link you received by e-mail. On another phone or computer, open the same link once more.",
+    "coveredTitle": "What you will find",
+    "coveredText": "{n} field campaigns, control plot against treated plot, growers' testimonials and the trial reports to download."
+  },
   "quote": {
     "title": "Quote request",
     "lead": "Your selection",
@@ -312,6 +348,10 @@
     "trials": {
       "title": "Trial results",
       "lead": "Control plot against treated plot, on the same farm and in the same season."
+    },
+    "trialsAccess": {
+      "title": "Access to the trial results",
+      "lead": "Our field results are reserved for professionals. Send a request: once it is approved, you receive your access by e-mail."
     },
     "knowledge": {
       "title": "Knowledge centre",

@@ -274,6 +274,42 @@
     ],
     "followUs": "Volg ons"
   },
+  "trialsAccess": {
+    "formTitle": "Toegang aanvragen",
+    "profile": {
+      "label": "U bent",
+      "options": [
+        {
+          "value": "Agriculteur / producteur",
+          "label": "Landbouwer / teler"
+        },
+        {
+          "value": "Distributeur / revendeur",
+          "label": "Verdeler / wederverkoper"
+        },
+        {
+          "value": "Ingénieur agronome / conseiller",
+          "label": "Landbouwkundige / adviseur"
+        },
+        {
+          "value": "Autre",
+          "label": "Andere"
+        }
+      ]
+    },
+    "crops": "Uw teelten (optioneel)",
+    "success": "Bedankt, uw aanvraag is verstuurd. Zodra Moreco ze goedkeurt, ontvangt u per e-mail een persoonlijke link om de proefresultaten te bekijken.",
+    "howTitle": "Hoe het werkt",
+    "steps": [
+      "U verstuurt dit formulier.",
+      "Ons team bekijkt uw aanvraag.",
+      "U ontvangt per e-mail een persoonlijke link, 12 maanden geldig, die de proefresultaten opent."
+    ],
+    "approvedTitle": "Al goedgekeurd?",
+    "approvedText": "Open de link die u per e-mail ontving. Op een andere telefoon of computer opent u dezelfde link nog een keer.",
+    "coveredTitle": "Wat u er vindt",
+    "coveredText": "{n} veldcampagnes, controleperceel tegenover behandeld perceel, getuigenissen van telers en de proefverslagen om te downloaden."
+  },
   "quote": {
     "title": "Offerteaanvraag",
     "lead": "Uw selectie",
@@ -312,6 +348,10 @@
     "trials": {
       "title": "Proefresultaten",
       "lead": "Controleperceel tegenover behandeld perceel, op hetzelfde bedrijf in hetzelfde seizoen."
+    },
+    "trialsAccess": {
+      "title": "Toegang tot de proefresultaten",
+      "lead": "Onze veldresultaten zijn voorbehouden aan professionals. Dien een aanvraag in: zodra die is goedgekeurd, ontvangt u uw toegang per e-mail."
     },
     "knowledge": {
       "title": "Kenniscentrum",
