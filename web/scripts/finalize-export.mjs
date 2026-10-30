@@ -5,17 +5,15 @@
  *   out/.htaccess    root redirect + the 301 map from the old moreco.ma (Apache)
  *   out/sitemap.xml  every page, in all four languages, with hreflang alternates
  *   out/robots.txt
- *   vercel.json      the same 301 map, and the settings Vercel needs to serve out/
  *
  * Chained onto `next build` by the package.json build script, so the export is never
- * half-finished: it ran by hand until 2026-09-17, and on Vercel — which runs the build
- * script and nothing else — that meant a site with no root page, no sitemap and no
- * robots.txt. Reads ../content-index.json for the old URL inventory.
+ * half-finished: it ran by hand until 2026-09-17, which left a site with no root page,
+ * no sitemap and no robots.txt. Reads ../content-index.json for the old URL inventory.
  *
- * The .htaccess it writes is Apache's, i.e. Hostinger's. A host that does not read it
- * (Vercel among them) serves the pages but none of the 301s from the old moreco.ma, so
- * pointing a domain at such a host needs that map translated into the host's own config
- * first.
+ * The .htaccess it writes is Apache's: moreco.ma's Plesk server. The site needs it, and
+ * PHP for the forms and the trial lock, so it is only served from there. The Vercel copy
+ * that also built it, without either, was retired on 2026-10-30 along with its
+ * vercel.json.
  */
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
@@ -407,37 +405,6 @@ writeFileSync(
   'utf8'
 );
 
-/* ------------------------------------------------------------- vercel.json */
-
-/**
- * The same redirect map, in the other host's dialect, plus the settings that make Vercel
- * serve this export the way a file host does.
- *
- * `framework: null` is the point of the file. Left on the Next.js preset, Vercel collects
- * the build's own manifest and drops anything this script adds to out/ afterwards — the
- * root index.html, the sitemap and robots.txt were all 404 on a deployment whose build
- * log showed them being written. With no framework, out/ is copied wholesale.
- *
- * Written into the repository rather than into out/, because Vercel reads it from the
- * checkout before the build: a copy under out/ would only ever take effect one deploy
- * late. It is generated, and committed like any generated artifact — the map above is the
- * single source both hosts are configured from, so the .htaccess and this cannot drift.
- */
-const vercel = {
-  $schema: 'https://openapi.vercel.sh/vercel.json',
-  framework: null,
-  buildCommand: 'next build && node scripts/finalize-export.mjs',
-  outputDirectory: 'out',
-  trailingSlash: true,
-  redirects: [...map.entries()]
-    .filter(([from]) => from !== '/')
-    .sort((a, b) => b[0].length - a[0].length)
-    .map(([source, destination]) => ({ source, destination, permanent: true })),
-};
-
-writeFileSync(join(ROOT, 'vercel.json'), `${JSON.stringify(vercel, null, 2)}
-`, 'utf8');
-
 /* ------------------------------------------------------- root landing page */
 
 const landing = `<!doctype html>
@@ -543,7 +510,7 @@ writeFileSync(
 /* ------------------------------------------------------------------ report */
 
 console.log(`landing page   out/index.html`);
-console.log(`redirects      ${map.size} rules -> out/.htaccess + vercel.json`);
+console.log(`redirects      ${map.size} rules -> out/.htaccess`);
 console.log(`sitemap        ${listed.length} URLs, ${listed.length * LOCALES.length} hreflang alternates (${built.length - listed.length} locked trial pages left out)`);
 if (brokenAlternates.length) {
   const unique = [...new Set(brokenAlternates)];
