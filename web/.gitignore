@@ -45,3 +45,6 @@ next-env.d.ts
 
 # hero rushes (scripts/build-hero-video.mjs) — raw footage stays out of git
 /hero-source/
+
+# careers mailer: holds the info@moreco.ma mailbox password (public/api/candidature.php)
+/public/api/candidature-config.php

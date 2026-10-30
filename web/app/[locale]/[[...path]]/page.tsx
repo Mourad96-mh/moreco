@@ -5,6 +5,7 @@ import { LOCALE_HREFLANG, SITE_URL, DEFAULT_LOCALE, isLocale, type Locale } from
 import { getDictionary } from '@/i18n/dictionary';
 import { ALL_ROUTES, resolveRoute, translationsOf, type Route } from '@/data/routes';
 import { getProduct, getRange, productName } from '@/data/products';
+import { productSeo } from '@/data/product-faqs';
 import { getTrial, trialTitle, trialDescription } from '@/data/trials';
 import { getArticle, articleTitle, articleExcerpt } from '@/data/articles';
 
@@ -16,6 +17,7 @@ import ProductView from '@/views/ProductView';
 import RdiView from '@/views/RdiView';
 import TrialsView from '@/views/TrialsView';
 import TrialView from '@/views/TrialView';
+import TrialsAccessView from '@/views/TrialsAccessView';
 import QuoteView from '@/views/QuoteView';
 import NewsView from '@/views/NewsView';
 import KnowledgeArticleView from '@/views/KnowledgeArticleView';
@@ -42,13 +44,34 @@ function routeFrom(locale: string, path?: string[]): { locale: Locale; route: Ro
   return { locale, route };
 }
 
+/**
+ * The Google title and description the client wrote for the French and English home
+ * pages (briefing of 2026-10-19, heat and water stress). The French description is
+ * theirs too, cut to fit Google's 155 characters. Spanish and Dutch keep the tagline.
+ */
+const HOME_SEO: Partial<Record<Locale, { title: string; description: string }>> = {
+  fr: {
+    title: 'MORECO | Solutions Stress Thermique, Sécheresse & Salinité',
+    description:
+      "Optimisez la résilience de l'agriculture marocaine. Notre acide orthosilicique renforce les cultures face au stress hydrique en situation extrême.",
+  },
+  en: {
+    title: 'MORECO | Crop Solutions for Drought, Salt & Heat Stress',
+    description:
+      'Combat climate stress in Moroccan agriculture. Our bioavailable silicon strengthens plant resistance to severe drought, high salinity, and extreme heat.',
+  },
+};
+
 /** Page title and description per view — the products and trials name themselves. */
 function seoFor(route: Route, locale: Locale) {
   const t = getDictionary(locale);
 
   switch (route.view) {
-    case 'home':
+    case 'home': {
+      const own = HOME_SEO[locale];
+      if (own) return { title: own.title, description: own.description, absolute: true };
       return { title: `${t.site.name} — ${t.site.tagline}`, description: t.site.description, absolute: true };
+    }
     case 'products':
       return { title: t.pages.products.title, description: t.pages.products.lead };
     case 'segment': {
@@ -60,6 +83,9 @@ function seoFor(route: Route, locale: Locale) {
       return { title: range?.name ?? t.pages.products.title, description: t.pages.products.lead };
     }
     case 'product': {
+      // The client's French meta-title and description for the 17 sheet products (2026-10-29).
+      const own = productSeo(route.params.product!, locale);
+      if (own) return { title: own.title, description: own.description, absolute: true };
       const product = getProduct(route.params.product!);
       return { title: product ? productName(product, locale) : '', description: t.site.description };
     }
@@ -140,6 +166,8 @@ export default async function Page(props: PageProps<'/[locale]/[[...path]]'>) {
       return <TrialsView locale={locale} />;
     case 'trial':
       return <TrialView locale={locale} slug={route.params.trial!} />;
+    case 'trialsAccess':
+      return <TrialsAccessView locale={locale} />;
     case 'quote':
       return <QuoteView locale={locale} />;
     case 'news':

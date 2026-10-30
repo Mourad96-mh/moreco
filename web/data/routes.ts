@@ -1,5 +1,5 @@
 import { LOCALES, type Locale } from '@/i18n/config';
-import { PRODUCTS, RANGES, SEGMENTS, type SegmentKey } from './products';
+import { PRODUCTS, RANGES, SEGMENTS, productsOfRange, type SegmentKey } from './products';
 import { TRIALS } from './trials';
 import { ARTICLES } from './articles';
 import { words, segments } from './route-words.json';
@@ -20,6 +20,7 @@ export type View =
   | 'rdi'
   | 'trials'
   | 'trial'
+  | 'trialsAccess'
   | 'resources'
   | 'knowledge'
   | 'article'
@@ -42,6 +43,7 @@ export type WordKey =
   | 'products'
   | 'rdi'
   | 'trials'
+  | 'trialsAccess'
   | 'resources'
   | 'knowledge'
   | 'news'
@@ -95,6 +97,10 @@ function routesFor(locale: Locale): Route[] {
      that still answered on /rd-i/essais/ would leave the section split across two
      branches of the site. finalize-export.mjs redirects the old paths. */
   add('trials', 'trials', [w('resources', locale), w('trials', locale)]);
+  /* Since 2026-10-30 the trials open only to visitors Moreco has approved; the rest are
+     sent here to ask. A sibling of the trials, not a child: everything under the trials
+     path is locked (finalize-export.mjs), and this page must stay open. */
+  add('trialsAccess', 'trialsAccess', [w('resources', locale), w('trialsAccess', locale)]);
   add('knowledge', 'knowledge', [w('resources', locale), w('knowledge', locale)]);
   add('news', 'news', [w('news', locale)]);
   add('media', 'media', [w('news', locale), w('media', locale)]);
@@ -109,10 +115,14 @@ function routesFor(locale: Locale): Route[] {
     add('segment', `segment:${segment}`, [w('products', locale), seg], { segment });
 
     for (const range of RANGES.filter((r) => r.segment === segment)) {
-      add('range', `range:${range.slug}`, [w('products', locale), seg, range.slug], {
-        segment,
-        range: range.slug,
-      });
+      /* A range whose products are all unlisted (Huwa-San Professionnel) has no page of
+         its own; its products keep theirs. */
+      if (productsOfRange(range.slug).length > 0) {
+        add('range', `range:${range.slug}`, [w('products', locale), seg, range.slug], {
+          segment,
+          range: range.slug,
+        });
+      }
 
       for (const product of PRODUCTS.filter((p) => p.range === range.slug)) {
         add('product', `product:${product.slug}`, [w('products', locale), seg, range.slug, product.slug], {

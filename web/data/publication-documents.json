@@ -1,0 +1,103 @@
+{
+  "_comment": "Scientific papers the client sent by e-mail on 2026-10-07 and the four ICARDA reports of 2020 sent on 2026-10-24, published as downloads under R&D + I > Scientific publications, after the articles that have their own page. Titles stay in the language they were published in, as cited works do elsewhere on the site; `source` is the authors and venue as printed on the document, `date` the date printed on it, `sortDate` the same date as YYYY-MM-DD so the list can be put in order (a season counts from its first autumn). To add one: drop the file in public/media/research/publications/ and add an entry below with `bytes` set to the file size.",
+  "documents": [
+    {
+      "slug": "icarda-rabat-orthagrow-feve-lixus-2020",
+      "title": "Effet de l'acide orthosilicique Orthagrow (Si(OH)₄) sur l'infestation du lixe de la fève (Lixus algirus L.) et le rendement en grains",
+      "source": "Dr. El Fakhouri K. — ICARDA Rabat, Station de Recherche Expérimentale de Marchouch",
+      "date": {
+        "fr": "2020",
+        "en": "2020",
+        "es": "2020",
+        "nl": "2020"
+      },
+      "sortDate": "2020-01-01",
+      "file": "/media/research/publications/icarda-rabat-orthagrow-feve-lixus-2020.pdf",
+      "bytes": 22825
+    },
+    {
+      "slug": "icarda-rabat-orthagrow-pois-chiche-mineuse-2020",
+      "title": "Effet de l'acide orthosilicique Orthagrow sur la mineuse du pois chiche (Liriomyza cicerina) et sur le rendement en grains selon différentes variétés",
+      "source": "Dr. El Fakhouri K. — ICARDA Rabat, Station de Recherche Expérimentale de Marchouch",
+      "date": {
+        "fr": "2020",
+        "en": "2020",
+        "es": "2020",
+        "nl": "2020"
+      },
+      "sortDate": "2020-01-01",
+      "file": "/media/research/publications/icarda-rabat-orthagrow-pois-chiche-mineuse-2020.pdf",
+      "bytes": 21006
+    },
+    {
+      "slug": "icarda-rabat-orthagrow-lentille-puceron-2020",
+      "title": "Effet de l'acide orthosilicique Orthagrow sur l'infestation du puceron vert du pois (Acyrthosiphon pisum) sur la lentille sous conditions de serre",
+      "source": "Dr. El Fakhouri K. — ICARDA Rabat, Station de Recherche Expérimentale de Marchouch",
+      "date": {
+        "fr": "2020",
+        "en": "2020",
+        "es": "2020",
+        "nl": "2020"
+      },
+      "sortDate": "2020-01-01",
+      "file": "/media/research/publications/icarda-rabat-orthagrow-lentille-puceron-2020.pdf",
+      "bytes": 21010
+    },
+    {
+      "slug": "icarda-rabat-orthagrow-ble-puceron-russe-2020",
+      "title": "Effect of Orthagrow Ortho Silicic Acid on the Russian wheat aphid (Diuraphis noxia), under greenhouse condition",
+      "source": "Dr. El Fakhouri K. — ICARDA Rabat, Station de Recherche Expérimentale de Marchouch",
+      "date": {
+        "fr": "2020",
+        "en": "2020",
+        "es": "2020",
+        "nl": "2020"
+      },
+      "sortDate": "2020-01-01",
+      "file": "/media/research/publications/icarda-rabat-orthagrow-ble-puceron-russe-2020.pdf",
+      "bytes": 20724
+    },
+    {
+      "slug": "icarda-rabat-silice-feverole-lixus-2017",
+      "title": "Effect of Silice (Si(OH)4) on faba bean stem borer Lixus algirus L. infestation and grain yield",
+      "source": "ICARDA Rabat — Marchouch Station",
+      "date": {
+        "fr": "Campagne 2017–2018",
+        "en": "2017–2018 season",
+        "es": "Campaña 2017–2018",
+        "nl": "Seizoen 2017–2018"
+      },
+      "sortDate": "2017-09-01",
+      "file": "/media/research/publications/icarda-rabat-silice-feverole-lixus-2017.png",
+      "bytes": 41654
+    },
+    {
+      "slug": "inra-agadir-silicium-agriculture-durable-2009",
+      "title": "Le Silicium ; le levier minéral indispensable pour une agriculture durable au Maroc",
+      "source": "Bouzoubaâ Z., Ait Lhaj A., Mimouni A. — INRA-CRRA Agadir. Symposium international AGDUMED, Rabat",
+      "date": {
+        "fr": "14-16 mai 2009",
+        "en": "14–16 May 2009",
+        "es": "14-16 de mayo de 2009",
+        "nl": "14-16 mei 2009"
+      },
+      "sortDate": "2009-05-14",
+      "file": "/media/research/publications/inra-agadir-silicium-agriculture-durable-2009.pdf",
+      "bytes": 639919
+    },
+    {
+      "slug": "inra-agadir-silicium-ble-salinite-secheresse-2005",
+      "title": "Effect of Silicon on the improvement of wheat germination in salt and drought conditions",
+      "source": "Bouzoubaâ Z. — INRA Agadir. Symposium International sur le Développement Durable des Systèmes Oasiens, Erfoud",
+      "date": {
+        "fr": "8-10 mars 2005",
+        "en": "8–10 March 2005",
+        "es": "8-10 de marzo de 2005",
+        "nl": "8-10 maart 2005"
+      },
+      "sortDate": "2005-03-08",
+      "file": "/media/research/publications/inra-agadir-silicium-ble-salinite-secheresse-2005.pdf",
+      "bytes": 764190
+    }
+  ]
+}

@@ -3,12 +3,15 @@ import Link from 'next/link';
 import type { Locale } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionary';
 import { href, articleHref } from '@/data/routes';
-import { MOROCCO_CAMPAIGNS, TRIALS } from '@/data/trials';
+import { MOROCCO_CAMPAIGNS } from '@/data/trials';
 import { PUBLICATIONS, articleTitle, articleExcerpt, articleDate, articlePdf } from '@/data/articles';
 import { formatDate } from '@/data/news';
+import { PUBLICATION_DOCUMENTS, publicationDocumentDate, type PublicationDocument } from '@/data/publication-documents';
+import type { Article } from '@/data/articles';
 import { pageHero } from '@/data/hero-images';
 import PageHeader from '@/components/PageHeader/PageHeader';
 import Reveal from '@/components/Reveal/Reveal';
+import VideoFold from '@/components/VideoFold/VideoFold';
 import s from './RdiView.module.css';
 
 /**
@@ -26,20 +29,34 @@ import s from './RdiView.module.css';
  * The peer-reviewed studies close the page (#publications, where the header menu points
  * since 2026-09-09). They were listed in the knowledge centre until the client ruled
  * that a scientific publication belongs here and nowhere else.
+ *
+ * Articles and downloadable papers make one list, strictly newest first (briefing of
+ * 2026-10-21): the papers used to follow the articles, so the 2017 study sat below 2012.
  */
+type Paper = { date: string } & ({ article: Article } | { doc: PublicationDocument });
+
+const PAPERS: Paper[] = [
+  ...PUBLICATIONS.map((article) => ({ date: articleDate(article) ?? '', article })),
+  ...PUBLICATION_DOCUMENTS.map((doc) => ({ date: doc.sortDate, doc })),
+].sort((a, b) => b.date.localeCompare(a.date));
+
+/** "Unlock the power of soil biology…", sent by the client on 2026-10-30. */
+const SOIL_VIDEO = 'https://www.youtube.com/embed/SIJ4wUtvdfE?rel=0';
+
 export default function RdiView({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
 
   return (
     <>
-      {/* No eyebrow: the H1 the client asked for already names the department in full,
-          and the line that used to sit above it said the same thing in other words. */}
+      {/* One title line, as the client set it on 2026-10-18: Moreco / R&D + I / the
+          department's full name. The breadcrumb went: it read "Moreco / R&D + I", the
+          same words again. */}
       <PageHeader
-        title={t.rdi.title}
+        title={`${t.site.name} / ${t.nav.rdi} / ${t.rdi.title}`}
+        wide
         lead={t.rdi.intro}
         image={pageHero('rdi')}
         crumbLabel={t.a11y.breadcrumb}
-        crumbs={[{ label: t.site.name, href: href(locale, 'home') }, { label: t.nav.rdi }]}
       />
 
       {/*
@@ -47,8 +64,9 @@ export default function RdiView({ locale }: { locale: Locale }) {
        * group's worldwide trial programme (client briefing, 2026-09-13), while the one
        * beside it is the Moroccan campaigns alone. Both are figures the client gives us
        * — the Moroccan one was a count of the trial pages until the briefing of
-       * 2026-09-18 set it at 117, the same number the About page quotes. The plates are
-       * still counted off the trials themselves.
+       * 2026-09-18 set it at 117, then 24 on 2026-10-18; the About page quotes the same
+       * number. The result sheets (37) and the first campaign (2012) are the client's
+       * figures too since that briefing.
        */}
       <section className={s.stats}>
         <div className={`page ${s.statsInner}`}>
@@ -61,11 +79,11 @@ export default function RdiView({ locale }: { locale: Locale }) {
             <p className={s.statLabel}>{t.rdi.statTrials}</p>
           </Reveal>
           <Reveal className={s.stat} delay={180}>
-            <p className={s.statNumber}>{TRIALS.reduce((n, x) => n + x.images.length, 0)}</p>
+            <p className={s.statNumber}>37</p>
             <p className={s.statLabel}>{t.rdi.statPlates}</p>
           </Reveal>
           <Reveal className={s.stat} delay={270}>
-            <p className={s.statNumber}>2016</p>
+            <p className={s.statNumber}>2012</p>
             <p className={s.statLabel}>{t.rdi.statSince}</p>
           </Reveal>
         </div>
@@ -116,8 +134,28 @@ export default function RdiView({ locale }: { locale: Locale }) {
           </Reveal>
 
           <ul className={s.papers}>
-            {PUBLICATIONS.map((article, i) => {
-              const date = articleDate(article);
+            {PAPERS.map((paper, i) => {
+              /* Papers with no page of their own: the card is the download. */
+              if ('doc' in paper) {
+                const { doc } = paper;
+                return (
+                  <Reveal key={doc.slug} as="li" delay={(i % 3) * 70} className={s.paper}>
+                    <a className={s.paperLink} href={doc.file} download>
+                      <span className={s.paperMeta}>
+                        <span>{publicationDocumentDate(doc, locale)}</span>
+                        <span className={s.pdf}>
+                          {doc.file.split('.').pop()!.toUpperCase()}
+                          {doc.bytes ? ` · ${Math.round(doc.bytes / 1024)} ${t.article.sizeUnit}` : ''}
+                        </span>
+                      </span>
+                      <span className={s.paperTitle}>{doc.title}</span>
+                      <span className={s.paperExcerpt}>{doc.source}</span>
+                    </a>
+                  </Reveal>
+                );
+              }
+
+              const { article, date } = paper;
               const pdf = articlePdf(article.slug);
 
               return (
@@ -138,6 +176,12 @@ export default function RdiView({ locale }: { locale: Locale }) {
               );
             })}
           </ul>
+
+          {/* The soil-biology film closes the publications, folded behind its title like the
+              stand video on the press page (client's e-mail, 2026-10-30). */}
+          <Reveal className={s.film}>
+            <VideoFold title={t.rdi.soilVideo} embed={SOIL_VIDEO} />
+          </Reveal>
         </div>
       </section>
     </>

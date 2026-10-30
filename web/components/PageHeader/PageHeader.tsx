@@ -24,6 +24,7 @@ export default function PageHeader({
   accent,
   image,
   intro,
+  wide,
 }: {
   title: string;
   lead?: string;
@@ -38,6 +39,11 @@ export default function PageHeader({
   accent?: string;
   /** Background photograph, from data/hero-images.ts. */
   image?: string;
+  /**
+   * A long title meant to hold one line on a desktop — R&D + I's "Moreco / R&D + I /
+   * Recherche & Développement Moreco" (2026-10-18). Smaller type, no width cap.
+   */
+  wide?: boolean;
 }) {
   return (
     <header
@@ -66,7 +72,7 @@ export default function PageHeader({
         )}
 
         {eyebrow && <p className={s.eyebrow}>{eyebrow}</p>}
-        <h1 className={s.title}>{title}</h1>
+        <h1 className={wide ? `${s.title} ${s.titleWide}` : s.title}>{title}</h1>
         {intro ? (
           <div className={s.intro}>
             <h2 className={s.introTitle}>{intro.title}</h2>

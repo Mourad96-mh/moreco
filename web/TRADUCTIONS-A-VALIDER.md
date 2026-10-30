@@ -513,3 +513,316 @@ benchmark. » **FR, ES et NL sont de nous** (`pages.products.title`, `pages.prod
 
 L'ancienne ligne « Moreco : Ensemble, faisons de votre culture une référence. » a disparu
 des quatre langues.
+
+## 17. Briefing du 2026-10-21 — introduction OSA, titres des encadrés Spécialités et Sol
+
+Le client a écrit le français. **EN, ES et NL sont de nous** :
+
+| Où | Langue | Nouveau texte |
+| --- | --- | --- |
+| `segments.agri.introTitle` | FR | Innovation OSA : Biodisponibilité Maximale & Performance des Cultures |
+| | EN | OSA Innovation: Maximum Bioavailability & Crop Performance |
+| | ES | Innovación OSA: Máxima biodisponibilidad y rendimiento de los cultivos |
+| | NL | OSA-innovatie: maximale biobeschikbaarheid & gewasprestaties |
+| `data/family-notes.ts` → `specialties.title` | FR | Innovation OSA Pure \| Anti-Stress Abiotique & Rendement Maximal |
+| | EN | Pure OSA Innovation \| Abiotic Anti-Stress & Maximum Yield |
+| | ES | Innovación Pure OSA \| Antiestrés abiótico y rendimiento máximo |
+| | NL | Pure OSA-innovatie \| Anti-abiotische stress & maximale opbrengst |
+| `data/family-notes.ts` → `soil.title` | FR | Exploitez la puissance de la biologie des sols : réduisez les coûts et optimisez la récolte. |
+| | EN | Harness the power of soil biology: reduce costs and optimise the harvest. |
+| | ES | Aproveche el poder de la biología del suelo: reduzca los costes y optimice la cosecha. |
+| | NL | Benut de kracht van de bodembiologie: verlaag de kosten en optimaliseer de oogst. |
+
+`segments.agri.intro` passe de deux paragraphes à un seul, traduit de la même façon.
+
+**FAQ sous les encadrés verts.** Deux questions sous Spécialités, Oligo-éléments &
+biostimulants et HIGH END NPK, en barres vertes repliables comme l'encadré. Le texte est
+dans `data/family-faqs.ts` : **EN, ES et NL sont de nous**, les six questions et réponses
+entières. Deux coquilles du français corrigées : « récolte and du transport » → « et »,
+« leur mobility interne » → « mobilité ». Santé du sol et Désinfectant n'ont pas de FAQ.
+
+**Publications scientifiques (R&D + I).** Une seule liste, strictement de la plus récente
+à la plus ancienne : 2017–2018, 2013, 2012, 2009, 2005. L'entretien sur le silicium (2013)
+n'est plus épinglé en tête, et les documents téléchargeables ne sont plus relégués après
+les articles. Rien à traduire.
+
+**Technologie Moreco (Médias & Actus).** `news.techTitle` : « unique » devient « bioactive »
+(EN Bioactive, ES bioactiva, NL Bioactieve). Le texte complet est arrivé avec la version
+française du briefing, renvoyée le 2026-10-22 : `news.techText` reprend ses trois
+paragraphes (« Moreco valide et distribue… », « Cette technologie moléculaire OSA… »,
+« En intégrant l'innovation scientifique… »), la signature « MORECO — One World. One
+Health. » étant déjà affichée sous le bloc. **EN, ES et NL sont de nous** ; les phrases
+communes avec « À Propos de Moreco » (Services & conseils) reprennent mot pour mot la
+traduction de cette page.
+
+Les trois cartes Plante / Humain / Animal à droite de ce bloc sont retirées, et avec
+elles `news.techPillars` des quatre dictionnaires.
+
+Plus bas sur la même page, le logo MORECO qui illustrait l'article « Produits Moreco »
+(5 novembre 2014) est retiré ; l'article garde son texte, sur toute la largeur.
+
+Le texte de cet article change (`data/pages.json` → `news`, 3e bloc) : « Depuis 2012,
+Moreco valide et distribue des solutions brevetées… ». **EN, ES et NL sont de nous.**
+Coquille corrigée : « En collaboration with » → « avec ». Le titre reste « Produits
+Moreco » (Moreco products, Productos Moreco, Moreco-producten).
+
+**Services & conseils — « À Propos de Moreco ».** L'introduction de la page (`data/pages.json`
+→ `services`, avant la première image) est remplacée par le texte du client : titre,
+deux paragraphes, l'intertitre « Notre Mission & Notre Savoir-Faire », trois paragraphes,
+puis la signature « MORECO — One World. One Health. ». **EN, ES et NL sont de nous.**
+Le surtitre « Applications produits » au-dessus de l'ancien texte est retiré : le
+nouveau titre nomme Moreco. Les rangées Applications (Agri, Humains…) ne changent pas.
+Le briefing situe ces deux textes « en haut de moreco.ma » : ils sont en fait sur la page
+Agriculture & Horticulture (et, pour l'encadré Spécialités, aussi sur la page Produits).
+L'anglais garde l'orthographe américaine du texte qu'il remplace (« optimizes »).
+
+## 18. Briefing du 2026-10-22 — Postes vacants (Carrières)
+
+Quatre offres d'emploi de Moreco Maroc, publiées sur la page Carrières sous « Travailler
+chez MORECO » et au-dessus du formulaire de candidature (`data/jobs.ts`). Une offre par
+bandeau vert repliable ; le bouton « Postuler » descend au formulaire, et une phrase sous
+le titre demande d'indiquer l'intitulé du poste dans le message. **Le français est celui
+du client ; EN, ES et NL sont de nous.**
+
+- Senior Key Account Manager – Région d'expertise Agadir
+- Technicien Commercial – 5 postes (Agadir 3, Casablanca - Gharb 2)
+- Office Manager / Secrétaire Expérimentée
+- Senior Social Media & Content Creation Expert
+
+Choix de traduction à valider :
+
+- **(H/F)** devient (M/F) en anglais, (H/M) en espagnol, (m/v) en néerlandais.
+- **Technicien Commercial** : *Sales Technician*, *Técnico Comercial*, *Commercieel
+  Technicus*. Les intitulés anglais (Key Account Manager, Social Media Expert) restent
+  tels quels dans toutes les langues, comme le fait le client en français.
+- **CDI** et **mutuelle** sont gardés entre parenthèses après leur traduction : ce sont
+  les termes du droit du travail marocain.
+- « cultures nationales » est rendu par « les cultures du Maroc » (*Moroccan crops*,
+  *cultivos del país*, *Marokkaanse gewassen*).
+- La note « (Note : aucune prime sur objectifs ne s'applique à ce poste) » de l'offre
+  Office Manager a été retirée le 2026-10-30 à la demande du client (une traduction
+  automatique restée par erreur dans le briefing).
+
+Pas de date limite de candidature dans le briefing : les offres restent en ligne jusqu'à
+ce que le client demande de les retirer.
+
+## 19. Briefing du 2026-10-23 — FAQ Santé du sol et des racines
+
+Quatre questions sous l'encadré vert Santé du sol, en barres vertes repliables comme
+celles des autres familles (`data/family-faqs.ts`). **Le français est celui du client ;
+EN, ES et NL sont de nous.** Le client numérote 1, 2, 3, 5 : aucune question 4 n'a été
+reçue, les quatre sont publiées à la suite.
+
+Corrections du français :
+
+- « Soil Conditioner 4THoptimisent » → « Soil Conditioner 4TH optimisent » ; « tels que
+  Orthagrow » → « tels qu'Orthagrow ».
+- « La technologie brevetée A.O.S. Technology de Moreco fournit du silicium… (OSA) » →
+  « La technologie brevetée de Moreco fournit du silicium… (OSA) » : le site dit OSA
+  partout, et la question elle-même parle de « technologie OSA ».
+- « deviennent maximaux mobiles et assimilables » → « deviennent pleinement mobiles et
+  assimilables ».
+- « (Azote, Phosphore, Potassium) » en minuscules ; « 100% » → « 100 % ».
+
+Choix de traduction à valider :
+
+- **Orthagrow Granulé** : *Orthagrow Granule* en anglais et en néerlandais (nom de la
+  fiche produit), *Granulé* gardé en espagnol.
+- **amendements de sol** : *soil conditioners*, *enmiendas de suelo*, *bodemverbeteraars*.
+- **stress salin (salinité)** : *salt stress (soil salinity)*, *estrés salino
+  (salinidad)*, *zoutstress (verzilting)*.
+
+**Arabe.** Le client a demandé la FAQ aussi en arabe, mais le site n'a plus de version
+arabe depuis le 2026-09-17 : rien n'est publié en arabe.
+
+## 20. Briefing du 2026-10-24 — titre d'accueil et présentation « À propos »
+
+**Le français est celui du client ; EN, ES et NL sont de nous.**
+
+| Où | Contenu |
+| --- | --- |
+| `home.introTitle` | « Haute performance des cultures » remplace « L'innovation agronomique au service d'une agriculture régénérative » ; « MORECO » reste au-dessus du titre |
+| `about.introTitle`, `about.introText`, `about.introPoints` | nouvelle présentation sous le titre et ses cinq piliers de rentabilité, en liste à puces |
+
+Le bloc « Notre vision » qui suit n'a pas été touché.
+
+Corrections du français : apostrophes typographiques, « Acide Orthosilicique » →
+« acide orthosilicique ».
+
+Choix de traduction à valider :
+
+- **Haute performance des cultures** : *High crop performance*, *Alto rendimiento de los
+  cultivos*, *Hoge gewasprestaties*.
+- **Zéro résidu bloquant** : *Zero blocking residues*, *Cero residuos bloqueantes*, *Nul
+  blokkerende residuen*.
+
+## 21. Briefing du 2026-10-24 — FAQ des fiches culturales
+
+Ressources > Fiches culturales : une carte par culture dans une grille de quatre (trois,
+deux, une selon l'écran), le flyer en haut et ses deux questions repliées dessous, à la
+même largeur. Les 22 cultures suivent l'ordre du briefing ; la tomate et la betterave
+sucrière ont été ajoutées. Flyers reçus le 2026-10-24 pour 21 cultures ; la myrtille, sans
+flyer, a été retirée à la demande du client (ses questions restent dans l'historique git) ; le flyer Blé du même envoi est mis de côté, le blé ne
+faisant pas partie des 22 cultures.
+**Le français est celui du client ; EN, ES et NL sont de nous.**
+
+Corrections du français :
+
+- « Orthagrow Gamma » → « la gamme Orthagrow » et « le Moreco gamma » → « la gamme
+  Moreco » (*gamma* est le mot néerlandais), avec l'accord qui suit (« prévient-elle »,
+  « aide-t-elle »…).
+- « (orthosilicic acid) » → « (acide orthosilicique) ».
+- Noms de produits alignés sur les fiches : « MYCO4G » → « MYCO 4G », « Orthagrow
+  granule » → « Orthagrow Granulé », « topline » → « Topline », « control » → « Control ».
+- Mots néerlandais restés dans le texte : « sapstroom » → « flux de sève » (pêcher),
+  « fysiologique » → « physiologique » (pêcher), « knollen creuses » → « tubercules
+  creux » (pomme de terre), « Antwoord » → réponse (poivron).
+- Espaces manquantes : « creasingchez », « cinerea(pourriture », « controlcombinée ».
+- « maximalise » → « maximise » (betterave) ; vigne : « renforce les parois cellulaires
+  d'un bouclier » → « dote les parois cellulaires d'un bouclier ».
+
+Choix de traduction à valider :
+
+- **gamme Orthagrow / gamme Moreco** : *Orthagrow range*, *gama Orthagrow*,
+  *Orthagrow-gamma*.
+- **Orthagrow Granulé** : *Granule* en anglais et en néerlandais, *Granulé* en espagnol,
+  comme à la section 19.
+- **nécrose / pourriture apicale** : *blossom-end rot*, *podredumbre apical*, *neusrot*.
+- **verse** : *lodging*, *encamado*, *legering*.
+- **roussissure** : *russeting*, *russeting*, *ruwschilligheid*.
+- **brodequinage** (melon) : *netting*, *reticulado*, *netvorming*.
+- **fendage du noyau** : *split pit*, *rotura del hueso*, *gespleten pit*.
+- **cœur creux** : *hollow heart*, *corazón hueco*, *holheid*.
+- **helminthosporiose, charbon** (maïs) : *northern leaf blight, smut* ;
+  *helmintosporiosis, carbón* ; *Helminthosporium, builenbrand*.
+- **taux butyreux** : *butterfat content*, *contenido de grasa*, *vetgehalte*.
+- **Télécharger le flyer** (bouton sous chaque fiche) : *Download the flyer*,
+  *Descargar el folleto*, *Flyer downloaden*.
+- **haricot vert** : *judías* en espagnol (Espagne) ; à remplacer par *ejotes* ou
+  *porotos verdes* si le site vise l'Amérique latine.
+
+## 22. Envoi du 2026-10-24 — essais ICARDA 2020 (Publication scientifique)
+
+R&D + I > Publication scientifique : les quatre rapports ICARDA Rabat (Dr. El Fakhouri K.,
+station de Marchouch, 2020) — fève, pois chiche, lentille, blé tendre — sont publiés en
+téléchargement PDF, tels que reçus, en tête de la liste. Les titres restent dans la langue
+du document, comme les autres publications : le rapport blé est titré en anglais.
+
+Points à faire corriger par le client dans les PDF (rien n'a été modifié) :
+
+- **Pois chiche** : le texte dit que l'infestation baisse pour Moubarak (4,5 → 4) ; le
+  tableau 3 donne 4,5 → 4,5 pour Moubarak et 5 → 4 pour Farrihane.
+- **Lentille** : « 15 days » au lieu de « 15 jours ».
+- **Pois chiche** : « l'effect » au lieu de « l'effet ».
+- **Blé et lentille**, traitement (3) : « trempage des graines dans l'eau avec l'application
+  foliaire d'Orthagrow Control » — un trempage avec une application foliaire ; à
+  reformuler (trempage dans une solution d'Orthagrow Control ?).
+
+## 23. Briefing final du 2026-10-29 — fiches produits, textes et FAQ des pages produits
+
+**Fiches produits (Ressources).** Les 17 flyers corrigés (« 2e contrôle ») s'ouvrent en
+aperçu recto-verso avant le téléchargement. Nouveaux libellés, de nous :
+
+- **Fiche produit / Fiche de données de sécurité** : *Product sheet / Safety data sheet*,
+  *Ficha de producto / Ficha de datos de seguridad*, *Productfiche /
+  Veiligheidsinformatieblad*.
+- **Voir le produit** : *View the product*, *Ver el producto*, *Bekijk het product*.
+
+À faire corriger dans le PDF AMINACTIF-4G : « Ila été » → « Il a été ».
+
+**Textes (points 7 à 9).** L'anglais du point 7 et le français du point 8 sont du client ;
+le reste est de nous :
+
+- **Scientific Research & Results** : *Recherche scientifique & résultats*,
+  *Investigación científica y resultados*, *Wetenschappelijk onderzoek & resultaten*.
+- **Suivez notre actualité…** : *Follow our news: the latest updates, press releases and
+  events from Moreco.* ; *Siga nuestra actualidad: las últimas novedades, los comunicados
+  de prensa y los eventos de Moreco.* ; *Volg ons nieuws: de laatste nieuwtjes,
+  persberichten en evenementen van Moreco.*
+- **Moreco SIAM Meknes** (titre de la vidéo) : *Moreco SIAM Meknès* en français,
+  *Moreco SIAM Mequinez* en espagnol.
+
+**FAQ des pages produits** (« Moreco Product Pages SEO & FAQ »), deux questions en bas de
+chacune des 17 pages produits, sous le titre *Questions fréquentes* (*Frequently asked
+questions*, *Preguntas frecuentes*, *Veelgestelde vragen*), dans `data/product-faqs.ts`.
+**Le français est celui du client ; EN, ES et NL sont de nous.** Les méta-titres et
+méta-descriptions ne sont publiés qu'en français : ils visent des régions marocaines.
+
+Corrections du français :
+
+- Granule et Fertifight : « une gavage précoce », « la gavage des spores » →
+  « une germination précoce », « la germination des spores ».
+- « coeur » → « cœur » ; « Si(OH)4 », « H2O », « O2 » → *Si(OH)₄*, *H₂O*, *O₂* ;
+  « 40% », « 95% », « 100% » → « 40 % », « 95 % », « 100 % » ; « 1,71 - 1,75 g/ml » →
+  « 1,71 – 1,75 g/ml ».
+- En italique, à la demande du client : *in situ*, *in vitro*, *Ascophyllum nodosum*,
+  *Phytophthora*, *Xanthomonas* (pas d'italique dans les méta-descriptions, que Google
+  affiche en texte brut).
+
+Choix de traduction à valider :
+
+- **phoeniciculture** : *date palm growing*, *cultivo de la palmera datilera*,
+  *dadelpalmteelt*. **KSA** : *Saudi Arabia*, *Arabia Saudí*, *Saoedi-Arabië*.
+- **cul noir (nécrose apicale)** : *blossom-end rot*, *podredumbre apical (necrosis
+  apical)*, *neusrot*.
+- **coulure** : *flower and fruitlet drop*, *caída de flores y frutitos*, *bloem- en
+  vruchtval*.
+- **relation source-puits** : *source–sink relationship*, *relación fuente-sumidero*,
+  *source-sinkrelatie*.
+- **CEC** : *CEC* en anglais et en néerlandais, *CIC* en espagnol.
+- **Dakhla** : *Dajla* en espagnol.
+- **Orthagrow Granule** : *Granulé* en espagnol, comme à la section 19.
+
+## 24. Envoi du 2026-10-30 — textes des fiches Betterave sucrière et Tomate
+
+Le texte du client s'affiche dans la fiche culturale, au-dessus des deux questions, comme
+pour les autres cultures (ni l’une ni l’autre n’en avait encore). **Le français est celui
+du client ; EN, ES et NL sont de nous.** La fiche ne prend que des paragraphes : les
+intertitres ouvrent chacun leur paragraphe et chaque puce devient un paragraphe qui commence par son libellé. Les lignes de titre
+(« Orthagrow Culture de la Betterave Sucrière Doukkala & Gharb : Prévention du Stress
+Abiotique », « Culture de la Tomate à Agadir & Dakhla : Prévention des Stress Salin,
+Thermique & Hydrique ») ne sont pas reprises, la fiche portant déjà le titre de la culture.
+
+Corrections du français : majuscules des intertitres et libellés en minuscules (« Triple
+prévention du stress abiotique… », « retour sur investissement ») ; « & » → « et » ;
+« ATP-ase » → « ATPase » ; « bio-disponible » → « biodisponible » (tomate) ; « 30% »,
+« +38% »… → « 30 % », « +38 % »… ; apostrophes typographiques.
+
+Choix de traduction à valider :
+
+- **Triple prévention** : *Threefold prevention*, *Triple prevención*, *Drievoudige
+  preventie*.
+- **conductance stomatique** : *stomatal conductance*, *conductancia estomática*,
+  *huidmondjesgeleiding*.
+- **tonnage racinaire** : *root tonnage*, *tonelaje de raíces*, *wortelgewicht*.
+- **Stress hydrique** : *Water stress*, *Estrés hídrico*, *Droogtestress*.
+- **Gharb** : laissé tel quel dans les trois langues.
+- **Triple résistance abiotique** (tomate) : *Threefold abiotic resistance*, *Triple
+  resistencia abiótica*, *Drievoudige abiotische weerstand*.
+- **nécrose apicale (Blossom-End Rot)** : *blossom-end rot*, *podredumbre apical (necrosis
+  apical)*, *neusrot*, comme à la section 23 ; l’anglais entre parenthèses n’est gardé
+  qu’en français.
+- **brûlure de la pointe** : *tip burn*, *quemadura de la punta*, *tipburn*.
+- **classe 1** : *class 1*, *categoría 1*, *klasse 1*. **Dakhla** : *Dajla* en espagnol.
+- **Orthagrow Cal 21% SC 4G** : nom du produit, « 21% » sans espace comme sur sa page.
+
+## 25. 2026-10-30 — fiche technique de Clearox
+
+Le client signale que la fiche technique n'est pas intégrée à la page Clearox. Les tableaux
+de la page 2 du flyer Clearox (2e contrôle, 2026-10-29) sont repris sous un titre
+*Fiche technique*, après les domaines d'application, sur les quatre pages Clearox
+(toutes concentrations, 50 %, 35 %, 25 %) : présentation du produit, méthodes
+d'application et dosages, contrôle qualité et stockage, traçabilité et sécurité. Le
+tableau « Domaines d'application » du flyer n'est pas repris : la liste déjà en ligne dit
+la même chose et cite l'élevage. **Le français est celui du flyer ; EN, ES et NL sont de
+nous.**
+
+À faire vérifier par le client : le traitement choc et l'élimination du biofilm sont tous
+deux à 50 ppm, mais l'un à 100 ml et l'autre à 50 ml pour 1 000 L ; repris tel quel.
+
+Choix de traduction à valider :
+
+- **Fiche technique** : *Technical sheet*, *Ficha técnica*, *Technische fiche*.
+- **Jar test** : gardé en anglais, *prueba en frasco (jar test)* en espagnol.
+- **Statut d'homologation** : *Approval status*, *Estado de homologación*,
+  *Homologatiestatus*.

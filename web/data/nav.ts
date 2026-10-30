@@ -96,21 +96,15 @@ export function mainNav(locale: Locale, t: Dictionary): NavItem[] {
 }
 
 /**
- * Company details, shown in the top bar and the footer.
- * Taken from the archived contact page (raw/contact/index.html) — to be confirmed with
- * the client before launch, the site had not been updated since 2019.
+ * Company details, shown in the top bar, the contact page and the footer.
+ * Name, address and number as the client set them in the e-mail of 2026-10-09: Moreco
+ * Maroc rather than Moreco Sarl, the Casablanca office, and a single landline — the
+ * mobiles are no longer published.
  */
 export const CONTACT = {
-  company: 'Moreco Sarl',
-  address: ['N° 2 Route El Jadida, 1ᵉʳ étage', 'Bd Mohammed VI', '26402 Had Soualem', 'Maroc'],
-  phones: [
-    { label: '+212 522 964 500', href: 'tel:+212522964500' },
-    { label: '+212 522 032 623', href: 'tel:+212522032623' },
-  ],
-  mobiles: [
-    { label: '+212 6 13 75 75 75', href: 'tel:+212613757575' },
-    { label: '+212 6 77 57 67 39', href: 'tel:+212677576739' },
-  ],
+  company: 'Moreco Maroc',
+  address: ['283 Bd Yacoub El Mansouri, 4ᵉ étage', '20200 Casablanca', 'Maroc'],
+  phones: [{ label: '+212 702 11 28 61', href: 'tel:+212702112861' }],
   email: 'info@moreco.ma',
   social: [
     { label: 'Facebook', href: 'https://www.facebook.com/Moreco.Maroc', icon: 'facebook' as const },

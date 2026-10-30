@@ -40,13 +40,46 @@
   color: rgb(255 255 255 / 0.66);
 }
 
-.rows {
+/*
+ * The campaigns as an accordion (client, 2026-10-09): one line per campaign, its number
+ * and title, and a chevron that turns over when the panel is open on the plates.
+ */
+/*
+ * The campaigns, four to a row since the client's e-mail of 2026-10-23. Each is a card
+ * (components/TrialDialog) that opens its description and plates over the page.
+ */
+.trials {
+  --gap: clamp(0.75rem, 1.5vw, 1.25rem);
+  display: grid;
+  /* As many cards as fit, four at most, none narrower than its longest title on one line
+     ("Resultaten bij citrusvruchten"). */
+  grid-template-columns: repeat(auto-fill, minmax(max(min(100%, 300px), (100% - 3 * var(--gap)) / 4), 1fr));
+  gap: var(--gap);
   margin-top: clamp(1rem, 2vw, 2rem);
 }
 
-/* A hairline between rows keeps seventeen of them from reading as one long column. */
-.rows > * + * {
-  border-top: 1px solid var(--line);
+.trialDescription {
+  max-width: 78ch;
+  margin: 0;
+  color: var(--ink-2);
+}
+
+.trialPlates {
+  display: grid;
+  gap: 1rem;
+}
+
+.trialPlate {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--paper-2);
+}
+
+.trialLink {
+  justify-self: start;
+  font-weight: 600;
 }
 
 /*
@@ -60,6 +93,11 @@
   margin: clamp(1.5rem, 3vw, 2.5rem) 0 0;
   padding: 0;
   list-style: none;
+}
+
+/* The soil-biology film, folded under the last paper. */
+.film {
+  margin-top: clamp(2rem, 4vw, 3rem);
 }
 
 .paper {
@@ -174,4 +212,119 @@
   margin-top: 1.75rem;
   padding-top: 1.25rem;
   border-top: 1px solid var(--line);
+}
+
+/* The trial reports: one card per download, the same shape as the datasheets on Resources. */
+.documents {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  gap: 0.75rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.documents li {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+
+.document {
+  display: grid;
+  gap: 0.25rem;
+  height: 100%;
+  padding: 0.9rem 1.1rem;
+  text-decoration: none;
+}
+
+.documentName {
+  font-weight: 600;
+}
+
+.documentDate {
+  font-size: 0.88rem;
+  color: var(--ink-2);
+}
+
+.documentKind {
+  font-size: 0.82rem;
+  color: var(--ink-3);
+}
+
+.document:hover .documentName {
+  color: var(--green-dark);
+  text-decoration: underline;
+}
+
+/* The growers' testimonials: two field photos over the quote, the video card among them. */
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
+  margin: clamp(1.5rem, 3vw, 2.5rem) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+}
+
+.testimonialPhotos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+}
+
+.testimonialPhotos img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.testimonialVideo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 352 / 640;
+  max-height: 34rem;
+  background: #000;
+}
+
+.testimonialBody {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 0;
+  padding: clamp(1.1rem, 2vw, 1.5rem);
+}
+
+.testimonialMeta {
+  font-size: var(--step--1);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--green-dark);
+}
+
+.testimonialQuote {
+  margin: 0;
+}
+
+.testimonialQuote p {
+  margin: 0;
+  line-height: 1.55;
+}
+
+.testimonialName {
+  margin: auto 0 0;
+  font-size: var(--step--1);
+  color: var(--ink-2);
 }

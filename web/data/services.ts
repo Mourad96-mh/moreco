@@ -21,13 +21,16 @@ export interface ServiceSection {
   target: SegmentKey | 'rdi' | null;
 }
 
+/** A paragraph, or a subheading within the intro (briefing of 2026-10-21). */
+export type IntroBlock = { type: 'paragraph' | 'heading'; text: string };
+
 export interface ServicesContent {
   introTitle: string | null;
-  introText: string | null;
+  intro: IntroBlock[];
   sections: ServiceSection[];
 }
 
-type Block = { type: string; text?: string; items?: string[]; src?: string };
+type Block = { type: string; level?: number; text?: string; items?: string[]; src?: string };
 type PageStore = Record<string, Partial<Record<Locale, Block[]>>>;
 const PAGES = pages as PageStore;
 
@@ -62,9 +65,17 @@ export function servicesContent(locale: Locale): ServicesContent {
   const firstImage = blocks.findIndex((b) => b.type === 'image');
   const head = blocks.slice(0, firstImage < 0 ? blocks.length : firstImage);
 
-  /* The opening h2 only repeats the page title; the h3 under it is the real statement. */
-  const introTitle = head.filter((b) => b.type === 'heading').at(-1)?.text ?? null;
-  const introText = head.find((b) => b.type === 'paragraph')?.text ?? null;
+  /*
+   * The opening h2 only repeats the page title; the h3 under it is the real statement.
+   * Since 2026-10-21 the client's "À propos de Moreco" text follows it: paragraphs, and
+   * one subheading (level 4) part-way down.
+   */
+  const titleAt = head.findIndex((b) => b.type === 'heading' && b.level === 3);
+  const introTitle = titleAt < 0 ? null : (head[titleAt].text ?? null);
+  const intro: IntroBlock[] = head
+    .slice(titleAt + 1)
+    .filter((b) => (b.type === 'paragraph' || b.type === 'heading') && b.text)
+    .map((b) => ({ type: b.type as IntroBlock['type'], text: b.text! }));
 
   const sections: ServiceSection[] = [];
 
@@ -92,5 +103,9 @@ export function servicesContent(locale: Locale): ServicesContent {
 
   sections.sort((a, b) => rank(a.target) - rank(b.target));
 
-  return { introTitle, introText, sections };
+  // The general-use row ("Applications pour utilisation générale") came off at the
+  // client's request of 2026-10-08; the archive text stays in pages.json.
+  const shown = sections.filter((section) => section.target !== 'general');
+
+  return { introTitle, intro, sections: shown };
 }

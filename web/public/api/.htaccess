@@ -1,0 +1,15 @@
+# candidature-config.php holds the mailbox password, mailer.php and essais-lib.php only
+# the code the scripts share, essais-routes.php a table of paths: none of them is ever
+# served, even as source.
+<FilesMatch "^(candidature-config|mailer|essais-lib|essais-routes)">
+  Require all denied
+</FilesMatch>
+
+# The trial plates and reports leave essais-gate.php as image/webp and application/pdf.
+# The root .htaccess gives those types a year of public caching; a proxy keeping one
+# would hand it to visitors without access. The gate sets its own private caching.
+<Files "essais-gate.php">
+  <IfModule mod_expires.c>
+    ExpiresActive Off
+  </IfModule>
+</Files>

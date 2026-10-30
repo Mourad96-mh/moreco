@@ -67,6 +67,18 @@ for (const p of built) byLocale.get(p.split('/')[0]).push(p);
 const wordTable = JSON.parse(readFileSync(join(ROOT, 'data', 'route-words.json'), 'utf8'));
 const vocab = [...Object.values(wordTable.words), ...Object.values(wordTable.segments)];
 
+/**
+ * The trial results, locked since 2026-10-30: only visitors Moreco has approved get past
+ * public/api/essais-gate.php. Their paths per language, and the page that asks for access.
+ */
+const LOCKED = Object.fromEntries(
+  LOCALES.map((l) => [l, `${l}/${wordTable.words.resources[l]}/${wordTable.words.trials[l]}`])
+);
+const ACCESS = Object.fromEntries(
+  LOCALES.map((l) => [l, `${l}/${wordTable.words.resources[l]}/${wordTable.words.trialsAccess[l]}`])
+);
+const isLocked = (path) => Object.values(LOCKED).some((p) => path === p || path.startsWith(`${p}/`));
+
 const translateSegment = (segment, from, to) => {
   const entry = vocab.find((v) => v[from] === segment);
   return entry ? entry[to] : segment;
@@ -111,18 +123,18 @@ const RULES = [
      split the animal catalogue by species; its old URL lands on the segment page,
      which is where the four sub-categories are chosen. */
   ['/des-animaux/orthahealth-fr/', 'fr', 'produits/animaux'],
-  ['/des-animaux/huwa-san-for-animals/', 'fr', 'produits/emploi-general/huwa-san-pro'],
+  ['/des-animaux/huwa-san-for-animals/', 'fr', 'produits/emploi-general'],
   ['/emploi-general/', 'fr', 'produits/emploi-general'],
-  ['/emploi-general/gamme-de-produits-huwa-san/', 'fr', 'produits/emploi-general/huwa-san-pro'],
-  ['/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/', 'fr', 'produits/emploi-general/huwa-san-pro'],
+  ['/emploi-general/gamme-de-produits-huwa-san/', 'fr', 'produits/emploi-general'],
+  ['/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/', 'fr', 'produits/emploi-general'],
   ['/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/agriculture/', 'fr', 'produits/emploi-general/huwa-san-pro/huwa-san-agro'],
-  ['/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/veterinaire/', 'fr', 'produits/emploi-general/huwa-san-pro/huwa-san-vet'],
-  ['/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/aliments-et-boissons/', 'fr', 'produits/emploi-general/huwa-san-pro/huwa-san-fb'],
-  ['/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/hard-surface/', 'fr', 'produits/emploi-general/huwa-san-pro/huwa-san-hard-surface'],
-  ['/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/traitement-de-leau/', 'fr', 'produits/emploi-general/huwa-san-pro/huwa-san-water-treatment'],
-  ['/emploi-general/gamme-de-produits-huwa-san/hygiene-home/', 'fr', 'produits/emploi-general/huwa-san-home'],
-  ['/emploi-general/gamme-de-produits-huwa-san/pool/', 'fr', 'produits/emploi-general/huwa-san-pool'],
-  ['/emploi-general/bioxeco/', 'fr', 'produits/emploi-general/bioxeco'],
+  ['/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/veterinaire/', 'fr', 'produits/emploi-general/clearox/clearox'],
+  ['/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/aliments-et-boissons/', 'fr', 'produits/emploi-general'],
+  ['/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/hard-surface/', 'fr', 'produits/emploi-general'],
+  ['/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/traitement-de-leau/', 'fr', 'produits/emploi-general/clearox/clearox'],
+  ['/emploi-general/gamme-de-produits-huwa-san/hygiene-home/', 'fr', 'produits/emploi-general'],
+  ['/emploi-general/gamme-de-produits-huwa-san/pool/', 'fr', 'produits/emploi-general'],
+  ['/emploi-general/bioxeco/', 'fr', 'produits/emploi-general'],
   ['/emploi-general/produit-clearox/', 'fr', 'produits/emploi-general/clearox/clearox'],
 
   // Catalogue — English
@@ -143,18 +155,18 @@ const RULES = [
   ['/humans/mavita-productline/mavita-stress-plex/', 'en', 'products/humans/mavita/mavita-stress-plex'],
   ['/animals/', 'en', 'products/animals'],
   ['/animals/orthahealth/', 'en', 'products/animals'],
-  ['/animals/huwa-san-for-animals/', 'en', 'products/general-use/huwa-san-pro'],
+  ['/animals/huwa-san-for-animals/', 'en', 'products/general-use'],
   ['/general-use/', 'en', 'products/general-use'],
-  ['/general-use/huwa-san-productline/', 'en', 'products/general-use/huwa-san-pro'],
-  ['/general-use/huwa-san-productline/professional-disinfection-2/', 'en', 'products/general-use/huwa-san-pro'],
+  ['/general-use/huwa-san-productline/', 'en', 'products/general-use'],
+  ['/general-use/huwa-san-productline/professional-disinfection-2/', 'en', 'products/general-use'],
   ['/general-use/huwa-san-productline/professional-disinfection-2/agriculture/', 'en', 'products/general-use/huwa-san-pro/huwa-san-agro'],
-  ['/general-use/huwa-san-productline/professional-disinfection-2/veterinary/', 'en', 'products/general-use/huwa-san-pro/huwa-san-vet'],
-  ['/general-use/huwa-san-productline/professional-disinfection-2/food-beverage/', 'en', 'products/general-use/huwa-san-pro/huwa-san-fb'],
-  ['/general-use/huwa-san-productline/professional-disinfection-2/hard-surface/', 'en', 'products/general-use/huwa-san-pro/huwa-san-hard-surface'],
-  ['/general-use/huwa-san-productline/professional-disinfection-2/water-treatment/', 'en', 'products/general-use/huwa-san-pro/huwa-san-water-treatment'],
-  ['/general-use/huwa-san-productline/hygiene-home/', 'en', 'products/general-use/huwa-san-home'],
-  ['/general-use/huwa-san-productline/pool/', 'en', 'products/general-use/huwa-san-pool'],
-  ['/general-use/bioxeco/', 'en', 'products/general-use/bioxeco'],
+  ['/general-use/huwa-san-productline/professional-disinfection-2/veterinary/', 'en', 'products/general-use/clearox/clearox'],
+  ['/general-use/huwa-san-productline/professional-disinfection-2/food-beverage/', 'en', 'products/general-use'],
+  ['/general-use/huwa-san-productline/professional-disinfection-2/hard-surface/', 'en', 'products/general-use'],
+  ['/general-use/huwa-san-productline/professional-disinfection-2/water-treatment/', 'en', 'products/general-use/clearox/clearox'],
+  ['/general-use/huwa-san-productline/hygiene-home/', 'en', 'products/general-use'],
+  ['/general-use/huwa-san-productline/pool/', 'en', 'products/general-use'],
+  ['/general-use/bioxeco/', 'en', 'products/general-use'],
   ['/general-use/clearox/', 'en', 'products/general-use/clearox/clearox'],
 
   // R&D + I, knowledge centre, editorial.
@@ -235,6 +247,29 @@ for (const [slug, [words, segment, range], target] of WITHDRAWN) {
   }
 }
 
+/*
+ * General use was cut down to Clearox on 2026-10-18. The ranges and products that went
+ * send their visitors to the General use page. Huwa-San Professionnel lost its range
+ * page but keeps AGRO, which the Agriculture disinfectant family shows. VET and Water
+ * Treatment, which Animals showed, went on 2026-10-30 and send theirs to Clearox.
+ */
+const GENERAL_WITHDRAWN = {
+  'huwa-san-pro': ['huwa-san-fb', 'huwa-san-hard-surface'],
+  'huwa-san-home': ['huwa-san-hands', 'huwa-san-toilet', 'huwa-san-bathroom', 'huwa-san-fruit-vegetables', 'huwa-san-kitchen'],
+  'huwa-san-pool': ['huwa-san-kiddiepool', 'huwa-san-minipool', 'huwa-san-pool', 'huwa-san-whirlpool', 'huwa-san-wellness'],
+  bioxeco: ['bioxeco-hand', 'bioxeco-25s', 'bioxeco-dw', 'bioxeco-fog'],
+};
+for (const locale of LOCALES) {
+  const segment = `${wordTable.words.products[locale]}/${wordTable.segments.general[locale]}`;
+  for (const [range, slugs] of Object.entries(GENERAL_WITHDRAWN)) {
+    addRule(`/${locale}/${segment}/${range}/`, locale, segment);
+    for (const slug of slugs) addRule(`/${locale}/${segment}/${range}/${slug}/`, locale, segment);
+  }
+  for (const slug of ['huwa-san-vet', 'huwa-san-water-treatment']) {
+    addRule(`/${locale}/${segment}/huwa-san-pro/${slug}/`, locale, `${segment}/clearox/clearox`);
+  }
+}
+
 for (const [slug, trial] of Object.entries(TRIALS)) {
   addRule(`/research/${slug}/`, 'fr', `${TRIAL_PREFIX.fr}/${trial}`);
 }
@@ -279,12 +314,50 @@ for (const entry of index) {
 
 /* --------------------------------------------------------------- .htaccess */
 
+/** An old path as a RedirectMatch pattern: decoded, regex-escaped, trailing slash optional. */
+function exactPath(from) {
+  let path = from;
+  try {
+    path = decodeURI(from);
+  } catch {
+    // A malformed escape stays as written.
+  }
+  const escaped = path.replace(/\/+$/, '').replace(/[.*+?^${}()|[\]\\"]/g, '\\$&');
+  return `${escaped}/?`;
+}
+
 const dead = [...map.entries()].filter(([, to]) => !existsSync(join(OUT, to.slice(1), 'index.html')));
 
 const htaccess = `# Generated by scripts/finalize-export.mjs — do not edit by hand.
 
 Options -MultiViews
 DirectoryIndex index.html
+
+# One address only: https://moreco.ma. Without this, http:// and www. both answer 200,
+# and Google indexes the http:// copy. Plesk's nginx passes the original scheme on to
+# Apache, so %{HTTPS} is reliable here.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off [OR]
+  RewriteCond %{HTTP_HOST} ^www\\. [NC]
+  RewriteRule ^ https://moreco.ma%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+# The trial results open only to visitors Moreco has approved (2026-10-30). Their pages,
+# the data Next.js fetches for them, the plates and the reports all go through
+# api/essais-gate.php, which serves them against the access cookie and sends everyone else
+# to the request page. Without mod_rewrite they would be open: refuse them instead.
+<IfModule mod_rewrite.c>
+${Object.values(LOCKED)
+  .map((p) => `  RewriteCond %{REQUEST_URI} ^/${p}(/|$) [OR]`)
+  .join('\n')}
+  RewriteCond %{REQUEST_URI} ^/media/research/[^/]+$ [OR]
+  RewriteCond %{REQUEST_URI} ^/media/research/documents/
+  RewriteRule ^ /api/essais-gate.php [L]
+</IfModule>
+<IfModule !mod_rewrite.c>
+  RedirectMatch 403 "^/(${Object.values(LOCKED).join('|')})(/|$)|^/media/research/([^/]+|documents/.*)$"
+</IfModule>
 
 # The bare domain is NOT redirected here on purpose. Apache can only read the first
 # token of Accept-Language, and a server redirect fires before the page can consult the
@@ -295,10 +368,14 @@ DirectoryIndex index.html
 # WPML served every language off the same paths with ?lang=xx, so the query string is
 # dropped here: the language now lives in the path. The old Arabic pages land on the
 # French or English page they were translated from — /ar/ no longer exists.
+# RedirectMatch anchored at both ends, not Redirect: Redirect matches by prefix, so
+# "/media/" sent every file under /media/ (all the images and videos) to the news page.
+# The pattern is the decoded path, as Apache compares it — the %d8%… spelling of the
+# Arabic addresses never matched anything.
 ${[...map.entries()]
   .filter(([from]) => from !== '/')
   .sort((a, b) => b[0].length - a[0].length)
-  .map(([from, to]) => `Redirect 301 ${from} ${to}`)
+  .map(([from, to]) => `RedirectMatch 301 "^${exactPath(from)}$" ${to}`)
   .join('\n')}
 
 <IfModule mod_deflate.c>
@@ -319,6 +396,16 @@ ErrorDocument 404 /404.html
 `;
 
 writeFileSync(join(OUT, '.htaccess'), htaccess, 'utf8');
+
+/* The same paths for the PHP side of the lock. A PHP file, not JSON: the server's PHP 5.6
+   has no json extension (see public/api/mailer.php). */
+const phpMap = (map) =>
+  `array(${Object.entries(map).map(([l, p]) => `'${l}' => '${p}'`).join(', ')})`;
+writeFileSync(
+  join(OUT, 'api', 'essais-routes.php'),
+  `<?php\n// Generated by scripts/finalize-export.mjs — do not edit by hand.\nreturn array('trials' => ${phpMap(LOCKED)}, 'access' => ${phpMap(ACCESS)});\n`,
+  'utf8'
+);
 
 /* ------------------------------------------------------------- vercel.json */
 
@@ -359,6 +446,7 @@ const landing = `<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Moreco</title>
+<meta name="google-site-verification" content="SROOQq4go2ALnO1e2Wfnuy5Sx1cwkWfHSc1bmrdopKo">
 <link rel="canonical" href="${SITE}/${DEFAULT}/">
 ${LOCALES.map((l) => `<link rel="alternate" hreflang="${l}" href="${SITE}/${l}/">`).join('\n')}
 <link rel="alternate" hreflang="x-default" href="${SITE}/${DEFAULT}/">
@@ -418,9 +506,12 @@ writeFileSync(join(OUT, 'index.html'), landing, 'utf8');
 
 /* ------------------------------------------------------------- sitemap.xml */
 
+/* The locked trial pages answer a search engine with a redirect: they stay out. */
+const listed = built.filter((p) => !isLocked(p));
+
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${built
+${listed
   .slice()
   .sort()
   .map((p) => {
@@ -453,7 +544,7 @@ writeFileSync(
 
 console.log(`landing page   out/index.html`);
 console.log(`redirects      ${map.size} rules -> out/.htaccess + vercel.json`);
-console.log(`sitemap        ${built.length} URLs, ${built.length * LOCALES.length} hreflang alternates`);
+console.log(`sitemap        ${listed.length} URLs, ${listed.length * LOCALES.length} hreflang alternates (${built.length - listed.length} locked trial pages left out)`);
 if (brokenAlternates.length) {
   const unique = [...new Set(brokenAlternates)];
   console.log(`\n  ${unique.length} HREFLANG ALTERNATES POINT AT A PAGE THAT WAS NOT BUILT:`);

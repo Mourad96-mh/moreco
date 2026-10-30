@@ -17,6 +17,62 @@
   color: var(--ink-2);
 }
 
+/* The questions under the box (2026-10-21): the same bar, stacked close beneath it. */
+.note.faq {
+  margin-top: 0.75rem;
+}
+
+/*
+ * Two to a row on a wide screen (2026-10-29), stacked below it; the grid's gap spaces the
+ * bars. Closed, the bars of a row share the tallest one's height, the question centred
+ * in it. Once one is open, each takes its own height again, so a closed bar does not
+ * stretch into a tall green block beside an open answer.
+ */
+.faqs {
+  display: grid;
+  gap: 0.75rem clamp(0.75rem, 2vw, 1.25rem);
+  align-items: stretch;
+  margin-top: 0.75rem;
+}
+
+.faqs:has(> [open]) {
+  align-items: start;
+}
+
+.faqs > .note.faq {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+}
+
+/* Where a browser does not lay out <details> as flex, the closed box is filled green so
+   the bar still reads as one height. */
+.faqs > .note.faq:not([open]) {
+  background: var(--green);
+}
+
+.faqs > .note.faq > .summary {
+  flex: 1 0 auto;
+}
+
+@media (min-width: 860px) {
+  .faqs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* One line or two, the question sits level with the chevron. */
+.faq .summary {
+  align-items: center;
+}
+
+/* A question runs longer than a title: a step smaller, so it keeps to two lines or so. */
+.title.question {
+  font-size: var(--step-0);
+  font-weight: 600;
+  min-width: 0;
+}
+
 .summary {
   display: flex;
   align-items: flex-start;

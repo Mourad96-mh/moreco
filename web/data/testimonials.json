@@ -1,0 +1,92 @@
+{
+  "_comment": "Farmer testimonials from the client's deck 'Orthagrow Testimonials 2018–2019' (e-mail of 2026-10-07), shown on Resources > Trial results. The deck is in English; the other languages are our translation of it. Farmer portraits were removed from the deck for privacy — only crop and field photos are kept, and the site does the same. Photos are under public/media/research/testimonials/ (converted from the deck, max 1000 px tall); the video is the deck's potato testimony re-encoded from 27 MB to H.264.",
+  "testimonials": [
+    {
+      "slug": "melon-sidi-kasim-2018",
+      "year": 2018,
+      "crop": { "fr": "Melon jaune", "en": "Yellow melon", "es": "Melón amarillo", "nl": "Gele meloen" },
+      "quote": {
+        "en": "After application of Orthagrow Soil Conditioner, we observed an enormous difference already after 2 days, with faster growth and more uniform vegetation.",
+        "fr": "Après l’application d’Orthagrow Soil Conditioner, nous avons observé une différence énorme dès 2 jours, avec une croissance plus rapide et une végétation plus homogène.",
+        "es": "Tras la aplicación de Orthagrow Soil Conditioner, observamos una diferencia enorme ya a los 2 días, con un crecimiento más rápido y una vegetación más uniforme.",
+        "nl": "Na toepassing van Orthagrow Soil Conditioner zagen we al na 2 dagen een enorm verschil, met snellere groei en een gelijkmatiger gewas."
+      },
+      "name": "Abderahmani Driss",
+      "location": "Sidi Kasim",
+      "photos": ["/media/research/testimonials/melon-1.webp", "/media/research/testimonials/melon-2.webp"]
+    },
+    {
+      "slug": "pomme-de-terre-boufekrane-2018",
+      "year": 2018,
+      "crop": { "fr": "Pomme de terre", "en": "Potato", "es": "Patata", "nl": "Aardappel" },
+      "quote": {
+        "en": "We achieved 23% more yield and 40% more high-quality calibers following application of the Orthagrow range of products (Granule, Soil Conditioner, Control and Micromanager).",
+        "fr": "Nous avons obtenu 23 % de rendement en plus et 40 % de calibres de haute qualité en plus après l’application de la gamme Orthagrow (Granule, Soil Conditioner, Control et Micro Manager).",
+        "es": "Obtuvimos un 23 % más de rendimiento y un 40 % más de calibres de alta calidad tras la aplicación de la gama Orthagrow (Granule, Soil Conditioner, Control y Micro Manager).",
+        "nl": "We behaalden 23% meer opbrengst en 40% meer kalibers van hoge kwaliteit na toepassing van het Orthagrow-gamma (Granule, Soil Conditioner, Control en Micro Manager)."
+      },
+      "name": "Bennacer Doutchih",
+      "location": "Boufekrane",
+      "photos": [
+        "/media/research/testimonials/pomme-de-terre-boufekrane-1.webp",
+        "/media/research/testimonials/pomme-de-terre-boufekrane-2.webp"
+      ]
+    },
+    {
+      "slug": "pomme-de-terre-lamhya-2018",
+      "year": 2018,
+      "crop": { "fr": "Pomme de terre", "en": "Potato", "es": "Patata", "nl": "Aardappel" },
+      "quote": {
+        "en": "We used Orthagrow Granule together with Orthagrow Soil Conditioner and observed a clear difference during crop establishment compared with plots where these products were not applied.",
+        "fr": "Nous avons utilisé Orthagrow Granule avec Orthagrow Soil Conditioner et constaté une nette différence à l’installation de la culture par rapport aux parcelles non traitées.",
+        "es": "Utilizamos Orthagrow Granule junto con Orthagrow Soil Conditioner y observamos una clara diferencia en la implantación del cultivo frente a las parcelas sin tratar.",
+        "nl": "We gebruikten Orthagrow Granule samen met Orthagrow Soil Conditioner en zagen een duidelijk verschil bij de opkomst van het gewas ten opzichte van onbehandelde percelen."
+      },
+      "name": "Abelali Ghidani",
+      "location": "Lamhya",
+      "photos": [
+        "/media/research/testimonials/pomme-de-terre-lamhya-1.webp",
+        "/media/research/testimonials/pomme-de-terre-lamhya-2.webp"
+      ]
+    },
+    {
+      "slug": "fraise-dlalha-2018",
+      "year": 2018,
+      "crop": { "fr": "Fraise", "en": "Strawberry", "es": "Fresa", "nl": "Aardbei" },
+      "quote": {
+        "en": "The strawberries were much sweeter and juicier. In an internal test commissioned by Moreco’s agronomist, we established that the treated strawberries, under the same conditions, remained in good condition for 6 days longer.",
+        "fr": "Les fraises étaient beaucoup plus sucrées et juteuses. Lors d’un test interne demandé par l’agronome de Moreco, nous avons constaté que les fraises traitées, dans les mêmes conditions, se conservaient 6 jours de plus.",
+        "es": "Las fresas eran mucho más dulces y jugosas. En una prueba interna encargada por el agrónomo de Moreco, comprobamos que las fresas tratadas, en las mismas condiciones, se conservaban en buen estado 6 días más.",
+        "nl": "De aardbeien waren veel zoeter en sappiger. In een interne test op verzoek van de agronoom van Moreco stelden we vast dat de behandelde aardbeien onder dezelfde omstandigheden 6 dagen langer goed bleven."
+      },
+      "name": "Hamid Katini",
+      "location": "Dlalha",
+      "photos": ["/media/research/testimonials/fraise-1.webp", "/media/research/testimonials/fraise-2.webp"]
+    },
+    {
+      "slug": "pecher-bouderbala-2019",
+      "year": 2019,
+      "crop": { "fr": "Pêcher", "en": "Peach", "es": "Melocotonero", "nl": "Perzik" },
+      "quote": {
+        "en": "Year after year, we experienced problems at the start of the flowering phase. Thanks to Orthagrow Bloom Booster, we now have a good start to flowering with more homogeneous blossom development.",
+        "fr": "Année après année, nous avions des problèmes au début de la floraison. Grâce à Orthagrow Bloom Booster, la floraison démarre bien, avec un développement des fleurs plus homogène.",
+        "es": "Año tras año teníamos problemas al inicio de la floración. Gracias a Orthagrow Bloom Booster, ahora la floración arranca bien, con un desarrollo de las flores más homogéneo.",
+        "nl": "Jaar na jaar hadden we problemen bij het begin van de bloei. Dankzij Orthagrow Bloom Booster start de bloei nu goed, met een gelijkmatigere bloesemontwikkeling."
+      },
+      "name": "Mohammed Ben Ghaled",
+      "location": "Bouderbala",
+      "photos": ["/media/research/testimonials/pecher-1.webp", "/media/research/testimonials/pecher-2.webp"]
+    }
+  ],
+  "video": {
+    "year": 2018,
+    "title": {
+      "fr": "Témoignage vidéo d’un producteur de pommes de terre",
+      "en": "Potato farmer video testimonial",
+      "es": "Testimonio en vídeo de un productor de patatas",
+      "nl": "Videogetuigenis van een aardappelteler"
+    },
+    "file": "/media/research/testimonials/video-pomme-de-terre.mp4",
+    "poster": "/media/research/testimonials/video-pomme-de-terre-poster.webp"
+  }
+}

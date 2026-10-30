@@ -16,6 +16,7 @@ import ProductCard from '@/components/ProductCard/ProductCard';
 import FamilyFilter, { type FamilyGroup } from '@/components/FamilyFilter/FamilyFilter';
 import FamilyNote from '@/components/FamilyNote/FamilyNote';
 import { familyNote } from '@/data/family-notes';
+import { familyFaqs } from '@/data/family-faqs';
 import Reveal from '@/components/Reveal/Reveal';
 import s from './Catalogue.module.css';
 
@@ -37,7 +38,7 @@ export default function SegmentView({ locale, segment }: { locale: Locale; segme
   const families = familiesOf(segment);
 
   const grid = (list: Product[], soon = false) => (
-    <div className={s.grid}>
+    <div className={segment === 'general' ? `${s.grid} ${s.gridCentered}` : s.grid}>
       {list.map((product, i) => (
         <Reveal key={product.slug} delay={i * 50}>
           <ProductCard product={product} locale={locale} />
@@ -60,7 +61,7 @@ export default function SegmentView({ locale, segment }: { locale: Locale; segme
         <h2 className={s.groupTitle}>{familyName(family, t)}</h2>
         {grid(productsOfFamily(family), family.soon)}
         {family.note && (
-          <FamilyNote note={familyNote(family.note, locale)} />
+          <FamilyNote note={familyNote(family.note, locale)} faqs={familyFaqs(family.note, locale)} />
         )}
       </>
     ),

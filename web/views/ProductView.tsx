@@ -20,6 +20,8 @@ import { productHero } from '@/data/hero-images';
 import PageHeader from '@/components/PageHeader/PageHeader';
 import ProductCard from '@/components/ProductCard/ProductCard';
 import AddToQuote from '@/components/Quote/AddToQuote';
+import ProductFaq from '@/components/ProductFaq/ProductFaq';
+import { productFaqs } from '@/data/product-faqs';
 import ZoomImage from '@/components/ZoomImage/ZoomImage';
 import Reveal from '@/components/Reveal/Reveal';
 import catalogue from './Catalogue.module.css';
@@ -61,7 +63,9 @@ export default function ProductView({ locale, slug }: { locale: Locale; slug: st
           { label: t.site.name, href: href(locale, 'home') },
           { label: t.nav.products, href: href(locale, 'products') },
           { label: t.segments[product.segment].name, href: segmentHref(locale, product.segment) },
-          ...(range ? [{ label: range.name, href: rangeHref(locale, range.slug) }] : []),
+          ...(range && productsOfRange(range.slug).length > 0
+            ? [{ label: range.name, href: rangeHref(locale, range.slug) }]
+            : []),
         ]}
       />
 
@@ -153,6 +157,10 @@ export default function ProductView({ locale, slug }: { locale: Locale; slug: st
             </div>
           </div>
         </div>
+
+        <div className="page">
+          <ProductFaq title={t.product.faqTitle} faqs={productFaqs(slug, locale)} />
+        </div>
       </div>
 
       {siblings.length > 0 && (
@@ -202,15 +210,20 @@ function Section({ section }: { section: CopySection }) {
             <table className={s.table}>
               <thead>
                 <tr>
-                  <th scope="col">{section.head[0]}</th>
-                  <th scope="col">{section.head[1]}</th>
+                  {section.head.map((label, i) => (
+                    <th key={i} scope="col">
+                      {label}
+                    </th>
+                  ))}
                 </tr>
               </thead>
               <tbody>
-                {section.rows.map(([label, value]) => (
+                {section.rows.map(([label, ...values]) => (
                   <tr key={label}>
                     <th scope="row">{label}</th>
-                    <td>{value}</td>
+                    {values.map((value, i) => (
+                      <td key={i}>{value}</td>
+                    ))}
                   </tr>
                 ))}
               </tbody>

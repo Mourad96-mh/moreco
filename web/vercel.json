@@ -7,7 +7,7 @@
   "redirects": [
     {
       "source": "/%d8%a3%d8%ba%d8%b1%d8%a7%d8%b6-%d8%b9%d8%a7%d9%85%d8%a9/%d8%ae%d8%b7-%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-huwa-san/%d8%a7%d9%84%d8%aa%d8%b7%d9%87%d9%8a%d8%b1-%d8%a7%d9%84%d9%85%d9%87%d9%86%d9%8a/%d8%a7%d9%84%d9%85%d8%a3%d9%83%d9%88%d9%84%d8%a7%d8%aa-%d9%88-%d8%a7%d9%84%d9%85%d8%b4%d8%b1%d9%88%d8%a8%d8%a7%d8%aa/",
-      "destination": "/fr/produits/emploi-general/huwa-san-pro/huwa-san-fb/",
+      "destination": "/fr/produits/emploi-general/",
       "permanent": true
     },
     {
@@ -17,7 +17,7 @@
     },
     {
       "source": "/%d8%a3%d8%ba%d8%b1%d8%a7%d8%b6-%d8%b9%d8%a7%d9%85%d8%a9/%d8%ae%d8%b7-%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-huwa-san/%d8%a7%d9%84%d8%aa%d8%b7%d9%87%d9%8a%d8%b1-%d8%a7%d9%84%d9%85%d9%87%d9%86%d9%8a/%d9%85%d8%b9%d8%a7%d9%84%d8%ac%d8%a9-%d8%a7%d9%84%d9%85%d9%8a%d8%a7%d9%87/",
-      "destination": "/fr/produits/emploi-general/huwa-san-pro/huwa-san-water-treatment/",
+      "destination": "/fr/produits/emploi-general/clearox/clearox/",
       "permanent": true
     },
     {
@@ -27,12 +27,12 @@
     },
     {
       "source": "/%d8%a3%d8%ba%d8%b1%d8%a7%d8%b6-%d8%b9%d8%a7%d9%85%d8%a9/%d8%ae%d8%b7-%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-huwa-san/%d8%a7%d9%84%d8%aa%d8%b7%d9%87%d9%8a%d8%b1-%d8%a7%d9%84%d9%85%d9%87%d9%86%d9%8a/%d8%a8%d9%8a%d8%b7%d8%b1%d9%8a/",
-      "destination": "/fr/produits/emploi-general/huwa-san-pro/huwa-san-vet/",
+      "destination": "/fr/produits/emploi-general/clearox/clearox/",
       "permanent": true
     },
     {
       "source": "/%d8%a3%d8%ba%d8%b1%d8%a7%d8%b6-%d8%b9%d8%a7%d9%85%d8%a9/%d8%ae%d8%b7-%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-huwa-san/%d8%a7%d9%84%d8%aa%d8%b7%d9%87%d9%8a%d8%b1-%d8%a7%d9%84%d9%85%d9%87%d9%86%d9%8a/hard-surface/",
-      "destination": "/fr/produits/emploi-general/huwa-san-pro/huwa-san-hard-surface/",
+      "destination": "/fr/produits/emploi-general/",
       "permanent": true
     },
     {
@@ -57,7 +57,7 @@
     },
     {
       "source": "/%d8%a3%d8%ba%d8%b1%d8%a7%d8%b6-%d8%b9%d8%a7%d9%85%d8%a9/%d8%ae%d8%b7-%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-huwa-san/%d8%a7%d9%84%d8%aa%d8%b7%d9%87%d9%8a%d8%b1-%d8%a7%d9%84%d9%85%d9%87%d9%86%d9%8a/",
-      "destination": "/fr/produits/emploi-general/huwa-san-pro/",
+      "destination": "/fr/produits/emploi-general/",
       "permanent": true
     },
     {
@@ -87,22 +87,22 @@
     },
     {
       "source": "/%d8%a3%d8%ba%d8%b1%d8%a7%d8%b6-%d8%b9%d8%a7%d9%85%d8%a9/%d8%ae%d8%b7-%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-huwa-san/hygiene-home/",
-      "destination": "/fr/produits/emploi-general/huwa-san-home/",
+      "destination": "/fr/produits/emploi-general/",
       "permanent": true
     },
     {
       "source": "/%d8%a3%d8%ba%d8%b1%d8%a7%d8%b6-%d8%b9%d8%a7%d9%85%d8%a9/%d8%ae%d8%b7-%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-huwa-san/pool/",
-      "destination": "/fr/produits/emploi-general/huwa-san-pool/",
+      "destination": "/fr/produits/emploi-general/",
       "permanent": true
     },
     {
       "source": "/%d8%a3%d8%ba%d8%b1%d8%a7%d8%b6-%d8%b9%d8%a7%d9%85%d8%a9/%d8%ae%d8%b7-%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-huwa-san/",
-      "destination": "/fr/produits/emploi-general/huwa-san-pro/",
+      "destination": "/fr/produits/emploi-general/",
       "permanent": true
     },
     {
       "source": "/%d8%a3%d8%ba%d8%b1%d8%a7%d8%b6-%d8%b9%d8%a7%d9%85%d8%a9/%d8%ae%d8%b7-%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-bioxeco/",
-      "destination": "/fr/produits/emploi-general/bioxeco/",
+      "destination": "/fr/produits/emploi-general/",
       "permanent": true
     },
     {
@@ -152,7 +152,7 @@
     },
     {
       "source": "/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/aliments-et-boissons/",
-      "destination": "/fr/produits/emploi-general/huwa-san-pro/huwa-san-fb/",
+      "destination": "/fr/produits/emploi-general/",
       "permanent": true
     },
     {
@@ -162,7 +162,7 @@
     },
     {
       "source": "/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/traitement-de-leau/",
-      "destination": "/fr/produits/emploi-general/huwa-san-pro/huwa-san-water-treatment/",
+      "destination": "/fr/produits/emploi-general/clearox/clearox/",
       "permanent": true
     },
     {
@@ -182,7 +182,7 @@
     },
     {
       "source": "/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/hard-surface/",
-      "destination": "/fr/produits/emploi-general/huwa-san-pro/huwa-san-hard-surface/",
+      "destination": "/fr/produits/emploi-general/",
       "permanent": true
     },
     {
@@ -202,7 +202,7 @@
     },
     {
       "source": "/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/veterinaire/",
-      "destination": "/fr/produits/emploi-general/huwa-san-pro/huwa-san-vet/",
+      "destination": "/fr/produits/emploi-general/clearox/clearox/",
       "permanent": true
     },
     {
@@ -227,7 +227,7 @@
     },
     {
       "source": "/general-use/huwa-san-productline/professional-disinfection-2/water-treatment/",
-      "destination": "/en/products/general-use/huwa-san-pro/huwa-san-water-treatment/",
+      "destination": "/en/products/general-use/clearox/clearox/",
       "permanent": true
     },
     {
@@ -242,12 +242,12 @@
     },
     {
       "source": "/%d8%a7%d9%84%d8%ad%d9%8a%d9%88%d8%a7%d9%86%d8%a7%d8%aa/huwa-san-for-animals/",
-      "destination": "/fr/produits/emploi-general/huwa-san-pro/",
+      "destination": "/fr/produits/emploi-general/",
       "permanent": true
     },
     {
       "source": "/general-use/huwa-san-productline/professional-disinfection-2/food-beverage/",
-      "destination": "/en/products/general-use/huwa-san-pro/huwa-san-fb/",
+      "destination": "/en/products/general-use/",
       "permanent": true
     },
     {
@@ -257,7 +257,7 @@
     },
     {
       "source": "/general-use/huwa-san-productline/professional-disinfection-2/hard-surface/",
-      "destination": "/en/products/general-use/huwa-san-pro/huwa-san-hard-surface/",
+      "destination": "/en/products/general-use/",
       "permanent": true
     },
     {
@@ -277,7 +277,7 @@
     },
     {
       "source": "/general-use/huwa-san-productline/professional-disinfection-2/veterinary/",
-      "destination": "/en/products/general-use/huwa-san-pro/huwa-san-vet/",
+      "destination": "/en/products/general-use/clearox/clearox/",
       "permanent": true
     },
     {
@@ -291,18 +291,93 @@
       "permanent": true
     },
     {
+      "source": "/nl/producten/algemeen-gebruik/huwa-san-home/huwa-san-fruit-vegetables/",
+      "destination": "/nl/producten/algemeen-gebruik/",
+      "permanent": true
+    },
+    {
       "source": "/%d8%a7%d9%84%d8%ad%d9%8a%d9%88%d8%a7%d9%86%d8%a7%d8%aa/orthahealth-ar/",
       "destination": "/fr/produits/animaux/",
       "permanent": true
     },
     {
       "source": "/emploi-general/gamme-de-produits-huwa-san/desinfection-professionnel/",
-      "destination": "/fr/produits/emploi-general/huwa-san-pro/",
+      "destination": "/fr/produits/emploi-general/",
+      "permanent": true
+    },
+    {
+      "source": "/nl/producten/algemeen-gebruik/huwa-san-pro/huwa-san-water-treatment/",
+      "destination": "/nl/producten/algemeen-gebruik/clearox/clearox/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/produits/emploi-general/huwa-san-home/huwa-san-fruit-vegetables/",
+      "destination": "/fr/produits/emploi-general/",
       "permanent": true
     },
     {
       "source": "/%d8%a3%d8%ba%d8%b1%d8%a7%d8%b6-%d8%b9%d8%a7%d9%85%d8%a9/clearox-ar/",
       "destination": "/fr/produits/emploi-general/clearox/clearox/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/produits/emploi-general/huwa-san-pro/huwa-san-water-treatment/",
+      "destination": "/fr/produits/emploi-general/clearox/clearox/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/uso-general/huwa-san-home/huwa-san-fruit-vegetables/",
+      "destination": "/es/productos/uso-general/",
+      "permanent": true
+    },
+    {
+      "source": "/nl/producten/algemeen-gebruik/huwa-san-pro/huwa-san-hard-surface/",
+      "destination": "/nl/producten/algemeen-gebruik/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/general-use/huwa-san-home/huwa-san-fruit-vegetables/",
+      "destination": "/en/products/general-use/",
+      "permanent": true
+    },
+    {
+      "source": "/nl/producten/algemeen-gebruik/huwa-san-pool/huwa-san-kiddiepool/",
+      "destination": "/nl/producten/algemeen-gebruik/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/uso-general/huwa-san-pro/huwa-san-water-treatment/",
+      "destination": "/es/productos/uso-general/clearox/clearox/",
+      "permanent": true
+    },
+    {
+      "source": "/nl/producten/algemeen-gebruik/huwa-san-pool/huwa-san-whirlpool/",
+      "destination": "/nl/producten/algemeen-gebruik/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/produits/emploi-general/huwa-san-pro/huwa-san-hard-surface/",
+      "destination": "/fr/produits/emploi-general/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/general-use/huwa-san-pro/huwa-san-water-treatment/",
+      "destination": "/en/products/general-use/clearox/clearox/",
+      "permanent": true
+    },
+    {
+      "source": "/nl/producten/algemeen-gebruik/huwa-san-home/huwa-san-bathroom/",
+      "destination": "/nl/producten/algemeen-gebruik/",
+      "permanent": true
+    },
+    {
+      "source": "/nl/producten/algemeen-gebruik/huwa-san-pool/huwa-san-minipool/",
+      "destination": "/nl/producten/algemeen-gebruik/",
+      "permanent": true
+    },
+    {
+      "source": "/nl/producten/algemeen-gebruik/huwa-san-pool/huwa-san-wellness/",
+      "destination": "/nl/producten/algemeen-gebruik/",
       "permanent": true
     },
     {
@@ -312,7 +387,62 @@
     },
     {
       "source": "/general-use/huwa-san-productline/professional-disinfection-2/",
-      "destination": "/en/products/general-use/huwa-san-pro/",
+      "destination": "/en/products/general-use/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/produits/emploi-general/huwa-san-pool/huwa-san-kiddiepool/",
+      "destination": "/fr/produits/emploi-general/",
+      "permanent": true
+    },
+    {
+      "source": "/nl/producten/algemeen-gebruik/huwa-san-home/huwa-san-kitchen/",
+      "destination": "/nl/producten/algemeen-gebruik/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/produits/emploi-general/huwa-san-pool/huwa-san-whirlpool/",
+      "destination": "/fr/produits/emploi-general/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/uso-general/huwa-san-pro/huwa-san-hard-surface/",
+      "destination": "/es/productos/uso-general/",
+      "permanent": true
+    },
+    {
+      "source": "/nl/producten/algemeen-gebruik/huwa-san-home/huwa-san-toilet/",
+      "destination": "/nl/producten/algemeen-gebruik/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/produits/emploi-general/huwa-san-home/huwa-san-bathroom/",
+      "destination": "/fr/produits/emploi-general/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/produits/emploi-general/huwa-san-pool/huwa-san-minipool/",
+      "destination": "/fr/produits/emploi-general/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/produits/emploi-general/huwa-san-pool/huwa-san-wellness/",
+      "destination": "/fr/produits/emploi-general/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/general-use/huwa-san-pro/huwa-san-hard-surface/",
+      "destination": "/en/products/general-use/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/uso-general/huwa-san-pool/huwa-san-kiddiepool/",
+      "destination": "/es/productos/uso-general/",
+      "permanent": true
+    },
+    {
+      "source": "/nl/producten/algemeen-gebruik/huwa-san-home/huwa-san-hands/",
+      "destination": "/nl/producten/algemeen-gebruik/",
       "permanent": true
     },
     {
@@ -331,6 +461,81 @@
       "permanent": true
     },
     {
+      "source": "/fr/produits/emploi-general/huwa-san-home/huwa-san-kitchen/",
+      "destination": "/fr/produits/emploi-general/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/general-use/huwa-san-pool/huwa-san-kiddiepool/",
+      "destination": "/en/products/general-use/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/uso-general/huwa-san-pool/huwa-san-whirlpool/",
+      "destination": "/es/productos/uso-general/",
+      "permanent": true
+    },
+    {
+      "source": "/nl/producten/algemeen-gebruik/huwa-san-pool/huwa-san-pool/",
+      "destination": "/nl/producten/algemeen-gebruik/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/produits/emploi-general/huwa-san-home/huwa-san-toilet/",
+      "destination": "/fr/produits/emploi-general/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/general-use/huwa-san-pool/huwa-san-whirlpool/",
+      "destination": "/en/products/general-use/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/uso-general/huwa-san-home/huwa-san-bathroom/",
+      "destination": "/es/productos/uso-general/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/uso-general/huwa-san-pool/huwa-san-minipool/",
+      "destination": "/es/productos/uso-general/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/uso-general/huwa-san-pool/huwa-san-wellness/",
+      "destination": "/es/productos/uso-general/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/produits/emploi-general/huwa-san-home/huwa-san-hands/",
+      "destination": "/fr/produits/emploi-general/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/general-use/huwa-san-home/huwa-san-bathroom/",
+      "destination": "/en/products/general-use/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/general-use/huwa-san-pool/huwa-san-minipool/",
+      "destination": "/en/products/general-use/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/general-use/huwa-san-pool/huwa-san-wellness/",
+      "destination": "/en/products/general-use/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/uso-general/huwa-san-home/huwa-san-kitchen/",
+      "destination": "/es/productos/uso-general/",
+      "permanent": true
+    },
+    {
+      "source": "/nl/producten/algemeen-gebruik/huwa-san-pro/huwa-san-vet/",
+      "destination": "/nl/producten/algemeen-gebruik/clearox/clearox/",
+      "permanent": true
+    },
+    {
       "source": "/research/effets-des-produits-orthagrow-sur-les-poivrons/",
       "destination": "/fr/ressources/essais/poivrons/",
       "permanent": true
@@ -342,7 +547,7 @@
     },
     {
       "source": "/emploi-general/gamme-de-produits-huwa-san/hygiene-home/",
-      "destination": "/fr/produits/emploi-general/huwa-san-home/",
+      "destination": "/fr/produits/emploi-general/",
       "permanent": true
     },
     {
@@ -356,8 +561,38 @@
       "permanent": true
     },
     {
+      "source": "/fr/produits/emploi-general/huwa-san-pool/huwa-san-pool/",
+      "destination": "/fr/produits/emploi-general/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/general-use/huwa-san-home/huwa-san-kitchen/",
+      "destination": "/en/products/general-use/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/uso-general/huwa-san-home/huwa-san-toilet/",
+      "destination": "/es/productos/uso-general/",
+      "permanent": true
+    },
+    {
+      "source": "/nl/producten/algemeen-gebruik/huwa-san-pro/huwa-san-fb/",
+      "destination": "/nl/producten/algemeen-gebruik/",
+      "permanent": true
+    },
+    {
       "source": "/%d8%a7%d9%84%d8%ad%d9%8a%d9%88%d8%a7%d9%86%d8%a7%d8%aa/",
       "destination": "/fr/produits/animaux/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/general-use/huwa-san-home/huwa-san-toilet/",
+      "destination": "/en/products/general-use/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/uso-general/huwa-san-home/huwa-san-hands/",
+      "destination": "/es/productos/uso-general/",
       "permanent": true
     },
     {
@@ -381,8 +616,33 @@
       "permanent": true
     },
     {
+      "source": "/fr/produits/emploi-general/huwa-san-pro/huwa-san-vet/",
+      "destination": "/fr/produits/emploi-general/clearox/clearox/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/general-use/huwa-san-home/huwa-san-hands/",
+      "destination": "/en/products/general-use/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/uso-general/huwa-san-pool/huwa-san-pool/",
+      "destination": "/es/productos/uso-general/",
+      "permanent": true
+    },
+    {
       "source": "/les-humains/ligne-de-produit-mavita/mavita-sport-fr/",
       "destination": "/fr/produits/humains/mavita/mavita-sport/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/produits/emploi-general/huwa-san-pro/huwa-san-fb/",
+      "destination": "/fr/produits/emploi-general/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/general-use/huwa-san-pool/huwa-san-pool/",
+      "destination": "/en/products/general-use/",
       "permanent": true
     },
     {
@@ -391,13 +651,53 @@
       "permanent": true
     },
     {
+      "source": "/es/productos/uso-general/huwa-san-pro/huwa-san-vet/",
+      "destination": "/es/productos/uso-general/clearox/clearox/",
+      "permanent": true
+    },
+    {
+      "source": "/nl/producten/algemeen-gebruik/bioxeco/bioxeco-hand/",
+      "destination": "/nl/producten/algemeen-gebruik/",
+      "permanent": true
+    },
+    {
       "source": "/agri-horticulture-fr/gamme-de-produits-orthafight/",
       "destination": "/fr/produits/agri-horticulture/orthagrow/orthagrow-fertifight/",
       "permanent": true
     },
     {
+      "source": "/en/products/general-use/huwa-san-pro/huwa-san-vet/",
+      "destination": "/en/products/general-use/clearox/clearox/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/uso-general/huwa-san-pro/huwa-san-fb/",
+      "destination": "/es/productos/uso-general/",
+      "permanent": true
+    },
+    {
+      "source": "/nl/producten/algemeen-gebruik/bioxeco/bioxeco-25s/",
+      "destination": "/nl/producten/algemeen-gebruik/",
+      "permanent": true
+    },
+    {
+      "source": "/nl/producten/algemeen-gebruik/bioxeco/bioxeco-fog/",
+      "destination": "/nl/producten/algemeen-gebruik/",
+      "permanent": true
+    },
+    {
       "source": "/agri-horticulture-fr/gamme-de-produits-orthagrow/",
       "destination": "/fr/produits/agri-horticulture/orthagrow/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/general-use/huwa-san-pro/huwa-san-fb/",
+      "destination": "/en/products/general-use/",
+      "permanent": true
+    },
+    {
+      "source": "/nl/producten/algemeen-gebruik/bioxeco/bioxeco-dw/",
+      "destination": "/nl/producten/algemeen-gebruik/",
       "permanent": true
     },
     {
@@ -411,8 +711,13 @@
       "permanent": true
     },
     {
+      "source": "/fr/produits/emploi-general/bioxeco/bioxeco-hand/",
+      "destination": "/fr/produits/emploi-general/",
+      "permanent": true
+    },
+    {
       "source": "/emploi-general/gamme-de-produits-huwa-san/pool/",
-      "destination": "/fr/produits/emploi-general/huwa-san-pool/",
+      "destination": "/fr/produits/emploi-general/",
       "permanent": true
     },
     {
@@ -426,8 +731,28 @@
       "permanent": true
     },
     {
+      "source": "/fr/produits/emploi-general/bioxeco/bioxeco-25s/",
+      "destination": "/fr/produits/emploi-general/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/produits/emploi-general/bioxeco/bioxeco-fog/",
+      "destination": "/fr/produits/emploi-general/",
+      "permanent": true
+    },
+    {
       "source": "/general-use/huwa-san-productline/hygiene-home/",
-      "destination": "/en/products/general-use/huwa-san-home/",
+      "destination": "/en/products/general-use/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/produits/emploi-general/bioxeco/bioxeco-dw/",
+      "destination": "/fr/produits/emploi-general/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/uso-general/bioxeco/bioxeco-hand/",
+      "destination": "/es/productos/uso-general/",
       "permanent": true
     },
     {
@@ -436,8 +761,48 @@
       "permanent": true
     },
     {
+      "source": "/en/products/general-use/bioxeco/bioxeco-hand/",
+      "destination": "/en/products/general-use/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/uso-general/bioxeco/bioxeco-25s/",
+      "destination": "/es/productos/uso-general/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/uso-general/bioxeco/bioxeco-fog/",
+      "destination": "/es/productos/uso-general/",
+      "permanent": true
+    },
+    {
       "source": "/mavita-health-renforce-le-systeme-dimmunite/",
       "destination": "/fr/ressources/centre-de-connaissances/mavita-immunite/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/general-use/bioxeco/bioxeco-25s/",
+      "destination": "/en/products/general-use/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/general-use/bioxeco/bioxeco-fog/",
+      "destination": "/en/products/general-use/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/uso-general/bioxeco/bioxeco-dw/",
+      "destination": "/es/productos/uso-general/",
+      "permanent": true
+    },
+    {
+      "source": "/nl/producten/algemeen-gebruik/huwa-san-home/",
+      "destination": "/nl/producten/algemeen-gebruik/",
+      "permanent": true
+    },
+    {
+      "source": "/nl/producten/algemeen-gebruik/huwa-san-pool/",
+      "destination": "/nl/producten/algemeen-gebruik/",
       "permanent": true
     },
     {
@@ -448,6 +813,16 @@
     {
       "source": "/humans/mavita-productline/mavita-slim-maca/",
       "destination": "/en/products/humans/mavita/mavita-slim/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/general-use/bioxeco/bioxeco-dw/",
+      "destination": "/en/products/general-use/",
+      "permanent": true
+    },
+    {
+      "source": "/nl/producten/algemeen-gebruik/huwa-san-pro/",
+      "destination": "/nl/producten/algemeen-gebruik/",
       "permanent": true
     },
     {
@@ -462,7 +837,7 @@
     },
     {
       "source": "/emploi-general/gamme-de-produits-huwa-san/",
-      "destination": "/fr/produits/emploi-general/huwa-san-pro/",
+      "destination": "/fr/produits/emploi-general/",
       "permanent": true
     },
     {
@@ -483,6 +858,16 @@
     {
       "source": "/nl/producten/mensen/mavita/mavita-health/",
       "destination": "/nl/producten/mensen/mavita/mavita-sport/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/produits/emploi-general/huwa-san-home/",
+      "destination": "/fr/produits/emploi-general/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/produits/emploi-general/huwa-san-pool/",
+      "destination": "/fr/produits/emploi-general/",
       "permanent": true
     },
     {
@@ -511,8 +896,23 @@
       "permanent": true
     },
     {
+      "source": "/fr/produits/emploi-general/huwa-san-pro/",
+      "destination": "/fr/produits/emploi-general/",
+      "permanent": true
+    },
+    {
       "source": "/humans/mavita-productline/mavita-sport/",
       "destination": "/en/products/humans/mavita/mavita-sport/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/uso-general/huwa-san-home/",
+      "destination": "/es/productos/uso-general/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/uso-general/huwa-san-pool/",
+      "destination": "/es/productos/uso-general/",
       "permanent": true
     },
     {
@@ -522,12 +922,32 @@
     },
     {
       "source": "/general-use/huwa-san-productline/pool/",
-      "destination": "/en/products/general-use/huwa-san-pool/",
+      "destination": "/en/products/general-use/",
       "permanent": true
     },
     {
       "source": "/etude-de-la-bio-disponibilite-de-laos/",
       "destination": "/fr/ressources/centre-de-connaissances/bio-disponibilite-aos/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/general-use/huwa-san-home/",
+      "destination": "/en/products/general-use/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/general-use/huwa-san-pool/",
+      "destination": "/en/products/general-use/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/uso-general/huwa-san-pro/",
+      "destination": "/es/productos/uso-general/",
+      "permanent": true
+    },
+    {
+      "source": "/nl/producten/algemeen-gebruik/bioxeco/",
+      "destination": "/nl/producten/algemeen-gebruik/",
       "permanent": true
     },
     {
@@ -546,6 +966,11 @@
       "permanent": true
     },
     {
+      "source": "/en/products/general-use/huwa-san-pro/",
+      "destination": "/en/products/general-use/",
+      "permanent": true
+    },
+    {
       "source": "/research/15-resultats-sur-les-grapes/",
       "destination": "/fr/ressources/essais/raisins/",
       "permanent": true
@@ -561,6 +986,11 @@
       "permanent": true
     },
     {
+      "source": "/fr/produits/emploi-general/bioxeco/",
+      "destination": "/fr/produits/emploi-general/",
+      "permanent": true
+    },
+    {
       "source": "/research/19-resultats-sur-le-gazon/",
       "destination": "/fr/ressources/essais/gazon/",
       "permanent": true
@@ -572,12 +1002,22 @@
     },
     {
       "source": "/des-animaux/huwa-san-for-animals/",
-      "destination": "/fr/produits/emploi-general/huwa-san-pro/",
+      "destination": "/fr/produits/emploi-general/",
       "permanent": true
     },
     {
       "source": "/general-use/huwa-san-productline/",
-      "destination": "/en/products/general-use/huwa-san-pro/",
+      "destination": "/en/products/general-use/",
+      "permanent": true
+    },
+    {
+      "source": "/es/productos/uso-general/bioxeco/",
+      "destination": "/es/productos/uso-general/",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/general-use/bioxeco/",
+      "destination": "/en/products/general-use/",
       "permanent": true
     },
     {
@@ -597,7 +1037,7 @@
     },
     {
       "source": "/animals/huwa-san-for-animals/",
-      "destination": "/en/products/general-use/huwa-san-pro/",
+      "destination": "/en/products/general-use/",
       "permanent": true
     },
     {
@@ -627,7 +1067,7 @@
     },
     {
       "source": "/emploi-general/bioxeco/",
-      "destination": "/fr/produits/emploi-general/bioxeco/",
+      "destination": "/fr/produits/emploi-general/",
       "permanent": true
     },
     {
@@ -647,7 +1087,7 @@
     },
     {
       "source": "/general-use/bioxeco/",
-      "destination": "/en/products/general-use/bioxeco/",
+      "destination": "/en/products/general-use/",
       "permanent": true
     },
     {

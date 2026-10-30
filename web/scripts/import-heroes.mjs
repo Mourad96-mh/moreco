@@ -37,7 +37,7 @@ const FILES = {
   'seg-general': 'Water_droplets_(Unsplash).jpg',
   'orthagrow': 'Wheat_field_sunset_(Unsplash).jpg',
   'orthafight': 'Dewdrops_on_leaves_(Unsplash).jpg',
-  'mavita': 'Brunette_woman_portrait_(Unsplash).jpg',
+  /* mavita is the client's own photograph since 2026-10-01, cut by hand from a portrait. */
   'orthahealth': 'White_horse_in_Iceland_(Unsplash).jpg',
   'huwa-san-pro': 'Heavy_industry_(Unsplash).jpg',
   'huwa-san-home': 'Blue_white_kitchen_interior_(Unsplash).jpg',

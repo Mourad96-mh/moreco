@@ -4,23 +4,21 @@ import { useRef, useState, type FormEvent } from 'react';
 
 import type { Locale } from '@/i18n/config';
 import { requiredFieldsFilled } from '@/components/forms/requiredFields';
+import { sendForm } from '@/components/forms/sendForm';
 import s from './CareerForm.module.css';
 
 /**
  * The speculative-application form, modelled on casem.ma/carrieres: four identity fields,
  * two dropdowns, the level of study, a message, and the CV itself.
  *
- * Same plumbing as the contact and quote forms — the site is a static export, so there is
- * no server of our own and the form posts to a form-mail endpoint. Without
- * NEXT_PUBLIC_QUOTE_ENDPOINT it reports the failure rather than pretending to have sent:
- * an application that vanishes silently is worse than a form that says it is broken.
+ * Mailed, CV attached, by the site's own PHP script (see sendForm), like the contact and
+ * quote forms. When sending fails it says so rather than pretending to have sent: an
+ * application that vanishes silently is worse than a form that says it is broken.
  *
- * The CV is checked here before anything is sent. The endpoint's own limit is not ours to
+ * The CV is checked here before anything is sent. The server's own limit is not ours to
  * rely on, and someone who has just filled in eight fields should be told their file is
  * too heavy before the upload, not after it.
  */
-const ENDPOINT = process.env.NEXT_PUBLIC_QUOTE_ENDPOINT ?? '';
-const ACCESS_KEY = process.env.NEXT_PUBLIC_QUOTE_ACCESS_KEY ?? '';
 
 /** The client's cap, to the byte the browser reports. */
 const MAX_CV_BYTES = 1024 * 1024;
@@ -94,22 +92,10 @@ export default function CareerForm({ locale, labels }: { locale: Locale; labels:
 
     const data = new FormData(form);
     data.set('langue', locale);
-    data.set('origine', 'candidature-spontanee');
-    if (ACCESS_KEY) data.set('access_key', ACCESS_KEY);
-
-    if (!ENDPOINT) {
-      setState('failed');
-      return;
-    }
 
     setState('sending');
     try {
-      const response = await fetch(ENDPOINT, {
-        method: 'POST',
-        body: data,
-        headers: { Accept: 'application/json' },
-      });
-      if (!response.ok) throw new Error(String(response.status));
+      await sendForm('candidature', data);
       setState('sent');
       form.reset();
       setCvName(null);

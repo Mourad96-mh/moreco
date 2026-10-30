@@ -35,7 +35,7 @@ const NOTES: Record<FamilyNoteKey, Record<Locale, FamilyNoteContent>> = {
   specialties: {
     fr: {
       eyebrow: 'Spécialités',
-      title: 'Technologie OSA Pure exclusive et brevetée pour des performances maximales des cultures',
+      title: 'Innovation OSA Pure | Anti-Stress Abiotique & Rendement Maximal',
       blocks: [
         {
           type: 'paragraph',
@@ -78,7 +78,7 @@ const NOTES: Record<FamilyNoteKey, Record<Locale, FamilyNoteContent>> = {
     },
     en: {
       eyebrow: 'Specialties',
-      title: 'Exclusive, patented Pure OSA technology for maximum crop performance',
+      title: 'Pure OSA Innovation | Abiotic Anti-Stress & Maximum Yield',
       blocks: [
         {
           type: 'paragraph',
@@ -121,7 +121,7 @@ const NOTES: Record<FamilyNoteKey, Record<Locale, FamilyNoteContent>> = {
     },
     es: {
       eyebrow: 'Especialidades',
-      title: 'Tecnología Pure OSA exclusiva y patentada para el máximo rendimiento de los cultivos',
+      title: 'Innovación Pure OSA | Antiestrés abiótico y rendimiento máximo',
       blocks: [
         {
           type: 'paragraph',
@@ -164,7 +164,7 @@ const NOTES: Record<FamilyNoteKey, Record<Locale, FamilyNoteContent>> = {
     },
     nl: {
       eyebrow: 'Specialiteiten',
-      title: 'Exclusieve, gepatenteerde Pure OSA-technologie voor maximale gewasprestaties',
+      title: 'Pure OSA-innovatie | Anti-abiotische stress & maximale opbrengst',
       blocks: [
         {
           type: 'paragraph',
@@ -210,7 +210,7 @@ const NOTES: Record<FamilyNoteKey, Record<Locale, FamilyNoteContent>> = {
   soil: {
     fr: {
       eyebrow: 'Santé du sol & des racines',
-      title: 'Restaurer le sol, renforcer les racines et développer la performance',
+      title: 'Exploitez la puissance de la biologie des sols : réduisez les coûts et optimisez la récolte.',
       blocks: [
         { type: 'paragraph', text: 'La performance d’une culture commence sous la surface.' },
         {
@@ -274,7 +274,7 @@ const NOTES: Record<FamilyNoteKey, Record<Locale, FamilyNoteContent>> = {
     },
     en: {
       eyebrow: 'Soil & root health',
-      title: 'Restore the soil, strengthen the roots and build performance',
+      title: 'Harness the power of soil biology: reduce costs and optimise the harvest.',
       blocks: [
         { type: 'paragraph', text: 'A crop’s performance starts below the surface.' },
         {
@@ -338,7 +338,7 @@ const NOTES: Record<FamilyNoteKey, Record<Locale, FamilyNoteContent>> = {
     },
     es: {
       eyebrow: 'Salud del suelo y de las raíces',
-      title: 'Restaurar el suelo, reforzar las raíces y desarrollar el rendimiento',
+      title: 'Aproveche el poder de la biología del suelo: reduzca los costes y optimice la cosecha.',
       blocks: [
         { type: 'paragraph', text: 'El rendimiento de un cultivo empieza bajo la superficie.' },
         {
@@ -402,7 +402,7 @@ const NOTES: Record<FamilyNoteKey, Record<Locale, FamilyNoteContent>> = {
     },
     nl: {
       eyebrow: 'Bodem- & wortelgezondheid',
-      title: 'De bodem herstellen, de wortels versterken en de prestaties opbouwen',
+      title: 'Benut de kracht van de bodembiologie: verlaag de kosten en optimaliseer de oogst.',
       blocks: [
         { type: 'paragraph', text: 'De prestaties van een gewas beginnen onder de grond.' },
         {

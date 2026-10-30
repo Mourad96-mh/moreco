@@ -19,6 +19,12 @@
       "es": "ensayos",
       "nl": "proeven"
     },
+    "trialsAccess": {
+      "fr": "acces-essais",
+      "en": "trials-access",
+      "es": "acceso-ensayos",
+      "nl": "toegang-proeven"
+    },
     "resources": {
       "fr": "ressources",
       "en": "resources",

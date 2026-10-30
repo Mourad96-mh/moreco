@@ -18,11 +18,10 @@ export interface Trial {
 export const TRIALS = raw as Trial[];
 
 /**
- * Campaigns documented in Morocco, as the client states it (briefing of 2026-09-18). It
- * is a figure we are given, not a count of TRIALS: the site publishes a page for the
- * campaigns the archive kept, the programme itself ran far more of them.
+ * Campaigns documented in Morocco, as the client states it: 117 on 2026-09-18, 24 since
+ * the briefing of 2026-10-18. It is a figure we are given, not a count of TRIALS.
  */
-export const MOROCCO_CAMPAIGNS = 117;
+export const MOROCCO_CAMPAIGNS = 24;
 
 /** Falls back to French, the language the trials were written in. */
 export const trialTitle = (trial: Trial, locale: Locale): string =>

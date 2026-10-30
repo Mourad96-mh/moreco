@@ -33,7 +33,7 @@
     "language": "Idioma"
   },
   "home": {
-    "introTitle": "MORECO | La innovación agronómica al servicio de una agricultura regenerativa",
+    "introTitle": "MORECO | Alto rendimiento de los cultivos",
     "introText": [
       "Desde hace más de 14 años, MORECO colabora estrechamente con los pioneros y desarrolladores del ácido ortosilícico estabilizado (OSA).",
       "Gracias a esta experiencia, acompañamos a los profesionales de la agricultura en Europa, Asia, Estados Unidos y, desde 2012, en Marruecos y la región MENA.",
@@ -78,11 +78,11 @@
       },
       {
         "value": "2001",
-        "label": "Presencia en Marruecos desde"
+        "label": "Primer ensayo en Marruecos"
       },
       {
-        "value": "2014",
-        "label": "Presencia en Agadir desde"
+        "value": "2012",
+        "label": "Presencia en Marruecos desde"
       }
     ],
     "quoteTitle": "¿Tiene una necesidad concreta? Pida su presupuesto",
@@ -91,13 +91,12 @@
   },
   "segments": {
     "agri": {
-      "name": "Agricultura y cultivos",
+      "name": "Agricultura y Horticultura",
       "short": "Rendimiento, sabor y resistencia del cultivo",
       "blurb": "Una forma única de ácido ortosilícico, totalmente asimilable: mejora la asimilación del fósforo, favorece un uso más eficiente del agua y contribuye a una mejor calidad nutricional, a mayores valores Brix, a mayores rendimientos y a una conservación más larga de las cosechas.",
-      "introTitle": "Tecnología exclusiva de OSA estabilizado",
+      "introTitle": "Innovación OSA: Máxima biodisponibilidad y rendimiento de los cultivos",
       "intro": [
-        "Nuestra gama exclusiva se basa en una tecnología única y patentada de ácido ortosilícico estabilizado (OSA), diseñada para aportar silicio altamente disponible para la absorción por la planta.",
-        "Optimiza la eficiencia en el uso del fósforo y del agua, al tiempo que favorece el rendimiento de la planta, su resiliencia, la calidad del cultivo, los °Brix, la producción y la vida útil poscosecha."
+        "Nuestra gama patentada se basa en una tecnología única de ácido ortosilícico estabilizado (OSA), diseñada para una biodisponibilidad máxima del silicio. Optimiza el funcionamiento fisiológico de la planta y mejora la eficiencia en el uso del fósforo y del agua. Esto refuerza la resiliencia natural frente al estrés térmico, el estrés hídrico y la salinidad, al tiempo que maximiza los °Brix, el valor nutricional, el rendimiento y la vida útil poscosecha."
       ]
     },
     "humans": {
@@ -128,6 +127,7 @@
     "cattle": "Bovinos"
   },
   "product": {
+    "faqTitle": "Preguntas frecuentes",
     "ranges": "Gamas",
     "range": "Gama",
     "products": "Productos",
@@ -156,13 +156,11 @@
   },
   "rdi": {
     "title": "Investigación y Desarrollo Moreco",
-    "intro": "Desde 2009, Moreco desarrolla y prueba sus soluciones de silicio en condiciones reales, con productores marroquíes e institutos oficiales.",
+    "intro": "Desde 2012, Moreco desarrolla y prueba sus soluciones a base de silicio en condiciones reales, en colaboración con productores marroquíes e institutos oficiales.",
     "innovationTitle": "Innovación",
     "innovationLead": "La innovación al servicio del rendimiento agrícola",
     "innovationText": [
-      "La innovación está en el centro del enfoque de Moreco. Desde 2009, nuestra empresa invierte en la investigación y el desarrollo de soluciones biotecnológicas para la agricultura.",
-      "Nuestro departamento de I+D desarrolla y optimiza formulaciones innovadoras a partir de tecnologías avanzadas, con especial atención a su eficacia agronómica, su asimilación por las plantas y su impacto en la calidad de las cosechas.",
-      "Nuestro equipo trabaja en estrecha colaboración con productores e institutos de investigación para diseñar, probar y mejorar nuestras soluciones en condiciones reales. Cada formulación sigue un proceso riguroso destinado a garantizar su calidad, su rendimiento y la regularidad de sus resultados."
+      "En Moreco, la innovación da forma al futuro de la agricultura. Desde 2012, invertimos de manera específica en el desarrollo de soluciones biotecnológicas de alta calidad. Con nuestros expertos en I+D y nuestros socios, diseñamos y optimizamos formulaciones avanzadas que contribuyen directamente a su rentabilidad. Nuestra prioridad es lograr la máxima eficacia agronómica, una absorción superior por parte de los cultivos y una mejora demostrada de la calidad de las cosechas. En estrecha colaboración con productores innovadores e institutos de investigación de primer nivel, probamos y perfeccionamos nuestros productos en condiciones reales. Gracias a este riguroso proceso de control de calidad, garantizamos un rendimiento constante y resultados fiables en el campo."
     ],
     "customTitle": "¿Necesita una formulación o un producto a medida?",
     "customText": [
@@ -175,15 +173,20 @@
     "customCta": "Contáctenos",
     "trialsTitle": "Resultados de ensayos",
     "trialsIntro": "Del manzano de Midelt al césped, cada cultivo documentado con fotografía de campo.",
+    "trialDocumentsTitle": "Informes de ensayos",
+    "trialDocumentsIntro": "Los informes completos de nuestros ensayos de campo, para descargar.",
+    "testimonialsTitle": "Testimonios",
+    "testimonialsIntro": "Lo que dicen los productores que probaron Orthagrow en sus parcelas en Marruecos, en 2018 y 2019.",
     "allTrials": "Todos los ensayos",
     "trialLabel": "Ensayo",
     "backToTrials": "Volver a los ensayos",
     "projectDescription": "Descripción del proyecto",
     "statTrialsWorld": "Campañas de ensayo en el mundo",
     "statTrials": "Campañas documentadas en Marruecos",
-    "statPlates": "Láminas de resultados",
+    "statPlates": "Fichas de resultados",
     "statSince": "Primera campaña",
-    "publicationsIntro": "Los estudios y la entrevista científica en los que se basan nuestras formulaciones, de descarga libre."
+    "publicationsIntro": "Investigación científica y resultados",
+    "soilVideo": "Potencie la biología del suelo para optimizar los costes de insumos y maximizar el rendimiento de sus cultivos."
   },
   "article": {
     "download": "Descargar el estudio",
@@ -193,30 +196,71 @@
     "domains": "Áreas",
     "discover": "Saber más",
     "contactLead": "Nuestros equipos atienden consultas técnicas y comerciales.",
-    "introTitle": "La innovación científica al servicio de la agricultura regenerativa",
+    "introTitle": "La innovación tecnológica al servicio de la rentabilidad y la alta calidad",
     "introText": [
-      "Moreco desarrolla, selecciona y optimiza tecnologías agronómicas avanzadas que contribuyen a la agricultura regenerativa y a una producción agrícola más eficiente y sostenible.",
-      "Nuestra experiencia abarca, en particular, la fisiología vegetal, el ácido ortosilícico estabilizado (OSA), la nutrición de precisión, la salud del suelo, la bioestimulación, el uso eficiente del agua y el refuerzo de la resiliencia fisiológica de los cultivos.",
-      "Seleccionamos y desarrollamos tecnologías por su pertinencia científica, su valor tecnológico y su aplicabilidad en el campo. Así ofrecemos a los profesionales de la agricultura soluciones destinadas a optimizar las interacciones entre el suelo, la zona radicular y la planta.",
-      "Nuestro enfoque se basa en una visión integrada: un suelo vivo y sano favorece un sistema radicular eficaz, una planta funcional y, en última instancia, una producción de calidad, más eficiente y sostenible."
+      "Desde 2012, Moreco acompaña a los productores en Marruecos seleccionando e implantando tecnologías de vanguardia diseñadas para maximizar los rendimientos y poner en valor la calidad premium de sus producciones. En colaboración directa con los creadores de la formulación patentada OSA (ácido ortosilícico), estimulamos la fisiología vegetal y optimizamos la eficiencia hídrica para asegurar sus cosechas.",
+      "Nuestra misión es generar una potente sinergia entre la matriz del suelo, la rizosfera y la planta. Al activar la biología del suelo, favorecemos un sistema radicular de alto rendimiento que libera el alto rendimiento de los cultivos, articulado en torno a 5 pilares de rentabilidad:"
+    ],
+    "introPoints": [
+      {
+        "title": "Máxima eficiencia nutricional",
+        "text": "Optimización de la absorción y la asimilación de los nutrientes para expresar todo el potencial de rendimiento."
+      },
+      {
+        "title": "Resiliencia frente al estrés",
+        "text": "Refuerzo de las defensas naturales contra enfermedades, plagas y choques climáticos (sequía, calor extremo, salinidad)."
+      },
+      {
+        "title": "Gestión estratégica del agua",
+        "text": "Mejora del equilibrio hídrico para mantener el rendimiento económico, incluso en condiciones de estrés hídrico severo."
+      },
+      {
+        "title": "Alta calidad de cosecha",
+        "text": "Optimización del calibre, la homogeneidad, el sabor y la conservación para maximizar el valor comercial."
+      },
+      {
+        "title": "Cero residuos bloqueantes",
+        "text": "Limitación drástica de la acumulación de metales pesados (como el cadmio) y de residuos químicos, que garantiza un acceso sin restricciones a los mercados de exportación premium."
+      }
     ],
     "visionTitle": "Nuestra visión",
     "vision": [
-      "Suelos vivos, fértiles y funcionales.",
-      "Cultivos sanos, robustos y resilientes.",
-      "Producciones de calidad, eficientes y sostenibles.",
-      "Una agricultura basada en la innovación, la ciencia y la sostenibilidad."
+      "Unlock the power of soil biology to reduce input costs & boost crop yield."
     ]
   },
   "press": {
     "archive": "Eventos pasados — archivo de 2014.",
     "dossier": "Dossier del estand",
     "sessions": "Detalles del evento",
-    "eventsTitle": "SIAM Meknès, Saudi Agriculture: nuestros dosieres y materiales"
+    "eventsTitle": "SIAM Meknès, Saudi Agriculture: nuestros dosieres y materiales",
+    "siamVideo": "Moreco SIAM Mequinez",
+    "articlesTitle": "En la prensa",
+    "articlesIntro": "Lo que los periódicos han escrito sobre Moreco."
   },
   "contact": {
-    "mobile": "Móvil",
+    "landline": "Fijo",
     "formTitle": "Escríbanos",
+    "service": {
+      "label": "¿Con qué departamento desea contactar?",
+      "options": [
+        {
+          "value": "Service Commercial",
+          "label": "Departamento Comercial"
+        },
+        {
+          "value": "Service Après-Vente",
+          "label": "Servicio Posventa"
+        },
+        {
+          "value": "Réclamations / Suggestions",
+          "label": "Reclamaciones / Sugerencias"
+        },
+        {
+          "value": "Service Recrutement",
+          "label": "Departamento de Selección"
+        }
+      ]
+    },
     "hoursTitle": "Horario de apertura",
     "hours": [
       {
@@ -229,6 +273,42 @@
       }
     ],
     "followUs": "Síganos"
+  },
+  "trialsAccess": {
+    "formTitle": "Solicitar acceso",
+    "profile": {
+      "label": "Usted es",
+      "options": [
+        {
+          "value": "Agriculteur / producteur",
+          "label": "Agricultor / productor"
+        },
+        {
+          "value": "Distributeur / revendeur",
+          "label": "Distribuidor / revendedor"
+        },
+        {
+          "value": "Ingénieur agronome / conseiller",
+          "label": "Ingeniero agrónomo / asesor"
+        },
+        {
+          "value": "Autre",
+          "label": "Otro"
+        }
+      ]
+    },
+    "crops": "Sus cultivos (opcional)",
+    "success": "Gracias, su solicitud ha sido enviada. En cuanto Moreco la apruebe, recibirá por correo electrónico un enlace personal para consultar los resultados de ensayos.",
+    "howTitle": "Cómo funciona",
+    "steps": [
+      "Usted envía este formulario.",
+      "Nuestro equipo examina su solicitud.",
+      "Recibe por correo electrónico un enlace personal, válido 12 meses, que abre los resultados de ensayos."
+    ],
+    "approvedTitle": "¿Ya aprobado?",
+    "approvedText": "Abra el enlace recibido por correo electrónico. En otro teléfono u ordenador, abra el mismo enlace una vez más.",
+    "coveredTitle": "Lo que encontrará",
+    "coveredText": "{n} campañas de campo, parcela testigo frente a parcela tratada, testimonios de productores y los informes de ensayos para descargar."
   },
   "quote": {
     "title": "Solicitud de presupuesto",
@@ -269,13 +349,17 @@
       "title": "Resultados de ensayos",
       "lead": "Parcela testigo frente a parcela tratada, en la misma explotación y la misma campaña."
     },
+    "trialsAccess": {
+      "title": "Acceso a los resultados de ensayos",
+      "lead": "Nuestros resultados de campo están reservados a los profesionales. Envíe su solicitud: en cuanto se apruebe, recibirá su acceso por correo electrónico."
+    },
     "knowledge": {
       "title": "Centro de conocimiento",
       "lead": "El silicio explicado: entrevistas y reportajes de fondo."
     },
     "news": {
       "title": "Medios y actualidad",
-      "lead": "Las novedades de Moreco y su presencia sobre el terreno."
+      "lead": "Siga nuestra actualidad: las últimas novedades, los comunicados de prensa y los eventos de Moreco."
     },
     "media": {
       "title": "Dosieres de prensa y eventos",
@@ -299,7 +383,7 @@
     }
   },
   "footer": {
-    "company": "Moreco Sarl",
+    "company": "Moreco Maroc",
     "navTitle": "Navegación",
     "productsTitle": "Productos",
     "contactTitle": "Contacto",
@@ -314,7 +398,11 @@
   },
   "resources": {
     "applicationsIntro": "Los folletos por cultivo, para llevar al campo.",
-    "cropSheetsSoon": "Las fichas de cultivo están en preparación y se publicarán aquí próximamente."
+    "cropSheetsSoon": "Las fichas de cultivo están en preparación y se publicarán aquí próximamente.",
+    "downloadFlyer": "Descargar el folleto",
+    "sheetFlyer": "Ficha de producto",
+    "sheetSds": "Ficha de datos de seguridad",
+    "seeProduct": "Ver el producto"
   },
   "careers": {
     "formTitle": "Candidatura espontánea",
@@ -355,20 +443,22 @@
       "En MORECO desarrollamos soluciones innovadoras para una agricultura sostenible, la salud humana y animal y un medio ambiente más sano.",
       "Con un enfoque práctico, una comunicación abierta y una ambición internacional, construimos juntos un futuro sostenible.",
       "¿Quiere contribuir a esta visión? Descubra nuestras oportunidades profesionales o envíenos una candidatura espontánea. Estaremos encantados de conocerle."
-    ]
+    ],
+    "vacanciesTitle": "Ofertas de empleo",
+    "vacanciesIntro": "Para postularse, envíenos su candidatura y su CV mediante el formulario al pie de la página, indicando el nombre del puesto en su mensaje.",
+    "jobDescription": "Descripción del puesto",
+    "jobMissions": "Funciones principales",
+    "jobProfile": "Su perfil",
+    "jobOffer": "Qué ofrecemos",
+    "jobApply": "Postularse"
   },
   "news": {
     "techEyebrow": "Tecnología Moreco",
-    "techTitle": "MORECO – Tecnología OSA única y patentada",
+    "techTitle": "MORECO – Tecnología OSA bioactiva y patentada",
     "techText": [
-      "Moreco desarrolla soluciones especializadas y patentadas a base de OSA (ácido ortosilícico estabilizado), apoyándose en tecnologías avanzadas desarrolladas por nuestros socios estratégicos para aplicaciones en agricultura, salud humana y salud animal.",
-      "Esta tecnología OSA es la base de soluciones diseñadas para optimizar la biodisponibilidad, la absorción y la acción fisiológica del silicio.",
-      "Moreco transforma esta tecnología en aplicaciones especializadas para la planta, el ser humano y el animal, con un enfoque centrado en la innovación científica, la precisión tecnológica y la calidad."
-    ],
-    "techPillars": [
-      "Planta",
-      "Ser humano",
-      "Animal"
+      "Moreco valida y distribuye soluciones patentadas de alto rendimiento a base de ácido ortosilícico estabilizado (OSA). Colaboramos estrechamente con institutos científicos de primer nivel y con nuestros socios estratégicos, los verdaderos pioneros y creadores de esta tecnología OSA única. Las especialidades agrícolas de Moreco proceden directamente de la fórmula OSA humana y farmacéutica, y se fabrican bajo la estricta certificación GMP. Juntos, trasladamos esta I+D de vanguardia a aplicaciones avanzadas para la agricultura, la salud humana y el sector veterinario.",
+      "Esta tecnología molecular OSA garantiza una biodisponibilidad superior y una asimilación transcelular, optimizando al más alto nivel los procesos fisiológicos y las vías metabólicas del organismo.",
+      "Al integrar la innovación científica, la precisión farmacéutica de las normas GMP y la experiencia de los inventores originales, Moreco marca el nuevo estándar en resiliencia celular y rendimiento fisiológico."
     ],
     "postsTitle": "Noticias"
   }

@@ -33,7 +33,7 @@
     "language": "Taal"
   },
   "home": {
-    "introTitle": "MORECO | Agronomische innovatie in dienst van regeneratieve landbouw",
+    "introTitle": "MORECO | Hoge gewasprestaties",
     "introText": [
       "Al meer dan 14 jaar werkt MORECO nauw samen met de pioniers en ontwikkelaars van gestabiliseerd orthokiezelzuur (OSA).",
       "Dankzij deze expertise ondersteunen we landbouwprofessionals in Europa, Azië, de Verenigde Staten en, sinds 2012, in Marokko en de MENA-regio.",
@@ -78,11 +78,11 @@
       },
       {
         "value": "2001",
-        "label": "Aanwezig in Marokko sinds"
+        "label": "Eerste proef in Marokko"
       },
       {
-        "value": "2014",
-        "label": "Aanwezig in Agadir sinds"
+        "value": "2012",
+        "label": "Aanwezig in Marokko sinds"
       }
     ],
     "quoteTitle": "Een concrete vraag? Vraag uw offerte aan",
@@ -91,13 +91,12 @@
   },
   "segments": {
     "agri": {
-      "name": "Landbouw & teelten",
+      "name": "Landbouw & Tuinbouw",
       "short": "Opbrengst, smaak en weerbaarheid van gewassen",
       "blurb": "Een unieke, volledig opneembare vorm van orthokiezelzuur: verbetert de opname van fosfor, bevordert een efficiënter watergebruik en draagt bij aan een betere voedingskwaliteit, hogere Brix-waarden, hogere opbrengsten en een langere houdbaarheid van de oogst.",
-      "introTitle": "Exclusieve gestabiliseerde OSA-technologie",
+      "introTitle": "OSA-innovatie: maximale biobeschikbaarheid & gewasprestaties",
       "intro": [
-        "Ons exclusieve assortiment is gebaseerd op een unieke, gepatenteerde technologie met gestabiliseerd orthokiezelzuur (OSA), ontwikkeld om zeer beschikbaar silicium te leveren voor opname door de plant.",
-        "Het optimaliseert de efficiëntie van fosfor- en watergebruik en ondersteunt tegelijk de prestaties en weerbaarheid van de plant, de gewaskwaliteit, de °Brix, de opbrengst en de houdbaarheid na de oogst."
+        "Ons gepatenteerde assortiment is gebaseerd op een unieke technologie met gestabiliseerd orthokiezelzuur (OSA), ontwikkeld voor een maximale biobeschikbaarheid van silicium. Het optimaliseert het fysiologisch functioneren van de plant en verbetert de efficiëntie van fosfor- en watergebruik. Dit versterkt de natuurlijke weerbaarheid tegen hittestress, waterstress en verzilting, en maximaliseert tegelijk de °Brix, de voedingswaarde, de opbrengst en de houdbaarheid na de oogst."
       ]
     },
     "humans": {
@@ -128,6 +127,7 @@
     "cattle": "Rundvee"
   },
   "product": {
+    "faqTitle": "Veelgestelde vragen",
     "ranges": "Gamma's",
     "range": "Gamma",
     "products": "Producten",
@@ -156,13 +156,11 @@
   },
   "rdi": {
     "title": "Onderzoek & Ontwikkeling Moreco",
-    "intro": "Sinds 2009 ontwikkelt en test Moreco zijn siliciumoplossingen onder praktijkomstandigheden, samen met Marokkaanse telers en officiële instituten.",
+    "intro": "Sinds 2012 ontwikkelt en test Moreco zijn oplossingen op basis van silicium onder praktijkomstandigheden, in samenwerking met Marokkaanse telers en officiële instituten.",
     "innovationTitle": "Innovatie",
     "innovationLead": "Innovatie in dienst van landbouwprestaties",
     "innovationText": [
-      "Innovatie staat centraal in de aanpak van Moreco. Sinds 2009 investeert ons bedrijf in onderzoek naar en ontwikkeling van biotechnologische oplossingen voor de landbouw.",
-      "Onze R&D-afdeling ontwikkelt en optimaliseert innovatieve formuleringen op basis van geavanceerde technologieën, met bijzondere aandacht voor hun agronomische werkzaamheid, hun opname door de plant en hun invloed op de kwaliteit van de oogst.",
-      "Ons team werkt nauw samen met telers en onderzoeksinstituten om onze oplossingen onder praktijkomstandigheden te ontwerpen, te testen en te verbeteren. Elke formulering doorloopt een strikt traject dat haar kwaliteit, prestaties en constante resultaten in het gebruik moet waarborgen."
+      "Bij Moreco geeft innovatie vorm aan de toekomst van de landbouw. Sinds 2012 investeren we gericht in de ontwikkeling van hoogwaardige biotechnologische oplossingen. Met onze R&D-experts en partners ontwerpen en optimaliseren we geavanceerde formuleringen die rechtstreeks bijdragen aan uw rendabiliteit. Onze prioriteit is een maximale agronomische werkzaamheid, een superieure opname door de gewassen en een aantoonbaar betere oogstkwaliteit. In nauwe samenwerking met innovatieve telers en toonaangevende onderzoeksinstituten testen en verfijnen we onze producten onder praktijkomstandigheden. Dankzij dit strikte kwaliteitscontroleproces garanderen we constante prestaties en betrouwbare resultaten in het veld."
     ],
     "customTitle": "Een formulering of product op maat nodig?",
     "customText": [
@@ -175,15 +173,20 @@
     "customCta": "Neem contact op",
     "trialsTitle": "Proefresultaten",
     "trialsIntro": "Van de appelboom van Midelt tot gazon, elk gewas gedocumenteerd met veldfoto’s.",
+    "trialDocumentsTitle": "Proefrapporten",
+    "trialDocumentsIntro": "De volledige verslagen van onze veldproeven, om te downloaden.",
+    "testimonialsTitle": "Getuigenissen",
+    "testimonialsIntro": "Wat telers die Orthagrow op hun eigen percelen in Marokko testten, zeiden in 2018 en 2019.",
     "allTrials": "Alle proeven",
     "trialLabel": "Proef",
     "backToTrials": "Terug naar de proeven",
     "projectDescription": "Projectbeschrijving",
     "statTrialsWorld": "Proefcampagnes wereldwijd",
     "statTrials": "Gedocumenteerde campagnes in Marokko",
-    "statPlates": "Resultatenplaten",
+    "statPlates": "Resultatenfiches",
     "statSince": "Eerste campagne",
-    "publicationsIntro": "De studies en het wetenschappelijke interview waarop onze formuleringen steunen, vrij te downloaden."
+    "publicationsIntro": "Wetenschappelijk onderzoek & resultaten",
+    "soilVideo": "Activeer het bodemleven om te besparen op inputkosten en het gewasrendement te maximaliseren."
   },
   "article": {
     "download": "Studie downloaden",
@@ -193,30 +196,71 @@
     "domains": "Domeinen",
     "discover": "Meer weten",
     "contactLead": "Onze teams beantwoorden technische en commerciële vragen.",
-    "introTitle": "Wetenschappelijke innovatie in dienst van regeneratieve landbouw",
+    "introTitle": "Technologische innovatie in dienst van rendabiliteit en topkwaliteit",
     "introText": [
-      "Moreco ontwikkelt, selecteert en optimaliseert geavanceerde agronomische technologieën die bijdragen aan regeneratieve landbouw en aan een efficiëntere, duurzame landbouwproductie.",
-      "Onze expertise omvat onder meer plantenfysiologie, gestabiliseerd orthokiezelzuur (OSA), precisievoeding, bodemgezondheid, biostimulatie, efficiënt watergebruik en het versterken van de fysiologische weerbaarheid van gewassen.",
-      "We selecteren en ontwikkelen technologieën op basis van hun wetenschappelijke relevantie, hun technologische waarde en hun toepasbaarheid in het veld. Zo bieden we professionals in de landbouw oplossingen om de wisselwerking tussen bodem, wortelzone en plant te optimaliseren.",
-      "Onze aanpak berust op een geïntegreerde visie: een levende, gezonde bodem bevordert een krachtig wortelstelsel, een goed functionerende plant en uiteindelijk een kwaliteitsvolle, efficiëntere en duurzame productie."
+      "Sinds 2012 begeleidt Moreco telers in Marokko door baanbrekende technologieën te selecteren en in te zetten die zijn ontworpen om de opbrengst te maximaliseren en de premiumkwaliteit van uw productie te verwaarden. In rechtstreekse samenwerking met de ontwikkelaars van de gepatenteerde OSA-formulering (orthokiezelzuur) stimuleren we de plantenfysiologie en optimaliseren we de waterefficiëntie om uw oogst veilig te stellen.",
+      "Onze missie is een krachtige synergie te creëren tussen de bodemmatrix, de rizosfeer en de plant. Door het bodemleven te activeren, bevorderen we een uiterst krachtig wortelstelsel dat hoge gewasprestaties vrijmaakt, gebouwd op 5 pijlers van rendabiliteit:"
+    ],
+    "introPoints": [
+      {
+        "title": "Maximale nutriëntenefficiëntie",
+        "text": "Optimale opname en assimilatie van voedingsstoffen om het volledige opbrengstpotentieel te benutten."
+      },
+      {
+        "title": "Weerbaarheid tegen stress",
+        "text": "Versterking van de natuurlijke afweer tegen ziekten, plagen en klimaatschokken (droogte, extreme hitte, verzilting)."
+      },
+      {
+        "title": "Strategisch waterbeheer",
+        "text": "Een betere waterhuishouding om de economische prestaties op peil te houden, zelfs bij ernstige waterstress."
+      },
+      {
+        "title": "Topkwaliteit van de oogst",
+        "text": "Optimalisatie van kaliber, uniformiteit, smaak en houdbaarheid om de handelswaarde te maximaliseren."
+      },
+      {
+        "title": "Nul blokkerende residuen",
+        "text": "Drastische beperking van de ophoping van zware metalen (zoals cadmium) en chemische residuen, voor onbeperkte toegang tot premium exportmarkten."
+      }
     ],
     "visionTitle": "Onze visie",
     "vision": [
-      "Levende, vruchtbare en functionele bodems.",
-      "Gezonde, robuuste en weerbare gewassen.",
-      "Kwaliteitsvolle, renderende en duurzame productie.",
-      "Een landbouw gebouwd op innovatie, wetenschap en duurzaamheid."
+      "Unlock the power of soil biology to reduce input costs & boost crop yield."
     ]
   },
   "press": {
     "archive": "Voorbije evenementen — archief 2014.",
     "dossier": "Standdossier",
     "sessions": "Details van het evenement",
-    "eventsTitle": "SIAM Meknes, Saudi Agriculture: onze dossiers en materialen"
+    "eventsTitle": "SIAM Meknes, Saudi Agriculture: onze dossiers en materialen",
+    "siamVideo": "Moreco SIAM Meknes",
+    "articlesTitle": "In de pers",
+    "articlesIntro": "Wat de kranten over Moreco hebben geschreven."
   },
   "contact": {
-    "mobile": "Gsm",
+    "landline": "Vast",
     "formTitle": "Schrijf ons",
+    "service": {
+      "label": "Met welke afdeling wilt u contact opnemen?",
+      "options": [
+        {
+          "value": "Service Commercial",
+          "label": "Verkoop"
+        },
+        {
+          "value": "Service Après-Vente",
+          "label": "Klantenservice"
+        },
+        {
+          "value": "Réclamations / Suggestions",
+          "label": "Klachten / Suggesties"
+        },
+        {
+          "value": "Service Recrutement",
+          "label": "Werving"
+        }
+      ]
+    },
     "hoursTitle": "Openingstijden",
     "hours": [
       {
@@ -229,6 +273,42 @@
       }
     ],
     "followUs": "Volg ons"
+  },
+  "trialsAccess": {
+    "formTitle": "Toegang aanvragen",
+    "profile": {
+      "label": "U bent",
+      "options": [
+        {
+          "value": "Agriculteur / producteur",
+          "label": "Landbouwer / teler"
+        },
+        {
+          "value": "Distributeur / revendeur",
+          "label": "Verdeler / wederverkoper"
+        },
+        {
+          "value": "Ingénieur agronome / conseiller",
+          "label": "Landbouwkundige / adviseur"
+        },
+        {
+          "value": "Autre",
+          "label": "Andere"
+        }
+      ]
+    },
+    "crops": "Uw teelten (optioneel)",
+    "success": "Bedankt, uw aanvraag is verstuurd. Zodra Moreco ze goedkeurt, ontvangt u per e-mail een persoonlijke link om de proefresultaten te bekijken.",
+    "howTitle": "Hoe het werkt",
+    "steps": [
+      "U verstuurt dit formulier.",
+      "Ons team bekijkt uw aanvraag.",
+      "U ontvangt per e-mail een persoonlijke link, 12 maanden geldig, die de proefresultaten opent."
+    ],
+    "approvedTitle": "Al goedgekeurd?",
+    "approvedText": "Open de link die u per e-mail ontving. Op een andere telefoon of computer opent u dezelfde link nog een keer.",
+    "coveredTitle": "Wat u er vindt",
+    "coveredText": "{n} veldcampagnes, controleperceel tegenover behandeld perceel, getuigenissen van telers en de proefverslagen om te downloaden."
   },
   "quote": {
     "title": "Offerteaanvraag",
@@ -269,13 +349,17 @@
       "title": "Proefresultaten",
       "lead": "Controleperceel tegenover behandeld perceel, op hetzelfde bedrijf in hetzelfde seizoen."
     },
+    "trialsAccess": {
+      "title": "Toegang tot de proefresultaten",
+      "lead": "Onze veldresultaten zijn voorbehouden aan professionals. Dien een aanvraag in: zodra die is goedgekeurd, ontvangt u uw toegang per e-mail."
+    },
     "knowledge": {
       "title": "Kenniscentrum",
       "lead": "Silicium uitgelegd: interviews en achtergronddossiers."
     },
     "news": {
       "title": "Media & nieuws",
-      "lead": "Het nieuws van Moreco en haar aanwezigheid op het terrein."
+      "lead": "Volg ons nieuws: de laatste nieuwtjes, persberichten en evenementen van Moreco."
     },
     "media": {
       "title": "Persmappen & evenementen",
@@ -299,7 +383,7 @@
     }
   },
   "footer": {
-    "company": "Moreco Sarl",
+    "company": "Moreco Maroc",
     "navTitle": "Navigatie",
     "productsTitle": "Producten",
     "contactTitle": "Contact",
@@ -314,7 +398,11 @@
   },
   "resources": {
     "applicationsIntro": "De flyers per teelt, om mee het veld in te nemen.",
-    "cropSheetsSoon": "De teeltfiches worden voorbereid en verschijnen hier binnenkort."
+    "cropSheetsSoon": "De teeltfiches worden voorbereid en verschijnen hier binnenkort.",
+    "downloadFlyer": "Flyer downloaden",
+    "sheetFlyer": "Productfiche",
+    "sheetSds": "Veiligheidsinformatieblad",
+    "seeProduct": "Bekijk het product"
   },
   "careers": {
     "formTitle": "Open sollicitatie",
@@ -355,20 +443,22 @@
       "Bij MORECO ontwikkelen we innovatieve oplossingen voor duurzame landbouw, de gezondheid van mens en dier en een gezonder milieu.",
       "Met een praktische aanpak, open communicatie en internationale ambitie bouwen we samen aan een duurzame toekomst.",
       "Wilt u bijdragen aan deze visie? Ontdek onze vacatures of stuur ons een open sollicitatie. We maken graag kennis met u."
-    ]
+    ],
+    "vacanciesTitle": "Vacatures",
+    "vacanciesIntro": "Solliciteren? Stuur je sollicitatie en cv via het formulier onderaan de pagina en vermeld de functietitel in je bericht.",
+    "jobDescription": "Functieomschrijving",
+    "jobMissions": "Belangrijkste taken",
+    "jobProfile": "Jouw profiel",
+    "jobOffer": "Wat wij bieden",
+    "jobApply": "Solliciteren"
   },
   "news": {
     "techEyebrow": "Moreco-technologie",
-    "techTitle": "MORECO – Unieke, gepatenteerde OSA-technologie",
+    "techTitle": "MORECO – Bioactieve, gepatenteerde OSA-technologie",
     "techText": [
-      "Moreco ontwikkelt gespecialiseerde, gepatenteerde oplossingen op basis van OSA (gestabiliseerd orthokiezelzuur), gebaseerd op geavanceerde technologieën van onze strategische partners, voor toepassingen in de landbouw, de menselijke gezondheid en de diergezondheid.",
-      "Deze OSA-technologie vormt de basis van oplossingen die de biologische beschikbaarheid, de opname en de fysiologische werking van silicium optimaliseren.",
-      "Moreco vertaalt deze technologie naar gespecialiseerde toepassingen voor plant, mens en dier, met een aanpak die draait om wetenschappelijke innovatie, technologische precisie en kwaliteit."
-    ],
-    "techPillars": [
-      "Plant",
-      "Mens",
-      "Dier"
+      "Moreco valideert en verdeelt hoogwaardige, gepatenteerde oplossingen op basis van gestabiliseerd orthokiezelzuur (OSA). We werken nauw samen met toonaangevende wetenschappelijke instituten en met onze strategische partners – de echte pioniers en ontwerpers van deze unieke OSA-technologie. De landbouwspecialiteiten van Moreco zijn rechtstreeks afgeleid van de menselijke, farmaceutische OSA-formule en worden geproduceerd onder strikte GMP-certificering. Samen vertalen we deze geavanceerde R&D naar vooruitstrevende toepassingen voor de landbouw, de menselijke gezondheid en de veterinaire sector.",
+      "Deze moleculaire OSA-technologie garandeert een superieure biologische beschikbaarheid en transcellulaire opname, en optimaliseert de fysiologische processen en metabole routes in het organisme op het hoogste niveau.",
+      "Door wetenschappelijke innovatie, de farmaceutische precisie van GMP-normen en de expertise van de oorspronkelijke uitvinders te combineren, zet Moreco de nieuwe standaard op het gebied van cellulaire veerkracht en fysiologische prestaties."
     ],
     "postsTitle": "Nieuws"
   }

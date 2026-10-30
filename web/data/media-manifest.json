@@ -2,50 +2,115 @@
   "orthagrow-control": {
     "image": "/media/products/orthagrow-control.webp",
     "datasheet": "/media/datasheets/orthagrow-control.pdf",
-    "datasheetKind": "flyer"
+    "datasheetKind": "flyer",
+    "datasheetPages": [
+      "/media/datasheets/previews/orthagrow-control-1.webp",
+      "/media/datasheets/previews/orthagrow-control-2.webp"
+    ],
+    "datasheetBytes": 1038291
   },
   "orthagrow-bloom-booster": {
     "image": "/media/products/orthagrow-bloom-booster.webp",
     "datasheet": "/media/datasheets/orthagrow-bloom-booster.pdf",
-    "datasheetKind": "flyer"
+    "datasheetKind": "flyer",
+    "datasheetPages": [
+      "/media/datasheets/previews/orthagrow-bloom-booster-1.webp",
+      "/media/datasheets/previews/orthagrow-bloom-booster-2.webp"
+    ],
+    "datasheetBytes": 1200477
   },
   "orthagrow-soil-conditioner": {
     "image": "/media/products/orthagrow-soil-conditioner.webp",
     "datasheet": "/media/datasheets/orthagrow-soil-conditioner.pdf",
-    "datasheetKind": "flyer"
+    "datasheetKind": "flyer",
+    "datasheetPages": [
+      "/media/datasheets/previews/orthagrow-soil-conditioner-1.webp",
+      "/media/datasheets/previews/orthagrow-soil-conditioner-2.webp"
+    ],
+    "datasheetBytes": 1105489
   },
   "orthagrow-micro-manager": {
     "image": "/media/products/orthagrow-micro-manager.webp",
     "datasheet": "/media/datasheets/orthagrow-micro-manager.pdf",
-    "datasheetKind": "flyer"
+    "datasheetKind": "flyer",
+    "datasheetPages": [
+      "/media/datasheets/previews/orthagrow-micro-manager-1.webp",
+      "/media/datasheets/previews/orthagrow-micro-manager-2.webp"
+    ],
+    "datasheetBytes": 1167116
   },
   "orthagrow-fertifight": {
     "image": "/media/products/orthagrow-fertifight.webp",
     "datasheet": "/media/datasheets/orthagrow-fertifight.pdf",
-    "datasheetKind": "flyer"
+    "datasheetKind": "flyer",
+    "datasheetPages": [
+      "/media/datasheets/previews/orthagrow-fertifight-1.webp",
+      "/media/datasheets/previews/orthagrow-fertifight-2.webp"
+    ],
+    "datasheetBytes": 1261597
   },
   "orthagrow-granule": {
     "image": "/media/products/orthagrow-granule.webp",
     "datasheet": "/media/datasheets/orthagrow-granule.pdf",
-    "datasheetKind": "flyer"
+    "datasheetKind": "flyer",
+    "datasheetPages": [
+      "/media/datasheets/previews/orthagrow-granule-1.webp",
+      "/media/datasheets/previews/orthagrow-granule-2.webp"
+    ],
+    "datasheetBytes": 1175714
   },
   "orthagrow-poudre": {
     "image": "/media/products/orthagrow-poudre.webp"
   },
   "orthagrow-initio": {
-    "image": "/media/products/orthagrow-initio.webp"
+    "image": "/media/products/orthagrow-initio.webp",
+    "datasheet": "/media/datasheets/orthagrow-initio.pdf",
+    "datasheetKind": "flyer",
+    "datasheetPages": [
+      "/media/datasheets/previews/orthagrow-initio-1.webp",
+      "/media/datasheets/previews/orthagrow-initio-2.webp"
+    ],
+    "datasheetBytes": 1268764
   },
   "orthagrow-flor": {
-    "image": "/media/products/orthagrow-flor.webp"
+    "image": "/media/products/orthagrow-flor.webp",
+    "datasheet": "/media/datasheets/orthagrow-flor.pdf",
+    "datasheetKind": "flyer",
+    "datasheetPages": [
+      "/media/datasheets/previews/orthagrow-flor-1.webp",
+      "/media/datasheets/previews/orthagrow-flor-2.webp"
+    ],
+    "datasheetBytes": 1039910
   },
   "orthagrow-frucfolia": {
-    "image": "/media/products/orthagrow-frucfolia.webp"
+    "image": "/media/products/orthagrow-frucfolia.webp",
+    "datasheet": "/media/datasheets/orthagrow-frucfolia.pdf",
+    "datasheetKind": "flyer",
+    "datasheetPages": [
+      "/media/datasheets/previews/orthagrow-frucfolia-1.webp",
+      "/media/datasheets/previews/orthagrow-frucfolia-2.webp"
+    ],
+    "datasheetBytes": 1186155
   },
   "orthagrow-frucferti": {
-    "image": "/media/products/orthagrow-frucferti.webp"
+    "image": "/media/products/orthagrow-frucferti.webp",
+    "datasheet": "/media/datasheets/orthagrow-frucferti.pdf",
+    "datasheetKind": "flyer",
+    "datasheetPages": [
+      "/media/datasheets/previews/orthagrow-frucferti-1.webp",
+      "/media/datasheets/previews/orthagrow-frucferti-2.webp"
+    ],
+    "datasheetBytes": 1236295
   },
   "orthagrow-matur": {
-    "image": "/media/products/orthagrow-matur.webp"
+    "image": "/media/products/orthagrow-matur.webp",
+    "datasheet": "/media/datasheets/orthagrow-matur.pdf",
+    "datasheetKind": "flyer",
+    "datasheetPages": [
+      "/media/datasheets/previews/orthagrow-matur-1.webp",
+      "/media/datasheets/previews/orthagrow-matur-2.webp"
+    ],
+    "datasheetBytes": 1134569
   },
   "fertifight": {
     "image": "/media/products/fertifight.webp",
@@ -55,69 +120,12 @@
   "huwa-san-agro": {
     "image": "/media/products/huwa-san-agro.webp",
     "datasheet": "/media/datasheets/huwa-san-agro.pdf",
-    "datasheetKind": "sds"
-  },
-  "huwa-san-vet": {
-    "image": "/media/products/huwa-san-vet.webp",
-    "datasheet": "/media/datasheets/huwa-san-vet.pdf",
-    "datasheetKind": "sds"
-  },
-  "huwa-san-fb": {
-    "image": "/media/products/huwa-san-fb.webp",
-    "datasheet": "/media/datasheets/huwa-san-fb.pdf",
-    "datasheetKind": "sds"
-  },
-  "huwa-san-hard-surface": {
-    "image": "/media/products/huwa-san-hard-surface.webp",
-    "datasheet": "/media/datasheets/huwa-san-hard-surface.pdf",
-    "datasheetKind": "sds"
-  },
-  "huwa-san-water-treatment": {
-    "image": "/media/products/huwa-san-water-treatment.webp",
-    "datasheet": "/media/datasheets/huwa-san-water-treatment.pdf",
-    "datasheetKind": "sds"
-  },
-  "huwa-san-hands": {
-    "image": "/media/products/huwa-san-hands.webp"
-  },
-  "huwa-san-toilet": {
-    "image": "/media/products/huwa-san-toilet.webp"
-  },
-  "huwa-san-bathroom": {
-    "image": "/media/products/huwa-san-bathroom.webp"
-  },
-  "huwa-san-fruit-vegetables": {
-    "image": "/media/products/huwa-san-fruit-vegetables.webp"
-  },
-  "huwa-san-kitchen": {
-    "image": "/media/products/huwa-san-kitchen.webp"
-  },
-  "huwa-san-kiddiepool": {
-    "image": "/media/products/huwa-san-kiddiepool.webp"
-  },
-  "huwa-san-minipool": {
-    "image": "/media/products/huwa-san-minipool.webp"
-  },
-  "huwa-san-pool": {
-    "image": "/media/products/huwa-san-pool.webp"
-  },
-  "huwa-san-whirlpool": {
-    "image": "/media/products/huwa-san-whirlpool.webp"
-  },
-  "huwa-san-wellness": {
-    "image": "/media/products/huwa-san-wellness.webp"
-  },
-  "bioxeco-hand": {
-    "image": "/media/products/bioxeco-hand.webp"
-  },
-  "bioxeco-25s": {
-    "image": "/media/products/bioxeco-25s.webp"
-  },
-  "bioxeco-dw": {
-    "image": "/media/products/bioxeco-dw.webp"
-  },
-  "bioxeco-fog": {
-    "image": "/media/products/bioxeco-fog.webp"
+    "datasheetKind": "sds",
+    "datasheetPages": [
+      "/media/datasheets/previews/huwa-san-agro-1.webp",
+      "/media/datasheets/previews/huwa-san-agro-2.webp"
+    ],
+    "datasheetBytes": 212099
   },
   "orthafight": {
     "image": "/media/products/orthafight.webp",
@@ -140,7 +148,14 @@
     "image": "/media/products/orthahealth-bovins.webp"
   },
   "clearox": {
-    "image": "/media/products/clearox.webp"
+    "image": "/media/products/clearox.webp",
+    "datasheet": "/media/datasheets/clearox.pdf",
+    "datasheetKind": "flyer",
+    "datasheetPages": [
+      "/media/datasheets/previews/clearox-1.webp",
+      "/media/datasheets/previews/clearox-2.webp"
+    ],
+    "datasheetBytes": 614814
   },
   "mavita-health": {
     "image": "/media/products/mavita-health.webp",
@@ -176,13 +191,34 @@
     "datasheetKind": "flyer"
   },
   "orthagrow-cal": {
-    "image": "/media/products/orthagrow-cal.webp"
+    "image": "/media/products/orthagrow-cal.webp",
+    "datasheet": "/media/datasheets/orthagrow-cal.pdf",
+    "datasheetKind": "flyer",
+    "datasheetPages": [
+      "/media/datasheets/previews/orthagrow-cal-1.webp",
+      "/media/datasheets/previews/orthagrow-cal-2.webp"
+    ],
+    "datasheetBytes": 1201009
   },
   "orthagrow-zno": {
-    "image": "/media/products/orthagrow-zno.webp"
+    "image": "/media/products/orthagrow-zno.webp",
+    "datasheet": "/media/datasheets/orthagrow-zno.pdf",
+    "datasheetKind": "flyer",
+    "datasheetPages": [
+      "/media/datasheets/previews/orthagrow-zno-1.webp",
+      "/media/datasheets/previews/orthagrow-zno-2.webp"
+    ],
+    "datasheetBytes": 1156742
   },
   "orthagrow-alga-si": {
-    "image": "/media/products/orthagrow-alga-si.webp"
+    "image": "/media/products/orthagrow-alga-si.webp",
+    "datasheet": "/media/datasheets/orthagrow-alga-si.pdf",
+    "datasheetKind": "flyer",
+    "datasheetPages": [
+      "/media/datasheets/previews/orthagrow-alga-si-1.webp",
+      "/media/datasheets/previews/orthagrow-alga-si-2.webp"
+    ],
+    "datasheetBytes": 1287696
   },
   "orthagrow-procure": {
     "image": "/media/products/orthagrow-procure.webp"
@@ -191,10 +227,24 @@
     "image": "/media/products/orthagrow-protec.webp"
   },
   "orthagrow-aminactif": {
-    "image": "/media/products/orthagrow-aminactif.webp"
+    "image": "/media/products/orthagrow-aminactif.webp",
+    "datasheet": "/media/datasheets/orthagrow-aminactif.pdf",
+    "datasheetKind": "flyer",
+    "datasheetPages": [
+      "/media/datasheets/previews/orthagrow-aminactif-1.webp",
+      "/media/datasheets/previews/orthagrow-aminactif-2.webp"
+    ],
+    "datasheetBytes": 1256650
   },
   "orthagrow-myco": {
-    "image": "/media/products/orthagrow-myco.webp"
+    "image": "/media/products/orthagrow-myco.webp",
+    "datasheet": "/media/datasheets/orthagrow-myco.pdf",
+    "datasheetKind": "flyer",
+    "datasheetPages": [
+      "/media/datasheets/previews/orthagrow-myco-1.webp",
+      "/media/datasheets/previews/orthagrow-myco-2.webp"
+    ],
+    "datasheetBytes": 1508193
   },
   "mavita-beauty-gouttes": {
     "image": "/media/products/mavita-beauty-gouttes.webp"

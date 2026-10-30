@@ -26,7 +26,8 @@ const ACCENT = {
  */
 export default function ServicesView({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
-  const { introTitle, introText, sections } = servicesContent(locale);
+  const { introTitle, intro, sections } = servicesContent(locale);
+  const firstParagraph = intro.findIndex((block) => block.type === 'paragraph');
 
   const linkFor = (section: ServiceSection) => {
     if (!section.target || !section.cta) return undefined;
@@ -49,13 +50,30 @@ export default function ServicesView({ locale }: { locale: Locale }) {
         ]}
       />
 
-      {(introTitle || introText) && (
+      {/*
+       * "À propos de Moreco" (briefing of 2026-10-21), in place of the archive's few lines
+       * on silicon. Its title names the company, so the "Applications produits" eyebrow
+       * that stood over the old text went with it; the client's signature closes it.
+       */}
+      {(introTitle || intro.length > 0) && (
         <section className="section">
           <div className="page-narrow">
             <Reveal>
-              <p className="eyebrow">{t.nav.applications}</p>
               {introTitle && <h2>{introTitle}</h2>}
-              {introText && <p className="lead">{introText}</p>}
+              {intro.map((block, i) =>
+                block.type === 'heading' ? (
+                  <h3 key={i} className={s.introHeading}>
+                    {block.text}
+                  </h3>
+                ) : (
+                  <p key={i} className={i === firstParagraph ? 'lead' : undefined}>
+                    {block.text}
+                  </p>
+                )
+              )}
+              <p className={s.signature}>
+                {t.site.name.toUpperCase()} — {t.site.signature}
+              </p>
             </Reveal>
           </div>
         </section>

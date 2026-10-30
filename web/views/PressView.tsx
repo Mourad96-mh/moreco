@@ -4,16 +4,20 @@ import type { Locale } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionary';
 import { href } from '@/data/routes';
 import { pressContent } from '@/data/press';
+import { PRESS_ARTICLES } from '@/data/press-articles';
+import { formatDate } from '@/data/news';
 import { pageHero } from '@/data/hero-images';
 import PageHeader from '@/components/PageHeader/PageHeader';
 import Reveal from '@/components/Reveal/Reveal';
+import VideoFold from '@/components/VideoFold/VideoFold';
 import s from './PressView.module.css';
 
 /**
  * Media & events: the two trade shows Moreco exhibited at in 2014, with their dossiers
  * and the stand video. The downloads block that closed the page (brochure, sales terms,
  * the silicon interview) came off with the briefing of 2026-09-28; the Médina FM
- * interviews and the press coverage came off on 2026-09-29.
+ * interviews and the press coverage came off on 2026-09-29. Press articles came back on
+ * 2026-10-07 as the client retypes them — see data/press-articles.json.
  *
  * Everything here is twelve years old, so the page says so plainly rather than presenting
  * it as what is coming up — the archive's own heading called these "événements à venir",
@@ -98,20 +102,40 @@ export default function PressView({ locale }: { locale: Locale }) {
         </div>
       </div>
 
+      {PRESS_ARTICLES.length > 0 && (
+        <section className="section section--tint" id="press">
+          <div className="page">
+            <Reveal>
+              <h2 className={s.sectionTitle}>{t.press.articlesTitle}</h2>
+              <p className="lead">{t.press.articlesIntro}</p>
+            </Reveal>
+
+            <ul className={s.articles}>
+              {PRESS_ARTICLES.map((article, i) => (
+                <Reveal key={article.slug} as="li" delay={(i % 3) * 70}>
+                  <a className={s.article} href={article.file} target="_blank" rel="noopener noreferrer">
+                    <span className={s.articleMeta}>
+                      {article.outlet} · <time dateTime={article.date}>{formatDate(article.date, locale)}</time>
+                    </span>
+                    <span className={s.articleTitle}>{article.title}</span>
+                    <span className={s.size}>
+                      <PdfIcon />
+                      PDF{article.bytes ? ` · ${Math.round(article.bytes / 1024)} ${t.article.sizeUnit}` : ''}
+                    </span>
+                  </a>
+                </Reveal>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
+
+      {/* The stand video stays closed behind its title until asked for (2026-10-29, point 9). */}
       {video && (
         <section className="section section--tint">
           <div className="page-narrow">
             <Reveal>
-              <h2 className={s.videoTitle}>{video.title}</h2>
-              <div className={s.video}>
-                <iframe
-                  src={video.embed}
-                  title={video.title}
-                  loading="lazy"
-                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
+              <VideoFold title={t.press.siamVideo} embed={video.embed} />
             </Reveal>
           </div>
         </section>
