@@ -46,9 +46,6 @@ const RANGE_HERO: Record<string, string> = {
   mavita: `${DIR}/mavita.webp`,
   orthahealth: `${DIR}/orthahealth.webp`,
   'huwa-san-pro': `${DIR}/huwa-san-pro.webp`,
-  'huwa-san-home': `${DIR}/huwa-san-home.webp`,
-  'huwa-san-pool': `${DIR}/huwa-san-pool.webp`,
-  bioxeco: `${DIR}/bioxeco.webp`,
   clearox: `${DIR}/clearox.webp`,
 };
 

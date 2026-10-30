@@ -127,68 +127,6 @@
     ],
     "datasheetBytes": 212099
   },
-  "huwa-san-vet": {
-    "image": "/media/products/huwa-san-vet.webp",
-    "datasheet": "/media/datasheets/huwa-san-vet.pdf",
-    "datasheetKind": "sds"
-  },
-  "huwa-san-fb": {
-    "image": "/media/products/huwa-san-fb.webp",
-    "datasheet": "/media/datasheets/huwa-san-fb.pdf",
-    "datasheetKind": "sds"
-  },
-  "huwa-san-hard-surface": {
-    "image": "/media/products/huwa-san-hard-surface.webp",
-    "datasheet": "/media/datasheets/huwa-san-hard-surface.pdf",
-    "datasheetKind": "sds"
-  },
-  "huwa-san-water-treatment": {
-    "image": "/media/products/huwa-san-water-treatment.webp",
-    "datasheet": "/media/datasheets/huwa-san-water-treatment.pdf",
-    "datasheetKind": "sds"
-  },
-  "huwa-san-hands": {
-    "image": "/media/products/huwa-san-hands.webp"
-  },
-  "huwa-san-toilet": {
-    "image": "/media/products/huwa-san-toilet.webp"
-  },
-  "huwa-san-bathroom": {
-    "image": "/media/products/huwa-san-bathroom.webp"
-  },
-  "huwa-san-fruit-vegetables": {
-    "image": "/media/products/huwa-san-fruit-vegetables.webp"
-  },
-  "huwa-san-kitchen": {
-    "image": "/media/products/huwa-san-kitchen.webp"
-  },
-  "huwa-san-kiddiepool": {
-    "image": "/media/products/huwa-san-kiddiepool.webp"
-  },
-  "huwa-san-minipool": {
-    "image": "/media/products/huwa-san-minipool.webp"
-  },
-  "huwa-san-pool": {
-    "image": "/media/products/huwa-san-pool.webp"
-  },
-  "huwa-san-whirlpool": {
-    "image": "/media/products/huwa-san-whirlpool.webp"
-  },
-  "huwa-san-wellness": {
-    "image": "/media/products/huwa-san-wellness.webp"
-  },
-  "bioxeco-hand": {
-    "image": "/media/products/bioxeco-hand.webp"
-  },
-  "bioxeco-25s": {
-    "image": "/media/products/bioxeco-25s.webp"
-  },
-  "bioxeco-dw": {
-    "image": "/media/products/bioxeco-dw.webp"
-  },
-  "bioxeco-fog": {
-    "image": "/media/products/bioxeco-fog.webp"
-  },
   "orthafight": {
     "image": "/media/products/orthafight.webp",
     "datasheet": "/media/datasheets/orthafight.pdf",
