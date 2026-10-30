@@ -95,6 +95,11 @@
   list-style: none;
 }
 
+/* The soil-biology film, folded under the last paper. */
+.film {
+  margin-top: clamp(2rem, 4vw, 3rem);
+}
+
 .paper {
   min-width: 0;
 }

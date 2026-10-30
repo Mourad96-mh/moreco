@@ -11,6 +11,7 @@ import type { Article } from '@/data/articles';
 import { pageHero } from '@/data/hero-images';
 import PageHeader from '@/components/PageHeader/PageHeader';
 import Reveal from '@/components/Reveal/Reveal';
+import VideoFold from '@/components/VideoFold/VideoFold';
 import s from './RdiView.module.css';
 
 /**
@@ -38,6 +39,9 @@ const PAPERS: Paper[] = [
   ...PUBLICATIONS.map((article) => ({ date: articleDate(article) ?? '', article })),
   ...PUBLICATION_DOCUMENTS.map((doc) => ({ date: doc.sortDate, doc })),
 ].sort((a, b) => b.date.localeCompare(a.date));
+
+/** "Unlock the power of soil biology…", sent by the client on 2026-10-30. */
+const SOIL_VIDEO = 'https://www.youtube.com/embed/SIJ4wUtvdfE?rel=0';
 
 export default function RdiView({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
@@ -172,6 +176,12 @@ export default function RdiView({ locale }: { locale: Locale }) {
               );
             })}
           </ul>
+
+          {/* The soil-biology film closes the publications, folded behind its title like the
+              stand video on the press page (client's e-mail, 2026-10-30). */}
+          <Reveal className={s.film}>
+            <VideoFold title={t.rdi.soilVideo} embed={SOIL_VIDEO} />
+          </Reveal>
         </div>
       </section>
     </>
