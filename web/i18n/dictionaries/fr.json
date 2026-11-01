@@ -172,7 +172,8 @@
     "customAskText": "Notre équipe est à votre disposition pour étudier votre projet et envisager les possibilités de collaboration.",
     "customCta": "Nous contacter",
     "trialsTitle": "Résultats d'essais",
-    "trialsIntro": "Du pommier de Midelt au gazon, chaque culture documentée en photos de terrain.",
+    "trialsCropsTitle": "Résultats d'essais – Différentes cultures",
+    "trialsIntro": "Cultures et lieux concernés : tomates, fraises, agrumes (Agadir, Larache, Douiet…).",
     "trialDocumentsTitle": "Rapports d'essais",
     "trialDocumentsIntro": "Les comptes rendus complets de nos essais au champ, à télécharger.",
     "testimonialsTitle": "Témoignages",
@@ -276,6 +277,7 @@
   },
   "trialsAccess": {
     "formTitle": "Demander l'accès",
+    "formIntro": "Demandez votre accès pour consulter nos {trials} résultats d'essais de différentes cultures, {testimonials} témoignages et {reports} rapports d'essais (Agadir, Larache & Louata).",
     "profile": {
       "label": "Vous êtes",
       "options": [
@@ -347,7 +349,7 @@
     },
     "trials": {
       "title": "Résultats d'essais",
-      "lead": "Parcelle témoin contre parcelle traitée, sur la même exploitation et la même saison."
+      "lead": "Combinaison de résultats au champ et sous serre : parcelle témoin versus parcelle traitée sur la même exploitation au cours de la même saison."
     },
     "trialsAccess": {
       "title": "Accès aux résultats d'essais",

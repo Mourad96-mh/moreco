@@ -53,7 +53,8 @@ export default function TrialsView({ locale }: { locale: Locale }) {
       <section className="section" id="trials">
         <div className="page">
           <Reveal>
-            <h2>{t.rdi.trialsTitle}</h2>
+            {/* Its own title since the client's e-mail of 2026-11-01: trialsTitle also heads the About card. */}
+            <h2>{t.rdi.trialsCropsTitle}</h2>
             <p className="lead">{t.rdi.trialsIntro}</p>
           </Reveal>
 

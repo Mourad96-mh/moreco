@@ -172,7 +172,8 @@
     "customAskText": "Nuestro equipo está a su disposición para estudiar su proyecto y valorar las posibilidades de colaboración.",
     "customCta": "Contáctenos",
     "trialsTitle": "Resultados de ensayos",
-    "trialsIntro": "Del manzano de Midelt al césped, cada cultivo documentado con fotografía de campo.",
+    "trialsCropsTitle": "Resultados de ensayos – Diferentes cultivos",
+    "trialsIntro": "Cultivos y lugares: tomates, fresas, cítricos (Agadir, Larache, Douiet…).",
     "trialDocumentsTitle": "Informes de ensayos",
     "trialDocumentsIntro": "Los informes completos de nuestros ensayos de campo, para descargar.",
     "testimonialsTitle": "Testimonios",
@@ -276,6 +277,7 @@
   },
   "trialsAccess": {
     "formTitle": "Solicitar acceso",
+    "formIntro": "Solicite su acceso para consultar nuestros {trials} resultados de ensayos en diferentes cultivos, {testimonials} testimonios y {reports} informes de ensayos (Agadir, Larache y Louata).",
     "profile": {
       "label": "Usted es",
       "options": [
@@ -347,7 +349,7 @@
     },
     "trials": {
       "title": "Resultados de ensayos",
-      "lead": "Parcela testigo frente a parcela tratada, en la misma explotación y la misma campaña."
+      "lead": "Resultados en campo y en invernadero combinados: parcela testigo frente a parcela tratada en la misma explotación durante la misma campaña."
     },
     "trialsAccess": {
       "title": "Acceso a los resultados de ensayos",

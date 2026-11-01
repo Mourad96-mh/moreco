@@ -172,7 +172,8 @@
     "customAskText": "Our team is available to study your project and explore the possibilities for collaboration.",
     "customCta": "Contact us",
     "trialsTitle": "Trial results",
-    "trialsIntro": "From the apple orchards of Midelt to turf grass, every crop documented in field photography.",
+    "trialsCropsTitle": "Trial results – Different crops",
+    "trialsIntro": "Crops and locations covered: tomatoes, strawberries, citrus (Agadir, Larache, Douiet…).",
     "trialDocumentsTitle": "Trial reports",
     "trialDocumentsIntro": "The full write-ups of our field trials, to download.",
     "testimonialsTitle": "Testimonials",
@@ -276,6 +277,7 @@
   },
   "trialsAccess": {
     "formTitle": "Request access",
+    "formIntro": "Request access to view our {trials} trial results across different crops, {testimonials} testimonials and {reports} trial reports (Agadir, Larache & Louata).",
     "profile": {
       "label": "You are",
       "options": [
@@ -347,7 +349,7 @@
     },
     "trials": {
       "title": "Trial results",
-      "lead": "Control plot against treated plot, on the same farm and in the same season."
+      "lead": "Field and greenhouse results combined: control plot versus treated plot on the same farm during the same season."
     },
     "trialsAccess": {
       "title": "Access to the trial results",
