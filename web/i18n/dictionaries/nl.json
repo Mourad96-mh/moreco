@@ -172,7 +172,8 @@
     "customAskText": "Ons team staat klaar om uw project te bestuderen en de mogelijkheden voor samenwerking te verkennen.",
     "customCta": "Neem contact op",
     "trialsTitle": "Proefresultaten",
-    "trialsIntro": "Van de appelboom van Midelt tot gazon, elk gewas gedocumenteerd met veldfoto’s.",
+    "trialsCropsTitle": "Proefresultaten – Verschillende gewassen",
+    "trialsIntro": "Gewassen en locaties: tomaten, aardbeien, citrus (Agadir, Larache, Douiet…).",
     "trialDocumentsTitle": "Proefrapporten",
     "trialDocumentsIntro": "De volledige verslagen van onze veldproeven, om te downloaden.",
     "testimonialsTitle": "Getuigenissen",
@@ -276,6 +277,7 @@
   },
   "trialsAccess": {
     "formTitle": "Toegang aanvragen",
+    "formIntro": "Vraag toegang aan om onze {trials} proefresultaten in verschillende gewassen, {testimonials} getuigenissen en {reports} proefrapporten te bekijken (Agadir, Larache en Louata).",
     "profile": {
       "label": "U bent",
       "options": [
@@ -308,7 +310,7 @@
     "approvedTitle": "Al goedgekeurd?",
     "approvedText": "Open de link die u per e-mail ontving. Op een andere telefoon of computer opent u dezelfde link nog een keer.",
     "coveredTitle": "Wat u er vindt",
-    "coveredText": "{n} veldcampagnes, controleperceel tegenover behandeld perceel, getuigenissen van telers en de proefverslagen om te downloaden."
+    "coveredText": "{n} proefresultaten in verschillende gewassen, 6 getuigenissen en 8 proefrapporten te bekijken. Regio's: Agadir, Larache, Louata…"
   },
   "quote": {
     "title": "Offerteaanvraag",
@@ -347,7 +349,7 @@
     },
     "trials": {
       "title": "Proefresultaten",
-      "lead": "Controleperceel tegenover behandeld perceel, op hetzelfde bedrijf in hetzelfde seizoen."
+      "lead": "Resultaten in open veld en in de kas gecombineerd: controleperceel tegenover behandeld perceel op hetzelfde bedrijf in hetzelfde seizoen."
     },
     "trialsAccess": {
       "title": "Toegang tot de proefresultaten",

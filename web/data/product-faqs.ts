@@ -605,64 +605,6 @@ const ENTRIES: Record<string, ProductFaqEntry> = {
     },
   },
 
-  'orthagrow-fertifight': {
-    seo: {
-      title: 'Fertifight | Double Action Nutrition & SAR',
-      description:
-        'Activez les défenses systémiques des plantes contre Phytophthora et Xanthomonas avec une mobilité systémique complète (2 voies).',
-    },
-    faqs: {
-      fr: [
-        {
-          question: 'Qu’est-ce qui rend Fertifight si unique sur le marché agricole ?',
-          answer:
-            'Il s’agit d’une formulation brevetée dotée d’un double mécanisme d’action innovant. Le produit optimise le statut nutritionnel global de la culture tout en stimulant puissamment la résistance systémique acquise (SAR) de la plante contre des agents pathogènes redoutables tels que *Phytophthora* et *Xanthomonas*.',
-        },
-        {
-          question: 'Comment Fertifight performe-t-il dans la lutte contre de potentielles infections fongiques ?',
-          answer:
-            'Les molécules de Fertifight possèdent une mobilité systémique complète, tant ascendante que descendante. Le produit stoppe net la germination des spores à la surface des feuilles et inhibe la pénétration enzymatique dans les tissus végétaux, offrant une protection hautement efficace en cas de forte humidité ou de fluctuations thermiques irrégulières.',
-        },
-      ],
-      en: [
-        {
-          question: 'What makes Fertifight so unique on the agricultural market?',
-          answer:
-            'It is a patented formulation with an innovative dual mode of action. The product optimises the crop’s overall nutritional status while strongly stimulating the plant’s systemic acquired resistance (SAR) against formidable pathogens such as *Phytophthora* and *Xanthomonas*.',
-        },
-        {
-          question: 'How does Fertifight perform against potential fungal infections?',
-          answer:
-            'Fertifight’s molecules are fully systemic, moving both upwards and downwards in the plant. The product stops spore germination on the leaf surface and inhibits enzymatic penetration into plant tissue, giving highly effective protection in high humidity or irregular temperature swings.',
-        },
-      ],
-      es: [
-        {
-          question: '¿Qué hace que Fertifight sea tan único en el mercado agrícola?',
-          answer:
-            'Es una formulación patentada con un innovador doble mecanismo de acción. El producto optimiza el estado nutricional global del cultivo y estimula con fuerza la resistencia sistémica adquirida (SAR) de la planta frente a patógenos temibles como *Phytophthora* y *Xanthomonas*.',
-        },
-        {
-          question: '¿Cómo actúa Fertifight frente a posibles infecciones fúngicas?',
-          answer:
-            'Las moléculas de Fertifight tienen una movilidad sistémica completa, tanto ascendente como descendente. El producto detiene en seco la germinación de las esporas en la superficie de las hojas e inhibe la penetración enzimática en los tejidos vegetales, lo que ofrece una protección muy eficaz con humedad elevada o fluctuaciones térmicas irregulares.',
-        },
-      ],
-      nl: [
-        {
-          question: 'Wat maakt Fertifight zo uniek op de landbouwmarkt?',
-          answer:
-            'Het is een gepatenteerde formulering met een innovatief dubbel werkingsmechanisme. Het product optimaliseert de algemene voedingstoestand van het gewas en stimuleert tegelijk krachtig de systemisch verworven resistentie (SAR) van de plant tegen geduchte ziekteverwekkers zoals *Phytophthora* en *Xanthomonas*.',
-        },
-        {
-          question: 'Hoe presteert Fertifight tegen mogelijke schimmelinfecties?',
-          answer:
-            'De moleculen van Fertifight zijn volledig systemisch en bewegen zowel opwaarts als neerwaarts in de plant. Het product stopt de kieming van sporen op het bladoppervlak en remt de enzymatische indringing in het plantenweefsel, wat een zeer doeltreffende bescherming biedt bij hoge luchtvochtigheid of grillige temperatuurschommelingen.',
-        },
-      ],
-    },
-  },
-
   'orthagrow-initio': {
     seo: {
       title: 'Orthagrow Initio-4G NPK 14-48-0 | Engrais OSA',
