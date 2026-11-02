@@ -84,7 +84,6 @@ const SHEET_ORDER = [
   'orthagrow-myco',
   'orthagrow-soil-conditioner',
   'orthagrow-control',
-  'orthagrow-fertifight',
   'orthagrow-bloom-booster',
   'orthagrow-micro-manager',
   'orthagrow-alga-si',

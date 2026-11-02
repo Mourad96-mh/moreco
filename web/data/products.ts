@@ -147,7 +147,8 @@ export const FAMILIES: ProductFamily[] = [
    *
    * FERTIFIGHT goes "absolutely last" (2026-09-26). That took the SOON tile with it: the
    * tile always closes the grid, and the ten Orthagrow 4G products it stood for are all
-   * on the page since the briefing of 2026-09-22.
+   * on the page since the briefing of 2026-09-22. The client then took FERTIFIGHT off
+   * the Agriculture page altogether (2026-11-02); it keeps its product page, unlisted.
    */
   {
     key: 'biostimulants',
@@ -159,7 +160,6 @@ export const FAMILIES: ProductFamily[] = [
       'orthagrow-aminactif',
       'orthagrow-cal',
       'orthagrow-zno',
-      'orthagrow-fertifight',
     ],
     note: 'biostimulants',
   },
@@ -237,7 +237,7 @@ export const PRODUCTS: Product[] = [
   { slug: 'orthagrow-bloom-booster', name: 'Orthagrow Bloom Booster', segment: 'agri', range: 'orthagrow' },
   { slug: 'orthagrow-soil-conditioner', name: 'Orthagrow Soil Conditioner 4TH', segment: 'agri', range: 'orthagrow' },
   { slug: 'orthagrow-micro-manager', name: 'Orthagrow Micro Manager', segment: 'agri', range: 'orthagrow' },
-  { slug: 'orthagrow-fertifight', name: 'FERTIFIGHT', segment: 'agri', range: 'orthagrow' },
+  { slug: 'orthagrow-fertifight', name: 'FERTIFIGHT', segment: 'agri', range: 'orthagrow', unlisted: true },
   {
     slug: 'orthagrow-granule',
     name: 'Orthagrow Granulé',
@@ -472,5 +472,5 @@ export function productsOutsideFamilies(segment: SegmentKey): Product[] {
   const families = familiesOf(segment);
   if (families.length === 0) return [];
   const claimed = new Set(families.flatMap((f) => f.products));
-  return PRODUCTS.filter((p) => p.segment === segment && !claimed.has(p.slug));
+  return PRODUCTS.filter((p) => p.segment === segment && !p.unlisted && !claimed.has(p.slug));
 }

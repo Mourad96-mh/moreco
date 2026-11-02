@@ -40,14 +40,7 @@
     "datasheetBytes": 1167116
   },
   "orthagrow-fertifight": {
-    "image": "/media/products/orthagrow-fertifight.webp",
-    "datasheet": "/media/datasheets/orthagrow-fertifight.pdf",
-    "datasheetKind": "flyer",
-    "datasheetPages": [
-      "/media/datasheets/previews/orthagrow-fertifight-1.webp",
-      "/media/datasheets/previews/orthagrow-fertifight-2.webp"
-    ],
-    "datasheetBytes": 1261597
+    "image": "/media/products/orthagrow-fertifight.webp"
   },
   "orthagrow-granule": {
     "image": "/media/products/orthagrow-granule.webp",
