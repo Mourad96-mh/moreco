@@ -3672,22 +3672,22 @@
             ],
             [
               "Traitement choc (système hydrique)",
-              "50 ppm (100 ml pour 1 000 L)",
+              "50 ppm (50 ml pour 1 000 L)",
               "Pendant 24 heures"
             ],
             [
               "Élimination du biofilm",
-              "50 ppm (50 ml pour 1 000 L)",
-              "Application continue"
-            ],
-            [
-              "Bactéries",
               "40 ppm (40 ml pour 1 000 L)",
               "Application continue"
             ],
             [
+              "Bactéries",
+              "20 – 30 ppm (20 – 30 ml pour 1 000 L)",
+              "Application continue"
+            ],
+            [
               "Virus",
-              "40 – 50 ppm (40 – 50 ml pour 1 000 L)",
+              "20 – 30 ppm (20 – 30 ml pour 1 000 L)",
               "Application continue"
             ]
           ]
@@ -3828,22 +3828,22 @@
             ],
             [
               "Shock treatment (water system)",
-              "50 ppm (100 ml per 1 000 L)",
+              "50 ppm (50 ml per 1 000 L)",
               "For 24 hours"
             ],
             [
               "Biofilm removal",
-              "50 ppm (50 ml per 1 000 L)",
-              "Continuous application"
-            ],
-            [
-              "Bacteria",
               "40 ppm (40 ml per 1 000 L)",
               "Continuous application"
             ],
             [
+              "Bacteria",
+              "20 – 30 ppm (20 – 30 ml per 1 000 L)",
+              "Continuous application"
+            ],
+            [
               "Viruses",
-              "40 – 50 ppm (40 – 50 ml per 1 000 L)",
+              "20 – 30 ppm (20 – 30 ml per 1 000 L)",
               "Continuous application"
             ]
           ]
@@ -3984,22 +3984,22 @@
             ],
             [
               "Tratamiento de choque (sistema hídrico)",
-              "50 ppm (100 ml por 1 000 L)",
+              "50 ppm (50 ml por 1 000 L)",
               "Durante 24 horas"
             ],
             [
               "Eliminación del biofilm",
-              "50 ppm (50 ml por 1 000 L)",
-              "Aplicación continua"
-            ],
-            [
-              "Bacterias",
               "40 ppm (40 ml por 1 000 L)",
               "Aplicación continua"
             ],
             [
+              "Bacterias",
+              "20 – 30 ppm (20 – 30 ml por 1 000 L)",
+              "Aplicación continua"
+            ],
+            [
               "Virus",
-              "40 – 50 ppm (40 – 50 ml por 1 000 L)",
+              "20 – 30 ppm (20 – 30 ml por 1 000 L)",
               "Aplicación continua"
             ]
           ]
@@ -4140,22 +4140,22 @@
             ],
             [
               "Shockbehandeling (watersysteem)",
-              "50 ppm (100 ml per 1 000 L)",
+              "50 ppm (50 ml per 1 000 L)",
               "Gedurende 24 uur"
             ],
             [
               "Verwijdering van biofilm",
-              "50 ppm (50 ml per 1 000 L)",
-              "Continue toepassing"
-            ],
-            [
-              "Bacteriën",
               "40 ppm (40 ml per 1 000 L)",
               "Continue toepassing"
             ],
             [
+              "Bacteriën",
+              "20 – 30 ppm (20 – 30 ml per 1 000 L)",
+              "Continue toepassing"
+            ],
+            [
               "Virussen",
-              "40 – 50 ppm (40 – 50 ml per 1 000 L)",
+              "20 – 30 ppm (20 – 30 ml per 1 000 L)",
               "Continue toepassing"
             ]
           ]

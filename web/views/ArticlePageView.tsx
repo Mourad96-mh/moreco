@@ -84,6 +84,7 @@ const SHEET_ORDER = [
   'orthagrow-myco',
   'orthagrow-soil-conditioner',
   'orthagrow-control',
+  'orthagrow-fertifight',
   'orthagrow-bloom-booster',
   'orthagrow-micro-manager',
   'orthagrow-alga-si',
@@ -101,7 +102,7 @@ const SHEET_ORDER = [
 function ResourcesBlock({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
   const withSheets = SHEET_ORDER.map((slug) => PRODUCTS.find((p) => p.slug === slug)).filter(
-    (p): p is (typeof PRODUCTS)[number] => !!p && !!productDatasheet(p.slug),
+    (p): p is (typeof PRODUCTS)[number] => !!p && !!productDatasheet(p.slug, locale),
   );
 
   // A card opens the sheet's recto and verso over the page (TrialDialog, as the crop
@@ -112,9 +113,9 @@ function ResourcesBlock({ locale }: { locale: Locale }) {
       <ul className={s.crops}>
         {withSheets.map((product) => {
           const name = productName(product, locale);
-          const file = productDatasheet(product.slug)!;
+          const file = productDatasheet(product.slug, locale)!;
           const sds = productDatasheetKind(product.slug) === 'sds';
-          const bytes = productDatasheetBytes(product.slug);
+          const bytes = productDatasheetBytes(product.slug, locale);
           return (
             <li key={product.slug}>
               <TrialDialog
@@ -124,7 +125,7 @@ function ResourcesBlock({ locale }: { locale: Locale }) {
                 closeLabel={t.product.zoomClose}
               >
                 <div className={s.sheetPages}>
-                  {productDatasheetPages(product.slug).map((page, i) => (
+                  {productDatasheetPages(product.slug, locale).map((page, i) => (
                     <a key={page} href={file} className={s.cropFlyer} target="_blank" rel="noopener">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img src={page} alt={`${name} (${i + 1})`} loading="lazy" width={900} height={1273} />

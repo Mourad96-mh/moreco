@@ -43,7 +43,7 @@ export default function ProductView({ locale, slug }: { locale: Locale; slug: st
   const copy = productCopy(slug, locale);
   const name = productName(product, locale);
   const image = productImage(slug);
-  const datasheet = productDatasheet(slug);
+  const datasheet = productDatasheet(slug, locale);
   const isSds = productDatasheetKind(slug) === 'sds';
   const siblings = productsOfRange(product.range).filter((p) => p.slug !== slug);
 
