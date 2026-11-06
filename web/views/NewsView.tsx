@@ -79,7 +79,7 @@ export default function NewsView({ locale }: { locale: Locale }) {
                       width={lead.imageWidth ?? 870}
                       height={lead.imageHeight ?? 296}
                       sizes="(min-width: 900px) 56vw, 100vw"
-                      className={s.leadImg}
+                      className={lead.postSlug ? `${s.leadImg} ${s.strip}` : s.leadImg}
                       priority
                     />
                   </div>
@@ -108,7 +108,7 @@ export default function NewsView({ locale }: { locale: Locale }) {
                           width={post.imageWidth ?? 870}
                           height={post.imageHeight ?? 296}
                           sizes="(min-width: 1100px) 30vw, (min-width: 700px) 46vw, 100vw"
-                          className={s.cardImg}
+                          className={post.postSlug ? `${s.cardImg} ${s.strip}` : s.cardImg}
                         />
                       </div>
                     )}

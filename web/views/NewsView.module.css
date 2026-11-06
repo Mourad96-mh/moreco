@@ -45,6 +45,17 @@
   color: var(--ink-2);
 }
 
+/*
+ * The weekly posts bring pictures of their own shape (the first is 624 × 350). On the
+ * news page they are cut to the archive's 870 × 296 strip, centred, so every card lines
+ * up (client, 2026-11-06); the post's own page shows the picture whole.
+ */
+.strip {
+  aspect-ratio: 870 / 296;
+  object-fit: cover;
+  object-position: center;
+}
+
 /* ------------------------------------------------------------------- the rest */
 
 .grid {

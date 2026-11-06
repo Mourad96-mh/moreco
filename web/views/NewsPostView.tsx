@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
@@ -7,15 +8,21 @@ import { href, productHref, newsPostHref } from '@/data/routes';
 import { getWeeklyPost, WEEKLY_POSTS } from '@/data/weekly-news';
 import { getProduct, productName } from '@/data/products';
 import { formatDate } from '@/data/news';
+import { pageHero } from '@/data/hero-images';
 import PageHeader from '@/components/PageHeader/PageHeader';
 import Blocks from '@/components/Blocks/Blocks';
 import Reveal from '@/components/Reveal/Reveal';
 import s from './KnowledgeArticleView.module.css';
 
 /**
- * One weekly news post (data/weekly-news.json). The client's photograph is the banner;
- * the page carries a NewsArticle JSON-LD so Google can read it as a dated news piece.
- * It borrows the knowledge-centre article's layout: same reading width, same footer.
+ * One weekly news post (data/weekly-news.json), carrying a NewsArticle JSON-LD so Google
+ * can read it as a dated news piece.
+ *
+ * It is laid out exactly like the archive's articles ("L'importance du silicium",
+ * "Nutrition foliaire", "Cycle du silicium" — KnowledgeArticleView), as the client asked
+ * on 2026-11-06: the same banner with the lead under the title, the date, the client's
+ * photograph as the figure above the text, and the product link in the box the articles
+ * use for their PDF.
  */
 export default function NewsPostView({ locale, slug }: { locale: Locale; slug: string }) {
   const t = getDictionary(locale);
@@ -60,7 +67,8 @@ export default function NewsPostView({ locale, slug }: { locale: Locale; slug: s
       <PageHeader
         eyebrow={t.news.weekly}
         title={title}
-        image={post.image}
+        lead={post.lead[locale]}
+        image={pageHero('knowledge')}
         crumbLabel={t.a11y.breadcrumb}
         crumbs={[
           { label: t.site.name, href: href(locale, 'home') },
@@ -76,13 +84,25 @@ export default function NewsPostView({ locale, slug }: { locale: Locale; slug: s
           </p>
 
           <Reveal>
-            <p className="lead">{post.lead[locale]}</p>
+            <figure className={s.figure}>
+              <Image
+                src={post.image}
+                alt=""
+                width={post.imageWidth}
+                height={post.imageHeight}
+                sizes="(min-width: 820px) 780px, 100vw"
+              />
+            </figure>
+          </Reveal>
+
+          <Reveal>
             <Blocks blocks={post.blocks[locale]} />
           </Reveal>
 
           {product && (
-            <p style={{ marginTop: '2rem' }}>
-              <Link className="btn" href={productHref(locale, product.slug)}>
+            <p className={s.download}>
+              <Link href={productHref(locale, product.slug)}>
+                <LeafIcon />
                 {t.news.discover.replace('{product}', productName(product, locale))}
               </Link>
             </p>
@@ -106,6 +126,23 @@ export default function NewsPostView({ locale, slug }: { locale: Locale; slug: s
     </>
   );
 }
+
+const LeafIcon = () => (
+  <svg
+    width="17"
+    height="17"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    aria-hidden="true"
+  >
+    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10Z" />
+    <path d="M2 21c0-3 1.9-5.4 5.1-6.1 2.4-.5 4.9-2 5.9-3.9" />
+  </svg>
+);
 
 const Arrow = ({ flip }: { flip?: boolean }) => (
   <svg
