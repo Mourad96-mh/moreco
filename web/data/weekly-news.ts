@@ -25,6 +25,11 @@ export interface WeeklyPost {
   /** The product the post is about, linked under the text. */
   product?: string;
   title: Record<Locale, string>;
+  /**
+   * A short title for the card on the news page, so it sits on two lines like the
+   * archive's titles; the post's own page shows the full `title`.
+   */
+  cardTitle?: Record<Locale, string>;
   seoTitle: Record<Locale, string>;
   seoDescription: Record<Locale, string>;
   keywords: Record<Locale, string[]>;

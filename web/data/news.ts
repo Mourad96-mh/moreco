@@ -144,7 +144,7 @@ const withoutHiddenImages = (post: NewsPost): NewsPost =>
 /** The weekly posts, newest first, as cards. `readMore` is filled in by the page. */
 const weeklyPosts = (locale: Locale): NewsPost[] =>
   WEEKLY_POSTS.map((post) => ({
-    title: post.title[locale],
+    title: post.cardTitle?.[locale] ?? post.title[locale],
     excerpt: post.lead[locale],
     image: post.image,
     imageWidth: post.imageWidth,
