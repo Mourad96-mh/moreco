@@ -22,12 +22,12 @@ export default function Blocks({ blocks }: { blocks: Block[] }) {
             return <Tag key={i}>{block.text}</Tag>;
           }
           case 'paragraph':
-            return <p key={i}>{block.text}</p>;
+            return <p key={i}>{inline(block.text)}</p>;
           case 'list':
             return (
               <ul key={i}>
                 {block.items.map((item, j) => (
-                  <li key={j}>{item}</li>
+                  <li key={j}>{inline(item)}</li>
                 ))}
               </ul>
             );
@@ -52,6 +52,15 @@ export default function Blocks({ blocks }: { blocks: Block[] }) {
       })}
     </div>
   );
+}
+
+/**
+ * `**text**` sets a run in bold — the weekly news posts lead their bullet points with a
+ * bold label. The archive text never contains a double asterisk, so it renders as before.
+ */
+function inline(text: string): React.ReactNode {
+  if (!text.includes('**')) return text;
+  return text.split(/\*\*(.+?)\*\*/g).map((part, i) => (i % 2 ? <strong key={i}>{part}</strong> : part));
 }
 
 const PdfIcon = () => (

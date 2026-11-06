@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import type { Locale } from '@/i18n/config';
 import { getDictionary } from '@/i18n/dictionary';
-import { href, articleHref } from '@/data/routes';
+import { href, articleHref, newsPostHref } from '@/data/routes';
 import { newsPosts, formatDate, type NewsPost } from '@/data/news';
 import { pageHero } from '@/data/hero-images';
 import PageHeader from '@/components/PageHeader/PageHeader';
@@ -22,8 +22,15 @@ export default function NewsView({ locale }: { locale: Locale }) {
   const posts = newsPosts(locale);
   const [lead, ...rest] = posts;
 
+  /* A weekly post opens its own page; an archive post, the article it announced. */
   const knowledgeHref = (post: NewsPost) =>
-    post.articleSlug ? articleHref(locale, post.articleSlug) : null;
+    post.postSlug
+      ? newsPostHref(locale, post.postSlug)
+      : post.articleSlug
+        ? articleHref(locale, post.articleSlug)
+        : null;
+  const readMoreOf = (post: NewsPost): NewsPost =>
+    post.postSlug ? { ...post, readMore: t.news.readMore } : post;
 
   return (
     <>
@@ -69,8 +76,8 @@ export default function NewsView({ locale }: { locale: Locale }) {
                     <Image
                       src={lead.image}
                       alt=""
-                      width={870}
-                      height={296}
+                      width={lead.imageWidth ?? 870}
+                      height={lead.imageHeight ?? 296}
                       sizes="(min-width: 900px) 56vw, 100vw"
                       className={s.leadImg}
                       priority
@@ -82,7 +89,7 @@ export default function NewsView({ locale }: { locale: Locale }) {
                   <PostMeta post={lead} locale={locale} />
                   <h2 className={s.leadTitle}>{lead.title}</h2>
                   <p className={s.leadExcerpt}>{lead.excerpt}</p>
-                  <ReadMore post={lead} to={knowledgeHref(lead)} />
+                  <ReadMore post={readMoreOf(lead)} to={knowledgeHref(lead)} />
                 </div>
               </article>
             </Reveal>
@@ -98,8 +105,8 @@ export default function NewsView({ locale }: { locale: Locale }) {
                         <Image
                           src={post.image}
                           alt=""
-                          width={870}
-                          height={296}
+                          width={post.imageWidth ?? 870}
+                          height={post.imageHeight ?? 296}
                           sizes="(min-width: 1100px) 30vw, (min-width: 700px) 46vw, 100vw"
                           className={s.cardImg}
                         />
@@ -110,7 +117,7 @@ export default function NewsView({ locale }: { locale: Locale }) {
                       <PostMeta post={post} locale={locale} />
                       <h3 className={s.cardTitle}>{post.title}</h3>
                       <p className={s.cardExcerpt}>{post.excerpt}</p>
-                      <ReadMore post={post} to={knowledgeHref(post)} />
+                      <ReadMore post={readMoreOf(post)} to={knowledgeHref(post)} />
                     </div>
                   </article>
                 </Reveal>

@@ -1,6 +1,7 @@
 import type { Locale } from '@/i18n/config';
 import pages from './pages.json';
 import articles from './articles.json';
+import { WEEKLY_POSTS } from './weekly-news';
 
 /**
  * The news page, recovered from a WordPress archive listing.
@@ -24,6 +25,11 @@ export interface NewsPost {
   readMore: string | null;
   /** The knowledge-centre article this post announced, where there is one. */
   articleSlug: string | null;
+  /** A weekly post (data/weekly-news.ts), which has a page of its own under News. */
+  postSlug?: string;
+  /** The archive's pictures are all 870 × 296; the weekly ones say their own size. */
+  imageWidth?: number;
+  imageHeight?: number;
 }
 
 type Block = { type: string; text?: string; items?: string[]; src?: string };
@@ -135,9 +141,28 @@ const HIDDEN_IMAGES = new Set(['/media/pages/moreco-products-video.webp']);
 const withoutHiddenImages = (post: NewsPost): NewsPost =>
   post.image !== null && HIDDEN_IMAGES.has(post.image) ? { ...post, image: null } : post;
 
+/** The weekly posts, newest first, as cards. `readMore` is filled in by the page. */
+const weeklyPosts = (locale: Locale): NewsPost[] =>
+  WEEKLY_POSTS.map((post) => ({
+    title: post.title[locale],
+    excerpt: post.lead[locale],
+    image: post.image,
+    imageWidth: post.imageWidth,
+    imageHeight: post.imageHeight,
+    date: post.date,
+    readMore: null,
+    articleSlug: null,
+    postSlug: post.slug,
+  }));
+
+/** The weekly posts lead the page (from 2026-11), ahead of the archive's. */
 export function newsPosts(locale: Locale): NewsPost[] {
   const posts = withFrenchArticles(postsIn(blocksFor(locale), blocksFor('fr'))).map(withoutHiddenImages);
-  return [...posts.filter((p) => !isHumanProductPost(p)), ...posts.filter(isHumanProductPost)];
+  return [
+    ...weeklyPosts(locale),
+    ...posts.filter((p) => !isHumanProductPost(p)),
+    ...posts.filter(isHumanProductPost),
+  ];
 }
 
 /** Long form, in the reader's own language: "5 novembre 2014". */
