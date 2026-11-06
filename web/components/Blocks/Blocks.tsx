@@ -56,11 +56,24 @@ export default function Blocks({ blocks }: { blocks: Block[] }) {
 
 /**
  * `**text**` sets a run in bold — the weekly news posts lead their bullet points with a
- * bold label. The archive text never contains a double asterisk, so it renders as before.
+ * bold label — and `[text](https://…)` a link to another site, opened in a new tab (the
+ * UM6P post links its study on MDPI). The archive text contains neither, so it renders
+ * as before.
  */
 function inline(text: string): React.ReactNode {
-  if (!text.includes('**')) return text;
-  return text.split(/\*\*(.+?)\*\*/g).map((part, i) => (i % 2 ? <strong key={i}>{part}</strong> : part));
+  if (!text.includes('**') && !text.includes('](')) return text;
+  return text.split(/(\*\*.+?\*\*|\[[^\]]+\]\(https?:\/\/[^)\s]+\))/g).map((part, i) => {
+    const bold = part.match(/^\*\*(.+)\*\*$/);
+    if (bold) return <strong key={i}>{bold[1]}</strong>;
+    const link = part.match(/^\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)$/);
+    if (link)
+      return (
+        <a key={i} href={link[2]} target="_blank" rel="noopener noreferrer">
+          {link[1]}
+        </a>
+      );
+    return part;
+  });
 }
 
 const PdfIcon = () => (
