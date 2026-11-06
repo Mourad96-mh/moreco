@@ -2,6 +2,7 @@ import { LOCALES, type Locale } from '@/i18n/config';
 import { PRODUCTS, RANGES, SEGMENTS, productsOfRange, type SegmentKey } from './products';
 import { TRIALS } from './trials';
 import { ARTICLES } from './articles';
+import { WEEKLY_POSTS } from './weekly-news';
 import { words, segments } from './route-words.json';
 
 /**
@@ -25,6 +26,7 @@ export type View =
   | 'knowledge'
   | 'article'
   | 'news'
+  | 'newsPost'
   | 'media'
   | 'about'
   | 'services'
@@ -65,6 +67,7 @@ export interface RouteParams {
   product?: string;
   trial?: string;
   article?: string;
+  post?: string;
 }
 
 export interface Route {
@@ -148,6 +151,11 @@ function routesFor(locale: Locale): Route[] {
     );
   }
 
+  /* The weekly posts (from 2026-11) sit under the news page, one slug in every language. */
+  for (const post of WEEKLY_POSTS) {
+    add('newsPost', `news:${post.slug}`, [w('news', locale), post.slug], { post: post.slug });
+  }
+
   for (const trial of TRIALS) {
     add('trial', `trial:${trial.slug}`, [w('resources', locale), w('trials', locale), trial.slug], {
       trial: trial.slug,
@@ -185,3 +193,4 @@ export const rangeHref = (locale: Locale, slug: string) => href(locale, `range:$
 export const segmentHref = (locale: Locale, key: SegmentKey) => href(locale, `segment:${key}`);
 export const trialHref = (locale: Locale, slug: string) => href(locale, `trial:${slug}`);
 export const articleHref = (locale: Locale, slug: string) => href(locale, `article:${slug}`);
+export const newsPostHref = (locale: Locale, slug: string) => href(locale, `news:${slug}`);

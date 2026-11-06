@@ -817,8 +817,8 @@ tableau « Domaines d'application » du flyer n'est pas repris : la liste déjà
 la même chose et cite l'élevage. **Le français est celui du flyer ; EN, ES et NL sont de
 nous.**
 
-À faire vérifier par le client : le traitement choc et l'élimination du biofilm sont tous
-deux à 50 ppm, mais l'un à 100 ml et l'autre à 50 ml pour 1 000 L ; repris tel quel.
+Dosages corrigés par le client le 3 novembre 2026 : traitement choc 50 ppm (50 ml),
+biofilm 40 ppm (40 ml), bactéries et virus 20 – 30 ppm (20 – 30 ml pour 1 000 L).
 
 Choix de traduction à valider :
 

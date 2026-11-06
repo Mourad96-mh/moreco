@@ -8,6 +8,7 @@ import { getProduct, getRange, productName } from '@/data/products';
 import { productSeo } from '@/data/product-faqs';
 import { getTrial, trialTitle, trialDescription } from '@/data/trials';
 import { getArticle, articleTitle, articleExcerpt } from '@/data/articles';
+import { getWeeklyPost } from '@/data/weekly-news';
 
 import HomeView from '@/views/HomeView';
 import ProductsView from '@/views/ProductsView';
@@ -20,6 +21,7 @@ import TrialView from '@/views/TrialView';
 import TrialsAccessView from '@/views/TrialsAccessView';
 import QuoteView from '@/views/QuoteView';
 import NewsView from '@/views/NewsView';
+import NewsPostView from '@/views/NewsPostView';
 import KnowledgeArticleView from '@/views/KnowledgeArticleView';
 import AboutView from '@/views/AboutView';
 import ServicesView from '@/views/ServicesView';
@@ -62,8 +64,18 @@ const HOME_SEO: Partial<Record<Locale, { title: string; description: string }>> 
   },
 };
 
+/** What a page tells search engines and social cards beyond its title and description. */
+interface Seo {
+  title: string;
+  description: string;
+  absolute?: boolean;
+  keywords?: string[];
+  /** A dated piece, shared as an article with its own picture. */
+  article?: { image: string; width: number; height: number; publishedTime: string };
+}
+
 /** Page title and description per view — the products and trials name themselves. */
-function seoFor(route: Route, locale: Locale) {
+function seoFor(route: Route, locale: Locale): Seo {
   const t = getDictionary(locale);
 
   switch (route.view) {
@@ -107,6 +119,23 @@ function seoFor(route: Route, locale: Locale) {
         description: article ? articleExcerpt(article, locale) : t.site.description,
       };
     }
+    case 'newsPost': {
+      // The client's own meta title, description and keywords for each weekly post.
+      const post = getWeeklyPost(route.params.post!);
+      if (!post) return { title: t.pages.news.title, description: t.pages.news.lead };
+      return {
+        title: post.seoTitle[locale],
+        description: post.seoDescription[locale],
+        absolute: true,
+        keywords: post.keywords[locale],
+        article: {
+          image: post.image,
+          width: post.imageWidth,
+          height: post.imageHeight,
+          publishedTime: post.date,
+        },
+      };
+    }
     case 'quote':
       return { title: t.quote.title, description: t.quote.intro };
     default: {
@@ -128,6 +157,7 @@ export async function generateMetadata(props: PageProps<'/[locale]/[[...path]]'>
   return {
     title: seo.absolute ? { absolute: seo.title } : seo.title,
     description: seo.description,
+    ...(seo.keywords ? { keywords: seo.keywords } : {}),
     alternates: {
       canonical: `${SITE_URL}${alternates.find((a) => a.locale === raw)!.href}`,
       languages: {
@@ -141,6 +171,13 @@ export async function generateMetadata(props: PageProps<'/[locale]/[[...path]]'>
       title: seo.title,
       description: seo.description,
       url: `${SITE_URL}${alternates.find((a) => a.locale === raw)!.href}`,
+      ...(seo.article
+        ? {
+            type: 'article' as const,
+            publishedTime: seo.article.publishedTime,
+            images: [{ url: seo.article.image, width: seo.article.width, height: seo.article.height }],
+          }
+        : {}),
     },
   };
 }
@@ -172,6 +209,8 @@ export default async function Page(props: PageProps<'/[locale]/[[...path]]'>) {
       return <QuoteView locale={locale} />;
     case 'news':
       return <NewsView locale={locale} />;
+    case 'newsPost':
+      return <NewsPostView locale={locale} slug={route.params.post!} />;
     case 'about':
       return <AboutView locale={locale} />;
     case 'services':

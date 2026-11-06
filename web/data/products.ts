@@ -147,8 +147,8 @@ export const FAMILIES: ProductFamily[] = [
    *
    * FERTIFIGHT goes "absolutely last" (2026-09-26). That took the SOON tile with it: the
    * tile always closes the grid, and the ten Orthagrow 4G products it stood for are all
-   * on the page since the briefing of 2026-09-22. The client then took FERTIFIGHT off
-   * the Agriculture page altogether (2026-11-02); it keeps its product page, unlisted.
+   * on the page since the briefing of 2026-09-22. On 2026-11-02 the client withdrew
+   * FERTIFIGHT's product sheet but kept its card here, still last.
    */
   {
     key: 'biostimulants',
@@ -160,6 +160,7 @@ export const FAMILIES: ProductFamily[] = [
       'orthagrow-aminactif',
       'orthagrow-cal',
       'orthagrow-zno',
+      'orthagrow-fertifight',
     ],
     note: 'biostimulants',
   },
@@ -237,7 +238,7 @@ export const PRODUCTS: Product[] = [
   { slug: 'orthagrow-bloom-booster', name: 'Orthagrow Bloom Booster', segment: 'agri', range: 'orthagrow' },
   { slug: 'orthagrow-soil-conditioner', name: 'Orthagrow Soil Conditioner 4TH', segment: 'agri', range: 'orthagrow' },
   { slug: 'orthagrow-micro-manager', name: 'Orthagrow Micro Manager', segment: 'agri', range: 'orthagrow' },
-  { slug: 'orthagrow-fertifight', name: 'FERTIFIGHT', segment: 'agri', range: 'orthagrow', unlisted: true },
+  { slug: 'orthagrow-fertifight', name: 'FERTIFIGHT', segment: 'agri', range: 'orthagrow' },
   {
     slug: 'orthagrow-granule',
     name: 'Orthagrow Granulé',
@@ -403,13 +404,17 @@ export const PRODUCTS: Product[] = [
   },
 ];
 
-type MediaEntry = {
-  image?: string;
+type SheetFiles = {
   datasheet?: string;
-  datasheetKind?: string;
   /** WebP renders of the sheet's first pages (recto, verso), previewed before the download. */
   datasheetPages?: string[];
   datasheetBytes?: number;
+};
+type MediaEntry = SheetFiles & {
+  image?: string;
+  datasheetKind?: string;
+  /** The sheet in another language (English flyers of 2026-11-03). The top-level one is French. */
+  datasheetByLocale?: Partial<Record<Locale, SheetFiles>>;
 };
 const MEDIA = media as Record<string, MediaEntry>;
 const COPY = copy as Record<string, Partial<Record<Locale, ProductCopy>>>;
@@ -418,9 +423,23 @@ const COPY = copy as Record<string, Partial<Record<Locale, ProductCopy>>>;
 const sourceOf = (slug: string): string => PRODUCTS.find((p) => p.slug === slug)?.variantOf ?? slug;
 
 export const productImage = (slug: string): string | null => MEDIA[sourceOf(slug)]?.image ?? null;
-export const productDatasheet = (slug: string): string | null => MEDIA[sourceOf(slug)]?.datasheet ?? null;
-export const productDatasheetPages = (slug: string): string[] => MEDIA[sourceOf(slug)]?.datasheetPages ?? [];
-export const productDatasheetBytes = (slug: string): number | null => MEDIA[sourceOf(slug)]?.datasheetBytes ?? null;
+
+/**
+ * The sheet a visitor gets in their language: French on the French site, English on the
+ * others — a Spanish or Dutch reader is better served by the English flyer than the French
+ * one. Falls back to the French sheet where no English one exists.
+ */
+const sheetOf = (slug: string, locale: Locale): SheetFiles | undefined => {
+  const entry = MEDIA[sourceOf(slug)];
+  if (!entry?.datasheet) return undefined;
+  const translated = locale === 'fr' ? undefined : (entry.datasheetByLocale?.[locale] ?? entry.datasheetByLocale?.en);
+  return translated?.datasheet ? translated : entry;
+};
+export const productDatasheet = (slug: string, locale: Locale): string | null => sheetOf(slug, locale)?.datasheet ?? null;
+export const productDatasheetPages = (slug: string, locale: Locale): string[] =>
+  sheetOf(slug, locale)?.datasheetPages ?? [];
+export const productDatasheetBytes = (slug: string, locale: Locale): number | null =>
+  sheetOf(slug, locale)?.datasheetBytes ?? null;
 
 /** 'flyer' = commercial product sheet, 'sds' = safety data sheet. Labelled differently. */
 export const productDatasheetKind = (slug: string): 'flyer' | 'sds' =>

@@ -22,12 +22,12 @@ export default function Blocks({ blocks }: { blocks: Block[] }) {
             return <Tag key={i}>{block.text}</Tag>;
           }
           case 'paragraph':
-            return <p key={i}>{block.text}</p>;
+            return <p key={i}>{inline(block.text)}</p>;
           case 'list':
             return (
               <ul key={i}>
                 {block.items.map((item, j) => (
-                  <li key={j}>{item}</li>
+                  <li key={j}>{inline(item)}</li>
                 ))}
               </ul>
             );
@@ -52,6 +52,28 @@ export default function Blocks({ blocks }: { blocks: Block[] }) {
       })}
     </div>
   );
+}
+
+/**
+ * `**text**` sets a run in bold — the weekly news posts lead their bullet points with a
+ * bold label — and `[text](https://…)` a link to another site, opened in a new tab (the
+ * UM6P post links its study on MDPI). The archive text contains neither, so it renders
+ * as before.
+ */
+function inline(text: string): React.ReactNode {
+  if (!text.includes('**') && !text.includes('](')) return text;
+  return text.split(/(\*\*.+?\*\*|\[[^\]]+\]\(https?:\/\/[^)\s]+\))/g).map((part, i) => {
+    const bold = part.match(/^\*\*(.+)\*\*$/);
+    if (bold) return <strong key={i}>{bold[1]}</strong>;
+    const link = part.match(/^\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)$/);
+    if (link)
+      return (
+        <a key={i} href={link[2]} target="_blank" rel="noopener noreferrer">
+          {link[1]}
+        </a>
+      );
+    return part;
+  });
 }
 
 const PdfIcon = () => (

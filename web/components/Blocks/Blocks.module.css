@@ -2,6 +2,19 @@
   max-width: 72ch;
 }
 
+/* A link inside the text (`[text](url)`): green and underlined, so it reads as one. */
+.prose p a:not(.pdf),
+.prose li a {
+  color: var(--green-dark);
+  font-weight: 600;
+  text-decoration-color: currentColor;
+}
+
+.prose p a:not(.pdf):hover,
+.prose li a:hover {
+  color: var(--green);
+}
+
 .prose h2 {
   margin-top: 2.25rem;
   font-size: var(--step-2);

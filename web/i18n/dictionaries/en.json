@@ -462,6 +462,10 @@
       "This molecular OSA technology ensures superior bioavailability and transcellular assimilation, optimising physiological processes and metabolic pathways within the organism to the highest level.",
       "By bringing together scientific innovation, the pharmaceutical precision of GMP standards and the expertise of the original inventors, Moreco sets the new standard in cellular resilience and physiological performance."
     ],
-    "postsTitle": "News"
+    "postsTitle": "News",
+    "readMore": "Read the article",
+    "weekly": "News of the week",
+    "discover": "Discover {product}",
+    "allNews": "All news"
   }
 }

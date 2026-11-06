@@ -462,6 +462,10 @@
       "Esta tecnología molecular OSA garantiza una biodisponibilidad superior y una asimilación transcelular, optimizando al más alto nivel los procesos fisiológicos y las vías metabólicas del organismo.",
       "Al integrar la innovación científica, la precisión farmacéutica de las normas GMP y la experiencia de los inventores originales, Moreco marca el nuevo estándar en resiliencia celular y rendimiento fisiológico."
     ],
-    "postsTitle": "Noticias"
+    "postsTitle": "Noticias",
+    "readMore": "Leer el artículo",
+    "weekly": "Noticia de la semana",
+    "discover": "Descubrir {product}",
+    "allNews": "Todas las noticias"
   }
 }
