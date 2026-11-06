@@ -135,11 +135,19 @@ const isHumanProductPost = (post: NewsPost) => post.image !== null && HUMAN_PROD
 /**
  * The Moreco logo pictured the "Produits Moreco" post; the client had it taken off on
  * 2026-10-21. The picture stays in the archive data, where it marks the start of the post.
+ * Since every post became a card (2026-11-06) the post shows the Products page's field
+ * photograph instead, cut to the cards' strip, so its card is not the only bare one.
  */
-const HIDDEN_IMAGES = new Set(['/media/pages/moreco-products-video.webp']);
+const REPLACED_IMAGES: Record<string, Pick<NewsPost, 'image' | 'imageWidth' | 'imageHeight'>> = {
+  '/media/pages/moreco-products-video.webp': {
+    image: '/media/heroes/products.webp',
+    imageWidth: 1600,
+    imageHeight: 672,
+  },
+};
 
 const withoutHiddenImages = (post: NewsPost): NewsPost =>
-  post.image !== null && HIDDEN_IMAGES.has(post.image) ? { ...post, image: null } : post;
+  post.image !== null && REPLACED_IMAGES[post.image] ? { ...post, ...REPLACED_IMAGES[post.image] } : post;
 
 /** The weekly posts, newest first, as cards. `readMore` is filled in by the page. */
 const weeklyPosts = (locale: Locale): NewsPost[] =>

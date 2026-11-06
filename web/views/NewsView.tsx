@@ -87,7 +87,7 @@ export default function NewsView({ locale }: { locale: Locale }) {
                           width={post.imageWidth ?? 870}
                           height={post.imageHeight ?? 296}
                           sizes="(min-width: 1100px) 30vw, (min-width: 700px) 46vw, 100vw"
-                          className={post.postSlug ? `${s.cardImg} ${s.strip}` : s.cardImg}
+                          className={post.imageWidth ? `${s.cardImg} ${s.strip}` : s.cardImg}
                           priority={i === 0}
                         />
                       </div>
