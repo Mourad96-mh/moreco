@@ -133,14 +133,32 @@ export default function HeaderClient({
    * Picking a language here is an explicit choice, so it is remembered: the bare domain
    * reads it back and honours it instead of guessing from the browser's own setting.
    * Deep links are never redirected, so this only ever decides what moreco.ma opens on.
+   *
+   * Since 2026-11-07 the server redirects the bare domain itself (.htaccess, written by
+   * scripts/finalize-export.mjs), and a server reads cookies, not localStorage: the
+   * choice is kept in a moreco_lang cookie too.
    */
   const rememberLocale = (value: Locale) => {
+    document.cookie = `moreco_lang=${value}; path=/; max-age=31536000; SameSite=Lax; Secure`;
     try {
       localStorage.setItem('moreco:lang', value);
     } catch {
-      /* Private mode, or storage disabled: the switch still works, it is just not kept. */
+      /* Private mode, or storage disabled: the cookie still keeps the choice. */
     }
   };
+
+  /* A choice made before 2026-11-07 lives in localStorage only: copy it to the cookie once,
+     so the server's redirect honours it too. */
+  useEffect(() => {
+    if (/(?:^|;\s*)moreco_lang=/.test(document.cookie)) return;
+    try {
+      const saved = localStorage.getItem('moreco:lang');
+      if (saved && isLocale(saved)) rememberLocale(saved);
+    } catch {
+      /* Storage disabled: nothing was saved. */
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   /** Language switcher: stay on the same page rather than dumping people on the home. */
   const alternates = (() => {

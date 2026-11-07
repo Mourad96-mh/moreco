@@ -1,8 +1,8 @@
 /**
  * Post-build step. Turns `out/` into something a static host can serve:
  *
- *   out/index.html   language landing page for the bare domain
- *   out/.htaccess    root redirect + the 301 map from the old moreco.ma (Apache)
+ *   out/index.html   language landing page, a fallback: .htaccess redirects the bare domain
+ *   out/.htaccess    bare-domain language redirect + the 301 map from the old moreco.ma (Apache)
  *   out/sitemap.xml  every page, in all four languages, with hreflang alternates
  *   out/robots.txt
  *
@@ -246,6 +246,24 @@ for (const [slug, [words, segment, range], target] of WITHDRAWN) {
 }
 
 /*
+ * "Solutions par culture" and "Technologie A.O.S." were published on 2026-10-18 and
+ * withdrawn that evening, but Google indexed them and kept sending visitors to a 404 for
+ * salinity, heat and water stress on tomato, blueberry and the rest. Since 2026-11-07
+ * each old URL redirects to the nearest page, the crop sheets under Resources or R&D + I,
+ * so Google drops it from its results. Their words are kept here, not in
+ * route-words.json: no route uses them any more.
+ */
+const CROP_SOLUTIONS_WORD = { fr: 'solutions-par-culture', en: 'crop-solutions', es: 'soluciones-por-cultivo', nl: 'oplossingen-per-teelt' };
+const AOS_WORD = { fr: 'technologie-aos', en: 'aos-technology', es: 'tecnologia-aos', nl: 'aos-technologie' };
+const CROP_SOLUTION_SLUGS = ['tomates', 'avocats', 'fraises', 'myrtilles', 'courgettes', 'agrumes', 'oliviers', 'palmiers-dattiers', 'vignes'];
+for (const locale of LOCALES) {
+  const resources = wordTable.words.resources[locale];
+  addRule(`/${locale}/${CROP_SOLUTIONS_WORD[locale]}/`, locale, resources);
+  for (const slug of CROP_SOLUTION_SLUGS) addRule(`/${locale}/${CROP_SOLUTIONS_WORD[locale]}/${slug}/`, locale, resources);
+  addRule(`/${locale}/${AOS_WORD[locale]}/`, locale, wordTable.words.rdi[locale]);
+}
+
+/*
  * General use was cut down to Clearox on 2026-10-18. The ranges and products that went
  * send their visitors to the General use page. Huwa-San Professionnel lost its range
  * page but keeps AGRO, which the Agriculture disinfectant family shows. VET and Water
@@ -357,10 +375,36 @@ ${Object.values(LOCKED)
   RedirectMatch 403 "^/(${Object.values(LOCKED).join('|')})(/|$)|^/media/research/([^/]+|documents/.*)$"
 </IfModule>
 
-# The bare domain is NOT redirected here on purpose. Apache can only read the first
-# token of Accept-Language, and a server redirect fires before the page can consult the
-# language the visitor actually chose last time. index.html does both, and works on any
-# static host rather than only on Apache.
+# The bare domain goes straight to a language (2026-11-07). It used to answer 200 with a
+# "choose your language" page, and Google made that page the brand's first result and
+# drew its sitelinks from its links to all four languages: Produits beside Producten for
+# a search from Morocco. Now it never answers 200 to a search engine, so the result is
+# /fr/ (or /nl/, /en/, /es/ through hreflang) with sitelinks in one language.
+#
+# Order: the language picked with the header switcher (the moreco_lang cookie), then the
+# browser's first language, then French. A visitor-dependent answer is a 302; the French
+# fallback, which is what Googlebot gets (it sends no Accept-Language), is a 301 so the
+# bare domain's standing passes to /fr/. Neither is cached, since the next visit may pick
+# differently. Google's site verifier still gets the old index.html and its meta tag,
+# which keeps the Search Console property verified.
+<IfModule mod_rewrite.c>
+  RewriteCond %{HTTP_USER_AGENT} !Google-Site-Verification [NC]
+  RewriteCond %{HTTP_COOKIE} (^|;\\s*)moreco_lang=(${LOCALES.join('|')})(;|$)
+  RewriteRule ^$ /%2/ [R=302,L,E=langroot:1]
+${LOCALES.filter((l) => l !== DEFAULT)
+  .map(
+    (l) => `  RewriteCond %{HTTP_USER_AGENT} !Google-Site-Verification [NC]
+  RewriteCond %{HTTP:Accept-Language} ^${l}\\b [NC]
+  RewriteRule ^$ /${l}/ [R=302,L,E=langroot:1]`,
+  )
+  .join('\n')}
+  RewriteCond %{HTTP_USER_AGENT} !Google-Site-Verification [NC]
+  RewriteRule ^$ /${DEFAULT}/ [R=301,L,E=langroot:1]
+</IfModule>
+<IfModule mod_headers.c>
+  Header always set Cache-Control "no-store" env=langroot
+  Header always set Vary "Accept-Language, Cookie" env=langroot
+</IfModule>
 
 # --- 301s from the old moreco.ma (${map.size} rules) ---
 # WPML served every language off the same paths with ?lang=xx, so the query string is
@@ -407,6 +451,13 @@ writeFileSync(
 
 /* ------------------------------------------------------- root landing page */
 
+/*
+ * Since 2026-11-07 .htaccess redirects the bare domain before this page is reached. It is
+ * still written for Google's site verifier, which the redirect lets through to its meta
+ * tag, and for any host without mod_rewrite. It reads the moreco_lang cookie too, so
+ * both paths honour the switcher alike.
+ */
+
 const landing = `<!doctype html>
 <html lang="${DEFAULT}">
 <head>
@@ -432,7 +483,9 @@ ${LOCALES.map((l) => `<link rel="alternate" hreflang="${l}" href="${SITE}/${l}/"
   (function () {
     var known = ${JSON.stringify(LOCALES)};
     var chosen = null;
-    try { chosen = localStorage.getItem('moreco:lang'); } catch (e) { /* private mode */ }
+    var cookie = /(?:^|;\\s*)moreco_lang=([a-z]{2})/.exec(document.cookie);
+    if (cookie) chosen = cookie[1];
+    if (!chosen) try { chosen = localStorage.getItem('moreco:lang'); } catch (e) { /* private mode */ }
 
     var wanted = known.indexOf(chosen) !== -1 ? chosen : null;
     if (!wanted) {
