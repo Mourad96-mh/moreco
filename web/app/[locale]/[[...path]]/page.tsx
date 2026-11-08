@@ -64,6 +64,20 @@ const HOME_SEO: Partial<Record<Locale, { title: string; description: string }>> 
   },
 };
 
+/**
+ * The client's Google title for the French agriculture page (2026-11-08): the three
+ * stresses Moroccan growers search for, in the words they type.
+ */
+const SEGMENT_SEO: Partial<Record<Locale, Partial<Record<string, { title: string; description: string }>>>> = {
+  fr: {
+    agri: {
+      title: 'Chaleur, Sécheresse & Salinité : Solution OSA | Moreco',
+      description:
+        'Produit OSA contre le stress thermique, hydrique et salin au Maroc : renforce les cultures face à la chaleur, la sécheresse et la salinité.',
+    },
+  },
+};
+
 /** What a page tells search engines and social cards beyond its title and description. */
 interface Seo {
   title: string;
@@ -87,6 +101,8 @@ function seoFor(route: Route, locale: Locale): Seo {
     case 'products':
       return { title: t.pages.products.title, description: t.pages.products.lead };
     case 'segment': {
+      const own = SEGMENT_SEO[locale]?.[route.params.segment!];
+      if (own) return { title: own.title, description: own.description, absolute: true };
       const segment = t.segments[route.params.segment!];
       return { title: segment.name, description: segment.blurb };
     }
