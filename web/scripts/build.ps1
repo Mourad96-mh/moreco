@@ -68,6 +68,12 @@ robocopy (Join-Path $work 'out') $out /MIR /NFL /NDL /NJH /NJS /NP | Out-Null
 if ($LASTEXITCODE -ge 8) { throw "copying out/ back failed with $LASTEXITCODE" }
 $global:LASTEXITCODE = 0
 
+# `npx next build` skips the package.json build script, and with it the post-build step
+# that writes .htaccess (redirects, trial lock), the root page, sitemap.xml and
+# robots.txt. Without it the export uploads with none of them, so run it here.
+node (Join-Path $PSScriptRoot 'finalize-export.mjs')
+if ($LASTEXITCODE -ne 0) { throw "finalize-export failed with $LASTEXITCODE" }
+
 $pages = (Get-ChildItem $out -Recurse -Filter index.html).Count
 Write-Host ""
 Write-Host "built $pages pages into $out"

@@ -520,7 +520,7 @@ Le client a écrit le français. **EN, ES et NL sont de nous** :
 
 | Où | Langue | Nouveau texte |
 | --- | --- | --- |
-| `segments.agri.introTitle` | FR | Innovation OSA : Biodisponibilité Maximale & Performance des Cultures |
+| `segments.agri.introTitle` | FR | Chaleur, Sécheresse & Salinité : Solution OSA |
 | | EN | OSA Innovation: Maximum Bioavailability & Crop Performance |
 | | ES | Innovación OSA: Máxima biodisponibilidad y rendimiento de los cultivos |
 | | NL | OSA-innovatie: maximale biobeschikbaarheid & gewasprestaties |
