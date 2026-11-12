@@ -157,5 +157,200 @@
         { "type": "paragraph", "text": "De wetenschap is onbetwistbaar: silicium (OSA) is een betrouwbare en voorspelbare hefboom om abiotische en biotische stress doeltreffend te beheersen. De conclusies van het UM6P-rapport bevestigen volledig de doeltreffendheid van de technologie waarop Orthagrow Control sinds 2014 steunt. Op deze stevige wetenschappelijke basis garandeert Orthagrow Control een superieure productpositionering en een uitstekende R&D-verankering in Marokko, volledig in lijn met de eisen van precisielandbouw op het hoogste niveau." }
       ]
     }
+  },
+  {
+    "slug": "myrtille-orthagrow-rendement-fermete-osa",
+    "week": 2,
+    "date": "2026-11-12",
+    "image": "/media/news/2026-11-week-2-myrtille-orthagrow.webp",
+    "imageWidth": 1200,
+    "imageHeight": 801,
+    "product": "orthagrow-control",
+    "title": {
+      "fr": "Impact physiologique du stress thermique sur l'intégrité des parois cellulaires et contre-attaque biochimique par l'acide orthosilicique",
+      "en": "The physiological impact of heat stress on cell-wall integrity, and the biochemical counter-attack of orthosilicic acid",
+      "es": "Impacto fisiológico del estrés térmico en la integridad de las paredes celulares y contraataque bioquímico del ácido ortosilícico",
+      "nl": "De fysiologische impact van hittestress op de integriteit van de celwanden, en de biochemische tegenaanval van orthokiezelzuur"
+    },
+    "cardTitle": {
+      "fr": "Myrtille : rendement et fermeté avec Orthagrow",
+      "en": "Blueberries: yield and firmness with Orthagrow",
+      "es": "Arándano: rendimiento y firmeza con Orthagrow",
+      "nl": "Blauwe bes: opbrengst en stevigheid met Orthagrow"
+    },
+    "seoTitle": {
+      "fr": "Orthagrow Maroc | Rendement et Fermeté de la Myrtille (+11% à +22%)",
+      "en": "Orthagrow Morocco | Blueberry Yield and Firmness (+11% to +22%)",
+      "es": "Orthagrow Marruecos | Rendimiento y firmeza del arándano (+11% a +22%)",
+      "nl": "Orthagrow Marokko | Opbrengst en stevigheid van blauwe bessen (+11% tot +22%)"
+    },
+    "seoDescription": {
+      "fr": "Découvrez nos résultats agronomiques sur myrtille. Optimisez le rendement, le calibre et la fermeté de vos récoltes de 11% à 22% avec la formule Orthagrow.",
+      "en": "Discover our agronomic results on blueberries. Improve the yield, size and firmness of your harvest by 11% to 22% with the Orthagrow formula.",
+      "es": "Descubra nuestros resultados agronómicos en arándano. Mejore el rendimiento, el calibre y la firmeza de sus cosechas entre un 11% y un 22% con la fórmula Orthagrow.",
+      "nl": "Ontdek onze agronomische resultaten bij blauwe bessen. Verbeter de opbrengst, het kaliber en de stevigheid van uw oogst met 11% tot 22% met de Orthagrow-formule."
+    },
+    "keywords": {
+      "fr": ["Orthagrow Maroc", "Moreco Maroc", "myrtille", "rendement myrtille", "fermeté myrtille", "calibre myrtille", "Vaccinium corymbosum", "acide orthosilicique (OSA)", "stress thermique", "ROS et MDA", "Botrytis cinerea", "durée de conservation", "tomate cerise", "culture hors-sol substrat coco"],
+      "en": ["Orthagrow Morocco", "Moreco Morocco", "blueberry", "blueberry yield", "blueberry firmness", "blueberry size", "Vaccinium corymbosum", "orthosilicic acid (OSA)", "heat stress", "ROS and MDA", "Botrytis cinerea", "shelf life", "cherry tomato", "soilless coco substrate"],
+      "es": ["Orthagrow Marruecos", "Moreco Marruecos", "arándano", "rendimiento arándano", "firmeza arándano", "calibre arándano", "Vaccinium corymbosum", "ácido ortosilícico (OSA)", "estrés térmico", "ROS y MDA", "Botrytis cinerea", "vida útil", "tomate cherry", "cultivo sin suelo fibra de coco"],
+      "nl": ["Orthagrow Marokko", "Moreco Marokko", "blauwe bes", "opbrengst blauwe bes", "stevigheid blauwe bes", "kaliber blauwe bes", "Vaccinium corymbosum", "orthokiezelzuur (OSA)", "hittestress", "ROS en MDA", "Botrytis cinerea", "houdbaarheid", "cherrytomaat", "substraatteelt kokos"]
+    },
+    "lead": {
+      "fr": "En culture sous abri et hors-sol, le stress thermique et la micro-salinisation induisent une dégradation cellulaire invisible mais hautement destructrice. À la base de ce déclin physiologique se trouvent deux paramètres biochimiques cruciaux : les espèces réactives de l'oxygène (ROS) et le malondialdéhyde (MDA).",
+      "en": "In protected and soilless cultivation, heat stress and micro-salinisation cause cell damage that is invisible but highly destructive. At the root of this physiological decline lie two crucial biochemical parameters: reactive oxygen species (ROS) and malondialdehyde (MDA).",
+      "es": "En cultivo bajo abrigo y sin suelo, el estrés térmico y la microsalinización provocan una degradación celular invisible pero sumamente destructiva. En la base de este declive fisiológico se encuentran dos parámetros bioquímicos cruciales: las especies reactivas de oxígeno (ROS) y el malondialdehído (MDA).",
+      "nl": "In beschermde teelt en substraatteelt veroorzaken hittestress en microverzilting een onzichtbare maar zeer destructieve celafbraak. Aan de basis van deze fysiologische achteruitgang liggen twee cruciale biochemische parameters: reactieve zuurstofsoorten (ROS) en malondialdehyde (MDA)."
+    },
+    "blocks": {
+      "fr": [
+        { "type": "heading", "level": 2, "text": "ROS et MDA : la cascade cellulaire destructrice" },
+        { "type": "paragraph", "text": "Sous l'effet d'un stress abiotique, l'homéostasie de la plante est perturbée, ce qui entraîne une accumulation excessive de ROS (Reactive Oxygen Species). Cette surproduction provoque un stress oxydatif aigu qui attaque directement les lipides structurels des membranes (peroxydation lipidique). Le MDA (malondialdéhyde) intervient alors comme le biomarqueur cytotoxique de cette dégradation. Une élévation des taux de MDA corrèle directement avec une fuite membranaire généralisée, une dévaluation abrupte de l'efficience photosynthétique et une mort cellulaire programmée prématurée (apoptose)." },
+        { "type": "heading", "level": 2, "text": "Le mode d'action de l'acide orthosilicique (OSA)" },
+        { "type": "paragraph", "text": "Bien que le silicium soit abondant dans le sol, la plante est physiologiquement uniquement capable d'assimiler cet élément sous sa forme bio-disponible, à savoir l'acide orthosilicique (OSA). Notre formule unique et mondialement brevetée – certifiée et reconnue sur le marché sous la marque Orthagrow – inverse cette dynamique destructrice ROS/MDA à l'échelle cellulaire via trois voies spécifiques :" },
+        { "type": "list", "items": [
+          "**Piégeage antioxydant des ROS (ROS scavenging) :** elle active et amplifie l'activité enzymatique endogène d'antioxydants majeurs (SOD, CAT et POD) afin de neutraliser les radicaux libres avant l'amorçage de la peroxydation lipidique.",
+          "**Réduction du MDA et stabilisation membranaire :** en abaissant drastiquement l'indice de MDA, l'intégrité membranaire est préservée. Le végétal maintient ainsi son statut hydrique et son équilibre minéral sous de fortes contraintes d'évapotranspiration.",
+          "**Barrière cuticulaire mécanique :** après absorption, l'acide silicique se polymérise sous forme de silice amorphe directement sous la cuticule (silica armor). Cette barrière fonctionnelle minimise la transpiration cuticulaire non stomatique."
+        ] },
+        { "type": "heading", "level": 2, "text": "Optimisation qualitative spécifique aux cultures" },
+        { "type": "paragraph", "text": "En production commerciale de tomates cerises, Orthagrow garantit l'élasticité des parois cellulaires et la pression de turgescence, ce qui réduit significativement le micro-craquelage (micro-cracking) cuticulaire et l'avortement des fleurs sous forte pression osmotique." },
+        { "type": "paragraph", "text": "Dans le secteur des petits fruits – le bleuet en corymbe / myrtille (Vaccinium corymbosum L.) en étant un exemple saillant –, la formule compense efficacement l'inertie chimique et le manque de silicium bio-disponible du substrat de coco. La myrtille étant naturellement une faible accumulatrice de silicium, la culture réagit de manière exceptionnellement positive à la forme OSA directement assimilable d'Orthagrow." },
+        { "type": "paragraph", "text": "Sous abri, une humidité relative élevée active fréquemment des infections latentes de Botrytis cinerea (pourriture grise). Notre formule brevetée Orthagrow réduit l'incidence du Botrytis en stimulant les voies de défense endogènes (augmentation de l'activité PAL). Les cellules épidermiques renforcées constituent une barrière physique limitant la pénétration des spores fongiques, tandis que la fermeté épidermale ralentit la respiration post-récolte et prolonge la durée de conservation (shelf-life)." },
+        { "type": "heading", "level": 2, "text": "L'impact d'Orthagrow sur la qualité et le rendement en chiffres" },
+        { "type": "paragraph", "text": "Des essais agronomiques internationaux à grande échelle et des recherches universitaires (notamment des publications dans MDPI Agronomy et FAO/ResearchGate) démontrent des résultats concrets et mesurables :" },
+        { "type": "list", "items": [
+          "**Rendement total :** augmentation de +11% à +22% en biomasse (en moyenne 114 grammes de fruits supplémentaires par plante et par saison) grâce à une meilleure assimilation de l'azote (N), du phosphore (P) et du potassium (K).",
+          "**Calibre des fruits :** le diamètre moyen des fruits augmente de 0,5 à 1,1 mm, orientant une part nettement plus importante de la récolte vers les catégories commerciales supérieures (Jumbo/Premium).",
+          "**Qualité export :** hausse de la classification en Catégorie 1 Export, atteignant 89% à 94% (contre 78% à 82% en conduite standard) par la réduction drastique des écarts de tri.",
+          "**Fermeté des fruits :** augmentation de +15% à +25% de l'élasticité. Les baies maintiennent leur fermeté texturale 36 à 54 heures de plus à température ambiante, optimisant la résistance aux chocs mécaniques de récolte et de transport.",
+          "**Conservation et chaîne du froid :** prolongation de la durée de conservation de 3 à 7 jours. La formule renforce la pruine naturelle (waxy bloom) et réduit la perte de poids par déshydratation en transport de 10% à 25%, évitant le flétrissement.",
+          "**Saveur et sucres (Brix) :** augmentation de +0,5 à +1,2 point de l'indice Brix par la hausse de la teneur en solides solubles totaux (SST).",
+          "**Pertes fongiques post-récolte :** lors de simulations de transport de 14 jours, le taux de fardage dû au Botrytis ou à la pourriture en station de conditionnement chute de 12%-16% à seulement 3%-5%."
+        ] },
+        { "type": "heading", "level": 2, "text": "Cas d'exploitation financière et ROI (par hectare sur le marché export)" },
+        { "type": "paragraph", "text": "Le calcul technico-économique suivant est basé sur une culture de référence de 15 000 kg/ha et un prix moyen d'exportation de 49 dirhams marocains (MAD) par kg." },
+        { "type": "list", "items": [
+          "**Coût d'investissement (OSA) :** 1 300 à 2 700 MAD pour un programme saisonnier complet (4 à 6 applications en pulvérisation foliaire ou en fertigation).",
+          "**Gain de rendement commercialisable :** +88 200 MAD, basé sur une hausse minimale de +12% de fruits de Catégorie 1 (+1 800 kg/ha).",
+          "**Économie sur les écarts de tri :** +11 000 à 16 000 MAD grâce à une réduction de 10% à 15% des fruits écartés pour fissures ou malformations.",
+          "**Prévention des litiges qualité :** +5 000 à 10 000 MAD par l'élimination des réfractions de prix ou des refus d'agréage par les supermarchés européens.",
+          "**Marge brute supplémentaire totale :** 88 000 à 104 000 MAD de gain net par hectare après déduction du coût des intrants.",
+          "**Retour sur investissement (ROI) :** de 30:1 à 45:1. Chaque tranche de 100 MAD investie dans le programme Orthagrow génère entre 3 000 MAD et 4 500 MAD de bénéfice net supplémentaire."
+        ] },
+        { "type": "paragraph", "text": "Grâce à la stabilité moléculaire unique et mondialement brevetée d'Orthagrow, le producteur bénéficie, via Moreco, de la plus haute bio-disponibilité d'OSA du marché. Cela garantit une avance physiologique et financière immédiate sur un marché d'exportation hautement compétitif." }
+      ],
+      "en": [
+        { "type": "heading", "level": 2, "text": "ROS and MDA: the destructive cellular cascade" },
+        { "type": "paragraph", "text": "Under abiotic stress, the plant's homeostasis is disrupted, leading to an excessive build-up of ROS (reactive oxygen species). This overproduction causes acute oxidative stress that directly attacks the structural lipids of the membranes (lipid peroxidation). MDA (malondialdehyde) then appears as the cytotoxic biomarker of this damage. Rising MDA levels correlate directly with widespread membrane leakage, a sharp drop in photosynthetic efficiency and premature programmed cell death (apoptosis)." },
+        { "type": "heading", "level": 2, "text": "How orthosilicic acid (OSA) works" },
+        { "type": "paragraph", "text": "Although silicon is abundant in the soil, the plant can physiologically absorb it only in its bioavailable form, orthosilicic acid (OSA). Our unique, globally patented formula – certified and recognised on the market under the Orthagrow brand – reverses this destructive ROS/MDA dynamic at cellular level through three specific pathways:" },
+        { "type": "list", "items": [
+          "**Antioxidant ROS scavenging:** it activates and amplifies the plant's own enzymatic activity of major antioxidants (SOD, CAT and POD) to neutralise free radicals before lipid peroxidation begins.",
+          "**Lower MDA and membrane stabilisation:** by sharply lowering the MDA index, membrane integrity is preserved. The plant keeps its water status and mineral balance under strong evapotranspiration pressure.",
+          "**Mechanical cuticle barrier:** once absorbed, silicic acid polymerises as amorphous silica directly beneath the cuticle (silica armour). This functional barrier minimises non-stomatal cuticular transpiration."
+        ] },
+        { "type": "heading", "level": 2, "text": "Crop-specific quality gains" },
+        { "type": "paragraph", "text": "In commercial cherry tomato production, Orthagrow secures cell-wall elasticity and turgor pressure, significantly reducing cuticular micro-cracking and flower abortion under high osmotic pressure." },
+        { "type": "paragraph", "text": "In soft fruit – the highbush blueberry (Vaccinium corymbosum L.) being a prime example – the formula effectively makes up for the chemical inertness and lack of bioavailable silicon in coco substrate. As the blueberry is naturally a poor silicon accumulator, the crop responds exceptionally well to Orthagrow's directly absorbable OSA." },
+        { "type": "paragraph", "text": "Under cover, high relative humidity frequently triggers latent infections of Botrytis cinerea (grey mould). Our patented Orthagrow formula reduces the incidence of Botrytis by stimulating the plant's own defence pathways (increased PAL activity). The strengthened epidermal cells form a physical barrier that limits the penetration of fungal spores, while the firmer skin slows post-harvest respiration and extends shelf life." },
+        { "type": "heading", "level": 2, "text": "Orthagrow's impact on quality and yield, in figures" },
+        { "type": "paragraph", "text": "Large-scale international field trials and academic research (including publications in MDPI Agronomy and FAO/ResearchGate) show concrete, measurable results:" },
+        { "type": "list", "items": [
+          "**Total yield:** an increase of +11% to +22% in biomass (on average 114 grams of extra fruit per plant per season) thanks to better uptake of nitrogen (N), phosphorus (P) and potassium (K).",
+          "**Fruit size:** the average fruit diameter increases by 0.5 to 1.1 mm, moving a markedly larger share of the harvest into the top commercial grades (Jumbo/Premium).",
+          "**Export quality:** more fruit classified as Category 1 Export, reaching 89% to 94% (against 78% to 82% under standard management), through a drastic reduction in grading rejects.",
+          "**Fruit firmness:** +15% to +25% elasticity. The berries keep their firm texture 36 to 54 hours longer at room temperature, improving their resistance to mechanical shocks during harvest and transport.",
+          "**Storage and cold chain:** shelf life extended by 3 to 7 days. The formula strengthens the natural waxy bloom and cuts weight loss from dehydration in transport by 10% to 25%, preventing shrivelling.",
+          "**Flavour and sugars (Brix):** +0.5 to +1.2 points on the Brix index through a higher total soluble solids (TSS) content.",
+          "**Post-harvest fungal losses:** in 14-day transport simulations, the packhouse rejection rate due to Botrytis or rot falls from 12%–16% to just 3%–5%."
+        ] },
+        { "type": "heading", "level": 2, "text": "The financial case and ROI (per hectare, export market)" },
+        { "type": "paragraph", "text": "The following techno-economic calculation is based on a reference crop of 15,000 kg/ha and an average export price of 49 Moroccan dirhams (MAD) per kg." },
+        { "type": "list", "items": [
+          "**Investment cost (OSA):** MAD 1,300 to 2,700 for a full seasonal programme (4 to 6 applications by foliar spray or fertigation).",
+          "**Marketable yield gain:** +MAD 88,200, based on a minimum increase of +12% in Category 1 fruit (+1,800 kg/ha).",
+          "**Savings on grading rejects:** +MAD 11,000 to 16,000 from a 10% to 15% reduction in fruit rejected for cracks or malformations.",
+          "**Avoided quality disputes:** +MAD 5,000 to 10,000 by eliminating price deductions or rejections at inspection by European supermarkets.",
+          "**Total additional gross margin:** MAD 88,000 to 104,000 net gain per hectare after deducting the cost of inputs.",
+          "**Return on investment (ROI):** from 30:1 to 45:1. Every MAD 100 invested in the Orthagrow programme generates between MAD 3,000 and MAD 4,500 of additional net profit."
+        ] },
+        { "type": "paragraph", "text": "Thanks to Orthagrow's unique, globally patented molecular stability, growers get the highest OSA bioavailability on the market through Moreco. That means an immediate physiological and financial lead in a highly competitive export market." }
+      ],
+      "es": [
+        { "type": "heading", "level": 2, "text": "ROS y MDA: la cascada celular destructiva" },
+        { "type": "paragraph", "text": "Bajo el efecto de un estrés abiótico, la homeostasis de la planta se altera, lo que provoca una acumulación excesiva de ROS (especies reactivas de oxígeno). Esta sobreproducción causa un estrés oxidativo agudo que ataca directamente los lípidos estructurales de las membranas (peroxidación lipídica). El MDA (malondialdehído) aparece entonces como el biomarcador citotóxico de esta degradación. Un aumento de los niveles de MDA se correlaciona directamente con una fuga de membrana generalizada, una caída brusca de la eficiencia fotosintética y una muerte celular programada prematura (apoptosis)." },
+        { "type": "heading", "level": 2, "text": "El modo de acción del ácido ortosilícico (OSA)" },
+        { "type": "paragraph", "text": "Aunque el silicio abunda en el suelo, la planta solo puede asimilarlo fisiológicamente en su forma biodisponible, el ácido ortosilícico (OSA). Nuestra fórmula única y patentada a nivel mundial – certificada y reconocida en el mercado con la marca Orthagrow – invierte esta dinámica destructiva ROS/MDA a escala celular por tres vías específicas:" },
+        { "type": "list", "items": [
+          "**Captura antioxidante de ROS (ROS scavenging):** activa y amplifica la actividad enzimática endógena de los principales antioxidantes (SOD, CAT y POD) para neutralizar los radicales libres antes de que comience la peroxidación lipídica.",
+          "**Reducción del MDA y estabilización de las membranas:** al reducir drásticamente el índice de MDA, se preserva la integridad de las membranas. La planta mantiene así su estado hídrico y su equilibrio mineral bajo fuertes exigencias de evapotranspiración.",
+          "**Barrera cuticular mecánica:** tras su absorción, el ácido silícico se polimeriza en forma de sílice amorfa directamente bajo la cutícula (silica armor). Esta barrera funcional minimiza la transpiración cuticular no estomática."
+        ] },
+        { "type": "heading", "level": 2, "text": "Mejora cualitativa específica para cada cultivo" },
+        { "type": "paragraph", "text": "En la producción comercial de tomate cherry, Orthagrow asegura la elasticidad de las paredes celulares y la presión de turgencia, lo que reduce significativamente el microagrietado (micro-cracking) cuticular y el aborto floral bajo alta presión osmótica." },
+        { "type": "paragraph", "text": "En el sector de los frutos rojos – con el arándano alto (Vaccinium corymbosum L.) como ejemplo destacado –, la fórmula compensa eficazmente la inercia química y la falta de silicio biodisponible del sustrato de fibra de coco. Como el arándano acumula poco silicio de forma natural, el cultivo responde de manera excepcionalmente positiva a la forma OSA directamente asimilable de Orthagrow." },
+        { "type": "paragraph", "text": "Bajo abrigo, una humedad relativa elevada activa con frecuencia infecciones latentes de Botrytis cinerea (podredumbre gris). Nuestra fórmula patentada Orthagrow reduce la incidencia de Botrytis al estimular las vías de defensa endógenas (aumento de la actividad PAL). Las células epidérmicas reforzadas forman una barrera física que limita la penetración de las esporas fúngicas, mientras que la firmeza de la epidermis ralentiza la respiración poscosecha y prolonga la vida útil (shelf-life)." },
+        { "type": "heading", "level": 2, "text": "El impacto de Orthagrow en la calidad y el rendimiento, en cifras" },
+        { "type": "paragraph", "text": "Ensayos agronómicos internacionales a gran escala e investigaciones universitarias (en particular publicaciones en MDPI Agronomy y FAO/ResearchGate) demuestran resultados concretos y medibles:" },
+        { "type": "list", "items": [
+          "**Rendimiento total:** aumento de +11% a +22% en biomasa (de media 114 gramos de fruta adicionales por planta y por temporada) gracias a una mejor asimilación del nitrógeno (N), el fósforo (P) y el potasio (K).",
+          "**Calibre de la fruta:** el diámetro medio de la fruta aumenta de 0,5 a 1,1 mm, lo que lleva una parte claramente mayor de la cosecha a las categorías comerciales superiores (Jumbo/Premium).",
+          "**Calidad de exportación:** más fruta clasificada en Categoría 1 Exportación, hasta el 89% a 94% (frente al 78% a 82% en manejo estándar), gracias a una reducción drástica de los descartes de selección.",
+          "**Firmeza de la fruta:** aumento de +15% a +25% de la elasticidad. Las bayas mantienen su firmeza 36 a 54 horas más a temperatura ambiente, lo que mejora su resistencia a los golpes de la cosecha y el transporte.",
+          "**Conservación y cadena de frío:** vida útil prolongada de 3 a 7 días. La fórmula refuerza la pruína natural (waxy bloom) y reduce la pérdida de peso por deshidratación durante el transporte entre un 10% y un 25%, evitando el arrugamiento.",
+          "**Sabor y azúcares (Brix):** aumento de +0,5 a +1,2 puntos en el índice Brix por un mayor contenido de sólidos solubles totales (SST).",
+          "**Pérdidas fúngicas poscosecha:** en simulaciones de transporte de 14 días, la tasa de descarte por Botrytis o podredumbre en la central de envasado baja del 12%-16% a solo un 3%-5%."
+        ] },
+        { "type": "heading", "level": 2, "text": "Caso económico y ROI (por hectárea en el mercado de exportación)" },
+        { "type": "paragraph", "text": "El siguiente cálculo técnico-económico se basa en un cultivo de referencia de 15 000 kg/ha y un precio medio de exportación de 49 dírhams marroquíes (MAD) por kg." },
+        { "type": "list", "items": [
+          "**Coste de inversión (OSA):** de 1 300 a 2 700 MAD para un programa completo de temporada (de 4 a 6 aplicaciones por pulverización foliar o fertirrigación).",
+          "**Ganancia de rendimiento comercializable:** +88 200 MAD, sobre la base de un aumento mínimo de +12% de fruta de Categoría 1 (+1 800 kg/ha).",
+          "**Ahorro en descartes de selección:** de +11 000 a 16 000 MAD gracias a una reducción del 10% al 15% de la fruta descartada por grietas o malformaciones.",
+          "**Prevención de litigios de calidad:** de +5 000 a 10 000 MAD al eliminar las rebajas de precio o los rechazos en la recepción de los supermercados europeos.",
+          "**Margen bruto adicional total:** de 88 000 a 104 000 MAD de ganancia neta por hectárea tras deducir el coste de los insumos.",
+          "**Retorno de la inversión (ROI):** de 30:1 a 45:1. Cada 100 MAD invertidos en el programa Orthagrow generan entre 3 000 MAD y 4 500 MAD de beneficio neto adicional."
+        ] },
+        { "type": "paragraph", "text": "Gracias a la estabilidad molecular única y patentada a nivel mundial de Orthagrow, el productor obtiene, a través de Moreco, la mayor biodisponibilidad de OSA del mercado. Esto garantiza una ventaja fisiológica y económica inmediata en un mercado de exportación muy competitivo." }
+      ],
+      "nl": [
+        { "type": "heading", "level": 2, "text": "ROS en MDA: de destructieve cellulaire cascade" },
+        { "type": "paragraph", "text": "Onder abiotische stress raakt de homeostase van de plant verstoord, wat leidt tot een overmatige ophoping van ROS (reactieve zuurstofsoorten). Deze overproductie veroorzaakt acute oxidatieve stress die rechtstreeks de structurele lipiden van de membranen aantast (lipideperoxidatie). MDA (malondialdehyde) verschijnt dan als de cytotoxische biomarker van die afbraak. Stijgende MDA-waarden hangen rechtstreeks samen met wijdverspreide membraanlekkage, een abrupte daling van de fotosynthetische efficiëntie en vroegtijdige geprogrammeerde celdood (apoptose)." },
+        { "type": "heading", "level": 2, "text": "Hoe orthokiezelzuur (OSA) werkt" },
+        { "type": "paragraph", "text": "Hoewel silicium overvloedig in de bodem voorkomt, kan de plant het fysiologisch alleen opnemen in zijn biobeschikbare vorm: orthokiezelzuur (OSA). Onze unieke, wereldwijd gepatenteerde formule – gecertificeerd en op de markt erkend onder het merk Orthagrow – keert deze destructieve ROS/MDA-dynamiek op celniveau om via drie specifieke routes:" },
+        { "type": "list", "items": [
+          "**Antioxidatieve ROS-wegvangst (ROS scavenging):** ze activeert en versterkt de eigen enzymactiviteit van belangrijke antioxidanten (SOD, CAT en POD) om vrije radicalen te neutraliseren voordat de lipideperoxidatie op gang komt.",
+          "**Minder MDA en stabiele membranen:** door de MDA-index sterk te verlagen, blijft de integriteit van de membranen behouden. De plant handhaaft zo zijn waterhuishouding en mineralenbalans onder hoge verdampingsdruk.",
+          "**Mechanische cuticulabarrière:** na opname polymeriseert kiezelzuur tot amorfe silica direct onder de cuticula (silica armor). Deze functionele barrière beperkt de niet-stomataire cuticulaire verdamping tot een minimum."
+        ] },
+        { "type": "heading", "level": 2, "text": "Gewasspecifieke kwaliteitswinst" },
+        { "type": "paragraph", "text": "In de commerciële teelt van cherrytomaten zorgt Orthagrow voor elastische celwanden en turgordruk, wat het cuticulaire microbarsten (micro-cracking) en bloemabortie onder hoge osmotische druk aanzienlijk vermindert." },
+        { "type": "paragraph", "text": "In de zachtfruitsector – met de blauwe bes of trosbosbes (Vaccinium corymbosum L.) als sprekend voorbeeld – compenseert de formule doeltreffend de chemische inertie en het gebrek aan biobeschikbaar silicium van kokossubstraat. Omdat de blauwe bes van nature weinig silicium opslaat, reageert het gewas uitzonderlijk goed op de direct opneembare OSA van Orthagrow." },
+        { "type": "paragraph", "text": "Onder bescherming activeert een hoge relatieve luchtvochtigheid vaak latente infecties van Botrytis cinerea (grauwe schimmel). Onze gepatenteerde Orthagrow-formule vermindert het optreden van Botrytis door de eigen afweerroutes van de plant te stimuleren (verhoogde PAL-activiteit). De versterkte epidermiscellen vormen een fysieke barrière die het binnendringen van schimmelsporen beperkt, terwijl de stevigere schil de ademhaling na de oogst vertraagt en de houdbaarheid (shelf-life) verlengt." },
+        { "type": "heading", "level": 2, "text": "De impact van Orthagrow op kwaliteit en opbrengst, in cijfers" },
+        { "type": "paragraph", "text": "Grootschalige internationale veldproeven en universitair onderzoek (onder meer publicaties in MDPI Agronomy en FAO/ResearchGate) tonen concrete, meetbare resultaten:" },
+        { "type": "list", "items": [
+          "**Totale opbrengst:** een stijging van +11% tot +22% in biomassa (gemiddeld 114 gram extra fruit per plant per seizoen) dankzij een betere opname van stikstof (N), fosfor (P) en kalium (K).",
+          "**Vruchtkaliber:** de gemiddelde vruchtdiameter neemt toe met 0,5 tot 1,1 mm, waardoor een duidelijk groter deel van de oogst in de hoogste handelsklassen (Jumbo/Premium) valt.",
+          "**Exportkwaliteit:** meer fruit in Klasse 1 Export, tot 89% tot 94% (tegenover 78% tot 82% bij standaardteelt), door een drastische vermindering van de sorteeruitval.",
+          "**Vruchtstevigheid:** +15% tot +25% elasticiteit. De bessen blijven 36 tot 54 uur langer stevig bij kamertemperatuur, wat hun weerstand tegen mechanische schokken bij oogst en transport verbetert.",
+          "**Bewaring en koudeketen:** 3 tot 7 dagen langere houdbaarheid. De formule versterkt de natuurlijke waslaag (waxy bloom) en vermindert het gewichtsverlies door uitdroging tijdens transport met 10% tot 25%, zodat de bessen niet verschrompelen.",
+          "**Smaak en suikers (Brix):** +0,5 tot +1,2 punt op de Brix-index door een hoger gehalte aan totale oplosbare stoffen (TSS).",
+          "**Schimmelverliezen na de oogst:** in transportsimulaties van 14 dagen daalt de uitval door Botrytis of rot in het pakstation van 12%-16% naar slechts 3%-5%."
+        ] },
+        { "type": "heading", "level": 2, "text": "De financiële businesscase en ROI (per hectare, exportmarkt)" },
+        { "type": "paragraph", "text": "De volgende technisch-economische berekening gaat uit van een referentieteelt van 15.000 kg/ha en een gemiddelde exportprijs van 49 Marokkaanse dirham (MAD) per kg." },
+        { "type": "list", "items": [
+          "**Investeringskost (OSA):** 1.300 tot 2.700 MAD voor een volledig seizoensprogramma (4 tot 6 toepassingen via bladbespuiting of fertigatie).",
+          "**Winst in verkoopbare opbrengst:** +88.200 MAD, op basis van een minimale stijging van +12% Klasse 1-fruit (+1.800 kg/ha).",
+          "**Besparing op sorteeruitval:** +11.000 tot 16.000 MAD dankzij 10% tot 15% minder fruit dat wordt afgekeurd wegens barsten of misvormingen.",
+          "**Voorkomen kwaliteitsgeschillen:** +5.000 tot 10.000 MAD doordat prijskortingen of afkeuringen bij de keuring door Europese supermarkten wegvallen.",
+          "**Totale extra brutomarge:** 88.000 tot 104.000 MAD nettowinst per hectare na aftrek van de inputkosten.",
+          "**Rendement op investering (ROI):** van 30:1 tot 45:1. Elke 100 MAD die in het Orthagrow-programma wordt geïnvesteerd, levert tussen 3.000 en 4.500 MAD extra nettowinst op."
+        ] },
+        { "type": "paragraph", "text": "Dankzij de unieke, wereldwijd gepatenteerde moleculaire stabiliteit van Orthagrow krijgt de teler via Moreco de hoogste OSA-biobeschikbaarheid van de markt. Dat betekent een onmiddellijke fysiologische en financiële voorsprong op een zeer competitieve exportmarkt." }
+      ]
+    }
   }
 ]
