@@ -133,21 +133,16 @@ const HUMAN_PRODUCT_IMAGES = new Set([
 const isHumanProductPost = (post: NewsPost) => post.image !== null && HUMAN_PRODUCT_IMAGES.has(post.image);
 
 /**
- * The Moreco logo pictured the "Produits Moreco" post; the client had it taken off on
- * 2026-10-21. The picture stays in the archive data, where it marks the start of the post.
- * Since every post became a card (2026-11-06) the post shows the Products page's field
- * photograph instead, cut to the cards' strip, so its card is not the only bare one.
+ * Posts the client took off the news page, matched by picture, which is the same file in
+ * every language. The picture stays in the archive data, where it marks the start of the
+ * post, so the posts after it still split correctly.
+ *
+ * "Produits Moreco" (5 November 2014), removed 2026-11-12: it announced no article, so
+ * its card opened nothing.
  */
-const REPLACED_IMAGES: Record<string, Pick<NewsPost, 'image' | 'imageWidth' | 'imageHeight'>> = {
-  '/media/pages/moreco-products-video.webp': {
-    image: '/media/heroes/products.webp',
-    imageWidth: 1600,
-    imageHeight: 672,
-  },
-};
+const REMOVED_POST_IMAGES = new Set(['/media/pages/moreco-products-video.webp']);
 
-const withoutHiddenImages = (post: NewsPost): NewsPost =>
-  post.image !== null && REPLACED_IMAGES[post.image] ? { ...post, ...REPLACED_IMAGES[post.image] } : post;
+const isRemovedPost = (post: NewsPost) => post.image !== null && REMOVED_POST_IMAGES.has(post.image);
 
 /** The weekly posts, newest first, as cards. `readMore` is filled in by the page. */
 const weeklyPosts = (locale: Locale): NewsPost[] =>
@@ -165,7 +160,7 @@ const weeklyPosts = (locale: Locale): NewsPost[] =>
 
 /** The weekly posts lead the page (from 2026-11), ahead of the archive's. */
 export function newsPosts(locale: Locale): NewsPost[] {
-  const posts = withFrenchArticles(postsIn(blocksFor(locale), blocksFor('fr'))).map(withoutHiddenImages);
+  const posts = withFrenchArticles(postsIn(blocksFor(locale), blocksFor('fr'))).filter((p) => !isRemovedPost(p));
   return [
     ...weeklyPosts(locale),
     ...posts.filter((p) => !isHumanProductPost(p)),
